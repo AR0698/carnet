@@ -1,4 +1,842 @@
 {
   "group": "Modals",
-  "items": []
+  "items": [
+    {
+      "id": "u026-a",
+      "topicId": "u026",
+      "tags": ["can", "could", "be-able-to", "capacite"],
+      "fields": {
+        "regle": "can au présent, could au passé général. be able to comble les temps où can n'existe pas."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Je sais nager depuis l'âge de cinq ans. »",
+          "answerSpec": {
+            "accepted": [
+              "I've been able to swim since I was five",
+              "I have been able to swim since I was five"
+            ]
+          },
+          "hints": ["can n'a pas de present perfect : on passe à be able to."]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Quand j'étais enfant, je pouvais courir pendant des heures. »",
+          "answerSpec": { "accepted": ["When I was a child, I could run for hours"] },
+          "hints": ["Capacité générale dans le passé : could."]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Tu pourras me joindre demain matin. »",
+          "answerSpec": {
+            "accepted": [
+              "You'll be able to reach me tomorrow morning",
+              "You will be able to reach me tomorrow morning"
+            ]
+          },
+          "hints": ["Après will, can devient be able to."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The fog was thick, but we ___ find the path. (be able to)",
+          "answerSpec": { "accepted": ["were able to", "managed to"] },
+          "hints": ["Une réussite ponctuelle : was/were able to plutôt que could."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Nobody ___ answer the last question. (can, au passé)",
+          "answerSpec": { "accepted": ["could", "was able to"] },
+          "hints": ["Au passé négatif, could passe partout."]
+        },
+        {
+          "type": "transform",
+          "source": "Vera can read Russian.",
+          "prompt": "Mets la phrase au futur avec « next year ».",
+          "answerSpec": { "accepted": ["Vera will be able to read Russian next year"] },
+          "hints": ["can n'a pas de futur : will be able to."]
+        },
+        {
+          "type": "spot_error",
+          "source": "I have could speak Spanish for years.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": {
+            "accepted": [
+              "I have been able to speak Spanish for years",
+              "I've been able to speak Spanish for years"
+            ]
+          },
+          "hints": ["Un modal ne se conjugue pas : il faut be able to."]
+        },
+        {
+          "type": "mcq",
+          "prompt": "After the operation she ___ walk again.",
+          "answerSpec": { "accepted": ["was able to"] },
+          "distractors": ["can", "have been able to", "could to"],
+          "hints": ["Réussite précise et située dans le passé."]
+        }
+      ]
+    },
+
+    {
+      "id": "u027-a",
+      "topicId": "u027",
+      "tags": ["could-have", "occasion-manquee"],
+      "fields": {
+        "regle": "could + base = possibilité maintenant ou plus tard. could have + participe = ce qui était possible mais n'a pas eu lieu."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : « On pourrait aller au marché demain. »",
+          "answerSpec": { "accepted": ["We could go to the market tomorrow"] },
+          "hints": ["Suggestion pour l'avenir : could + base verbale."]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Tu aurais pu me prévenir. »",
+          "answerSpec": { "accepted": ["You could have told me", "You could have warned me"] },
+          "hints": ["Reproche sur une occasion manquée : could have + participe."]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Elle aurait pu se blesser. »",
+          "answerSpec": { "accepted": ["She could have hurt herself"] },
+          "hints": ["Ce qui a failli arriver : could have + participe passé."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Why did you walk? You ___ the bus. (could / take)",
+          "answerSpec": { "accepted": ["could have taken"] },
+          "hints": ["L'occasion existait, elle n'a pas été saisie."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "I'm free on Thursday — we ___ then. (could / meet)",
+          "answerSpec": { "accepted": ["could meet"] },
+          "hints": ["Possibilité encore ouverte : could + base."]
+        },
+        {
+          "type": "transform",
+          "source": "It was possible for Tomas to catch the earlier flight, but he didn't.",
+          "prompt": "Réécris la phrase avec « could have », en commençant par « Tomas ».",
+          "answerSpec": { "accepted": ["Tomas could have caught the earlier flight"] },
+          "hints": ["Possibilité passée non réalisée."]
+        },
+        {
+          "type": "spot_error",
+          "source": "You could told me the truth.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": { "accepted": ["You could have told me the truth"] },
+          "hints": ["Il manque have devant le participe passé."]
+        },
+        {
+          "type": "mcq",
+          "prompt": "That was risky — you ___ badly.",
+          "answerSpec": { "accepted": ["could have fallen"] },
+          "distractors": ["could fall", "could fell", "can have fallen"],
+          "hints": ["Danger passé qui ne s'est finalement pas produit."]
+        }
+      ]
+    },
+
+    {
+      "id": "u028-a",
+      "topicId": "u028",
+      "tags": ["must", "cant", "deduction"],
+      "fields": {
+        "regle": "must = déduction quasi certaine. can't = déduction inverse, « ce n'est pas possible »."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Elle doit être épuisée. »",
+          "answerSpec": { "accepted": ["She must be exhausted"] },
+          "hints": ["Déduction logique au présent : must + base verbale."]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Ce n'est pas possible qu'il soit déjà rentré. »",
+          "answerSpec": { "accepted": ["He can't be home already", "He cannot be home already"] },
+          "hints": ["Impossibilité logique : can't, pas mustn't."]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Tu as dû te tromper de rue. »",
+          "answerSpec": { "accepted": ["You must have taken the wrong street"] },
+          "hints": ["Déduction sur le passé : must have + participe."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The lights are off — they ___ be out. (must)",
+          "answerSpec": { "accepted": ["must"] },
+          "hints": ["Un indice net mène à une conclusion sûre."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "She ___ have written this — the handwriting is different. (can't)",
+          "answerSpec": { "accepted": ["can't", "cannot"] },
+          "hints": ["Conclusion négative sur le passé : can't have + participe."]
+        },
+        {
+          "type": "transform",
+          "source": "I'm sure Bruno knows the answer.",
+          "prompt": "Réécris la phrase comme une déduction, en commençant par « Bruno ».",
+          "answerSpec": { "accepted": ["Bruno must know the answer"] },
+          "hints": ["« Je suis sûr que » devient must."]
+        },
+        {
+          "type": "spot_error",
+          "source": "That mustn't be true — I saw her yesterday.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": { "accepted": ["That can't be true — I saw her yesterday"] },
+          "hints": ["Pour nier une déduction, l'anglais dit can't, jamais mustn't."]
+        },
+        {
+          "type": "mcq",
+          "prompt": "There's no answer — she ___ still be asleep.",
+          "answerSpec": { "accepted": ["must"] },
+          "distractors": ["can", "musts", "have to be"],
+          "hints": ["Explication la plus probable, à partir d'un indice."]
+        }
+      ]
+    },
+
+    {
+      "id": "u029-a",
+      "topicId": "u029",
+      "tags": ["may", "might", "possibilite"],
+      "fields": {
+        "regle": "may / might + base : c'est possible, sans certitude. might have + participe pour le passé."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Il se peut qu'elle arrive en retard. »",
+          "answerSpec": { "accepted": ["She may arrive late", "She might arrive late"] },
+          "hints": ["Possibilité ouverte : may ou might, au choix."]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Ils ont peut-être oublié la réunion. »",
+          "answerSpec": {
+            "accepted": ["They may have forgotten the meeting", "They might have forgotten the meeting"]
+          },
+          "hints": ["Hypothèse sur le passé : may/might have + participe."]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Je ne viendrai peut-être pas. »",
+          "answerSpec": { "accepted": ["I might not come", "I may not come"] },
+          "hints": ["Négation : may not / might not, sans contraction usuelle."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Take a coat — it ___ get cold later. (might)",
+          "answerSpec": { "accepted": ["might"] },
+          "hints": ["Éventualité prudente : might + base."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Nobody knows where he is. He ___ left the country. (may / have)",
+          "answerSpec": { "accepted": ["may have", "might have"] },
+          "hints": ["Hypothèse sur ce qui s'est déjà passé."]
+        },
+        {
+          "type": "transform",
+          "source": "Perhaps Solène is working from home today.",
+          "prompt": "Réécris la phrase avec « might », en commençant par « Solène ».",
+          "answerSpec": { "accepted": ["Solène might be working from home today", "Solene might be working from home today"] },
+          "hints": ["perhaps + présent continu devient might be + -ing."]
+        },
+        {
+          "type": "spot_error",
+          "source": "She might to know the address.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": { "accepted": ["She might know the address"] },
+          "hints": ["Un modal n'est jamais suivi de to."]
+        },
+        {
+          "type": "mcq",
+          "prompt": "I can't find my badge — I ___ it at the office.",
+          "answerSpec": { "accepted": ["may have left"] },
+          "distractors": ["may leave", "may left", "may have leave"],
+          "hints": ["Supposition sur un événement passé."]
+        }
+      ]
+    },
+
+    {
+      "id": "u030-a",
+      "topicId": "u030",
+      "tags": ["may", "might", "permission", "might-as-well"],
+      "fields": {
+        "regle": "may sert aussi à demander ou accorder une permission. might as well : autant faire, faute de mieux."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Puis-je emprunter votre stylo ? » (formel)",
+          "answerSpec": { "accepted": ["May I borrow your pen"] },
+          "hints": ["may I ...? est la demande de permission la plus formelle."]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Le train est annulé — autant prendre un taxi. »",
+          "answerSpec": {
+            "accepted": [
+              "The train is cancelled — we might as well take a taxi",
+              "The train is cancelled. We might as well take a taxi"
+            ]
+          },
+          "hints": ["might as well : la moins mauvaise option."]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Les visiteurs peuvent utiliser le parking. » (règlement)",
+          "answerSpec": { "accepted": ["Visitors may use the car park"] },
+          "hints": ["Permission officielle : may."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The queue is huge — we ___ as well come back later. (might)",
+          "answerSpec": { "accepted": ["might"] },
+          "hints": ["might as well se fige en bloc."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "___ I leave my bag here for a minute? (may)",
+          "answerSpec": { "accepted": ["May"] },
+          "hints": ["Demande polie de permission."]
+        },
+        {
+          "type": "transform",
+          "source": "There's nothing else to do, so let's finish the leftovers.",
+          "prompt": "Réécris la seconde partie avec « might as well », en commençant par « We ».",
+          "answerSpec": { "accepted": ["We might as well finish the leftovers"] },
+          "hints": ["Faute de mieux : might as well + base verbale."]
+        },
+        {
+          "type": "spot_error",
+          "source": "You may to sit anywhere you like.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": { "accepted": ["You may sit anywhere you like"] },
+          "hints": ["Pas de to après un modal."]
+        },
+        {
+          "type": "mcq",
+          "prompt": "The shop's shut — we ___ walk home.",
+          "answerSpec": { "accepted": ["might as well"] },
+          "distractors": ["might well as", "may as", "might as good"],
+          "hints": ["Expression figée, dans cet ordre exact."]
+        }
+      ]
+    },
+
+    {
+      "id": "u031-a",
+      "topicId": "u031",
+      "tags": ["have-to", "must", "obligation"],
+      "fields": {
+        "regle": "must vient de celui qui parle ; have to vient des circonstances. Aux autres temps, seul have to existe."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Je dois porter un uniforme au travail. » (c'est la règle)",
+          "answerSpec": { "accepted": ["I have to wear a uniform at work"] },
+          "hints": ["Obligation venue de l'extérieur : have to."]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Il a dû partir tôt hier. »",
+          "answerSpec": { "accepted": ["He had to leave early yesterday"] },
+          "hints": ["must n'a pas de passé : had to."]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Est-ce que tu dois travailler samedi ? »",
+          "answerSpec": { "accepted": ["Do you have to work on Saturday"] },
+          "hints": ["Question avec have to : on ajoute do."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Sorry, I ___ go — my bus leaves in five minutes. (have to, au présent)",
+          "answerSpec": { "accepted": ["have to"] },
+          "hints": ["Les circonstances imposent le départ."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "You ___ try this recipe, it's wonderful. (must)",
+          "answerSpec": { "accepted": ["must"] },
+          "hints": ["Recommandation personnelle et chaleureuse : must."]
+        },
+        {
+          "type": "transform",
+          "source": "Amina must renew her passport.",
+          "prompt": "Mets la phrase au futur avec « next year ».",
+          "answerSpec": { "accepted": ["Amina will have to renew her passport next year"] },
+          "hints": ["Au futur, must cède la place à will have to."]
+        },
+        {
+          "type": "spot_error",
+          "source": "Yesterday I must call the plumber.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": { "accepted": ["Yesterday I had to call the plumber"] },
+          "hints": ["Une obligation passée se dit had to."]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Nurses ___ work night shifts sometimes.",
+          "answerSpec": { "accepted": ["have to"] },
+          "distractors": ["musts", "have", "has to"],
+          "hints": ["Contrainte du métier, sujet pluriel."]
+        }
+      ]
+    },
+
+    {
+      "id": "u032-a",
+      "topicId": "u032",
+      "tags": ["mustnt", "neednt", "interdiction"],
+      "fields": {
+        "regle": "mustn't = interdiction. needn't / don't have to = ce n'est pas nécessaire. Les deux sens n'ont rien à voir."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Tu ne dois pas toucher à ces fils. » (c'est interdit)",
+          "answerSpec": { "accepted": ["You mustn't touch these wires", "You must not touch these wires"] },
+          "hints": ["Interdiction formelle : mustn't."]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Tu n'as pas besoin de venir si tu es fatigué. »",
+          "answerSpec": {
+            "accepted": [
+              "You don't have to come if you're tired",
+              "You needn't come if you're tired",
+              "You do not have to come if you are tired"
+            ]
+          },
+          "hints": ["Absence d'obligation : don't have to ou needn't."]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Nous n'avions pas besoin de réserver. »",
+          "answerSpec": {
+            "accepted": [
+              "We didn't have to book",
+              "We did not have to book"
+            ]
+          },
+          "hints": ["Au passé, l'absence d'obligation se dit didn't have to."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "You ___ be late — the exam starts at nine sharp. (mustn't)",
+          "answerSpec": { "accepted": ["mustn't", "must not"] },
+          "hints": ["Interdiction stricte."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "You ___ bring anything, everything is provided. (needn't)",
+          "answerSpec": { "accepted": ["needn't", "need not"] },
+          "hints": ["Ce n'est simplement pas nécessaire."]
+        },
+        {
+          "type": "transform",
+          "source": "It isn't necessary for you to wait.",
+          "prompt": "Réécris la phrase avec « don't have to », en commençant par « You ».",
+          "answerSpec": { "accepted": ["You don't have to wait", "You do not have to wait"] },
+          "hints": ["Pas d'obligation, pas d'interdiction."]
+        },
+        {
+          "type": "spot_error",
+          "source": "You mustn't pay — the museum is free today.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": {
+            "accepted": [
+              "You don't have to pay — the museum is free today",
+              "You needn't pay — the museum is free today"
+            ]
+          },
+          "hints": ["Ce n'est pas interdit de payer : c'est inutile."]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Passengers ___ smoke anywhere on board.",
+          "answerSpec": { "accepted": ["mustn't"] },
+          "distractors": ["needn't", "don't have to", "haven't to"],
+          "hints": ["Règle qui interdit, pas qui dispense."]
+        }
+      ]
+    },
+
+    {
+      "id": "u033-a",
+      "topicId": "u033",
+      "tags": ["should", "conseil"],
+      "fields": {
+        "regle": "should + base : conseil ou attente raisonnable. should have + participe : ce qu'il aurait fallu faire."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Tu devrais te reposer un peu. »",
+          "answerSpec": { "accepted": ["You should get some rest", "You should rest a bit"] },
+          "hints": ["Conseil ordinaire : should + base verbale."]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : « J'aurais dû t'écouter. »",
+          "answerSpec": { "accepted": ["I should have listened to you"] },
+          "hints": ["Regret sur le passé : should have + participe."]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Le colis devrait arriver mardi. »",
+          "answerSpec": { "accepted": ["The parcel should arrive on Tuesday"] },
+          "hints": ["Attente raisonnable, pas certitude."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "You look pale — you ___ see a doctor. (should)",
+          "answerSpec": { "accepted": ["should"] },
+          "hints": ["Recommandation face à un symptôme."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "We ___ booked earlier — everything is full now. (should / have)",
+          "answerSpec": { "accepted": ["should have"] },
+          "hints": ["Ce qu'il aurait fallu faire, et qu'on n'a pas fait."]
+        },
+        {
+          "type": "transform",
+          "source": "It was a mistake to leave the window open.",
+          "prompt": "Réécris la phrase avec « shouldn't have », en commençant par « We ».",
+          "answerSpec": {
+            "accepted": [
+              "We shouldn't have left the window open",
+              "We should not have left the window open"
+            ]
+          },
+          "hints": ["Erreur passée : shouldn't have + participe."]
+        },
+        {
+          "type": "spot_error",
+          "source": "You should to apologise.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": { "accepted": ["You should apologise", "You should apologize"] },
+          "hints": ["Aucun to après should."]
+        },
+        {
+          "type": "mcq",
+          "prompt": "The film starts at eight, so we ___ leave now.",
+          "answerSpec": { "accepted": ["should"] },
+          "distractors": ["should to", "shoulds", "should have"],
+          "hints": ["Conseil pratique pour l'instant présent."]
+        }
+      ]
+    },
+
+    {
+      "id": "u034-a",
+      "topicId": "u034",
+      "tags": ["should", "subjonctif", "recommandation"],
+      "fields": {
+        "regle": "Après suggest, insist, recommend, ou après it's important/essential that, l'anglais emploie should + base, ou la base seule."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Il est essentiel que chacun soit prévenu. »",
+          "answerSpec": {
+            "accepted": [
+              "It's essential that everyone should be told",
+              "It is essential that everyone be told",
+              "It's essential that everyone be told"
+            ]
+          },
+          "hints": ["Après it's essential that : should + base, ou base seule."]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Elle a proposé que nous partagions les frais. »",
+          "answerSpec": {
+            "accepted": [
+              "She suggested that we should share the costs",
+              "She suggested that we share the costs"
+            ]
+          },
+          "hints": ["Après suggest that, pas de temps passé sur le second verbe."]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : « C'est bizarre qu'il n'ait rien dit. »",
+          "answerSpec": {
+            "accepted": [
+              "It's strange that he should say nothing",
+              "It's strange that he said nothing"
+            ]
+          },
+          "hints": ["should marque ici la surprise devant le fait."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The doctor insisted that she ___ rest for a week. (should)",
+          "answerSpec": { "accepted": ["should"] },
+          "hints": ["Après insist that : should + base verbale."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "It's important that the door ___ be locked at night. (should)",
+          "answerSpec": { "accepted": ["should"] },
+          "hints": ["Recommandation impersonnelle."]
+        },
+        {
+          "type": "transform",
+          "source": "My advice: apply before the deadline.",
+          "prompt": "Réécris le conseil avec « I recommend that you ».",
+          "answerSpec": {
+            "accepted": [
+              "I recommend that you should apply before the deadline",
+              "I recommend that you apply before the deadline"
+            ]
+          },
+          "hints": ["recommend that + should + base, ou base seule."]
+        },
+        {
+          "type": "spot_error",
+          "source": "They suggested that we should to book a table.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": {
+            "accepted": [
+              "They suggested that we should book a table",
+              "They suggested that we book a table"
+            ]
+          },
+          "hints": ["should est déjà suivi de la base : pas de to."]
+        },
+        {
+          "type": "mcq",
+          "prompt": "It's vital that everyone ___ the safety rules.",
+          "answerSpec": { "accepted": ["should know"] },
+          "distractors": ["should knows", "knowing", "should to know"],
+          "hints": ["Après should, base verbale sans -s."]
+        }
+      ]
+    },
+
+    {
+      "id": "u035-a",
+      "topicId": "u035",
+      "tags": ["had-better", "its-time"],
+      "fields": {
+        "regle": "had better + base : il vaut mieux, sinon ça tourne mal. it's time + prétérit : il est grand temps."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Tu ferais mieux de partir maintenant. »",
+          "answerSpec": { "accepted": ["You'd better leave now", "You had better leave now"] },
+          "hints": ["had better + base verbale, sans to."]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Il est temps que tu prennes une décision. »",
+          "answerSpec": { "accepted": ["It's time you made a decision", "It is time you made a decision"] },
+          "hints": ["Après it's time + sujet, le verbe se met au prétérit."]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Tu ferais mieux de ne rien dire. »",
+          "answerSpec": {
+            "accepted": [
+              "You'd better not say anything",
+              "You had better not say anything"
+            ]
+          },
+          "hints": ["Négation : had better not, dans cet ordre."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "We ___ better hurry — the doors close at eight. (had)",
+          "answerSpec": { "accepted": ["had", "'d"] },
+          "hints": ["L'expression commence toujours par had."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "It's time we ___ this conversation seriously. (have)",
+          "answerSpec": { "accepted": ["had"] },
+          "hints": ["Après it's time we, prétérit malgré le sens présent."]
+        },
+        {
+          "type": "transform",
+          "source": "You should book the tickets before they sell out.",
+          "prompt": "Réécris la phrase avec « had better », en commençant par « You ».",
+          "answerSpec": {
+            "accepted": [
+              "You'd better book the tickets before they sell out",
+              "You had better book the tickets before they sell out"
+            ]
+          },
+          "hints": ["had better presse davantage que should."]
+        },
+        {
+          "type": "spot_error",
+          "source": "It's time you go to bed.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": { "accepted": ["It's time you went to bed", "It is time you went to bed"] },
+          "hints": ["it's time + sujet demande le prétérit."]
+        },
+        {
+          "type": "mcq",
+          "prompt": "You ___ tell her before she hears it elsewhere.",
+          "answerSpec": { "accepted": ["'d better"] },
+          "distractors": ["'d better to", "had best to", "would better"],
+          "hints": ["Formule figée, suivie de la base verbale."]
+        }
+      ]
+    },
+
+    {
+      "id": "u036-a",
+      "topicId": "u036",
+      "tags": ["would", "habitude-passee", "hypothese"],
+      "fields": {
+        "regle": "would + base : hypothèse, ou habitude passée (actions répétées seulement, jamais un état)."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : « À ta place, je refuserais. »",
+          "answerSpec": { "accepted": ["If I were you, I would refuse", "If I were you, I'd refuse"] },
+          "hints": ["Situation imaginaire : would + base verbale."]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Chaque été, mon grand-père nous emmenait à la rivière. »",
+          "answerSpec": {
+            "accepted": [
+              "Every summer my grandfather would take us to the river",
+              "Every summer my grandfather took us to the river"
+            ]
+          },
+          "hints": ["Habitude passée répétée : would ou used to."]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Elle a dit qu'elle rappellerait. »",
+          "answerSpec": { "accepted": ["She said she would call back", "She said she'd call back"] },
+          "hints": ["Futur vu depuis le passé : would."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "I asked him twice, but he ___ tell me. (would not)",
+          "answerSpec": { "accepted": ["wouldn't", "would not"] },
+          "hints": ["wouldn't marque un refus obstiné dans le passé."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "A holiday right now ___ be wonderful. (would)",
+          "answerSpec": { "accepted": ["would"] },
+          "hints": ["Situation imaginée au présent."]
+        },
+        {
+          "type": "transform",
+          "source": "When we lived by the coast, we swam every morning.",
+          "prompt": "Réécris la seconde partie avec « would », en commençant par « we ».",
+          "answerSpec": { "accepted": ["we would swim every morning", "we'd swim every morning"] },
+          "hints": ["Action répétée dans le passé : would + base."]
+        },
+        {
+          "type": "spot_error",
+          "source": "My aunt would have a large garden when I was small.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": { "accepted": ["My aunt had a large garden when I was small", "My aunt used to have a large garden when I was small"] },
+          "hints": ["would ne convient pas aux états, seulement aux actions répétées."]
+        },
+        {
+          "type": "mcq",
+          "prompt": "He promised he ___ send the file that evening.",
+          "answerSpec": { "accepted": ["would"] },
+          "distractors": ["will", "would to", "should have"],
+          "hints": ["Le futur, raconté depuis le passé."]
+        }
+      ]
+    },
+
+    {
+      "id": "u037-a",
+      "topicId": "u037",
+      "tags": ["requetes", "offres", "invitations", "politesse"],
+      "fields": {
+        "regle": "Can/Could/Would you ...? pour demander ; Shall I / Would you like ...? pour offrir ou inviter."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Pourriez-vous répéter, s'il vous plaît ? »",
+          "answerSpec": { "accepted": ["Could you repeat that please", "Could you say that again please"] },
+          "hints": ["could you ...? est plus poli que can you ...?"]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Est-ce que ça te dirait de venir dîner samedi ? »",
+          "answerSpec": {
+            "accepted": [
+              "Would you like to come to dinner on Saturday",
+              "Would you like to come for dinner on Saturday"
+            ]
+          },
+          "hints": ["Invitation : would you like to + base verbale."]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Ça vous dérange si j'ouvre la porte ? »",
+          "answerSpec": {
+            "accepted": [
+              "Do you mind if I open the door",
+              "Would you mind if I opened the door"
+            ]
+          },
+          "hints": ["do you mind if + présent, ou would you mind if + prétérit."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "___ you mind closing the window? (would)",
+          "answerSpec": { "accepted": ["Would"] },
+          "hints": ["Après would you mind, le verbe prend -ing."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "___ I book a table for four? (shall)",
+          "answerSpec": { "accepted": ["Shall"] },
+          "hints": ["Offre à la première personne : shall I."]
+        },
+        {
+          "type": "transform",
+          "source": "Please pass me the salt.",
+          "prompt": "Réécris la demande poliment, en commençant par « Could ».",
+          "answerSpec": { "accepted": ["Could you pass me the salt"] },
+          "hints": ["could you + base verbale adoucit l'impératif."]
+        },
+        {
+          "type": "spot_error",
+          "source": "Would you mind to wait outside?",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": { "accepted": ["Would you mind waiting outside"] },
+          "hints": ["Après mind, le verbe prend -ing."]
+        },
+        {
+          "type": "mcq",
+          "prompt": "___ you like something to drink?",
+          "answerSpec": { "accepted": ["Would"] },
+          "distractors": ["Do", "Are", "Shall"],
+          "hints": ["Proposition polie à quelqu'un d'autre."]
+        }
+      ]
+    }
+  ]
 }

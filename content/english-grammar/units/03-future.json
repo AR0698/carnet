@@ -1,4 +1,526 @@
 {
   "group": "Future",
-  "items": []
+  "items": [
+    {
+      "id": "u019-a",
+      "topicId": "u019",
+      "tags": ["present-continuous-futur", "present-simple-futur", "arrangement"],
+      "fields": {
+        "regle": "Le présent continu annonce un arrangement déjà pris ; le présent simple, un horaire officiel."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Je dîne avec Claire vendredi. » (c'est déjà convenu)",
+          "answerSpec": {
+            "accepted": [
+              "I'm having dinner with Claire on Friday",
+              "I am having dinner with Claire on Friday"
+            ]
+          },
+          "hints": ["Un rendez-vous déjà fixé : présent continu."]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : « L'avion décolle à six heures dix. »",
+          "answerSpec": { "accepted": ["The plane takes off at ten past six"] },
+          "hints": ["Un horaire officiel se dit au présent simple."]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Qu'est-ce que tu fais ce week-end ? »",
+          "answerSpec": {
+            "accepted": [
+              "What are you doing this weekend",
+              "What are you doing at the weekend"
+            ]
+          },
+          "hints": ["On demande les projets déjà prévus : présent continu."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The doors ___ at half past seven. (open)",
+          "answerSpec": { "accepted": ["open"] },
+          "hints": ["Programme fixé par un règlement : présent simple."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Priya ___ her cousin at the airport tomorrow. (meet)",
+          "answerSpec": { "accepted": ["is meeting", "'s meeting"] },
+          "hints": ["Arrangement personnel déjà pris : présent continu."]
+        },
+        {
+          "type": "transform",
+          "source": "I will move to Lisbon in April.",
+          "prompt": "Réécris la phrase pour dire que tout est déjà organisé, avec le présent continu.",
+          "answerSpec": { "accepted": ["I'm moving to Lisbon in April", "I am moving to Lisbon in April"] },
+          "hints": ["Quand c'est arrangé, l'anglais préfère be + -ing."]
+        },
+        {
+          "type": "spot_error",
+          "source": "The last bus leaving at midnight.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": { "accepted": ["The last bus leaves at midnight"] },
+          "hints": ["Horaire officiel : présent simple, pas de forme en -ing."]
+        },
+        {
+          "type": "mcq",
+          "prompt": "We ___ the flat to a friend next month.",
+          "answerSpec": { "accepted": ["are lending"] },
+          "distractors": ["lend", "will lending", "are lend"],
+          "hints": ["Arrangement déjà convenu avec quelqu'un."]
+        }
+      ]
+    },
+
+    {
+      "id": "u020-a",
+      "topicId": "u020",
+      "tags": ["going-to", "intention", "signe-present"],
+      "fields": {
+        "regle": "be going to : une intention déjà formée, ou une prévision fondée sur ce qu'on voit."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Je vais chercher du travail à l'étranger. »",
+          "answerSpec": {
+            "accepted": [
+              "I'm going to look for work abroad",
+              "I am going to look for work abroad"
+            ]
+          },
+          "hints": ["Intention déjà décidée : be going to."]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Attention, tu vas renverser ton verre. »",
+          "answerSpec": {
+            "accepted": [
+              "Careful, you're going to knock over your glass",
+              "Careful, you are going to knock over your glass"
+            ]
+          },
+          "hints": ["Ce que la situation présente laisse prévoir : going to."]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Ils ne vont pas vendre la maison. »",
+          "answerSpec": {
+            "accepted": [
+              "They aren't going to sell the house",
+              "They are not going to sell the house",
+              "They're not going to sell the house"
+            ]
+          },
+          "hints": ["Négation portée par be, pas par going."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Look at those clouds — it ___ pour down. (be going to)",
+          "answerSpec": { "accepted": ["is going to", "'s going to"] },
+          "hints": ["Un indice visible annonce ce qui va arriver."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "We ___ paint the hallway this weekend. (be going to)",
+          "answerSpec": { "accepted": ["are going to", "'re going to"] },
+          "hints": ["Projet déjà décidé, pas encore commencé."]
+        },
+        {
+          "type": "transform",
+          "source": "Nils intends to sell his motorbike.",
+          "prompt": "Réécris la phrase avec « going to », en commençant par « Nils ».",
+          "answerSpec": { "accepted": ["Nils is going to sell his motorbike"] },
+          "hints": ["intend to devient tout simplement be going to."]
+        },
+        {
+          "type": "spot_error",
+          "source": "She going to apply for the grant.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": {
+            "accepted": ["She is going to apply for the grant", "She's going to apply for the grant"]
+          },
+          "hints": ["L'auxiliaire be ne se sous-entend jamais."]
+        },
+        {
+          "type": "mcq",
+          "prompt": "The sky is black — there ___ be a storm.",
+          "answerSpec": { "accepted": ["is going to"] },
+          "distractors": ["goes to", "is going", "will going to"],
+          "hints": ["Prévision fondée sur ce qu'on observe."]
+        }
+      ]
+    },
+
+    {
+      "id": "u021-a",
+      "topicId": "u021",
+      "tags": ["will", "decision-immediate", "offre"],
+      "fields": {
+        "regle": "will : décision prise à l'instant, promesse, offre. Toujours suivi de la base verbale."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : « D'accord, je m'en occupe. » (décision prise à l'instant)",
+          "answerSpec": { "accepted": ["All right, I'll take care of it", "OK, I'll take care of it"] },
+          "hints": ["Décision spontanée : will, pas going to."]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Je ne dirai rien à personne. »",
+          "answerSpec": { "accepted": ["I won't tell anyone", "I will not tell anyone"] },
+          "hints": ["Négation de will : won't."]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Est-ce que tu seras là samedi ? »",
+          "answerSpec": { "accepted": ["Will you be there on Saturday"] },
+          "hints": ["Question : will + sujet + base verbale."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "That bag looks heavy — I ___ you. (help)",
+          "answerSpec": { "accepted": ["'ll help", "will help"] },
+          "hints": ["Une offre spontanée s'exprime avec will."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Don't worry, I ___ the door behind me. (lock)",
+          "answerSpec": { "accepted": ["'ll lock", "will lock"] },
+          "hints": ["Promesse faite sur le moment."]
+        },
+        {
+          "type": "transform",
+          "source": "I don't know the answer. Let me check online.",
+          "prompt": "Remplace la seconde phrase par une décision spontanée avec « I'll ».",
+          "answerSpec": { "accepted": ["I'll check online", "I will check online"] },
+          "hints": ["La décision est prise en parlant : will."]
+        },
+        {
+          "type": "spot_error",
+          "source": "I will to call you tonight.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": { "accepted": ["I will call you tonight", "I'll call you tonight"] },
+          "hints": ["Après will, le verbe est nu : pas de to."]
+        },
+        {
+          "type": "mcq",
+          "prompt": "The phone's ringing — I ___ it.",
+          "answerSpec": { "accepted": ["'ll get"] },
+          "distractors": ["am getting", "get", "am going to get"],
+          "hints": ["Réaction immédiate, décidée à l'instant."]
+        }
+      ]
+    },
+
+    {
+      "id": "u022-a",
+      "topicId": "u022",
+      "tags": ["will", "prevision", "shall"],
+      "fields": {
+        "regle": "will sert aussi aux prévisions et opinions (I think ... will). shall ne subsiste guère qu'en question avec I/we."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Je pense qu'elle aimera ce cadeau. »",
+          "answerSpec": { "accepted": ["I think she'll like this present", "I think she will like this present"] },
+          "hints": ["Opinion sur l'avenir : I think + will."]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : « On ne sera probablement pas en retard. »",
+          "answerSpec": {
+            "accepted": [
+              "We probably won't be late",
+              "We probably will not be late"
+            ]
+          },
+          "hints": ["probably se place avant won't."]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : « On ouvre la fenêtre ? »",
+          "answerSpec": { "accepted": ["Shall I open the window", "Shall we open the window"] },
+          "hints": ["shall I / shall we ...? propose ou demande un avis."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "I don't think the shop ___ open on Sunday. (be)",
+          "answerSpec": { "accepted": ["will be"] },
+          "hints": ["L'anglais nie le verbe d'opinion, pas la prévision."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "___ we take the earlier train? (shall)",
+          "answerSpec": { "accepted": ["Shall"] },
+          "hints": ["Proposition à deux : shall we."]
+        },
+        {
+          "type": "transform",
+          "source": "Perhaps the meeting will be cancelled.",
+          "prompt": "Réécris la phrase avec « I expect », en gardant le futur.",
+          "answerSpec": { "accepted": ["I expect the meeting will be cancelled"] },
+          "hints": ["Les verbes d'opinion s'accompagnent naturellement de will."]
+        },
+        {
+          "type": "spot_error",
+          "source": "I think it will rains tomorrow.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": { "accepted": ["I think it will rain tomorrow", "I think it'll rain tomorrow"] },
+          "hints": ["Après will, aucune terminaison : le verbe reste nu."]
+        },
+        {
+          "type": "mcq",
+          "prompt": "___ I carry that box for you?",
+          "answerSpec": { "accepted": ["Shall"] },
+          "distractors": ["Will", "Do", "Am"],
+          "hints": ["Offre polie à la première personne."]
+        }
+      ]
+    },
+
+    {
+      "id": "u023-a",
+      "topicId": "u023",
+      "tags": ["will", "going-to", "comparaison"],
+      "fields": {
+        "regle": "going to = décision déjà prise avant de parler ; will = décision prise en parlant."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : « — Il n'y a plus de lait. — Bon, j'en achète en rentrant. »",
+          "answerSpec": {
+            "accepted": [
+              "There's no milk left. Fine, I'll buy some on my way home",
+              "There is no milk left. Fine, I'll buy some on my way home"
+            ]
+          },
+          "hints": ["La décision naît dans la conversation : will."]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : « J'ai décidé : je vais reprendre mes études. »",
+          "answerSpec": {
+            "accepted": [
+              "I've decided: I'm going to go back to university",
+              "I have decided: I am going to go back to university"
+            ]
+          },
+          "hints": ["La décision est antérieure : going to."]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Ne t'inquiète pas, je t'aiderai à déménager. »",
+          "answerSpec": {
+            "accepted": [
+              "Don't worry, I'll help you move",
+              "Do not worry, I'll help you move"
+            ]
+          },
+          "hints": ["Promesse : will."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "I've made up my mind — I ___ tell her tonight. (be going to)",
+          "answerSpec": { "accepted": ["am going to", "'m going to"] },
+          "hints": ["La décision précède la phrase."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "This suitcase is heavy. — I ___ the other handle. (take)",
+          "answerSpec": { "accepted": ["'ll take", "will take"] },
+          "hints": ["Réaction immédiate à ce qui vient d'être dit."]
+        },
+        {
+          "type": "transform",
+          "source": "Ilona plans to open a bakery next year.",
+          "prompt": "Réécris la phrase avec « going to », en commençant par « Ilona ».",
+          "answerSpec": { "accepted": ["Ilona is going to open a bakery next year"] },
+          "hints": ["Un plan arrêté à l'avance : going to."]
+        },
+        {
+          "type": "spot_error",
+          "source": "Wait — I think I will drop this, it's slipping.",
+          "prompt": "Corrige la phrase pour exprimer ce que la situation annonce.",
+          "answerSpec": {
+            "accepted": [
+              "Wait — I think I'm going to drop this, it's slipping",
+              "Wait — I think I am going to drop this, it's slipping"
+            ]
+          },
+          "hints": ["Un indice présent annonce la suite : going to."]
+        },
+        {
+          "type": "mcq",
+          "prompt": "— Why are you filling that bucket? — I ___ the car.",
+          "answerSpec": { "accepted": ["'m going to wash"] },
+          "distractors": ["'ll wash", "wash", "will washing"],
+          "hints": ["L'intention était déjà là avant la question."]
+        }
+      ]
+    },
+
+    {
+      "id": "u024-a",
+      "topicId": "u024",
+      "tags": ["future-continuous", "future-perfect"],
+      "fields": {
+        "regle": "will be + -ing : en train de faire à un moment futur. will have + participe : achevé avant un moment futur."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Demain à midi, je serai en train de passer mon oral. »",
+          "answerSpec": {
+            "accepted": [
+              "At noon tomorrow I'll be taking my oral exam",
+              "At noon tomorrow I will be taking my oral exam"
+            ]
+          },
+          "hints": ["Action en cours à un moment futur : will be + -ing."]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : « D'ici vendredi, ils auront terminé les travaux. »",
+          "answerSpec": {
+            "accepted": [
+              "By Friday they'll have finished the work",
+              "By Friday they will have finished the work"
+            ]
+          },
+          "hints": ["by + moment futur appelle will have + participe passé."]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Ne l'appelle pas à sept heures, elle dînera. »",
+          "answerSpec": {
+            "accepted": [
+              "Don't call her at seven, she'll be having dinner",
+              "Don't call her at seven — she will be having dinner"
+            ]
+          },
+          "hints": ["Ce qu'elle sera en train de faire : will be + -ing."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "This time next week we ___ on a beach. (lie)",
+          "answerSpec": { "accepted": ["will be lying", "'ll be lying"] },
+          "hints": ["this time next week situe une action en cours."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "By the end of June, Karim ___ his thesis. (finish)",
+          "answerSpec": { "accepted": ["will have finished", "'ll have finished"] },
+          "hints": ["Achevé avant une date future : will have + participe."]
+        },
+        {
+          "type": "transform",
+          "source": "The builders will finish the roof before winter.",
+          "prompt": "Réécris la phrase avec « By winter » et le futur antérieur.",
+          "answerSpec": { "accepted": ["By winter the builders will have finished the roof"] },
+          "hints": ["by + date : le futur antérieur s'impose."]
+        },
+        {
+          "type": "spot_error",
+          "source": "By next month I will finished the course.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": {
+            "accepted": [
+              "By next month I will have finished the course",
+              "By next month I'll have finished the course"
+            ]
+          },
+          "hints": ["Il manque have entre will et le participe passé."]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Don't ring at eight — we ___ the children to bed.",
+          "answerSpec": { "accepted": ["'ll be putting"] },
+          "distractors": ["'ll put", "'ll have put", "put"],
+          "hints": ["Action en plein déroulement à ce moment-là."]
+        }
+      ]
+    },
+
+    {
+      "id": "u025-a",
+      "topicId": "u025",
+      "tags": ["subordonnee-de-temps", "if", "when"],
+      "fields": {
+        "regle": "Après when, as soon as, until, before, if : jamais will. On emploie le présent, ou le present perfect si l'antériorité compte."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Je t'appellerai quand j'arriverai. »",
+          "answerSpec": { "accepted": ["I'll call you when I arrive", "I will call you when I arrive"] },
+          "hints": ["Après when, le présent suffit à dire l'avenir."]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Nous partirons dès que tu seras prêt. »",
+          "answerSpec": {
+            "accepted": [
+              "We'll leave as soon as you're ready",
+              "We will leave as soon as you are ready"
+            ]
+          },
+          "hints": ["as soon as fonctionne comme when : présent."]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : « S'il pleut demain, nous resterons à la maison. »",
+          "answerSpec": {
+            "accepted": [
+              "If it rains tomorrow, we'll stay at home",
+              "If it rains tomorrow, we will stay at home"
+            ]
+          },
+          "hints": ["Après if, présent dans la condition, will dans le résultat."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Wait here until the rain ___ . (stop)",
+          "answerSpec": { "accepted": ["stops"] },
+          "hints": ["Après until, présent simple."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "I'll lend you the book when I ___ it. (finish)",
+          "answerSpec": { "accepted": ["have finished", "'ve finished", "finish"] },
+          "hints": ["Le present perfect insiste sur l'action achevée d'abord."]
+        },
+        {
+          "type": "transform",
+          "source": "First I will read the contract. Then I will sign it.",
+          "prompt": "Fais-en une seule phrase commençant par « I'll sign the contract when ».",
+          "answerSpec": {
+            "accepted": [
+              "I'll sign the contract when I have read it",
+              "I'll sign the contract when I've read it"
+            ]
+          },
+          "hints": ["L'action antérieure passe au present perfect, sans will."]
+        },
+        {
+          "type": "spot_error",
+          "source": "I'll text you when I will get home.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": { "accepted": ["I'll text you when I get home"] },
+          "hints": ["Jamais will dans une subordonnée de temps."]
+        },
+        {
+          "type": "mcq",
+          "prompt": "We'll start the film as soon as everyone ___ .",
+          "answerSpec": { "accepted": ["arrives"] },
+          "distractors": ["will arrive", "is arriving", "would arrive"],
+          "hints": ["Après as soon as, présent simple."]
+        }
+      ]
+    }
+  ]
 }
