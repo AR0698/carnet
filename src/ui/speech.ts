@@ -7,8 +7,12 @@
  * marche hors ligne, ça ne pèse rien dans le bundle, et rien ne sort du
  * téléphone.
  *
- * La prononciation est un extra : le bouton disparaît là où l'API n'existe
- * pas, et rien d'autre ne bouge.
+ * Tout le travail délicat tient dans le choix de la voix. Régler `lang` sur
+ * l'énoncé ne suffit pas : iOS ignore ce champ et lit avec la voix par défaut
+ * du système — un iPhone en français lit alors l'anglais avec l'accent
+ * français. Il faut donc désigner une voix explicitement, et pour cela avoir
+ * la liste du système sous la main, ce qui n'est vrai ni au chargement, ni
+ * forcément au premier appel.
  */
 
 import { el } from './dom';
@@ -16,27 +20,71 @@ import { el } from './dom';
 /** Un peu en dessous du débit normal : on écoute pour reproduire, pas pour aller vite. */
 const RATE = 0.9;
 
+/**
+ * Instants (en ms après le démarrage) où l'on retente de lire la liste des
+ * voix. `voiceschanged` suffit sur Chrome et Firefox ; iOS ne l'émet pas
+ * toujours, d'où ces quelques relances — trois lectures d'un tableau déjà en
+ * mémoire, le coût est nul.
+ */
+const VOICE_RETRIES_MS = [250, 1_000, 3_000];
+
+let voices: SpeechSynthesisVoice[] = [];
+
 export function speechSupported(): boolean {
   return typeof window !== 'undefined' && 'speechSynthesis' in window;
 }
 
-/**
- * La liste des voix arrive de façon asynchrone sur certains navigateurs : ce
- * premier appel, fait au démarrage, l'amorce pour que la première lecture ne
- * tombe pas sur une liste vide.
- */
-export function warmVoices(): void {
-  if (speechSupported()) window.speechSynthesis.getVoices();
+function refreshVoices(): void {
+  if (!speechSupported()) return;
+  const found = window.speechSynthesis.getVoices();
+  if (found.length > 0) voices = found;
 }
 
+/**
+ * Le moteur vocal d'iOS reste endormi tant qu'aucun geste ne l'a réveillé, et
+ * tant qu'il dort il ne publie pas ses voix. On l'ouvre donc au premier appui
+ * venu, avec un énoncé muet : au moment où l'apprenante appuiera sur
+ * « Écouter », la liste sera là et la bonne voix avec.
+ */
+function unlockOnFirstGesture(): void {
+  const unlock = (): void => {
+    const silent = new SpeechSynthesisUtterance(' ');
+    silent.volume = 0;
+    window.speechSynthesis.speak(silent);
+    refreshVoices();
+  };
+  document.addEventListener('pointerdown', unlock, { once: true });
+}
+
+/** À appeler une fois au démarrage. */
+export function warmVoices(): void {
+  if (!speechSupported()) return;
+  refreshVoices();
+  window.speechSynthesis.addEventListener('voiceschanged', refreshVoices);
+  for (const delay of VOICE_RETRIES_MS) window.setTimeout(refreshVoices, delay);
+  unlockOnFirstGesture();
+}
+
+const normalise = (tag: string) => tag.toLowerCase().replace('_', '-');
+
+/**
+ * La meilleure voix disponible pour une langue, par ordre de préférence :
+ * la variante exacte (`en-GB`) avant une autre variante de la même langue
+ * (`en-US`), puis une voix embarquée avant une voix distante — celle-ci ne
+ * dirait rien sans réseau, ce qui ruinerait le hors-ligne.
+ */
 function voiceFor(lang: string): SpeechSynthesisVoice | undefined {
-  const wanted = lang.toLowerCase().replace('_', '-');
+  if (voices.length === 0) refreshVoices();
+
+  const wanted = normalise(lang);
   const base = wanted.split('-')[0]!;
-  const voices = window.speechSynthesis.getVoices();
-  return (
-    voices.find((v) => v.lang.toLowerCase().replace('_', '-') === wanted) ??
-    voices.find((v) => v.lang.toLowerCase().startsWith(base))
-  );
+  const candidates = voices.filter((v) => normalise(v.lang).startsWith(base));
+  if (candidates.length === 0) return undefined;
+
+  const score = (v: SpeechSynthesisVoice) =>
+    (normalise(v.lang) === wanted ? 4 : 0) + (v.localService ? 2 : 0) + (v.default ? 1 : 0);
+
+  return candidates.reduce((best, v) => (score(v) > score(best) ? v : best));
 }
 
 /**
@@ -55,8 +103,7 @@ export function speak(text: string, lang: string): void {
   const utterance = new SpeechSynthesisUtterance(text);
   utterance.lang = lang;
   utterance.rate = RATE;
-  // Sans voix explicite, le navigateur choisit à partir de `lang` seul —
-  // souvent bien, parfois avec l'accent de la langue système.
+  // Sans voix désignée, iOS lit avec celle du système, quoi qu'en dise `lang`.
   const voice = voiceFor(lang);
   if (voice) utterance.voice = voice;
 
