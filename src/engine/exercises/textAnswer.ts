@@ -45,9 +45,15 @@ export function gradeFreeText(exercise: Exercise, userInput: string): GradeResul
 }
 
 function handleFor(field: HTMLInputElement | HTMLTextAreaElement): ExerciseHandle {
+  // Le premier caractère marque la fin de la récupération en mémoire : ce qui
+  // suit n'est plus du rappel, c'est de la frappe.
+  let firstInput: number | undefined;
+  field.addEventListener('input', () => (firstInput = performance.now()), { once: true });
+
   return {
     getValue: () => field.value,
     focus: () => field.focus(),
+    firstInputAt: () => firstInput,
     lock: () => {
       field.readOnly = true;
       field.setAttribute('aria-readonly', 'true');

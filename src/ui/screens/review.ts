@@ -1,6 +1,6 @@
 import { carnetOf } from '../../carnets';
 import type { AnswerDiff, DiffToken } from '../../engine/diff';
-import { rendererFor, renderStatement } from '../../engine/exercises';
+import { rendererFor, renderStatement, type ExerciseHandle } from '../../engine/exercises';
 import { canonicalAnswer, otherAnswers } from '../../engine/grading';
 import { formatDelay } from '../../engine/scheduler';
 import { recordAnswer, type Session } from '../../engine/session';
@@ -77,6 +77,10 @@ export function renderReview(ctx: Ctx, session: Session): void {
 
     const startedAt = performance.now();
     let usedHint = false;
+    // Posée au niveau de la carte pour que `commit()` puisse lire la latence de
+    // rappel. Reste indéfinie en mode cahier : là, il n'y a rien à saisir et
+    // c'est le jugement déclaré qui note.
+    let handle: ExerciseHandle | undefined;
 
     // --- barre de session ---
     const bar = el('div', { class: 'session-bar' }, [
@@ -138,11 +142,13 @@ export function renderReview(ctx: Ctx, session: Session): void {
      * même FSRS, même porte de graduation.
      */
     async function commit(judgement: SelfJudgement, verdict: HTMLElement): Promise<void> {
+      const firstInput = handle?.firstInputAt();
       const outcome = await recordAnswer(card.card, {
         correct: judgement.correct,
         effort: judgement.effort,
         usedHint,
         elapsedMs: performance.now() - startedAt,
+        recallMs: firstInput === undefined ? undefined : firstInput - startedAt,
         interleaved: session.interleaved,
         rescue: card.rescue,
       });
@@ -173,24 +179,25 @@ export function renderReview(ctx: Ctx, session: Session): void {
     // --- mode écran : on tape, l'application corrige ---
     function screenCard(): void {
       const renderer = rendererFor(card.exercise.type);
-      const handle = renderer.render(card.exercise, body);
+      const input = renderer.render(card.exercise, body);
+      handle = input;
       let locked = false;
 
       const primary = el('button', { class: 'btn btn--primary', type: 'button' }, ['Vérifier']);
       actions.append(primary);
-      addHintButton(() => handle.focus());
+      addHintButton(() => input.focus());
 
       const submit = async (): Promise<void> => {
         if (locked) return;
-        const value = handle.getValue();
+        const value = input.getValue();
         if (value.trim().length === 0) {
-          handle.focus();
+          input.focus();
           return;
         }
 
         locked = true;
         primary.disabled = true;
-        handle.lock();
+        input.lock();
 
         const result = renderer.grade(card.exercise, value);
         await commit(
@@ -207,8 +214,8 @@ export function renderReview(ctx: Ctx, session: Session): void {
       };
 
       primary.addEventListener('click', () => void submit());
-      handle.onSubmit(() => void submit());
-      handle.focus();
+      input.onSubmit(() => void submit());
+      input.focus();
     }
 
     // --- mode cahier : on écrit à la main, puis on se corrige ---

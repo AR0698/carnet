@@ -32,6 +32,8 @@ function render(exercise: Exercise, container: HTMLElement): ExerciseHandle {
   let selected: string | null = null;
   let submit: (() => void) | null = null;
   let locked = false;
+  // Ici rien ne se tape : le premier choix *est* la fin de la délibération.
+  let firstChoice: number | undefined;
 
   const buttons: HTMLButtonElement[] = [];
   const list = el('div', { class: 'mcq' });
@@ -40,6 +42,7 @@ function render(exercise: Exercise, container: HTMLElement): ExerciseHandle {
     const button = el('button', { class: 'mcq__option', type: 'button', lang: 'en' }, [option]);
     button.addEventListener('click', () => {
       if (locked) return;
+      firstChoice ??= performance.now();
       selected = option;
       for (const b of buttons) b.setAttribute('aria-pressed', String(b === button));
     });
@@ -58,6 +61,7 @@ function render(exercise: Exercise, container: HTMLElement): ExerciseHandle {
   return {
     getValue: () => selected ?? '',
     focus: () => buttons[0]?.focus(),
+    firstInputAt: () => firstChoice,
     lock: () => {
       locked = true;
       for (const b of buttons) b.disabled = true;

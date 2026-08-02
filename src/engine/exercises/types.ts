@@ -25,6 +25,17 @@ export interface ExerciseHandle {
   lock(): void;
   /** Valider au clavier (Entrée) sans passer par le bouton. */
   onSubmit(cb: () => void): void;
+  /**
+   * Instant (`performance.now()`) du premier geste de réponse : la première
+   * frappe, ou le premier choix pour un exercice à propositions.
+   *
+   * C'est de là que se déduit le temps de *récupération*, seul intéressant pour
+   * noter la carte. Le temps total, lui, contient la dactylographie : mesuré sur
+   * le contenu, il rendait la mention « facile » inatteignable pour 69 % des
+   * cartes — non parce que le souvenir manquait, mais parce que la réponse était
+   * longue à taper. Vaut `undefined` si rien n'a été saisi.
+   */
+  firstInputAt(): number | undefined;
 }
 
 /**
