@@ -143,6 +143,35 @@ export async function packCards(packId: string): Promise<CardRecord[]> {
   return db.cards.where('packId').equals(packId).toArray();
 }
 
+/** Toutes les cartes, tous carnets confondus. */
+export async function allCards(): Promise<CardRecord[]> {
+  return db.cards.toArray();
+}
+
+/**
+ * Remet une carte à l'état neuf.
+ *
+ * Le recours des cartes qui ne rentrent pas : après une dizaine de rechutes,
+ * l'état FSRS ne décrit plus une mémoire mais une série d'échecs, et la carte
+ * revient sans fin à un jour d'intervalle. Repartir de zéro rouvre la porte de
+ * graduation et lui redonne une chance d'être apprise autrement.
+ *
+ * Le journal des réponses n'est pas touché : ce qui a eu lieu a eu lieu, et les
+ * statistiques doivent continuer de le dire.
+ */
+export async function resetCard(cardId: string, now = new Date()): Promise<void> {
+  const card = await db.cards.get(cardId);
+  if (!card) return;
+  await db.cards.put({
+    ...card,
+    ...createEmptyCard(now),
+    spacedSuccesses: 0,
+    lastSuccessDay: null,
+    interleavedSuccess: false,
+    consecutiveFailures: 0,
+  });
+}
+
 export interface PackCounts {
   total: number;
   due: number;

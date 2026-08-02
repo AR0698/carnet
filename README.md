@@ -143,6 +143,37 @@ entendue s'installe aussi bien qu'une forme correcte.
 
 Là où l'API n'existe pas, le bouton n'apparaît pas et rien d'autre ne change.
 
+## Où ça coince
+
+Le journal des réponses enregistrait depuis le premier jour la carte, la note,
+la justesse et la durée — et n'était jamais relu. C'est pourtant exactement la
+matière qui répond à « je fais des fautes quelque part, mais où ? ».
+
+L'écran montre trois choses : les notions qui résistent, celles qui tiennent, et
+les cartes qui ne rentrent décidément pas. Deux garde-fous le rendent honnête :
+
+- **Quatre réponses minimum** avant de juger une notion. Trois réponses ne
+  distinguent pas une lacune d'un mauvais jour.
+- **La tendance avant le taux.** Une notion à 55 % qui est passée de 20 à 90 %
+  n'est pas un point faible, c'est l'inverse. Sans cette lecture en deux moitiés
+  chronologiques, l'écran désignerait comme fragiles les notions justement en
+  train d'être acquises.
+
+**Il n'y a délibérément aucun bouton « travailler cette notion ».** Filtrer une
+session sur une notion unique, c'est de la pratique en bloc — exactement ce que
+l'accueil dit combattre. Le planificateur fait déjà le travail : une carte ratée
+revient plus tôt et plus souvent, donc une notion faible occupe naturellement la
+file. Ce qui manquait n'était pas le mécanisme, c'était la confiance dans le
+mécanisme.
+
+Ce qui appartient en revanche à l'apprenante, c'est **l'ordre dans lequel le
+neuf s'ouvre** — pas l'ordre des révisions.
+
+**Les cartes-sangsues.** Au-delà de quatre rechutes, l'état FSRS ne décrit plus
+une mémoire mais une série d'échecs, et la carte revient sans fin à un jour
+d'intervalle. `resetCard` la remet à neuf et rouvre la porte de graduation ; le
+journal, lui, est conservé — ce qui a eu lieu a eu lieu.
+
 ## Sauvegarde
 
 Les packs se retéléchargent ; les mots de Discovery, non. C'est la seule donnée
@@ -223,6 +254,7 @@ src/
   engine/
     scheduler.ts        enveloppe ts-fsrs + porte de graduation
     grading.ts          correction normalisée (tolérante sur la forme, stricte sur le sens)
+    insights.ts         agrégation du journal : notions fragiles, cartes-sangsues
     session.ts          composition de la session, quota de nouveautés, persistance
     exercises/          un fichier par type d'exercice + registre
   storage/
@@ -230,6 +262,7 @@ src/
     cards.ts            synchronisation pack → cartes, requêtes de sélection
     vocab.ts            carnet Discovery : stockage et vue « pack »
     backup.ts           export / import de sauvegarde
+    disputes.ts         formulations refusées à tort, à porter au contenu
     prefs.ts            réglages de session (mode cahier)
   packs/
     schema.ts           types du pack de contenu
@@ -241,7 +274,7 @@ src/
     art.ts              illustrations vectorielles
     app.css             styles
     speech.ts           lecture à voix haute (speechSynthesis)
-    screens/            accueil, révision, bilan, vocabulaire, sauvegarde
+    screens/            accueil, révision, bilan, vocabulaire, diagnostic, sauvegarde
 content/<pack>/         sources du contenu, une unité par fichier
 public/packs/           packs assemblés, servis en statique
 ```
@@ -372,7 +405,8 @@ le signale et la progression reste intacte.
 | 6. Direction artistique — palette, typographie, illustrations, mouvement | fait |
 | 7. Discovery — vocabulaire saisi à la main | fait |
 | 8. Culture — Bristol | amorcé (6 unités, 18 expressions) |
-| 9. Série hebdomadaire, statistiques | à faire |
+| 9. Diagnostic — notions fragiles, cartes-sangsues, contestations | fait |
+| 10. Série hebdomadaire | à faire |
 
 Deux points restent ouverts côté image : l'aquarelle de couverture, signée
 Zayane, n'est pas embarquée — les illustrations sont des dessins vectoriels

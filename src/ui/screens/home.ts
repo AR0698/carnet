@@ -174,6 +174,9 @@ export async function renderHome(ctx: Ctx): Promise<void> {
     ]);
   }
 
+  const insights = el('button', { class: 'btn btn--link', type: 'button' }, ['Où ça coince']);
+  insights.addEventListener('click', () => void ctx.nav.insights());
+
   const backup = el('button', { class: 'btn btn--link', type: 'button' }, ['Sauvegarder mes données']);
   backup.addEventListener('click', () => void ctx.nav.backup());
 
@@ -222,6 +225,6 @@ export async function renderHome(ctx: Ctx): Promise<void> {
         HOW_IT_WORKS.map((line) => el('li', {}, [line])),
       ),
     ]),
-    el('div', { class: 'footer-actions' }, [backup]),
+    el('div', { class: 'footer-actions' }, [insights, backup]),
   );
 }

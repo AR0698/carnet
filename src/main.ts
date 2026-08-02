@@ -9,13 +9,14 @@ import { requestPersistentStorage } from './storage/persist';
 import { el, mount } from './ui/dom';
 import { renderBackup } from './ui/screens/backup';
 import { renderHome } from './ui/screens/home';
+import { renderInsights } from './ui/screens/insights';
 import { renderReview } from './ui/screens/review';
 import { renderSummary } from './ui/screens/summary';
 import { renderVocab } from './ui/screens/vocab';
 import { warmVoices } from './ui/speech';
 import type { Ctx, Nav } from './ui/types';
 
-type Screen = 'home' | 'review' | 'summary' | 'vocab' | 'backup';
+type Screen = 'home' | 'review' | 'summary' | 'vocab' | 'insights' | 'backup';
 
 async function boot(): Promise<void> {
   const root = document.querySelector<HTMLElement>('#app');
@@ -67,6 +68,10 @@ async function boot(): Promise<void> {
         // doit pouvoir tomber dès la session suivante, sans redémarrage.
         await refreshVocabCarnet(ctx.carnets);
         await renderVocab(ctx, opts ?? {});
+      },
+      async insights() {
+        screen = 'insights';
+        await renderInsights(ctx);
       },
       async backup() {
         screen = 'backup';
