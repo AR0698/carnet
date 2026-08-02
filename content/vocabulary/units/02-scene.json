@@ -1,0 +1,445 @@
+{
+  "group": "La scène",
+  "items": [
+    {
+      "id": "v2-line-up",
+      "topicId": "v002",
+      "tags": [
+        "La scène"
+      ],
+      "fields": {
+        "term": "a line-up",
+        "meaning": "l’affiche, la programmation",
+        "example": "The line-up was only announced two weeks before the night."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « l’affiche, la programmation » ?",
+          "answerSpec": {
+            "accepted": [
+              "a line-up"
+            ]
+          },
+          "hints": [
+            "Ce qui est aligné sur l’affiche, dans l’ordre de passage."
+          ],
+          "pitfalls": [
+            {
+              "answers": [
+                "a setlist"
+              ],
+              "explain": "« Setlist » est la liste des morceaux d’un artiste. « Line-up » est la liste des artistes."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The ___ was only announced two weeks before the night.",
+          "answerSpec": {
+            "accepted": [
+              "line-up"
+            ]
+          },
+          "hints": [
+            "l’affiche, la programmation"
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « l’affiche, la programmation » ?",
+          "answerSpec": {
+            "accepted": [
+              "a line-up"
+            ]
+          },
+          "distractors": [
+            "a playlist",
+            "a running list",
+            "a bill sheet"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v2-headline",
+      "topicId": "v002",
+      "tags": [
+        "La scène"
+      ],
+      "fields": {
+        "term": "to headline",
+        "meaning": "être en tête d’affiche",
+        "example": "Roni Size is headlining at Motion on the Saturday."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « être en tête d’affiche » ?",
+          "answerSpec": {
+            "accepted": [
+              "to headline"
+            ]
+          },
+          "hints": [
+            "Le nom en gros caractères, tout en haut."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Roni Size is ___ at Motion on the Saturday.",
+          "answerSpec": {
+            "accepted": [
+              "headlining"
+            ]
+          },
+          "hints": [
+            "être en tête d’affiche"
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « être en tête d’affiche » ?",
+          "answerSpec": {
+            "accepted": [
+              "to headline"
+            ]
+          },
+          "distractors": [
+            "to top",
+            "to lead off",
+            "to open"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v2-warm-up",
+      "topicId": "v002",
+      "tags": [
+        "La scène"
+      ],
+      "fields": {
+        "term": "a warm-up set",
+        "meaning": "le set d’ouverture",
+        "example": "Playing a warm-up set is an art: you build the room, you do not empty it."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « le set d’ouverture » ?",
+          "answerSpec": {
+            "accepted": [
+              "a warm-up set"
+            ]
+          },
+          "hints": [
+            "Réchauffer la salle avant l’artiste principal."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Playing a ___ is an art: you build the room, you do not empty it.",
+          "answerSpec": {
+            "accepted": [
+              "warm-up set"
+            ]
+          },
+          "hints": [
+            "le set d’ouverture"
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « le set d’ouverture » ?",
+          "answerSpec": {
+            "accepted": [
+              "a warm-up set"
+            ]
+          },
+          "distractors": [
+            "a first set",
+            "a cold set",
+            "a starter set"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v2-residency",
+      "topicId": "v002",
+      "tags": [
+        "La scène"
+      ],
+      "fields": {
+        "term": "a residency",
+        "meaning": "une série de dates régulières dans un même lieu",
+        "example": "She has had a monthly residency at the Thekla since March."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « une série de dates régulières dans un même lieu » ?",
+          "answerSpec": {
+            "accepted": [
+              "a residency"
+            ]
+          },
+          "hints": [
+            "Un rendez-vous qui revient, toujours au même endroit."
+          ],
+          "pitfalls": [
+            {
+              "answers": [
+                "a residence"
+              ],
+              "explain": "« Residence » est un logement. Pour une série de dates dans un club, c’est « residency »."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "She has had a monthly ___ at the Thekla since March.",
+          "answerSpec": {
+            "accepted": [
+              "residency"
+            ]
+          },
+          "hints": [
+            "une série de dates régulières dans un même lieu"
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « une série de dates régulières dans un même lieu » ?",
+          "answerSpec": {
+            "accepted": [
+              "a residency"
+            ]
+          },
+          "distractors": [
+            "a season",
+            "a tenancy",
+            "a booking run"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v2-dubplate",
+      "topicId": "v002",
+      "tags": [
+        "La scène"
+      ],
+      "fields": {
+        "term": "a dubplate",
+        "meaning": "un acétate exclusif",
+        "example": "He came back from Kingston with a bag of dubplates nobody else had."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « un acétate exclusif » ?",
+          "answerSpec": {
+            "accepted": [
+              "a dubplate"
+            ]
+          },
+          "hints": [
+            "Gravé en un seul exemplaire pour une sono, hérité de la Jamaïque."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "He came back from Kingston with a bag of ___ nobody else had.",
+          "answerSpec": {
+            "accepted": [
+              "dubplates"
+            ]
+          },
+          "hints": [
+            "un acétate exclusif"
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « un acétate exclusif » ?",
+          "answerSpec": {
+            "accepted": [
+              "a dubplate"
+            ]
+          },
+          "distractors": [
+            "a bootleg",
+            "a white label",
+            "a test press"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v2-sound-clash",
+      "topicId": "v002",
+      "tags": [
+        "La scène"
+      ],
+      "fields": {
+        "term": "a sound clash",
+        "meaning": "un affrontement de sound systems",
+        "example": "The sound clash ran until four, and nobody agreed on who won."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « un affrontement de sound systems » ?",
+          "answerSpec": {
+            "accepted": [
+              "a sound clash"
+            ]
+          },
+          "hints": [
+            "Deux sonos, deux sélections, une salle qui tranche."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The ___ ran until four, and nobody agreed on who won.",
+          "answerSpec": {
+            "accepted": [
+              "sound clash"
+            ]
+          },
+          "hints": [
+            "un affrontement de sound systems"
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « un affrontement de sound systems » ?",
+          "answerSpec": {
+            "accepted": [
+              "a sound clash"
+            ]
+          },
+          "distractors": [
+            "a battle",
+            "a face-off",
+            "a sound fight"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v2-low-end",
+      "topicId": "v002",
+      "tags": [
+        "La scène"
+      ],
+      "fields": {
+        "term": "the low end",
+        "meaning": "les basses",
+        "example": "Bristol built its reputation on the low end — you feel it before you hear it."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « les basses » ?",
+          "answerSpec": {
+            "accepted": [
+              "the low end"
+            ]
+          },
+          "hints": [
+            "Le bas du spectre sonore."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Bristol built its reputation on the ___ — you feel it before you hear it.",
+          "answerSpec": {
+            "accepted": [
+              "low end"
+            ]
+          },
+          "hints": [
+            "les basses"
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « les basses » ?",
+          "answerSpec": {
+            "accepted": [
+              "the low end"
+            ]
+          },
+          "distractors": [
+            "the deep end",
+            "the bottom line",
+            "the low key"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v2-promoter",
+      "topicId": "v002",
+      "tags": [
+        "La scène"
+      ],
+      "fields": {
+        "term": "a promoter",
+        "meaning": "un organisateur de soirées",
+        "example": "Talk to the promoter, not the venue, if you want a slot."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « un organisateur de soirées » ?",
+          "answerSpec": {
+            "accepted": [
+              "a promoter"
+            ]
+          },
+          "hints": [
+            "Celui qui monte la soirée, réserve les artistes et prend le risque."
+          ],
+          "pitfalls": [
+            {
+              "answers": [
+                "a producer"
+              ],
+              "explain": "« Producer » fabrique la musique. « Promoter » monte la soirée et paie la salle."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Talk to the ___, not the venue, if you want a slot.",
+          "answerSpec": {
+            "accepted": [
+              "promoter"
+            ]
+          },
+          "hints": [
+            "un organisateur de soirées"
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « un organisateur de soirées » ?",
+          "answerSpec": {
+            "accepted": [
+              "a promoter"
+            ]
+          },
+          "distractors": [
+            "an organiser",
+            "a booker",
+            "a host"
+          ]
+        }
+      ]
+    }
+  ]
+}

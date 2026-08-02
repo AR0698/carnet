@@ -1,0 +1,429 @@
+{
+  "group": "Le pub et la table",
+  "items": [
+    {
+      "id": "v4-round",
+      "topicId": "v004",
+      "tags": [
+        "Le pub et la table"
+      ],
+      "fields": {
+        "term": "a round",
+        "meaning": "une tournée",
+        "example": "It is your round — four pints and a lime and soda."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « une tournée » ?",
+          "answerSpec": {
+            "accepted": [
+              "a round"
+            ]
+          },
+          "hints": [
+            "Le tour de table : chacun paie pour tous, à son tour."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "It is your ___ — four pints and a lime and soda.",
+          "answerSpec": {
+            "accepted": [
+              "round"
+            ]
+          },
+          "hints": [
+            "une tournée"
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « une tournée » ?",
+          "answerSpec": {
+            "accepted": [
+              "a round"
+            ]
+          },
+          "distractors": [
+            "a turn",
+            "a shout",
+            "a set"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v4-last-orders",
+      "topicId": "v004",
+      "tags": [
+        "Le pub et la table"
+      ],
+      "fields": {
+        "term": "last orders",
+        "meaning": "dernières commandes",
+        "example": "Last orders is at eleven, and they mean it."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « dernières commandes » ?",
+          "answerSpec": {
+            "accepted": [
+              "last orders"
+            ]
+          },
+          "hints": [
+            "La cloche sonne, on commande une dernière fois."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "___ is at eleven, and they mean it.",
+          "answerSpec": {
+            "accepted": [
+              "Last orders"
+            ]
+          },
+          "hints": [
+            "dernières commandes"
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « dernières commandes » ?",
+          "answerSpec": {
+            "accepted": [
+              "last orders"
+            ]
+          },
+          "distractors": [
+            "final orders",
+            "closing call",
+            "end orders"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v4-cider",
+      "topicId": "v004",
+      "tags": [
+        "Le pub et la table"
+      ],
+      "fields": {
+        "term": "a pint of cider",
+        "meaning": "une pinte de cidre",
+        "example": "Ask for a pint of cider in Somerset and you will be taken seriously."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « une pinte de cidre » ?",
+          "answerSpec": {
+            "accepted": [
+              "a pint of cider"
+            ]
+          },
+          "hints": [
+            "L’ouest anglais en boit plus que de bière."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Ask for ___ in Somerset and you will be taken seriously.",
+          "answerSpec": {
+            "accepted": [
+              "a pint of cider"
+            ]
+          },
+          "hints": [
+            "une pinte de cidre"
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « une pinte de cidre » ?",
+          "answerSpec": {
+            "accepted": [
+              "a pint of cider"
+            ]
+          },
+          "distractors": [
+            "a glass of cider",
+            "a cider pint",
+            "a mug of cider"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v4-next-one-in",
+      "topicId": "v004",
+      "tags": [
+        "Le pub et la table"
+      ],
+      "fields": {
+        "term": "to get the next one in",
+        "meaning": "payer la tournée suivante",
+        "example": "Sit down, I will get the next one in."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « payer la tournée suivante » ?",
+          "answerSpec": {
+            "accepted": [
+              "to get the next one in"
+            ]
+          },
+          "hints": [
+            "La formule exacte pour reprendre la main sur la tournée."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Sit down, I will ___.",
+          "answerSpec": {
+            "accepted": [
+              "get the next one in"
+            ]
+          },
+          "hints": [
+            "payer la tournée suivante"
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « payer la tournée suivante » ?",
+          "answerSpec": {
+            "accepted": [
+              "to get the next one in"
+            ]
+          },
+          "distractors": [
+            "to get the next round out",
+            "to put the next one on",
+            "to take the next one in"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v4-session-beer",
+      "topicId": "v004",
+      "tags": [
+        "Le pub et la table"
+      ],
+      "fields": {
+        "term": "a session beer",
+        "meaning": "une bière légère qu’on boit longtemps",
+        "example": "Four per cent is a session beer; eight per cent is a decision."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « une bière légère qu’on boit longtemps » ?",
+          "answerSpec": {
+            "accepted": [
+              "a session beer"
+            ]
+          },
+          "hints": [
+            "Une « session » est une longue soirée : la bière doit tenir la distance."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Four per cent is a ___; eight per cent is a decision.",
+          "answerSpec": {
+            "accepted": [
+              "session beer"
+            ]
+          },
+          "hints": [
+            "une bière légère qu’on boit longtemps"
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « une bière légère qu’on boit longtemps » ?",
+          "answerSpec": {
+            "accepted": [
+              "a session beer"
+            ]
+          },
+          "distractors": [
+            "a light beer",
+            "a long beer",
+            "a small beer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v4-crisps",
+      "topicId": "v004",
+      "tags": [
+        "Le pub et la table"
+      ],
+      "fields": {
+        "term": "crisps",
+        "meaning": "les chips de paquet",
+        "example": "Salt and vinegar crisps, and do not let anyone tell you otherwise."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « les chips de paquet » ?",
+          "answerSpec": {
+            "accepted": [
+              "crisps"
+            ]
+          },
+          "hints": [
+            "Faux ami : « chips » désigne les frites."
+          ],
+          "pitfalls": [
+            {
+              "answers": [
+                "chips"
+              ],
+              "explain": "En anglais britannique, « chips » sont les frites. Les chips de paquet sont « crisps »."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Salt and vinegar ___, and do not let anyone tell you otherwise.",
+          "answerSpec": {
+            "accepted": [
+              "crisps"
+            ]
+          },
+          "hints": [
+            "les chips de paquet"
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « les chips de paquet » ?",
+          "answerSpec": {
+            "accepted": [
+              "crisps"
+            ]
+          },
+          "distractors": [
+            "wafers",
+            "snacks",
+            "nibbles"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v4-sunday-roast",
+      "topicId": "v004",
+      "tags": [
+        "Le pub et la table"
+      ],
+      "fields": {
+        "term": "a Sunday roast",
+        "meaning": "le rôti du dimanche",
+        "example": "A proper Sunday roast comes with a Yorkshire pudding, whatever the meat."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « le rôti du dimanche » ?",
+          "answerSpec": {
+            "accepted": [
+              "a Sunday roast"
+            ]
+          },
+          "hints": [
+            "L’institution du dimanche midi, servie jusqu’en milieu d’après-midi."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "A proper ___ comes with a Yorkshire pudding, whatever the meat.",
+          "answerSpec": {
+            "accepted": [
+              "Sunday roast"
+            ]
+          },
+          "hints": [
+            "le rôti du dimanche"
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « le rôti du dimanche » ?",
+          "answerSpec": {
+            "accepted": [
+              "a Sunday roast"
+            ]
+          },
+          "distractors": [
+            "a Sunday grill",
+            "a Sunday dinner",
+            "a roast platter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v4-bevvy",
+      "topicId": "v004",
+      "tags": [
+        "Le pub et la table"
+      ],
+      "fields": {
+        "term": "a bevvy",
+        "meaning": "un verre, une boisson",
+        "example": "Fancy a bevvy after work?"
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « un verre, une boisson » ?",
+          "answerSpec": {
+            "accepted": [
+              "a bevvy"
+            ]
+          },
+          "hints": [
+            "Familier, de « beverage ». S’entend partout dans l’ouest."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Fancy a ___ after work?",
+          "answerSpec": {
+            "accepted": [
+              "bevvy"
+            ]
+          },
+          "hints": [
+            "un verre, une boisson"
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « un verre, une boisson » ?",
+          "answerSpec": {
+            "accepted": [
+              "a bevvy"
+            ]
+          },
+          "distractors": [
+            "a bevy",
+            "a brew",
+            "a swig"
+          ]
+        }
+      ]
+    }
+  ]
+}

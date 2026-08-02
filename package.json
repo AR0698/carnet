@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "npm run pack && tsc && vitest run && vite build",
-    "pack": "node scripts/build-pack.mjs english-grammar && node scripts/build-pack.mjs bristol-culture",
+    "pack": "node scripts/build-pack.mjs english-grammar && node scripts/build-pack.mjs vocabulary && node scripts/build-pack.mjs bristol-culture",
     "test": "vitest run",
     "test:watch": "vitest",
     "typecheck": "tsc --noEmit",

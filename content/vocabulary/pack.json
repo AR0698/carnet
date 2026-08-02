@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "id": "vocabulary",
+    "title": "Vocabulaire",
+    "subject": "Anglais",
+    "version": "0.1.0",
+    "schemaVersion": 1,
+    "locale": "fr-FR",
+    "contentLocale": "en-GB"
+  },
+  "topics": [
+    {
+      "id": "v001",
+      "title": "Tech et IA",
+      "group": "Tech et IA",
+      "order": 1,
+      "prerequisites": []
+    },
+    {
+      "id": "v002",
+      "title": "La scène",
+      "group": "La scène",
+      "order": 2,
+      "prerequisites": []
+    },
+    {
+      "id": "v003",
+      "title": "Bristol au quotidien",
+      "group": "Bristol au quotidien",
+      "order": 3,
+      "prerequisites": []
+    },
+    {
+      "id": "v004",
+      "title": "Le pub et la table",
+      "group": "Le pub et la table",
+      "order": 4,
+      "prerequisites": []
+    }
+  ]
+}
