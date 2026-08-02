@@ -21,6 +21,7 @@ export function renderSummary(ctx: Ctx, result: SessionResult): void {
   mount(
     ctx.root,
     el('header', { class: 'masthead' }, [
+      el('p', { class: 'topic-label' }, [result.carnetLabel]),
       el('h1', {}, [done === 0 ? 'Session interrompue' : 'Session terminée']),
       el('p', { class: 'sub' }, [
         done === 0

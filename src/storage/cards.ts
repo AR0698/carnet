@@ -42,11 +42,32 @@ export interface SyncReport {
   kept: number;
 }
 
+export interface SyncOptions {
+  now?: Date;
+  /**
+   * Retirer les cartes dont l'exercice a disparu du pack.
+   *
+   * Vrai pour les packs téléchargés : leur contenu fait autorité, et une
+   * question supprimée en amont ne doit pas continuer de tomber. Faux pour le
+   * vocabulaire personnel, dont le « pack » est reconstruit à chaque démarrage
+   * depuis IndexedDB : là, un pack vide ne signifie pas que le contenu a
+   * disparu — il peut simplement signifier que la lecture a échoué, et
+   * l'élagage emporterait alors des mois de travail. Ce carnet-là fait son
+   * ménage mot par mot, au moment où on le modifie (`storage/vocab.ts`).
+   */
+  prune?: boolean;
+}
+
 /**
  * Aligne la table `cards` sur le contenu du pack.
  * Idempotent : rejouable à chaque démarrage sans effet de bord.
  */
-export async function syncPackCards(pack: ContentPack, now = new Date()): Promise<SyncReport> {
+export async function syncPackCards(
+  pack: ContentPack,
+  opts: SyncOptions = {},
+): Promise<SyncReport> {
+  const now = opts.now ?? new Date();
+  const prune = opts.prune ?? true;
   const expected = new Map<string, CardRecord>();
   for (const item of pack.items) {
     item.exercises.forEach((exercise, i) => {
@@ -62,7 +83,7 @@ export async function syncPackCards(pack: ContentPack, now = new Date()): Promis
     const existingIds = new Set(existing.map((c) => c.id));
 
     const toCreate = [...expected.values()].filter((c) => !existingIds.has(c.id));
-    const toRemove = existing.filter((c) => !expected.has(c.id)).map((c) => c.id);
+    const toRemove = prune ? existing.filter((c) => !expected.has(c.id)).map((c) => c.id) : [];
 
     if (toCreate.length) await db.cards.bulkAdd(toCreate);
     if (toRemove.length) await db.cards.bulkDelete(toRemove);
@@ -115,6 +136,11 @@ export async function nextDueDate(packId: string, now = new Date()): Promise<Dat
     .toArray();
   const upcoming = rows.filter((c) => c.state !== State.New).map((c) => c.due.getTime());
   return upcoming.length > 0 ? new Date(Math.min(...upcoming)) : null;
+}
+
+/** Toutes les cartes d'un carnet — pour les écrans qui montrent l'état pièce par pièce. */
+export async function packCards(packId: string): Promise<CardRecord[]> {
+  return db.cards.where('packId').equals(packId).toArray();
 }
 
 export interface PackCounts {

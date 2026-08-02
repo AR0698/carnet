@@ -1,3 +1,4 @@
+import { carnetOf } from '../../carnets';
 import type { AnswerDiff, DiffToken } from '../../engine/diff';
 import { rendererFor, renderStatement } from '../../engine/exercises';
 import { canonicalAnswer, otherAnswers } from '../../engine/grading';
@@ -49,12 +50,14 @@ function alternativesLine(alternatives: string[]): HTMLElement | false {
 
 export function renderReview(ctx: Ctx, session: Session): void {
   const answered: AnsweredCard[] = [];
-  const lang = contentLang(ctx.pack);
+  const lang = contentLang(session.pack);
+  const carnetLabel = carnetOf(ctx.carnets, session.pack.meta.id)?.label ?? session.pack.meta.title;
   let index = 0;
 
   function finish(): void {
     stopSpeaking();
     void ctx.nav.summary({
+      carnetLabel,
       minutes: session.requestedMinutes,
       planned: session.cards.length,
       answered,
@@ -110,6 +113,26 @@ export function renderReview(ctx: Ctx, session: Session): void {
     }
 
     /**
+     * Le passage d'où l'exercice est tiré — carnet Culture.
+     *
+     * Il n'apparaît **qu'après** la réponse, jamais avant : le texte contient
+     * la forme attendue, l'afficher d'abord transformerait un rappel en
+     * recopie. Une fois la réponse donnée, en revanche, relire la phrase dans
+     * son contexte est exactement ce qui ancre le mot.
+     */
+    function passageBlock(): HTMLElement | false {
+      const passage = card.item.fields.passage;
+      return (
+        Boolean(passage) &&
+        el('div', { class: 'passage' }, [
+          el('span', { class: 'passage__label' }, ['D’où ça vient']),
+          el('p', { lang: 'en' }, [passage!]),
+          listenButton(passage!, lang),
+        ])
+      );
+    }
+
+    /**
      * Enregistre la réponse, affiche la prochaine échéance, ouvre la carte
      * suivante. Sur ce point les deux modes ne diffèrent pas : même carte,
      * même FSRS, même porte de graduation.
@@ -134,7 +157,7 @@ export function renderReview(ctx: Ctx, session: Session): void {
       verdict.append(
         el('span', { class: 'alt' }, [`On la revoit ${formatDelay(new Date(), outcome.card.due)}.`]),
       );
-      mount(verdictSlot, verdict);
+      mount(verdictSlot, verdict, passageBlock());
 
       const next = el('button', { class: 'btn btn--primary', type: 'button' }, [
         index === session.cards.length - 1 ? 'Terminer' : 'Suivant',

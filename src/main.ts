@@ -1,17 +1,21 @@
 import './ui/app.css';
 
+import { carnetOf, loadCarnets, refreshVocabCarnet } from './carnets';
 import { buildSession } from './engine/session';
-import { loadPack, packUrl, PackValidationError } from './packs';
+import { PackValidationError } from './packs';
 import { initInstallPrompt } from './pwa/install';
-import { initServiceWorker, onServiceWorkerChange, warmRuntimeCache } from './pwa/register';
-import { syncPackCards } from './storage/cards';
+import { initServiceWorker, onServiceWorkerChange } from './pwa/register';
 import { requestPersistentStorage } from './storage/persist';
 import { el, mount } from './ui/dom';
-import { warmVoices } from './ui/speech';
+import { renderBackup } from './ui/screens/backup';
 import { renderHome } from './ui/screens/home';
 import { renderReview } from './ui/screens/review';
 import { renderSummary } from './ui/screens/summary';
+import { renderVocab } from './ui/screens/vocab';
+import { warmVoices } from './ui/speech';
 import type { Ctx, Nav } from './ui/types';
+
+type Screen = 'home' | 'review' | 'summary' | 'vocab' | 'backup';
 
 async function boot(): Promise<void> {
   const root = document.querySelector<HTMLElement>('#app');
@@ -26,25 +30,23 @@ async function boot(): Promise<void> {
   warmVoices();
 
   try {
-    const pack = await loadPack();
-    void warmRuntimeCache(packUrl(pack.meta.id));
+    const { carnets, failures } = await loadCarnets();
 
-    const report = await syncPackCards(pack);
-    console.info(
-      `[carnet] pack ${pack.meta.id}@${pack.meta.version} — ` +
-        `${report.created} carte(s) créée(s), ${report.removed} retirée(s), ${report.kept} conservée(s).`,
-    );
-
-    const ctx = { pack, root } as Ctx;
-    let screen: 'home' | 'review' | 'summary' = 'home';
+    const ctx = { carnets, failures, root } as Ctx;
+    let screen: Screen = 'home';
 
     const nav: Nav = {
       async home() {
         screen = 'home';
         await renderHome(ctx);
       },
-      async startSession(minutes, mode) {
-        const session = await buildSession(pack, minutes, { mode });
+      async startSession(packId, minutes, mode) {
+        const carnet = carnetOf(ctx.carnets, packId);
+        if (!carnet) {
+          await nav.home();
+          return;
+        }
+        const session = await buildSession(carnet.pack, minutes, { mode });
         if (session.cards.length === 0) {
           await nav.home();
           return;
@@ -58,6 +60,17 @@ async function boot(): Promise<void> {
         // Une session menée à son terme : le moment où le navigateur est le
         // plus enclin à accorder un stockage durable (§5).
         if (result.answered.length > 0) void requestPersistentStorage();
+      },
+      async vocab(opts) {
+        screen = 'vocab';
+        // Le pack personnel est reconstruit à chaque passage : un mot ajouté
+        // doit pouvoir tomber dès la session suivante, sans redémarrage.
+        await refreshVocabCarnet(ctx.carnets);
+        await renderVocab(ctx, opts ?? {});
+      },
+      async backup() {
+        screen = 'backup';
+        await renderBackup(ctx);
       },
     };
     ctx.nav = nav;
@@ -85,7 +98,7 @@ function renderError(root: HTMLElement, error: unknown): void {
   mount(
     root,
     el('header', { class: 'masthead' }, [
-      el('h1', {}, ['Le contenu n’a pas pu être chargé']),
+      el('h1', {}, ['Aucun carnet n’a pu être ouvert']),
       el('p', { class: 'sub' }, ['La progression enregistrée n’est pas affectée.']),
     ]),
     el('section', { class: 'card' }, [el('p', { class: 'error' }, [detail])]),

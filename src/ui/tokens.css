@@ -1,34 +1,61 @@
 /**
- * Design tokens — §6 du brief.
+ * Design tokens — la direction artistique tient entière dans ce fichier.
  * Seule source de vérité pour les couleurs et les rythmes.
  * Aucune valeur brute (#hex, px arbitraire) ailleurs dans les feuilles de style.
+ *
+ * La palette est relevée sur l'aquarelle de couverture et sur les photos du
+ * voyage : le papier grainé et l'encre chaude du dessin, le bleu pétrole du
+ * tourne-disque, le jaune des montgolfières, la brique de Stokes Croft, le vert
+ * des parcs, la pierre de Bath des façades. Rien d'inventé, rien de « bleu
+ * générique » — chaque teinte vient de quelque part.
+ *
+ * Les noms disent le rôle *et* l'origine : `--harbour` porte les actions,
+ * `--brick` les erreurs, `--park` les réussites, `--balloon` les mises en garde.
  */
 
 :root {
   /* --- palette --- */
-  --paper: #f7f8f5;
-  --ink: #21252c;
-  --iris: #5b4fe8;
-  --growth: #2f9e5b;
-  --grid: #e3eee1;
-  --margin: #e8574a;
-  --marigold: #fbecc7;
-  --marigold-text: #8a6a1e;
+  /* papier aquarelle, légèrement chaud — jamais du blanc d'écran */
+  --paper: #fbf8f1;
+  /* encre brune plutôt que noir pur : c'est celle d'un stylo, pas d'un terminal */
+  --ink: #2b2521;
+  /* bleu du port, sous la pluie : porte tous les gestes principaux */
+  --harbour: #2f6076;
+  /* les parcs — St Andrew's, Brandon Hill : ce qui a poussé, ce qui est acquis */
+  --park: #5c8a3f;
+  /* lavis pâle, vert d'eau : les aplats qui ne demandent rien */
+  --wash: #e4eadf;
+  /* brique de Stokes Croft : la faute, la marge, ce qui accroche l'œil */
+  --brick: #b4453a;
+  /* montgolfières au petit matin : l'indice, l'avertissement doux */
+  --balloon: #f8e5bb;
+  --balloon-text: #7d5717;
   --card: #ffffff;
-  --border-soft: #e2e4dd;
+  --border-soft: #e8e1d3;
+
+  /* --- teintes d'illustration ---
+     Réservées aux dessins de `ui/art.ts`. Elles n'habillent aucun contrôle :
+     une couleur qui ne sert qu'au décor ne doit jamais porter de sens. */
+  --sky: #bfd9e6;
+  --stone: #e6d8bc;
+  --terracotta: #cd6b41;
+  --indigo: #58497f;
+  --gorge: #8aa37e;
+  --amber: #e8a93b;
 
   /* --- dérivés (opacités et états, jamais de nouvelle teinte) --- */
   --ink-soft: color-mix(in srgb, var(--ink) 62%, var(--paper));
   --ink-faint: color-mix(in srgb, var(--ink) 38%, var(--paper));
-  --iris-soft: color-mix(in srgb, var(--iris) 12%, var(--paper));
-  --growth-soft: color-mix(in srgb, var(--growth) 12%, var(--paper));
-  --margin-soft: color-mix(in srgb, var(--margin) 10%, var(--paper));
+  --harbour-soft: color-mix(in srgb, var(--harbour) 12%, var(--paper));
+  --park-soft: color-mix(in srgb, var(--park) 12%, var(--paper));
+  --brick-soft: color-mix(in srgb, var(--brick) 10%, var(--paper));
 
   /* --- typographie ---
-     Les familles web (Bricolage Grotesque, Inter, Kalam) sont posées à
-     l'étape 5 ; la pile système sert de doublure jusque-là. */
-  --font-display: 'Bricolage Grotesque', ui-sans-serif, system-ui, sans-serif;
-  --font-body: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+     Bricolage Grotesque pour les titres — une grotesque un peu bancale, qui a
+     la main du dessin. Inter pour lire. Kalam pour ce qui est écrit à la main :
+     légendes de l'illustration, mots du carnet personnel. */
+  --font-display: 'Bricolage Grotesque Variable', 'Bricolage Grotesque', ui-sans-serif, system-ui, sans-serif;
+  --font-body: 'Inter Variable', 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
   --font-hand: 'Kalam', ui-rounded, cursive;
 
   --text-xs: 0.8125rem;
@@ -37,6 +64,7 @@
   --text-lg: 1.25rem;
   --text-xl: 1.5rem;
   --text-2xl: 1.875rem;
+  --text-3xl: 2.5rem;
 
   /* --- rythme --- */
   --space-1: 0.25rem;
@@ -54,18 +82,29 @@
   /* --- élévation (discrète : le papier n'a pas d'ombre portée) --- */
   --shadow-card: 0 1px 2px color-mix(in srgb, var(--ink) 6%, transparent);
 
-  /* --- mouvement --- */
+  /* --- mouvement ---
+     `--dur-wash` est la seule durée longue : c'est le temps qu'un lavis met à
+     se diffuser. Tout le reste est bref, sous peine de sembler poussif. */
   --ease: cubic-bezier(0.2, 0, 0.2, 1);
+  /* sortie molle, comme un pinceau qu'on relève */
+  --ease-wash: cubic-bezier(0.16, 0.8, 0.3, 1);
   --dur-fast: 150ms;
   --dur: 200ms;
+  --dur-wash: 620ms;
+  --dur-drift: 26s;
 
-  /* --- filigrane cahier (posé à l'étape 5) --- */
-  --seyes-step: 24px;
+  /* --- grain du papier ---
+     Le filigrane de cahier d'écolier (lignes Seyès) appartenait au carnet
+     français. Ici c'est du papier à grain : une texture, pas un quadrillage. */
+  --grain-opacity: 0.5;
 }
 
 @media (prefers-reduced-motion: reduce) {
   :root {
     --dur-fast: 0ms;
     --dur: 0ms;
+    --dur-wash: 0ms;
+    /* La dérive des montgolfières est décorative : elle s'arrête net. */
+    --dur-drift: 0s;
   }
 }

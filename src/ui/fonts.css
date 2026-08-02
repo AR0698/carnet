@@ -1,0 +1,48 @@
+/**
+ * Polices auto-hébergées — sous-ensemble latin uniquement.
+ *
+ * Pas de Google Fonts : une application qui doit s'ouvrir en mode avion ne peut
+ * pas dépendre d'un domaine tiers, et rien ne doit sortir du téléphone.
+ *
+ * Les paquets `@fontsource` livrent aussi le cyrillique, le grec, le
+ * vietnamien et le latin étendu. Importer leur feuille complète ferait entrer
+ * une douzaine de `.woff2` dans le dossier de sortie — donc dans le précache du
+ * service worker, qui ramasse tous les `.woff2` — pour des alphabets qu'aucun
+ * des trois carnets n'écrira jamais. On déclare donc les faces à la main, une
+ * par famille, en ne pointant que le fichier latin.
+ *
+ * La plage retenue couvre le français et l'anglais : Latin-1 complet, plus les
+ * ligatures Œ/œ, les guillemets et tirets typographiques, et l'euro.
+ */
+
+@font-face {
+  font-family: 'Bricolage Grotesque Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 200 800;
+  src: url('@fontsource-variable/bricolage-grotesque/files/bricolage-grotesque-latin-wght-normal.woff2')
+    format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+2000-206F, U+20AC, U+2122, U+2212;
+}
+
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url('@fontsource-variable/inter/files/inter-latin-wght-normal.woff2')
+    format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+2000-206F, U+20AC, U+2122, U+2212;
+}
+
+/* Kalam n'est pas variable : un seul graisse, celle qu'on écrit. */
+@font-face {
+  font-family: 'Kalam';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url('@fontsource/kalam/files/kalam-latin-400-normal.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+2000-206F, U+20AC, U+2122, U+2212;
+}

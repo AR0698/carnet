@@ -17,12 +17,16 @@ export default defineConfig({
       registerType: 'prompt',
       injectRegister: null,
 
-      includeAssets: ['icons/apple-touch-icon.png'],
+      // Ni `includeAssets`, ni l'ajout automatique des icônes du manifeste :
+      // `globPatterns` balaie déjà `dist/`, où `public/` a été recopié. Les
+      // trois mécanismes ensemble inscrivaient chaque icône jusqu'à trois fois
+      // dans le manifeste de précache.
+      includeManifestIcons: false,
 
       manifest: {
-        name: 'Carnet',
-        short_name: 'Carnet',
-        description: 'Apprendre n’importe quoi et le retenir pour de bon.',
+        name: 'Go to Bristol',
+        short_name: 'Bristol',
+        description: 'L’anglais qu’il faut pour être chez soi à Bristol.',
         lang: 'fr',
         dir: 'ltr',
         // Relatifs au manifeste : fonctionne quel que soit `base`.
@@ -30,8 +34,9 @@ export default defineConfig({
         scope: '.',
         display: 'standalone',
         orientation: 'portrait',
-        background_color: '#F7F8F5',
-        theme_color: '#F7F8F5',
+        // La couleur du papier aquarelle : `--paper` dans `src/ui/tokens.css`.
+        background_color: '#FBF8F1',
+        theme_color: '#FBF8F1',
         categories: ['education'],
         icons: [
           { src: 'icons/icon-192.png', sizes: '192x192', type: 'image/png', purpose: 'any' },
