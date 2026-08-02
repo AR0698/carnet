@@ -61,14 +61,6 @@ export async function listVocab(): Promise<VocabRecord[]> {
   return rows.sort((a, b) => b.createdAt.getTime() - a.createdAt.getTime());
 }
 
-export async function getVocab(id: string): Promise<VocabRecord | undefined> {
-  return db.vocab.get(id);
-}
-
-export async function countVocab(): Promise<number> {
-  return db.vocab.count();
-}
-
 // --- écriture ---
 
 /**
