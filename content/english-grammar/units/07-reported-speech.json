@@ -1,4 +1,143 @@
 {
   "group": "Reported speech",
-  "items": []
+  "items": [
+    {
+      "id": "u047-a",
+      "topicId": "u047",
+      "tags": ["discours-rapporte", "concordance-des-temps"],
+      "fields": {
+        "regle": "Après un verbe introducteur au passé, les temps reculent d'un cran : présent → prétérit, prétérit → past perfect, will → would."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Rapporte au discours indirect : « I'm tired », she said.",
+          "answerSpec": { "accepted": ["She said she was tired", "She said that she was tired"] },
+          "hints": ["Le présent recule au prétérit."]
+        },
+        {
+          "type": "produce",
+          "prompt": "Rapporte au discours indirect : « I'll phone you tonight », he said.",
+          "answerSpec": {
+            "accepted": [
+              "He said he would phone me that night",
+              "He said that he would phone me that night"
+            ]
+          },
+          "hints": ["will devient would, et tonight devient that night."]
+        },
+        {
+          "type": "produce",
+          "prompt": "Rapporte au discours indirect : « We have finished », they told me.",
+          "answerSpec": { "accepted": ["They told me they had finished", "They told me that they had finished"] },
+          "hints": ["Le present perfect recule au past perfect."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "« I live in Ghent. » → He said he ___ in Ghent. (live)",
+          "answerSpec": { "accepted": ["lived"] },
+          "hints": ["Présent simple → prétérit."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "« I can't swim. » → She admitted she ___ swim. (can't)",
+          "answerSpec": { "accepted": ["couldn't", "could not"] },
+          "hints": ["can devient could."]
+        },
+        {
+          "type": "transform",
+          "source": "\"I am moving to Oslo next month,\" Rita said.",
+          "prompt": "Rapporte la phrase en commençant par « Rita said ».",
+          "answerSpec": {
+            "accepted": [
+              "Rita said she was moving to Oslo the following month",
+              "Rita said that she was moving to Oslo the following month"
+            ]
+          },
+          "hints": ["next month devient the following month."]
+        },
+        {
+          "type": "spot_error",
+          "source": "He said me that the shop was closed.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": {
+            "accepted": [
+              "He told me that the shop was closed",
+              "He said that the shop was closed"
+            ]
+          },
+          "hints": ["say ne prend pas de complément direct de personne : tell si."]
+        },
+        {
+          "type": "mcq",
+          "prompt": "« I've lost my keys. » → She said she ___ her keys.",
+          "answerSpec": { "accepted": ["had lost"] },
+          "distractors": ["has lost", "lost", "would lose"],
+          "hints": ["Le present perfect recule d'un cran."]
+        }
+      ]
+    },
+
+    {
+      "id": "u048-a",
+      "topicId": "u048",
+      "tags": ["discours-rapporte", "ordres", "questions-rapportees"],
+      "fields": {
+        "regle": "Ordres : tell somebody to + base. Questions rapportées : ordre sujet-verbe normal, sans do, avec if/whether pour les questions fermées."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Rapporte l'ordre : « Wait outside », the guard told us.",
+          "answerSpec": { "accepted": ["The guard told us to wait outside"] },
+          "hints": ["tell somebody to + base verbale."]
+        },
+        {
+          "type": "produce",
+          "prompt": "Rapporte la question : « Where do you work? » she asked me.",
+          "answerSpec": { "accepted": ["She asked me where I worked"] },
+          "hints": ["Question rapportée : ordre normal, plus de do."]
+        },
+        {
+          "type": "produce",
+          "prompt": "Rapporte la question : « Are you coming? » he asked.",
+          "answerSpec": { "accepted": ["He asked if I was coming", "He asked whether I was coming"] },
+          "hints": ["Question fermée : if ou whether."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "« Don't touch it! » → She warned me ___ touch it. (not to)",
+          "answerSpec": { "accepted": ["not to"] },
+          "hints": ["Ordre négatif : not to + base verbale."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "« What time does it start? » → He asked what time it ___ . (start)",
+          "answerSpec": { "accepted": ["started"] },
+          "hints": ["Le présent recule, et l'auxiliaire disparaît."]
+        },
+        {
+          "type": "transform",
+          "source": "\"Please sit down,\" the nurse said to him.",
+          "prompt": "Rapporte l'ordre en commençant par « The nurse asked him ».",
+          "answerSpec": { "accepted": ["The nurse asked him to sit down"] },
+          "hints": ["ask somebody to + base verbale, pour une demande polie."]
+        },
+        {
+          "type": "spot_error",
+          "source": "She asked me where did I live.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": { "accepted": ["She asked me where I lived"] },
+          "hints": ["Dans une question rapportée, on retrouve l'ordre sujet-verbe."]
+        },
+        {
+          "type": "mcq",
+          "prompt": "He asked ___ I had seen the film.",
+          "answerSpec": { "accepted": ["whether"] },
+          "distractors": ["that", "what", "did"],
+          "hints": ["Question fermée rapportée : if ou whether."]
+        }
+      ]
+    }
+  ]
 }

@@ -1,4 +1,262 @@
 {
   "group": "Questions and auxiliary verbs",
-  "items": []
+  "items": [
+    {
+      "id": "u049-a",
+      "topicId": "u049",
+      "tags": ["questions", "ordre-des-mots", "sujet-question"],
+      "fields": {
+        "regle": "Auxiliaire + sujet + verbe. Mais quand le mot interrogatif est le sujet, l'ordre ne change pas."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Où est-ce que tes parents habitent ? »",
+          "answerSpec": { "accepted": ["Where do your parents live"] },
+          "hints": ["Auxiliaire do, puis sujet, puis verbe nu."]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Qui a écrit cette chanson ? »",
+          "answerSpec": { "accepted": ["Who wrote this song", "Who wrote that song"] },
+          "hints": ["who est ici le sujet : pas de did, pas d'inversion."]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : « De quoi est-ce que vous parliez ? »",
+          "answerSpec": { "accepted": ["What were you talking about"] },
+          "hints": ["La préposition reste à la fin de la question."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "___ happened to your jacket? (what)",
+          "answerSpec": { "accepted": ["What"] },
+          "hints": ["Le mot interrogatif est sujet : aucun auxiliaire."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Who ___ you invite to the opening? (do, au prétérit)",
+          "answerSpec": { "accepted": ["did"] },
+          "hints": ["Ici who est complément : l'auxiliaire réapparaît."]
+        },
+        {
+          "type": "transform",
+          "source": "Selma borrowed the ladder from someone.",
+          "prompt": "Pose la question sur la personne, en commençant par « Who ».",
+          "answerSpec": { "accepted": ["Who did Selma borrow the ladder from"] },
+          "hints": ["from se place à la fin de la question."]
+        },
+        {
+          "type": "spot_error",
+          "source": "Where you did put the tickets?",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": { "accepted": ["Where did you put the tickets"] },
+          "hints": ["L'auxiliaire passe avant le sujet."]
+        },
+        {
+          "type": "mcq",
+          "prompt": "___ told you about the change?",
+          "answerSpec": { "accepted": ["Who"] },
+          "distractors": ["Who did", "Whom did", "Who does"],
+          "hints": ["Le mot interrogatif est le sujet du verbe."]
+        }
+      ]
+    },
+
+    {
+      "id": "u050-a",
+      "topicId": "u050",
+      "tags": ["questions-indirectes", "ordre-des-mots"],
+      "fields": {
+        "regle": "Do you know where ...? / He asked me where ... : après l'introduction, l'ordre redevient sujet + verbe, sans auxiliaire."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Tu sais où se trouve la poste ? »",
+          "answerSpec": { "accepted": ["Do you know where the post office is"] },
+          "hints": ["Après where, on remet l'ordre sujet-verbe."]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Je me demande pourquoi elle n'a pas appelé. »",
+          "answerSpec": { "accepted": ["I wonder why she didn't call", "I wonder why she did not call"] },
+          "hints": ["Pas d'inversion après wonder why."]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Sais-tu si le magasin est ouvert ? »",
+          "answerSpec": {
+            "accepted": [
+              "Do you know if the shop is open",
+              "Do you know whether the shop is open"
+            ]
+          },
+          "hints": ["Question fermée insérée : if ou whether."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Can you tell me what time the film ___ ? (start)",
+          "answerSpec": { "accepted": ["starts"] },
+          "hints": ["Ordre normal : le verbe garde son -s."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "I've no idea where they ___ . (go, au prétérit)",
+          "answerSpec": { "accepted": ["went"] },
+          "hints": ["Pas d'auxiliaire dans une question insérée."]
+        },
+        {
+          "type": "transform",
+          "source": "How much does this coat cost?",
+          "prompt": "Réécris la question poliment, en commençant par « Could you tell me ».",
+          "answerSpec": { "accepted": ["Could you tell me how much this coat costs"] },
+          "hints": ["does disparaît, le verbe reprend son -s."]
+        },
+        {
+          "type": "spot_error",
+          "source": "Do you know where is the station?",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": { "accepted": ["Do you know where the station is"] },
+          "hints": ["Après where, le sujet précède le verbe."]
+        },
+        {
+          "type": "mcq",
+          "prompt": "I wonder ___ the letter.",
+          "answerSpec": { "accepted": ["who sent"] },
+          "distractors": ["who did send", "did who send", "who does send"],
+          "hints": ["who est sujet, et la question est insérée."]
+        }
+      ]
+    },
+
+    {
+      "id": "u051-a",
+      "topicId": "u051",
+      "tags": ["auxiliaires", "reprises", "so-neither"],
+      "fields": {
+        "regle": "L'auxiliaire reprend tout le verbe : So do I / Neither have I. I think so, I hope so évitent de répéter la phrase."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : « — J'adore le jazz. — Moi aussi. »",
+          "answerSpec": { "accepted": ["I love jazz. So do I", "I love jazz — so do I"] },
+          "hints": ["so + auxiliaire + sujet, dans cet ordre."]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : « — Je n'ai pas compris. — Moi non plus. »",
+          "answerSpec": {
+            "accepted": [
+              "I didn't understand. Neither did I",
+              "I didn't understand. Nor did I"
+            ]
+          },
+          "hints": ["Pour la reprise négative : neither ou nor + auxiliaire + sujet."]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : « — Est-ce qu'il va pleuvoir ? — J'espère que non. »",
+          "answerSpec": { "accepted": ["Is it going to rain? I hope not"] },
+          "hints": ["I hope not remplace toute la proposition négative."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "— I've never tried surfing. — ___ have I.",
+          "answerSpec": { "accepted": ["Neither", "Nor"] },
+          "hints": ["Reprise d'une phrase négative."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "— Will they accept? — I think ___ .",
+          "answerSpec": { "accepted": ["so"] },
+          "hints": ["I think so évite de répéter la phrase entière."]
+        },
+        {
+          "type": "transform",
+          "source": "Léa can ski. I can ski too.",
+          "prompt": "Réécris la seconde phrase avec « So ».",
+          "answerSpec": { "accepted": ["So can I"] },
+          "hints": ["so + auxiliaire + sujet : l'ordre s'inverse."]
+        },
+        {
+          "type": "spot_error",
+          "source": "— I'm exhausted. — So I am.",
+          "prompt": "Corrige la réponse pour dire « moi aussi ».",
+          "answerSpec": { "accepted": ["So am I"] },
+          "hints": ["L'auxiliaire passe avant le sujet dans la reprise."]
+        },
+        {
+          "type": "mcq",
+          "prompt": "— Sacha doesn't eat sugar. — ___ .",
+          "answerSpec": { "accepted": ["Neither do I"] },
+          "distractors": ["So do I", "Neither I do", "Also I don't"],
+          "hints": ["Reprise négative avec l'auxiliaire do."]
+        }
+      ]
+    },
+
+    {
+      "id": "u052-a",
+      "topicId": "u052",
+      "tags": ["question-tags"],
+      "fields": {
+        "regle": "Phrase affirmative → tag négatif, et inversement. Le tag reprend l'auxiliaire et un pronom."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Tu viens avec nous, n'est-ce pas ? »",
+          "answerSpec": { "accepted": ["You're coming with us, aren't you", "You are coming with us, aren't you"] },
+          "hints": ["Phrase affirmative : tag négatif."]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Elle n'a pas répondu, si ? »",
+          "answerSpec": { "accepted": ["She didn't answer, did she", "She did not answer, did she"] },
+          "hints": ["Phrase négative : tag affirmatif."]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Passe-moi le sel, tu veux bien ? »",
+          "answerSpec": { "accepted": ["Pass me the salt, will you"] },
+          "hints": ["Après un impératif, le tag est will you."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "They've already left, ___ they?",
+          "answerSpec": { "accepted": ["haven't", "have not"] },
+          "hints": ["L'auxiliaire de la phrase se retrouve dans le tag."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Nobody phoned, ___ they?",
+          "answerSpec": { "accepted": ["did"] },
+          "hints": ["nobody est négatif : le tag devient affirmatif."]
+        },
+        {
+          "type": "transform",
+          "source": "This soup is too salty.",
+          "prompt": "Ajoute le question tag qui convient.",
+          "answerSpec": { "accepted": ["This soup is too salty, isn't it"] },
+          "hints": ["Affirmatif avec is : tag isn't it."]
+        },
+        {
+          "type": "spot_error",
+          "source": "You can drive, can you?",
+          "prompt": "Corrige le question tag.",
+          "answerSpec": { "accepted": ["You can drive, can't you"] },
+          "hints": ["Après une affirmation, le tag doit être négatif."]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Let's take a break, ___ ?",
+          "answerSpec": { "accepted": ["shall we"] },
+          "distractors": ["will we", "don't we", "do we"],
+          "hints": ["Après let's, le tag est toujours shall we."]
+        }
+      ]
+    }
+  ]
 }

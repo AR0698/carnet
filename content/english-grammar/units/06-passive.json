@@ -1,4 +1,329 @@
 {
   "group": "Passive",
-  "items": []
+  "items": [
+    {
+      "id": "u042-a",
+      "topicId": "u042",
+      "tags": ["passif", "present", "preterit"],
+      "fields": {
+        "regle": "be conjugué + participe passé. L'agent, s'il compte, s'introduit par by."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Ce pont a été construit en 1890. »",
+          "answerSpec": { "accepted": ["This bridge was built in 1890", "That bridge was built in 1890"] },
+          "hints": ["Passif au prétérit : was/were + participe passé."]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Les bureaux sont nettoyés tous les soirs. »",
+          "answerSpec": { "accepted": ["The offices are cleaned every evening"] },
+          "hints": ["Passif au présent : are + participe passé."]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Ce tableau a été peint par une artiste danoise. »",
+          "answerSpec": { "accepted": ["This painting was painted by a Danish artist", "That painting was painted by a Danish artist"] },
+          "hints": ["L'agent est introduit par by."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The parcels ___ every Monday. (deliver, au présent passif)",
+          "answerSpec": { "accepted": ["are delivered"] },
+          "hints": ["Sujet pluriel : are + participe passé."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "My bike ___ last week. (steal, au prétérit passif)",
+          "answerSpec": { "accepted": ["was stolen"] },
+          "hints": ["steal est irrégulier : stolen."]
+        },
+        {
+          "type": "transform",
+          "source": "A local firm designed the logo.",
+          "prompt": "Mets la phrase au passif, en commençant par « The logo ».",
+          "answerSpec": { "accepted": ["The logo was designed by a local firm"] },
+          "hints": ["L'objet devient sujet, l'auteur passe après by."]
+        },
+        {
+          "type": "spot_error",
+          "source": "The report was wrote by the whole team.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": { "accepted": ["The report was written by the whole team"] },
+          "hints": ["Le passif demande le participe passé : written."]
+        },
+        {
+          "type": "mcq",
+          "prompt": "These shoes ___ in Portugal.",
+          "answerSpec": { "accepted": ["are made"] },
+          "distractors": ["are make", "is made", "make"],
+          "hints": ["Sujet pluriel, verbe au passif présent."]
+        }
+      ]
+    },
+
+    {
+      "id": "u043-a",
+      "topicId": "u043",
+      "tags": ["passif", "modaux", "perfect", "continu"],
+      "fields": {
+        "regle": "be done après un modal, been done après have, being done pour l'action en cours."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Le dossier doit être signé aujourd'hui. »",
+          "answerSpec": { "accepted": ["The file must be signed today"] },
+          "hints": ["Après un modal : be + participe passé."]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : « La route a été fermée toute la semaine. »",
+          "answerSpec": { "accepted": ["The road has been closed all week"] },
+          "hints": ["Present perfect passif : have/has been + participe."]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : « La cuisine est en train d'être repeinte. »",
+          "answerSpec": { "accepted": ["The kitchen is being repainted"] },
+          "hints": ["Action en cours au passif : is being + participe."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The window ___ repaired yesterday. (can't / be, au passé)",
+          "answerSpec": { "accepted": ["couldn't be", "could not be"] },
+          "hints": ["Modal au passé + be + participe."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The results ___ announced yet. (have not / be)",
+          "answerSpec": { "accepted": ["haven't been", "have not been"] },
+          "hints": ["Après have not, on met been."]
+        },
+        {
+          "type": "transform",
+          "source": "They are examining the samples right now.",
+          "prompt": "Mets la phrase au passif, en commençant par « The samples ».",
+          "answerSpec": { "accepted": ["The samples are being examined right now"] },
+          "hints": ["Présent continu passif : are being + participe."]
+        },
+        {
+          "type": "spot_error",
+          "source": "The letters have been send this morning.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": { "accepted": ["The letters have been sent this morning"] },
+          "hints": ["Après been, il faut le participe passé : sent."]
+        },
+        {
+          "type": "mcq",
+          "prompt": "The bridge ___ at the moment.",
+          "answerSpec": { "accepted": ["is being inspected"] },
+          "distractors": ["is inspecting", "has inspected", "is been inspected"],
+          "hints": ["Travaux en cours, subis par le sujet."]
+        }
+      ]
+    },
+
+    {
+      "id": "u044-a",
+      "topicId": "u044",
+      "tags": ["passif", "deux-objets", "get-passif"],
+      "fields": {
+        "regle": "Un verbe à deux compléments donne deux passifs possibles. get + participe remplace be dans le registre familier."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : « On lui a offert un vélo pour son anniversaire. »",
+          "answerSpec": {
+            "accepted": [
+              "She was given a bike for her birthday",
+              "He was given a bike for his birthday"
+            ]
+          },
+          "hints": ["La personne devient sujet : she/he was given."]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Il s'est fait renvoyer le mois dernier. » (registre familier)",
+          "answerSpec": { "accepted": ["He got sacked last month", "He got fired last month"] },
+          "hints": ["get + participe passé, plus parlé que be."]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : « On m'a demandé de rester. »",
+          "answerSpec": { "accepted": ["I was asked to stay"] },
+          "hints": ["Le « on » français disparaît : passif à la première personne."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Everyone ___ a copy of the schedule. (give, au prétérit passif)",
+          "answerSpec": { "accepted": ["was given"] },
+          "hints": ["everyone est singulier en anglais."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Our tent ___ blown away in the storm. (get, au prétérit)",
+          "answerSpec": { "accepted": ["got"] },
+          "hints": ["get marque l'accident subi."]
+        },
+        {
+          "type": "transform",
+          "source": "The committee offered Nadia the position.",
+          "prompt": "Mets la phrase au passif, en commençant par « Nadia ».",
+          "answerSpec": { "accepted": ["Nadia was offered the position by the committee"] },
+          "hints": ["Le bénéficiaire peut devenir sujet."]
+        },
+        {
+          "type": "spot_error",
+          "source": "I was told the news by Sara yesterday evening.",
+          "prompt": "Réécris la phrase en supprimant l'agent, devenu inutile.",
+          "answerSpec": { "accepted": ["I was told the news yesterday evening"] },
+          "hints": ["by + agent ne se garde que s'il apporte une information."]
+        },
+        {
+          "type": "mcq",
+          "prompt": "The children ___ a tour of the museum.",
+          "answerSpec": { "accepted": ["were given"] },
+          "distractors": ["were gave", "was given", "gave"],
+          "hints": ["Sujet pluriel, participe passé de give."]
+        }
+      ]
+    },
+
+    {
+      "id": "u045-a",
+      "topicId": "u045",
+      "tags": ["it-is-said", "he-is-said-to", "supposed-to"],
+      "fields": {
+        "regle": "It is said that ... ou He is said to ... rapportent une opinion générale. be supposed to : la réputation, ou ce qui est prévu."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : « On dit que cette source guérit tout. »",
+          "answerSpec": {
+            "accepted": [
+              "It is said that this spring cures everything",
+              "This spring is said to cure everything"
+            ]
+          },
+          "hints": ["Deux tournures possibles : it is said that, ou be said to."]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Il est censé arriver à midi. »",
+          "answerSpec": { "accepted": ["He is supposed to arrive at noon", "He's supposed to arrive at noon"] },
+          "hints": ["Ce qui est prévu ou attendu : be supposed to."]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : « On pense qu'elle vit à l'étranger. »",
+          "answerSpec": {
+            "accepted": [
+              "She is thought to live abroad",
+              "It is thought that she lives abroad"
+            ]
+          },
+          "hints": ["be thought to + base verbale."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "This restaurant ___ to be the best in town. (be said)",
+          "answerSpec": { "accepted": ["is said"] },
+          "hints": ["Sujet singulier : is said to."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "We weren't ___ to open the envelope. (suppose)",
+          "answerSpec": { "accepted": ["supposed"] },
+          "hints": ["be supposed to garde toujours le -d."]
+        },
+        {
+          "type": "transform",
+          "source": "People believe that the manuscript is very old.",
+          "prompt": "Réécris la phrase en commençant par « The manuscript ».",
+          "answerSpec": { "accepted": ["The manuscript is believed to be very old"] },
+          "hints": ["Le sujet de la subordonnée remonte en tête."]
+        },
+        {
+          "type": "spot_error",
+          "source": "He is suppose to call before eight.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": { "accepted": ["He is supposed to call before eight"] },
+          "hints": ["L'expression s'écrit supposed, avec -d."]
+        },
+        {
+          "type": "mcq",
+          "prompt": "The castle ___ to date from the twelfth century.",
+          "answerSpec": { "accepted": ["is said"] },
+          "distractors": ["is saying", "says", "is said that"],
+          "hints": ["Suivi de to + base : pas de that ici."]
+        }
+      ]
+    },
+
+    {
+      "id": "u046-a",
+      "topicId": "u046",
+      "tags": ["have-something-done", "faire-faire"],
+      "fields": {
+        "regle": "have + objet + participe passé : faire faire quelque chose par quelqu'un d'autre."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Je fais réparer ma montre. »",
+          "answerSpec": { "accepted": ["I'm having my watch repaired", "I am having my watch repaired"] },
+          "hints": ["have + objet + participe passé."]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Ils ont fait repeindre la façade l'an dernier. »",
+          "answerSpec": { "accepted": ["They had the front repainted last year"] },
+          "hints": ["Au passé : had + objet + participe."]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Elle s'est fait voler son téléphone. »",
+          "answerSpec": { "accepted": ["She had her phone stolen", "She got her phone stolen"] },
+          "hints": ["La même structure sert aux mésaventures subies."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Where do you ___ your hair cut? (have)",
+          "answerSpec": { "accepted": ["have", "get"] },
+          "hints": ["have ou get, suivis de l'objet puis du participe."]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "We're going to have the roof ___ before winter. (check)",
+          "answerSpec": { "accepted": ["checked"] },
+          "hints": ["C'est le participe passé qui suit l'objet."]
+        },
+        {
+          "type": "transform",
+          "source": "A locksmith is changing our locks tomorrow.",
+          "prompt": "Réécris la phrase en commençant par « We're having ».",
+          "answerSpec": { "accepted": ["We're having our locks changed tomorrow", "We are having our locks changed tomorrow"] },
+          "hints": ["On ne dit plus qui fait le travail : have + objet + participe."]
+        },
+        {
+          "type": "spot_error",
+          "source": "I had cut my hair last Friday.",
+          "prompt": "Corrige la phrase pour dire que quelqu'un d'autre l'a coupé.",
+          "answerSpec": { "accepted": ["I had my hair cut last Friday"] },
+          "hints": ["L'objet se place entre had et le participe."]
+        },
+        {
+          "type": "mcq",
+          "prompt": "They ___ the carpets cleaned every spring.",
+          "answerSpec": { "accepted": ["have"] },
+          "distractors": ["are", "make", "do"],
+          "hints": ["Structure figée : have + objet + participe passé."]
+        }
+      ]
+    }
+  ]
 }
