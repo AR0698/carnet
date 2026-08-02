@@ -1,19 +1,10 @@
 import { remainingNewQuota } from '../../engine/session';
 import { countAll } from '../../storage/cards';
-import { db } from '../../storage/db';
-import { State } from 'ts-fsrs';
 import { el, mount } from '../dom';
 import type { Ctx } from '../types';
 import { renderPwaNotices } from './pwaNotices';
 
 const TIME_CHOICES = [5, 15, 30];
-
-const STATE_LABEL: Record<State, string> = {
-  [State.New]: 'neuve',
-  [State.Learning]: 'en apprentissage',
-  [State.Review]: 'en révision',
-  [State.Relearning]: 'à reprendre',
-};
 
 export async function renderHome(ctx: Ctx): Promise<void> {
   const packId = ctx.pack.meta.id;
@@ -65,43 +56,5 @@ export async function renderHome(ctx: Ctx): Promise<void> {
           ]),
       workable > 0 && choices,
     ]),
-    await renderDevBar(ctx),
   );
-}
-
-/**
- * Inspecteur temporaire — il rend visible ce que l'étape 1 doit prouver :
- * l'état FSRS de chaque carte, tel qu'il est réellement en base.
- * À retirer à l'étape 5.
- */
-async function renderDevBar(ctx: Ctx): Promise<HTMLElement> {
-  const cards = await db.cards.where('packId').equals(ctx.pack.meta.id).toArray();
-  cards.sort((a, b) => a.id.localeCompare(b.id));
-
-  const reset = el('button', { class: 'btn btn--link', type: 'button' }, [
-    'Réinitialiser la progression',
-  ]);
-  reset.addEventListener('click', async () => {
-    if (!confirm('Effacer toute la progression enregistrée ? Cette action est définitive.')) return;
-    await db.transaction('rw', db.cards, db.reviews, db.kv, async () => {
-      await db.cards.clear();
-      await db.reviews.clear();
-      await db.kv.clear();
-    });
-    location.reload();
-  });
-
-  const rows = cards.map((c) =>
-    el('div', {}, [
-      `${c.itemId}#${c.exerciseIndex} · ${STATE_LABEL[c.state]} · échéance ${c.due.toLocaleString('fr-FR')} · ` +
-        `stab ${c.stability.toFixed(2)} · diff ${c.difficulty.toFixed(2)} · ` +
-        `réussites espacées ${c.spacedSuccesses}${c.interleavedSuccess ? ' · mélangée ✓' : ''}`,
-    ]),
-  );
-
-  return el('div', { class: 'devbar' }, [
-    el('div', {}, [`état en base (${cards.length} cartes)`]),
-    ...rows,
-    reset,
-  ]);
 }
