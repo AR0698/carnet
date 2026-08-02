@@ -1,5 +1,7 @@
 # Carnet
 
+**En ligne : https://ar0698.github.io/carnet/**
+
 Framework de PWA d'apprentissage par répétition espacée. Hors-ligne, sans backend,
 sans compte. Le moteur ignore le sujet enseigné : un domaine = un **pack de contenu**
 (fichier JSON), ajouté sans toucher au code.
@@ -93,7 +95,11 @@ inactivité ; c'est aussi la raison d'être de l'export manuel prévu à l'étap
 npm run build           # -> dist/, à servir tel quel
 ```
 
-Pour un sous-chemin (GitHub Pages par exemple) :
+Le déploiement est automatique : tout `git push` sur `main` déclenche
+[deploy.yml](.github/workflows/deploy.yml), qui reconstruit et publie sur
+GitHub Pages. Le préfixe d'URL est déduit du nom du dépôt, rien à régler.
+
+Pour reproduire ce build en local :
 
 ```bash
 CARNET_BASE=/carnet/ npm run build
