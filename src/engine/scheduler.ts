@@ -34,7 +34,21 @@ export interface Answer {
   correct: boolean;
   /** L'indice a-t-il été ouvert avant de valider ? */
   usedHint: boolean;
+  /** Temps total, de l'affichage à la validation. Journalisé, jamais noté. */
   elapsedMs: number;
+  /**
+   * Temps de *récupération* : de l'affichage au premier caractère saisi.
+   *
+   * C'est lui qui note la carte, et non `elapsedMs`. Le temps total contient la
+   * dactylographie : mesuré sur les 476 cartes du pack de grammaire, il rendait
+   * la mention « facile » inatteignable pour 69 % d'entre elles — 4 % pour les
+   * exercices de production contre 98 % pour les textes à trou. La note ne
+   * mesurait plus la mémoire mais la longueur de la réponse, et pénalisait
+   * précisément les exercices les plus exigeants.
+   *
+   * Absent quand rien n'a été saisi, ou en mode cahier — où `effort` prime.
+   */
+  recallMs?: number;
   /** La session en cours contient-elle au moins deux notions différentes ? */
   interleaved: boolean;
   /** La réponse portait sur le filet de secours (mcq) et non sur l'exercice. */
@@ -48,9 +62,13 @@ export interface Answer {
   effort?: 'immediate' | 'searched';
 }
 
-/** Au-delà : la réponse est juste mais laborieuse. */
+/**
+ * Seuils appliqués au temps de récupération — lecture de l'énoncé comprise,
+ * puisqu'on mesure jusqu'au premier geste de réponse.
+ */
+/** Au-delà : la réponse est juste mais elle a été arrachée. */
 const HESITATION_MS = 25_000;
-/** En deçà : la réponse est venue sans effort. */
+/** En deçà : elle est venue sans effort. */
 const CONFIDENT_MS = 6_000;
 /** Tant que la porte de graduation n'est pas franchie, on ne dépasse pas ce délai. */
 const GATE_MAX_DAYS = 1;
@@ -66,8 +84,11 @@ export function ratingFor(a: Answer): Grade {
   // Jugement déclaré (mode cahier) : il prime sur la mesure, qui ne mesure
   // alors plus la bonne chose.
   if (a.effort) return a.effort === 'immediate' ? Rating.Easy : Rating.Good;
-  if (a.elapsedMs > HESITATION_MS) return Rating.Hard;
-  if (a.elapsedMs < CONFIDENT_MS) return Rating.Easy;
+  // À défaut de latence de rappel — rien n'a été saisi — le temps total est le
+  // seul repère disponible. Il vaut mieux que rien, mais il note la frappe.
+  const recall = a.recallMs ?? a.elapsedMs;
+  if (recall > HESITATION_MS) return Rating.Hard;
+  if (recall < CONFIDENT_MS) return Rating.Easy;
   return Rating.Good;
 }
 
@@ -174,6 +195,7 @@ export function applyAnswer(card: CardRecord, answer: Answer, now = new Date()):
     correct: answer.correct,
     usedHint: answer.usedHint,
     elapsedMs: answer.elapsedMs,
+    recallMs: answer.recallMs,
     interleaved: answer.interleaved,
     scheduledDays: scheduled_days,
   };

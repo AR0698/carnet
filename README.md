@@ -104,8 +104,15 @@ donnée, relire la phrase dans son contexte est exactement ce qui ancre le mot.
 ## Deux façons de répondre
 
 **À l'écran.** On tape la réponse, l'application corrige : comparaison mot à
-mot, explication de l'erreur quand elle est prévue dans le contenu. Le temps de
-réponse sert à distinguer ce qui est venu tout seul de ce qui a été arraché.
+mot, explication de l'erreur quand elle est prévue dans le contenu.
+
+Ce qui distingue une réponse venue toute seule d'une réponse arrachée, c'est le
+délai jusqu'à la **première frappe**, pas le temps total. La différence n'est pas
+cosmétique : mesuré sur les 476 cartes de grammaire, le temps total rendait la
+mention « facile » inatteignable pour **69 %** d'entre elles — 4 % pour les
+exercices de production contre 98 % pour les textes à trou. La note ne mesurait
+plus la mémoire mais la longueur de la réponse, et pénalisait exactement les
+exercices les plus exigeants. Voir `Answer.recallMs`.
 
 **Sur le cahier** — case « J'ai un cahier à côté de moi », valable pour les trois
 carnets. L'énoncé s'affiche sans champ de saisie, la réponse s'écrit à la main,
@@ -247,11 +254,30 @@ avancer mécaniquement tous ses exercices. L'ordre des exercices d'un mot
 Discovery est donc un contrat : la production reste en tête, le choix multiple
 en queue, pour qu'apparaître ou disparaître ne décale jamais un identifiant.
 
-**La porte de graduation.** Une carte ne part en révision longue qu'après deux
-réussites sur des jours *différents*, dont au moins une en session mélangée
-(≥ 2 notions). Tant que la porte n'est pas franchie, l'échéance est plafonnée à
-24 h — sans jamais toucher à `stability` / `difficulty`, pour que le modèle FSRS
-reste intact. Voir `spacedSuccesses` et `interleavedSuccess` sur `CardRecord`.
+**La porte de graduation, et ce qu'elle coûte.** Une carte ne part en révision
+longue qu'après deux réussites sur des jours *différents*, dont au moins une en
+session mélangée (≥ 2 notions). Tant que la porte n'est pas franchie, l'échéance
+est plafonnée à 24 h. Voir `spacedSuccesses` et `interleavedSuccess` sur
+`CardRecord`.
+
+Le code n'écrit jamais `stability` ni `difficulty` — mais il serait faux d'en
+conclure que le plafond est gratuit. Simulation d'une carte répondue *Good* à
+chaque échéance :
+
+| Révision | Sans porte | Avec porte |
+| --- | --- | --- |
+| 2 | 2 j | **1 j** (plafonnée) |
+| 3 | 11 j | 7 j |
+| 4 | 46 j | 32 j |
+| 6 | 498 j | 374 j |
+
+Réviser en avance donne une rétrievabilité plus haute, donc un gain de stabilité
+plus faible, et l'écart ne se rattrape pas : **toute l'échelle est rabaissée
+d'environ un quart, définitivement**. C'est-à-dire près de 30 % de révisions en
+plus sur un an, en échange d'un espacement garanti sur des jours différents.
+
+L'échange est assumé — l'espacement inter-journalier est l'un des résultats les
+mieux établis de la littérature — mais c'est un échange, pas un repas gratuit.
 
 **Un seul trou par `fill_blank`.** Le champ de saisie ne remplace que le premier
 `___`, tandis que `spokenSentence()` recolle la réponse à *chaque* marqueur :

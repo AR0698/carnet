@@ -57,7 +57,10 @@ export interface ReviewRecord {
   rating: number;
   correct: boolean;
   usedHint: boolean;
+  /** Temps total, validation comprise. */
   elapsedMs: number;
+  /** Temps jusqu'au premier geste de réponse — c'est lui qui a noté la carte. */
+  recallMs?: number;
   /** La session contenait-elle au moins 2 notions différentes ? */
   interleaved: boolean;
   /** Intervalle décidé, en jours. */
