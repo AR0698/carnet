@@ -1,0 +1,116 @@
+{
+  "group": "Le pont et l'ingénieur",
+  "items": [
+    {
+      "id": "c001-span",
+      "topicId": "c001",
+      "tags": ["verbe", "architecture"],
+      "fields": {
+        "passage": "The Clifton Suspension Bridge spans the Avon Gorge, seventy-five metres above the water. Isambard Kingdom Brunel won the competition to design it in 1831, when he was only twenty-four. He never saw it finished — the bridge opened in 1864, five years after his death.",
+        "term": "to span",
+        "meaning": "enjamber, franchir"
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « enjamber, franchir » — en parlant d'un pont au-dessus d'une vallée ?",
+          "answerSpec": { "accepted": ["to span", "span"] },
+          "hints": ["Le nom anglais désigne aussi la portée d'un pont : a span of 214 metres."],
+          "pitfalls": [
+            {
+              "answers": ["to cross", "cross"],
+              "explain": "« To cross », c'est traverser — ce que fait le piéton. Le pont, lui, « spans » : il tient d'un bord à l'autre."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The Clifton Suspension Bridge ___ the Avon Gorge, seventy-five metres above the water.",
+          "answerSpec": { "accepted": ["spans"] },
+          "hints": ["Présent simple, troisième personne : le pont fait cela en permanence."]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « enjamber, franchir » ?",
+          "answerSpec": { "accepted": ["to span"] },
+          "distractors": ["to spread", "to spare", "to spin"]
+        }
+      ]
+    },
+    {
+      "id": "c001-landmark",
+      "topicId": "c001",
+      "tags": ["nom", "ville"],
+      "fields": {
+        "passage": "For most people the bridge is the landmark of Bristol: the shape you see on postcards, on beer labels and on the side of buses. Locals still argue about whether it is more beautiful at dawn or when it is lit up at night.",
+        "term": "a landmark",
+        "meaning": "un monument emblématique, un point de repère"
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « un monument emblématique, un point de repère » ?",
+          "answerSpec": { "accepted": ["a landmark", "landmark"] },
+          "hints": ["Littéralement « une marque dans le paysage » — ce qu'on voit de loin et qui situe."],
+          "pitfalls": [
+            {
+              "answers": ["a monument", "monument"],
+              "explain": "« Monument » existe, mais désigne surtout un édifice commémoratif. Un « landmark » est ce qui identifie un lieu."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "For most people the bridge is the ___ of Bristol, the shape you see on postcards.",
+          "answerSpec": { "accepted": ["landmark"] }
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « monument emblématique » ?",
+          "answerSpec": { "accepted": ["a landmark"] },
+          "distractors": ["a landscape", "a landlord", "a landing"]
+        }
+      ]
+    },
+    {
+      "id": "c001-lit-up",
+      "topicId": "c001",
+      "tags": ["expression", "passif"],
+      "fields": {
+        "passage": "On special evenings the towers and the chains are lit up, and the whole gorge seems to hang in the dark. The lighting is switched off after midnight, so the walk back down to Hotwells is done by moonlight.",
+        "term": "to be lit up",
+        "meaning": "être illuminé"
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « être illuminé », en parlant d'un bâtiment le soir ?",
+          "answerSpec": { "accepted": ["to be lit up", "be lit up", "lit up"] },
+          "hints": ["Participe passé irrégulier de « to light » : light, lit, lit."],
+          "pitfalls": [
+            {
+              "answers": ["to be lighted up", "be lighted up"],
+              "explain": "« Lighted » s'entend, mais « lit » est la forme courante en anglais britannique."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "On special evenings the towers and the chains ___, and the whole gorge seems to hang in the dark.",
+          "answerSpec": { "accepted": ["are lit up"] },
+          "hints": ["Passif au présent, sujet pluriel — trois mots."]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Laquelle est correcte ?",
+          "answerSpec": { "accepted": ["the towers are lit up"] },
+          "distractors": [
+            "the towers are light up",
+            "the towers are lighting up",
+            "the towers is lit up"
+          ]
+        }
+      ]
+    }
+  ]
+}

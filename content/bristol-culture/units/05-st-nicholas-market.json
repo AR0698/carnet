@@ -1,0 +1,110 @@
+{
+  "group": "Le marché et la ville",
+  "items": [
+    {
+      "id": "c005-stall",
+      "topicId": "c005",
+      "tags": ["nom", "commerce"],
+      "fields": {
+        "passage": "St Nicholas Market opened in 1743, in the space left over when the Exchange was built on Corn Street. Its stalls now sell everything from Portuguese custard tarts to second-hand records, and the queue for lunch runs out into the street.",
+        "term": "a stall",
+        "meaning": "un étal, un stand"
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « un étal, un stand de marché » ?",
+          "answerSpec": { "accepted": ["a stall", "stall"] },
+          "hints": ["Le marchand qui le tient est « a stallholder »."],
+          "pitfalls": [
+            {
+              "answers": ["a stand", "stand"],
+              "explain": "« Stand » se dit pour un salon ou un stade. Sur un marché britannique, c'est « a stall »."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Its ___ sell everything from Portuguese custard tarts to second-hand records.",
+          "answerSpec": { "accepted": ["stalls"] }
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « étal de marché » ?",
+          "answerSpec": { "accepted": ["a stall"] },
+          "distractors": ["a shelf", "a booth", "a counter"]
+        }
+      ]
+    },
+    {
+      "id": "c005-on-the-nail",
+      "topicId": "c005",
+      "tags": ["expression", "argent"],
+      "fields": {
+        "passage": "Outside on Corn Street stand four bronze pillars called the Nails. Merchants closed their deals on them, counting out coins on the flat tops — which is where the expression to pay on the nail is said to come from.",
+        "term": "to pay on the nail",
+        "meaning": "payer rubis sur l'ongle, payer comptant"
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « payer rubis sur l'ongle », l'expression née sur Corn Street ?",
+          "answerSpec": { "accepted": ["to pay on the nail", "pay on the nail"] },
+          "hints": ["Les quatre piliers de bronze devant l'Exchange s'appellent « the Nails »."],
+          "pitfalls": [
+            {
+              "answers": ["to pay in cash", "pay in cash"],
+              "explain": "« In cash », c'est le moyen de paiement. « On the nail » insiste sur l'immédiateté : sur-le-champ."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Merchants counted out coins on the flat tops, which is where the expression to ___ is said to come from.",
+          "answerSpec": { "accepted": ["pay on the nail"] }
+        },
+        {
+          "type": "mcq",
+          "prompt": "Laquelle est l'expression bristolienne ?",
+          "answerSpec": { "accepted": ["to pay on the nail"] },
+          "distractors": ["to pay on the spot", "to pay on the table", "to pay on the hand"]
+        }
+      ]
+    },
+    {
+      "id": "c005-bargain",
+      "topicId": "c005",
+      "tags": ["nom", "argent"],
+      "fields": {
+        "passage": "Go late on a Saturday and the traders start cutting prices: that is when you find a real bargain. Bring cash, though — several of the older stalls still refuse cards.",
+        "term": "a bargain",
+        "meaning": "une bonne affaire"
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « une bonne affaire » ?",
+          "answerSpec": { "accepted": ["a bargain", "bargain"] },
+          "hints": ["Le verbe « to bargain » veut dire marchander."],
+          "pitfalls": [
+            {
+              "answers": ["a good deal", "good deal"],
+              "explain": "« A good deal » se dit aussi, mais « a bargain » est le mot exact : un objet payé nettement moins que sa valeur."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Go late on a Saturday and the traders cut prices: that is when you find a real ___.",
+          "answerSpec": { "accepted": ["bargain"] }
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « une bonne affaire » ?",
+          "answerSpec": { "accepted": ["a bargain"] },
+          "distractors": ["a discount", "a saving", "a barter"]
+        }
+      ]
+    }
+  ]
+}

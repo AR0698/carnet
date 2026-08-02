@@ -1,0 +1,114 @@
+{
+  "group": "Parler bristolien",
+  "items": [
+    {
+      "id": "c006-gert-lush",
+      "topicId": "c006",
+      "tags": ["argot", "opinion"],
+      "fields": {
+        "passage": "If a Bristolian tells you the food was gert lush, take the compliment: lush means lovely, and gert is the local way of saying very. You will hear it about a pint, a sunset, and somebody's new kitchen.",
+        "term": "gert lush",
+        "meaning": "vraiment super, excellent"
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « vraiment super » en argot bristolien — deux mots ?",
+          "answerSpec": { "accepted": ["gert lush", "gurt lush"] },
+          "hints": ["« Lush » veut dire délicieux, chouette ; le premier mot est l'intensificateur local."],
+          "pitfalls": [
+            {
+              "answers": ["very lush", "great lush"],
+              "explain": "L'intensificateur bristolien est « gert » (parfois écrit « gurt »), pas « very »."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "If a Bristolian tells you the food was ___, take the compliment.",
+          "answerSpec": { "accepted": ["gert lush", "gurt lush"] }
+        },
+        {
+          "type": "mcq",
+          "prompt": "Laquelle veut dire « vraiment super » à Bristol ?",
+          "answerSpec": { "accepted": ["gert lush"] },
+          "distractors": ["gert grim", "proper daft", "right mint"]
+        }
+      ]
+    },
+    {
+      "id": "c006-cheers-drive",
+      "topicId": "c006",
+      "tags": ["argot", "transports"],
+      "fields": {
+        "passage": "When you get off a bus in Bristol, you say cheers drive to the driver. Nobody says driver in full, and nobody says thank you — and if you forget, you will feel the silence.",
+        "term": "cheers drive",
+        "meaning": "merci chauffeur (en descendant du bus)"
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Que dit-on au chauffeur en descendant du bus, à Bristol ?",
+          "answerSpec": { "accepted": ["cheers drive", "cheers, drive"] },
+          "hints": ["Le mot « driver » est raccourci — c'est ce raccourci qui fait la formule."],
+          "pitfalls": [
+            {
+              "answers": ["cheers driver", "thanks driver"],
+              "explain": "Le mot est bien tronqué : « cheers drive ». Dire « driver » en entier trahit le visiteur."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "When you get off a bus in Bristol, you say ___ to the driver.",
+          "answerSpec": { "accepted": ["cheers drive", "cheers, drive"] }
+        },
+        {
+          "type": "mcq",
+          "prompt": "Laquelle dit-on en descendant du bus ?",
+          "answerSpec": { "accepted": ["cheers drive"] },
+          "distractors": ["cheers driver", "ta, driver", "thanks, chief"]
+        }
+      ]
+    },
+    {
+      "id": "c006-alright-my-lover",
+      "topicId": "c006",
+      "tags": ["argot", "salutation"],
+      "fields": {
+        "passage": "Alright my lover is a greeting, not a declaration. In the West Country it means roughly how are you, and it is said to strangers, to neighbours and to the man selling you a newspaper. The usual answer is simply alright.",
+        "term": "alright my lover",
+        "meaning": "salut, ça va ? (formule affectueuse de l'ouest anglais)"
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Quelle salutation affectueuse entend-on dans l'ouest anglais, et qui veut simplement dire « ça va ? »",
+          "answerSpec": {
+            "accepted": ["alright my lover", "alright me lover", "alright my luvver"]
+          },
+          "hints": ["Trois mots. Le dernier ferait rougir si on le traduisait mot à mot."],
+          "pitfalls": [
+            {
+              "answers": ["hello my love", "alright my love"],
+              "explain": "« My love » s'entend ailleurs en Angleterre. La forme du West Country est « my lover », et elle n'a rien de romantique."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "___ is a greeting, not a declaration.",
+          "answerSpec": {
+            "accepted": ["alright my lover", "alright me lover", "alright my luvver"]
+          }
+        },
+        {
+          "type": "mcq",
+          "prompt": "Laquelle est la salutation du West Country ?",
+          "answerSpec": { "accepted": ["alright my lover"] },
+          "distractors": ["alright my darling", "alright my duck", "alright my pet"]
+        }
+      ]
+    }
+  ]
+}

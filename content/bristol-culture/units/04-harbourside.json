@@ -1,0 +1,115 @@
+{
+  "group": "Le port",
+  "items": [
+    {
+      "id": "c004-launch",
+      "topicId": "c004",
+      "tags": ["verbe", "port"],
+      "fields": {
+        "passage": "The ss Great Britain was launched in Bristol in 1843. Designed by Brunel, she was the first iron, screw-propelled steamship to cross the Atlantic, and the largest ship in the world when she left on her first crossing.",
+        "term": "to launch",
+        "meaning": "lancer, mettre à l'eau"
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « mettre à l'eau, lancer » — un navire ?",
+          "answerSpec": { "accepted": ["to launch", "launch"] },
+          "hints": ["Le même verbe sert pour un produit ou une fusée."],
+          "pitfalls": [
+            {
+              "answers": ["to throw", "throw"],
+              "explain": "« Throw », c'est jeter à la main. La mise à l'eau d'un navire, c'est « to launch »."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The ss Great Britain ___ in Bristol in 1843.",
+          "answerSpec": { "accepted": ["was launched"] },
+          "hints": ["Passif au prétérit : ce n'est pas le navire qui agit."]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Laquelle est correcte ?",
+          "answerSpec": { "accepted": ["she was launched in 1843"] },
+          "distractors": [
+            "she was launch in 1843",
+            "she has launched in 1843",
+            "she is launched in 1843"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c004-maiden-voyage",
+      "topicId": "c004",
+      "tags": ["expression", "port"],
+      "fields": {
+        "passage": "Her maiden voyage took her from Liverpool to New York in 1845. Later she carried emigrants to Australia, was wrecked, abandoned in the Falklands, and finally towed home in 1970 — back into the very dock where she had been built.",
+        "term": "a maiden voyage",
+        "meaning": "un voyage inaugural"
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « un voyage inaugural » — la toute première traversée d'un navire ?",
+          "answerSpec": { "accepted": ["a maiden voyage", "maiden voyage"] },
+          "hints": ["« Maiden » veut dire premier, initial, dans quelques expressions figées : maiden flight, maiden speech."],
+          "pitfalls": [
+            {
+              "answers": ["a first voyage", "first voyage"],
+              "explain": "Compréhensible, mais l'expression consacrée est « maiden voyage »."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Her ___ took her from Liverpool to New York in 1845.",
+          "answerSpec": { "accepted": ["maiden voyage"] }
+        },
+        {
+          "type": "mcq",
+          "prompt": "Laquelle veut dire « voyage inaugural » ?",
+          "answerSpec": { "accepted": ["a maiden voyage"] },
+          "distractors": ["a maiden journey", "a virgin voyage", "a founding voyage"]
+        }
+      ]
+    },
+    {
+      "id": "c004-tow",
+      "topicId": "c004",
+      "tags": ["verbe", "port"],
+      "fields": {
+        "passage": "Bringing her back was an extraordinary operation: the hull was patched, floated onto a pontoon and towed eleven thousand kilometres across the Atlantic. Crowds lined the harbour to watch her come up the Avon.",
+        "term": "to tow",
+        "meaning": "remorquer"
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « remorquer » ?",
+          "answerSpec": { "accepted": ["to tow", "tow"] },
+          "hints": ["Se prononce comme « toe », l'orteil — pas comme « town »."],
+          "pitfalls": [
+            {
+              "answers": ["to pull", "pull"],
+              "explain": "« Pull », c'est tirer en général. Remorquer un bateau ou une voiture, c'est « to tow »."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The hull was patched, floated onto a pontoon and ___ eleven thousand kilometres across the Atlantic.",
+          "answerSpec": { "accepted": ["towed"] }
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « remorquer » ?",
+          "answerSpec": { "accepted": ["to tow"] },
+          "distractors": ["to row", "to tie", "to toss"]
+        }
+      ]
+    }
+  ]
+}
