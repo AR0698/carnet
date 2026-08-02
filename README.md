@@ -236,7 +236,9 @@ npm run dev
 | Script | Effet |
 | --- | --- |
 | `npm run dev` | serveur de développement (http://localhost:5173) |
-| `npm run build` | packs, typecheck, puis build statique dans `dist/` |
+| `npm run build` | packs, typecheck, tests, puis build statique dans `dist/` |
+| `npm test` | la suite de tests (vitest) |
+| `npm run test:watch` | les tests en continu pendant qu'on code |
 | `npm run pack` | reconstruit les deux packs de contenu |
 | `npm run typecheck` | typecheck seul |
 | `npm run preview` | sert le build de production (http://localhost:4173) |
@@ -264,6 +266,9 @@ src/
     backup.ts           export / import de sauvegarde
     disputes.ts         formulations refusées à tort, à porter au contenu
     prefs.ts            réglages de session (mode cahier)
+  test/
+    setup.ts            IndexedDB en mémoire, installé avant tout import
+    helpers.ts          fabriques minimales de packs et de cartes
   packs/
     schema.ts           types du pack de contenu
     validate.ts         validation au chargement
@@ -326,6 +331,34 @@ haute qui répète la réponse. `scripts/build-pack.mjs` refuse le pack dans ce 
 2. L'ajouter à `RENDERERS` dans `src/engine/exercises/index.ts`.
 
 Rien d'autre ne bouge : ni le moteur, ni la session, ni l'interface.
+
+## Ce que les tests garantissent
+
+`npm test` — 46 cas, moins d'une seconde. Ils ne cherchent pas la couverture :
+ils tiennent les quatre endroits où une erreur détruit des données sans rien
+signaler.
+
+**L'élagage sélectif.** Qu'un pack personnel vide n'emporte aucune carte, et
+qu'il continue pourtant de créer les manquantes.
+
+**La réconciliation du vocabulaire.** Qu'effacer une phrase d'exemple retire le
+texte à trou et lui seul ; que supprimer un mot emporte ses cartes et ses
+réponses, et rien d'autre.
+
+**Le réveil des dates à l'import.** Le test vérifie d'abord que le problème est
+réel — dans le fichier, `due` est bien une chaîne — puis que la relecture rend
+de vrais `Date`. Sans cela les échéances se compareraient en ordre alphabétique,
+sans jamais lever d'erreur.
+
+**La porte de graduation.** Que deux réussites le même jour ne comptent que pour
+une, qu'une session non mélangée ne l'ouvre pas, qu'un échec la rouvre sans
+redemander l'entrelacement déjà acquis.
+
+Ces tests ont été vérifiés par mutation : casser l'option `prune` fait tomber
+exactement les deux cas qui la protègent, retirer le réveil des dates en fait
+tomber trois. Un test qui ne peut pas échouer ne garantit rien.
+
+`npm run build` les exécute : une garantie cassée ne peut pas partir en ligne.
 
 ## Hors-ligne et mises à jour
 
@@ -406,7 +439,8 @@ le signale et la progression reste intacte.
 | 7. Discovery — vocabulaire saisi à la main | fait |
 | 8. Culture — Bristol | amorcé (6 unités, 18 expressions) |
 | 9. Diagnostic — notions fragiles, cartes-sangsues, contestations | fait |
-| 10. Série hebdomadaire | à faire |
+| 10. Tests sur les chemins de données | fait |
+| 11. Série hebdomadaire | à faire |
 
 Deux points restent ouverts côté image : l'aquarelle de couverture, signée
 Zayane, n'est pas embarquée — les illustrations sont des dessins vectoriels
