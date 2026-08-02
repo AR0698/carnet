@@ -3,8 +3,9 @@ import type { AnswerDiff, DiffToken } from '../../engine/diff';
 import { rendererFor, renderStatement, type ExerciseHandle } from '../../engine/exercises';
 import { canonicalAnswer, otherAnswers } from '../../engine/grading';
 import { formatDelay } from '../../engine/scheduler';
-import { recordAnswer, type Session } from '../../engine/session';
+import { recordAnswer, reviseAnswer, type RecordedAnswer, type Session } from '../../engine/session';
 import { contentLang, spokenSentence } from '../../packs/schema';
+import { recordDispute } from '../../storage/disputes';
 import { el, mount } from '../dom';
 import { listenButton, stopSpeaking } from '../speech';
 import type { AnsweredCard, Ctx } from '../types';
@@ -141,7 +142,10 @@ export function renderReview(ctx: Ctx, session: Session): void {
      * suivante. Sur ce point les deux modes ne diffèrent pas : même carte,
      * même FSRS, même porte de graduation.
      */
-    async function commit(judgement: SelfJudgement, verdict: HTMLElement): Promise<void> {
+    async function commit(
+      judgement: SelfJudgement,
+      verdict: HTMLElement,
+    ): Promise<{ recorded: RecordedAnswer; entry: AnsweredCard }> {
       const firstInput = handle?.firstInputAt();
       const outcome = await recordAnswer(card.card, {
         correct: judgement.correct,
@@ -153,12 +157,15 @@ export function renderReview(ctx: Ctx, session: Session): void {
         rescue: card.rescue,
       });
 
-      answered.push({
+      // Gardée par référence : une réponse contestée doit pouvoir corriger le
+      // bilan de fin de session, qui la compterait sinon comme manquée.
+      const entry: AnsweredCard = {
         topicTitle: card.topicTitle,
         prompt: card.exercise.prompt,
         correct: judgement.correct,
         nextDue: outcome.card.due,
-      });
+      };
+      answered.push(entry);
 
       verdict.append(
         el('span', { class: 'alt' }, [`On la revoit ${formatDelay(new Date(), outcome.card.due)}.`]),
@@ -174,6 +181,71 @@ export function renderReview(ctx: Ctx, session: Session): void {
       });
       mount(actions, next);
       next.focus();
+      return { recorded: outcome, entry };
+    }
+
+    /**
+     * « En fait, je l'avais. »
+     *
+     * La correction n'a pas de jugement : elle compare à une liste de
+     * formulations écrites d'avance. Quand la réponse donnée en valait une qui
+     * n'y figure pas, l'échec est celui du contenu, pas de la mémoire — et
+     * laisser la carte porter cet échec fausserait sa planification pour des
+     * mois. La réponse est donc rejouée en juste, et la formulation refusée
+     * mise de côté pour être ajoutée au carnet.
+     */
+    function disputeButton(
+      recorded: RecordedAnswer,
+      entry: AnsweredCard,
+      given: string,
+      expected: string,
+    ): HTMLElement {
+      const button = el('button', { class: 'btn btn--link', type: 'button' }, [
+        'En fait, je l’avais',
+      ]);
+
+      button.addEventListener('click', () => {
+        button.disabled = true;
+        void (async () => {
+          const revised = await reviseAnswer(card.card, recorded.seq, {
+            correct: true,
+            usedHint,
+            elapsedMs: recorded.review.elapsedMs,
+            recallMs: recorded.review.recallMs,
+            interleaved: session.interleaved,
+            rescue: card.rescue,
+          });
+
+          await recordDispute({
+            cardId: card.card.id,
+            packId: card.card.packId,
+            prompt: card.exercise.prompt,
+            given,
+            expected,
+          });
+
+          entry.correct = true;
+          entry.nextDue = revised.card.due;
+
+          // La comparaison mot à mot n'a plus lieu d'être : elle désignait des
+          // écarts avec une formulation qui n'était pas la bonne cible.
+          mount(
+            verdictSlot,
+            el('div', { class: 'verdict verdict--ok' }, [
+              el('strong', {}, ['Compté juste.']),
+              el('span', { class: 'alt' }, [
+                `« ${given} » est mis de côté, à ajouter aux réponses acceptées du carnet.`,
+              ]),
+              el('span', { class: 'alt' }, [
+                `On la revoit ${formatDelay(new Date(), revised.card.due)}.`,
+              ]),
+            ]),
+            passageBlock(),
+          );
+        })();
+      });
+
+      return button;
     }
 
     // --- mode écran : on tape, l'application corrige ---
@@ -200,17 +272,26 @@ export function renderReview(ctx: Ctx, session: Session): void {
         input.lock();
 
         const result = renderer.grade(card.exercise, value);
-        await commit(
-          { correct: result.correct },
-          el('div', { class: `verdict ${result.correct ? 'verdict--ok' : 'verdict--ko'}` }, [
+        const verdict = el(
+          'div',
+          { class: `verdict ${result.correct ? 'verdict--ok' : 'verdict--ko'}` },
+          [
             el('strong', {}, [result.feedback]),
             result.correction?.diff && renderDiff(result.correction.diff),
             result.correction?.explanation &&
               el('p', { class: 'why' }, [result.correction.explanation.text]),
             alternativesLine(result.alternatives),
             listenButton(spokenSentence(card.exercise), lang),
-          ]),
+          ],
         );
+
+        const { recorded, entry } = await commit({ correct: result.correct }, verdict);
+
+        // Pas de contestation sur un choix multiple : les formulations étaient
+        // sous les yeux, il n'y a pas d'équivalent à avoir trouvé autrement.
+        if (!result.correct && card.exercise.type !== 'mcq') {
+          verdict.append(disputeButton(recorded, entry, value.trim(), result.expected));
+        }
       };
 
       primary.addEventListener('click', () => void submit());

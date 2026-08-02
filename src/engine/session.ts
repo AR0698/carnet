@@ -180,20 +180,57 @@ export async function buildSession(
   };
 }
 
+export interface RecordedAnswer extends ReviewOutcome {
+  /** Clé de la ligne écrite au journal — de quoi la reprendre si besoin. */
+  seq: number;
+}
+
 /** Applique une réponse et persiste : une transaction, deux écritures. */
 export async function recordAnswer(
   card: CardRecord,
   answer: Answer,
   now = new Date(),
-): Promise<ReviewOutcome> {
+): Promise<RecordedAnswer> {
   const wasNew = card.state === State.New;
   const outcome = applyAnswer(card, answer, now);
 
-  await db.transaction('rw', db.cards, db.reviews, async () => {
+  const seq = await db.transaction('rw', db.cards, db.reviews, async () => {
     await db.cards.put(outcome.card);
-    await db.reviews.add(outcome.review);
+    return db.reviews.add(outcome.review);
   });
 
   if (wasNew) await consumeNewQuota(card.packId, now);
-  return outcome;
+  return { ...outcome, seq };
+}
+
+/**
+ * Reprend la dernière réponse d'une carte.
+ *
+ * La correction est volontairement stricte — en grammaire, un « s » manquant
+ * *est* l'erreur — mais cette sévérité a un revers : une formulation juste
+ * absente d'`answerSpec.accepted` est comptée fausse, et la planification est
+ * corrompue en silence. L'apprenante doit pouvoir dire « je l'avais » sans que
+ * la carte en garde la trace d'un échec.
+ *
+ * On repart de l'état *d'avant* la réponse contestée et on remplace la ligne de
+ * journal, plutôt que d'en empiler une seconde : sinon la carte compterait deux
+ * révisions là où il n'y en a eu qu'une, et les statistiques mentiraient.
+ *
+ * Le quota de nouveautés n'est pas reconsommé : il l'a été à la première écriture.
+ */
+export async function reviseAnswer(
+  card: CardRecord,
+  previousSeq: number,
+  answer: Answer,
+  now = new Date(),
+): Promise<RecordedAnswer> {
+  const outcome = applyAnswer(card, answer, now);
+
+  const seq = await db.transaction('rw', db.cards, db.reviews, async () => {
+    await db.reviews.delete(previousSeq);
+    await db.cards.put(outcome.card);
+    return db.reviews.add(outcome.review);
+  });
+
+  return { ...outcome, seq };
 }
