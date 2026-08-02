@@ -10,6 +10,7 @@
 import { rescueExercise, type Exercise, type PackItem, type ContentPack } from '../packs/schema';
 import { db, kvGet, kvSet, type CardRecord } from '../storage/db';
 import { dueCards, newCards } from '../storage/cards';
+import { loadPriority } from '../storage/priorities';
 import { applyAnswer, localDay, State, type Answer, type ReviewOutcome } from './scheduler';
 
 /** Durée moyenne observée par carte, tous types d'exercice confondus. */
@@ -132,6 +133,22 @@ export interface BuildOptions {
   mode?: SessionMode;
 }
 
+/**
+ * Notions des groupes que l'apprenante a demandé d'ouvrir en premier.
+ *
+ * La priorité est stockée par groupe — quatorze groupes se choisissent d'un
+ * coup d'œil, cent quarante-cinq notions non — et résolue ici en notions, la
+ * seule granularité que connaisse la sélection des cartes.
+ */
+async function preferredTopics(pack: ContentPack): Promise<Set<string>> {
+  const groups = await loadPriority(pack.meta.id);
+  if (groups.length === 0) return new Set();
+  const wanted = new Set(groups);
+  return new Set(
+    pack.topics.filter((t) => wanted.has(t.group ?? t.id)).map((t) => t.id),
+  );
+}
+
 export async function buildSession(
   pack: ContentPack,
   availableMinutes: number,
@@ -145,7 +162,10 @@ export async function buildSession(
   const budget = estimateCardCount(availableMinutes, mode);
   const quota = await remainingNewQuota(packId, maxNewPerDay, now);
 
-  const [due, fresh] = await Promise.all([dueCards(packId, now), newCards(packId, quota)]);
+  const [due, fresh] = await Promise.all([
+    dueCards(packId, now),
+    newCards(packId, quota, await preferredTopics(pack)),
+  ]);
 
   const selected = spreadTopics(weave(due, fresh).slice(0, budget));
 

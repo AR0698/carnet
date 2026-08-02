@@ -151,6 +151,13 @@ export async function renderHome(ctx: Ctx): Promise<void> {
     ]);
     browse.addEventListener('click', () => void ctx.nav.vocab());
 
+    // Choisir par où le neuf s'ouvre n'a de sens qu'avec du neuf en réserve et
+    // plusieurs groupes entre lesquels arbitrer.
+    const groups = new Set(carnet.pack.topics.map((t) => t.group ?? t.id));
+    const canOrder = !carnet.personal && counts.fresh > 0 && groups.size > 1;
+    const order = el('button', { class: 'btn btn--link', type: 'button' }, ['Par où commencer']);
+    order.addEventListener('click', () => void ctx.nav.order(carnet.id));
+
     const head = el('div', { class: 'carnet__head' }, [
       carnetGlyph(GLYPHS[carnet.id] ?? 'culture'),
       el('div', {}, [el('h2', {}, [carnet.label]), el('p', { class: 'sub' }, [carnet.tagline])]),
@@ -180,6 +187,7 @@ export async function renderHome(ctx: Ctx): Promise<void> {
         : el('p', { class: 'notice' }, ['Combien de temps as-tu, là, maintenant ?']),
       !empty && durations,
       carnet.personal && el('div', { class: 'carnet__links' }, [addWord, !empty && browse]),
+      canOrder && el('div', { class: 'carnet__links' }, [order]),
     ]);
   }
 

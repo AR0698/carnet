@@ -29,6 +29,7 @@ export interface Nav {
   summary(result: SessionResult): Promise<void>;
   vocab(opts?: VocabOptions): Promise<void>;
   insights(): Promise<void>;
+  order(packId: string): Promise<void>;
   backup(): Promise<void>;
 }
 
