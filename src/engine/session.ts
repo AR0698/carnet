@@ -46,6 +46,8 @@ const RESCUE_AFTER_FAILURES = 2;
 export type SessionMode = 'screen' | 'paper';
 
 export interface Session {
+  /** Le carnet d'où viennent les cartes — porte notamment la langue à prononcer. */
+  pack: ContentPack;
   cards: SessionCard[];
   /** Vrai si la session couvre au moins deux notions : condition du §3.4. */
   interleaved: boolean;
@@ -170,6 +172,7 @@ export async function buildSession(
   }
 
   return {
+    pack,
     cards,
     interleaved: new Set(cards.map((c) => c.card.topicId)).size >= 2,
     requestedMinutes: availableMinutes,

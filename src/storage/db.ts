@@ -70,10 +70,35 @@ export interface KvRecord {
   value: unknown;
 }
 
+/**
+ * Un mot ou une expression saisi à la main — le carnet Discovery.
+ *
+ * C'est la seule donnée de cette base qui ne se retélécharge pas. Un pack perdu
+ * revient d'un `fetch` ; un mot noté un soir dans un pub de Stokes Croft, non.
+ * D'où la table dédiée, l'absence d'élagage automatique (`syncPackCards` ne
+ * passe jamais dessus en mode destructeur) et l'export de sauvegarde.
+ */
+export interface VocabRecord {
+  id: string;
+  /** L'expression anglaise, telle qu'on l'a entendue. */
+  term: string;
+  /** Ce qu'elle veut dire, en français. */
+  meaning: string;
+  /** Une phrase anglaise qui la contient — c'est elle qui fera le texte à trou. */
+  example?: string;
+  /** Où on l'a croisée, à quoi elle sert : libre, jamais interrogé. */
+  note?: string;
+  /** Étiquette libre, pour s'y retrouver dans la liste. */
+  tag?: string;
+  createdAt: Date;
+  updatedAt: Date;
+}
+
 export class CarnetDB extends Dexie {
   cards!: Table<CardRecord, string>;
   reviews!: Table<ReviewRecord, number>;
   kv!: Table<KvRecord, string>;
+  vocab!: Table<VocabRecord, string>;
 
   constructor() {
     super('carnet');
@@ -81,6 +106,11 @@ export class CarnetDB extends Dexie {
       cards: 'id, packId, topicId, state, due, [packId+due], [packId+state]',
       reviews: '++seq, cardId, reviewedAt',
       kv: 'key',
+    });
+    // Dexie conserve les tables qu'une version ne mentionne pas : `cards`,
+    // `reviews` et `kv` traversent la migration intactes, avec leur contenu.
+    this.version(2).stores({
+      vocab: 'id, createdAt, term',
     });
   }
 }

@@ -1,3 +1,4 @@
+@import './fonts.css';
 @import './tokens.css';
 
 /* ---------- base ---------- */
@@ -68,17 +69,17 @@ p {
 }
 
 .btn:focus-visible {
-  outline: 2px solid var(--iris);
+  outline: 2px solid var(--harbour);
   outline-offset: 2px;
 }
 
 .btn--primary {
-  background: var(--iris);
-  color: #fff;
+  background: var(--harbour);
+  color: var(--card);
 }
 
 .btn--primary:hover {
-  background: color-mix(in srgb, var(--iris) 88%, var(--ink));
+  background: color-mix(in srgb, var(--harbour) 88%, var(--ink));
 }
 
 .btn--quiet {
@@ -96,7 +97,7 @@ p {
   background: none;
   border: none;
   padding: 0;
-  color: var(--iris);
+  color: var(--harbour);
   font-size: var(--text-sm);
   text-decoration: underline;
   text-underline-offset: 3px;
@@ -178,7 +179,7 @@ p {
 }
 
 .toggle__box {
-  accent-color: var(--iris);
+  accent-color: var(--harbour);
   width: 1.15rem;
   height: 1.15rem;
   margin: 0.15rem 0 0;
@@ -210,7 +211,7 @@ p {
 
 .how summary {
   cursor: pointer;
-  color: var(--iris);
+  color: var(--harbour);
   padding: var(--space-2) 0;
   list-style-position: outside;
 }
@@ -273,7 +274,7 @@ p {
 .progress i {
   display: block;
   height: 100%;
-  background: var(--iris);
+  background: var(--harbour);
   transition: width var(--dur) var(--ease);
 }
 
@@ -319,8 +320,8 @@ p {
 
 .ex-field:focus {
   outline: none;
-  border-color: var(--iris);
-  box-shadow: 0 0 0 3px var(--iris-soft);
+  border-color: var(--harbour);
+  box-shadow: 0 0 0 3px var(--harbour-soft);
 }
 
 .ex-field--inline {
@@ -348,7 +349,7 @@ p {
 }
 
 .ex-source--flag {
-  background: var(--margin-soft);
+  background: var(--brick-soft);
 }
 
 .ex-source__label {
@@ -359,7 +360,7 @@ p {
 }
 
 .ex-source--flag .ex-source__label {
-  color: color-mix(in srgb, var(--margin) 70%, var(--ink));
+  color: color-mix(in srgb, var(--brick) 70%, var(--ink));
 }
 
 .ex-source p {
@@ -371,8 +372,8 @@ p {
 
 .rescue-note {
   font-size: var(--text-sm);
-  color: var(--marigold-text);
-  background: var(--marigold);
+  color: var(--balloon-text);
+  background: var(--balloon);
   border-radius: var(--radius-control);
   padding: var(--space-2) var(--space-4);
 }
@@ -398,16 +399,16 @@ p {
 }
 
 .mcq__option:hover:not(:disabled) {
-  border-color: var(--iris);
+  border-color: var(--harbour);
 }
 
 .mcq__option[aria-pressed='true'] {
-  border-color: var(--iris);
-  background: var(--iris-soft);
+  border-color: var(--harbour);
+  background: var(--harbour-soft);
 }
 
 .mcq__option:focus-visible {
-  outline: 2px solid var(--iris);
+  outline: 2px solid var(--harbour);
   outline-offset: 2px;
 }
 
@@ -424,7 +425,7 @@ p {
 
 /* La carte porte la marge d'un vrai cahier : un trait à gauche, rien de plus. */
 .card--paper {
-  border-left: 2px solid color-mix(in srgb, var(--margin) 35%, var(--card));
+  border-left: 2px solid color-mix(in srgb, var(--brick) 35%, var(--card));
 }
 
 /* Le trou reste un trou : on n'écrit pas dedans, on le recopie. */
@@ -448,7 +449,7 @@ p {
 .paper-cue {
   font-size: var(--text-sm);
   color: var(--ink-soft);
-  background: var(--grid);
+  background: var(--wash);
   border-radius: var(--radius-control);
   padding: var(--space-3) var(--space-4);
 }
@@ -506,18 +507,18 @@ p {
 }
 
 .judge__btn--easy:hover {
-  border-color: var(--growth);
-  background: var(--growth-soft);
+  border-color: var(--park);
+  background: var(--park-soft);
 }
 
 .judge__btn--ok:hover {
-  border-color: var(--iris);
-  background: var(--iris-soft);
+  border-color: var(--harbour);
+  background: var(--harbour-soft);
 }
 
 .judge__btn--ko:hover {
-  border-color: var(--margin);
-  background: var(--margin-soft);
+  border-color: var(--brick);
+  background: var(--brick-soft);
 }
 
 /* Le bouton d'écoute vit dans un bloc de correction : il s'y range. */
@@ -528,8 +529,8 @@ p {
 .hint {
   font-size: var(--text-sm);
   color: var(--ink-soft);
-  background: var(--marigold);
-  color: var(--marigold-text);
+  background: var(--balloon);
+  color: var(--balloon-text);
   border-radius: var(--radius-control);
   padding: var(--space-3) var(--space-4);
 }
@@ -546,13 +547,13 @@ p {
 }
 
 .verdict--ok {
-  background: var(--growth-soft);
-  color: color-mix(in srgb, var(--growth) 75%, var(--ink));
+  background: var(--park-soft);
+  color: color-mix(in srgb, var(--park) 75%, var(--ink));
 }
 
 .verdict--ko {
-  background: var(--margin-soft);
-  color: color-mix(in srgb, var(--margin) 65%, var(--ink));
+  background: var(--brick-soft);
+  color: color-mix(in srgb, var(--brick) 65%, var(--ink));
 }
 
 .verdict strong {
@@ -598,14 +599,14 @@ p {
 
 /* Ce qui est en trop ou fautif, du côté de la réponse donnée. */
 .diff--wrong {
-  color: var(--margin);
+  color: var(--brick);
   text-decoration: line-through;
   text-decoration-thickness: 1px;
 }
 
 /* Ce qui manquait, du côté de la réponse attendue. */
 .diff--missing {
-  color: var(--growth);
+  color: var(--park);
   border-bottom: 2px solid currentColor;
 }
 
@@ -613,7 +614,7 @@ p {
 
 .why {
   background: var(--card);
-  border-left: 3px solid var(--iris);
+  border-left: 3px solid var(--harbour);
   border-radius: 0 var(--radius-control) var(--radius-control) 0;
   padding: var(--space-3) var(--space-4);
   color: var(--ink);
@@ -647,7 +648,7 @@ p {
 }
 
 .dot--on {
-  background: var(--growth);
+  background: var(--park);
 }
 
 .notice {
@@ -656,8 +657,354 @@ p {
 }
 
 .error {
-  border-left: 3px solid var(--margin);
+  border-left: 3px solid var(--brick);
   padding-left: var(--space-4);
   white-space: pre-wrap;
   font-size: var(--text-sm);
+}
+
+/* ---------- grain du papier ----------
+   Une texture, pas un quadrillage : ce n'est plus un cahier d'écolier français
+   mais du papier aquarelle. Le bruit est produit par un `feTurbulence` en SVG
+   incorporé — aucune image, quelques centaines d'octets, et ça ne s'imprime pas
+   sur les pixels du texte puisque la couche est au-dessous. */
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: var(--grain-opacity);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.86' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23g)' opacity='0.05'/%3E%3C/svg%3E");
+}
+
+/* Les filtres d'aquarelle vivent dans un SVG sans surface, planté en tête de
+   document : il ne doit rien occuper ni rien intercepter. */
+.gtb-defs {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+/* ---------- bannière ---------- */
+
+.masthead--hero {
+  gap: var(--space-3);
+}
+
+/* L'illustration mord sur les marges du conteneur : une aquarelle encadrée de
+   blanc n'est plus une aquarelle, c'est une vignette. */
+.gtb-banner {
+  margin: calc(var(--space-5) * -1) calc(var(--space-4) * -1) var(--space-2);
+  border-bottom: 1px solid var(--border-soft);
+  background: color-mix(in srgb, var(--sky) 22%, var(--paper));
+}
+
+.gtb-banner__svg {
+  display: block;
+  width: 100%;
+  height: clamp(132px, 33vw, 196px);
+}
+
+.masthead--hero h1 {
+  font-size: var(--text-3xl);
+  letter-spacing: -0.03em;
+}
+
+/* La signature du dessin : écrite à la main, pas composée. */
+.masthead--hero .sub {
+  font-family: var(--font-hand);
+  font-size: var(--text-base);
+  color: var(--ink-soft);
+}
+
+/* ---------- hub des carnets ---------- */
+
+.carnet__head {
+  display: flex;
+  align-items: start;
+  gap: var(--space-3);
+}
+
+.carnet__head .sub {
+  color: var(--ink-soft);
+  font-size: var(--text-sm);
+  margin-top: var(--space-1);
+}
+
+.gtb-glyph {
+  flex: none;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.gtb-glyph svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.carnet__links {
+  display: flex;
+  gap: var(--space-4);
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: var(--space-2);
+  border-top: 1px solid var(--border-soft);
+}
+
+/* Une case à cocher seule dans sa carte n'a rien au-dessus d'elle à séparer. */
+.card > .toggle:only-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.crumb {
+  margin-bottom: calc(var(--space-3) * -1);
+}
+
+.footer-actions {
+  display: flex;
+  justify-content: center;
+  padding-top: var(--space-2);
+}
+
+/* ---------- formulaire ---------- */
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.field__label {
+  font-size: var(--text-sm);
+  font-weight: 500;
+}
+
+.field__required {
+  color: var(--ink-faint);
+  font-weight: 400;
+}
+
+.field__hint {
+  font-size: var(--text-xs);
+  color: var(--ink-soft);
+  line-height: 1.45;
+}
+
+.field__error {
+  font-size: var(--text-sm);
+  color: var(--brick);
+  background: var(--brick-soft);
+  border-radius: var(--radius-control);
+  padding: var(--space-3) var(--space-4);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.btn--danger {
+  color: var(--brick);
+}
+
+.btn--danger-solid {
+  background: var(--brick);
+  color: var(--card);
+}
+
+.btn--danger-solid:hover {
+  background: color-mix(in srgb, var(--brick) 88%, var(--ink));
+}
+
+/* ---------- carnet de vocabulaire ---------- */
+
+.vocab-search {
+  margin-bottom: calc(var(--space-2) * -1);
+}
+
+.vocab-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.vocab-item {
+  background: var(--card);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  padding: var(--space-4) var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.vocab-item[hidden] {
+  display: none;
+}
+
+.vocab-item__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+/* Le mot est de la main de l'apprenante : il s'écrit de sa main. */
+.vocab-item__term {
+  font-family: var(--font-hand);
+  font-size: var(--text-lg);
+  line-height: 1.3;
+}
+
+.vocab-item__meaning {
+  color: var(--ink-soft);
+  font-size: var(--text-sm);
+}
+
+.vocab-item__example {
+  font-size: var(--text-sm);
+  border-left: 2px solid var(--wash);
+  padding-left: var(--space-3);
+  color: var(--ink);
+}
+
+.vocab-item__note {
+  font-size: var(--text-xs);
+  color: var(--ink-faint);
+}
+
+.vocab-item__actions {
+  display: flex;
+  gap: var(--space-4);
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: var(--space-1);
+}
+
+.chip {
+  flex: none;
+  font-size: var(--text-xs);
+  border-radius: var(--radius-pill);
+  padding: 2px var(--space-3);
+  white-space: nowrap;
+}
+
+.chip--fresh {
+  background: var(--harbour-soft);
+  color: color-mix(in srgb, var(--harbour) 80%, var(--ink));
+}
+
+.chip--due {
+  background: var(--balloon);
+  color: var(--balloon-text);
+}
+
+.chip--kept {
+  background: var(--park-soft);
+  color: color-mix(in srgb, var(--park) 75%, var(--ink));
+}
+
+.chip--tag {
+  background: var(--wash);
+  color: var(--ink-soft);
+}
+
+/* ---------- passage du carnet Culture ---------- */
+
+.passage {
+  margin-top: var(--space-3);
+  border-radius: var(--radius-control);
+  padding: var(--space-4);
+  background: color-mix(in srgb, var(--sky) 18%, var(--paper));
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+  line-height: 1.6;
+}
+
+.passage__label {
+  font-size: var(--text-xs);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+/* ---------- mouvement ----------
+   Trois gestes, tous empruntés au dessin : le lavis qui se diffuse, le trait
+   qui se trace, les ballons qui dérivent. Rien de générique, aucun glissement
+   d'interface. Sous `prefers-reduced-motion`, les durées tombent à zéro dans
+   `tokens.css` et il ne reste que l'état d'arrivée. */
+
+@keyframes gtb-wash-in {
+  from {
+    opacity: 0;
+    clip-path: inset(0 0 12% 0 round var(--radius-card));
+  }
+  to {
+    opacity: 1;
+    clip-path: inset(0 0 0 0 round var(--radius-card));
+  }
+}
+
+.card,
+.vocab-item {
+  animation: gtb-wash-in var(--dur-wash) var(--ease-wash) both;
+}
+
+@keyframes gtb-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.gtb-draw {
+  stroke-dasharray: 460;
+  stroke-dashoffset: 460;
+  animation: gtb-draw calc(var(--dur-wash) * 2.4) var(--ease-wash) forwards;
+}
+
+@keyframes gtb-drift {
+  from {
+    transform: translate(0, 0) rotate(-0.7deg);
+  }
+  to {
+    transform: translate(11px, -10px) rotate(0.9deg);
+  }
+}
+
+.gtb-balloon {
+  animation: gtb-drift var(--dur-drift) ease-in-out infinite alternate;
+}
+
+/* Décalages négatifs : à l'ouverture, les ballons sont déjà en vol, chacun à un
+   endroit différent de sa course. Trois ballons partant du même point seraient
+   trois ballons mécaniques. */
+.gtb-balloon--2 {
+  animation-duration: calc(var(--dur-drift) * 1.4);
+  animation-delay: -7s;
+}
+
+.gtb-balloon--3 {
+  animation-duration: calc(var(--dur-drift) * 0.78);
+  animation-delay: -3s;
+}
+
+/* Une durée ne se coupe pas en deux lignes : « 5 » au-dessus de « min » se lit
+   comme deux informations distinctes. */
+.time-choice .btn {
+  padding-inline: var(--space-2);
+  white-space: nowrap;
 }

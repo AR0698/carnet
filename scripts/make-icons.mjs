@@ -3,10 +3,13 @@
  *
  *   node scripts/make-icons.mjs
  *
- * Le motif est fait de rectangles alignés sur les pixels : une page de cahier
- * (lignes pâles + trait de marge rouge) sur laquelle une phrase est écrite à
- * l'encre iris, débordant sur la marge. Aucune courbe, aucun texte — donc
- * aucun rasterizer ni police à installer, et un rendu net à toutes les tailles.
+ * Le motif est une montgolfière — la silhouette de Bristol qui reste lisible à
+ * 48 pixels, là où le pont suspendu se réduirait à trois traits gris.
+ *
+ * Le rendu est fait à la main, sans dépendance : on décrit des formes
+ * (rectangles, ellipses, polygones), on teste chaque pixel, et on encode le PNG
+ * directement. Les courbes sont échantillonnées en 4 × 4 puis moyennées — sans
+ * ce suréchantillonnage, le bord d'une ellipse est un escalier.
  *
  * Les couleurs sont celles de `src/ui/tokens.css` : les recopier ici si la
  * palette change.
@@ -19,49 +22,121 @@ import { fileURLToPath } from 'node:url';
 
 const OUT_DIR = join(dirname(fileURLToPath(import.meta.url)), '..', 'public', 'icons');
 
-const PAPER = [0xf7, 0xf8, 0xf5];
-const GRID = [0xe3, 0xee, 0xe1];
-const MARGIN = [0xe8, 0x57, 0x4a];
-const IRIS = [0x5b, 0x4f, 0xe8];
-const IRIS_SOFT = [0xa1, 0x9b, 0xee]; // iris mélangé au papier
+const PAPER = [0xfb, 0xf8, 0xf1];
+const TERRACOTTA = [0xcd, 0x6b, 0x41];
+const AMBER = [0xe8, 0xa9, 0x3b];
+const INK = [0x2b, 0x25, 0x21];
 
 /** Motif de référence, exprimé dans un carré de 512. */
 const DESIGN = 512;
+
+/** Suréchantillonnage : 4 × 4 suffit à effacer l'escalier des courbes. */
+const SS = 4;
+
+/**
+ * L'enveloppe est une ellipse prolongée par un triangle : gonflée en haut, elle
+ * retombe en goutte vers la nacelle. Le fuseau clair reprend la même
+ * construction, en plus étroit.
+ */
 const SHAPES = [
-  // lignes du cahier — épaisses pour rester lisibles une fois réduites
-  ...[132, 228, 324, 420].map((y) => ({ x: 0, y, w: 512, h: 7, color: GRID })),
-  // trait de marge
-  { x: 136, y: 0, w: 9, h: 512, color: MARGIN },
-  // l'écriture, posée sur les lignes : un trait plein qui déborde sur la marge,
-  // un plus court dessous. L'ensemble est centré sur le carré.
-  { x: 80, y: 186, w: 372, h: 42, color: IRIS },
-  { x: 172, y: 282, w: 208, h: 42, color: IRIS_SOFT },
+  // Pas d'horizon : le motif maskable est réduit vers le centre, et une bande
+  // de sol s'y retrouverait à flotter au milieu du vide. Sur l'aquarelle aussi
+  // les ballons sont posés sur le papier nu.
+
+  // enveloppe
+  { kind: 'ellipse', cx: 256, cy: 206, rx: 116, ry: 128, color: TERRACOTTA },
+  // Le triangle part de la largeur exacte de l'ellipse à cette hauteur (± 109),
+  // sans quoi un ressaut apparaît à la jonction des deux formes.
+  {
+    kind: 'polygon',
+    points: [
+      [147, 250],
+      [365, 250],
+      [256, 362],
+    ],
+    color: TERRACOTTA,
+  },
+
+  // fuseau clair, au centre
+  { kind: 'ellipse', cx: 256, cy: 206, rx: 33, ry: 128, color: AMBER },
+  {
+    kind: 'polygon',
+    points: [
+      [224, 250],
+      [288, 250],
+      [256, 360],
+    ],
+    color: AMBER,
+  },
+
+  // suspentes et nacelle
+  { kind: 'rect', x: 216, y: 352, w: 7, h: 36, color: INK },
+  { kind: 'rect', x: 289, y: 352, w: 7, h: 36, color: INK },
+  { kind: 'rect', x: 210, y: 386, w: 92, h: 46, color: INK },
 ];
 
+function insideRect(s, x, y) {
+  return x >= s.x && x < s.x + s.w && y >= s.y && y < s.y + s.h;
+}
+
+function insideEllipse(s, x, y) {
+  const dx = (x - s.cx) / s.rx;
+  const dy = (y - s.cy) / s.ry;
+  return dx * dx + dy * dy <= 1;
+}
+
+/** Rayon horizontal, règle pair-impair : vaut pour n'importe quel polygone. */
+function insidePolygon(points, x, y) {
+  let inside = false;
+  for (let i = 0, j = points.length - 1; i < points.length; j = i++) {
+    const [xi, yi] = points[i];
+    const [xj, yj] = points[j];
+    if (yi > y !== yj > y && x < ((xj - xi) * (y - yi)) / (yj - yi) + xi) inside = !inside;
+  }
+  return inside;
+}
+
+function colourAt(x, y) {
+  // Du dernier au premier : la forme posée en dernier recouvre les précédentes.
+  for (let i = SHAPES.length - 1; i >= 0; i--) {
+    const s = SHAPES[i];
+    const hit =
+      s.kind === 'rect'
+        ? insideRect(s, x, y)
+        : s.kind === 'ellipse'
+          ? insideEllipse(s, x, y)
+          : insidePolygon(s.points, x, y);
+    if (hit) return s.color;
+  }
+  return PAPER;
+}
+
+/** Rend l'icône à `size`, motif mis à l'échelle par `contentScale`. */
 function render(size, contentScale) {
   const px = new Uint8Array(size * size * 3);
-  for (let i = 0; i < size * size; i++) {
-    px[i * 3] = PAPER[0];
-    px[i * 3 + 1] = PAPER[1];
-    px[i * 3 + 2] = PAPER[2];
-  }
-
   const s = (size / DESIGN) * contentScale;
   const centre = size / 2;
-  const map = (v) => Math.round(centre + (v - DESIGN / 2) * s);
+  // Inverse de la mise à l'échelle : d'un pixel de sortie vers le carré de 512.
+  const toDesign = (v) => (v - centre) / s + DESIGN / 2;
+  const samples = SS * SS;
 
-  for (const shape of SHAPES) {
-    const x0 = Math.max(0, map(shape.x));
-    const y0 = Math.max(0, map(shape.y));
-    const x1 = Math.min(size, map(shape.x + shape.w));
-    const y1 = Math.min(size, map(shape.y + shape.h));
-    for (let y = y0; y < y1; y++) {
-      for (let x = x0; x < x1; x++) {
-        const i = (y * size + x) * 3;
-        px[i] = shape.color[0];
-        px[i + 1] = shape.color[1];
-        px[i + 2] = shape.color[2];
+  for (let y = 0; y < size; y++) {
+    for (let x = 0; x < size; x++) {
+      let r = 0;
+      let g = 0;
+      let b = 0;
+      for (let sy = 0; sy < SS; sy++) {
+        for (let sx = 0; sx < SS; sx++) {
+          const c = colourAt(toDesign(x + (sx + 0.5) / SS), toDesign(y + (sy + 0.5) / SS));
+          r += c[0];
+          g += c[1];
+          b += c[2];
+        }
       }
+      const i = (y * size + x) * 3;
+      px[i] = Math.round(r / samples);
+      px[i + 1] = Math.round(g / samples);
+      px[i + 2] = Math.round(b / samples);
     }
   }
   return px;

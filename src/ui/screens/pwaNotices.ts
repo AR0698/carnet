@@ -40,7 +40,7 @@ async function installNotice(refresh: () => void): Promise<HTMLElement | null> {
   // Android, Chrome desktop : le navigateur sait installer, il suffit de demander.
   if (canPromptInstall()) {
     const install = el('button', { class: 'btn btn--quiet', type: 'button' }, [
-      'Installer Carnet',
+      'Installer Go to Bristol',
     ]);
     install.addEventListener('click', async () => {
       await promptInstall();
@@ -49,7 +49,7 @@ async function installNotice(refresh: () => void): Promise<HTMLElement | null> {
 
     return el('section', { class: 'pwa-note' }, [
       el('p', {}, [
-        'Installe Carnet sur ton écran d’accueil : il s’ouvrira en plein écran et fonctionnera sans connexion.',
+        'Installe Go to Bristol sur ton écran d’accueil : il s’ouvrira en plein écran et fonctionnera sans connexion.',
       ]),
       el('div', { class: 'pwa-note__actions' }, [install, dismiss]),
     ]);
@@ -58,7 +58,7 @@ async function installNotice(refresh: () => void): Promise<HTMLElement | null> {
   // iOS : aucune API d'installation, seule la marche à suivre peut aider.
   if (needsIOSInstructions()) {
     return el('section', { class: 'pwa-note' }, [
-      el('p', {}, ['Pour garder Carnet à portée de main, ajoute-le à ton écran d’accueil :']),
+      el('p', {}, ['Pour garder Go to Bristol à portée de main, ajoute-le à ton écran d’accueil :']),
       el('ol', { class: 'pwa-note__steps' }, [
         el('li', {}, ['dans Safari, touche le bouton Partager, en bas de l’écran ;']),
         el('li', {}, ['choisis « Sur l’écran d’accueil ».']),
