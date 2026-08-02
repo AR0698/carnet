@@ -80,6 +80,20 @@ for (const it of pack.items) {
 
 const norm = (s) => s.toLowerCase().replace(/[^a-z0-9 ]/g, '').replace(/\s+/g, ' ').trim();
 
+// Le champ de saisie ne remplace que le premier `___` d'un énoncé, tandis que
+// `spokenSentence()` recolle la réponse à *chaque* marqueur : deux trous dans la
+// même phrase donnent un exercice incomplet et une lecture à voix haute qui
+// répète la réponse. Un trou par énoncé, pas deux.
+for (const it of pack.items) {
+  for (const [k, ex] of it.exercises.entries()) {
+    if (ex.type !== 'fill_blank') continue;
+    const holes = ex.prompt.split('___').length - 1;
+    if (holes !== 1) {
+      problems.push(`item ${it.id} / exercice ${k} : un fill_blank veut exactement un ___ (il en a ${holes})`);
+    }
+  }
+}
+
 // Une erreur anticipée qui figure aussi parmi les bonnes réponses ferait
 // passer une réponse juste pour une faute expliquée. Erreur silencieuse et
 // difficile à repérer à la lecture.
