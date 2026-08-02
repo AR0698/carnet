@@ -60,6 +60,20 @@ function validateExercise(ex: unknown, where: string, issues: string[]): void {
   if (e.hints !== undefined && !Array.isArray(e.hints)) {
     issues.push(`${where} : hints doit être un tableau`);
   }
+  if (e.pitfalls !== undefined) {
+    if (!Array.isArray(e.pitfalls)) {
+      issues.push(`${where} : pitfalls doit être un tableau`);
+    } else {
+      e.pitfalls.forEach((p, k) => {
+        if (!Array.isArray(p?.answers) || !p.answers.every(isNonEmptyString)) {
+          issues.push(`${where} / pitfall ${k} : answers doit lister des réponses non vides`);
+        }
+        if (!isNonEmptyString(p?.explain)) {
+          issues.push(`${where} / pitfall ${k} : explain manquant`);
+        }
+      });
+    }
+  }
   if (e.type === 'mcq' && (!Array.isArray(e.distractors) || e.distractors.length < 2)) {
     issues.push(`${where} : un mcq a besoin d'au moins deux distracteurs`);
   }

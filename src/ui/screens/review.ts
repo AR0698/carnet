@@ -1,8 +1,34 @@
+import type { AnswerDiff, DiffToken } from '../../engine/diff';
 import { rendererFor } from '../../engine/exercises';
 import { formatDelay } from '../../engine/scheduler';
 import { recordAnswer, type Session } from '../../engine/session';
 import { el, mount } from '../dom';
 import type { AnsweredCard, Ctx } from '../types';
+
+/**
+ * Deux lignes en vis-à-vis : ce qui a été écrit, ce qui était attendu, avec
+ * les mots en cause désignés de part et d'autre. C'est souvent tout ce qu'il
+ * faut pour voir soi-même où ça a dérapé.
+ */
+function renderDiff(diff: AnswerDiff): HTMLElement {
+  const line = (label: string, tokens: DiffToken[], variant: string) =>
+    el('p', { class: `diff__line diff__line--${variant}` }, [
+      el('span', { class: 'diff__label' }, [label]),
+      el(
+        'span',
+        { lang: 'en' },
+        tokens.flatMap((t, i) => [
+          i > 0 ? ' ' : '',
+          t.kind === 'same' ? t.text : el('mark', { class: `diff--${t.kind}` }, [t.text]),
+        ]),
+      ),
+    ]);
+
+  return el('div', { class: 'diff' }, [
+    line('Tu as écrit', diff.given, 'given'),
+    line('On attendait', diff.expected, 'expected'),
+  ]);
+}
 
 export function renderReview(ctx: Ctx, session: Session): void {
   const answered: AnsweredCard[] = [];
@@ -99,6 +125,9 @@ export function renderReview(ctx: Ctx, session: Session): void {
         verdictSlot,
         el('div', { class: `verdict ${result.correct ? 'verdict--ok' : 'verdict--ko'}` }, [
           el('strong', {}, [result.feedback]),
+          result.correction?.diff && renderDiff(result.correction.diff),
+          result.correction?.explanation &&
+            el('p', { class: 'why' }, [result.correction.explanation.text]),
           result.alternatives.length > 0 &&
             el('span', { class: 'alt' }, [`Aussi accepté : ${result.alternatives.join(' · ')}`]),
           el('span', { class: 'alt' }, [

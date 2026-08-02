@@ -22,6 +22,20 @@ export interface AnswerSpec {
   ignoreAccents?: boolean;
 }
 
+/**
+ * Erreur anticipée et son explication.
+ *
+ * Écrite à la rédaction du contenu, servie hors ligne et instantanément.
+ * C'est ce qui permet d'expliquer finement sans faire tourner de modèle sur
+ * le téléphone : le travail d'analyse est fait une fois, en amont.
+ */
+export interface Pitfall {
+  /** Réponses fautives visées. Comparées aux variantes près (contractions, orthographe). */
+  answers: string[];
+  /** Pourquoi c'est faux — une ou deux phrases, sans jargon. */
+  explain: string;
+}
+
 export interface Exercise {
   type: ExerciseType;
   /** La consigne. Pour `fill_blank`, contient le marqueur `___`. */
@@ -34,6 +48,8 @@ export interface Exercise {
   answerSpec: AnswerSpec;
   /** Rappel de règle court, une phrase. Affiché à la demande. */
   hints?: string[];
+  /** Erreurs prévisibles, avec l'explication qui va avec. */
+  pitfalls?: Pitfall[];
   /** Uniquement pour `mcq`. */
   distractors?: string[];
 }

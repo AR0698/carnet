@@ -8,7 +8,7 @@
  */
 
 import type { Exercise } from '../../packs/schema';
-import { canonicalAnswer, isAccepted, otherAnswers } from '../grading';
+import { analyse, canonicalAnswer, isAccepted, otherAnswers } from '../grading';
 import { el } from '../../ui/dom';
 import type { ExerciseHandle, ExerciseRenderer, GradeResult } from './types';
 
@@ -17,14 +17,30 @@ const BLANK = '___';
 export function gradeFreeText(exercise: Exercise, userInput: string): GradeResult {
   const spec = exercise.answerSpec;
   const correct = isAccepted(spec, userInput);
-  const expected = canonicalAnswer(spec);
+
+  if (correct) {
+    return {
+      correct: true,
+      expected: canonicalAnswer(spec),
+      // On montre les autres tournures possibles, pas celle qu'elle vient d'écrire.
+      alternatives: otherAnswers(spec, userInput),
+      feedback: 'C’est ça.',
+    };
+  }
+
+  // La formulation visée n'est pas forcément la réponse canonique : on corrige
+  // par rapport à celle dont l'apprenante s'est le plus approchée.
+  const correction = analyse(exercise, userInput);
   return {
-    correct,
-    expected,
-    // Juste : on montre les autres tournures possibles, pas la sienne.
-    // Faux : on montre les variantes en plus de la correction déjà énoncée.
-    alternatives: otherAnswers(spec, correct ? userInput : expected),
-    feedback: correct ? 'C’est ça.' : `Pas tout à fait — la bonne réponse est « ${expected} ».`,
+    correct: false,
+    expected: correction.target,
+    alternatives: otherAnswers(spec, correction.target),
+    // Quand la comparaison mot à mot est affichée, elle porte déjà la réponse
+    // attendue : la répéter dans l'en-tête alourdit la carte pour rien.
+    feedback: correction.diff
+      ? 'Pas tout à fait.'
+      : `Pas tout à fait — on attendait « ${correction.target} ».`,
+    correction,
   };
 }
 

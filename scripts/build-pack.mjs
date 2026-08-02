@@ -78,9 +78,26 @@ for (const it of pack.items) {
   if (!topicIds.has(it.topicId)) problems.push(`item ${it.id} : notion inconnue (${it.topicId})`);
 }
 
+const norm = (s) => s.toLowerCase().replace(/[^a-z0-9 ]/g, '').replace(/\s+/g, ' ').trim();
+
+// Une erreur anticipée qui figure aussi parmi les bonnes réponses ferait
+// passer une réponse juste pour une faute expliquée. Erreur silencieuse et
+// difficile à repérer à la lecture.
+for (const it of pack.items) {
+  for (const [k, ex] of it.exercises.entries()) {
+    const accepted = new Set(ex.answerSpec.accepted.map(norm));
+    for (const pitfall of ex.pitfalls ?? []) {
+      for (const wrong of pitfall.answers) {
+        if (accepted.has(norm(wrong))) {
+          problems.push(`item ${it.id} / exercice ${k} : « ${wrong} » est à la fois accepté et signalé comme faute`);
+        }
+      }
+    }
+  }
+}
+
 // Une phrase d'exemple réutilisée d'une unité à l'autre trahit un contenu qui
 // tourne en rond : on la signale, elle est facile à laisser passer à la main.
-const norm = (s) => s.toLowerCase().replace(/[^a-z0-9 ]/g, '').replace(/\s+/g, ' ').trim();
 const sentences = new Map();
 for (const it of pack.items) {
   for (const ex of it.exercises) {

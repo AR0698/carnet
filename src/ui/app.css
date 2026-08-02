@@ -390,6 +390,63 @@ p {
   font-size: var(--text-xs);
 }
 
+/* ---------- comparaison mot à mot ---------- */
+
+.diff {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  background: var(--card);
+  border-radius: var(--radius-control);
+  padding: var(--space-3) var(--space-4);
+  color: var(--ink);
+}
+
+.diff__line {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  line-height: 1.5;
+}
+
+.diff__label {
+  font-size: var(--text-xs);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.diff mark {
+  background: none;
+  padding: 0 1px;
+  font-weight: 600;
+}
+
+/* Ce qui est en trop ou fautif, du côté de la réponse donnée. */
+.diff--wrong {
+  color: var(--margin);
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+}
+
+/* Ce qui manquait, du côté de la réponse attendue. */
+.diff--missing {
+  color: var(--growth);
+  border-bottom: 2px solid currentColor;
+}
+
+/* ---------- explication ---------- */
+
+.why {
+  background: var(--card);
+  border-left: 3px solid var(--iris);
+  border-radius: 0 var(--radius-control) var(--radius-control) 0;
+  padding: var(--space-3) var(--space-4);
+  color: var(--ink);
+  font-size: var(--text-sm);
+  line-height: 1.5;
+}
+
 .actions {
   display: flex;
   gap: var(--space-3);

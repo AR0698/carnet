@@ -9,6 +9,7 @@
 
 import type { Exercise } from '../../packs/schema';
 import { canonicalAnswer, isAccepted } from '../grading';
+import { sameAnswer } from '../variants';
 import { el } from '../../ui/dom';
 import type { ExerciseHandle, ExerciseRenderer, GradeResult } from './types';
 
@@ -70,10 +71,16 @@ function grade(exercise: Exercise, userInput: string): GradeResult {
     correct,
     expected,
     alternatives: [],
-    feedback: correct
-      ? 'C’est bien celle-là.'
-      : `Pas tout à fait — c’était « ${expected} ».`,
+    feedback: correct ? 'C’est bien celle-là.' : `Pas tout à fait — c’était « ${expected} ».`,
+    // Pas de comparaison mot à mot ici : le choix était donné, seule
+    // l'explication de l'erreur a un intérêt.
+    correction: correct ? undefined : { target: expected, explanation: pitfallFor(exercise, userInput) },
   };
+}
+
+function pitfallFor(exercise: Exercise, userInput: string) {
+  const pitfall = exercise.pitfalls?.find((p) => p.answers.some((w) => sameAnswer(w, userInput)));
+  return pitfall ? { text: pitfall.explain, source: 'pitfall' as const } : undefined;
 }
 
 export const mcq: ExerciseRenderer = { render, grade };

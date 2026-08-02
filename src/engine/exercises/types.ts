@@ -1,5 +1,7 @@
 import type { Exercise } from '../../packs/schema';
 
+import type { Correction } from '../grading';
+
 export interface GradeResult {
   correct: boolean;
   /** Phrase de retour, déjà rédigée sur le ton de l'application. */
@@ -8,6 +10,8 @@ export interface GradeResult {
   expected: string;
   /** Autres formulations acceptées, s'il y en a. */
   alternatives: string[];
+  /** Analyse de l'erreur : mots en cause et explication. Absente si la réponse est juste. */
+  correction?: Correction;
 }
 
 /**
