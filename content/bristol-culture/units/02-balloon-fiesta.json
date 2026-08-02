@@ -1,0 +1,111 @@
+{
+  "group": "Le ciel de Bristol",
+  "items": [
+    {
+      "id": "c002-take-off",
+      "topicId": "c002",
+      "tags": ["phrasal verb", "mouvement"],
+      "fields": {
+        "passage": "The first Bristol Balloon Fiesta was held at Ashton Court in 1979, when twenty-seven balloons took off together. Today more than a hundred come from all over the world, and the festival has moved to early August, because September was too wet.",
+        "term": "to take off",
+        "meaning": "décoller"
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « décoller » — un avion, un ballon ?",
+          "answerSpec": { "accepted": ["to take off", "take off"] },
+          "hints": ["Verbe à particule. Le contraire est « to land »."],
+          "pitfalls": [
+            {
+              "answers": ["to fly away", "fly away"],
+              "explain": "« Fly away » insiste sur l'éloignement. « Take off » est le moment précis où l'on quitte le sol."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The first Fiesta was held at Ashton Court in 1979, when twenty-seven balloons ___ together.",
+          "answerSpec": { "accepted": ["took off"] },
+          "hints": ["Prétérit irrégulier : take, took, taken."]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « décoller » ?",
+          "answerSpec": { "accepted": ["to take off"] },
+          "distractors": ["to take up", "to take out", "to take over"]
+        }
+      ]
+    },
+    {
+      "id": "c002-at-dawn",
+      "topicId": "c002",
+      "tags": ["expression", "temps"],
+      "fields": {
+        "passage": "The mass ascents happen twice a day, at dawn and at dusk. People climb the hill at half past five in the morning with blankets and flasks of tea, and wait in the cold for the burners to light.",
+        "term": "at dawn",
+        "meaning": "à l'aube"
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « à l'aube » ?",
+          "answerSpec": { "accepted": ["at dawn"] },
+          "hints": ["Son symétrique en fin de journée est « at dusk », au crépuscule."],
+          "pitfalls": [
+            {
+              "answers": ["in the dawn", "at the dawn"],
+              "explain": "Ces expressions de moment se passent d'article : at dawn, at dusk, at noon, at night."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The mass ascents happen twice a day, ___ and at dusk.",
+          "answerSpec": { "accepted": ["at dawn"] }
+        },
+        {
+          "type": "mcq",
+          "prompt": "Laquelle veut dire « à l'aube » ?",
+          "answerSpec": { "accepted": ["at dawn"] },
+          "distractors": ["at dusk", "at down", "in dawn"]
+        }
+      ]
+    },
+    {
+      "id": "c002-weather-permitting",
+      "topicId": "c002",
+      "tags": ["expression", "météo"],
+      "fields": {
+        "passage": "Every programme carries the same three words: weather permitting. In Bristol the wind decides, and a mass ascent can be called off twenty minutes before it was due to start.",
+        "term": "weather permitting",
+        "meaning": "si le temps le permet"
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « si le temps le permet » — la formule qui figure sur tous les programmes ?",
+          "answerSpec": { "accepted": ["weather permitting"] },
+          "hints": ["Deux mots, sans « if » ni article : une tournure figée."],
+          "pitfalls": [
+            {
+              "answers": ["if the weather permits", "if weather permits"],
+              "explain": "Ce n'est pas faux, mais la formule consacrée sur les affiches est plus brève : « weather permitting »."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Every programme carries the same three words: ___.",
+          "answerSpec": { "accepted": ["weather permitting"] }
+        },
+        {
+          "type": "mcq",
+          "prompt": "Laquelle est la formule consacrée ?",
+          "answerSpec": { "accepted": ["weather permitting"] },
+          "distractors": ["weather allowing", "weather depending", "weather willing"]
+        }
+      ]
+    }
+  ]
+}

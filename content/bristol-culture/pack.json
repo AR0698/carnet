@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "id": "bristol-culture",
+    "title": "Bristol",
+    "subject": "Anglais",
+    "version": "0.1.0",
+    "schemaVersion": 1,
+    "locale": "fr-FR",
+    "contentLocale": "en-GB"
+  },
+  "topics": [
+    {
+      "id": "c001",
+      "title": "The Clifton Suspension Bridge",
+      "group": "Le pont et l'ingénieur",
+      "order": 1,
+      "prerequisites": []
+    },
+    {
+      "id": "c002",
+      "title": "The Balloon Fiesta",
+      "group": "Le ciel de Bristol",
+      "order": 2,
+      "prerequisites": ["c001"]
+    },
+    {
+      "id": "c003",
+      "title": "Banksy and Stokes Croft",
+      "group": "Les murs qui parlent",
+      "order": 3,
+      "prerequisites": ["c002"]
+    },
+    {
+      "id": "c004",
+      "title": "The Harbourside and the ss Great Britain",
+      "group": "Le port",
+      "order": 4,
+      "prerequisites": ["c003"]
+    },
+    {
+      "id": "c005",
+      "title": "St Nicholas Market",
+      "group": "Le marché et la ville",
+      "order": 5,
+      "prerequisites": ["c004"]
+    },
+    {
+      "id": "c006",
+      "title": "Speaking Bristolian",
+      "group": "Parler bristolien",
+      "order": 6,
+      "prerequisites": ["c005"]
+    }
+  ]
+}

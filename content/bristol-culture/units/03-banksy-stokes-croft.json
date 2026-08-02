@@ -1,0 +1,110 @@
+{
+  "group": "Les murs qui parlent",
+  "items": [
+    {
+      "id": "c003-mural",
+      "topicId": "c003",
+      "tags": ["nom", "art"],
+      "fields": {
+        "passage": "The Mild Mild West is a mural painted by Banksy in 1999, on a wall at the bottom of Stokes Croft. It shows a teddy bear throwing a petrol bomb at three riot police, and in 2007 the city voted it Bristol's alternative landmark.",
+        "term": "a mural",
+        "meaning": "une fresque murale"
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « une fresque murale » ?",
+          "answerSpec": { "accepted": ["a mural", "mural"] },
+          "hints": ["Le mot est le même en français dans « peinture murale », mais ici il est devenu un nom à lui seul."],
+          "pitfalls": [
+            {
+              "answers": ["a fresco", "fresco"],
+              "explain": "« Fresco » désigne la technique italienne, peinte sur enduit frais. Une œuvre sur un mur de rue est « a mural »."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The Mild Mild West is a ___ painted by Banksy in 1999, at the bottom of Stokes Croft.",
+          "answerSpec": { "accepted": ["mural"] }
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « fresque murale » ?",
+          "answerSpec": { "accepted": ["a mural"] },
+          "distractors": ["a wall", "a canvas", "a poster"]
+        }
+      ]
+    },
+    {
+      "id": "c003-broad-daylight",
+      "topicId": "c003",
+      "tags": ["expression", "temps"],
+      "fields": {
+        "passage": "What surprises people most is that Banksy painted it over three days in broad daylight, on a busy street, and nobody stopped him. Wearing a high-visibility jacket, it turned out, was enough to look official.",
+        "term": "in broad daylight",
+        "meaning": "en plein jour"
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « en plein jour » — au vu et au su de tous ?",
+          "answerSpec": { "accepted": ["in broad daylight", "broad daylight"] },
+          "hints": ["L'adjectif est « broad », large — jamais « large » lui-même."],
+          "pitfalls": [
+            {
+              "answers": ["in full daylight", "in large daylight"],
+              "explain": "L'expression est figée avec « broad ». « Full daylight » se comprendrait, mais ne se dit pas."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Banksy painted it over three days ___, on a busy street, and nobody stopped him.",
+          "answerSpec": { "accepted": ["in broad daylight"] }
+        },
+        {
+          "type": "mcq",
+          "prompt": "Laquelle veut dire « en plein jour » ?",
+          "answerSpec": { "accepted": ["in broad daylight"] },
+          "distractors": ["in wide daylight", "in full daylight", "in clear daylight"]
+        }
+      ]
+    },
+    {
+      "id": "c003-fight-back",
+      "topicId": "c003",
+      "tags": ["phrasal verb", "opinion"],
+      "fields": {
+        "passage": "For many people in Stokes Croft the bear is the whole point: it says that you can be gentle and still fight back. The neighbourhood has kept that reputation — independent shops, painted shutters, and a long argument with every chain that tries to move in.",
+        "term": "to fight back",
+        "meaning": "riposter, se défendre"
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « riposter, se défendre » ?",
+          "answerSpec": { "accepted": ["to fight back", "fight back"] },
+          "hints": ["La particule « back » porte l'idée de retour : rendre le coup."],
+          "pitfalls": [
+            {
+              "answers": ["to defend", "defend"],
+              "explain": "« To defend » suppose un complément (defend yourself, defend a claim). « Fight back » se suffit à lui-même."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "It says that you can be gentle and still ___.",
+          "answerSpec": { "accepted": ["fight back"] }
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « riposter » ?",
+          "answerSpec": { "accepted": ["to fight back"] },
+          "distractors": ["to fight off", "to fight out", "to fight over"]
+        }
+      ]
+    }
+  ]
+}
