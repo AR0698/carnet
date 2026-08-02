@@ -24,7 +24,13 @@ export interface AnswerSpec {
 
 export interface Exercise {
   type: ExerciseType;
+  /** La consigne. Pour `fill_blank`, contient le marqueur `___`. */
   prompt: string;
+  /**
+   * Phrase de départ, affichée à part : la phrase à transformer (`transform`)
+   * ou la phrase fautive à corriger (`spot_error`).
+   */
+  source?: string;
   answerSpec: AnswerSpec;
   /** Rappel de règle court, une phrase. Affiché à la demande. */
   hints?: string[];
@@ -72,4 +78,19 @@ export const SUPPORTED_SCHEMA_VERSION = 1;
 /** Identifiant stable d'une carte : un exercice = une carte FSRS. */
 export function cardId(packId: string, itemId: string, exerciseIndex: number): string {
   return `${packId}:${itemId}:${exerciseIndex}`;
+}
+
+/**
+ * Le `mcq` n'est pas un exercice comme les autres : il ne se planifie pas.
+ * C'est un filet de secours, proposé à la place d'un exercice de production
+ * quand celui-ci a été raté deux fois de suite (§4). Il ne reçoit donc pas de
+ * carte FSRS propre.
+ */
+export function isScheduled(exercise: Exercise): boolean {
+  return exercise.type !== 'mcq';
+}
+
+/** Le filet de secours d'un item, s'il en a un. */
+export function rescueExercise(item: PackItem): Exercise | undefined {
+  return item.exercises.find((e) => e.type === 'mcq');
 }

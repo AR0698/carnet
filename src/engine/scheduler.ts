@@ -37,6 +37,8 @@ export interface Answer {
   elapsedMs: number;
   /** La session en cours contient-elle au moins deux notions différentes ? */
   interleaved: boolean;
+  /** La réponse portait sur le filet de secours (mcq) et non sur l'exercice. */
+  rescue?: boolean;
 }
 
 /** Au-delà : la réponse est juste mais laborieuse. */
@@ -50,6 +52,9 @@ const DAY_MS = 24 * 60 * 60 * 1000;
 
 export function ratingFor(a: Answer): Grade {
   if (!a.correct) return Rating.Again;
+  // Choisir la bonne réponse parmi quatre n'est pas la retrouver : le filet de
+  // secours débloque, il ne vaut jamais mieux qu'un « difficile ».
+  if (a.rescue) return Rating.Hard;
   if (a.usedHint || a.elapsedMs > HESITATION_MS) return Rating.Hard;
   if (a.elapsedMs < CONFIDENT_MS) return Rating.Easy;
   return Rating.Good;
@@ -98,14 +103,19 @@ export function applyAnswer(card: CardRecord, answer: Answer, now = new Date()):
   let { spacedSuccesses, lastSuccessDay, interleavedSuccess, consecutiveFailures } = card;
 
   if (answer.correct) {
+    // Le filet de secours remet la carte en piste — l'exercice de production
+    // sera reproposé au tour suivant — mais il n'ouvre pas la porte de
+    // graduation : rien n'a encore été retrouvé sans aide.
     consecutiveFailures = 0;
-    // Deux réussites le même jour ne comptent que pour une : c'est
-    // l'espacement qui prouve la mémorisation, pas la répétition immédiate.
-    if (lastSuccessDay !== today) {
-      spacedSuccesses += 1;
-      lastSuccessDay = today;
+    if (!answer.rescue) {
+      // Deux réussites le même jour ne comptent que pour une : c'est
+      // l'espacement qui prouve la mémorisation, pas la répétition immédiate.
+      if (lastSuccessDay !== today) {
+        spacedSuccesses += 1;
+        lastSuccessDay = today;
+      }
+      if (answer.interleaved) interleavedSuccess = true;
     }
-    if (answer.interleaved) interleavedSuccess = true;
   } else {
     consecutiveFailures += 1;
     // Un oubli rouvre la porte : il faudra à nouveau deux réussites espacées.

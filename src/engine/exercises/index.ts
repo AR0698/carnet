@@ -2,26 +2,30 @@
  * Registre des types d'exercice.
  *
  * Le moteur ne connaît que `ExerciseRenderer`. Brancher un nouveau type =
- * écrire un fichier ici + une ligne dans `RENDERERS`. Rien d'autre ne bouge.
- *
- * Étape 1 : `produce` et `fill_blank`.
- * Étape 3 : `transform`, `spot_error`, `mcq` viendront s'ajouter à cette table.
+ * écrire un fichier ici + une ligne dans `RENDERERS`. Rien d'autre ne bouge :
+ * ni la session, ni la planification, ni l'interface.
  */
 
 import type { ExerciseType } from '../../packs/schema';
 import { fillBlank } from './fillBlank';
+import { mcq } from './mcq';
 import { produce } from './produce';
+import { spotError } from './spotError';
+import { transform } from './transform';
 import type { ExerciseRenderer } from './types';
 
-const RENDERERS: Partial<Record<ExerciseType, ExerciseRenderer>> = {
+const RENDERERS: Record<ExerciseType, ExerciseRenderer> = {
   produce,
   fill_blank: fillBlank,
+  transform,
+  spot_error: spotError,
+  mcq,
 };
 
 export function rendererFor(type: ExerciseType): ExerciseRenderer {
-  const r = RENDERERS[type];
-  if (!r) throw new Error(`Type d'exercice non pris en charge : ${type}`);
-  return r;
+  const renderer = RENDERERS[type];
+  if (!renderer) throw new Error(`Type d'exercice non pris en charge : ${type}`);
+  return renderer;
 }
 
 export function supportedTypes(): ExerciseType[] {

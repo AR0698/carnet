@@ -267,6 +267,90 @@ p {
   color: var(--ink-soft);
 }
 
+/* phrase de départ : la matière de l'exercice, pas la consigne */
+
+.ex-source {
+  border-radius: var(--radius-control);
+  padding: var(--space-3) var(--space-4);
+  background: color-mix(in srgb, var(--ink) 3%, var(--paper));
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.ex-source--flag {
+  background: var(--margin-soft);
+}
+
+.ex-source__label {
+  font-size: var(--text-xs);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.ex-source--flag .ex-source__label {
+  color: color-mix(in srgb, var(--margin) 70%, var(--ink));
+}
+
+.ex-source p {
+  font-size: var(--text-lg);
+  line-height: 1.4;
+}
+
+/* choix multiples — filet de secours */
+
+.rescue-note {
+  font-size: var(--text-sm);
+  color: var(--marigold-text);
+  background: var(--marigold);
+  border-radius: var(--radius-control);
+  padding: var(--space-2) var(--space-4);
+}
+
+.mcq {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.mcq__option {
+  font: inherit;
+  text-align: left;
+  background: var(--paper);
+  color: var(--ink);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-control);
+  padding: var(--space-3) var(--space-4);
+  cursor: pointer;
+  transition:
+    border-color var(--dur-fast) var(--ease),
+    background-color var(--dur-fast) var(--ease);
+}
+
+.mcq__option:hover:not(:disabled) {
+  border-color: var(--iris);
+}
+
+.mcq__option[aria-pressed='true'] {
+  border-color: var(--iris);
+  background: var(--iris-soft);
+}
+
+.mcq__option:focus-visible {
+  outline: 2px solid var(--iris);
+  outline-offset: 2px;
+}
+
+.mcq__option:disabled {
+  cursor: default;
+  opacity: 0.6;
+}
+
+.mcq__option[aria-pressed='true']:disabled {
+  opacity: 1;
+}
+
 .hint {
   font-size: var(--text-sm);
   color: var(--ink-soft);

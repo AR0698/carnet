@@ -9,7 +9,7 @@
 
 import Dexie from 'dexie';
 import { createEmptyCard, State } from 'ts-fsrs';
-import { cardId, type ContentPack } from '../packs/schema';
+import { cardId, isScheduled, type ContentPack } from '../packs/schema';
 import { db, type CardRecord } from './db';
 
 /** Crée l'enregistrement d'une carte neuve (état FSRS vierge). */
@@ -49,7 +49,9 @@ export interface SyncReport {
 export async function syncPackCards(pack: ContentPack, now = new Date()): Promise<SyncReport> {
   const expected = new Map<string, CardRecord>();
   for (const item of pack.items) {
-    item.exercises.forEach((_, i) => {
+    item.exercises.forEach((exercise, i) => {
+      // Les mcq sont des filets de secours : ils ne se planifient pas.
+      if (!isScheduled(exercise)) return;
       const id = cardId(pack.meta.id, item.id, i);
       expected.set(id, newCardRecord(pack.meta.id, item.id, item.topicId, i, now));
     });

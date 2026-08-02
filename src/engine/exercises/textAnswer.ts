@@ -55,17 +55,43 @@ const INPUT_ATTRS = {
   lang: 'en',
 };
 
-/** Phrase entière à produire : zone de texte sur plusieurs lignes. */
-export function renderTextarea(exercise: Exercise, container: HTMLElement): ExerciseHandle {
-  const prompt = el('p', { class: 'ex-prompt' }, [exercise.prompt]);
-  const field = el('textarea', {
+function answerField(): HTMLTextAreaElement {
+  return el('textarea', {
     ...INPUT_ATTRS,
     class: 'ex-field',
     rows: 2,
     'aria-label': 'Ta réponse',
   });
-  container.append(prompt, field);
+}
+
+/** Phrase entière à produire : zone de texte sur plusieurs lignes. */
+export function renderTextarea(exercise: Exercise, container: HTMLElement): ExerciseHandle {
+  const field = answerField();
+  container.append(el('p', { class: 'ex-prompt' }, [exercise.prompt]), field);
   return handleFor(field);
+}
+
+/**
+ * Exercices bâtis sur une phrase de départ (`transform`, `spot_error`).
+ * Cette phrase est montrée à part, dans un bloc à elle : elle n'est pas la
+ * consigne, c'est la matière sur laquelle travailler.
+ */
+export function renderSourced(
+  label: string,
+  variant: string,
+): (exercise: Exercise, container: HTMLElement) => ExerciseHandle {
+  return (exercise, container) => {
+    const field = answerField();
+    container.append(
+      el('div', { class: `ex-source ex-source--${variant}` }, [
+        el('span', { class: 'ex-source__label' }, [label]),
+        el('p', { lang: 'en' }, [exercise.source ?? '']),
+      ]),
+      el('p', { class: 'ex-prompt' }, [exercise.prompt]),
+      field,
+    );
+    return handleFor(field);
+  };
 }
 
 /** Largeur du champ inline, en caractères : assez pour écrire, jamais un indice. */

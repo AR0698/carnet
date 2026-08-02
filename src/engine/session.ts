@@ -7,7 +7,7 @@
  * révisée en bloc — c'est le mélange qui rend la mémorisation robuste.
  */
 
-import type { Exercise, PackItem, ContentPack } from '../packs/schema';
+import { rescueExercise, type Exercise, type PackItem, type ContentPack } from '../packs/schema';
 import { db, kvGet, kvSet, type CardRecord } from '../storage/db';
 import { dueCards, newCards } from '../storage/cards';
 import { applyAnswer, localDay, State, type Answer, type ReviewOutcome } from './scheduler';
@@ -20,9 +20,15 @@ const DEFAULT_MAX_NEW_PER_DAY = 10;
 export interface SessionCard {
   card: CardRecord;
   item: PackItem;
+  /** L'exercice réellement présenté — le filet de secours, le cas échéant. */
   exercise: Exercise;
   topicTitle: string;
+  /** Vrai quand on sert le mcq à la place de l'exercice de production. */
+  rescue: boolean;
 }
+
+/** Nombre d'échecs consécutifs au-delà duquel on tend le filet. */
+const RESCUE_AFTER_FAILURES = 2;
 
 export interface Session {
   cards: SessionCard[];
@@ -130,11 +136,17 @@ export async function buildSession(
     const item = itemsById.get(card.itemId);
     const exercise = item?.exercises[card.exerciseIndex];
     if (!item || !exercise) continue; // carte orpheline : ignorée, purgée au prochain sync
+
+    // Bloquée deux fois de suite : plutôt que de la faire échouer une
+    // troisième fois, on propose la version à choix multiples.
+    const rescue = card.consecutiveFailures >= RESCUE_AFTER_FAILURES ? rescueExercise(item) : undefined;
+
     cards.push({
       card,
       item,
-      exercise,
+      exercise: rescue ?? exercise,
       topicTitle: topicsById.get(card.topicId)?.title ?? card.topicId,
+      rescue: rescue !== undefined,
     });
   }
 

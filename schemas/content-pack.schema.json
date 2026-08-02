@@ -1,0 +1,133 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ar0698.github.io/carnet/schemas/content-pack.schema.json",
+  "title": "ContentPack",
+  "description": "Pack de contenu générique pour le moteur de répétition espacée. Agnostique du sujet : le moteur ne connaît que topics, items et exercises.",
+  "type": "object",
+  "required": ["meta", "topics", "items"],
+  "additionalProperties": false,
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": ["id", "title", "subject", "version", "schemaVersion", "locale"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "title": { "type": "string", "minLength": 1 },
+        "subject": { "type": "string", "minLength": 1 },
+        "version": { "type": "string", "minLength": 1 },
+        "schemaVersion": { "type": "integer", "minimum": 1 },
+        "locale": { "type": "string", "minLength": 2 }
+      }
+    },
+
+    "topics": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "order", "prerequisites"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "title": { "type": "string", "minLength": 1 },
+          "group": { "type": "string", "minLength": 1 },
+          "order": { "type": "integer", "minimum": 1 },
+          "prerequisites": {
+            "description": "Ordre suggéré de progression, jamais un verrou d'accès.",
+            "type": "array",
+            "items": { "type": "string", "minLength": 1 }
+          }
+        }
+      }
+    },
+
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "topicId", "tags", "fields", "exercises"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "topicId": { "type": "string", "minLength": 1 },
+          "tags": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+          "fields": {
+            "description": "Données brutes libres, spécifiques au sujet. Non interprétées par le moteur.",
+            "type": "object",
+            "additionalProperties": { "type": "string" }
+          },
+          "exercises": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "$ref": "#/$defs/exercise" }
+          }
+        }
+      }
+    }
+  },
+
+  "$defs": {
+    "answerSpec": {
+      "type": "object",
+      "required": ["accepted"],
+      "additionalProperties": false,
+      "properties": {
+        "accepted": {
+          "description": "Réponses acceptées. La première sert de réponse canonique affichée en correction.",
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "caseSensitive": { "type": "boolean", "default": false },
+        "ignoreAccents": { "type": "boolean", "default": true }
+      }
+    },
+
+    "exercise": {
+      "type": "object",
+      "required": ["type", "prompt", "answerSpec"],
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "enum": ["produce", "fill_blank", "spot_error", "transform", "mcq"]
+        },
+        "prompt": { "type": "string", "minLength": 1 },
+        "source": {
+          "description": "Phrase de départ, affichée à part : la phrase à transformer (transform) ou la phrase fautive à corriger (spot_error).",
+          "type": "string",
+          "minLength": 1
+        },
+        "answerSpec": { "$ref": "#/$defs/answerSpec" },
+        "hints": {
+          "description": "Rappel de règle court, une phrase.",
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "distractors": {
+          "description": "Uniquement pour mcq : mauvaises réponses proposées.",
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "type": { "const": "mcq" } }, "required": ["type"] },
+          "then": { "required": ["distractors"], "properties": { "distractors": { "minItems": 2 } } },
+          "else": { "not": { "required": ["distractors"] } }
+        },
+        {
+          "if": {
+            "properties": { "type": { "enum": ["transform", "spot_error"] } },
+            "required": ["type"]
+          },
+          "then": { "required": ["source"] }
+        },
+        {
+          "if": { "properties": { "type": { "const": "fill_blank" } }, "required": ["type"] },
+          "then": { "properties": { "prompt": { "pattern": "___" } } }
+        }
+      ]
+    }
+  }
+}

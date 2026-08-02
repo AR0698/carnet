@@ -60,10 +60,14 @@ function validateExercise(ex: unknown, where: string, issues: string[]): void {
   if (e.hints !== undefined && !Array.isArray(e.hints)) {
     issues.push(`${where} : hints doit être un tableau`);
   }
-  if (e.type === 'mcq') {
-    if (!Array.isArray(e.distractors) || e.distractors.length < 1) {
-      issues.push(`${where} : un mcq a besoin d'au moins un distracteur`);
-    }
+  if (e.type === 'mcq' && (!Array.isArray(e.distractors) || e.distractors.length < 2)) {
+    issues.push(`${where} : un mcq a besoin d'au moins deux distracteurs`);
+  }
+  if ((e.type === 'transform' || e.type === 'spot_error') && !isNonEmptyString(e.source)) {
+    issues.push(`${where} : ce type d'exercice a besoin d'une phrase de départ (source)`);
+  }
+  if (e.type === 'fill_blank' && isNonEmptyString(e.prompt) && !e.prompt.includes('___')) {
+    issues.push(`${where} : un fill_blank a besoin du marqueur ___ dans son énoncé`);
   }
 }
 

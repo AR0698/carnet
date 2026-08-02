@@ -85,6 +85,7 @@ export function renderReview(ctx: Ctx, session: Session): void {
         usedHint,
         elapsedMs: performance.now() - startedAt,
         interleaved: session.interleaved,
+        rescue: current.rescue,
       });
 
       answered.push({
@@ -119,6 +120,10 @@ export function renderReview(ctx: Ctx, session: Session): void {
       bar,
       el('section', { class: 'card' }, [
         el('p', { class: 'topic-label' }, [current.topicTitle]),
+        current.rescue &&
+          el('p', { class: 'rescue-note' }, [
+            'Celle-ci résiste. On la reprend autrement, puis on y reviendra.',
+          ]),
         body,
         hintSlot,
         verdictSlot,
