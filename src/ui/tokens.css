@@ -1,0 +1,71 @@
+/**
+ * Design tokens — §6 du brief.
+ * Seule source de vérité pour les couleurs et les rythmes.
+ * Aucune valeur brute (#hex, px arbitraire) ailleurs dans les feuilles de style.
+ */
+
+:root {
+  /* --- palette --- */
+  --paper: #f7f8f5;
+  --ink: #21252c;
+  --iris: #5b4fe8;
+  --growth: #2f9e5b;
+  --grid: #e3eee1;
+  --margin: #e8574a;
+  --marigold: #fbecc7;
+  --marigold-text: #8a6a1e;
+  --card: #ffffff;
+  --border-soft: #e2e4dd;
+
+  /* --- dérivés (opacités et états, jamais de nouvelle teinte) --- */
+  --ink-soft: color-mix(in srgb, var(--ink) 62%, var(--paper));
+  --ink-faint: color-mix(in srgb, var(--ink) 38%, var(--paper));
+  --iris-soft: color-mix(in srgb, var(--iris) 12%, var(--paper));
+  --growth-soft: color-mix(in srgb, var(--growth) 12%, var(--paper));
+  --margin-soft: color-mix(in srgb, var(--margin) 10%, var(--paper));
+
+  /* --- typographie ---
+     Les familles web (Bricolage Grotesque, Inter, Kalam) sont posées à
+     l'étape 5 ; la pile système sert de doublure jusque-là. */
+  --font-display: 'Bricolage Grotesque', ui-sans-serif, system-ui, sans-serif;
+  --font-body: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-hand: 'Kalam', ui-rounded, cursive;
+
+  --text-xs: 0.8125rem;
+  --text-sm: 0.9375rem;
+  --text-base: 1.0625rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 1.875rem;
+
+  /* --- rythme --- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+
+  --radius-card: 16px;
+  --radius-control: 12px;
+  --radius-pill: 999px;
+
+  /* --- élévation (discrète : le papier n'a pas d'ombre portée) --- */
+  --shadow-card: 0 1px 2px color-mix(in srgb, var(--ink) 6%, transparent);
+
+  /* --- mouvement --- */
+  --ease: cubic-bezier(0.2, 0, 0.2, 1);
+  --dur-fast: 150ms;
+  --dur: 200ms;
+
+  /* --- filigrane cahier (posé à l'étape 5) --- */
+  --seyes-step: 24px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-fast: 0ms;
+    --dur: 0ms;
+  }
+}

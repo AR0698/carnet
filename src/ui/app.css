@@ -1,0 +1,362 @@
+@import './tokens.css';
+
+/* ---------- base ---------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+#app {
+  max-width: 34rem;
+  margin: 0 auto;
+  padding: var(--space-5) var(--space-4) calc(var(--space-7) + env(safe-area-inset-bottom));
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  margin: 0;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: var(--text-2xl);
+}
+h2 {
+  font-size: var(--text-lg);
+}
+
+p {
+  margin: 0;
+}
+
+/* ---------- contrôles ---------- */
+
+.btn {
+  font: inherit;
+  font-weight: 500;
+  border: 1px solid transparent;
+  border-radius: var(--radius-control);
+  padding: var(--space-3) var(--space-5);
+  cursor: pointer;
+  transition:
+    background-color var(--dur-fast) var(--ease),
+    border-color var(--dur-fast) var(--ease);
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--iris);
+  outline-offset: 2px;
+}
+
+.btn--primary {
+  background: var(--iris);
+  color: #fff;
+}
+
+.btn--primary:hover {
+  background: color-mix(in srgb, var(--iris) 88%, var(--ink));
+}
+
+.btn--quiet {
+  background: transparent;
+  color: var(--ink-soft);
+  border-color: var(--border-soft);
+}
+
+.btn--quiet:hover {
+  background: var(--card);
+  color: var(--ink);
+}
+
+.btn--link {
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--iris);
+  font-size: var(--text-sm);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.btn:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+/* ---------- carte ---------- */
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+/* ---------- accueil ---------- */
+
+.masthead {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.masthead .sub {
+  color: var(--ink-soft);
+  font-size: var(--text-sm);
+}
+
+.stats {
+  display: flex;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.stat b {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: 600;
+  line-height: 1;
+}
+
+.stat span {
+  font-size: var(--text-xs);
+  color: var(--ink-soft);
+}
+
+.time-choice {
+  display: flex;
+  gap: var(--space-3);
+}
+
+.time-choice .btn {
+  flex: 1;
+}
+
+/* ---------- encarts PWA ---------- */
+
+.pwa-note {
+  border: 1px dashed var(--border-soft);
+  border-radius: var(--radius-card);
+  padding: var(--space-4) var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  font-size: var(--text-sm);
+  color: var(--ink-soft);
+}
+
+.pwa-note__steps {
+  margin: 0;
+  padding-left: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.pwa-note__actions {
+  display: flex;
+  gap: var(--space-4);
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* ---------- exercice ---------- */
+
+.session-bar {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: var(--text-xs);
+  color: var(--ink-soft);
+}
+
+.progress {
+  flex: 1;
+  height: 3px;
+  background: var(--border-soft);
+  border-radius: var(--radius-pill);
+  overflow: hidden;
+}
+
+.progress i {
+  display: block;
+  height: 100%;
+  background: var(--iris);
+  transition: width var(--dur) var(--ease);
+}
+
+.topic-label {
+  font-size: var(--text-xs);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.ex-prompt {
+  font-size: var(--text-lg);
+  line-height: 1.45;
+}
+
+.ex-prompt--inline {
+  line-height: 2.1;
+}
+
+.ex-field {
+  font: inherit;
+  font-family: var(--font-body);
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-control);
+  padding: var(--space-3);
+  width: 100%;
+  resize: vertical;
+  transition: border-color var(--dur-fast) var(--ease);
+}
+
+.ex-field:focus {
+  outline: none;
+  border-color: var(--iris);
+  box-shadow: 0 0 0 3px var(--iris-soft);
+}
+
+.ex-field--inline {
+  width: auto;
+  max-width: 100%;
+  padding: var(--space-1) var(--space-2);
+  margin: 0 var(--space-1);
+  vertical-align: baseline;
+}
+
+.ex-field[aria-readonly='true'] {
+  background: color-mix(in srgb, var(--ink) 3%, var(--paper));
+  color: var(--ink-soft);
+}
+
+.hint {
+  font-size: var(--text-sm);
+  color: var(--ink-soft);
+  background: var(--marigold);
+  color: var(--marigold-text);
+  border-radius: var(--radius-control);
+  padding: var(--space-3) var(--space-4);
+}
+
+/* ---------- correction ---------- */
+
+.verdict {
+  border-radius: var(--radius-control);
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+}
+
+.verdict--ok {
+  background: var(--growth-soft);
+  color: color-mix(in srgb, var(--growth) 75%, var(--ink));
+}
+
+.verdict--ko {
+  background: var(--margin-soft);
+  color: color-mix(in srgb, var(--margin) 65%, var(--ink));
+}
+
+.verdict strong {
+  font-weight: 600;
+}
+
+.verdict .alt {
+  color: var(--ink-soft);
+  font-size: var(--text-xs);
+}
+
+.actions {
+  display: flex;
+  gap: var(--space-3);
+  align-items: center;
+}
+
+.actions .btn--primary {
+  flex: 1;
+}
+
+/* ---------- bilan ---------- */
+
+.dots {
+  display: flex;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--border-soft);
+}
+
+.dot--on {
+  background: var(--growth);
+}
+
+.notice {
+  font-size: var(--text-sm);
+  color: var(--ink-soft);
+}
+
+.error {
+  border-left: 3px solid var(--margin);
+  padding-left: var(--space-4);
+  white-space: pre-wrap;
+  font-size: var(--text-sm);
+}
+
+/* ---------- outils de développement (retirés à l'étape 5) ---------- */
+
+.devbar {
+  margin-top: var(--space-6);
+  padding-top: var(--space-4);
+  border-top: 1px dashed var(--border-soft);
+  font-size: var(--text-xs);
+  color: var(--ink-faint);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  align-items: center;
+}

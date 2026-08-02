@@ -1,0 +1,157 @@
+{
+  "meta": {
+    "id": "english-grammar",
+    "title": "Grammaire anglaise",
+    "subject": "Anglais",
+    "version": "0.1.0-stub",
+    "schemaVersion": 1,
+    "locale": "fr-FR"
+  },
+  "topics": [
+    {
+      "id": "u001",
+      "title": "Present continuous (I am doing)",
+      "group": "Present and past",
+      "order": 1,
+      "prerequisites": []
+    },
+    {
+      "id": "u002",
+      "title": "Present simple (I do)",
+      "group": "Present and past",
+      "order": 2,
+      "prerequisites": [
+        "u001"
+      ]
+    },
+    {
+      "id": "u005",
+      "title": "Past simple (I did)",
+      "group": "Present and past",
+      "order": 3,
+      "prerequisites": [
+        "u002"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "u001-a",
+      "topicId": "u001",
+      "tags": [
+        "present-continuous",
+        "action-en-cours"
+      ],
+      "fields": {
+        "fr": "Ma sœur cherche un appartement en ce moment.",
+        "en": "My sister is looking for a flat at the moment."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Ma sœur cherche un appartement en ce moment. »",
+          "answerSpec": {
+            "accepted": [
+              "My sister is looking for a flat at the moment",
+              "My sister is looking for an apartment at the moment"
+            ]
+          },
+          "hints": [
+            "Action en cours au moment où l'on parle : be + verbe en -ing."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Be quiet — the baby ___ upstairs. (sleep)",
+          "answerSpec": {
+            "accepted": [
+              "is sleeping"
+            ]
+          },
+          "hints": [
+            "Ce qui se passe maintenant, pendant qu'on parle : be + -ing."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u002-a",
+      "topicId": "u002",
+      "tags": [
+        "present-simple",
+        "habitude"
+      ],
+      "fields": {
+        "fr": "Le train part à sept heures et quart tous les matins.",
+        "en": "The train leaves at a quarter past seven every morning."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Le train part à sept heures et quart tous les matins. »",
+          "answerSpec": {
+            "accepted": [
+              "The train leaves at a quarter past seven every morning",
+              "The train leaves at quarter past seven every morning"
+            ]
+          },
+          "hints": [
+            "Horaire fixe ou habitude : présent simple, et -s à la 3e personne."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Nadia ___ coffee after six. (not / drink)",
+          "answerSpec": {
+            "accepted": [
+              "doesn't drink",
+              "does not drink"
+            ]
+          },
+          "hints": [
+            "Négation au présent simple : does not + base verbale, sans -s sur le verbe."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u005-a",
+      "topicId": "u005",
+      "tags": [
+        "past-simple",
+        "action-terminee"
+      ],
+      "fields": {
+        "fr": "Nous avons perdu les clés hier soir.",
+        "en": "We lost the keys last night."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : « Nous avons perdu les clés hier soir. »",
+          "answerSpec": {
+            "accepted": [
+              "We lost the keys last night"
+            ]
+          },
+          "hints": [
+            "Action terminée avec un repère de temps passé : prétérit simple."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "They ___ the sign at the entrance. (not / notice)",
+          "answerSpec": {
+            "accepted": [
+              "didn't notice",
+              "did not notice"
+            ]
+          },
+          "hints": [
+            "Négation au prétérit : did not + base verbale."
+          ]
+        }
+      ]
+    }
+  ]
+}
