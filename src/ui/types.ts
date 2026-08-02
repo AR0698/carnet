@@ -28,6 +28,7 @@ export interface Nav {
   startSession(packId: string, minutes: number, mode: SessionMode): Promise<void>;
   summary(result: SessionResult): Promise<void>;
   vocab(opts?: VocabOptions): Promise<void>;
+  insights(): Promise<void>;
   backup(): Promise<void>;
 }
 
