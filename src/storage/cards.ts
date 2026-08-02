@@ -111,12 +111,24 @@ export async function dueCards(packId: string, now = new Date()): Promise<CardRe
     .sort((a, b) => a.due.getTime() - b.due.getTime());
 }
 
-/** Cartes jamais vues, dans l'ordre du pack (topic, puis item, puis exercice). */
-export async function newCards(packId: string, limit: number): Promise<CardRecord[]> {
+/**
+ * Cartes jamais vues, dans l'ordre du pack (topic, puis item, puis exercice).
+ *
+ * `preferred` fait passer devant les notions choisies par l'apprenante. Cela ne
+ * touche qu'à l'ordre d'*ouverture* du neuf : ce qui est déjà commencé revient
+ * quand le planificateur le décide, jamais quand on le demande.
+ */
+export async function newCards(
+  packId: string,
+  limit: number,
+  preferred: ReadonlySet<string> = new Set(),
+): Promise<CardRecord[]> {
   if (limit <= 0) return [];
   const rows = await db.cards.where('[packId+state]').equals([packId, State.New]).toArray();
+  const rank = (c: CardRecord) => (preferred.has(c.topicId) ? 0 : 1);
   rows.sort(
     (a, b) =>
+      rank(a) - rank(b) ||
       a.topicId.localeCompare(b.topicId) ||
       a.itemId.localeCompare(b.itemId) ||
       a.exerciseIndex - b.exerciseIndex,

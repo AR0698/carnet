@@ -1,6 +1,6 @@
 import { beforeEach, describe, expect, it } from 'vitest';
 import { exercise, pack, resetDb } from '../test/helpers';
-import { packCards, resetCard, syncPackCards } from './cards';
+import { newCards, packCards, resetCard, syncPackCards } from './cards';
 import { db } from './db';
 
 beforeEach(resetDb);
@@ -109,5 +109,31 @@ describe('resetCard', () => {
     // L'identité, elle, ne bouge pas : c'est la même carte du même carnet.
     expect(after?.packId).toBe('g');
     expect(after?.topicId).toBe('t1');
+  });
+});
+
+describe('newCards — ordre d’ouverture du neuf', () => {
+  const threeTopics = pack('g', [
+    { id: 'a1', topicId: 'articles', exercises: [exercise()] },
+    { id: 'p1', topicId: 'prepositions', exercises: [exercise()] },
+    { id: 'z1', topicId: 'zzz', exercises: [exercise()] },
+  ]);
+
+  it('suit l’ordre du carnet quand rien n’est demandé', async () => {
+    await syncPackCards(threeTopics);
+    const fresh = await newCards('g', 3);
+    expect(fresh.map((c) => c.topicId)).toEqual(['articles', 'prepositions', 'zzz']);
+  });
+
+  it('fait passer devant les notions choisies', async () => {
+    await syncPackCards(threeTopics);
+    const fresh = await newCards('g', 3, new Set(['prepositions']));
+    expect(fresh.map((c) => c.topicId)).toEqual(['prepositions', 'articles', 'zzz']);
+  });
+
+  it('ne sert que le quota demandé, priorité comprise', async () => {
+    await syncPackCards(threeTopics);
+    const fresh = await newCards('g', 1, new Set(['zzz']));
+    expect(fresh.map((c) => c.topicId)).toEqual(['zzz']);
   });
 });

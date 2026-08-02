@@ -179,7 +179,16 @@ file. Ce qui manquait n'était pas le mécanisme, c'était la confiance dans le
 mécanisme.
 
 Ce qui appartient en revanche à l'apprenante, c'est **l'ordre dans lequel le
-neuf s'ouvre** — pas l'ordre des révisions.
+neuf s'ouvre** — pas l'ordre des révisions. C'est l'objet de l'écran *Par où
+commencer*, accessible depuis chaque carnet qui a encore des notions fermées :
+on y coche des groupes, et `newCards()` les sert en premier. Avec 476 cartes en
+réserve dans la seule grammaire — près de cinquante jours de nouveautés — cet
+ordre change vraiment ce qu'on sait dans un mois.
+
+La distinction tient en une phrase : **l'ordre des révisions appartient au
+planificateur, l'ordre des découvertes appartient à l'apprenante.** Le réglage
+ne filtre aucune session, ne rappelle rien plus tôt, et ne touche pas au plafond
+de dix nouveautés par jour.
 
 **Les cartes-sangsues.** Au-delà de quatre rechutes, l'état FSRS ne décrit plus
 une mémoire mais une série d'échecs, et la carte revient sans fin à un jour
@@ -278,6 +287,7 @@ src/
     backup.ts           export / import de sauvegarde
     disputes.ts         formulations refusées à tort, à porter au contenu
     prefs.ts            réglages de session (mode cahier)
+    priorities.ts       groupes à ouvrir en premier, par carnet
   test/
     setup.ts            IndexedDB en mémoire, installé avant tout import
     helpers.ts          fabriques minimales de packs et de cartes
@@ -291,7 +301,8 @@ src/
     art.ts              illustrations vectorielles
     app.css             styles
     speech.ts           lecture à voix haute (speechSynthesis)
-    screens/            accueil, révision, bilan, vocabulaire, diagnostic, sauvegarde
+    screens/            accueil, révision, bilan, vocabulaire, diagnostic,
+                        ordre de découverte, sauvegarde
 content/<pack>/         sources du contenu, une unité par fichier
 public/packs/           packs assemblés, servis en statique
 ```
@@ -453,7 +464,8 @@ le signale et la progression reste intacte.
 | 9. Diagnostic — notions fragiles, cartes-sangsues, contestations | fait |
 | 10. Tests sur les chemins de données | fait |
 | 11. Vocabulaire thématique — 4 registres, 32 expressions | fait |
-| 12. Série hebdomadaire | à faire |
+| 12. Ordre de découverte choisi par groupe | fait |
+| 13. Série hebdomadaire | à faire |
 
 Deux points restent ouverts côté image : l'aquarelle de couverture, signée
 Zayane, n'est pas embarquée — les illustrations sont des dessins vectoriels

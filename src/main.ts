@@ -10,13 +10,14 @@ import { el, mount } from './ui/dom';
 import { renderBackup } from './ui/screens/backup';
 import { renderHome } from './ui/screens/home';
 import { renderInsights } from './ui/screens/insights';
+import { renderOrder } from './ui/screens/order';
 import { renderReview } from './ui/screens/review';
 import { renderSummary } from './ui/screens/summary';
 import { renderVocab } from './ui/screens/vocab';
 import { warmVoices } from './ui/speech';
 import type { Ctx, Nav } from './ui/types';
 
-type Screen = 'home' | 'review' | 'summary' | 'vocab' | 'insights' | 'backup';
+type Screen = 'home' | 'review' | 'summary' | 'vocab' | 'insights' | 'order' | 'backup';
 
 async function boot(): Promise<void> {
   const root = document.querySelector<HTMLElement>('#app');
@@ -72,6 +73,10 @@ async function boot(): Promise<void> {
       async insights() {
         screen = 'insights';
         await renderInsights(ctx);
+      },
+      async order(packId) {
+        screen = 'order';
+        await renderOrder(ctx, packId);
       },
       async backup() {
         screen = 'backup';

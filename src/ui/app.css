@@ -1058,3 +1058,9 @@ body::before {
 .carnet--quiet .sub {
   display: none;
 }
+
+/* Première ligne d'une liste de bascules : rien à séparer au-dessus d'elle. */
+.card > .toggle:first-child {
+  border-top: none;
+  padding-top: 0;
+}
