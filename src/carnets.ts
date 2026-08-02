@@ -15,6 +15,7 @@ import { syncPackCards } from './storage/cards';
 import { loadVocabPack, VOCAB_PACK_ID } from './storage/vocab';
 
 export const GRAMMAR_PACK_ID = 'english-grammar';
+export const VOCABULARY_PACK_ID = 'vocabulary';
 export const CULTURE_PACK_ID = 'bristol-culture';
 export { VOCAB_PACK_ID };
 
@@ -43,6 +44,11 @@ const STATIC_CARNETS: StaticCarnet[] = [
     id: GRAMMAR_PACK_ID,
     label: 'Grammaire',
     tagline: 'La mécanique de la langue, une unité à la fois.',
+  },
+  {
+    id: VOCABULARY_PACK_ID,
+    label: 'Vocabulaire',
+    tagline: 'Le travail, la scène, la ville, le pub — quatre registres.',
   },
   {
     id: CULTURE_PACK_ID,

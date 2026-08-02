@@ -1038,3 +1038,23 @@ body::before {
 .footer-actions {
   gap: var(--space-5);
 }
+
+/* Un carnet sans rien à revoir : il annonce son retour et se tait. */
+.carnet--quiet {
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-5);
+}
+
+.carnet--quiet .gtb-glyph {
+  width: 2rem;
+  height: 2rem;
+  opacity: 0.65;
+}
+
+.carnet--quiet h2 {
+  font-size: var(--text-base);
+}
+
+.carnet--quiet .sub {
+  display: none;
+}

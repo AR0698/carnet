@@ -3,26 +3,38 @@
 **L'anglais qu'il faut pour y être chez soi.**
 En ligne : https://ar0698.github.io/carnet/
 
-Trois carnets, un seul moteur de mémoire. La grammaire pour la mécanique, la
-culture pour la ville, et Discovery pour les mots qu'on ramasse en chemin et
-qu'on note soi-même. On y revient quelques minutes par jour ; l'application
+Quatre carnets, un seul moteur de mémoire. La grammaire pour la mécanique, le
+vocabulaire pour les registres qu'on va vraiment parler, la culture pour la
+ville, et Discovery pour les mots qu'on ramasse en chemin et qu'on note
+soi-même. On y revient quelques minutes par jour ; l'application
 décide seule de ce qui doit être revu et quand, pour que ce soit encore là dans
 six mois.
 
 PWA hors ligne, sans backend, sans compte. Le moteur ignore le sujet enseigné :
 un domaine = un **pack de contenu**, ajouté sans toucher au code.
 
-## Trois carnets
+## Quatre carnets
 
 | Carnet | Ce qu'on y travaille | D'où vient le contenu |
 | --- | --- | --- |
 | **Grammaire** | la mécanique de la langue, unité par unité | `public/packs/english-grammar.json` |
+| **Vocabulaire** | quatre registres : tech et IA, la scène, la ville, le pub | `public/packs/vocabulary.json` |
 | **Culture** | Bristol racontée en anglais, et les mots qu'on y attrape | `public/packs/bristol-culture.json` |
 | **Discovery** | le vocabulaire saisi à la main | IndexedDB, écrit par l'apprenante |
 
 Chacun a sa propre file d'échéances, son propre quota de nouveautés et sa propre
 progression. Rien ne se mélange entre carnets : réviser la grammaire ne fait pas
 avancer le vocabulaire.
+
+Un seul carnet pour les quatre thèmes, et non un carnet par thème : chacun a
+son propre quota de dix nouveautés par jour, si bien que sept carnets
+autoriseraient soixante-dix nouvelles cartes quotidiennes — et le plafond de
+charge, la meilleure idée de l'application, s'effondrerait. Les thèmes sont donc
+des **notions** à l'intérieur d'un même carnet. Bénéfice secondaire : le
+diagnostic par notion donne gratuitement la justesse par thème.
+
+Un carnet qui n'a rien à revoir se replie sur une ligne. À quatre, des cartes
+pleines transformeraient l'accueil en menu.
 
 La bascule technique tient en une idée : Discovery est exposé au moteur comme un
 `ContentPack` ordinaire, reconstruit à la volée depuis la base
@@ -440,7 +452,8 @@ le signale et la progression reste intacte.
 | 8. Culture — Bristol | amorcé (6 unités, 18 expressions) |
 | 9. Diagnostic — notions fragiles, cartes-sangsues, contestations | fait |
 | 10. Tests sur les chemins de données | fait |
-| 11. Série hebdomadaire | à faire |
+| 11. Vocabulaire thématique — 4 registres, 32 expressions | fait |
+| 12. Série hebdomadaire | à faire |
 
 Deux points restent ouverts côté image : l'aquarelle de couverture, signée
 Zayane, n'est pas embarquée — les illustrations sont des dessins vectoriels

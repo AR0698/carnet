@@ -3,13 +3,20 @@ import { formatDelay } from '../../engine/scheduler';
 import { remainingNewQuota } from '../../engine/session';
 import { countAll, nextDueDate, type PackCounts } from '../../storage/cards';
 import { loadPrefs, savePrefs } from '../../storage/prefs';
-import { GRAMMAR_PACK_ID, VOCAB_PACK_ID } from '../../carnets';
+import { GRAMMAR_PACK_ID, VOCAB_PACK_ID, VOCABULARY_PACK_ID } from '../../carnets';
 import { bristolBanner, carnetGlyph } from '../art';
 import { el, mount } from '../dom';
 import type { Ctx } from '../types';
 import { renderPwaNotices } from './pwaNotices';
 
 const TIME_CHOICES = [5, 15, 30];
+
+/** Une vignette par carnet ; les inconnus retombent sur celle de Culture. */
+const GLYPHS: Record<string, Parameters<typeof carnetGlyph>[0]> = {
+  [GRAMMAR_PACK_ID]: 'grammar',
+  [VOCABULARY_PACK_ID]: 'themes',
+  [VOCAB_PACK_ID]: 'vocab',
+};
 
 /**
  * Ce que l'application fait de la mémoire, en clair.
@@ -144,18 +151,22 @@ export async function renderHome(ctx: Ctx): Promise<void> {
     ]);
     browse.addEventListener('click', () => void ctx.nav.vocab());
 
-    const glyph =
-      carnet.id === GRAMMAR_PACK_ID
-        ? 'grammar'
-        : carnet.id === VOCAB_PACK_ID
-          ? 'vocab'
-          : 'culture';
+    const head = el('div', { class: 'carnet__head' }, [
+      carnetGlyph(GLYPHS[carnet.id] ?? 'culture'),
+      el('div', {}, [el('h2', {}, [carnet.label]), el('p', { class: 'sub' }, [carnet.tagline])]),
+    ]);
+
+    // À quatre carnets, quatre cartes pleines transforment l'accueil en menu.
+    // Celui qui n'a rien à proposer se replie : il dit quand il revient, et se tait.
+    if (!empty && !state.workable) {
+      return el('section', { class: 'card carnet carnet--quiet' }, [
+        head,
+        el('p', { class: 'notice' }, [restNotice(state)]),
+      ]);
+    }
 
     return el('section', { class: 'card carnet' }, [
-      el('div', { class: 'carnet__head' }, [
-        carnetGlyph(glyph),
-        el('div', {}, [el('h2', {}, [carnet.label]), el('p', { class: 'sub' }, [carnet.tagline])]),
-      ]),
+      head,
       !empty &&
         el('div', { class: 'stats' }, [
           stat(counts.due, 'à revoir'),
@@ -166,10 +177,8 @@ export async function renderHome(ctx: Ctx): Promise<void> {
         ? el('p', { class: 'notice' }, [
             'Rien ici pour l’instant. Le premier mot que tu ajoutes entre aussitôt dans la révision.',
           ])
-        : state.workable
-          ? el('p', { class: 'notice' }, ['Combien de temps as-tu, là, maintenant ?'])
-          : el('p', { class: 'notice' }, [restNotice(state)]),
-      !empty && state.workable && durations,
+        : el('p', { class: 'notice' }, ['Combien de temps as-tu, là, maintenant ?']),
+      !empty && durations,
       carnet.personal && el('div', { class: 'carnet__links' }, [addWord, !empty && browse]),
     ]);
   }

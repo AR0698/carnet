@@ -1,0 +1,445 @@
+{
+  "group": "Tech et IA",
+  "items": [
+    {
+      "id": "v1-ship",
+      "topicId": "v001",
+      "tags": [
+        "Tech et IA"
+      ],
+      "fields": {
+        "term": "to ship",
+        "meaning": "livrer, mettre en production",
+        "example": "We ship on Thursdays, never on a Friday."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « livrer, mettre en production » ?",
+          "answerSpec": {
+            "accepted": [
+              "to ship"
+            ]
+          },
+          "hints": [
+            "Le mot vient du transport maritime : le produit quitte le quai."
+          ],
+          "pitfalls": [
+            {
+              "answers": [
+                "to deploy"
+              ],
+              "explain": "« Deploy » décrit l’acte technique. « Ship » dit que c’est entre les mains des gens."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "We ___ on Thursdays, never on a Friday.",
+          "answerSpec": {
+            "accepted": [
+              "ship"
+            ]
+          },
+          "hints": [
+            "livrer, mettre en production"
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « livrer, mettre en production » ?",
+          "answerSpec": {
+            "accepted": [
+              "to ship"
+            ]
+          },
+          "distractors": [
+            "to send",
+            "to deliver",
+            "to launch"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v1-roll-back",
+      "topicId": "v001",
+      "tags": [
+        "Tech et IA"
+      ],
+      "fields": {
+        "term": "to roll back",
+        "meaning": "revenir à la version précédente",
+        "example": "If the error rate spikes, we roll back and look at it on Monday."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « revenir à la version précédente » ?",
+          "answerSpec": {
+            "accepted": [
+              "to roll back"
+            ]
+          },
+          "hints": [
+            "La particule « back » porte le retour en arrière."
+          ],
+          "pitfalls": [
+            {
+              "answers": [
+                "to cancel"
+              ],
+              "explain": "« Cancel » annule ce qui n’a pas eu lieu. Ici la version est déjà partie : on la retire."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "If the error rate spikes, we ___ and look at it on Monday.",
+          "answerSpec": {
+            "accepted": [
+              "roll back"
+            ]
+          },
+          "hints": [
+            "revenir à la version précédente"
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « revenir à la version précédente » ?",
+          "answerSpec": {
+            "accepted": [
+              "to roll back"
+            ]
+          },
+          "distractors": [
+            "to fall back",
+            "to go back",
+            "to pull back"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v1-edge-case",
+      "topicId": "v001",
+      "tags": [
+        "Tech et IA"
+      ],
+      "fields": {
+        "term": "an edge case",
+        "meaning": "un cas limite",
+        "example": "It works fine until someone pastes an emoji — classic edge case."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « un cas limite » ?",
+          "answerSpec": {
+            "accepted": [
+              "an edge case"
+            ]
+          },
+          "hints": [
+            "Le bord du domaine de validité, là où les hypothèses cèdent."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "It works fine until someone pastes an emoji — classic ___.",
+          "answerSpec": {
+            "accepted": [
+              "edge case"
+            ]
+          },
+          "hints": [
+            "un cas limite"
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « un cas limite » ?",
+          "answerSpec": {
+            "accepted": [
+              "an edge case"
+            ]
+          },
+          "distractors": [
+            "a corner shop",
+            "a side case",
+            "a limit case"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v1-trade-off",
+      "topicId": "v001",
+      "tags": [
+        "Tech et IA"
+      ],
+      "fields": {
+        "term": "a trade-off",
+        "meaning": "un compromis, un arbitrage",
+        "example": "Speed against readability is the usual trade-off."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « un compromis, un arbitrage » ?",
+          "answerSpec": {
+            "accepted": [
+              "a trade-off"
+            ]
+          },
+          "hints": [
+            "On échange une qualité contre une autre : rien n’est gratuit."
+          ],
+          "pitfalls": [
+            {
+              "answers": [
+                "a compromise"
+              ],
+              "explain": "« Compromise » suggère qu’on cède. « Trade-off » est neutre : on choisit ce qu’on paie."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Speed against readability is the usual ___.",
+          "answerSpec": {
+            "accepted": [
+              "trade-off"
+            ]
+          },
+          "hints": [
+            "un compromis, un arbitrage"
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « un compromis, un arbitrage » ?",
+          "answerSpec": {
+            "accepted": [
+              "a trade-off"
+            ]
+          },
+          "distractors": [
+            "a bargain",
+            "a swap",
+            "a give-away"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v1-handover",
+      "topicId": "v001",
+      "tags": [
+        "Tech et IA"
+      ],
+      "fields": {
+        "term": "a handover",
+        "meaning": "une passation",
+        "example": "Write the handover before you go on holiday, not on the last morning."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « une passation » ?",
+          "answerSpec": {
+            "accepted": [
+              "a handover"
+            ]
+          },
+          "hints": [
+            "Ce qu’on transmet à celui qui reprend le dossier."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Write the ___ before you go on holiday, not on the last morning.",
+          "answerSpec": {
+            "accepted": [
+              "handover"
+            ]
+          },
+          "hints": [
+            "une passation"
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « une passation » ?",
+          "answerSpec": {
+            "accepted": [
+              "a handover"
+            ]
+          },
+          "distractors": [
+            "a takeover",
+            "a handout",
+            "a handoff"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v1-spin-up",
+      "topicId": "v001",
+      "tags": [
+        "Tech et IA"
+      ],
+      "fields": {
+        "term": "to spin up",
+        "meaning": "démarrer, monter en route",
+        "example": "Give me ten minutes to spin up a test environment."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « démarrer, monter en route » ?",
+          "answerSpec": {
+            "accepted": [
+              "to spin up"
+            ]
+          },
+          "hints": [
+            "Image du disque qui prend sa vitesse."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Give me ten minutes to ___ a test environment.",
+          "answerSpec": {
+            "accepted": [
+              "spin up"
+            ]
+          },
+          "hints": [
+            "démarrer, monter en route"
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « démarrer, monter en route » ?",
+          "answerSpec": {
+            "accepted": [
+              "to spin up"
+            ]
+          },
+          "distractors": [
+            "to set on",
+            "to boot in",
+            "to turn out"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v1-blocker",
+      "topicId": "v001",
+      "tags": [
+        "Tech et IA"
+      ],
+      "fields": {
+        "term": "a blocker",
+        "meaning": "ce qui empêche d’avancer",
+        "example": "The migration is my only blocker this week."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « ce qui empêche d’avancer » ?",
+          "answerSpec": {
+            "accepted": [
+              "a blocker"
+            ]
+          },
+          "hints": [
+            "Le mot qu’on attend en réunion quotidienne."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The migration is my only ___ this week.",
+          "answerSpec": {
+            "accepted": [
+              "blocker"
+            ]
+          },
+          "hints": [
+            "ce qui empêche d’avancer"
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « ce qui empêche d’avancer » ?",
+          "answerSpec": {
+            "accepted": [
+              "a blocker"
+            ]
+          },
+          "distractors": [
+            "a stopper",
+            "a barrier",
+            "a jam"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v1-scope",
+      "topicId": "v001",
+      "tags": [
+        "Tech et IA"
+      ],
+      "fields": {
+        "term": "to scope",
+        "meaning": "délimiter le périmètre",
+        "example": "Let us scope it properly before anyone writes a line."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « délimiter le périmètre » ?",
+          "answerSpec": {
+            "accepted": [
+              "to scope"
+            ]
+          },
+          "hints": [
+            "Le nom « scope » désigne l’étendue de ce qui est prévu."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Let us ___ it properly before anyone writes a line.",
+          "answerSpec": {
+            "accepted": [
+              "scope"
+            ]
+          },
+          "hints": [
+            "délimiter le périmètre"
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « délimiter le périmètre » ?",
+          "answerSpec": {
+            "accepted": [
+              "to scope"
+            ]
+          },
+          "distractors": [
+            "to frame",
+            "to size",
+            "to bound"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,453 @@
+{
+  "group": "Bristol au quotidien",
+  "items": [
+    {
+      "id": "v3-viewing",
+      "topicId": "v003",
+      "tags": [
+        "Bristol au quotidien"
+      ],
+      "fields": {
+        "term": "a viewing",
+        "meaning": "une visite de logement",
+        "example": "We have got three viewings booked on Saturday morning."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « une visite de logement » ?",
+          "answerSpec": {
+            "accepted": [
+              "a viewing"
+            ]
+          },
+          "hints": [
+            "Littéralement, une séance où l’on regarde."
+          ],
+          "pitfalls": [
+            {
+              "answers": [
+                "a visit"
+              ],
+              "explain": "« Visit » se dit pour rendre visite à quelqu’un. Voir un appartement à louer, c’est « a viewing »."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "We have got three ___ booked on Saturday morning.",
+          "answerSpec": {
+            "accepted": [
+              "viewings"
+            ]
+          },
+          "hints": [
+            "une visite de logement"
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « une visite de logement » ?",
+          "answerSpec": {
+            "accepted": [
+              "a viewing"
+            ]
+          },
+          "distractors": [
+            "a showing",
+            "a walk-through",
+            "a look-round"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v3-deposit",
+      "topicId": "v003",
+      "tags": [
+        "Bristol au quotidien"
+      ],
+      "fields": {
+        "term": "a deposit",
+        "meaning": "une caution",
+        "example": "The deposit is five weeks’ rent, held in a government scheme."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « une caution » ?",
+          "answerSpec": {
+            "accepted": [
+              "a deposit"
+            ]
+          },
+          "hints": [
+            "La somme immobilisée en garantie, rendue à la fin."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The ___ is five weeks’ rent, held in a government scheme.",
+          "answerSpec": {
+            "accepted": [
+              "deposit"
+            ]
+          },
+          "hints": [
+            "une caution"
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « une caution » ?",
+          "answerSpec": {
+            "accepted": [
+              "a deposit"
+            ]
+          },
+          "distractors": [
+            "a warranty",
+            "a bond",
+            "a guarantee"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v3-register-gp",
+      "topicId": "v003",
+      "tags": [
+        "Bristol au quotidien"
+      ],
+      "fields": {
+        "term": "to register with a GP",
+        "meaning": "s’inscrire chez un médecin traitant",
+        "example": "The first thing to do when you arrive is to register with a GP."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « s’inscrire chez un médecin traitant » ?",
+          "answerSpec": {
+            "accepted": [
+              "to register with a GP"
+            ]
+          },
+          "hints": [
+            "GP : general practitioner. On s’inscrit au cabinet."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The first thing to do when you arrive is to ___.",
+          "answerSpec": {
+            "accepted": [
+              "register with a GP"
+            ]
+          },
+          "hints": [
+            "s’inscrire chez un médecin traitant"
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « s’inscrire chez un médecin traitant » ?",
+          "answerSpec": {
+            "accepted": [
+              "to register with a GP"
+            ]
+          },
+          "distractors": [
+            "to sign in with a GP",
+            "to enrol at a GP",
+            "to book with a GP"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v3-council",
+      "topicId": "v003",
+      "tags": [
+        "Bristol au quotidien"
+      ],
+      "fields": {
+        "term": "the council",
+        "meaning": "la mairie, l’administration locale",
+        "example": "You pay council tax to the council, and you complain to them about the bins."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « la mairie, l’administration locale » ?",
+          "answerSpec": {
+            "accepted": [
+              "the council"
+            ]
+          },
+          "hints": [
+            "La collectivité, pas le bâtiment."
+          ],
+          "pitfalls": [
+            {
+              "answers": [
+                "the town hall"
+              ],
+              "explain": "« Town hall » est le bâtiment. L’administration qui envoie les factures, c’est « the council »."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "You pay council tax to the ___, and you complain to them about the bins.",
+          "answerSpec": {
+            "accepted": [
+              "council"
+            ]
+          },
+          "hints": [
+            "la mairie, l’administration locale"
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « la mairie, l’administration locale » ?",
+          "answerSpec": {
+            "accepted": [
+              "the council"
+            ]
+          },
+          "distractors": [
+            "the mayor",
+            "the county",
+            "the borough"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v3-tip",
+      "topicId": "v003",
+      "tags": [
+        "Bristol au quotidien"
+      ],
+      "fields": {
+        "term": "the tip",
+        "meaning": "la déchetterie",
+        "example": "Anything too big for the bins goes to the tip on a Sunday."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « la déchetterie » ?",
+          "answerSpec": {
+            "accepted": [
+              "the tip"
+            ]
+          },
+          "hints": [
+            "Le même mot que le pourboire, sans aucun rapport."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Anything too big for the bins goes to the ___ on a Sunday.",
+          "answerSpec": {
+            "accepted": [
+              "tip"
+            ]
+          },
+          "hints": [
+            "la déchetterie"
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « la déchetterie » ?",
+          "answerSpec": {
+            "accepted": [
+              "the tip"
+            ]
+          },
+          "distractors": [
+            "the dump site",
+            "the waste",
+            "the skip"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v3-rota",
+      "topicId": "v003",
+      "tags": [
+        "Bristol au quotidien"
+      ],
+      "fields": {
+        "term": "a rota",
+        "meaning": "un tableau de roulement",
+        "example": "There is a cleaning rota on the fridge, and nobody looks at it."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « un tableau de roulement » ?",
+          "answerSpec": {
+            "accepted": [
+              "a rota"
+            ]
+          },
+          "hints": [
+            "De « rotation » : chacun son tour."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "There is a cleaning ___ on the fridge, and nobody looks at it.",
+          "answerSpec": {
+            "accepted": [
+              "rota"
+            ]
+          },
+          "hints": [
+            "un tableau de roulement"
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « un tableau de roulement » ?",
+          "answerSpec": {
+            "accepted": [
+              "a rota"
+            ]
+          },
+          "distractors": [
+            "a roster",
+            "a schedule",
+            "a shift list"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v3-sort-out",
+      "topicId": "v003",
+      "tags": [
+        "Bristol au quotidien"
+      ],
+      "fields": {
+        "term": "to sort out",
+        "meaning": "régler, arranger",
+        "example": "I will sort out the internet before you move in."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « régler, arranger » ?",
+          "answerSpec": {
+            "accepted": [
+              "to sort out"
+            ]
+          },
+          "hints": [
+            "Le verbe à tout faire de l’anglais britannique."
+          ],
+          "pitfalls": [
+            {
+              "answers": [
+                "to fix"
+              ],
+              "explain": "« Fix » répare ce qui est cassé. « Sort out » règle une affaire, même sans panne."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "I will ___ the internet before you move in.",
+          "answerSpec": {
+            "accepted": [
+              "sort out"
+            ]
+          },
+          "hints": [
+            "régler, arranger"
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « régler, arranger » ?",
+          "answerSpec": {
+            "accepted": [
+              "to sort out"
+            ]
+          },
+          "distractors": [
+            "to settle up",
+            "to work off",
+            "to clear out"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v3-queue",
+      "topicId": "v003",
+      "tags": [
+        "Bristol au quotidien"
+      ],
+      "fields": {
+        "term": "to queue",
+        "meaning": "faire la queue",
+        "example": "People here will queue in the rain rather than push in."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « faire la queue » ?",
+          "answerSpec": {
+            "accepted": [
+              "to queue"
+            ]
+          },
+          "hints": [
+            "Se prononce comme la lettre Q. Verbe et nom."
+          ],
+          "pitfalls": [
+            {
+              "answers": [
+                "to make the queue"
+              ],
+              "explain": "On ne « fait » pas la queue en anglais : le mot est lui-même un verbe, « to queue »."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "People here will ___ in the rain rather than push in.",
+          "answerSpec": {
+            "accepted": [
+              "queue"
+            ]
+          },
+          "hints": [
+            "faire la queue"
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « faire la queue » ?",
+          "answerSpec": {
+            "accepted": [
+              "to queue"
+            ]
+          },
+          "distractors": [
+            "to line",
+            "to wait up",
+            "to file"
+          ]
+        }
+      ]
+    }
+  ]
+}

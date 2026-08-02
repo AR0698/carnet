@@ -200,7 +200,9 @@ export function bristolBanner(): HTMLElement {
  * Petit fanion de carnet — la vignette qui distingue les trois carnets dans le
  * hub. Trois motifs, un par carnet, dans le même registre que la bannière.
  */
-export function carnetGlyph(kind: 'grammar' | 'vocab' | 'culture'): HTMLElement {
+export function carnetGlyph(
+  kind: 'grammar' | 'themes' | 'vocab' | 'culture',
+): HTMLElement {
   plantFilters();
 
   const body = {
@@ -209,6 +211,12 @@ export function carnetGlyph(kind: 'grammar' | 'vocab' | 'culture'): HTMLElement 
       <path d="M 9,30 C 16,14 27,8 33,7 C 33,17 27,28 12,32 Z" fill="var(--harbour)"
             opacity="0.72" filter="url(#gtb-wash-fine)"/>
       <path d="M 6,34 L 34,6" stroke="var(--ink)" stroke-width="1.6" opacity="0.5" stroke-linecap="round"/>`,
+    // un disque : le tourne-disque de l'aquarelle, et la scène du carnet
+    themes: `
+      <circle cx="20" cy="20" r="14" fill="var(--indigo)" opacity="0.72" filter="url(#gtb-wash-fine)"/>
+      <circle cx="20" cy="20" r="14" fill="none" stroke="var(--ink)" stroke-width="1.2" opacity="0.45"/>
+      <circle cx="20" cy="20" r="8" fill="none" stroke="var(--paper)" stroke-width="1" opacity="0.55"/>
+      <circle cx="20" cy="20" r="3.2" fill="var(--amber)"/>`,
     // une montgolfière : ce qu'on attrape en l'air
     vocab: `
       <path d="M 20,7 C 31,7 31,21 20,29 C 9,21 9,7 20,7 Z" fill="var(--terracotta)"
