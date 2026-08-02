@@ -5,7 +5,8 @@
     "subject": "Anglais",
     "version": "0.2.0",
     "schemaVersion": 1,
-    "locale": "fr-FR"
+    "locale": "fr-FR",
+    "contentLocale": "en-GB"
   },
   "topics": [
     {

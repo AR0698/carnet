@@ -79,7 +79,14 @@ export interface PackMeta {
   subject: string;
   version: string;
   schemaVersion: number;
+  /** Langue de l'interface du pack : consignes, indices, explications. */
   locale: string;
+  /**
+   * Langue de la matière elle-même, quand elle diffère de celle des consignes
+   * (grammaire anglaise expliquée en français : `fr-FR` / `en-GB`). C'est
+   * celle-ci qu'on lit à voix haute.
+   */
+  contentLocale?: string;
 }
 
 export interface ContentPack {
@@ -90,6 +97,30 @@ export interface ContentPack {
 
 /** Version de schéma comprise par ce moteur. */
 export const SUPPORTED_SCHEMA_VERSION = 1;
+
+/** Marqueur du trou à combler dans un énoncé. */
+export const BLANK = '___';
+
+/** Langue de la matière — celle qu'on prononce. */
+export function contentLang(pack: ContentPack): string {
+  return pack.meta.contentLocale ?? pack.meta.locale;
+}
+
+/**
+ * La phrase juste et entière d'un exercice, telle qu'elle doit s'entendre.
+ *
+ * Un énoncé à trou n'a de sens qu'une fois comblé ; ailleurs, la réponse
+ * attendue est déjà la phrase complète. La parenthèse finale, quand il y en a
+ * une, est une aide écrite à l'apprenante — le verbe à conjuguer, la forme
+ * visée — et n'appartient pas à la phrase : on ne la prononce pas.
+ */
+export function spokenSentence(exercise: Exercise): string {
+  const answer = exercise.answerSpec.accepted[0] ?? '';
+  const filled = exercise.prompt.includes(BLANK)
+    ? exercise.prompt.split(BLANK).join(answer)
+    : answer;
+  return filled.replace(/\s*\([^()]*\)\s*$/, '').trim();
+}
 
 /** Identifiant stable d'une carte : un exercice = une carte FSRS. */
 export function cardId(packId: string, itemId: string, exerciseIndex: number): string {

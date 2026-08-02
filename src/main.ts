@@ -7,6 +7,7 @@ import { initServiceWorker, onServiceWorkerChange, warmRuntimeCache } from './pw
 import { syncPackCards } from './storage/cards';
 import { requestPersistentStorage } from './storage/persist';
 import { el, mount } from './ui/dom';
+import { warmVoices } from './ui/speech';
 import { renderHome } from './ui/screens/home';
 import { renderReview } from './ui/screens/review';
 import { renderSummary } from './ui/screens/summary';
@@ -20,6 +21,9 @@ async function boot(): Promise<void> {
   // fonctionne, et l'inverse n'est pas vrai.
   initServiceWorker();
   initInstallPrompt();
+  // La liste des voix du système arrive de façon asynchrone : on l'amorce ici
+  // pour que le premier « Écouter » n'attende pas.
+  warmVoices();
 
   try {
     const pack = await loadPack();
@@ -39,8 +43,8 @@ async function boot(): Promise<void> {
         screen = 'home';
         await renderHome(ctx);
       },
-      async startSession(minutes) {
-        const session = await buildSession(pack, minutes);
+      async startSession(minutes, mode) {
+        const session = await buildSession(pack, minutes, { mode });
         if (session.cards.length === 0) {
           await nav.home();
           return;

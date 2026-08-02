@@ -166,6 +166,64 @@ p {
   flex: 1;
 }
 
+/* option de session : ce qui change la façon de répondre, pas ce qu'on révise */
+
+.toggle {
+  display: flex;
+  gap: var(--space-3);
+  align-items: start;
+  padding: var(--space-3) 0 0;
+  border-top: 1px solid var(--border-soft);
+  cursor: pointer;
+}
+
+.toggle__box {
+  accent-color: var(--iris);
+  width: 1.15rem;
+  height: 1.15rem;
+  margin: 0.15rem 0 0;
+  flex: none;
+}
+
+.toggle__text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.toggle__text b {
+  font-weight: 500;
+}
+
+.toggle__text small {
+  font-size: var(--text-xs);
+  color: var(--ink-soft);
+  line-height: 1.45;
+}
+
+/* ---------- comment ça marche ---------- */
+
+.how {
+  font-size: var(--text-sm);
+  color: var(--ink-soft);
+}
+
+.how summary {
+  cursor: pointer;
+  color: var(--iris);
+  padding: var(--space-2) 0;
+  list-style-position: outside;
+}
+
+.how ul {
+  margin: 0;
+  padding-left: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  line-height: 1.5;
+}
+
 /* ---------- encarts PWA ---------- */
 
 .pwa-note {
@@ -224,6 +282,17 @@ p {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--ink-faint);
+}
+
+/* Un emplacement encore vide ne doit pas creuser un trou dans la carte. */
+.slot:empty {
+  display: none;
+}
+
+.ex-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
 }
 
 .ex-prompt {
@@ -349,6 +418,111 @@ p {
 
 .mcq__option[aria-pressed='true']:disabled {
   opacity: 1;
+}
+
+/* ---------- mode cahier ---------- */
+
+/* La carte porte la marge d'un vrai cahier : un trait à gauche, rien de plus. */
+.card--paper {
+  border-left: 2px solid color-mix(in srgb, var(--margin) 35%, var(--card));
+}
+
+/* Le trou reste un trou : on n'écrit pas dedans, on le recopie. */
+.ex-blank {
+  display: inline-block;
+  width: 5.5rem;
+  margin: 0 var(--space-1);
+  border-bottom: 2px solid var(--ink-faint);
+  vertical-align: baseline;
+}
+
+/* Propositions du filet de secours, à recopier plutôt qu'à désigner. */
+.choices {
+  margin: 0;
+  padding-left: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.paper-cue {
+  font-size: var(--text-sm);
+  color: var(--ink-soft);
+  background: var(--grid);
+  border-radius: var(--radius-control);
+  padding: var(--space-3) var(--space-4);
+}
+
+.reveal {
+  border-radius: var(--radius-control);
+  padding: var(--space-4);
+  background: color-mix(in srgb, var(--ink) 3%, var(--paper));
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.reveal__label {
+  font-size: var(--text-xs);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.reveal__answer {
+  font-size: var(--text-lg);
+  line-height: 1.4;
+}
+
+.reveal .alt {
+  font-size: var(--text-xs);
+  color: var(--ink-soft);
+}
+
+.judge {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  width: 100%;
+}
+
+.judge__question {
+  font-size: var(--text-sm);
+  color: var(--ink-soft);
+}
+
+.judge__row {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.judge__btn {
+  flex: 1;
+  font-size: var(--text-sm);
+  padding: var(--space-3) var(--space-2);
+  background: var(--paper);
+  color: var(--ink);
+  border-color: var(--border-soft);
+}
+
+.judge__btn--easy:hover {
+  border-color: var(--growth);
+  background: var(--growth-soft);
+}
+
+.judge__btn--ok:hover {
+  border-color: var(--iris);
+  background: var(--iris-soft);
+}
+
+.judge__btn--ko:hover {
+  border-color: var(--margin);
+  background: var(--margin-soft);
+}
+
+/* Le bouton d'écoute vit dans un bloc de correction : il s'y range. */
+.listen {
+  align-self: start;
 }
 
 .hint {

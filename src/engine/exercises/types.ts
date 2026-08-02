@@ -34,4 +34,10 @@ export interface ExerciseHandle {
 export interface ExerciseRenderer {
   render(exercise: Exercise, container: HTMLElement): ExerciseHandle;
   grade(exercise: Exercise, userInput: string): GradeResult;
+  /**
+   * Le même énoncé, sans champ de saisie : mode cahier, où la réponse s'écrit
+   * à la main. Facultatif — à défaut, la consigne nue est affichée, ce qui
+   * suffit à un type sans matière annexe.
+   */
+  statement?(exercise: Exercise, container: HTMLElement): void;
 }

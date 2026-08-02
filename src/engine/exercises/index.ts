@@ -6,7 +6,8 @@
  * ni la session, ni la planification, ni l'interface.
  */
 
-import type { ExerciseType } from '../../packs/schema';
+import type { Exercise, ExerciseType } from '../../packs/schema';
+import { el } from '../../ui/dom';
 import { fillBlank } from './fillBlank';
 import { mcq } from './mcq';
 import { produce } from './produce';
@@ -26,6 +27,16 @@ export function rendererFor(type: ExerciseType): ExerciseRenderer {
   const renderer = RENDERERS[type];
   if (!renderer) throw new Error(`Type d'exercice non pris en charge : ${type}`);
   return renderer;
+}
+
+/**
+ * Affiche un énoncé sans champ de saisie — mode cahier. Un type qui ne définit
+ * pas de `statement` retombe sur sa consigne nue : jamais d'écran vide.
+ */
+export function renderStatement(exercise: Exercise, container: HTMLElement): void {
+  const renderer = rendererFor(exercise.type);
+  if (renderer.statement) renderer.statement(exercise, container);
+  else container.append(el('p', { class: 'ex-prompt' }, [exercise.prompt]));
 }
 
 export function supportedTypes(): ExerciseType[] {

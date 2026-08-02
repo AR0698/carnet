@@ -22,8 +22,12 @@ function shuffled<T>(list: T[]): T[] {
   return out;
 }
 
+function optionsOf(exercise: Exercise): string[] {
+  return shuffled([canonicalAnswer(exercise.answerSpec), ...(exercise.distractors ?? [])]);
+}
+
 function render(exercise: Exercise, container: HTMLElement): ExerciseHandle {
-  const options = shuffled([canonicalAnswer(exercise.answerSpec), ...(exercise.distractors ?? [])]);
+  const options = optionsOf(exercise);
 
   let selected: string | null = null;
   let submit: (() => void) | null = null;
@@ -64,6 +68,22 @@ function render(exercise: Exercise, container: HTMLElement): ExerciseHandle {
   };
 }
 
+/**
+ * Mode cahier : les propositions restent affichées, mais on recopie la bonne
+ * à la main plutôt que de la désigner du doigt. Écrire la forme juste vaut
+ * mieux que la reconnaître — c'est même tout l'intérêt du filet de secours.
+ */
+function statement(exercise: Exercise, container: HTMLElement): void {
+  container.append(
+    el('p', { class: 'ex-prompt' }, [exercise.prompt]),
+    el(
+      'ul',
+      { class: 'choices' },
+      optionsOf(exercise).map((option) => el('li', { lang: 'en' }, [option])),
+    ),
+  );
+}
+
 function grade(exercise: Exercise, userInput: string): GradeResult {
   const correct = isAccepted(exercise.answerSpec, userInput);
   const expected = canonicalAnswer(exercise.answerSpec);
@@ -83,4 +103,4 @@ function pitfallFor(exercise: Exercise, userInput: string) {
   return pitfall ? { text: pitfall.explain, source: 'pitfall' as const } : undefined;
 }
 
-export const mcq: ExerciseRenderer = { render, grade };
+export const mcq: ExerciseRenderer = { render, grade, statement };

@@ -1,5 +1,5 @@
 /** `transform` — réécrire une phrase donnée selon une consigne. */
 
-import { freeTextRenderer, renderSourced } from './textAnswer';
+import { freeTextRenderer, sourcedView } from './textAnswer';
 
-export const transform = freeTextRenderer(renderSourced('Phrase de départ', 'plain'));
+export const transform = freeTextRenderer(sourcedView('Phrase de départ', 'plain'));

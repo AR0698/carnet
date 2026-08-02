@@ -6,6 +6,6 @@
  * différentes, et c'est la seconde qui compte.
  */
 
-import { freeTextRenderer, renderSourced } from './textAnswer';
+import { freeTextRenderer, sourcedView } from './textAnswer';
 
-export const spotError = freeTextRenderer(renderSourced('Cette phrase contient une faute', 'flag'));
+export const spotError = freeTextRenderer(sourcedView('Cette phrase contient une faute', 'flag'));

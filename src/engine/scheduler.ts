@@ -39,6 +39,13 @@ export interface Answer {
   interleaved: boolean;
   /** La réponse portait sur le filet de secours (mcq) et non sur l'exercice. */
   rescue?: boolean;
+  /**
+   * Mode cahier : le chronomètre mesure le temps d'écriture à la main, pas
+   * celui du rappel — une phrase manuscrite dépasse toujours le seuil
+   * d'hésitation. C'est donc l'apprenante qui dit si la réponse est venue
+   * seule, et son jugement remplace le chrono.
+   */
+  effort?: 'immediate' | 'searched';
 }
 
 /** Au-delà : la réponse est juste mais laborieuse. */
@@ -55,7 +62,11 @@ export function ratingFor(a: Answer): Grade {
   // Choisir la bonne réponse parmi quatre n'est pas la retrouver : le filet de
   // secours débloque, il ne vaut jamais mieux qu'un « difficile ».
   if (a.rescue) return Rating.Hard;
-  if (a.usedHint || a.elapsedMs > HESITATION_MS) return Rating.Hard;
+  if (a.usedHint) return Rating.Hard;
+  // Jugement déclaré (mode cahier) : il prime sur la mesure, qui ne mesure
+  // alors plus la bonne chose.
+  if (a.effort) return a.effort === 'immediate' ? Rating.Easy : Rating.Good;
+  if (a.elapsedMs > HESITATION_MS) return Rating.Hard;
   if (a.elapsedMs < CONFIDENT_MS) return Rating.Easy;
   return Rating.Good;
 }

@@ -14,6 +14,12 @@ import { applyAnswer, localDay, State, type Answer, type ReviewOutcome } from '.
 
 /** Durée moyenne observée par carte, tous types d'exercice confondus. */
 const SECONDS_PER_CARD = 45;
+/**
+ * À la main, on écrit plus lentement qu'on ne tape, et il faut encore relever
+ * la tête pour se corriger. Même temps annoncé, moins de cartes : c'est la
+ * durée promise qui est tenue, pas le nombre d'exercices.
+ */
+const SECONDS_PER_CARD_PAPER = 75;
 /** Plafond de nouvelles notions par jour — au-delà, la charge de révision explose. */
 const DEFAULT_MAX_NEW_PER_DAY = 10;
 
@@ -30,15 +36,26 @@ export interface SessionCard {
 /** Nombre d'échecs consécutifs au-delà duquel on tend le filet. */
 const RESCUE_AFTER_FAILURES = 2;
 
+/**
+ * Comment la question est posée — jamais ce qui est demandé. La sélection des
+ * cartes, le quota et la planification sont identiques dans les deux modes.
+ *
+ * `paper` : la réponse s'écrit à la main sur un cahier, l'application montre
+ * la bonne réponse et l'apprenante juge la sienne.
+ */
+export type SessionMode = 'screen' | 'paper';
+
 export interface Session {
   cards: SessionCard[];
   /** Vrai si la session couvre au moins deux notions : condition du §3.4. */
   interleaved: boolean;
   requestedMinutes: number;
+  mode: SessionMode;
 }
 
-export function estimateCardCount(minutes: number): number {
-  return Math.max(1, Math.round((minutes * 60) / SECONDS_PER_CARD));
+export function estimateCardCount(minutes: number, mode: SessionMode = 'screen'): number {
+  const perCard = mode === 'paper' ? SECONDS_PER_CARD_PAPER : SECONDS_PER_CARD;
+  return Math.max(1, Math.round((minutes * 60) / perCard));
 }
 
 /** Fusion proportionnelle : les deux files avancent au même rythme relatif. */
@@ -110,6 +127,7 @@ export async function remainingNewQuota(
 export interface BuildOptions {
   maxNewPerDay?: number;
   now?: Date;
+  mode?: SessionMode;
 }
 
 export async function buildSession(
@@ -119,9 +137,10 @@ export async function buildSession(
 ): Promise<Session> {
   const now = opts.now ?? new Date();
   const maxNewPerDay = opts.maxNewPerDay ?? DEFAULT_MAX_NEW_PER_DAY;
+  const mode = opts.mode ?? 'screen';
   const packId = pack.meta.id;
 
-  const budget = estimateCardCount(availableMinutes);
+  const budget = estimateCardCount(availableMinutes, mode);
   const quota = await remainingNewQuota(packId, maxNewPerDay, now);
 
   const [due, fresh] = await Promise.all([dueCards(packId, now), newCards(packId, quota)]);
@@ -154,6 +173,7 @@ export async function buildSession(
     cards,
     interleaved: new Set(cards.map((c) => c.card.topicId)).size >= 2,
     requestedMinutes: availableMinutes,
+    mode,
   };
 }
 

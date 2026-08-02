@@ -103,6 +103,20 @@ export async function newCards(packId: string, limit: number): Promise<CardRecor
   return rows.slice(0, limit);
 }
 
+/**
+ * Échéance de la prochaine carte, quand il n'y a plus rien à revoir
+ * maintenant. Une file vide n'est pas la fin du parcours : c'est un rendez-vous
+ * plus tard, et le dire vaut mieux que laisser croire que c'est fini.
+ */
+export async function nextDueDate(packId: string, now = new Date()): Promise<Date | null> {
+  const rows = await db.cards
+    .where('[packId+due]')
+    .between([packId, now], [packId, Dexie.maxKey], false, true)
+    .toArray();
+  const upcoming = rows.filter((c) => c.state !== State.New).map((c) => c.due.getTime());
+  return upcoming.length > 0 ? new Date(Math.min(...upcoming)) : null;
+}
+
 export interface PackCounts {
   total: number;
   due: number;

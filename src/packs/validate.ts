@@ -101,6 +101,9 @@ export function validatePack(raw: unknown): ContentPack {
     for (const key of ['id', 'title', 'subject', 'version', 'locale'] as const) {
       if (!isNonEmptyString(meta[key])) issues.push(`meta.${key} manquant`);
     }
+    if (meta.contentLocale !== undefined && !isNonEmptyString(meta.contentLocale)) {
+      issues.push('meta.contentLocale, s\'il est présent, doit être une étiquette de langue');
+    }
     if (typeof meta.schemaVersion !== 'number') {
       issues.push('meta.schemaVersion manquant');
     } else if (meta.schemaVersion > SUPPORTED_SCHEMA_VERSION) {

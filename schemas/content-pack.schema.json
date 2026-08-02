@@ -17,7 +17,16 @@
         "subject": { "type": "string", "minLength": 1 },
         "version": { "type": "string", "minLength": 1 },
         "schemaVersion": { "type": "integer", "minimum": 1 },
-        "locale": { "type": "string", "minLength": 2 }
+        "locale": {
+          "description": "Langue des consignes, indices et explications.",
+          "type": "string",
+          "minLength": 2
+        },
+        "contentLocale": {
+          "description": "Langue de la matière elle-même, si elle diffère des consignes. C'est celle qui est lue à voix haute.",
+          "type": "string",
+          "minLength": 2
+        }
       }
     },
 

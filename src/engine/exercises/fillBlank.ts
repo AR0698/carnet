@@ -1,5 +1,5 @@
 /** `fill_blank` — compléter le `___` d'une phrase. */
 
-import { freeTextRenderer, renderInline } from './textAnswer';
+import { freeTextRenderer, inlineView } from './textAnswer';
 
-export const fillBlank = freeTextRenderer(renderInline);
+export const fillBlank = freeTextRenderer(inlineView);

@@ -1,3 +1,4 @@
+import type { SessionMode } from '../engine/session';
 import type { ContentPack } from '../packs/schema';
 
 export interface AnsweredCard {
@@ -15,7 +16,7 @@ export interface SessionResult {
 
 export interface Nav {
   home(): Promise<void>;
-  startSession(minutes: number): Promise<void>;
+  startSession(minutes: number, mode: SessionMode): Promise<void>;
   summary(result: SessionResult): Promise<void>;
 }
 

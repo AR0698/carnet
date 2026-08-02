@@ -22,7 +22,7 @@ export default defineConfig({
       manifest: {
         name: 'Carnet',
         short_name: 'Carnet',
-        description: 'Réviser un peu, souvent, et retenir.',
+        description: 'Apprendre n’importe quoi et le retenir pour de bon.',
         lang: 'fr',
         dir: 'ltr',
         // Relatifs au manifeste : fonctionne quel que soit `base`.
