@@ -1,0 +1,116 @@
+{
+  "group": "Questions and auxiliary verbs",
+  "lessons": {
+    "u049": {
+      "image": "Le français peut demander avec la seule voix. L'anglais doit retourner la phrase, et s'invente un auxiliaire quand il n'en a pas.",
+      "rule": "Question = auxiliaire avant le sujet. Quand le verbe n'a pas d'auxiliaire, on emprunte do, does ou did — et le verbe principal reste nu.",
+      "contrast": {
+        "left": "Where do you live?",
+        "right": "Who lives here?",
+        "note": "Pas de do quand le mot interrogatif est déjà le sujet : who fait le travail, l'ordre ne bouge pas."
+      },
+      "trap": {
+        "wrong": "Where you live?",
+        "right": "Where do you live?",
+        "why": "Le français interroge à l'intonation — « tu habites où ? » — et la phrase reste dans l'ordre normal. L'anglais exige un auxiliaire visible, quitte à en fabriquer un avec do."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "What time does the last ferry go back across?",
+          "fr": "À quelle heure repart le dernier ferry ?"
+        },
+        {
+          "register": "work",
+          "en": "Who owns this service now that the team has split?",
+          "fr": "Qui est responsable de ce service maintenant que l'équipe s'est séparée ?"
+        }
+      ],
+      "seeAlso": ["u050", "u051", "u052"]
+    },
+
+    "u050": {
+      "image": "Une question glissée à l'intérieur d'une phrase perd son inversion : elle redevient une affirmation, sagement rangée.",
+      "rule": "Dans une question indirecte — après do you know, I wonder, he asked — l'ordre redevient sujet + verbe, et do disparaît.",
+      "contrast": {
+        "left": "Where is the station?",
+        "right": "Do you know where the station is?",
+        "note": "La même question, une fois enchâssée, remet le verbe derrière le sujet. C'est la question extérieure qui porte l'inversion, pas les deux."
+      },
+      "trap": {
+        "wrong": "Do you know where is the station?",
+        "right": "Do you know where the station is?",
+        "why": "Une fois qu'on a appris à inverser pour questionner, on inverse partout. Le français, lui, ne bouge pas — « tu sais où est la gare ? » — ce qui ne donne aucun signal d'alarme."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "Have you any idea why the harbour road is closed again?",
+          "fr": "Tu sais pourquoi la route du port est encore fermée ?"
+        },
+        {
+          "register": "work",
+          "en": "He asked me when the migration would be finished.",
+          "fr": "Il m'a demandé quand la migration serait terminée."
+        }
+      ],
+      "seeAlso": ["u049", "u047", "u052"]
+    },
+
+    "u051": {
+      "image": "L'anglais déteste se répéter. Il garde l'auxiliaire, jette tout le reste, et la phrase tient encore debout.",
+      "rule": "On reprend l'auxiliaire seul : So do I, Neither have I, Yes, I am. Et une proposition entière se reprend par so : I think so, I hope not.",
+      "contrast": {
+        "left": "So do I.",
+        "right": "Neither do I.",
+        "note": "Pour approuver une phrase affirmative, ou une phrase négative. Se tromper de camp inverse ce qu'on vient de dire."
+      },
+      "trap": {
+        "wrong": "I think yes.",
+        "right": "I think so.",
+        "why": "« Je pense que oui » se calque en I think yes, qui n'existe pas. L'anglais reprend la proposition entière avec so — et sa négation avec I don't think so, rarement I think not."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "'I've never been up the tower.' 'Neither have I, and I've lived here for years.'",
+          "fr": "« Je ne suis jamais monté à la tour. » « Moi non plus, et j'habite ici depuis des années. »"
+        },
+        {
+          "register": "work",
+          "en": "'Is the release still on for Thursday?' 'I hope so.'",
+          "fr": "« La livraison tient toujours pour jeudi ? » « J'espère. »"
+        }
+      ],
+      "seeAlso": ["u052", "u049", "u048"]
+    },
+
+    "u052": {
+      "image": "La petite question accrochée en fin de phrase. Elle ne cherche pas une information, elle cherche un hochement de tête.",
+      "rule": "Phrase affirmative → tag négatif, et l'inverse. On reprend l'auxiliaire de la phrase et le sujet en pronom.",
+      "contrast": {
+        "left": "You're coming, aren't you?",
+        "right": "You're not coming, are you?",
+        "note": "Le tag prend toujours le camp opposé à la phrase. Deux affirmatives d'affilée sonneraient comme une accusation."
+      },
+      "trap": {
+        "wrong": "You're coming, no?",
+        "right": "You're coming, aren't you?",
+        "why": "Le français a « non ? » et « n'est-ce pas ? », invariables et faciles. L'anglais reconstruit son tag à chaque phrase, avec l'auxiliaire de cette phrase-là — il n'y a rien à mémoriser en bloc."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "It doesn't usually get this busy on a Tuesday, does it?",
+          "fr": "Ce n'est pas si plein que ça d'habitude un mardi, si ?"
+        },
+        {
+          "register": "work",
+          "en": "We never did write that postmortem, did we?",
+          "fr": "On ne l'a jamais écrit, ce postmortem, si ?"
+        }
+      ],
+      "seeAlso": ["u051", "u049", "u050"]
+    }
+  }
+}

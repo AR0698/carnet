@@ -1,0 +1,368 @@
+{
+  "group": "Articles and nouns",
+  "lessons": {
+    "u069": {
+      "image": "Ce qui se compte a un pluriel. Ce qui se verse, se pèse ou ne se touche pas n'en a jamais.",
+      "rule": "Un indénombrable — water, money, advice, information, luggage, furniture — n'a pas de pluriel et ne prend jamais a ou an.",
+      "contrast": {
+        "left": "some advice",
+        "right": "a piece of advice",
+        "note": "Pour compter un indénombrable, il faut lui prêter un contenant : a piece of, a bit of, two slices of."
+      },
+      "trap": {
+        "wrong": "I need some informations and an advice.",
+        "right": "I need some information and some advice.",
+        "why": "« Des informations », « des conseils », « des bagages » sont des pluriels ordinaires en français. En anglais ces mots sont indénombrables : jamais de -s, jamais de a — et le -s s'entend immédiatement."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "There's furniture on the pavement outside every student house in June.",
+          "fr": "Il y a des meubles sur le trottoir devant chaque maison d'étudiants en juin."
+        },
+        {
+          "register": "work",
+          "en": "We don't have enough evidence to blame the network yet.",
+          "fr": "On n'a pas assez d'éléments pour accuser le réseau pour l'instant."
+        }
+      ],
+      "seeAlso": ["u070", "u071", "u087"]
+    },
+
+    "u070": {
+      "image": "Le même mot bascule : coffee la matière, a coffee la tasse posée devant toi.",
+      "rule": "Beaucoup de noms sont indénombrables en général et dénombrables quand ils désignent une portion, un type ou un objet précis.",
+      "contrast": {
+        "left": "There's chicken in the fridge.",
+        "right": "There's a chicken in the garden.",
+        "note": "De la viande — ou un animal vivant. L'article change l'espèce."
+      },
+      "trap": {
+        "wrong": "I've got a good news for you.",
+        "right": "I've got some good news for you.",
+        "why": "News a la forme d'un pluriel et se comporte en indénombrable singulier : the news is good, jamais a news. Le français « une bonne nouvelle » pousse dans le mur des deux côtés à la fois."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "Two coffees and a slice of that cake, please.",
+          "fr": "Deux cafés et une part de ce gâteau, s'il vous plaît."
+        },
+        {
+          "register": "work",
+          "en": "The news from the client call was better than expected.",
+          "fr": "Les nouvelles de l'appel client étaient meilleures que prévu."
+        }
+      ],
+      "seeAlso": ["u069", "u079", "u071"]
+    },
+
+    "u071": {
+      "image": "Un exemplaire parmi d'autres, dont on ne dit pas lequel. C'est tout ce que fait a.",
+      "rule": "a ou an devant un singulier dénombrable ; some devant un pluriel ou un indénombrable quand la quantité reste vague.",
+      "contrast": {
+        "left": "I've bought a jumper.",
+        "right": "I've bought some jumpers.",
+        "note": "Un seul, qu'on te présente pour la première fois — ou plusieurs, sans qu'on compte."
+      },
+      "trap": {
+        "wrong": "My sister is teacher in Bath.",
+        "right": "My sister is a teacher in Bath.",
+        "why": "Le français annonce un métier sans article — « elle est professeure ». L'anglais l'exige : a teacher, an engineer, a nurse. C'est une faute qui ne gêne pas la compréhension et qu'on garde des années."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "He's a sound engineer, which in this city means he knows everyone.",
+          "fr": "Il est ingénieur du son, ce qui dans cette ville veut dire qu'il connaît tout le monde."
+        },
+        {
+          "register": "work",
+          "en": "We need a designer on this before we write a line of code.",
+          "fr": "Il nous faut un designer là-dessus avant d'écrire une ligne de code."
+        }
+      ],
+      "seeAlso": ["u072", "u069", "u085"]
+    },
+
+    "u072": {
+      "image": "A lève le rideau sur quelque chose de neuf. The le referme sur quelque chose que vous connaissez déjà tous les deux.",
+      "rule": "a la première fois qu'on en parle, the ensuite — ou dès que le contexte désigne la chose sans ambiguïté.",
+      "contrast": {
+        "left": "I've found a key.",
+        "right": "I've found the key.",
+        "note": "Une clé, on ne sait pas laquelle — ou celle qu'on cherchait, celle dont on avait parlé. The suppose un accord tacite."
+      },
+      "trap": {
+        "wrong": "I bought the bike yesterday, it's second-hand.",
+        "right": "I bought a bike yesterday, it's second-hand.",
+        "why": "Le français met « le » beaucoup plus librement : « j'ai acheté le vélo » passe très bien. En anglais, the annonce que ton interlocuteur sait déjà duquel il s'agit — et il ne sait pas."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "We found a pub with a fire lit, and the fire was the whole point.",
+          "fr": "On a trouvé un pub avec une cheminée allumée, et la cheminée était tout l'intérêt."
+        },
+        {
+          "register": "work",
+          "en": "A customer reported it on Monday; the ticket is still open.",
+          "fr": "Un client l'a signalé lundi ; le ticket est toujours ouvert."
+        }
+      ],
+      "seeAlso": ["u073", "u075", "u071"]
+    },
+
+    "u073": {
+      "image": "The devant ce dont il n'existe qu'un seul exemplaire : le soleil, le meilleur, le même.",
+      "rule": "the devant l'unique — the sun, the sea, the internet — et devant tout ce qui ne peut désigner qu'une chose : the best, the first, the same.",
+      "contrast": {
+        "left": "It's the same thing.",
+        "right": "It's a similar thing.",
+        "note": "Same suppose l'identité, donc l'unicité, donc the. C'est mécanique : same ne se rencontre jamais sans son article."
+      },
+      "trap": {
+        "wrong": "We took same train as you.",
+        "right": "We took the same train as you.",
+        "why": "Le français dit « on a pris le même train », et l'article y est déjà — mais il disparaît à la traduction parce qu'on traduit d'abord « même ». Same sans the n'existe pas."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "The tide was the highest anyone could remember that winter.",
+          "fr": "La marée était la plus haute dont on se souvienne cet hiver-là."
+        },
+        {
+          "register": "work",
+          "en": "We hit the same limit as last quarter, on the same day of the month.",
+          "fr": "On a atteint la même limite qu'au trimestre dernier, le même jour du mois."
+        }
+      ],
+      "seeAlso": ["u072", "u108", "u076"]
+    },
+
+    "u074": {
+      "image": "À l'école pour apprendre, ou à l'école le bâtiment. L'anglais sépare l'institution du lieu, et l'article fait la frontière.",
+      "rule": "Pas de the pour la fonction : go to school, be in hospital, go to bed, at work. Avec the quand il s'agit du bâtiment lui-même.",
+      "contrast": {
+        "left": "She's in hospital.",
+        "right": "She's at the hospital.",
+        "note": "Elle est malade et soignée — ou elle est sur place, peut-être pour rendre visite. Un article, deux situations sans rapport."
+      },
+      "trap": {
+        "wrong": "My brother is at the university in Bath.",
+        "right": "My brother is at university in Bath.",
+        "why": "Le français met un article partout — « à l'école », « à l'hôpital », « à l'université ». L'anglais le retire quand on parle de ce qu'on y fait plutôt que de l'endroit où l'on se trouve."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "He's been in hospital since the weekend, but he's out on Friday.",
+          "fr": "Il est à l'hôpital depuis le week-end, mais il sort vendredi."
+        },
+        {
+          "register": "work",
+          "en": "Half the team is at work by seven and gone by four.",
+          "fr": "La moitié de l'équipe est au bureau à sept heures et partie à seize."
+        }
+      ],
+      "seeAlso": ["u075", "u073", "u077"]
+    },
+
+    "u075": {
+      "image": "Sans the, on parle de tout le monde et de toujours. Avec the, on parle de ceux-là, ici, maintenant.",
+      "rule": "Pas d'article pour généraliser : children learn fast, money doesn't help. The pour désigner un groupe précis et connu.",
+      "contrast": {
+        "left": "Books are expensive.",
+        "right": "The books are expensive.",
+        "note": "Les livres en général — ou ces livres-là, sur cette table. La généralité se dit sans article, toujours."
+      },
+      "trap": {
+        "wrong": "The life is expensive in this city.",
+        "right": "Life is expensive in this city.",
+        "why": "Le français met un article devant les noms pris en général — « la vie », « l'argent », « les gens ». L'anglais le supprime : c'est la faute d'article la plus répandue chez les francophones."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "People here talk to you at bus stops, which takes some getting used to.",
+          "fr": "Les gens ici te parlent aux arrêts de bus, il faut s'y faire."
+        },
+        {
+          "register": "work",
+          "en": "Documentation rots faster than code.",
+          "fr": "La documentation pourrit plus vite que le code."
+        }
+      ],
+      "seeAlso": ["u072", "u076", "u073"]
+    },
+
+    "u076": {
+      "image": "The devant une espèce entière, une invention, ou un groupe de gens qu'on désigne par leur qualité.",
+      "rule": "the + singulier = l'espèce ou l'invention : the giraffe, the telephone. the + adjectif = le groupe humain : the young, the unemployed.",
+      "contrast": {
+        "left": "The young don't vote here.",
+        "right": "Young people don't vote here.",
+        "note": "Les deux se disent. L'adjectif substantivé est plus formel, et il reste toujours au pluriel dans le sens."
+      },
+      "trap": {
+        "wrong": "The poors get hit twice by this.",
+        "right": "The poor get hit twice by this.",
+        "why": "Un adjectif substantivé ne prend jamais de -s en anglais : the poor, the rich, the homeless désignent déjà tout le groupe. Le français accorde — « les pauvres » — et le -s suit tout seul."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "The homeless are pushed out of the centre every time there's a festival.",
+          "fr": "Les sans-abri sont repoussés hors du centre à chaque festival."
+        },
+        {
+          "register": "work",
+          "en": "The unemployed rarely appear in the personas we design for.",
+          "fr": "Les chômeurs apparaissent rarement dans les personas pour lesquels on conçoit."
+        }
+      ],
+      "seeAlso": ["u075", "u073", "u079"]
+    },
+
+    "u077": {
+      "image": "Les noms propres se passent d'article — sauf ceux qui sont des pluriels ou des ensembles, qui gardent le leur.",
+      "rule": "Pas de the devant villes, rues et pays au singulier. The devant les pluriels et les groupes : the Netherlands, the UK, the Alps, the Thames.",
+      "contrast": {
+        "left": "I've moved to England.",
+        "right": "I've moved to the UK.",
+        "note": "Un nom simple ne prend rien ; un ensemble — royaume uni, états unis — garde son article. C'est la forme du nom qui décide."
+      },
+      "trap": {
+        "wrong": "I moved from the France to the England.",
+        "right": "I moved from France to England.",
+        "why": "Le français met un article devant tous les noms de pays — la France, l'Angleterre, le Portugal. L'anglais n'en met que devant les pluriels et les ensembles, ce qui laisse l'immense majorité sans rien."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "The Avon runs under the bridge and out past Avonmouth.",
+          "fr": "L'Avon passe sous le pont et ressort après Avonmouth."
+        },
+        {
+          "register": "work",
+          "en": "Our biggest market is Germany, then the Netherlands.",
+          "fr": "Notre plus gros marché est l'Allemagne, puis les Pays-Bas."
+        }
+      ],
+      "seeAlso": ["u078", "u073", "u074"]
+    },
+
+    "u078": {
+      "image": "Les lieux qui portent le nom de quelqu'un se passent d'article. Ceux qu'on a baptisés en gardent un.",
+      "rule": "the devant hôtels, cinémas, théâtres, musées et journaux. Rien devant les gares, aéroports et universités qui portent un nom propre.",
+      "contrast": {
+        "left": "the Watershed",
+        "right": "Temple Meads",
+        "note": "Un cinéma prend the, une gare non. La règle n'a pas de logique profonde : elle se retient par l'usage."
+      },
+      "trap": {
+        "wrong": "I'll meet you at the Temple Meads at six.",
+        "right": "I'll meet you at Temple Meads at six.",
+        "why": "L'article vient tout seul parce qu'on dit the station. Mais dès que le lieu porte un nom propre, l'anglais le laisse nu — comme pour une personne."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "There's a late showing at the Watershed if we miss the one at Cabot.",
+          "fr": "Il y a une séance tardive au Watershed si on rate celle de Cabot."
+        },
+        {
+          "register": "work",
+          "en": "It was in the Guardian before our comms team had even seen it.",
+          "fr": "C'était dans le Guardian avant même que notre équipe com l'ait vu."
+        }
+      ],
+      "seeAlso": ["u077", "u073", "u074"]
+    },
+
+    "u079": {
+      "image": "Quelques mots anglais ont une forme et un nombre qui ne se correspondent pas. Il n'y en a qu'une poignée, et ils reviennent tous les jours.",
+      "rule": "police, staff, people = pluriels. news, mathematics, economics = singuliers. Un nom de groupe — team, government — accepte les deux.",
+      "contrast": {
+        "left": "The team is small.",
+        "right": "The team are arguing.",
+        "note": "Le groupe vu comme un bloc — ou comme les personnes qui le composent. L'anglais britannique passe de l'un à l'autre sans prévenir."
+      },
+      "trap": {
+        "wrong": "The police is coming and the staff is angry.",
+        "right": "The police are coming and the staff are angry.",
+        "why": "« La police arrive » est un singulier en français, et le mot y est féminin singulier de bout en bout. En anglais, police et staff désignent les gens et se conjuguent au pluriel, toujours."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "The staff at that place have all been there for years.",
+          "fr": "Le personnel de cet endroit est là depuis des années."
+        },
+        {
+          "register": "work",
+          "en": "The data are inconsistent across the two regions.",
+          "fr": "Les données sont incohérentes entre les deux régions."
+        }
+      ],
+      "seeAlso": ["u070", "u080", "u090"]
+    },
+
+    "u080": {
+      "image": "Deux noms collés : le premier explique le second, et il perd son pluriel en entrant dans le rôle.",
+      "rule": "a bus driver, a ten-minute walk, a two-week break. Le nom qui en qualifie un autre reste au singulier, même s'il compte plusieurs choses.",
+      "contrast": {
+        "left": "a five-mile walk",
+        "right": "a walk of five miles",
+        "note": "Le premier est celui qu'on entend ; le second est correct mais lourd. L'anglais colle plutôt que de relier."
+      },
+      "trap": {
+        "wrong": "It's a ten minutes walk from the station.",
+        "right": "It's a ten-minute walk from the station.",
+        "why": "Le français accorde — « une marche de dix minutes » — et le pluriel suit à la traduction. En anglais, un nom qui en qualifie un autre abandonne son -s et prend un trait d'union."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "It's a twenty-minute cycle from Bedminster if the lights are with you.",
+          "fr": "C'est vingt minutes de vélo depuis Bedminster si les feux sont avec toi."
+        },
+        {
+          "register": "work",
+          "en": "We agreed on a two-week freeze before the launch.",
+          "fr": "On s'est mis d'accord sur un gel de deux semaines avant le lancement."
+        }
+      ],
+      "seeAlso": ["u081", "u079", "u069"]
+    },
+
+    "u081": {
+      "image": "Le 's appartient aux vivants. Pour les choses, c'est of — ou deux noms simplement collés.",
+      "rule": "'s pour les personnes et les animaux : Sarah's bike. of pour les objets et les idées : the end of the street, the name of the book.",
+      "contrast": {
+        "left": "my sister's flat",
+        "right": "the roof of the flat",
+        "note": "Une personne possède avec 's ; une chose se rattache avec of. La frontière est vivant / non vivant, pas concret / abstrait."
+      },
+      "trap": {
+        "wrong": "The name of my sister is Claire.",
+        "right": "My sister's name is Claire.",
+        "why": "Le français n'a que « de » et le place partout. En anglais, of devant une personne sonne lourd et administratif — le 's est la forme normale, celle qu'on entend."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "We ended up at someone's flat above a chip shop until four.",
+          "fr": "On a fini chez quelqu'un au-dessus d'une friterie jusqu'à quatre heures."
+        },
+        {
+          "register": "work",
+          "en": "The point of the retro is not to redesign the system.",
+          "fr": "L'intérêt de la rétro n'est pas de reconcevoir le système."
+        }
+      ],
+      "seeAlso": ["u080", "u083", "u082"]
+    }
+  }
+}

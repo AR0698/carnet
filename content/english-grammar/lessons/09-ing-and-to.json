@@ -1,0 +1,459 @@
+{
+  "group": "-ing and to ...",
+  "lessons": {
+    "u053": {
+      "image": "Une famille de verbes qui refusent l'infinitif. Après eux, le second verbe prend -ing, et il n'y a rien à comprendre : ça se retient.",
+      "rule": "enjoy, avoid, finish, mind, suggest, keep, give up, can't help, deny + -ing. Jamais to.",
+      "contrast": {
+        "left": "I stopped smoking.",
+        "right": "I stopped to smoke.",
+        "note": "J'ai arrêté de fumer — ou je me suis arrêté pour fumer une cigarette. Deux vies différentes, séparées par une seule lettre."
+      },
+      "trap": {
+        "wrong": "I enjoy to cook at the weekend.",
+        "right": "I enjoy cooking at the weekend.",
+        "why": "Le français met un infinitif après tous ces verbes — « j'aime cuisiner », « j'évite de prendre ». Rien dans la phrase française ne prévient qu'il faudra un -ing de l'autre côté."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "Would you mind moving up a seat so we can all sit together?",
+          "fr": "Ça t'ennuie de te décaler d'une place qu'on soit tous ensemble ?"
+        },
+        {
+          "register": "work",
+          "en": "We've given up trying to fix that script and rewritten it.",
+          "fr": "On a renoncé à réparer ce script et on l'a réécrit."
+        }
+      ],
+      "seeAlso": ["u054", "u056", "u058"]
+    },
+
+    "u054": {
+      "image": "L'autre famille : celle qui réclame to. Décider, espérer, promettre, refuser, réussir.",
+      "rule": "decide, hope, promise, offer, refuse, agree, manage, afford, deserve, learn + to + infinitif.",
+      "contrast": {
+        "left": "We agreed to meet at six.",
+        "right": "We suggested meeting at six.",
+        "note": "Deux verbes voisins, deux constructions opposées. C'est le verbe qui commande, jamais le sens."
+      },
+      "trap": {
+        "wrong": "He refused of helping us.",
+        "right": "He refused to help us.",
+        "why": "Le français glisse une préposition — « refuser de », « décider de », « promettre de ». En anglais ces verbes prennent to et rien d'autre : le of ou le for calqué du français n'existe pas."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "We managed to get a table by the window without booking.",
+          "fr": "On a réussi à avoir une table près de la fenêtre sans réserver."
+        },
+        {
+          "register": "work",
+          "en": "Nobody can afford to ignore that deprecation any longer.",
+          "fr": "Personne ne peut plus se permettre d'ignorer cette dépréciation."
+        }
+      ],
+      "seeAlso": ["u053", "u055", "u056"]
+    },
+
+    "u055": {
+      "image": "En anglais, on ne veut pas QUE quelqu'un fasse quelque chose. On veut quelqu'un À faire quelque chose.",
+      "rule": "want, ask, tell, expect, allow, advise, persuade, remind + quelqu'un + to + infinitif. Il n'y a pas de subordonnée.",
+      "contrast": {
+        "left": "I want to come.",
+        "right": "I want you to come.",
+        "note": "Sans complément, c'est moi qui viens ; avec, c'est toi. Toute la différence tient dans le pronom glissé avant to."
+      },
+      "trap": {
+        "wrong": "I want that you come on Friday.",
+        "right": "I want you to come on Friday.",
+        "why": "« Je veux que tu viennes » ouvre une subordonnée au subjonctif. L'anglais n'a pas ce mécanisme : la personne devient complément direct, et son verbe passe à l'infinitif avec to."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "She asked me to keep an eye on the flat while they're away.",
+          "fr": "Elle m'a demandé de surveiller l'appartement pendant leur absence."
+        },
+        {
+          "register": "work",
+          "en": "I'd like you to take the standup while I'm on leave.",
+          "fr": "J'aimerais que tu prennes le standup pendant mon congé."
+        }
+      ],
+      "seeAlso": ["u054", "u067", "u037"]
+    },
+
+    "u056": {
+      "image": "Le même verbe, deux sens opposés, selon ce qui le suit. Le -ing regarde en arrière, le to regarde en avant.",
+      "rule": "remember doing = se souvenir d'avoir fait. remember to do = penser à faire. Même bascule pour forget, regret, go on.",
+      "figure": {
+        "now": "maintenant",
+        "marks": [
+          { "at": 18, "label": "-ing : c'était déjà fait" },
+          { "at": 78, "label": "to : ça reste à faire" }
+        ]
+      },
+      "contrast": {
+        "left": "I remember locking it.",
+        "right": "I remembered to lock it.",
+        "note": "Je revois la scène, la clé dans la main — ou je n'ai pas oublié, la porte est bien fermée."
+      },
+      "trap": {
+        "wrong": "Remember locking the door before you leave.",
+        "right": "Remember to lock the door before you leave.",
+        "why": "Le français utilise deux verbes différents — « se souvenir de » et « penser à » — alors que l'anglais garde remember et change ce qui suit. La consigne devient un souvenir, et personne ne ferme la porte."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "I'll never forget seeing the whole gorge in fog from up there.",
+          "fr": "Je n'oublierai jamais d'avoir vu toute la gorge dans le brouillard depuis là-haut."
+        },
+        {
+          "register": "work",
+          "en": "We regret to inform you that the role has been filled.",
+          "fr": "Nous avons le regret de vous informer que le poste a été pourvu."
+        }
+      ],
+      "seeAlso": ["u057", "u053", "u054"]
+    },
+
+    "u057": {
+      "image": "Try to, c'est faire un effort. Try -ing, c'est tenter une autre méthode pour voir si ça marche.",
+      "rule": "try to do = s'efforcer, avec le risque d'échouer. try doing = essayer autre chose pour voir. need -ing = a besoin d'être fait.",
+      "contrast": {
+        "left": "Try to restart it.",
+        "right": "Try restarting it.",
+        "note": "Fais l'effort de le redémarrer, même si c'est compliqué — ou redémarre-le, on verra bien si ça change quelque chose."
+      },
+      "trap": {
+        "wrong": "The tap needs to repair.",
+        "right": "The tap needs repairing.",
+        "why": "Ce -ing a un sens passif : ça a besoin d'être réparé. Le français passe par une tournure passive complète, et le raccourci anglais n'a aucun équivalent qui mette sur la piste."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "The back gate needs oiling, it wakes the whole street.",
+          "fr": "Le portail du fond a besoin d'être huilé, il réveille toute la rue."
+        },
+        {
+          "register": "work",
+          "en": "Try clearing the cache before you spend an hour on the config.",
+          "fr": "Essaie de vider le cache avant de passer une heure sur la configuration."
+        }
+      ],
+      "seeAlso": ["u056", "u053", "u054"]
+    },
+
+    "u058": {
+      "image": "I like doing, c'est ce que j'aime dans la vie. I'd like to do, c'est ce dont j'ai envie là, maintenant.",
+      "rule": "like, love, hate + -ing = un goût général. would like, would love, would hate + to = une envie précise, ou une proposition polie.",
+      "contrast": {
+        "left": "I like walking home.",
+        "right": "I'd like to walk home.",
+        "note": "C'est mon habitude et ça me plaît — ou c'est ce que je propose pour ce soir. Le would change l'horizon, pas le goût."
+      },
+      "trap": {
+        "wrong": "I would like going for a drink.",
+        "right": "I'd like to go for a drink.",
+        "why": "Le français dit « j'aimerais aller » et « j'aime aller » avec le même infinitif. En anglais, le conditionnel would like impose to, sans exception — et le -ing y sonne comme une faute d'accord."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "I love swimming at the lido when it's cold enough to see your breath.",
+          "fr": "J'adore nager au lido quand il fait assez froid pour voir sa respiration."
+        },
+        {
+          "register": "work",
+          "en": "I'd hate to ship this without a second pair of eyes.",
+          "fr": "Ça m'ennuierait beaucoup de livrer ça sans une deuxième relecture."
+        }
+      ],
+      "seeAlso": ["u059", "u053", "u037"]
+    },
+
+    "u059": {
+      "image": "Would rather est le seul de la famille à refuser to. Il prend le verbe tout nu.",
+      "rule": "prefer X to Y ; prefer doing to doing ; would rather do — sans to ; would rather + quelqu'un + prétérit.",
+      "contrast": {
+        "left": "I'd rather stay in.",
+        "right": "I'd prefer to stay in.",
+        "note": "Même sens exactement. Rather prend l'infinitif nu, prefer prend to — c'est la seule chose à retenir."
+      },
+      "trap": {
+        "wrong": "I would rather to stay in tonight.",
+        "right": "I'd rather stay in tonight.",
+        "why": "Le to vient tout seul parce qu'il vient partout ailleurs. Rather se comporte comme un modal : le verbe qui le suit reste nu, comme après can ou must."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "I'd rather queue in the rain than pay a tenner for the door.",
+          "fr": "Je préfère faire la queue sous la pluie que payer dix livres à l'entrée."
+        },
+        {
+          "register": "work",
+          "en": "I'd rather you didn't merge that until the tests are back.",
+          "fr": "Je préférerais que tu ne merges pas ça avant le retour des tests."
+        }
+      ],
+      "seeAlso": ["u058", "u041", "u035"]
+    },
+
+    "u060": {
+      "image": "Après une préposition, un verbe anglais n'a qu'une forme possible. Une seule, toujours la même : -ing.",
+      "rule": "in, for, about, of, without, after, before, by, instead of + -ing. Toute préposition impose le -ing, sans exception.",
+      "contrast": {
+        "left": "Before leaving, check the gas.",
+        "right": "Before you leave, check the gas.",
+        "note": "Avec la préposition, c'est -ing ; avec une proposition complète, c'est un sujet et un verbe conjugué. Les deux se disent."
+      },
+      "trap": {
+        "wrong": "He left without to say goodbye.",
+        "right": "He left without saying goodbye.",
+        "why": "Le français met un infinitif après ses prépositions — « sans dire », « avant de partir », « au lieu d'attendre ». L'anglais ne l'autorise jamais après une préposition."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "You can get most of the way there by following the towpath.",
+          "fr": "On peut faire presque tout le trajet en suivant le chemin de halage."
+        },
+        {
+          "register": "work",
+          "en": "Instead of rewriting it, we wrapped the old service in an adapter.",
+          "fr": "Au lieu de le réécrire, on a enveloppé l'ancien service dans un adaptateur."
+        }
+      ],
+      "seeAlso": ["u062", "u061", "u063"]
+    },
+
+    "u061": {
+      "image": "Deux expressions qui se ressemblent trait pour trait et n'ont rien à voir : used to do, c'était avant ; be used to doing, c'est maintenant.",
+      "rule": "be used to ou get used to + -ing = être ou devenir habitué. Ce to-là est une préposition, d'où le -ing derrière.",
+      "contrast": {
+        "left": "I used to cycle to work.",
+        "right": "I'm used to cycling to work.",
+        "note": "Je le faisais avant et j'ai arrêté — ou je le fais toujours et ça ne me pèse plus. Les deux phrases sont presque identiques et disent l'inverse."
+      },
+      "trap": {
+        "wrong": "I'm used to cycle in the rain now.",
+        "right": "I'm used to cycling in the rain now.",
+        "why": "Le to appelle un infinitif par réflexe. Ici il ne fait pas partie du verbe : il appartient à l'expression be used to, comme le in de interested in — donc -ing."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "You get used to the hills after a couple of months.",
+          "fr": "On s'habitue aux côtes au bout de deux ou trois mois."
+        },
+        {
+          "register": "work",
+          "en": "I'm still not used to being on call every third week.",
+          "fr": "Je ne suis toujours pas habitué à être d'astreinte une semaine sur trois."
+        }
+      ],
+      "seeAlso": ["u018", "u060", "u062"]
+    },
+
+    "u062": {
+      "image": "Certains verbes traînent leur préposition derrière eux comme une remorque — et la remorque impose le -ing.",
+      "rule": "succeed in, insist on, think of, dream of, approve of, apologise for, look forward to + -ing.",
+      "contrast": {
+        "left": "I'm thinking of moving.",
+        "right": "I've decided to move.",
+        "note": "Le premier traîne une préposition, donc -ing ; le second n'en a pas, donc to. C'est le verbe qui décide, pas le sens."
+      },
+      "trap": {
+        "wrong": "I look forward to meet you next week.",
+        "right": "I look forward to meeting you next week.",
+        "why": "Ce to n'est pas un infinitif, c'est la préposition de l'expression look forward to — d'où le -ing. C'est la faute la plus fréquente en fin de courriel professionnel, à tous les niveaux."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "They insisted on paying for the whole table, which took some arguing.",
+          "fr": "Ils ont insisté pour payer toute la table, ce qui a demandé de la négociation."
+        },
+        {
+          "register": "work",
+          "en": "We finally succeeded in getting the build under five minutes.",
+          "fr": "On a fini par réussir à passer le build sous les cinq minutes."
+        }
+      ],
+      "seeAlso": ["u060", "u061", "u063"]
+    },
+
+    "u063": {
+      "image": "Une poignée d'expressions toutes faites, et toutes suivies de -ing. Elles se retiennent en bloc, comme des mots.",
+      "rule": "There's no point in -ing, it's worth -ing, it's no use -ing, have difficulty -ing, spend time -ing.",
+      "contrast": {
+        "left": "It's worth checking.",
+        "right": "It's worth a look.",
+        "note": "Un verbe derrière worth prend -ing ; un nom se pose tel quel. La même expression accepte les deux."
+      },
+      "trap": {
+        "wrong": "It's worth to visit the museum.",
+        "right": "It's worth visiting the museum.",
+        "why": "Le français dit « ça vaut la peine de visiter », avec une préposition et un infinitif. Le calque produit un to que ces expressions n'acceptent jamais."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "There's no point in driving into town on a Saturday.",
+          "fr": "Ça ne sert à rien d'aller en voiture en centre-ville un samedi."
+        },
+        {
+          "register": "work",
+          "en": "We spent three days chasing a bug that was a missing environment variable.",
+          "fr": "On a passé trois jours à chasser un bug qui était une variable d'environnement manquante."
+        }
+      ],
+      "seeAlso": ["u060", "u062", "u064"]
+    },
+
+    "u064": {
+      "image": "Trois façons de dire le but, et une seule faute possible : mettre for devant un verbe.",
+      "rule": "to + infinitif pour le but. for + nom. so that + sujet + verbe, quand le but concerne quelqu'un d'autre que le sujet.",
+      "contrast": {
+        "left": "I came to see you.",
+        "right": "I came for the exhibition.",
+        "note": "To devant un verbe, for devant un nom. La frontière est là, et nulle part ailleurs."
+      },
+      "trap": {
+        "wrong": "I came for see you.",
+        "right": "I came to see you.",
+        "why": "« Pour » se traduit par for, et le réflexe le place devant tout, y compris un verbe. Or devant un verbe, le but s'exprime par to seul — for y est impossible."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "We set off early so that we could park anywhere near the Downs.",
+          "fr": "On est partis tôt pour pouvoir se garer quelque part près des Downs."
+        },
+        {
+          "register": "work",
+          "en": "I've added a flag so that support can turn it off without a deploy.",
+          "fr": "J'ai ajouté un drapeau pour que le support puisse le couper sans déploiement."
+        }
+      ],
+      "seeAlso": ["u060", "u065", "u063"]
+    },
+
+    "u065": {
+      "image": "Après un adjectif, le verbe qui suit prend to. Content de te voir, prêt à partir, difficile à dire.",
+      "rule": "It's easy to ..., I'm glad to ..., nice to meet you. Et pour désigner celui que ça concerne : It's difficult for me to ...",
+      "contrast": {
+        "left": "It's hard to explain.",
+        "right": "It's hard for me to explain.",
+        "note": "Vrai pour tout le monde — ou vrai pour moi en particulier. La personne s'introduit par for, entre l'adjectif et le to."
+      },
+      "trap": {
+        "wrong": "I'm happy of seeing you again.",
+        "right": "I'm happy to see you again.",
+        "why": "Le français relie l'adjectif au verbe par une préposition — « content de te voir », « prêt à partir », « facile à faire ». En anglais, c'est to après presque tous les adjectifs, quelle que soit la préposition française."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "It's easy to miss the turning if you're watching the water.",
+          "fr": "C'est facile de rater l'embranchement si on regarde l'eau."
+        },
+        {
+          "register": "work",
+          "en": "I'm glad to say the numbers held up over the weekend.",
+          "fr": "Je suis content de dire que les chiffres ont tenu pendant le week-end."
+        }
+      ],
+      "seeAlso": ["u066", "u064", "u060"]
+    },
+
+    "u066": {
+      "image": "Afraid to, c'est ne pas oser. Afraid of, c'est redouter que ça arrive tout seul.",
+      "rule": "adjectif + to do = on hésite à le faire, c'est un choix. adjectif + préposition + -ing = on redoute la chose, souvent sans la contrôler.",
+      "contrast": {
+        "left": "I was afraid to look.",
+        "right": "I was afraid of falling.",
+        "note": "Je n'ai pas osé regarder — ou j'avais peur de tomber, ce qui ne dépendait pas de moi."
+      },
+      "trap": {
+        "wrong": "I'm interested to learn Welsh.",
+        "right": "I'm interested in learning Welsh.",
+        "why": "Interested traîne toujours in, et in impose le -ing. Le français « intéressé à apprendre » ne signale aucune préposition à conserver, et le to s'installe à sa place."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "She's not interested in going out, she's happy with a quiet pint.",
+          "fr": "Elle n'a pas envie de sortir, une pinte tranquille lui va très bien."
+        },
+        {
+          "register": "work",
+          "en": "Don't be afraid to say you don't know in a review.",
+          "fr": "N'aie pas peur de dire que tu ne sais pas pendant une relecture."
+        }
+      ],
+      "seeAlso": ["u065", "u062", "u060"]
+    },
+
+    "u067": {
+      "image": "Tu as vu toute la scène du début à la fin, ou seulement un morceau au milieu, en passant.",
+      "rule": "see somebody do = l'action entière, achevée. see somebody doing = un instant pris en cours. Après see, hear, watch, feel, l'infinitif est nu.",
+      "contrast": {
+        "left": "I saw her leave.",
+        "right": "I saw her leaving.",
+        "note": "Je l'ai vue partir, portes comprises — ou je l'ai aperçue en train de partir, sans attendre la fin."
+      },
+      "trap": {
+        "wrong": "I saw him to leave the building.",
+        "right": "I saw him leave the building.",
+        "why": "Le to revient parce qu'il vient après tant d'autres verbes. Après les verbes de perception, l'infinitif reste nu — comme après un modal, et comme en français d'ailleurs : « je l'ai vu partir »."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "We watched the tide come right up over the towpath.",
+          "fr": "On a regardé la marée monter jusque sur le chemin de halage."
+        },
+        {
+          "register": "work",
+          "en": "I heard the fans spinning up every time the batch job ran.",
+          "fr": "J'entendais les ventilateurs s'emballer à chaque passage du batch."
+        }
+      ],
+      "seeAlso": ["u055", "u068", "u046"]
+    },
+
+    "u068": {
+      "image": "Deux actions collées sans mot de liaison : la seconde dit quand, ou pourquoi, et la phrase reste courte.",
+      "rule": "Une proposition en -ing remplace « pendant que » ou « parce que ». Son sujet doit être celui de la principale.",
+      "contrast": {
+        "left": "He hurt his knee playing football.",
+        "right": "Not knowing the way, we asked.",
+        "note": "Le -ing dit le pendant que dans le premier cas, le parce que dans le second. Le contexte tranche seul."
+      },
+      "trap": {
+        "wrong": "Walking along the harbour, the rain started.",
+        "right": "As I was walking along the harbour, the rain started.",
+        "why": "Le sujet du -ing doit être celui de la principale : ici, c'est la pluie qui se promènerait. L'anglais est nettement plus strict que le français là-dessus, et la phrase devient drôle sans le vouloir."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "Feeling brave, we took the ferry back in the dark.",
+          "fr": "En nous sentant courageux, on a repris le ferry dans le noir."
+        },
+        {
+          "register": "work",
+          "en": "Having read the logs twice, I still had no idea what had happened.",
+          "fr": "Après avoir lu les logs deux fois, je ne savais toujours pas ce qui s'était passé."
+        }
+      ],
+      "seeAlso": ["u067", "u097", "u116"]
+    }
+  }
+}

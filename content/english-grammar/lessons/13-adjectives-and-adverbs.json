@@ -1,0 +1,434 @@
+{
+  "group": "Adjectives and adverbs",
+  "lessons": {
+    "u098": {
+      "image": "Ce qui ennuie est boring. Celui qui s'ennuie est bored. La cause prend -ing, l'effet prend -ed.",
+      "rule": "-ing décrit ce qui provoque l'effet ; -ed décrit celui qui le ressent. Les gens sont presque toujours en -ed.",
+      "contrast": {
+        "left": "The meeting was boring.",
+        "right": "I was bored.",
+        "note": "La réunion produit l'ennui, moi je le subis. Inverser les deux revient à se déclarer soi-même sans intérêt."
+      },
+      "trap": {
+        "wrong": "I'm very boring in this meeting.",
+        "right": "I'm very bored in this meeting.",
+        "why": "Le français a « ennuyeux » et « ennuyé », mais les confond à l'usage — « je suis ennuyé » veut dire embêté. En anglais, I'm boring annonce à la table que tu n'as aucun intérêt."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "The walk up Park Street is exhausting, and I was exhausted at the top.",
+          "fr": "La montée de Park Street est épuisante, et j'étais épuisé en haut."
+        },
+        {
+          "register": "work",
+          "en": "The results were surprising, and everyone in the room looked surprised.",
+          "fr": "Les résultats étaient surprenants, et tout le monde dans la salle avait l'air surpris."
+        }
+      ],
+      "seeAlso": ["u099", "u097", "u100"]
+    },
+
+    "u099": {
+      "image": "L'adjectif anglais passe devant le nom. Toujours. Et quand ils sont plusieurs, leur ordre est fixé d'avance.",
+      "rule": "Adjectif avant le nom : a nice new house. Après look, feel, sound, seem, taste, smell, l'adjectif décrit le sujet.",
+      "contrast": {
+        "left": "You look tired.",
+        "right": "You look at me tiredly.",
+        "note": "Après look verbe d'état, un adjectif ; après look verbe d'action, un adverbe. Le même mot bascule selon ce qu'il fait."
+      },
+      "trap": {
+        "wrong": "We rented a car red.",
+        "right": "We rented a red car.",
+        "why": "Le français place la plupart de ses adjectifs après le nom — « une voiture rouge », « un pull noir ». L'anglais les met tous devant, sans exception, et l'ordre inverse rend la phrase incompréhensible."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "They've got a lovely old terraced house up behind the church.",
+          "fr": "Ils ont une belle vieille maison mitoyenne derrière l'église."
+        },
+        {
+          "register": "work",
+          "en": "That estimate sounds optimistic to me.",
+          "fr": "Cette estimation me semble optimiste."
+        }
+      ],
+      "seeAlso": ["u100", "u098", "u109"]
+    },
+
+    "u100": {
+      "image": "L'adjectif décrit une chose. L'adverbe décrit la façon dont l'action se fait.",
+      "rule": "-ly pour dire comment : quickly, carefully, quietly. Sans -ly, on qualifie un nom.",
+      "contrast": {
+        "left": "a quick reply",
+        "right": "reply quickly",
+        "note": "Le premier qualifie la réponse, le second la façon de répondre. Un nom appelle l'adjectif, un verbe appelle l'adverbe."
+      },
+      "trap": {
+        "wrong": "He speaks very quick.",
+        "right": "He speaks very quickly.",
+        "why": "Le français utilise souvent l'adjectif comme adverbe — « parler fort », « aller vite ». L'anglais l'accepte pour quelques mots seulement, et quick n'en fait pas partie."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "Cross carefully, the cycle lane comes from the other direction here.",
+          "fr": "Traverse prudemment, la piste cyclable arrive dans l'autre sens ici."
+        },
+        {
+          "register": "work",
+          "en": "The job finished surprisingly quickly once we dropped the index.",
+          "fr": "Le job s'est terminé étonnamment vite une fois l'index supprimé."
+        }
+      ],
+      "seeAlso": ["u101", "u099", "u110"]
+    },
+
+    "u101": {
+      "image": "Quelques adverbes se passent de -ly. Et hardly ne veut pas dire durement : il veut dire presque pas.",
+      "rule": "fast, late, hard sont adjectifs et adverbes sans changer. well est l'adverbe de good. hardly = à peine, hardly ever = presque jamais.",
+      "contrast": {
+        "left": "I work hard.",
+        "right": "I hardly work.",
+        "note": "Je travaille beaucoup — ou je ne travaille presque pas. Deux lettres séparent la vantardise de l'aveu."
+      },
+      "trap": {
+        "wrong": "I work hardly at the moment.",
+        "right": "I work hard at the moment.",
+        "why": "Le -ly vient par réflexe puisqu'il fabrique les adverbes. Mais hardly est un mot à part, qui signifie « à peine » : la phrase dit exactement l'inverse de l'intention."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "The last bus goes early on a Sunday and we hardly ever catch it.",
+          "fr": "Le dernier bus part tôt le dimanche et on le rate presque toujours."
+        },
+        {
+          "register": "work",
+          "en": "The new build runs fast, but the tests hardly cover anything.",
+          "fr": "Le nouveau build tourne vite, mais les tests ne couvrent presque rien."
+        }
+      ],
+      "seeAlso": ["u100", "u110", "u111"]
+    },
+
+    "u102": {
+      "image": "So s'accroche à un adjectif seul. Such réclame un nom derrière lui.",
+      "rule": "so + adjectif ou adverbe. such + (a/an) + nom, avec ou sans adjectif.",
+      "contrast": {
+        "left": "It was so good.",
+        "right": "It was such a good night.",
+        "note": "Un adjectif tout seul appelle so ; dès qu'un nom apparaît, c'est such — et l'article se glisse après."
+      },
+      "trap": {
+        "wrong": "It was so a good night.",
+        "right": "It was such a good night.",
+        "why": "Le français dit « si » et « tellement » indifféremment devant un adjectif comme devant un nom. L'anglais change de mot selon ce qui suit, et l'article trahit immédiatement l'erreur."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "There was such a queue outside that we gave up and went to the chippy.",
+          "fr": "Il y avait une telle queue dehors qu'on a abandonné pour aller à la friterie."
+        },
+        {
+          "register": "work",
+          "en": "The rollback was so quick that most users never noticed.",
+          "fr": "Le retour arrière a été si rapide que la plupart des utilisateurs n'ont rien vu."
+        }
+      ],
+      "seeAlso": ["u103", "u104", "u099"]
+    },
+
+    "u103": {
+      "image": "Enough est le seul mot anglais à changer de côté : après l'adjectif, mais devant le nom.",
+      "rule": "adjectif + enough : big enough. enough + nom : enough room. too + adjectif : too small.",
+      "contrast": {
+        "left": "It's big enough.",
+        "right": "There's enough room.",
+        "note": "Derrière l'adjectif, devant le nom. C'est la seule chose à retenir, et c'est contre-intuitif dans les deux sens."
+      },
+      "trap": {
+        "wrong": "The flat isn't enough big for three.",
+        "right": "The flat isn't big enough for three.",
+        "why": "Le français dit « assez grand », adverbe devant l'adjectif, comme pour « très » et « trop ». Enough est le seul à passer derrière, et rien dans la phrase française ne l'annonce."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "The room's too small for a party but big enough for a film night.",
+          "fr": "La pièce est trop petite pour une fête mais assez grande pour une soirée film."
+        },
+        {
+          "register": "work",
+          "en": "We didn't leave enough time to test the rollback path.",
+          "fr": "On n'a pas laissé assez de temps pour tester le chemin de retour arrière."
+        }
+      ],
+      "seeAlso": ["u102", "u104", "u106"]
+    },
+
+    "u104": {
+      "image": "Quatre degrés d'« assez ». Fairly tiède, quite honnête, rather avec une réserve, pretty à l'oral.",
+      "rule": "fairly < quite < rather. Pretty vaut quite mais reste parlé. Devant un comparatif, rather passe, quite non.",
+      "contrast": {
+        "left": "quite good",
+        "right": "rather good",
+        "note": "Le premier est un compliment mesuré ; le second sous-entend souvent une surprise, voire une réserve."
+      },
+      "trap": {
+        "wrong": "The gig was rather good, I loved every minute.",
+        "right": "The gig was really good, I loved every minute.",
+        "why": "En français, « plutôt bon » peut être franchement positif. En anglais britannique, rather refroidit ce qu'il qualifie : associé à un enthousiasme, il sonne contradictoire."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "It's quite a walk from here, mind — half an hour at least.",
+          "fr": "C'est une bonne trotte d'ici, remarque — une demi-heure au moins."
+        },
+        {
+          "register": "work",
+          "en": "The demo went fairly well, considering nothing worked an hour before.",
+          "fr": "La démo s'est plutôt bien passée, vu que rien ne marchait une heure avant."
+        }
+      ],
+      "seeAlso": ["u102", "u105", "u106"]
+    },
+
+    "u105": {
+      "image": "Adjectif court, on ajoute -er. Adjectif long, on met more devant. Et on ne marque jamais deux fois.",
+      "rule": "-er pour une syllabe et pour les mots en -y ; more pour trois syllabes et plus. À deux syllabes, les deux se rencontrent.",
+      "contrast": {
+        "left": "cheaper",
+        "right": "more expensive",
+        "note": "Même comparaison, deux mécaniques, décidées par la longueur du mot et non par le sens."
+      },
+      "trap": {
+        "wrong": "This one is more better.",
+        "right": "This one is better.",
+        "why": "Le comparatif ne se marque qu'une seule fois. Le français n'a que « plus », donc doubler ne heurte aucune habitude — et better contient déjà le « plus »."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "The bus is cheaper than the train but twice as slow.",
+          "fr": "Le bus est moins cher que le train mais deux fois plus lent."
+        },
+        {
+          "register": "work",
+          "en": "The new pipeline is more reliable and considerably easier to debug.",
+          "fr": "Le nouveau pipeline est plus fiable et nettement plus facile à déboguer."
+        }
+      ],
+      "seeAlso": ["u106", "u107", "u108"]
+    },
+
+    "u106": {
+      "image": "Un comparatif se renforce avec much ou far, jamais avec very. Very ne sait pas grimper.",
+      "rule": "much, far, a lot, a bit, slightly + comparatif. Aux questions et négations : any better, no better.",
+      "contrast": {
+        "left": "much better",
+        "right": "very good",
+        "note": "Very travaille sur l'adjectif simple, much sur le comparatif. Ils ne se croisent jamais."
+      },
+      "trap": {
+        "wrong": "The second version is very better.",
+        "right": "The second version is much better.",
+        "why": "Le français dit « bien meilleur » et parfois « très mieux » à l'oral, ce qui brouille la frontière. En anglais, very devant un comparatif est simplement impossible."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "The harbour route is a bit longer but far nicer on a clear day.",
+          "fr": "Le trajet par le port est un peu plus long mais bien plus agréable par temps clair."
+        },
+        {
+          "register": "work",
+          "en": "Is the search any faster since the reindex?",
+          "fr": "La recherche est-elle plus rapide depuis la réindexation ?"
+        }
+      ],
+      "seeAlso": ["u105", "u107", "u103"]
+    },
+
+    "u107": {
+      "image": "As ... as mesure une égalité. Than marque une différence. Et ce n'est jamais that.",
+      "rule": "as + adjectif + as pour dire autant. than après tout comparatif. not as ... as pour dire moins.",
+      "contrast": {
+        "left": "as cheap as the bus",
+        "right": "cheaper than the bus",
+        "note": "Le même prix, ou moins cher. As encadre l'adjectif, than le suit."
+      },
+      "trap": {
+        "wrong": "She's older that me.",
+        "right": "She's older than me.",
+        "why": "Than et that se prononcent presque pareil et le français emploie « que » pour les deux — « plus âgée que » et « je pense que ». Rien ne pousse à les distinguer."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "Renting here is nearly as bad as London now.",
+          "fr": "Se loger ici est presque aussi terrible qu'à Londres maintenant."
+        },
+        {
+          "register": "work",
+          "en": "The rewrite took twice as long as we estimated.",
+          "fr": "La réécriture a pris deux fois plus de temps que prévu."
+        }
+      ],
+      "seeAlso": ["u105", "u106", "u108"]
+    },
+
+    "u108": {
+      "image": "Le superlatif prend the, et il situe à l'intérieur d'un groupe : le meilleur DANS la ville, pas DE la ville.",
+      "rule": "the + -est ou the most. Le groupe s'introduit par in pour un lieu ou une collectivité, of pour un ensemble compté.",
+      "contrast": {
+        "left": "the best in town",
+        "right": "the best of the three",
+        "note": "In pour un lieu ou un groupe humain, of quand on a compté les candidats. C'est la seule frontière."
+      },
+      "trap": {
+        "wrong": "It's the best coffee of the city.",
+        "right": "It's the best coffee in the city.",
+        "why": "Le français dit « le meilleur de la ville », et « de » appelle of. L'anglais réserve of aux ensembles dénombrés et utilise in pour les lieux — l'erreur s'entend immédiatement."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "That's the steepest street in the whole city, and people cycle up it.",
+          "fr": "C'est la rue la plus raide de toute la ville, et des gens la montent à vélo."
+        },
+        {
+          "register": "work",
+          "en": "The simplest of the three designs is the one nobody voted for.",
+          "fr": "Le plus simple des trois designs est celui pour lequel personne n'a voté."
+        }
+      ],
+      "seeAlso": ["u105", "u107", "u073"]
+    },
+
+    "u109": {
+      "image": "Le verbe et son complément ne se séparent jamais. Rien ne se glisse entre les deux, surtout pas un adverbe.",
+      "rule": "verbe + objet, collés. Ensuite le lieu, puis le temps : I read the report at home last night.",
+      "contrast": {
+        "left": "I like this pub very much.",
+        "right": "I very much like this pub.",
+        "note": "Les deux se disent, l'adverbe devant ou après le groupe entier. Ce qui est interdit, c'est de le poser entre le verbe et son objet."
+      },
+      "trap": {
+        "wrong": "I like very much this pub.",
+        "right": "I like this pub very much.",
+        "why": "Le français glisse volontiers l'adverbe juste après le verbe — « j'aime beaucoup ce pub ». En anglais, cette place est occupée par le complément, et l'adverbe doit attendre son tour."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "We watched the balloons from the bridge early on Saturday morning.",
+          "fr": "On a regardé les ballons depuis le pont tôt samedi matin."
+        },
+        {
+          "register": "work",
+          "en": "I reviewed the whole migration on the train yesterday.",
+          "fr": "J'ai relu toute la migration dans le train hier."
+        }
+      ],
+      "seeAlso": ["u110", "u099", "u100"]
+    },
+
+    "u110": {
+      "image": "Les adverbes de fréquence se glissent avant le verbe — sauf devant be, où ils passent derrière.",
+      "rule": "always, never, often, usually, already : avant le verbe ordinaire, après be, et entre l'auxiliaire et le verbe.",
+      "contrast": {
+        "left": "She always arrives late.",
+        "right": "She is always late.",
+        "note": "Devant un verbe ordinaire, derrière be. C'est la seule exception, et elle revient tout le temps."
+      },
+      "trap": {
+        "wrong": "I go always to work by bike.",
+        "right": "I always go to work by bike.",
+        "why": "Le français place l'adverbe après le verbe — « je vais toujours ». En anglais, cette position appartient au complément, et l'adverbe de fréquence remonte devant le verbe."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "It never rains as much as people from London expect.",
+          "fr": "Il ne pleut jamais autant que les gens de Londres s'y attendent."
+        },
+        {
+          "register": "work",
+          "en": "We've already agreed the scope twice this month.",
+          "fr": "On s'est déjà mis d'accord sur le périmètre deux fois ce mois-ci."
+        }
+      ],
+      "seeAlso": ["u109", "u111", "u101"]
+    },
+
+    "u111": {
+      "image": "Still, ça continue. Not any more, ça s'est arrêté. Yet, ça n'est pas encore venu. Already, c'est arrivé plus tôt que prévu.",
+      "rule": "still avant le verbe. not ... any more en fin de phrase. yet en fin de phrase, aux négations et aux questions. already pour la surprise.",
+      "figure": {
+        "now": "maintenant",
+        "spans": [
+          { "from": 16, "to": 62, "label": "still : ça dure encore", "open": "left" }
+        ],
+        "marks": [
+          { "at": 30, "label": "already : c'est déjà fait" },
+          { "at": 80, "label": "yet : toujours pas" }
+        ]
+      },
+      "contrast": {
+        "left": "He still works there.",
+        "right": "He doesn't work there any more.",
+        "note": "La continuation, ou l'arrêt. Still se place avant le verbe, any more se rejette en fin de phrase."
+      },
+      "trap": {
+        "wrong": "I haven't finished already.",
+        "right": "I haven't finished yet.",
+        "why": "« Déjà » traduit already et sert aussi dans les négations et les questions françaises — « tu n'as pas déjà fini ? ». En anglais, dès qu'on nie ou qu'on interroge, c'est yet."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "That record shop is still going, somehow.",
+          "fr": "Ce magasin de disques tient toujours, on ne sait pas comment."
+        },
+        {
+          "register": "work",
+          "en": "Has the vendor replied yet? They've already missed two deadlines.",
+          "fr": "Le prestataire a-t-il déjà répondu ? Ils ont déjà raté deux échéances."
+        }
+      ],
+      "seeAlso": ["u110", "u112", "u101"]
+    },
+
+    "u112": {
+      "image": "Even ajoute la surprise : celui-là aussi, alors qu'on ne s'y attendait pas du tout.",
+      "rule": "even se place juste devant ce qu'il souligne. even if pose une hypothèse, even though constate un fait.",
+      "contrast": {
+        "left": "Even if it rains, we'll go.",
+        "right": "Even though it rained, we went.",
+        "note": "Une hypothèse qui n'est peut-être pas vraie — ou un fait avéré. Le français dit « même si » dans les deux cas."
+      },
+      "trap": {
+        "wrong": "Even if it was raining, we still went.",
+        "right": "Even though it was raining, we still went.",
+        "why": "Il pleuvait vraiment : c'est un fait, donc even though. Even if annoncerait qu'on ignore s'il pleuvait, ce qui contredit le reste de la phrase."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "Even the corner shop does oat milk now.",
+          "fr": "Même l'épicerie du coin fait du lait d'avoine maintenant."
+        },
+        {
+          "register": "work",
+          "en": "Even the on-call engineer didn't get paged.",
+          "fr": "Même l'ingénieur d'astreinte n'a pas été alerté."
+        }
+      ],
+      "seeAlso": ["u113", "u111", "u110"]
+    }
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "group": "Passive",
+  "lessons": {
+    "u042": {
+      "image": "On fait passer devant ce qui subit, et l'auteur recule — ou disparaît complètement, parce qu'il n'intéresse personne.",
+      "rule": "be + participe passé. Le sujet subit au lieu d'agir ; by + l'auteur ne s'ajoute que s'il compte vraiment.",
+      "contrast": {
+        "left": "They cancelled the gig.",
+        "right": "The gig was cancelled.",
+        "note": "Qui a annulé, on s'en moque — et c'est exactement la raison d'être du passif : garder au centre ce dont on parle."
+      },
+      "trap": {
+        "wrong": "On told me the office was shut.",
+        "right": "I was told the office was shut.",
+        "why": "Le français a « on », qui évite le passif dans presque tous les cas. L'anglais n'a pas d'équivalent courant : la phrase bascule au passif, et c'est celui qui reçoit l'action qui devient sujet."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "The old crane was restored by volunteers over three winters.",
+          "fr": "La vieille grue a été restaurée par des bénévoles en trois hivers."
+        },
+        {
+          "register": "work",
+          "en": "The staging database is wiped every Sunday night.",
+          "fr": "La base de staging est effacée tous les dimanches soir."
+        }
+      ],
+      "seeAlso": ["u043", "u044", "u046"]
+    },
+
+    "u043": {
+      "image": "Le passif se glisse partout où un verbe peut aller : après un modal, après have, ou en pleine action.",
+      "rule": "Après un modal → be done. Après have → been done. Action en cours → being done.",
+      "contrast": {
+        "left": "The lock has been changed.",
+        "right": "The lock is being changed.",
+        "note": "C'est fait, le résultat tient — ou le serrurier est encore là, les outils par terre."
+      },
+      "trap": {
+        "wrong": "The room is cleaning every morning.",
+        "right": "The room is cleaned every morning.",
+        "why": "Le français dit « la chambre se nettoie » ou « on nettoie la chambre ». Le calque produit un actif en -ing, qui annonce que la chambre nettoie quelque chose — et personne ne comprend."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "The mural is being painted over again, which is half the point of it.",
+          "fr": "La fresque est en train d'être recouverte, ce qui fait à moitié partie du jeu."
+        },
+        {
+          "register": "work",
+          "en": "Every request must be signed before it reaches the gateway.",
+          "fr": "Chaque requête doit être signée avant d'atteindre la passerelle."
+        }
+      ],
+      "seeAlso": ["u042", "u044", "u045"]
+    },
+
+    "u044": {
+      "image": "Quand le verbe a deux compléments, c'est la personne qui passe devant. On met en avant qui reçoit, pas ce qui est reçu.",
+      "rule": "give, offer, send, tell, pay, ask : le passif part de la personne — I was given, she was offered. Et naître se dit au passif : I was born.",
+      "contrast": {
+        "left": "I was given a refund.",
+        "right": "A refund was given to me.",
+        "note": "Les deux sont corrects, mais le premier est celui qu'on entend. L'anglais préfère commencer par l'humain."
+      },
+      "trap": {
+        "wrong": "I am born in Lyon.",
+        "right": "I was born in Lyon.",
+        "why": "« Je suis né » a la forme d'un présent en français, et le calque donne un présent anglais. Or naître est un événement passé : c'est was born, toujours, même pour parler de soi aujourd'hui."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "She was offered a room in a house share off Gloucester Road.",
+          "fr": "On lui a proposé une chambre en colocation près de Gloucester Road."
+        },
+        {
+          "register": "work",
+          "en": "We were told the budget was frozen, then we were asked to hire.",
+          "fr": "On nous a dit que le budget était gelé, puis on nous a demandé de recruter."
+        }
+      ],
+      "seeAlso": ["u042", "u045", "u047"]
+    },
+
+    "u045": {
+      "image": "La rumeur mise à distance : personne ne signe, mais tout le monde le répète — et la phrase le dit sans accuser qui que ce soit.",
+      "rule": "It is said that he ... ou He is said to ... = on dit que. Be supposed to = c'est censé, sans garantie que ce soit vrai.",
+      "contrast": {
+        "left": "He is said to be brilliant.",
+        "right": "He is supposed to be here by now.",
+        "note": "Ce que les gens racontent — ou ce qui était prévu et qui n'a pas l'air de se produire. Supposed to porte souvent un doute."
+      },
+      "trap": {
+        "wrong": "We say that this pub is the oldest in town.",
+        "right": "This pub is said to be the oldest in town.",
+        "why": "Le « on dit que » français se traduit spontanément par we say, qui désigne un groupe identifiable dont tu ferais partie. L'anglais passe à la tournure impersonnelle, qui n'engage personne."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "The tunnel under the hill is said to run all the way to the river.",
+          "fr": "On raconte que le tunnel sous la colline va jusqu'à la rivière."
+        },
+        {
+          "register": "work",
+          "en": "The migration was supposed to take a fortnight.",
+          "fr": "La migration était censée prendre quinze jours."
+        }
+      ],
+      "seeAlso": ["u042", "u044", "u047"]
+    },
+
+    "u046": {
+      "image": "Tu ne le fais pas toi-même, tu le fais faire. Le résultat est à toi, le travail est à quelqu'un d'autre.",
+      "rule": "have + objet + participe passé = faire faire quelque chose. La même forme sert quand on subit : I had my bike stolen.",
+      "contrast": {
+        "left": "I cut my hair.",
+        "right": "I had my hair cut.",
+        "note": "Avec des ciseaux, dans ta salle de bain — ou chez le coiffeur. Sans have, tu annonces que tu l'as fait toi-même."
+      },
+      "trap": {
+        "wrong": "I repaired my laptop last week.",
+        "right": "I had my laptop repaired last week.",
+        "why": "Le français ne distingue pas : « j'ai fait réparer » et « j'ai réparé » se disent presque pareil et se confondent à l'oral. En anglais, l'absence de have te crédite du travail."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "We're having the back room rewired before winter.",
+          "fr": "On fait refaire l'électricité de la pièce du fond avant l'hiver."
+        },
+        {
+          "register": "work",
+          "en": "We had the whole codebase audited by an outside team.",
+          "fr": "On a fait auditer toute la base de code par une équipe extérieure."
+        }
+      ],
+      "seeAlso": ["u042", "u043", "u067"]
+    }
+  }
+}

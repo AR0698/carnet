@@ -1,0 +1,452 @@
+{
+  "group": "Prepositions",
+  "lessons": {
+    "u121": {
+      "image": "Trois échelles emboîtées : at pour l'heure, on pour le jour, in pour tout ce qui est plus large.",
+      "rule": "at + heure et moments précis (at six, at night). on + jour et date. in + mois, saison, année, et parties de journée.",
+      "contrast": {
+        "left": "at the weekend",
+        "right": "on Saturday",
+        "note": "L'anglais britannique dit at the weekend, l'américain on the weekend. Un jour nommé prend toujours on."
+      },
+      "trap": {
+        "wrong": "I'll see you in Monday morning.",
+        "right": "I'll see you on Monday morning.",
+        "why": "Le français ne met aucune préposition devant un jour — « je te vois lundi ». Comme il n'y a rien à traduire, la préposition anglaise se choisit au hasard, et in vient souvent en premier."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "The market's on in the morning and packs up at two.",
+          "fr": "Le marché est là le matin et remballe à quatorze heures."
+        },
+        {
+          "register": "work",
+          "en": "We freeze deploys in December and reopen on the fifth of January.",
+          "fr": "On gèle les déploiements en décembre et on rouvre le cinq janvier."
+        }
+      ],
+      "seeAlso": ["u122", "u119", "u120"]
+    },
+
+    "u122": {
+      "image": "On time, c'est à l'heure prévue. In time, c'est de justesse, avant qu'il ne soit trop tard.",
+      "rule": "on time = ponctuel. in time = assez tôt. at the end of = à la fin de. in the end = finalement.",
+      "contrast": {
+        "left": "The train was on time.",
+        "right": "We got there in time.",
+        "note": "Le train respecte son horaire ; nous, on est arrivés avant que ça commence. L'un mesure la ponctualité, l'autre la marge."
+      },
+      "trap": {
+        "wrong": "At the end, we decided to stay in.",
+        "right": "In the end, we decided to stay in.",
+        "why": "« À la fin » traduit les deux. At the end réclame un complément — at the end of the film — tandis que in the end signifie finalement, après avoir hésité."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "We just got to the harbour in time to see the boats come through.",
+          "fr": "On est arrivés au port juste à temps pour voir les bateaux passer."
+        },
+        {
+          "register": "work",
+          "en": "In the end we shipped without the new search.",
+          "fr": "Finalement, on a livré sans la nouvelle recherche."
+        }
+      ],
+      "seeAlso": ["u121", "u120", "u119"]
+    },
+
+    "u123": {
+      "image": "In, c'est dedans. On, c'est posé dessus. At, c'est un point sur la carte, sans épaisseur.",
+      "rule": "in = à l'intérieur d'un volume. on = sur une surface. at = un point, une adresse, un endroit précis.",
+      "contrast": {
+        "left": "in the kitchen",
+        "right": "at the door",
+        "note": "Un espace où l'on tient — ou un point où l'on se tient. At ne dit rien du volume."
+      },
+      "trap": {
+        "wrong": "I'm waiting in the bus stop.",
+        "right": "I'm waiting at the bus stop.",
+        "why": "Le français dit « à l'arrêt de bus » et « dans la rue » avec la même liberté. En anglais, un arrêt est un point, pas un contenant : personne ne se tient à l'intérieur d'un arrêt."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "She's at the top of Christmas Steps, by the church.",
+          "fr": "Elle est en haut de Christmas Steps, à côté de l'église."
+        },
+        {
+          "register": "work",
+          "en": "The config lives in the repo, not on the server.",
+          "fr": "La configuration vit dans le dépôt, pas sur le serveur."
+        }
+      ],
+      "seeAlso": ["u124", "u125", "u126"]
+    },
+
+    "u124": {
+      "image": "At pour l'événement et l'adresse. In pour le bâtiment quand on parle de son intérieur.",
+      "rule": "at the concert, at the station, at 25 Park Row — in the building, in the room, in the office.",
+      "contrast": {
+        "left": "at the theatre",
+        "right": "in the theatre",
+        "note": "Pour voir la pièce — ou physiquement à l'intérieur du bâtiment, peut-être pour réparer un fauteuil."
+      },
+      "trap": {
+        "wrong": "We met in a party last summer.",
+        "right": "We met at a party last summer.",
+        "why": "Le français « à une fête » ne distingue pas l'événement du lieu. En anglais, un événement prend toujours at : in a party parlerait de l'intérieur d'un objet appelé fête."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "I met her at a warehouse night out past Temple Way.",
+          "fr": "Je l'ai rencontrée à une soirée en entrepôt du côté de Temple Way."
+        },
+        {
+          "register": "work",
+          "en": "Half the team is in the office and half is at the conference.",
+          "fr": "La moitié de l'équipe est au bureau et l'autre à la conférence."
+        }
+      ],
+      "seeAlso": ["u123", "u125", "u127"]
+    },
+
+    "u125": {
+      "image": "On pour ce qu'on peut parcourir debout : bus, train, avion. In pour ce où l'on reste assis : voiture, taxi.",
+      "rule": "on a bus, on a train, on a plane, on a bike — in a car, in a taxi. on the left, in the corner d'une pièce, on the corner d'une rue.",
+      "contrast": {
+        "left": "in the corner",
+        "right": "on the corner",
+        "note": "Dans l'angle d'une pièce — ou au coin d'une rue. Le même mot bascule selon qu'on est dedans ou dehors."
+      },
+      "trap": {
+        "wrong": "I'm in the bus, I'll call you back.",
+        "right": "I'm on the bus, I'll call you back.",
+        "why": "Le français dit « dans le bus » comme « dans la voiture ». L'anglais réserve in aux véhicules où l'on ne peut pas se lever et circuler — d'où on pour le bus et le train."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "There's always someone on the number 8 with a whole roast dinner.",
+          "fr": "Il y a toujours quelqu'un dans le 8 avec un repas complet."
+        },
+        {
+          "register": "work",
+          "en": "I'll be on the train, so put anything urgent in writing.",
+          "fr": "Je serai dans le train, alors mets par écrit tout ce qui est urgent."
+        }
+      ],
+      "seeAlso": ["u123", "u124", "u126"]
+    },
+
+    "u126": {
+      "image": "To indique la direction, at la position, into l'entrée franchie.",
+      "rule": "go to = se diriger vers. be at ou be in = être quelque part. go into = entrer dedans. arrive in une ville, arrive at un lieu précis.",
+      "contrast": {
+        "left": "She went to the room.",
+        "right": "She went into the room.",
+        "note": "Elle s'y est rendue — ou elle en a franchi la porte. Into insiste sur le passage du dehors au dedans."
+      },
+      "trap": {
+        "wrong": "I arrived to Bristol on Sunday.",
+        "right": "I arrived in Bristol on Sunday.",
+        "why": "Le français dit « arriver à Bristol », et « à » appelle to. Mais arrive ne prend jamais to : c'est in pour une ville ou un pays, at pour un lieu précis comme une gare."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "We got into the gig just as the support act finished.",
+          "fr": "On est entrés au concert juste quand la première partie finissait."
+        },
+        {
+          "register": "work",
+          "en": "Everything we log goes straight into the same bucket.",
+          "fr": "Tout ce qu'on journalise part directement dans le même bucket."
+        }
+      ],
+      "seeAlso": ["u123", "u132", "u136"]
+    },
+
+    "u127": {
+      "image": "Une poignée d'usages figés qui n'ont plus rien à voir avec le lieu ni le temps. Ils se retiennent en bloc.",
+      "rule": "in a photo, in the rain, in English, in pen — on the phone, on TV, on holiday, on purpose — at the age of, at 50 miles an hour.",
+      "contrast": {
+        "left": "on the radio",
+        "right": "in the paper",
+        "note": "Ce qui est diffusé prend on ; ce qui est imprimé prend in. Il n'y a pas de logique à reconstruire, seulement l'usage."
+      },
+      "trap": {
+        "wrong": "I heard it in the radio this morning.",
+        "right": "I heard it on the radio this morning.",
+        "why": "Le français dit « à la radio », « à la télé ». Comme « à » ne correspond ni à in ni à on, le choix se fait au hasard — et les médias diffusés prennent tous on."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "We spent the whole afternoon in the rain and nobody minded.",
+          "fr": "On a passé tout l'après-midi sous la pluie et ça n'a gêné personne."
+        },
+        {
+          "register": "work",
+          "en": "She's on holiday until the ninth, so ask me instead.",
+          "fr": "Elle est en congé jusqu'au neuf, alors demande-moi à la place."
+        }
+      ],
+      "seeAlso": ["u128", "u124", "u121"]
+    },
+
+    "u128": {
+      "image": "By dit par qui, par quel moyen, et de combien. Trois emplois, un seul mot.",
+      "rule": "by + l'auteur au passif. by car, by email, by hand pour le moyen — sans article. by 10 % pour l'écart.",
+      "contrast": {
+        "left": "by car",
+        "right": "in my car",
+        "note": "Le moyen de transport en général, sans article — ou ce véhicule-là, précis, qui reprend son article."
+      },
+      "trap": {
+        "wrong": "I came with the train this morning.",
+        "right": "I came by train this morning.",
+        "why": "Le français dit « en train », « en voiture », avec une préposition qui ressemble à in. En anglais c'est by, et surtout sans article : by the train serait aussi faux que with."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "It's quicker by bike than by car almost anywhere in the centre.",
+          "fr": "C'est plus rapide à vélo qu'en voiture presque partout dans le centre."
+        },
+        {
+          "register": "work",
+          "en": "Errors dropped by half once we added the retry.",
+          "fr": "Les erreurs ont diminué de moitié une fois le réessai ajouté."
+        }
+      ],
+      "seeAlso": ["u127", "u042", "u120"]
+    },
+
+    "u129": {
+      "image": "Chaque nom traîne sa préposition attitrée, et ce n'est presque jamais celle du français.",
+      "rule": "a reason for, a cause of, an increase in, a demand for, an advantage of, a solution to, an attitude to.",
+      "contrast": {
+        "left": "the cause of the delay",
+        "right": "the reason for the delay",
+        "note": "Deux noms voisins, deux prépositions différentes. Il n'y a pas de règle : c'est le nom qui commande."
+      },
+      "trap": {
+        "wrong": "Nobody gave me a reason of the delay.",
+        "right": "Nobody gave me a reason for the delay.",
+        "why": "Le français dit « la raison du retard », avec un « de » qui appelle of. L'anglais choisit for pour reason, of pour cause — et il faut les apprendre séparément."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "There's been a big increase in the number of people cycling.",
+          "fr": "Il y a eu une forte augmentation du nombre de gens qui font du vélo."
+        },
+        {
+          "register": "work",
+          "en": "We still don't have a solution to the duplicate events.",
+          "fr": "On n'a toujours pas de solution aux événements dupliqués."
+        }
+      ],
+      "seeAlso": ["u130", "u131", "u081"]
+    },
+
+    "u130": {
+      "image": "Les adjectifs aussi ont leur préposition attitrée, et elle se colle à eux comme une ombre.",
+      "rule": "good at, bad at, interested in, afraid of, proud of, tired of, full of, fed up with, famous for.",
+      "contrast": {
+        "left": "good at maths",
+        "right": "good for you",
+        "note": "Compétent dans un domaine — ou bénéfique. La préposition change complètement le sens de l'adjectif."
+      },
+      "trap": {
+        "wrong": "She's very good in maths.",
+        "right": "She's very good at maths.",
+        "why": "Le français dit « bon en maths », et « en » ressemble à in. Good at désigne la compétence ; good in ne se dit que pour un lieu ou une situation."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "This place is famous for its cider and not much else.",
+          "fr": "Cet endroit est connu pour son cidre et pas pour grand-chose d'autre."
+        },
+        {
+          "register": "work",
+          "en": "I'm fed up with rewriting the same glue code every quarter.",
+          "fr": "J'en ai assez de réécrire le même code de liaison chaque trimestre."
+        }
+      ],
+      "seeAlso": ["u131", "u066", "u129"]
+    },
+
+    "u131": {
+      "image": "La suite de la liste — celle qui contient les pièges les plus coûteux en réunion.",
+      "rule": "responsible for, similar to, different from, married to, keen on, sorry about une chose, sorry for quelqu'un.",
+      "contrast": {
+        "left": "different from",
+        "right": "similar to",
+        "note": "L'un s'éloigne avec from, l'autre se rapproche avec to. Different than existe en anglais américain, pas ici."
+      },
+      "trap": {
+        "wrong": "She's married with a doctor.",
+        "right": "She's married to a doctor.",
+        "why": "Le français dit « mariée avec », et with suit tout seul. Mais married with veut dire « mariée et ayant » — married with two children — donc la phrase parle d'un médecin comme d'un enfant."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "He's keen on wild swimming, which explains the state of his car.",
+          "fr": "Il est passionné de nage en eau libre, ce qui explique l'état de sa voiture."
+        },
+        {
+          "register": "work",
+          "en": "Who's responsible for the on-call rota now?",
+          "fr": "Qui est responsable du planning d'astreinte maintenant ?"
+        }
+      ],
+      "seeAlso": ["u130", "u129", "u135"]
+    },
+
+    "u132": {
+      "image": "La préposition fait partie du verbe. Listen sans to n'est pas de l'anglais.",
+      "rule": "listen to, talk to, speak to, belong to, happen to — look at, shout at, laugh at, point at. Mais phone, call, ring et answer n'en prennent aucune.",
+      "contrast": {
+        "left": "look at the screen",
+        "right": "watch the screen",
+        "note": "Look réclame at, watch ne réclame rien. Deux verbes de vision, deux constructions opposées."
+      },
+      "trap": {
+        "wrong": "I phoned to my mum last night.",
+        "right": "I phoned my mum last night.",
+        "why": "Le français dit « téléphoner à », et le « à » réclame un to. Mais phone, call, ring et answer prennent leur complément directement — le to y est de trop."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "Everyone in that queue was listening to the same busker.",
+          "fr": "Tout le monde dans cette file écoutait le même musicien de rue."
+        },
+        {
+          "register": "work",
+          "en": "Nobody answered the ticket for three days.",
+          "fr": "Personne n'a répondu au ticket pendant trois jours."
+        }
+      ],
+      "seeAlso": ["u133", "u134", "u136"]
+    },
+
+    "u133": {
+      "image": "Ask for, c'est réclamer. Ask about, c'est se renseigner. Look after, c'est s'occuper de quelqu'un.",
+      "rule": "ask for, wait for, look for, pay for, apply for — care about, hear about — look after, take after.",
+      "contrast": {
+        "left": "look for the keys",
+        "right": "look after the keys",
+        "note": "Les chercher — ou en prendre soin. Une particule sépare la panique de la responsabilité."
+      },
+      "trap": {
+        "wrong": "I'm waiting my colleague downstairs.",
+        "right": "I'm waiting for my colleague downstairs.",
+        "why": "Le français « attendre quelqu'un » n'a pas de préposition, alors on n'en met pas. L'anglais exige for après wait, sans exception."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "We waited for the rain to stop and then it didn't.",
+          "fr": "On a attendu que la pluie s'arrête, et elle ne s'est pas arrêtée."
+        },
+        {
+          "register": "work",
+          "en": "I've applied for the platform role internally.",
+          "fr": "J'ai postulé au poste plateforme en interne."
+        }
+      ],
+      "seeAlso": ["u132", "u134", "u135"]
+    },
+
+    "u134": {
+      "image": "Think about, c'est réfléchir. Think of, c'est avoir quelque chose en tête, ou en imaginer un.",
+      "rule": "think about = réfléchir à. think of = avoir en tête, proposer. remind somebody of quelque chose, remind somebody to faire quelque chose.",
+      "contrast": {
+        "left": "What do you think of it?",
+        "right": "What do you think about it?",
+        "note": "Ton avis, tout de suite — ou ce que ça t'inspire après réflexion. Of demande un jugement, about ouvre une discussion."
+      },
+      "trap": {
+        "wrong": "It reminds me to my childhood.",
+        "right": "It reminds me of my childhood.",
+        "why": "Le français dit « ça me rappelle mon enfance », sans préposition, ou « ça me fait penser à ». Le « à » devient to, alors que remind exige of pour un souvenir."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "The smell of the harbour at low tide reminds me of Cornwall.",
+          "fr": "L'odeur du port à marée basse me rappelle les Cornouailles."
+        },
+        {
+          "register": "work",
+          "en": "Remind me to close that ticket before I log off.",
+          "fr": "Rappelle-moi de fermer ce ticket avant que je me déconnecte."
+        }
+      ],
+      "seeAlso": ["u133", "u135", "u132"]
+    },
+
+    "u135": {
+      "image": "Depend on, suffer from, apologise for. Aucune de ces prépositions ne se devine, et aucune ne suit le français.",
+      "rule": "depend on, rely on, live on, concentrate on — suffer from, protect from — apologise for, accuse of, approve of.",
+      "contrast": {
+        "left": "depend on",
+        "right": "suffer from",
+        "note": "Les deux se disent « de » en français. Rien dans le sens ne permet de choisir : il faut apprendre le verbe avec sa préposition."
+      },
+      "trap": {
+        "wrong": "It depends of the weather.",
+        "right": "It depends on the weather.",
+        "why": "Le français « dépendre de » appelle un of naturel et immédiat. C'est on en anglais, toujours, et l'erreur est probablement la plus fréquente de toute cette liste."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "Whether the ferry runs depends on the tide, not the timetable.",
+          "fr": "Que le ferry circule ou non dépend de la marée, pas de l'horaire."
+        },
+        {
+          "register": "work",
+          "en": "We can't rely on that vendor for anything time-critical.",
+          "fr": "On ne peut pas compter sur ce prestataire pour quoi que ce soit d'urgent."
+        }
+      ],
+      "seeAlso": ["u134", "u136", "u133"]
+    },
+
+    "u136": {
+      "image": "Believe in, crash into, provide with, happen to. La fin de la liste, et les dernières qui piègent.",
+      "rule": "believe in, succeed in, specialise in — divide into, crash into — provide with, collide with — happen to, belong to.",
+      "contrast": {
+        "left": "believe in something",
+        "right": "believe something",
+        "note": "Croire à son existence ou à sa valeur — ou croire ce qu'on te dit. La préposition change le type de croyance."
+      },
+      "trap": {
+        "wrong": "What happened with you yesterday?",
+        "right": "What happened to you yesterday?",
+        "why": "Le français dit « qu'est-ce qui t'est arrivé », sans préposition visible, et with vient combler le vide. Happen prend to, toujours."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "That van crashed into the bollard on the corner twice this year.",
+          "fr": "Cette camionnette est rentrée dans la borne du coin deux fois cette année."
+        },
+        {
+          "register": "work",
+          "en": "The vendor provides us with a sandbox that never matches production.",
+          "fr": "Le prestataire nous fournit un bac à sable qui ne correspond jamais à la production."
+        }
+      ],
+      "seeAlso": ["u135", "u132", "u126"]
+    }
+  }
+}

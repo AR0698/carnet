@@ -1,0 +1,123 @@
+{
+  "group": "If and wish",
+  "lessons": {
+    "u038": {
+      "image": "Deux hypothèses côte à côte : celle qui peut très bien arriver demain, et celle qu'on imagine sans y croire.",
+      "rule": "if + présent → will : c'est possible. if + prétérit → would : c'est imaginé. Le prétérit ne parle pas du passé, il marque l'irréel.",
+      "contrast": {
+        "left": "If I get the job, I'll move.",
+        "right": "If I got the job, I'd move.",
+        "note": "J'ai passé l'entretien et j'y crois — ou j'en parle comme d'un rêve, sans candidature déposée."
+      },
+      "trap": {
+        "wrong": "If I would have more time, I'd help.",
+        "right": "If I had more time, I'd help.",
+        "why": "Le conditionnel ne se met jamais après if. Le français le sait aussi — on dit « si j'avais » — mais l'envie de mettre un conditionnel des deux côtés revient dès qu'on traduit vite."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "If the tide's out, you can walk right along under the gorge.",
+          "fr": "Si la marée est basse, on peut marcher tout le long sous la gorge."
+        },
+        {
+          "register": "work",
+          "en": "If we cached that call, the page would load twice as fast.",
+          "fr": "Si on mettait cet appel en cache, la page se chargerait deux fois plus vite."
+        }
+      ],
+      "seeAlso": ["u039", "u040", "u025"]
+    },
+
+    "u039": {
+      "image": "Le regret du présent : les choses ne sont pas comme ça, et on aimerait bien qu'elles le soient.",
+      "rule": "I wish + prétérit = je regrette que ce ne soit pas le cas maintenant. Ici encore, le prétérit marque l'irréel, pas le passé.",
+      "contrast": {
+        "left": "I hope it's open.",
+        "right": "I wish it was open.",
+        "note": "L'espoir porte sur ce qui peut encore être vrai ; le wish porte sur ce qui ne l'est pas. Le français dit « j'espère » et « j'aimerais » sans marquer la différence si nettement."
+      },
+      "trap": {
+        "wrong": "I wish I have more time.",
+        "right": "I wish I had more time.",
+        "why": "Le présent après wish annule le regret : il faut reculer d'un temps pour dire que ce n'est pas le cas. Le français garde le subjonctif présent — « j'aimerais avoir » — et rien ne signale le décalage."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "I wish the buses ran later on a Sunday.",
+          "fr": "J'aimerais que les bus roulent plus tard le dimanche."
+        },
+        {
+          "register": "work",
+          "en": "I wish this dashboard told us why the latency spiked.",
+          "fr": "J'aimerais que ce tableau de bord nous dise pourquoi la latence a grimpé."
+        }
+      ],
+      "seeAlso": ["u041", "u038", "u040"]
+    },
+
+    "u040": {
+      "image": "La branche qu'on n'a pas prise, et qui est refermée pour de bon. On ne peut plus que la regarder.",
+      "rule": "if + past perfect → would have + participe. C'est l'hypothèse sur ce qui ne s'est pas produit, et ne se produira plus.",
+      "figure": {
+        "now": "maintenant",
+        "marks": [{ "at": 22, "label": "ce qui n'a pas eu lieu" }],
+        "spans": [
+          { "from": 22, "to": 50, "label": "et tout ce qui aurait suivi", "tone": "quiet" }
+        ]
+      },
+      "contrast": {
+        "left": "If I'd known, I'd have come.",
+        "right": "If I knew, I'd come.",
+        "note": "Je ne savais pas et c'est fini — ou je ne sais toujours pas, et ça pourrait encore changer."
+      },
+      "trap": {
+        "wrong": "If I would have known, I'd have come.",
+        "right": "If I had known, I'd have come.",
+        "why": "Même règle qu'au présent, un cran plus loin : after if, jamais de would. Le français double le conditionnel à l'oral — « si j'aurais su » — et la faute traverse la langue intacte."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "If we'd booked ahead, we wouldn't have queued for an hour.",
+          "fr": "Si on avait réservé, on n'aurait pas fait la queue une heure."
+        },
+        {
+          "register": "work",
+          "en": "If anyone had read the alert, the incident would have lasted five minutes.",
+          "fr": "Si quelqu'un avait lu l'alerte, l'incident aurait duré cinq minutes."
+        }
+      ],
+      "seeAlso": ["u038", "u039", "u034"]
+    },
+
+    "u041": {
+      "image": "Wish ne sert pas à souhaiter l'avenir. Il sert à regretter le présent, ou à reprocher ce qui ne change pas.",
+      "rule": "wish + prétérit = regret sur maintenant. wish + would = reproche, on veut que ça cesse. Pour un souhait réalisable, c'est hope.",
+      "contrast": {
+        "left": "I wish she would call.",
+        "right": "I wish she called more often.",
+        "note": "Un reproche sur ce qui ne bouge pas — ou un regret sur une habitude. Would vise le comportement, le prétérit vise l'état des choses."
+      },
+      "trap": {
+        "wrong": "I wish it stops raining.",
+        "right": "I wish it would stop raining.",
+        "why": "Le français dit « j'aimerais qu'il arrête », au subjonctif présent. En anglais, un wish tourné vers un changement qu'on attend demande would — le présent y est impossible."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "I wish they'd stop closing the bridge every other weekend.",
+          "fr": "J'aimerais qu'ils arrêtent de fermer le pont un week-end sur deux."
+        },
+        {
+          "register": "work",
+          "en": "I hope the demo goes well, but I wish we had another week.",
+          "fr": "J'espère que la démo se passera bien, mais j'aurais aimé avoir une semaine de plus."
+        }
+      ],
+      "seeAlso": ["u039", "u036", "u038"]
+    }
+  }
+}

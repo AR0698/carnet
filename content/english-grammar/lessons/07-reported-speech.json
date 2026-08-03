@@ -1,0 +1,67 @@
+{
+  "group": "Reported speech",
+  "lessons": {
+    "u047": {
+      "image": "Le pas en arrière. Quand on rapporte des paroles passées, tout ce qu'elles contenaient recule d'un cran.",
+      "rule": "Verbe introducteur au passé → le rapporté recule : présent → prétérit, prétérit → past perfect, will → would, can → could.",
+      "figure": {
+        "now": "maintenant",
+        "marks": [
+          { "at": 14, "label": "ce dont il parlait" },
+          { "at": 32, "label": "le moment où il l'a dit" }
+        ]
+      },
+      "contrast": {
+        "left": "'I'm tired.'",
+        "right": "He said he was tired.",
+        "note": "Le présent d'origine devient un prétérit dans le rapport. Rien n'a changé au sens : c'est la mécanique, pas le fond."
+      },
+      "trap": {
+        "wrong": "He said me that he was tired.",
+        "right": "He told me that he was tired.",
+        "why": "« Il m'a dit » donne he said me sans qu'on y pense. Or say ne prend jamais de personne en complément direct : c'est tell me, ou à la rigueur say to me — jamais say me."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "The landlord told us the kitchen would be finished by March.",
+          "fr": "Le propriétaire nous a dit que la cuisine serait finie en mars."
+        },
+        {
+          "register": "work",
+          "en": "She said the vendor had already been paid.",
+          "fr": "Elle a dit que le prestataire avait déjà été payé."
+        }
+      ],
+      "seeAlso": ["u048", "u050", "u044"]
+    },
+
+    "u048": {
+      "image": "Ce qui est encore vrai n'a aucune raison de reculer. Le recul sert à marquer la distance, pas à la fabriquer.",
+      "rule": "Le décalage n'est pas obligatoire quand la chose reste vraie aujourd'hui. Et le partage tient en un mot : tell exige une personne, say l'interdit.",
+      "contrast": {
+        "left": "He said he was French.",
+        "right": "He said he is French.",
+        "note": "Le premier est neutre ; le second insiste sur le fait que c'est toujours vrai. Aucun des deux n'est fautif."
+      },
+      "trap": {
+        "wrong": "She told that she would be late.",
+        "right": "She said that she would be late.",
+        "why": "Le piège symétrique du précédent : tell réclame quelqu'un à qui l'on dit. Sans complément de personne, c'est say. Le français « elle a dit que » ne tranche pas et laisse choisir au hasard."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "He told me the pub quiz starts at eight, not half past.",
+          "fr": "Il m'a dit que le quiz du pub commence à huit heures, pas à huit heures et demie."
+        },
+        {
+          "register": "work",
+          "en": "They said the API is stable now, so we can stop pinning the version.",
+          "fr": "Ils ont dit que l'API est stable maintenant, donc on peut arrêter de figer la version."
+        }
+      ],
+      "seeAlso": ["u047", "u050", "u051"]
+    }
+  }
+}

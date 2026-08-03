@@ -1,0 +1,284 @@
+{
+  "group": "Pronouns and determiners",
+  "lessons": {
+    "u082": {
+      "image": "Le réfléchi anglais est rare. Se lever, se laver, se sentir n'en prennent aucun — le français en met partout, l'anglais presque nulle part.",
+      "rule": "myself, yourself, themselves quand le sujet et le complément sont la même personne. Mais wash, shave, dress, feel, relax, concentrate s'en passent.",
+      "contrast": {
+        "left": "They talk to themselves.",
+        "right": "They talk to each other.",
+        "note": "Chacun tout seul dans son coin — ou l'un à l'autre. Le second est presque toujours ce qu'on voulait dire."
+      },
+      "trap": {
+        "wrong": "I feel myself tired today.",
+        "right": "I feel tired today.",
+        "why": "Le français a une foule de verbes pronominaux — se sentir, se lever, se reposer — dont le pronom ne veut rien dire de plus. Traduit, il produit un -self que l'anglais n'a jamais demandé."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "We got ourselves lost trying to find the back way into Leigh Woods.",
+          "fr": "On s'est perdus en cherchant l'entrée arrière de Leigh Woods."
+        },
+        {
+          "register": "work",
+          "en": "The two services keep overwriting each other's config.",
+          "fr": "Les deux services n'arrêtent pas d'écraser la configuration l'un de l'autre."
+        }
+      ],
+      "seeAlso": ["u083", "u081", "u089"]
+    },
+
+    "u083": {
+      "image": "Un ami à moi, et non mon ami : l'anglais distingue un parmi plusieurs de celui qu'on désigne.",
+      "rule": "a friend of mine = un ami parmi d'autres. my own = à moi et à personne d'autre. on my own ou by myself = tout seul.",
+      "contrast": {
+        "left": "on my own",
+        "right": "by myself",
+        "note": "Exactement le même sens : sans personne. Les deux se disent partout, sans nuance à chercher."
+      },
+      "trap": {
+        "wrong": "He's a my friend from Bath.",
+        "right": "He's a friend of mine from Bath.",
+        "why": "L'anglais interdit deux déterminants d'affilée : a my est impossible, comme the my. Le français « un ami à moi » n'a pas cette contrainte et ne prévient de rien."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "A mate of mine runs the record stall on a Saturday.",
+          "fr": "Un pote à moi tient le stand de disques le samedi."
+        },
+        {
+          "register": "work",
+          "en": "I'd rather have my own environment than share the staging one.",
+          "fr": "Je préfère avoir mon propre environnement plutôt que partager celui de staging."
+        }
+      ],
+      "seeAlso": ["u082", "u081", "u084"]
+    },
+
+    "u084": {
+      "image": "There annonce qu'une chose existe. It reprend une chose dont on a déjà parlé. Le français dit « il » pour les deux.",
+      "rule": "There is / there are pour signaler une existence. It is pour décrire ensuite. Et pour la météo, l'heure, la distance : it.",
+      "contrast": {
+        "left": "There's a problem.",
+        "right": "It's a problem.",
+        "note": "J'annonce son existence — ou je porte un jugement sur quelque chose de déjà connu. On commence toujours par there."
+      },
+      "trap": {
+        "wrong": "It is a problem with the front door.",
+        "right": "There's a problem with the front door.",
+        "why": "« Il y a » se construit en français avec un « il » impersonnel, et le calque donne it is. En anglais, l'existence s'annonce par there — it ne peut reprendre que ce dont on a déjà parlé."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "There's a market under the arches on a Wednesday, and it's worth the walk.",
+          "fr": "Il y a un marché sous les arches le mercredi, et ça vaut le déplacement."
+        },
+        {
+          "register": "work",
+          "en": "There were three incidents last month; it's a pattern now.",
+          "fr": "Il y a eu trois incidents le mois dernier ; c'est un motif récurrent maintenant."
+        }
+      ],
+      "seeAlso": ["u085", "u086", "u087"]
+    },
+
+    "u085": {
+      "image": "Some referme la porte sur une quantité qu'on assume. Any la laisse battante : peut-être rien, peut-être n'importe quoi.",
+      "rule": "some à l'affirmative et dans les offres. any aux négatives et aux questions. En affirmative, any veut dire n'importe lequel.",
+      "contrast": {
+        "left": "Would you like some tea?",
+        "right": "Have you got any tea?",
+        "note": "Une offre garde some, parce qu'on suppose la réponse oui. Une vraie question prend any."
+      },
+      "trap": {
+        "wrong": "I don't have some time this week.",
+        "right": "I don't have any time this week.",
+        "why": "Le français utilise « du », « de la », « des » aux affirmatives comme aux négatives. L'anglais bascule sur any dès qu'on nie ou qu'on interroge, sans exception hors des offres."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "Any bus going up that way will do, they all stop at the top.",
+          "fr": "N'importe quel bus qui monte par là fera l'affaire, ils s'arrêtent tous en haut."
+        },
+        {
+          "register": "work",
+          "en": "There isn't any documentation for that endpoint, I checked twice.",
+          "fr": "Il n'y a aucune documentation pour ce point d'entrée, j'ai vérifié deux fois."
+        }
+      ],
+      "seeAlso": ["u086", "u087", "u084"]
+    },
+
+    "u086": {
+      "image": "L'anglais ne double jamais la négation. Un mot négatif par phrase, et il fait tout le travail.",
+      "rule": "no + nom, none tout seul, nothing et nobody déjà négatifs — donc le verbe reste à l'affirmative.",
+      "contrast": {
+        "left": "I saw nobody.",
+        "right": "I didn't see anybody.",
+        "note": "Deux façons correctes de dire la même chose. Ce qui est interdit, c'est de les mélanger."
+      },
+      "trap": {
+        "wrong": "I didn't see nobody there.",
+        "right": "I didn't see anybody there.",
+        "why": "Le français double obligatoirement — « je n'ai vu personne » a deux marques. L'anglais les compte : deux négations s'annulent, et la phrase finit par dire que tu as vu quelqu'un."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "There was nobody on the towpath at six, just the herons.",
+          "fr": "Il n'y avait personne sur le chemin de halage à six heures, juste les hérons."
+        },
+        {
+          "register": "work",
+          "en": "None of the alerts fired, and nobody noticed for two hours.",
+          "fr": "Aucune alerte ne s'est déclenchée, et personne ne l'a remarqué pendant deux heures."
+        }
+      ],
+      "seeAlso": ["u085", "u088", "u087"]
+    },
+
+    "u087": {
+      "image": "Much pour ce qui se verse, many pour ce qui se compte. Et a few, c'est quelques ; few tout court, c'est presque rien.",
+      "rule": "much + indénombrable, many + pluriel. a little et a few sont positifs ; little et few sont un constat de manque.",
+      "contrast": {
+        "left": "a few friends",
+        "right": "few friends",
+        "note": "Quelques amis, et c'est déjà bien — ou très peu d'amis, et c'est un problème. L'article change le jugement, pas le nombre."
+      },
+      "trap": {
+        "wrong": "There was too much people at the front.",
+        "right": "There were too many people at the front.",
+        "why": "Le français dit « trop de » pour tout, sans jamais demander si ça se compte. L'anglais tranche à chaque fois — et people se compte, malgré son air d'indénombrable."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "There are plenty of places to eat, but few of them open late.",
+          "fr": "Il y a plein d'endroits où manger, mais peu ouvrent tard."
+        },
+        {
+          "register": "work",
+          "en": "We have a lot of logs and very little signal.",
+          "fr": "On a beaucoup de logs et très peu de signal."
+        }
+      ],
+      "seeAlso": ["u088", "u069", "u086"]
+    },
+
+    "u088": {
+      "image": "Devant un nom général, rien. Devant the, my ou this, of s'impose.",
+      "rule": "all children, most people, some students — mais all of the children, most of my friends, none of these tickets.",
+      "contrast": {
+        "left": "Most people agree.",
+        "right": "Most of my colleagues agree.",
+        "note": "Le nom général ne prend pas of ; dès qu'un déterminant apparaît derrière, of devient obligatoire."
+      },
+      "trap": {
+        "wrong": "Most of people think it's fine.",
+        "right": "Most people think it's fine.",
+        "why": "Le français dit « la plupart des gens », avec un article qui appelle un of à la traduction. En anglais, si rien ne suit — pas de the, pas de my — of tombe."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "Most of the shops on that street have changed hands twice.",
+          "fr": "La plupart des boutiques de cette rue ont changé de mains deux fois."
+        },
+        {
+          "register": "work",
+          "en": "All the tests pass locally, which tells us almost nothing.",
+          "fr": "Tous les tests passent en local, ce qui ne nous apprend presque rien."
+        }
+      ],
+      "seeAlso": ["u089", "u090", "u087"]
+    },
+
+    "u089": {
+      "image": "Trois mots pour exactement deux choses : les deux, aucune des deux, l'une ou l'autre.",
+      "rule": "both = les deux. neither = ni l'un ni l'autre. either = l'un ou l'autre, indifféremment. Jamais pour plus de deux.",
+      "contrast": {
+        "left": "Neither of them works.",
+        "right": "Either of them works.",
+        "note": "Aucun des deux ne marche — ou les deux conviennent, choisis. Une lettre d'écart, et la réponse s'inverse."
+      },
+      "trap": {
+        "wrong": "I don't like both of them.",
+        "right": "I don't like either of them.",
+        "why": "« Je n'aime pas les deux » se traduit mot à mot et change de sens : not both signifie « pas les deux à la fois », donc j'en aime un. Pour rejeter les deux, c'est either à la négative, ou neither."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "Both of those pubs do a proper Sunday roast.",
+          "fr": "Ces deux pubs font un vrai Sunday roast."
+        },
+        {
+          "register": "work",
+          "en": "Neither approach survives a network partition.",
+          "fr": "Aucune des deux approches ne survit à une partition réseau."
+        }
+      ],
+      "seeAlso": ["u088", "u090", "u086"]
+    },
+
+    "u090": {
+      "image": "All prend un pluriel, every prend un singulier, whole prend l'objet d'un seul bloc.",
+      "rule": "all the students au pluriel, every student au singulier, the whole class pour l'ensemble pris comme un tout.",
+      "contrast": {
+        "left": "all the day",
+        "right": "the whole day",
+        "note": "Le second est celui qu'on dit. Avec les durées et les lieux, whole passe presque toujours devant all."
+      },
+      "trap": {
+        "wrong": "Every students must sign the form.",
+        "right": "Every student must sign the form.",
+        "why": "Every est toujours suivi d'un singulier, malgré son sens de totalité. Le français « chaque étudiant » est singulier aussi, mais « tous les étudiants » traîne dans la tête et amène le -s."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "The whole street comes out for it, chairs and all.",
+          "fr": "Toute la rue sort pour ça, chaises comprises."
+        },
+        {
+          "register": "work",
+          "en": "Every service writes to the same log bucket, which is the whole problem.",
+          "fr": "Chaque service écrit dans le même bucket de logs, et c'est tout le problème."
+        }
+      ],
+      "seeAlso": ["u091", "u088", "u089"]
+    },
+
+    "u091": {
+      "image": "Each regarde un par un, en s'arrêtant sur chacun. Every embrasse le groupe d'un seul regard.",
+      "rule": "each = chacun pris séparément, possible dès deux. every = tous sans exception, à partir de trois. Les deux prennent un singulier.",
+      "contrast": {
+        "left": "Each of us paid.",
+        "right": "Every one of us paid.",
+        "note": "Le résultat est le même ; each s'attarde sur les personnes, every insiste sur le fait qu'il n'y a pas d'exception."
+      },
+      "trap": {
+        "wrong": "Every of them has a key.",
+        "right": "Each of them has a key.",
+        "why": "Every ne se construit jamais directement avec of : il faut each of, ou every one of. Le français « chacun d'eux » couvre les deux et ne signale pas la restriction."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "Each of the houses on that terrace is a different colour.",
+          "fr": "Chacune des maisons de cette rangée est d'une couleur différente."
+        },
+        {
+          "register": "work",
+          "en": "Each of the three regions failed for a different reason.",
+          "fr": "Chacune des trois régions est tombée pour une raison différente."
+        }
+      ],
+      "seeAlso": ["u090", "u088", "u089"]
+    }
+  }
+}

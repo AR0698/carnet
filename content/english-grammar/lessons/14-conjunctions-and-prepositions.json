@@ -1,0 +1,242 @@
+{
+  "group": "Conjunctions and prepositions",
+  "lessons": {
+    "u113": {
+      "image": "Although ouvre une phrase entière. Despite se contente d'un nom. Le sens est le même, la suite ne l'est pas.",
+      "rule": "although, though, even though + sujet + verbe. in spite of, despite + nom ou -ing. Despite ne prend jamais of.",
+      "contrast": {
+        "left": "Although it was raining, we went.",
+        "right": "Despite the rain, we went.",
+        "note": "Une proposition complète d'un côté, un simple nom de l'autre. Choisir le mot, c'est choisir ce qu'on met derrière."
+      },
+      "trap": {
+        "wrong": "Despite of the delay, we made it.",
+        "right": "Despite the delay, we made it.",
+        "why": "In spite of contient of, despite non — et les deux se ressemblent tellement que le of passe de l'un à l'autre. Le français « malgré » n'a aucune préposition à traîner."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "We got a table despite turning up without booking.",
+          "fr": "On a eu une table malgré le fait qu'on soit venus sans réserver."
+        },
+        {
+          "register": "work",
+          "en": "Although the tests passed, nobody trusted the release.",
+          "fr": "Bien que les tests soient passés, personne n'avait confiance dans la livraison."
+        }
+      ],
+      "seeAlso": ["u112", "u115", "u114"]
+    },
+
+    "u114": {
+      "image": "In case, c'est la précaution prise avant : on emporte le parapluie parce qu'il pourrait pleuvoir, pas parce qu'il pleut.",
+      "rule": "in case + présent = par précaution, au cas où. Ce n'est pas if, qui pose une condition à remplir.",
+      "contrast": {
+        "left": "Take a coat in case it's cold.",
+        "right": "Take a coat if it's cold.",
+        "note": "Emporte-le maintenant par précaution — ou ne le prends que s'il fait déjà froid. Le premier anticipe, le second réagit."
+      },
+      "trap": {
+        "wrong": "I'll take my laptop if I need to work.",
+        "right": "I'll take my laptop in case I need to work.",
+        "why": "« Au cas où » se rend par in case. Avec if, la phrase dit que tu prendras l'ordinateur seulement une fois le besoin établi — ce qui est impossible une fois parti."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "Bring a fiver in case the card machine's down again.",
+          "fr": "Prends cinq livres au cas où le terminal serait encore en panne."
+        },
+        {
+          "register": "work",
+          "en": "I've kept the old script in case we have to roll back.",
+          "fr": "J'ai gardé l'ancien script au cas où on devrait revenir en arrière."
+        }
+      ],
+      "seeAlso": ["u115", "u038", "u113"]
+    },
+
+    "u115": {
+      "image": "Unless porte déjà sa négation. Lui en ajouter une la retourne.",
+      "rule": "unless = if not, sauf si. as long as, provided that, so long as = à condition que. Tous suivis d'un présent pour parler du futur.",
+      "contrast": {
+        "left": "Unless you hurry, we'll miss it.",
+        "right": "If you don't hurry, we'll miss it.",
+        "note": "Exactement la même phrase. Unless contient le not, et le répéter revient à dire l'inverse."
+      },
+      "trap": {
+        "wrong": "Unless you don't hurry, we'll miss it.",
+        "right": "Unless you hurry, we'll miss it.",
+        "why": "Le français « à moins que tu ne te dépêches » traîne un « ne » explétif qui n'est pas une vraie négation. Traduit, il en devient une, et la condition bascule."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "The ferry runs all year unless the river's too high.",
+          "fr": "Le ferry fonctionne toute l'année sauf si la rivière est trop haute."
+        },
+        {
+          "register": "work",
+          "en": "You can deploy on a Friday as long as someone else is around.",
+          "fr": "Tu peux déployer un vendredi à condition que quelqu'un d'autre soit là."
+        }
+      ],
+      "seeAlso": ["u114", "u038", "u116"]
+    },
+
+    "u116": {
+      "image": "As sert trois fois : pendant que, parce que, et en tant que. Le contexte tranche seul.",
+      "rule": "as = au moment où deux choses se passent ensemble, ou = puisque, ou = en tant que. Une seule idée de cause par phrase.",
+      "contrast": {
+        "left": "As I was leaving, the phone rang.",
+        "right": "As I was late, I took a taxi.",
+        "note": "Pendant que — ou parce que. Le premier as situe dans le temps, le second explique."
+      },
+      "trap": {
+        "wrong": "As he was ill, so he stayed at home.",
+        "right": "As he was ill, he stayed at home.",
+        "why": "Le français double volontiers — « comme il était malade, alors il est resté ». L'anglais interdit as et so dans la même phrase : la cause est déjà dite une fois."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "As we came round the corner, the whole harbour opened up.",
+          "fr": "En tournant au coin, tout le port s'est ouvert devant nous."
+        },
+        {
+          "register": "work",
+          "en": "As nobody owns that service, it hasn't been patched in months.",
+          "fr": "Comme personne n'est responsable de ce service, il n'a pas été patché depuis des mois."
+        }
+      ],
+      "seeAlso": ["u117", "u068", "u115"]
+    },
+
+    "u117": {
+      "image": "Like compare deux choses différentes. As dit ce que la chose est vraiment.",
+      "rule": "like + nom = semblable à, sans l'être. as + nom = en tant que, réellement.",
+      "contrast": {
+        "left": "She works like a machine.",
+        "right": "She works as a translator.",
+        "note": "On la compare à une machine — ou c'est son métier. Confondre les deux transforme un compliment en description de poste."
+      },
+      "trap": {
+        "wrong": "I work like a consultant.",
+        "right": "I work as a consultant.",
+        "why": "Le français dit « je travaille comme consultant », et « comme » appelle like sans hésiter. Mais like dirait que tu ressembles à un consultant sans en être un."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "The old bank has been done up like a warehouse, which it never was.",
+          "fr": "L'ancienne banque a été refaite comme un entrepôt, ce qu'elle n'a jamais été."
+        },
+        {
+          "register": "work",
+          "en": "She joined as a contractor and stayed as head of platform.",
+          "fr": "Elle est arrivée comme prestataire et est restée comme responsable plateforme."
+        }
+      ],
+      "seeAlso": ["u118", "u116", "u107"]
+    },
+
+    "u118": {
+      "image": "As if décrit une impression, et le plus souvent une impression fausse.",
+      "rule": "as if ou as though + proposition. Quand la chose est fausse, le verbe recule d'un temps — comme après wish.",
+      "contrast": {
+        "left": "It looks like rain.",
+        "right": "It looks as if it's going to rain.",
+        "note": "Like se contente d'un nom, as if réclame une proposition entière avec son sujet et son verbe."
+      },
+      "trap": {
+        "wrong": "He talks as if he is the manager.",
+        "right": "He talks as if he were the manager.",
+        "why": "Quand c'est faux, l'anglais recule d'un temps pour le signaler. Le présent laisserait entendre qu'il l'est peut-être — ce qui enlève exactement l'ironie de la phrase."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "The sky looked as though the whole afternoon was cancelled.",
+          "fr": "Le ciel avait l'air d'annoncer que tout l'après-midi était annulé."
+        },
+        {
+          "register": "work",
+          "en": "The dashboard behaves as if the cache were empty.",
+          "fr": "Le tableau de bord se comporte comme si le cache était vide."
+        }
+      ],
+      "seeAlso": ["u117", "u039", "u116"]
+    },
+
+    "u119": {
+      "image": "During répond à quand. For répond à combien de temps. While introduit une action complète.",
+      "rule": "during + nom : during the film. for + durée : for two hours. while + sujet + verbe.",
+      "figure": {
+        "now": "maintenant",
+        "spans": [
+          { "from": 12, "to": 42, "label": "for : toute la longueur" }
+        ],
+        "marks": [{ "at": 30, "label": "during : à quel moment" }]
+      },
+      "contrast": {
+        "left": "during the summer",
+        "right": "for three months",
+        "note": "Le moment où ça se situe — ou le temps que ça dure. Le français dit « pendant » dans les deux cas."
+      },
+      "trap": {
+        "wrong": "I lived in Bath during three years.",
+        "right": "I lived in Bath for three years.",
+        "why": "« Pendant » traduit during et for indifféremment. Mais during ne répond jamais à combien de temps : il situe, il ne mesure pas."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "The whole street floods during a spring tide.",
+          "fr": "Toute la rue est inondée pendant les grandes marées."
+        },
+        {
+          "register": "work",
+          "en": "The site was down for forty minutes while we restored the backup.",
+          "fr": "Le site est resté hors service quarante minutes pendant qu'on restaurait la sauvegarde."
+        }
+      ],
+      "seeAlso": ["u012", "u120", "u116"]
+    },
+
+    "u120": {
+      "image": "Until, ça dure jusque-là sans interruption. By, c'est une date limite : au plus tard à ce moment.",
+      "rule": "until = jusqu'à ce moment, en continu. by = pas plus tard que. by the time + présent, pour un futur.",
+      "figure": {
+        "now": "maintenant",
+        "spans": [
+          { "from": 50, "to": 78, "label": "until : ça dure jusque-là" }
+        ],
+        "marks": [{ "at": 78, "label": "by : au plus tard là" }]
+      },
+      "contrast": {
+        "left": "I'll be here until Friday.",
+        "right": "I'll finish it by Friday.",
+        "note": "Je reste toute la semaine — ou j'aurai fini à un moment quelconque avant vendredi. Until dure, by borne."
+      },
+      "trap": {
+        "wrong": "I'll send it to you until Friday.",
+        "right": "I'll send it to you by Friday.",
+        "why": "« Jusqu'à vendredi » et « d'ici vendredi » se ressemblent en français. Until dirait que tu passes toute la semaine à envoyer le même document."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "The kitchen's open until nine, but the bar goes on until one.",
+          "fr": "La cuisine est ouverte jusqu'à neuf heures, mais le bar continue jusqu'à une heure."
+        },
+        {
+          "register": "work",
+          "en": "By the time anyone looked, the queue had a million messages in it.",
+          "fr": "Le temps que quelqu'un regarde, la file contenait un million de messages."
+        }
+      ],
+      "seeAlso": ["u119", "u121", "u025"]
+    }
+  }
+}

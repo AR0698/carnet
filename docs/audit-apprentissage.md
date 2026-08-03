@@ -131,9 +131,11 @@ partie utile de sa méthode ici, c'est l'image concrète ; pas l'architecture.
 
 Constats honnêtes, par ordre de valeur.
 
-1. **120 unités sur 145 n'ont pas encore de fiche.** Le lien « Comprendre cette
-   règle » n'apparaît que là où il mène quelque part — donc, pour l'instant, sur
-   les 25 premières. Le trou du § 2 reste ouvert partout ailleurs.
+1. **Les 145 fiches sont écrites, aucune n'a été relue à froid.** Le trou du
+   § 2 est refermé partout — le lien « Comprendre cette règle » mène quelque
+   part sur toutes les unités. Mais elles ont été rédigées d'un trait : les
+   pièges français tiennent parce qu'ils viennent d'erreurs attestées, les
+   exemples tiennent moins, et ce sont eux qu'il faudra corriger à l'usage.
 2. **Rien ne demande jamais de reformuler une règle avec ses mots.**
    S'expliquer à soi-même est la technique la plus rentable qui manque
    aujourd'hui à l'application. Ce serait un type d'exercice, pas une fiche.

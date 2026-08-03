@@ -1,0 +1,357 @@
+{
+  "group": "Modals",
+  "lessons": {
+    "u026": {
+      "image": "Can est un outil court : il n'a que deux temps. Dès qu'il faut aller ailleurs dans le temps, be able to prend le relais.",
+      "rule": "can au présent, could au passé — et rien d'autre. Futur, infinitif, present perfect : c'est be able to.",
+      "contrast": {
+        "left": "I can't come tomorrow.",
+        "right": "I won't be able to come tomorrow.",
+        "note": "Même sens. Can n'a pas de futur, alors il cède la place — ce n'est pas une nuance, c'est une contrainte de forme."
+      },
+      "trap": {
+        "wrong": "I will can help you next week.",
+        "right": "I'll be able to help you next week.",
+        "why": "Le français conjugue « pouvoir » à tous les temps. En anglais, deux modaux ne se suivent jamais : will can n'existe pas, et la phrase s'arrête net à l'oreille."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "Can you get us on the list? It closes at ten.",
+          "fr": "Tu peux nous mettre sur la liste ? Ça ferme à dix heures."
+        },
+        {
+          "register": "work",
+          "en": "I won't be able to look at the pull request before Thursday.",
+          "fr": "Je ne pourrai pas regarder la pull request avant jeudi."
+        }
+      ],
+      "seeAlso": ["u027", "u031"]
+    },
+
+    "u027": {
+      "image": "La porte qu'on n'a pas prise. La possibilité était là, elle est restée sur la table.",
+      "rule": "could + infinitif = c'est possible maintenant. could have + participe = c'était possible, et ça n'a pas eu lieu.",
+      "figure": {
+        "now": "maintenant",
+        "spans": [
+          { "from": 12, "to": 32, "label": "la possibilité était là", "tone": "quiet" }
+        ],
+        "marks": [{ "at": 32, "label": "…et rien ne s'est passé" }]
+      },
+      "contrast": {
+        "left": "I could help you.",
+        "right": "I could have helped you.",
+        "note": "Je peux encore, propose-moi — ou c'est trop tard, tu ne m'as rien demandé."
+      },
+      "trap": {
+        "wrong": "I could come yesterday but I stayed in.",
+        "right": "I could have come yesterday but I stayed in.",
+        "why": "Le français dit « j'aurais pu venir » : le regret est porté par le conditionnel passé. L'anglais le porte sur have, pas sur could — sans have, la phrase raconte une capacité, pas un regret."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "We could have walked it in twenty minutes instead of waiting for that bus.",
+          "fr": "On aurait pu y aller à pied en vingt minutes au lieu d'attendre ce bus."
+        },
+        {
+          "register": "work",
+          "en": "That outage could have been avoided with a single alert.",
+          "fr": "Cette panne aurait pu être évitée avec une seule alerte."
+        }
+      ],
+      "seeAlso": ["u026", "u034", "u040"]
+    },
+
+    "u028": {
+      "image": "Les indices parlent à ta place. Ses lumières sont allumées et son vélo est là : il doit être rentré.",
+      "rule": "must = j'en déduis que c'est vrai. can't = j'en déduis que c'est impossible. Le contraire de must, c'est can't — jamais mustn't.",
+      "contrast": {
+        "left": "She must be on the train.",
+        "right": "She can't be on the train.",
+        "note": "Les deux sont des déductions, pas des obligations. Seul le sens de la conclusion change."
+      },
+      "trap": {
+        "wrong": "He mustn't be English, he has no accent.",
+        "right": "He can't be English, he has no accent.",
+        "why": "« Il ne doit pas être anglais » est une déduction en français. En anglais, mustn't est une interdiction et rien d'autre : la phrase devient un ordre absurde adressé à quelqu'un qui n'y peut rien."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "The queue's round the corner — it must be a good night.",
+          "fr": "La queue fait le tour du coin de la rue : ça doit être une bonne soirée."
+        },
+        {
+          "register": "work",
+          "en": "The logs are empty, so the job can't have started at all.",
+          "fr": "Les logs sont vides, donc le job n'a pas pu démarrer du tout."
+        }
+      ],
+      "seeAlso": ["u029", "u032", "u031"]
+    },
+
+    "u029": {
+      "image": "Le peut-être anglais : rien n'est décidé, et ça reste grand ouvert.",
+      "rule": "may ou might + infinitif nu = c'est possible, sans plus. Dans ce sens, les deux se valent.",
+      "contrast": {
+        "left": "She might be late.",
+        "right": "She must be late.",
+        "note": "Une possibilité parmi d'autres — ou une conclusion que les indices imposent. Might laisse la porte ouverte, must la ferme."
+      },
+      "trap": {
+        "wrong": "Maybe he can come on Saturday.",
+        "right": "He might come on Saturday.",
+        "why": "« Il peut venir » se dit avec pouvoir en français, et can suit tout seul. Mais can dit la capacité — il en est capable — jamais la probabilité. Pour un peut-être, c'est might ou may."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "It may be shut on a Monday, ring ahead before you cycle over.",
+          "fr": "C'est peut-être fermé le lundi, appelle avant de traverser à vélo."
+        },
+        {
+          "register": "work",
+          "en": "The model might refuse that format, so keep the fallback.",
+          "fr": "Le modèle refusera peut-être ce format, garde le repli."
+        }
+      ],
+      "seeAlso": ["u030", "u028", "u026"]
+    },
+
+    "u030": {
+      "image": "Le peut-être tourné vers l'arrière : on ne saura jamais, et ça a failli tourner autrement.",
+      "rule": "might have + participe = c'était peut-être le cas, ou ça a failli arriver. might as well = autant faire ça, faute de mieux.",
+      "figure": {
+        "now": "maintenant",
+        "spans": [
+          { "from": 14, "to": 34, "label": "peut-être que oui, peut-être que non", "tone": "quiet" }
+        ]
+      },
+      "contrast": {
+        "left": "He might have missed the train.",
+        "right": "He must have missed the train.",
+        "note": "Une hypothèse parmi d'autres — ou la seule explication qui tienne debout."
+      },
+      "trap": {
+        "wrong": "We can as well walk from here.",
+        "right": "We might as well walk from here.",
+        "why": "L'expression est figée : might as well, jamais can as well. Elle dit « tant qu'à faire » — il n'y a rien de mieux à proposer, donc autant."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "The last ferry has gone, so we might as well walk round the harbour.",
+          "fr": "Le dernier ferry est parti, alors autant faire le tour du port à pied."
+        },
+        {
+          "register": "work",
+          "en": "Nobody read that doc — it might have been clearer with a diagram.",
+          "fr": "Personne n'a lu ce document ; il aurait peut-être été plus clair avec un schéma."
+        }
+      ],
+      "seeAlso": ["u029", "u027", "u028"]
+    },
+
+    "u031": {
+      "image": "Must vient de toi. Have to vient d'ailleurs : du règlement, du chef, de l'horaire de train.",
+      "rule": "must = obligation que je m'impose. have to = obligation venue du dehors. Au passé, seul had to existe.",
+      "contrast": {
+        "left": "I must ring my mum.",
+        "right": "I have to wear a lanyard.",
+        "note": "Personne ne m'y oblige, je me le dis — ou c'est la règle de la boîte, et je n'ai pas mon mot à dire."
+      },
+      "trap": {
+        "wrong": "Yesterday I must finish the report.",
+        "right": "Yesterday I had to finish the report.",
+        "why": "must n'a pas de passé. Le français conjugue « devoir » à tous les temps sans y penser, si bien que la phrase paraît complète alors qu'elle est impossible."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "You have to book the sauna at the lido a week ahead.",
+          "fr": "Il faut réserver le sauna du lido une semaine à l'avance."
+        },
+        {
+          "register": "work",
+          "en": "We had to roll back twice before anyone questioned the release process.",
+          "fr": "On a dû revenir en arrière deux fois avant que quelqu'un remette en cause le processus."
+        }
+      ],
+      "seeAlso": ["u032", "u028", "u026"]
+    },
+
+    "u032": {
+      "image": "Trois portes : celle qu'il faut franchir, celle qui est condamnée, et celle qu'on peut simplement ignorer.",
+      "rule": "must = il le faut. mustn't = c'est interdit. needn't ou don't have to = ce n'est pas nécessaire, fais comme tu veux.",
+      "contrast": {
+        "left": "You mustn't tell her.",
+        "right": "You don't have to tell her.",
+        "note": "Interdit — ou parfaitement facultatif. Deux phrases voisines, deux consignes opposées."
+      },
+      "trap": {
+        "wrong": "You mustn't come if you're busy.",
+        "right": "You don't have to come if you're busy.",
+        "why": "« Tu ne dois pas venir si tu es occupé » veut dire en français « ce n'est pas obligatoire ». En anglais, mustn't interdit : la phrase passe d'une gentillesse à une exclusion."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "You needn't bring anything, there's food on already.",
+          "fr": "Tu n'as rien besoin d'apporter, il y a déjà à manger."
+        },
+        {
+          "register": "work",
+          "en": "You mustn't push straight to main, but you don't have to wait for two reviews.",
+          "fr": "Interdit de pousser directement sur main, mais tu n'es pas obligé d'attendre deux relectures."
+        }
+      ],
+      "seeAlso": ["u031", "u028", "u033"]
+    },
+
+    "u033": {
+      "image": "Le conseil d'un ami : ce que tu ferais à sa place, sans lui donner d'ordre.",
+      "rule": "should + infinitif nu = c'est une bonne idée, c'est ce qui est attendu. Beaucoup plus doux que must.",
+      "contrast": {
+        "left": "You should book it.",
+        "right": "You have to book it.",
+        "note": "Un conseil qu'on peut décliner — ou une condition sans laquelle rien ne se passera."
+      },
+      "trap": {
+        "wrong": "You should to call them first.",
+        "right": "You should call them first.",
+        "why": "Les modaux anglais — can, must, should, will, may — sont suivis de l'infinitif nu. Le to se glisse par analogie avec have to et need to, qui ne sont pas des modaux malgré les apparences."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "You should try the Sunday roast there before it gets popular.",
+          "fr": "Tu devrais essayer leur Sunday roast avant que ça devienne connu."
+        },
+        {
+          "register": "work",
+          "en": "We should write the runbook now, while we still remember what broke.",
+          "fr": "On devrait écrire la procédure maintenant, tant qu'on se souvient de ce qui a cassé."
+        }
+      ],
+      "seeAlso": ["u034", "u035", "u031"]
+    },
+
+    "u034": {
+      "image": "Le should tourné vers l'arrière : ce qui aurait dû être fait, et qui ne l'a pas été. Le regret, en une forme.",
+      "rule": "should have + participe = ça aurait dû se passer et ça ne s'est pas passé. Shouldn't have = ça s'est passé et c'était une erreur.",
+      "figure": {
+        "now": "maintenant",
+        "marks": [{ "at": 24, "label": "là, il aurait fallu" }]
+      },
+      "contrast": {
+        "left": "I should have asked.",
+        "right": "I shouldn't have asked.",
+        "note": "Je ne l'ai pas fait et je le regrette — ou je l'ai fait et je le regrette. Le regret est dans les deux, l'action dans un seul."
+      },
+      "trap": {
+        "wrong": "I should call you yesterday.",
+        "right": "I should have called you yesterday.",
+        "why": "Le français marque le regret sur le verbe devoir lui-même — « j'aurais dû t'appeler ». L'anglais laisse should intact et met tout le passé sur have : la faute est de conjuguer should, ce qui est impossible."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "We should have set off earlier, the whole of Whiteladies was at a standstill.",
+          "fr": "On aurait dû partir plus tôt, tout Whiteladies était à l'arrêt."
+        },
+        {
+          "register": "work",
+          "en": "I shouldn't have merged that on a Friday.",
+          "fr": "Je n'aurais pas dû merger ça un vendredi."
+        }
+      ],
+      "seeAlso": ["u033", "u027", "u040"]
+    },
+
+    "u035": {
+      "image": "Had better, c'est le conseil avec une menace derrière. It's time, c'est le reproche poli d'un retard déjà pris.",
+      "rule": "had better + infinitif nu = il vaut mieux, sinon ça se passera mal. It's time + prétérit = ça aurait déjà dû être fait.",
+      "contrast": {
+        "left": "It's time to go.",
+        "right": "It's time we went.",
+        "note": "Une simple annonce — ou un reproche léger : on aurait déjà dû être partis."
+      },
+      "trap": {
+        "wrong": "It's time you go home.",
+        "right": "It's time you went home.",
+        "why": "Ce prétérit n'a rien de passé : il signale que la chose est en retard. Le français reste au présent — « il est temps que tu rentres » — et rien ne pousse à changer de temps."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "We'd better leave now if you want the last train from Temple Meads.",
+          "fr": "On ferait mieux de partir maintenant si tu veux le dernier train de Temple Meads."
+        },
+        {
+          "register": "work",
+          "en": "It's time we deleted that feature flag, nobody has touched it in a year.",
+          "fr": "Il serait temps qu'on supprime ce feature flag, personne n'y a touché depuis un an."
+        }
+      ],
+      "seeAlso": ["u033", "u039", "u036"]
+    },
+
+    "u036": {
+      "image": "Would sert deux fois : le monde imaginé, et le monde d'avant qu'on raconte.",
+      "rule": "would = ce qui arriverait dans un cas imaginé, ce qu'on acceptait de faire, ou une habitude passée qu'on raconte.",
+      "contrast": {
+        "left": "He would sit there for hours.",
+        "right": "He used to live there.",
+        "note": "Would raconte des actions qui se répètent ; pour un état passé — être, avoir, habiter — il faut used to."
+      },
+      "trap": {
+        "wrong": "When I was a student, I would be broke.",
+        "right": "When I was a student, I was always broke.",
+        "why": "Would ne raconte que des actions répétées, jamais des états. C'est la limite qui manque au calque de l'imparfait français, qui couvre les deux sans distinction."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "Every summer my nan would take us up to watch the balloons from the Downs.",
+          "fr": "Chaque été, ma grand-mère nous emmenait voir les ballons depuis les Downs."
+        },
+        {
+          "register": "work",
+          "en": "That would break every integration we have.",
+          "fr": "Ça casserait toutes les intégrations qu'on a."
+        }
+      ],
+      "seeAlso": ["u018", "u038", "u039"]
+    },
+
+    "u037": {
+      "image": "La politesse britannique se mesure en syllabes : plus la demande est longue, moins elle est brutale.",
+      "rule": "Could you / Would you ... ? pour demander un service ; Can I / May I ... ? pour la permission ; Would you like ... ? pour offrir.",
+      "contrast": {
+        "left": "Do you want a coffee?",
+        "right": "Would you like a coffee?",
+        "note": "Le premier n'est pas faux, il est abrupt. Le second est la forme neutre, celle qu'on entend partout — ce n'est pas de la préciosité."
+      },
+      "trap": {
+        "wrong": "Give me a pint, please.",
+        "right": "Could I get a pint, please?",
+        "why": "L'impératif poli du français — « donnez-moi », « passez-moi » — passe très mal en anglais britannique, même avec please. La demande se formule en question, presque toujours."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "Would you mind keeping an eye on my bag for a sec?",
+          "fr": "Ça t'ennuierait de surveiller mon sac deux secondes ?"
+        },
+        {
+          "register": "work",
+          "en": "Could you take another look at that estimate before I send it?",
+          "fr": "Tu pourrais rejeter un œil à cette estimation avant que je l'envoie ?"
+        }
+      ],
+      "seeAlso": ["u026", "u036", "u022"]
+    }
+  }
+}

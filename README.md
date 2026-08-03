@@ -307,9 +307,16 @@ session fait peur. Le raisonnement complet, et l'audit du reste de
 l'application, sont dans [`docs/audit-apprentissage.md`](docs/audit-apprentissage.md).
 
 Les fiches vivent dans `content/<pack>/lessons/`, un fichier par groupe, et sont
-raccrochées à leur notion au moment de l'assemblage. Une unité peut très bien
-avoir ses exercices sans avoir encore sa fiche : l'accès n'apparaît que là où il
-mène quelque part.
+raccrochées à leur notion au moment de l'assemblage. **Les 145 sont écrites** —
+le lien mène donc quelque part sur toutes les unités de grammaire. Le champ
+reste facultatif pour autant : une unité peut avoir ses exercices sans avoir sa
+fiche, et l'accès n'apparaît que là où il y a quelque chose à lire. C'est ce qui
+permettra d'en ajouter aux autres carnets sans rien changer au code.
+
+L'assemblage refuse une fiche qui renvoie à une unité inexistante, qui n'a pas
+ses deux registres, ou dont un exemple reprend mot pour mot la réponse attendue
+par un exercice de la même unité — auquel cas ouvrir la fiche donnerait la
+réponse au lieu de la faire chercher.
 
 ## Sauvegarde
 

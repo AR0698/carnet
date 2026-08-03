@@ -1,0 +1,172 @@
+{
+  "group": "Relative clauses",
+  "lessons": {
+    "u092": {
+      "image": "Le relatif remplace le nom et devient sujet de sa propre proposition. Il fait le travail à lui tout seul.",
+      "rule": "who pour les personnes, which pour les choses, that pour les deux. Quand le relatif est sujet, aucun autre sujet ne le suit.",
+      "contrast": {
+        "left": "the woman who runs the shop",
+        "right": "the shop which she runs",
+        "note": "Dans le premier, who est sujet ; dans le second, which est complément et un sujet apparaît derrière."
+      },
+      "trap": {
+        "wrong": "The woman which works at the market.",
+        "right": "The woman who works at the market.",
+        "why": "Le français a un seul « qui », valable pour les gens comme pour les choses. L'anglais sépare : which appliqué à une personne la traite comme un objet, et ça s'entend tout de suite."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "The bloke who runs the bike shop will true a wheel while you wait.",
+          "fr": "Le type qui tient le magasin de vélos redresse une roue pendant que tu attends."
+        },
+        {
+          "register": "work",
+          "en": "Anyone who touched that config should be on the review.",
+          "fr": "Toute personne qui a touché à cette configuration devrait être sur la relecture."
+        }
+      ],
+      "seeAlso": ["u093", "u094", "u095"]
+    },
+
+    "u093": {
+      "image": "Quand le relatif est complément, il peut s'effacer sans laisser de trace. Quand il est sujet, jamais.",
+      "rule": "On omet who, that ou which s'il est complément : the film I saw. On ne l'omet jamais s'il est sujet du verbe qui suit.",
+      "contrast": {
+        "left": "the man who called",
+        "right": "the man I called",
+        "note": "Sujet, donc obligatoire — ou complément, donc effaçable. C'est ce qui suit le relatif qui tranche : un verbe, ou un sujet."
+      },
+      "trap": {
+        "wrong": "The flat that we visited it was tiny.",
+        "right": "The flat we visited was tiny.",
+        "why": "Le relatif a déjà remplacé le complément : le garder en plus le dit deux fois. Le français ne fait pas cette faute avec « que », mais elle revient dès qu'on omet le relatif à l'anglaise."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "The place we ended up in had a piano and nobody playing it.",
+          "fr": "L'endroit où on a fini avait un piano et personne pour en jouer."
+        },
+        {
+          "register": "work",
+          "en": "The ticket I closed on Friday came straight back on Monday.",
+          "fr": "Le ticket que j'ai fermé vendredi est revenu dès lundi."
+        }
+      ],
+      "seeAlso": ["u092", "u094", "u097"]
+    },
+
+    "u094": {
+      "image": "Whose porte le relatif et la possession en un seul mot. Where remplace un lieu, whom une personne complément.",
+      "rule": "whose + nom = dont le. where = où. whom après une préposition, surtout à l'écrit — sinon who suffit.",
+      "contrast": {
+        "left": "the friend whose car broke down",
+        "right": "the garage where it broke down",
+        "note": "La possession, ou le lieu. Whose est suivi directement d'un nom, sans article — c'est ce qui le distingue."
+      },
+      "trap": {
+        "wrong": "The woman which her car was stolen.",
+        "right": "The woman whose car was stolen.",
+        "why": "Le français « dont la voiture » sépare le relatif du possessif, et la traduction mot à mot produit deux mots là où l'anglais n'en a qu'un. Whose contient déjà les deux."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "That's the pub where they filmed half the series.",
+          "fr": "C'est le pub où ils ont tourné la moitié de la série."
+        },
+        {
+          "register": "work",
+          "en": "The team whose service went down had no runbook at all.",
+          "fr": "L'équipe dont le service est tombé n'avait aucune procédure."
+        }
+      ],
+      "seeAlso": ["u092", "u095", "u093"]
+    },
+
+    "u095": {
+      "image": "Deux virgules autour d'une proposition : ce qui est dedans est un supplément. Sans virgules, c'est une définition.",
+      "rule": "Sans virgule, la relative identifie de qui on parle. Entre virgules, elle ajoute une information qu'on pourrait retirer — et that y est interdit.",
+      "contrast": {
+        "left": "The students who passed celebrated.",
+        "right": "The students, who passed, celebrated.",
+        "note": "Seuls ceux qui ont réussi ont fêté ça — ou tous ont fêté, et au passage, tous avaient réussi. Deux virgules changent le nombre de gens."
+      },
+      "trap": {
+        "wrong": "My sister, that lives in Bath, is a nurse.",
+        "right": "My sister, who lives in Bath, is a nurse.",
+        "why": "That ne s'emploie jamais dans une relative entre virgules. Le français garde « qui » dans les deux cas et ne signale à aucun moment qu'on a changé de type de proposition."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "The lido, which reopened years ago, is booked solid all summer.",
+          "fr": "Le lido, qui a rouvert il y a des années, est complet tout l'été."
+        },
+        {
+          "register": "work",
+          "en": "Our main dependency, which nobody has updated since 2023, just got a CVE.",
+          "fr": "Notre dépendance principale, que personne n'a mise à jour depuis 2023, vient de recevoir une CVE."
+        }
+      ],
+      "seeAlso": ["u096", "u092", "u093"]
+    },
+
+    "u096": {
+      "image": "Une relative peut reprendre toute la phrase précédente, et pas seulement le dernier mot.",
+      "rule": "which peut renvoyer à la proposition entière : ..., which was a relief. Et after une quantité : some of whom, most of which.",
+      "contrast": {
+        "left": "He was late, which was annoying.",
+        "right": "He told me something which was annoying.",
+        "note": "Dans le premier, which reprend tout le fait ; dans le second, seulement la chose dite. La virgule fait la différence."
+      },
+      "trap": {
+        "wrong": "The train was cancelled, what was annoying.",
+        "right": "The train was cancelled, which was annoying.",
+        "why": "Le français dit « ce qui était agaçant », et « ce que » se traduit ailleurs par what. Ici seul which peut reprendre une phrase entière — what ne le fait jamais."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "They closed the bridge for a week, which meant an hour extra each way.",
+          "fr": "Ils ont fermé le pont une semaine, ce qui faisait une heure de plus dans chaque sens."
+        },
+        {
+          "register": "work",
+          "en": "We shipped four features, none of which anyone asked for.",
+          "fr": "On a livré quatre fonctionnalités, dont aucune n'avait été demandée."
+        }
+      ],
+      "seeAlso": ["u095", "u092", "u094"]
+    },
+
+    "u097": {
+      "image": "La relative se rétracte : who is talking devient talking, who was injured devient injured. Le pronom et le verbe être s'évaporent.",
+      "rule": "-ing quand le nom fait l'action, -ed quand il la subit. C'est une relative dont on a retiré le pronom et be.",
+      "contrast": {
+        "left": "the woman talking to Tom",
+        "right": "the boy injured in the accident",
+        "note": "Elle parle, il a été blessé. La forme du participe dit qui agit et qui subit, sans autre indice."
+      },
+      "trap": {
+        "wrong": "The people waited outside were freezing.",
+        "right": "The people waiting outside were freezing.",
+        "why": "Le participe passé dirait qu'on les a attendus. Le français « les gens attendant dehors » est rare et lourd, donc rien ne guide vers la bonne forme."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "The bloke selling records out of a suitcase is there every Saturday.",
+          "fr": "Le type qui vend des disques dans une valise est là tous les samedis."
+        },
+        {
+          "register": "work",
+          "en": "Any request rejected by the gateway never reaches our logs.",
+          "fr": "Toute requête rejetée par la passerelle n'atteint jamais nos logs."
+        }
+      ],
+      "seeAlso": ["u068", "u093", "u098"]
+    }
+  }
+}

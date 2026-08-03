@@ -1,0 +1,256 @@
+{
+  "group": "Phrasal verbs",
+  "lessons": {
+    "u137": {
+      "image": "Un verbe, une particule, et un sens qui n'a plus rien à voir. Get on n'a aucun rapport avec get.",
+      "rule": "C'est la particule qui porte le sens. Avec un pronom complément, elle passe derrière : turn it on, jamais turn on it.",
+      "contrast": {
+        "left": "Turn on the light.",
+        "right": "Turn it on.",
+        "note": "Avec un nom, les deux places sont possibles ; avec un pronom, une seule — entre le verbe et la particule."
+      },
+      "trap": {
+        "wrong": "I couldn't find my keys so I looked for them up.",
+        "right": "I couldn't find my keys so I looked them up.",
+        "why": "Le pronom se glisse toujours entre le verbe et la particule, et il ne s'en échappe jamais. Le français n'a rien de comparable : rien ne prépare à cette mécanique."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "Get on at the bottom of the hill or you'll be walking it.",
+          "fr": "Monte en bas de la côte ou tu la feras à pied."
+        },
+        {
+          "register": "work",
+          "en": "I'll look it up and paste the link in the thread.",
+          "fr": "Je vais le chercher et coller le lien dans le fil."
+        }
+      ],
+      "seeAlso": ["u138", "u142", "u143"]
+    },
+
+    "u138": {
+      "image": "In, on entre ou on remplit. Out, on sort ou on épuise jusqu'au bout.",
+      "rule": "fill in, check in, join in, drop in — go out, find out, run out of, sort out, eat out.",
+      "contrast": {
+        "left": "fill in the form",
+        "right": "fill up the tank",
+        "note": "In pour compléter des cases, up pour remplir un volume. La particule dit ce qu'on remplit."
+      },
+      "trap": {
+        "wrong": "Can you fill this form before Friday?",
+        "right": "Can you fill in this form before Friday?",
+        "why": "Le français « remplir un formulaire » se traduit mot à mot et donne fill sans particule, ce qui évoque plutôt le fait de le remplir de liquide. C'est fill in, ou fill out en anglais américain."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "We only found out about the closure when we got there.",
+          "fr": "On n'a appris la fermeture qu'en arrivant sur place."
+        },
+        {
+          "register": "work",
+          "en": "Two people dropped in on the standup and stayed an hour.",
+          "fr": "Deux personnes sont passées au standup et sont restées une heure."
+        }
+      ],
+      "seeAlso": ["u139", "u137", "u143"]
+    },
+
+    "u139": {
+      "image": "Out marque souvent la fin de quelque chose, ou le fait que ça devienne public.",
+      "rule": "run out, sell out, work out, sort out, turn out, point out, cut out, put out.",
+      "contrast": {
+        "left": "work out the answer",
+        "right": "work out at the gym",
+        "note": "Calculer, trouver la solution — ou s'entraîner. Le même phrasal verb, deux mondes sans rapport."
+      },
+      "trap": {
+        "wrong": "It turned that nobody had tested it.",
+        "right": "It turned out that nobody had tested it.",
+        "why": "« Il s'est avéré que » n'a pas de particule en français, et out se perd à la traduction. Sans lui, turn garde son sens de tourner et la phrase ne veut plus rien dire."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "The tickets sold out in about four minutes.",
+          "fr": "Les billets sont partis en quatre minutes environ."
+        },
+        {
+          "register": "work",
+          "en": "Someone should have pointed out that the dates overlapped.",
+          "fr": "Quelqu'un aurait dû signaler que les dates se chevauchaient."
+        }
+      ],
+      "seeAlso": ["u138", "u137", "u144"]
+    },
+
+    "u140": {
+      "image": "On, ça continue ou ça s'allume. Off, ça s'arrête, ça s'éteint, ça se détache.",
+      "rule": "go on, keep on, get on with, put on — turn off, put off, call off, take off, switch off.",
+      "contrast": {
+        "left": "put off the meeting",
+        "right": "put on a jumper",
+        "note": "Reporter — ou enfiler. Deux particules opposées sur le même verbe, et rien de commun entre les deux sens."
+      },
+      "trap": {
+        "wrong": "Can you close the light when you leave?",
+        "right": "Can you turn off the light when you leave?",
+        "why": "« Fermer la lumière » est un calque courant chez les francophones. En anglais on ne ferme ni la lumière ni la radio : on les éteint, avec turn off ou switch off."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "They called off the fireworks because of the wind.",
+          "fr": "Ils ont annulé le feu d'artifice à cause du vent."
+        },
+        {
+          "register": "work",
+          "en": "We've put off the migration twice, let's not do it again.",
+          "fr": "On a reporté la migration deux fois, ne recommençons pas."
+        }
+      ],
+      "seeAlso": ["u141", "u137", "u142"]
+    },
+
+    "u141": {
+      "image": "Off, c'est aussi le départ — et pour le lait, c'est la fin.",
+      "rule": "set off = partir. be off = s'en aller. go off = sonner, ou tourner en parlant d'un aliment.",
+      "contrast": {
+        "left": "The alarm went off.",
+        "right": "The milk has gone off.",
+        "note": "Une sonnerie qui se déclenche — ou du lait devenu imbuvable. Le même verbe, selon ce dont on parle."
+      },
+      "trap": {
+        "wrong": "The milk is bad, don't drink it.",
+        "right": "The milk has gone off, don't drink it.",
+        "why": "« Le lait est mauvais » se traduit littéralement et reste compréhensible, mais personne ne le dit ainsi. La formule courante est has gone off, avec la particule."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "We set off at six to beat the traffic on the M32.",
+          "fr": "On est partis à six heures pour éviter les bouchons sur la M32."
+        },
+        {
+          "register": "work",
+          "en": "The pager went off twice before anyone was awake.",
+          "fr": "Le bipeur a sonné deux fois avant que quiconque soit réveillé."
+        }
+      ],
+      "seeAlso": ["u140", "u145", "u137"]
+    },
+
+    "u142": {
+      "image": "Up, ça monte ou ça termine. Down, ça baisse, ça s'écrit, ça tombe en panne.",
+      "rule": "put up with, give up, look up, cheer up — write down, turn down, break down, calm down, let down.",
+      "contrast": {
+        "left": "turn down the offer",
+        "right": "turn up the volume",
+        "note": "Refuser — ou augmenter. Down refuse et baisse, up accepte et monte, sur le même verbe."
+      },
+      "trap": {
+        "wrong": "Can you note the address for me?",
+        "right": "Can you write the address down for me?",
+        "why": "« Noter » se traduit spontanément par note, qui existe mais sonne formel et administratif. La formule de tous les jours est write down, avec le complément au milieu."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "The heating broke down in February, of course.",
+          "fr": "Le chauffage est tombé en panne en février, évidemment."
+        },
+        {
+          "register": "work",
+          "en": "I've had to put up with that flaky test for a year.",
+          "fr": "J'ai dû supporter ce test instable pendant un an."
+        }
+      ],
+      "seeAlso": ["u143", "u144", "u137"]
+    },
+
+    "u143": {
+      "image": "Up ferme l'action : jusqu'au bout, jusqu'à épuisement, jusqu'à ce qu'il n'en reste rien.",
+      "rule": "eat up, use up, drink up, fill up, wash up, do up, save up, tidy up. Up dit que c'est mené à son terme.",
+      "contrast": {
+        "left": "eat your dinner",
+        "right": "eat up your dinner",
+        "note": "Mange — ou finis ton assiette. Up ajoute l'idée qu'il ne doit rien rester."
+      },
+      "trap": {
+        "wrong": "Speak louder, I can't hear you at the back.",
+        "right": "Speak up, I can't hear you at the back.",
+        "why": "« Parle plus fort » se traduit mot à mot et reste correct, mais ce n'est pas ce qu'on dit. Speak up est la formule courante, et elle s'entend dans toutes les salles de réunion."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "They've done up the whole terrace and doubled the rents.",
+          "fr": "Ils ont retapé toute la rangée de maisons et doublé les loyers."
+        },
+        {
+          "register": "work",
+          "en": "We used up the entire quota testing a feature nobody shipped.",
+          "fr": "On a épuisé tout le quota en testant une fonctionnalité jamais livrée."
+        }
+      ],
+      "seeAlso": ["u144", "u142", "u138"]
+    },
+
+    "u144": {
+      "image": "Up dit aussi l'apparition : quelque chose surgit, quelqu'un se présente, un sujet remonte.",
+      "rule": "come up, turn up, show up, bring up, make up, set up, catch up, grow up.",
+      "contrast": {
+        "left": "make up a story",
+        "right": "make up for lost time",
+        "note": "Inventer — ou compenser. La préposition qui suit change tout le sens du phrasal verb."
+      },
+      "trap": {
+        "wrong": "Something arrived and I couldn't come.",
+        "right": "Something came up and I couldn't come.",
+        "why": "« Un imprévu est arrivé » appelle arrive, qui en anglais décrit une arrivée physique quelque part. Pour un imprévu, c'est came up — et c'est l'excuse standard, à l'oral comme par écrit."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "Half the people who said yes never turned up.",
+          "fr": "La moitié des gens qui avaient dit oui ne sont jamais venus."
+        },
+        {
+          "register": "work",
+          "en": "It came up in the retro, then nobody wrote it down.",
+          "fr": "Ça a été soulevé en rétro, puis personne ne l'a noté."
+        }
+      ],
+      "seeAlso": ["u143", "u142", "u145"]
+    },
+
+    "u145": {
+      "image": "Away, on s'éloigne ou on range. Back, on revient ou on rend ce qu'on avait pris.",
+      "rule": "go away, put away, throw away, give away, get away with — come back, give back, call back, pay back, look back.",
+      "contrast": {
+        "left": "throw it away",
+        "right": "give it back",
+        "note": "S'en débarrasser — ou le rendre à celui qui l'a prêté. Away éloigne pour de bon, back referme la boucle."
+      },
+      "trap": {
+        "wrong": "Can you return me the book on Monday?",
+        "right": "Can you give me the book back on Monday?",
+        "why": "Le français « rendre » se traduit par return, qui existe mais sonne administratif. La formule de tous les jours est give back, en deux morceaux, avec le complément glissé au milieu."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "Put the chairs away before the rain comes in off the water.",
+          "fr": "Range les chaises avant que la pluie arrive de la mer."
+        },
+        {
+          "register": "work",
+          "en": "I'll call you back once I've read the whole thread.",
+          "fr": "Je te rappelle une fois que j'aurai lu tout le fil."
+        }
+      ],
+      "seeAlso": ["u144", "u142", "u137"]
+    }
+  }
+}
