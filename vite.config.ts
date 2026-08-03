@@ -65,9 +65,21 @@ export default defineConfig({
         runtimeCaching: [
           {
             urlPattern: ({ url, sameOrigin }) => sameOrigin && url.pathname.includes('/packs/'),
-            handler: 'StaleWhileRevalidate',
+            // `StaleWhileRevalidate` rendait toujours la copie en cache et
+            // rafraîchissait pour la fois d'après. C'est le bon compromis pour
+            // une image ; c'en est un mauvais pour le contenu enseigné : cent
+            // unités publiées un lundi n'apparaissaient qu'au deuxième
+            // lancement, et sur iOS une PWA revenue au premier plan ne relance
+            // rien — il n'y avait donc pas de deuxième lancement.
+            //
+            // `NetworkFirst` avec trois secondes de patience inverse la règle :
+            // en ligne on voit le contenu du jour, hors ligne on retombe sur le
+            // cache sans attendre. Un pack inchangé revient en 304 sans corps,
+            // donc le coût réel est un aller-retour, pas 700 ko.
+            handler: 'NetworkFirst',
             options: {
               cacheName: 'carnet-packs',
+              networkTimeoutSeconds: 3,
               expiration: { maxEntries: 24, maxAgeSeconds: 60 * 60 * 24 * 365 },
               cacheableResponse: { statuses: [0, 200] },
             },

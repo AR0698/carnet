@@ -1,6 +1,6 @@
 import './ui/app.css';
 
-import { carnetOf, loadCarnets, refreshVocabCarnet } from './carnets';
+import { carnetOf, loadCarnets, refreshStaticCarnets, refreshVocabCarnet } from './carnets';
 import { buildSession } from './engine/session';
 import { PackValidationError } from './packs';
 import { initInstallPrompt } from './pwa/install';
@@ -94,6 +94,24 @@ async function boot(): Promise<void> {
     // doit apparaître sans attendre. Ailleurs, on ne dérange pas.
     onServiceWorkerChange(() => {
       if (screen === 'home') void nav.home();
+    });
+
+    // Le contenu, lui, se rafraîchit au retour au premier plan.
+    //
+    // Une PWA installée sur iOS n'est pas relancée quand on y revient : le
+    // processus est gardé en vie et `boot()` ne rejoue pas. Sans ce
+    // rattrapage, un carnet enrichi entre-temps pouvait rester invisible
+    // jusqu'à ce que le système décide de tuer l'application — c'est-à-dire
+    // des jours, sans que rien ne l'explique.
+    //
+    // Seulement depuis l'accueil, et seulement si quelque chose a changé :
+    // recharger un pack au milieu d'une session déplacerait les cartes sous
+    // les doigts de l'apprenante.
+    document.addEventListener('visibilitychange', () => {
+      if (document.visibilityState !== 'visible' || screen !== 'home') return;
+      void refreshStaticCarnets(ctx.carnets).then((changed) => {
+        if (changed && screen === 'home') void nav.home();
+      });
     });
 
     await nav.home();

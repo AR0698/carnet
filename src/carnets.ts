@@ -133,6 +133,51 @@ export async function loadCarnets(): Promise<CarnetsLoad> {
   return { carnets, failures };
 }
 
+/**
+ * Signature d'un pack : ce qui change quand son contenu change.
+ *
+ * La version seule ne suffit pas — on oublie de l'incrémenter, et le jour où
+ * on l'oublie est précisément celui où l'on a ajouté cent unités. Le compte
+ * d'items et de notions rattrape l'oubli sans rien coûter.
+ */
+const signature = (pack: ContentPack): string =>
+  `${pack.meta.version}:${pack.topics.length}:${pack.items.length}`;
+
+/**
+ * Relit les packs téléchargés et réaligne les cartes.
+ *
+ * Pourquoi ça existe : `loadCarnets()` n'est appelé qu'au démarrage, et sur
+ * iOS une PWA revenue au premier plan ne redémarre pas — le processus est
+ * gardé en vie, la page n'est pas rejouée. Un carnet enrichi entre-temps
+ * pouvait donc rester invisible des jours durant, sans que rien ne le signale.
+ *
+ * Rend `true` si quelque chose a bougé, pour que l'appelant ne redessine que
+ * dans ce cas : redessiner l'accueil à chaque retour au premier plan ferait
+ * clignoter un écran qui, neuf fois sur dix, n'a pas changé.
+ *
+ * Une lecture qui échoue est sans conséquence : on garde ce qu'on a. C'est le
+ * cas normal hors connexion, et il ne mérite pas d'être signalé.
+ */
+export async function refreshStaticCarnets(carnets: Carnet[]): Promise<boolean> {
+  const results = await Promise.all(
+    carnets
+      .filter((c) => !c.personal)
+      .map(async (carnet) => {
+        try {
+          const pack = await loadPack(carnet.id);
+          if (signature(pack) === signature(carnet.pack)) return false;
+          carnet.pack = pack;
+          await syncPackCards(pack, { prune: true });
+          console.info(`[carnet] ${carnet.id} rafraîchi → ${signature(pack)}`);
+          return true;
+        } catch {
+          return false;
+        }
+      }),
+  );
+  return results.some(Boolean);
+}
+
 /** Recharge le seul carnet personnel — après un ajout ou une suppression de mot. */
 export async function refreshVocabCarnet(carnets: Carnet[]): Promise<void> {
   const carnet = carnets.find((c) => c.personal);

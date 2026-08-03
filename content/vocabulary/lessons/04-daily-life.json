@@ -1,0 +1,402 @@
+{
+  "lessons": {
+    "w016": {
+      "image": "Une journée britannique se raconte en verbes courts à particule. Aucun n’est difficile, aucun ne se devine, et ce sont eux qu’on entend toute la journée.",
+      "rule": "`nip out`, `pop round`, `get changed` : le verbe dit l’action, la particule dit la direction et la brièveté. Sortir deux minutes n’est pas sortir.",
+      "scene": {
+        "where": "Un samedi ordinaire, de huit heures à midi",
+        "text": "I had a lie-in for once, then nipped out for milk because there was none. Someone put the kettle on before I was back through the door. She said she would pop round in the afternoon, which in this country means any time between two and six, and nobody would dream of asking which.",
+        "gloss": [
+          { "en": "to have a lie-in", "fr": "faire la grasse matinée" },
+          { "en": "to nip out", "fr": "sortir deux minutes" },
+          { "en": "to put the kettle on", "fr": "mettre l’eau à chauffer" },
+          { "en": "to pop round", "fr": "passer chez quelqu’un" }
+        ]
+      },
+      "trap": {
+        "wrong": "I will pass at your house this afternoon.",
+        "right": "I will pop round this afternoon.",
+        "why": "« Passer chez quelqu’un » ne se traduit pas par « pass ». Le verbe est « pop round », « pop in », ou « come over »."
+      },
+      "examples": [
+        { "register": "bristol", "en": "He nipped out for a paper and came back two hours later with a chair.", "fr": "Il est sorti chercher un journal et revenu deux heures après avec une chaise." },
+        { "register": "work", "en": "Someone always puts the kettle on before a difficult conversation.", "fr": "Quelqu’un met toujours l’eau à chauffer avant une conversation difficile." }
+      ],
+      "seeAlso": ["w079", "w018"]
+    },
+    "w017": {
+      "image": "Une rue anglaise est une seule maison coupée en dix. C’est pour cela que le vocabulaire du logement commence par la façon dont les murs se touchent.",
+      "rule": "Le type d’habitation se dit par le mur mitoyen : `terraced` (des deux côtés), `semi-detached` (d’un seul), `detached` (d’aucun). Le prix suit exactement cet ordre.",
+      "scale": {
+        "label": "Du plus mitoyen au plus isolé",
+        "steps": [
+          { "en": "a terraced house", "fr": "une maison mitoyenne" },
+          { "en": "a semi-detached house", "fr": "une maison jumelée" },
+          { "en": "a detached house", "fr": "une maison individuelle" }
+        ]
+      },
+      "scene": {
+        "where": "Une visite, avec un agent qui parle vite",
+        "text": "The estate agent used three words I did not know in the first minute. The landlord wants six weeks up front and the tenancy agreement runs a year. There is damp in one corner that he described as seasonal. The garden is four metres long and, in this city, that is a garden.",
+        "gloss": [
+          { "en": "an estate agent", "fr": "un agent immobilier" },
+          { "en": "a landlord", "fr": "un propriétaire bailleur" },
+          { "en": "a tenancy agreement", "fr": "un bail" },
+          { "en": "damp", "fr": "l’humidité" }
+        ]
+      },
+      "trap": {
+        "wrong": "We are renting a nice apartment near the centre.",
+        "right": "We are renting a nice flat near the centre.",
+        "why": "« Apartment » est américain, ou alors très haut de gamme. Le mot de tous les jours au Royaume-Uni est « flat », et il n’a rien de modeste."
+      },
+      "examples": [
+        { "register": "bristol", "en": "Most of Southville is terraced houses built for the tobacco workers.", "fr": "Southville est surtout des maisons mitoyennes bâties pour les ouvriers du tabac." },
+        { "register": "work", "en": "Half the team rent, and the other half talk about mortgages.", "fr": "La moitié de l’équipe est locataire, l’autre moitié parle de prêts immobiliers." }
+      ],
+      "seeAlso": ["w018", "w019"]
+    },
+    "w018": {
+      "image": "Une cuisine anglaise se décrit avec six objets, et cinq d’entre eux n’ont pas le mot qu’on attend.",
+      "rule": "Les objets domestiques sont le domaine où l’anglais britannique et l’américain divergent le plus : `tap` et non `faucet`, `cupboard` et non `closet`, `hoover` et non `vacuum`.",
+      "scene": {
+        "where": "Premier soir dans un logement meublé",
+        "text": "The mugs are in the cupboard above the sink, the hoover is under the stairs with the ironing board, and the bin goes out on Tuesday night. Nobody explains this; you learn it by getting it wrong once. The kettle takes up half the worktop and that is not considered a problem by anyone.",
+        "gloss": [
+          { "en": "a cupboard", "fr": "un placard" },
+          { "en": "a hoover", "fr": "un aspirateur" },
+          { "en": "a bin", "fr": "une poubelle" },
+          { "en": "a kettle", "fr": "une bouilloire" }
+        ]
+      },
+      "contrast": {
+        "left": "a tap",
+        "right": "a faucet",
+        "note": "Le même robinet, deux pays. En Grande-Bretagne c’est « tap », toujours ; « faucet » se comprend et sonne américain à chaque fois."
+      },
+      "trap": {
+        "wrong": "The water from the faucet is very cold.",
+        "right": "The water from the tap is very cold.",
+        "why": "L’anglais scolaire enseigne souvent la variante américaine. Ici, « tap water » est même une expression figée qu’on entend au restaurant."
+      },
+      "examples": [
+        { "register": "bristol", "en": "The duvet gets swapped for the thick one in October, and that is autumn.", "fr": "On change la couette pour l’épaisse en octobre, et c’est ça l’automne." },
+        { "register": "work", "en": "There is one kettle for forty people and a rota nobody follows.", "fr": "Il y a une bouilloire pour quarante personnes et un tour de rôle que personne ne suit." }
+      ],
+      "seeAlso": ["w017", "w025"]
+    },
+    "w019": {
+      "image": "L’argent se dit familièrement plus souvent qu’officiellement : `quid` au comptoir, `pounds` sur la fiche de paie.",
+      "rule": "`a quid` est invariable — « five quid », jamais « five quids ». C’est le seul mot d’argent qu’on entend vraiment tous les jours.",
+      "scene": {
+        "where": "Un vendredi soir, en fin de mois",
+        "text": "It came to about twelve quid each, which everyone agreed was a rip-off, and everyone paid. Two people were skint until Friday and said so without any embarrassment at all. We chipped in a fiver each for the leaving present and nobody checked who had not.",
+        "gloss": [
+          { "en": "a quid", "fr": "une livre (familier)" },
+          { "en": "a rip-off", "fr": "une arnaque" },
+          { "en": "to be skint", "fr": "être fauché" },
+          { "en": "to chip in", "fr": "participer à la cagnotte" }
+        ]
+      },
+      "trap": {
+        "wrong": "It cost me twenty quids.",
+        "right": "It cost me twenty quid.",
+        "why": "« Quid » ne prend jamais de s, comme « stone » pour le poids. La marque du pluriel est portée par le nombre, et par lui seul."
+      },
+      "examples": [
+        { "register": "bristol", "en": "A pint here is six quid and people still say it is cheap.", "fr": "Une pinte ici coûte six livres et les gens trouvent encore que c’est donné." },
+        { "register": "work", "en": "Check your payslip in month one — the tax code is wrong more often than not.", "fr": "Vérifie ta fiche de paie le premier mois : le code d’imposition est faux plus souvent qu’à son tour." }
+      ],
+      "seeAlso": ["w023", "w040"]
+    },
+    "w020": {
+      "image": "Le mot `surgery` ne veut pas dire chirurgie. C’est le cabinet du médecin, et c’est le premier endroit où l’on va en arrivant.",
+      "rule": "Le parcours de santé britannique tient en quatre mots : `surgery` (le lieu) → `appointment` (le rendez-vous) → `prescription` (l’ordonnance) → `chemist` (la pharmacie).",
+      "scene": {
+        "where": "Le premier appel au cabinet, à huit heures pile",
+        "text": "The line was engaged for twenty minutes and then there was an appointment on Thursday. She wrote a prescription, told me the chemist on the corner stays open late, and asked twice whether I felt sick — which here means whether I wanted to be sick, not whether I was unwell. That distinction cost me a full minute of confusion.",
+        "gloss": [
+          { "en": "a surgery", "fr": "un cabinet médical" },
+          { "en": "an appointment", "fr": "un rendez-vous" },
+          { "en": "a prescription", "fr": "une ordonnance" },
+          { "en": "a chemist", "fr": "une pharmacie" }
+        ]
+      },
+      "contrast": {
+        "left": "I feel sick.",
+        "right": "I feel ill.",
+        "note": "« Sick » en anglais britannique veut dire nauséeux, sur le point de vomir. Pour dire qu’on est malade en général, c’est « ill »."
+      },
+      "trap": {
+        "wrong": "I have a surgery next week for my back.",
+        "right": "I have an operation next week for my back.",
+        "why": "« Surgery » désigne le cabinet du généraliste, et par extension la permanence d’un élu. L’intervention chirurgicale, c’est « an operation »."
+      },
+      "examples": [
+        { "register": "bristol", "en": "Register with a surgery in week one, not when you need it.", "fr": "Inscris-toi chez un médecin la première semaine, pas quand tu en auras besoin." },
+        { "register": "work", "en": "She has been off work since Easter and nobody has said why.", "fr": "Elle est en arrêt depuis Pâques et personne n’a dit pourquoi." }
+      ],
+      "seeAlso": ["w009"]
+    },
+    "w021": {
+      "image": "Un pull s’appelle `jumper`, un pantalon `trousers`, et `pants` veut dire tout autre chose. C’est le paragraphe qui évite un malentendu par semaine.",
+      "rule": "`pants` = sous-vêtements en anglais britannique. `trousers` = le pantalon. La confusion est fréquente, immédiate, et toujours drôle pour l’autre.",
+      "scene": {
+        "where": "Faire sa valise pour un premier hiver",
+        "text": "Take a proper coat, one jumper more than you think, and something waterproof for your feet. Nobody needs a suit. Half the office is in trainers and the other half wishes it was. Gloves you will lose, so take two pairs and accept it now.",
+        "gloss": [
+          { "en": "a jumper", "fr": "un pull" },
+          { "en": "a coat", "fr": "un manteau" },
+          { "en": "trainers", "fr": "des baskets" },
+          { "en": "gloves", "fr": "des gants" }
+        ]
+      },
+      "contrast": {
+        "left": "trousers",
+        "right": "pants",
+        "note": "En Grande-Bretagne, « pants » est le sous-vêtement. Dire « I like your pants » à un collègue produit un silence bref et un souvenir durable."
+      },
+      "trap": {
+        "wrong": "I bought a new pull this weekend.",
+        "right": "I bought a new jumper this weekend.",
+        "why": "« Pull » n’existe pas comme vêtement en anglais : c’est un faux anglicisme français. Le mot est « jumper », ou « sweater » aux États-Unis."
+      },
+      "examples": [
+        { "register": "bristol", "en": "You will want wellies by the second weekend, whatever you tell yourself.", "fr": "Tu voudras des bottes en caoutchouc dès le deuxième week-end, quoi que tu en dises." },
+        { "register": "work", "en": "The dress code is a jumper with no holes in it.", "fr": "Le code vestimentaire, c’est un pull sans trous." }
+      ],
+      "seeAlso": ["w022", "w010"]
+    },
+    "w022": {
+      "image": "Deux verbes que le français confond : ça va (la taille) et ça te va (l’allure). L’anglais en fait deux mots, et les vendeurs les utilisent tous les deux.",
+      "rule": "`it fits` parle de la taille · `it suits you` parle de l’effet. Une chemise peut aller sans vous aller.",
+      "scene": {
+        "where": "Une cabine d’essayage, un samedi de janvier",
+        "text": "The fitting room queue was longer than the till queue, which is how you know the sale is real. It was too tight at the shoulders and fine everywhere else. Twenty pounds is a bargain and I would have paid forty, which is exactly what they are counting on. Half of what I wear is second-hand anyway.",
+        "gloss": [
+          { "en": "a fitting room", "fr": "une cabine d’essayage" },
+          { "en": "it fits", "fr": "c’est à la bonne taille" },
+          { "en": "a bargain", "fr": "une bonne affaire" },
+          { "en": "second-hand", "fr": "d’occasion" }
+        ]
+      },
+      "contrast": {
+        "left": "It fits.",
+        "right": "It suits you.",
+        "note": "Le premier se vérifie au mètre, le second se juge à l’œil. On peut dire les deux dans la même phrase, et on le fait souvent."
+      },
+      "trap": {
+        "wrong": "This jacket is very smart — he is very smart too, he studied maths.",
+        "right": "This jacket is very smart. He is very clever, he studied maths.",
+        "why": "« Smart » en anglais britannique parle d’abord de l’élégance. Pour l’intelligence, on dit « clever » ou « bright »."
+      },
+      "examples": [
+        { "register": "bristol", "en": "The charity shops on Gloucester Road are half my wardrobe.", "fr": "Les friperies de Gloucester Road, c’est la moitié de ma garde-robe." },
+        { "register": "work", "en": "The invitation said smart, which nobody has ever been able to define.", "fr": "L’invitation disait tenue habillée, ce que personne n’a jamais su définir." }
+      ],
+      "seeAlso": ["w021", "w023"]
+    },
+    "w023": {
+      "image": "Un supermarché britannique se traverse avec quatre mots, et deux d’entre eux sont différents de l’américain qu’on a appris à l’école.",
+      "rule": "`trolley` et non `cart`, `till` et non `register`. Et le ticket de caisse est « a receipt », qui ne s’écrit ni ne se prononce comme « recipe ».",
+      "scene": {
+        "where": "Une fin d’après-midi, deux tills ouvertes sur douze",
+        "text": "You need a pound coin for the trolley in half the shops, which nobody tells you. Keep the receipt if there is any chance of bringing it back — they gave me a refund once without asking a single question, and that is normal here. The thing I wanted has been out of stock since before Christmas.",
+        "gloss": [
+          { "en": "a trolley", "fr": "un caddie" },
+          { "en": "a receipt", "fr": "un ticket de caisse" },
+          { "en": "a refund", "fr": "un remboursement" },
+          { "en": "out of stock", "fr": "en rupture" }
+        ]
+      },
+      "trap": {
+        "wrong": "Can I have the recipe, please? I might bring it back.",
+        "right": "Can I have the receipt, please? I might bring it back.",
+        "why": "Deux mots proches à l’écrit et très différents à l’oreille : « receipt » se dit ri-SEET, le p est muet ; « recipe » se dit RESS-i-pi."
+      },
+      "examples": [
+        { "register": "bristol", "en": "The corner shop is twice the price and open when nothing else is.", "fr": "La supérette du coin est deux fois plus chère et ouverte quand tout est fermé." },
+        { "register": "work", "en": "Keep every receipt or finance will send the whole claim back.", "fr": "Garde chaque ticket, sinon la compta te renvoie toute la note de frais." }
+      ],
+      "seeAlso": ["w019", "w022"]
+    },
+    "w024": {
+      "image": "Un pain se dit `a loaf` et non `a bread`. C’est le premier mot indénombrable qu’on rencontre, et c’est en boulangerie qu’il tombe.",
+      "rule": "Beaucoup d’aliments ne se comptent pas : `bread`, `cheese`, `fish`. Pour en compter, il faut une unité — `a loaf of bread`, `a slice of cheese`.",
+      "scene": {
+        "where": "Le samedi, entre le marché et la cuisine",
+        "text": "Anything with an onion in it is already halfway to being dinner. There was one mushroom left in the bag and we both wanted it. In June the first strawberry is worth the eleven months of waiting, and by August nobody looks at them. Everything else came out of a jacket potato, which is the cheapest hot lunch in England and the least photogenic.",
+        "gloss": [
+          { "en": "an onion", "fr": "un oignon" },
+          { "en": "a mushroom", "fr": "un champignon" },
+          { "en": "a strawberry", "fr": "une fraise" },
+          { "en": "a jacket potato", "fr": "une pomme de terre au four" }
+        ]
+      },
+      "trap": {
+        "wrong": "Can I have a bread, please?",
+        "right": "Can I have a loaf, please?",
+        "why": "« Bread » ne se compte pas. Pour un pain entier c’est « a loaf », pour une tranche « a slice », pour un petit pain « a roll »."
+      },
+      "examples": [
+        { "register": "bristol", "en": "Proper cheddar comes from about twenty miles down the road.", "fr": "Le vrai cheddar vient d’une trentaine de kilomètres d’ici." },
+        { "register": "work", "en": "There is a jacket potato place near the office and a queue at half twelve.", "fr": "Il y a un stand de pommes de terre au four près du bureau, et la queue à midi et demi." }
+      ],
+      "seeAlso": ["w025", "w086"]
+    },
+    "w025": {
+      "image": "Une recette anglaise donne des verbes que le français rend par des périphrases : `to simmer`, `to grate`, `to whisk`. Un verbe pour un geste.",
+      "rule": "L’ustensile change avec la forme : `saucepan` a des bords hauts, `frying pan` est plate. Le français dit casserole et poêle ; l’anglais aussi, et pas au même endroit.",
+      "scene": {
+        "where": "Un dimanche, quatre personnes dans une cuisine trop petite",
+        "text": "Somebody has to grate the cheese and somebody has to watch the sauce. Leave it to simmer with the lid off and do not touch it for twenty minutes. The plastic chopping board is for the chicken and the wooden one for everything else — that rule is not negotiable in any kitchen in this country. Sunday leftovers become Monday lunch, and that is the point of cooking on a Sunday at all.",
+        "gloss": [
+          { "en": "to grate", "fr": "râper" },
+          { "en": "to simmer", "fr": "laisser frémir" },
+          { "en": "a chopping board", "fr": "une planche à découper" },
+          { "en": "leftovers", "fr": "les restes" }
+        ]
+      },
+      "contrast": {
+        "left": "to boil",
+        "right": "to simmer",
+        "note": "« Boil », ça bout à gros bouillons. « Simmer », c’est juste en dessous : quelques bulles paresseuses. La différence décide de la texture d’un plat."
+      },
+      "trap": {
+        "wrong": "Give me the recipe of this dish, it is on the receipt.",
+        "right": "Give me the recipe for this dish.",
+        "why": "« Recipe » prend « for », pas « of ». Et l’inverser avec « receipt » est la faute d’orthographe la plus fréquente de toute cette section."
+      },
+      "examples": [
+        { "register": "bristol", "en": "The good frying pan is the one nobody is allowed to scrub.", "fr": "La bonne poêle, c’est celle que personne n’a le droit de récurer." },
+        { "register": "work", "en": "Somebody left leftovers in the fridge in March and it is still there.", "fr": "Quelqu’un a laissé des restes au frigo en mars et ils y sont encore." }
+      ],
+      "seeAlso": ["w024", "w018"]
+    },
+    "w026": {
+      "image": "Une ville anglaise se lit à ses meubles : le trottoir, le passage clouté, la boîte aux lettres rouge, le banc avec un nom dessus.",
+      "rule": "Le mobilier urbain porte des mots britanniques distincts de l’américain : `pavement` et non `sidewalk`, `zebra crossing` et non `crosswalk`.",
+      "scene": {
+        "where": "Cinq minutes de marche jusqu’au bureau",
+        "text": "There is not enough pavement for two people and a pushchair, so somebody steps into the road every time. Cars actually stop at the zebra crossing, which takes a month to get used to. There is a postbox on the corner emptied at nine, a bench with a name on it, and roadworks that were meant to last three weeks in April.",
+        "gloss": [
+          { "en": "a pavement", "fr": "un trottoir" },
+          { "en": "a zebra crossing", "fr": "un passage piéton" },
+          { "en": "a postbox", "fr": "une boîte aux lettres" },
+          { "en": "roadworks", "fr": "des travaux de voirie" }
+        ]
+      },
+      "trap": {
+        "wrong": "We walked on the sidewalk to the high street.",
+        "right": "We walked on the pavement to the high street.",
+        "why": "« Sidewalk » est américain. Et attention à l’inverse : « pavement » aux États-Unis désigne la chaussée, celle où roulent les voitures."
+      },
+      "examples": [
+        { "register": "bristol", "en": "You navigate this city by landmarks, never by street names.", "fr": "On se repère dans cette ville aux monuments, jamais aux noms de rue." },
+        { "register": "work", "en": "The nearest cash machine charges two pounds and everybody uses it.", "fr": "Le distributeur le plus proche prend deux livres et tout le monde s’en sert." }
+      ],
+      "seeAlso": ["w029", "w027"]
+    },
+    "w027": {
+      "image": "La campagne anglaise est traversée par des chemins publics qui coupent à travers les fermes. Le vocabulaire suit : on parle de passage, pas de propriété.",
+      "rule": "`a footpath` traverse chez quelqu’un et reste public. `a lane` est une route étroite entre deux haies. Le droit de passage explique la moitié des panneaux.",
+      "scene": {
+        "where": "Une marche de deux heures, un dimanche de mars",
+        "text": "You get there down a lane too narrow for two cars, with hedges high enough to hide the weather. Then a public footpath cuts straight through a farmyard, past a barn that is four flats now, and out into a village with a pub, a church and no shop. Every gate you open, you close behind you. That is the one rule of the whole walk.",
+        "gloss": [
+          { "en": "a lane", "fr": "un chemin, une petite route" },
+          { "en": "a footpath", "fr": "un sentier" },
+          { "en": "a barn", "fr": "une grange" },
+          { "en": "a gate", "fr": "une barrière" }
+        ]
+      },
+      "trap": {
+        "wrong": "It is a private property, we cannot pass.",
+        "right": "It is a public footpath, we can walk through.",
+        "why": "En Angleterre et au pays de Galles, un « public footpath » traverse légalement une propriété privée. Le réflexe français de faire demi-tour n’a pas lieu d’être."
+      },
+      "examples": [
+        { "register": "bristol", "en": "Twenty minutes out of the city and the lanes have grass down the middle.", "fr": "À vingt minutes de la ville, les chemins ont de l’herbe au milieu." },
+        { "register": "work", "en": "Half the team walks somewhere muddy at the weekend and talks about it on Monday.", "fr": "La moitié de l’équipe marche dans la boue le week-end et en parle le lundi." }
+      ],
+      "seeAlso": ["w006", "w008"]
+    },
+    "w028": {
+      "image": "Un billet de train britannique se demande en trois mots : `single` ou `return`, et pour quand. Tout le reste du prix se joue là-dessus.",
+      "rule": "`a single` = aller simple · `a return` = aller-retour. Le mot « ticket » est facultatif : « a single to Bath, please » suffit au guichet.",
+      "scene": {
+        "where": "Au guichet de Temple Meads, deux minutes avant le départ",
+        "text": "One single, please — and then it turns out a return costs almost the same, which makes no sense and is entirely normal. You change at Parkway and you get eight minutes, which is plenty unless they move the platform at the last moment, which they will. If you do it daily, a season ticket stops being a luxury by about week three.",
+        "gloss": [
+          { "en": "a single", "fr": "un aller simple" },
+          { "en": "a return ticket", "fr": "un aller-retour" },
+          { "en": "to change at", "fr": "changer à" },
+          { "en": "a platform", "fr": "un quai" }
+        ]
+      },
+      "contrast": {
+        "left": "a coach",
+        "right": "a bus",
+        "note": "« Coach » est l’autocar longue distance, avec des sièges inclinables et des toilettes. « Bus » est urbain. Se tromper fait sourire, sans plus."
+      },
+      "trap": {
+        "wrong": "I take the bus to London, it lasts three hours.",
+        "right": "I get the coach to London, it takes three hours.",
+        "why": "Deux fautes en une : le trajet longue distance est « a coach », et une durée « takes », elle ne « lasts » pas."
+      },
+      "examples": [
+        { "register": "bristol", "en": "The little ferry across the harbour costs less than the bus and takes longer.", "fr": "Le petit bac qui traverse le port coûte moins cher que le bus et met plus longtemps." },
+        { "register": "work", "en": "Book six weeks out and the same journey is a third of the price.", "fr": "Réserve six semaines à l’avance et le même trajet coûte trois fois moins." }
+      ],
+      "seeAlso": ["w029", "w046"]
+    },
+    "w029": {
+      "image": "Le rond-point est une invention britannique, et le vocabulaire de la route l’est aussi. `Give way` est peint sur le sol, `yield` ne l’est jamais.",
+      "rule": "Les panneaux britanniques emploient un anglais que l’anglais scolaire n’enseigne pas : `give way`, `lay-by`, `dual carriageway`.",
+      "scene": {
+        "where": "Les premiers kilomètres au volant, du mauvais côté",
+        "text": "Second exit, left lane, and do not think about it — that is the sentence your passenger will repeat all week at every roundabout. It is a dual carriageway for four miles and then, without warning, it is not. If you need to look at the map, pull into a lay-by rather than stopping where you are.",
+        "gloss": [
+          { "en": "a roundabout", "fr": "un rond-point" },
+          { "en": "a dual carriageway", "fr": "une deux fois deux voies" },
+          { "en": "a lay-by", "fr": "une aire d’arrêt" },
+          { "en": "to give way", "fr": "céder le passage" }
+        ]
+      },
+      "trap": {
+        "wrong": "The sign says yield, so I stopped.",
+        "right": "The sign says give way, so I stopped.",
+        "why": "« Yield » est américain et n’est peint sur aucune route britannique. Le panneau dit « GIVE WAY », en majuscules, sur le bitume."
+      },
+      "examples": [
+        { "register": "bristol", "en": "The traffic lights at the top of the hill are out again.", "fr": "Les feux en haut de la côte sont encore en panne." },
+        { "register": "work", "en": "We sat in a traffic jam for an hour and moved a mile.", "fr": "On est restés une heure dans les bouchons pour faire un kilomètre et demi." }
+      ],
+      "seeAlso": ["w026", "w030"]
+    },
+    "w030": {
+      "image": "Les panneaux anglais sont écrits à l’impératif et polis quand même. `Mind the gap` prévient sans jamais interdire.",
+      "rule": "`mind` en panneau veut dire « fais attention à », jamais « penser ». C’est le verbe des avertissements, du métro aux marches d’escalier.",
+      "scene": {
+        "where": "Une gare, un parc, un couloir d’immeuble",
+        "text": "Mind the gap is the most famous sentence in the country and nobody hears it any more. Keep off the grass is on a sign in a park where everyone sits on the grass. The lift has said out of order since we moved in, and there was a wet paint sign that I touched anyway, because everybody does.",
+        "gloss": [
+          { "en": "mind the gap", "fr": "attention à la marche" },
+          { "en": "keep off the grass", "fr": "pelouse interdite" },
+          { "en": "out of order", "fr": "hors service" },
+          { "en": "wet paint", "fr": "peinture fraîche" }
+        ]
+      },
+      "trap": {
+        "wrong": "Do you mind the gap? — meaning: do you think about it?",
+        "right": "Mind the gap. — meaning: watch out for it.",
+        "why": "« Mind » a deux vies : « do you mind? » demande si ça dérange, « mind the step » avertit. Sur un panneau, c’est toujours l’avertissement."
+      },
+      "examples": [
+        { "register": "bristol", "en": "There is a no through road sign that walkers ignore entirely.", "fr": "Il y a un panneau voie sans issue que les marcheurs ignorent complètement." },
+        { "register": "work", "en": "The lift has been out of order for so long it has a nickname.", "fr": "L’ascenseur est hors service depuis si longtemps qu’il a un surnom." }
+      ],
+      "seeAlso": ["w029", "w066"]
+    }
+  }
+}

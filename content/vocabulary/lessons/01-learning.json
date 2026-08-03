@@ -1,0 +1,114 @@
+{
+  "lessons": {
+    "w001": {
+      "image": "Un mot croisé trois fois dans la semaine finit par rester. Croisé une fois dans une liste, il repart avec la liste.",
+      "rule": "Découvrir un mot et le réviser sont deux gestes différents : le premier se fait au hasard des rencontres, le second se planifie.",
+      "scene": {
+        "where": "Premier mois à Bristol, dans le bus",
+        "text": "I read the free paper on the way in and there are always three or four words I have to look up. Most of them I forget by the evening. The ones that stay are the ones I pick up twice: once in the paper, once from someone at the coffee machine. That is the whole trick, and nobody told me until I had wasted a term memorising lists.",
+        "gloss": [
+          { "en": "to look something up", "fr": "chercher un mot" },
+          { "en": "to pick something up", "fr": "attraper au vol" },
+          { "en": "to memorise", "fr": "apprendre par cœur" }
+        ]
+      },
+      "contrast": {
+        "left": "I revised for the exam.",
+        "right": "I reviewed the contract.",
+        "note": "« Revise » en anglais britannique, c’est réviser un cours. « Review », c’est relire pour évaluer — un document, un film, une performance."
+      },
+      "trap": {
+        "wrong": "I have made good progresses.",
+        "right": "I have made good progress.",
+        "why": "« Progress » ne se compte pas en anglais : jamais de s. Et l’on en « fait » avec make, jamais avec do."
+      },
+      "examples": [
+        { "register": "bristol", "en": "I picked that one up in the queue at the market, not from a book.", "fr": "Celui-là, je l’ai attrapé dans la file au marché, pas dans un livre." },
+        { "register": "work", "en": "I look up every acronym they use and write it on a sticky note.", "fr": "Je cherche chaque sigle qu’ils emploient et je le note sur un post-it." }
+      ],
+      "seeAlso": ["w002", "w003"]
+    },
+    "w002": {
+      "image": "Un carnet rangé par thèmes est une carte ; rangé par ordre alphabétique, c’est un annuaire. On se souvient des cartes.",
+      "rule": "Une entrée utile porte trois choses : le mot, ce qu’il veut dire, et une phrase vraie où quelqu’un l’a réellement dit.",
+      "scene": {
+        "where": "Le soir, à table, avec le téléphone",
+        "text": "I jot things down all day and sort them out once a week. Anything without a real sentence next to it gets crossed out — a translation on its own never comes back when I need it. The rest goes under a heading like the kitchen or the doctor, because that is how I will need them: in a place, not in an alphabet.",
+        "gloss": [
+          { "en": "to jot something down", "fr": "noter rapidement" },
+          { "en": "to cross something out", "fr": "barrer" },
+          { "en": "a heading", "fr": "un intitulé" },
+          { "en": "a translation", "fr": "une traduction" }
+        ]
+      },
+      "trap": {
+        "wrong": "I noted it on my phone.",
+        "right": "I jotted it down on my phone.",
+        "why": "« To note » existe mais sonne administratif. Le geste rapide de tous les jours, c’est « jot down » — ou simplement « write down »."
+      },
+      "examples": [
+        { "register": "bristol", "en": "Half my notebook is words I heard in the pub and never said back.", "fr": "La moitié de mon carnet, ce sont des mots entendus au pub et jamais redits." },
+        { "register": "work", "en": "I keep track of the phrases my line manager repeats — those are the ones that matter.", "fr": "Je note les tournures que mon responsable répète : ce sont celles qui comptent." }
+      ],
+      "seeAlso": ["w001"]
+    },
+    "w003": {
+      "image": "Un dictionnaire donne le sens en trois secondes et l’usage en trois minutes. C’est la deuxième partie qu’on saute, et c’est celle qui sert.",
+      "rule": "La définition dit ce qu’un mot veut dire ; l’accent tonique, l’étiquette de registre et la phrase d’exemple disent si l’on peut le prononcer devant quelqu’un.",
+      "scene": {
+        "where": "Devant l’écran, en préparant une réunion",
+        "text": "The definition was fine and the example sentence was the useful bit: it showed the word doing a job. Underneath, in small letters, it said informal — which is exactly what I needed to know before saying it to a client. I checked the stress too, because putting it on the wrong syllable turns a normal word into a puzzle.",
+        "gloss": [
+          { "en": "a definition", "fr": "une définition" },
+          { "en": "an example sentence", "fr": "une phrase d’exemple" },
+          { "en": "informal", "fr": "familier" },
+          { "en": "stress", "fr": "l’accent tonique" }
+        ]
+      },
+      "contrast": {
+        "left": "tired, knackered",
+        "right": "generous, tight",
+        "note": "À gauche deux synonymes de registres opposés ; à droite un couple d’antonymes. Un dictionnaire donne les deux, et ce ne sont pas les mêmes renseignements."
+      },
+      "trap": {
+        "wrong": "How do you pronounce this word, with the accent?",
+        "right": "Where does the stress go in this word?",
+        "why": "« Accent » en anglais désigne la façon de parler d’une région. L’accent tonique d’un mot, c’est « stress »."
+      },
+      "examples": [
+        { "register": "bristol", "en": "The dictionary said informal, and the woman in the shop said it anyway.", "fr": "Le dictionnaire disait familier, et la dame du magasin l’a dit quand même." },
+        { "register": "work", "en": "Check the stress before you say it in the meeting, not after.", "fr": "Vérifie l’accent tonique avant de le dire en réunion, pas après." }
+      ],
+      "seeAlso": ["w004"]
+    },
+    "w004": {
+      "image": "Pour parler d’une langue il faut des mots à part, et ce sont ceux qu’on n’apprend jamais parce qu’ils ne servent qu’à ça.",
+      "rule": "`phrase` = un groupe de mots · `sentence` = la phrase entière · `idiom` = un groupe dont le sens ne se déduit pas · `collocation` = deux mots qui vont ensemble sans raison.",
+      "scene": {
+        "where": "Un cours du soir, deuxième semaine",
+        "text": "She wrote four things on the board and the room relaxed. An idiom is a phrase you cannot take apart. A collocation is two words that go together because they always have. A prefix goes on the front, a suffix on the end. None of it is difficult; it is just that nobody had ever named it, and unnamed things are hard to notice.",
+        "gloss": [
+          { "en": "an idiom", "fr": "une expression idiomatique" },
+          { "en": "a collocation", "fr": "un mot qui va avec un autre" },
+          { "en": "a prefix", "fr": "un préfixe" },
+          { "en": "a suffix", "fr": "un suffixe" }
+        ]
+      },
+      "contrast": {
+        "left": "a phrase",
+        "right": "a sentence",
+        "note": "Faux ami discret : « phrase » en anglais est un groupe de mots, pas la phrase française. La phrase complète, avec son verbe et son point, c’est « a sentence »."
+      },
+      "trap": {
+        "wrong": "Write a phrase with this word.",
+        "right": "Write a sentence with this word.",
+        "why": "Demander « a phrase », c’est demander un groupe de mots. Pour une phrase entière, il faut « a sentence »."
+      },
+      "examples": [
+        { "register": "bristol", "en": "Half of what people say down here is slang, and it changes street by street.", "fr": "La moitié de ce qu’on dit ici est de l’argot, et ça change d’une rue à l’autre." },
+        { "register": "work", "en": "That is an idiom, so do not translate it word for word in the deck.", "fr": "C’est une expression idiomatique : ne la traduis pas mot à mot dans la présentation." }
+      ],
+      "seeAlso": ["w003", "w070", "w074"]
+    }
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "lessons": {
+    "w009": {
+      "image": "Un corps ne se décrit pas, il se désigne : on montre l’endroit qui fait mal, et le mot arrive avec le doigt.",
+      "rule": "Les articulations anglaises sont des mots courts et sans parenté avec le français : `shoulder`, `elbow`, `wrist`, `knee`, `ankle`. Aucun ne s’invente.",
+      "scene": {
+        "where": "Chez le médecin, sans avoir révisé",
+        "text": "She asked me to point at it, which saved us both. It was the wrist, not the arm, and it had been getting worse since I went over on my bike. She asked whether I was still limping and whether I could stretch it above my head. Two words I did not have, and one gesture that did the job.",
+        "gloss": [
+          { "en": "a wrist", "fr": "un poignet" },
+          { "en": "to limp", "fr": "boiter" },
+          { "en": "to stretch", "fr": "s’étirer" }
+        ]
+      },
+      "contrast": {
+        "left": "to nod",
+        "right": "to shake your head",
+        "note": "Deux gestes opposés et deux verbes sans rapport. « Nod » dit oui, « shake your head » dit non — et le français n’a qu’un seul verbe pour les deux."
+      },
+      "trap": {
+        "wrong": "He made no with the head.",
+        "right": "He shook his head.",
+        "why": "Le français décrit le geste, l’anglais a un verbe pour lui. Et le possessif est obligatoire : « his head », jamais « the head »."
+      },
+      "examples": [
+        { "register": "bristol", "en": "Everyone goes over on an ankle on those cobbles at least once.", "fr": "Tout le monde se tord une cheville sur ces pavés au moins une fois." },
+        { "register": "work", "en": "He nodded through the whole call and disagreed by email an hour later.", "fr": "Il a hoché la tête pendant tout l’appel et a dit non par mail une heure après." }
+      ],
+      "seeAlso": ["w020"]
+    },
+    "w010": {
+      "image": "Décrire quelqu’un en anglais britannique, c’est choisir entre l’aimable et le neutre. Il n’y a presque rien entre les deux, et rien du tout en dessous.",
+      "rule": "L’âge se donne par dizaine (`in his forties`), la silhouette par un adjectif flatteur (`slim`, `well-built`), et l’on ne descend jamais en dessous de `plain`.",
+      "scene": {
+        "where": "Décrire quelqu’un qu’on doit reconnaître à la gare",
+        "text": "He is somewhere in his forties, tall, on the slim side, with wavy hair that goes everywhere in the rain. He will be the one who looks slightly scruffy and completely at ease. If you cannot find him, he will find you, because he is the sort of person who talks to strangers on platforms.",
+        "gloss": [
+          { "en": "in his forties", "fr": "la quarantaine" },
+          { "en": "slim", "fr": "mince" },
+          { "en": "wavy hair", "fr": "des cheveux ondulés" },
+          { "en": "scruffy", "fr": "négligé" }
+        ]
+      },
+      "contrast": {
+        "left": "slim",
+        "right": "thin",
+        "note": "Même silhouette, deux jugements. « Slim » est un compliment ; « thin » suggère qu’on s’inquiète. Le choix se fait sur l’intention, pas sur la taille."
+      },
+      "trap": {
+        "wrong": "She is sympathetic and very nice.",
+        "right": "She is friendly and very nice.",
+        "why": "« Sympathetic » veut dire compatissant, pas sympathique. Le faux ami est si régulier qu’il finit par passer inaperçu à l’oreille française."
+      },
+      "examples": [
+        { "register": "bristol", "en": "He is the one in the yellow coat, you cannot miss him.", "fr": "C’est celui au manteau jaune, tu ne peux pas le rater." },
+        { "register": "work", "en": "She is somewhere in her thirties and runs the whole programme.", "fr": "Elle a la trentaine et pilote tout le programme." }
+      ],
+      "seeAlso": ["w011", "w021"]
+    },
+    "w011": {
+      "image": "Les Britanniques décrivent un caractère par ce qu’il coûte aux autres : facile à vivre, ou fatigant.",
+      "rule": "Les adjectifs de caractère les plus employés sont des composés transparents — `easy-going`, `big-headed`, `down to earth` — et se comprennent en les démontant.",
+      "scene": {
+        "where": "Une bière après le travail, à propos d’un collègue",
+        "text": "He is stubborn, which is exactly why the migration finished. He is also completely down to earth, so nobody minds. The one people avoid is the other one — good at the job, and big-headed enough to say so in a room where three people did the work.",
+        "gloss": [
+          { "en": "stubborn", "fr": "têtu" },
+          { "en": "down to earth", "fr": "les pieds sur terre" },
+          { "en": "big-headed", "fr": "prétentieux" },
+          { "en": "easy-going", "fr": "facile à vivre" }
+        ]
+      },
+      "contrast": {
+        "left": "sensible",
+        "right": "sensitive",
+        "note": "« Sensible » veut dire raisonnable. « Sensitive » veut dire sensible au sens français. Deux mots, deux sens, et un piège qui ne pardonne pas en entretien."
+      },
+      "trap": {
+        "wrong": "He is very sensible, he cries at films.",
+        "right": "He is very sensitive, he cries at films.",
+        "why": "Le faux ami le plus coûteux de la liste : dire « sensible » d’un collègue, c’est louer son bon sens, pas sa délicatesse."
+      },
+      "examples": [
+        { "register": "bristol", "en": "My landlord is moody but he turns up, which counts for a lot.", "fr": "Mon propriétaire est lunatique mais il vient, et ça compte beaucoup." },
+        { "register": "work", "en": "She is the most reliable person on that floor and says the least.", "fr": "C’est la personne la plus fiable de l’étage et celle qui parle le moins." }
+      ],
+      "seeAlso": ["w010", "w012"]
+    },
+    "w012": {
+      "image": "Un thermomètre de la contrariété : agacé, remonté, furieux. Les Britanniques restent à gauche de l’échelle et le disent avec des mots de droite.",
+      "rule": "La colère se gradue (`annoyed` < `cross` < `furious`) et ne se confond pas avec la peine : `upset` n’est jamais de la colère.",
+      "scale": {
+        "label": "De l’agacement à la fureur",
+        "steps": [
+          { "en": "annoyed", "fr": "agacé" },
+          { "en": "cross", "fr": "fâché" },
+          { "en": "furious", "fr": "furieux" }
+        ]
+      },
+      "scene": {
+        "where": "Le lendemain d’une réunion qui a mal tourné",
+        "text": "She was not angry, she was upset, and the difference mattered enormously to everyone except the person who had caused it. By the afternoon she was simply fed up, which is a much more dangerous state, because nobody apologises to someone who is fed up. He, meanwhile, was relieved that it had happened on a Friday.",
+        "gloss": [
+          { "en": "upset", "fr": "peiné, contrarié" },
+          { "en": "fed up", "fr": "qui en a assez" },
+          { "en": "relieved", "fr": "soulagé" },
+          { "en": "annoyed", "fr": "agacé" }
+        ]
+      },
+      "contrast": {
+        "left": "She is upset.",
+        "right": "She is angry.",
+        "note": "« Upset » est la peine, la contrariété, parfois les larmes. Traduire par « en colère » retourne complètement le sens et la réponse qu’il appelle."
+      },
+      "trap": {
+        "wrong": "I am very nervous about the meeting, I could not sleep.",
+        "right": "I am very nervous about the meeting — but « nervous » is the trac, not irritation.",
+        "why": "« Nervous » en anglais veut dire anxieux, jamais énervé. Pour énervé, il faut « annoyed » ou « irritated »."
+      },
+      "examples": [
+        { "register": "bristol", "en": "Everyone gets homesick in the first November, and it passes.", "fr": "Tout le monde a le mal du pays en novembre la première année, et ça passe." },
+        { "register": "work", "en": "He was delighted and spent ten minutes pretending otherwise.", "fr": "Il était ravi et a passé dix minutes à faire semblant du contraire." }
+      ],
+      "seeAlso": ["w011", "w067"]
+    },
+    "w013": {
+      "image": "Deux belles-mères, deux mots. L’anglais distingue ce qui vient du remariage de ce qui vient du mariage, et le français les confond depuis toujours.",
+      "rule": "`step-` = venu d’un remariage · `-in-law` = venu du conjoint. La même personne française porte deux noms anglais selon la façon dont elle est arrivée.",
+      "scene": {
+        "where": "Un déjeuner de famille qu’il faut expliquer à quelqu’un",
+        "text": "His stepmother taught him to drive and his mother-in-law rings every Sunday, and if you use the wrong one people quietly correct you. There is a nephew somewhere in Wales he has met twice. His wife was an only child and finds all of this exhausting, which is fair.",
+        "gloss": [
+          { "en": "a stepmother", "fr": "une belle-mère (remariage)" },
+          { "en": "a mother-in-law", "fr": "une belle-mère (du conjoint)" },
+          { "en": "a nephew", "fr": "un neveu" },
+          { "en": "an only child", "fr": "un enfant unique" }
+        ]
+      },
+      "contrast": {
+        "left": "to get on with someone",
+        "right": "to fall out with someone",
+        "note": "Les deux verbes du lien : s’entendre, et se fâcher. Aucun des deux ne se devine, et ce sont les deux qu’on emploie le plus en parlant des gens."
+      },
+      "trap": {
+        "wrong": "He is a good friend from work.",
+        "right": "He is a mate from work.",
+        "why": "« Friend » en anglais britannique est plus engageant qu’« ami » en français. Le collègue qu’on apprécie est « a mate » — et le dire autrement fait solennel."
+      },
+      "examples": [
+        { "register": "bristol", "en": "You will be somebody’s mate within a month if you go to the same pub twice.", "fr": "Tu seras le pote de quelqu’un en un mois si tu vas deux fois au même pub." },
+        { "register": "work", "en": "They fell out over a spreadsheet and neither will say so.", "fr": "Ils se sont fâchés pour un tableur et aucun des deux ne le dira." }
+      ],
+      "seeAlso": ["w015"]
+    },
+    "w014": {
+      "image": "Une vie britannique se raconte en verbes à particule : on grandit, on quitte le nid, on se pose, on prend sa retraite.",
+      "rule": "`to grow up` dit où l’on a grandi, `to be brought up` dit par qui. La différence est la même qu’entre le lieu et l’éducation.",
+      "scene": {
+        "where": "Une conversation de train, entre deux inconnus",
+        "text": "She grew up in a town with one bus an hour and was brought up by her grandmother, which she says explains everything. She left home at eighteen like everyone else and has moved nine times since. Her brother settled down in the same street he was born in, and neither of them can understand the other.",
+        "gloss": [
+          { "en": "to grow up", "fr": "grandir" },
+          { "en": "to be brought up", "fr": "être élevé" },
+          { "en": "to leave home", "fr": "quitter le nid" },
+          { "en": "to settle down", "fr": "se poser" }
+        ]
+      },
+      "contrast": {
+        "left": "I grew up in Bristol.",
+        "right": "I was brought up by my aunt.",
+        "note": "Le premier situe, le second attribue. On peut « grow up » quelque part et être « brought up » par quelqu’un dans la même phrase."
+      },
+      "trap": {
+        "wrong": "I was grown up in a small town.",
+        "right": "I grew up in a small town.",
+        "why": "« Grow up » est un verbe actif, jamais un passif. C’est « to be brought up » qui se met au passif, parce que quelqu’un d’autre fait l’action."
+      },
+      "examples": [
+        { "register": "bristol", "en": "Half the people on this street grew up two streets away.", "fr": "La moitié des gens de cette rue ont grandi à deux rues d’ici." },
+        { "register": "work", "en": "He retires in the spring and has not mentioned it once.", "fr": "Il part à la retraite au printemps et n’en a pas dit un mot." }
+      ],
+      "seeAlso": ["w013"]
+    },
+    "w015": {
+      "image": "Le mot le plus utile de tous n’est ni « husband » ni « girlfriend » : c’est `partner`, qui ne dit rien et convient à tout le monde.",
+      "rule": "`a wedding` = la journée · `a marriage` = l’union qui dure. Le français dit « mariage » pour les deux, et le calque tombe une fois sur deux du mauvais côté.",
+      "scene": {
+        "where": "Une invitation posée sur la table de la cuisine",
+        "text": "They decided to get married after eleven years, which surprised nobody, and the wedding is in June. Bring your partner, it says, because nobody in the office knows or asks who anyone lives with. Two people on that guest list split up in March and both are still coming, which tells you something about the size of the town.",
+        "gloss": [
+          { "en": "to get engaged", "fr": "se fiancer" },
+          { "en": "a wedding", "fr": "un mariage (la journée)" },
+          { "en": "a partner", "fr": "un compagnon, une compagne" },
+          { "en": "to split up", "fr": "se séparer" }
+        ]
+      },
+      "contrast": {
+        "left": "The wedding was lovely.",
+        "right": "The marriage lasted forty years.",
+        "note": "Une journée contre quarante ans. Dire « the marriage was lovely » se comprend, mais parle de toute la vie commune et non de la fête."
+      },
+      "trap": {
+        "wrong": "I am going to a marriage on Saturday.",
+        "right": "I am going to a wedding on Saturday.",
+        "why": "On ne va pas à une union, on va à une cérémonie. Le français n’ayant qu’un mot, le calque choisit toujours le mauvais."
+      },
+      "examples": [
+        { "register": "bristol", "en": "Half the weddings here happen in the old church by the harbour.", "fr": "La moitié des mariages d’ici ont lieu dans la vieille église près du port." },
+        { "register": "work", "en": "Say partner, not wife — you will be right more often.", "fr": "Dis partner plutôt que wife : tu auras juste plus souvent." }
+      ],
+      "seeAlso": ["w013", "w069"]
+    }
+  }
+}

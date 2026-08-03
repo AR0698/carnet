@@ -1,0 +1,130 @@
+{
+  "lessons": {
+    "w005": {
+      "image": "Trois cercles emboîtés : les îles Britanniques, le Royaume-Uni, la Grande-Bretagne. Se tromper de cercle est la première maladresse d’un nouvel arrivant.",
+      "rule": "L’archipel = les îles Britanniques · l’État = le Royaume-Uni · l’île principale = la Grande-Bretagne. L’Irlande est dans le premier cercle et pas dans les deux autres.",
+      "scene": {
+        "where": "Une conversation de comptoir, deuxième semaine",
+        "text": "Somebody asked where I was from and then asked, very politely, not to be called English. He was Welsh. The country is the United Kingdom, the island is Great Britain, and the islands are something else again. He was not annoyed; he had simply explained it four hundred times, and this was the four hundred and first.",
+        "gloss": [
+          { "en": "the British Isles", "fr": "les îles Britanniques" },
+          { "en": "a border", "fr": "une frontière" },
+          { "en": "a native speaker", "fr": "un locuteur natif" }
+        ]
+      },
+      "contrast": {
+        "left": "an accent",
+        "right": "a dialect",
+        "note": "L’accent, ce sont les sons. Le dialecte, ce sont aussi les mots et la grammaire. Un Bristolien a l’accent ; quand il dit « where’s that to? », c’est le dialecte."
+      },
+      "trap": {
+        "wrong": "I would like to go to abroad next year.",
+        "right": "I would like to go abroad next year.",
+        "why": "« Abroad » est déjà un adverbe : il ne prend jamais de préposition. Le français « à l’étranger » en contient une, et le calque colle."
+      },
+      "examples": [
+        { "register": "bristol", "en": "Nobody here calls it England when they mean the whole country.", "fr": "Personne ici ne dit England quand il parle du pays entier." },
+        { "register": "work", "en": "Two of the team are fluent in Welsh, which surprises people every time.", "fr": "Deux personnes de l’équipe parlent couramment gallois, et ça surprend à chaque fois." }
+      ],
+      "seeAlso": ["w006"]
+    },
+    "w006": {
+      "image": "Une carte d’état-major anglaise : rien de spectaculaire, tout de nommé. Chaque bosse a son mot, et le mot est plus petit que la chose.",
+      "rule": "L’anglais découpe fin ce que le français regroupe : `hill` n’est pas `mountain`, `wood` n’est pas `forest`, `stream` n’est pas `river`. La taille change le mot, pas l’adjectif.",
+      "scale": {
+        "label": "De l’eau qui coule, du plus petit au plus grand",
+        "steps": [
+          { "en": "a stream", "fr": "un ruisseau" },
+          { "en": "a brook", "fr": "un petit cours d’eau" },
+          { "en": "a river", "fr": "une rivière, un fleuve" }
+        ]
+      },
+      "scene": {
+        "where": "Une marche du dimanche, quelque part au sud",
+        "text": "The path goes up through a wood, comes out on open ground, and drops into a valley you cannot see from the road. There is water at the bottom, too small to be a river and too permanent to be nothing. On the far side the ground rises again to a hill with a name and a stone on top, and that is the whole walk: three hours, no view worth photographing, and everyone comes back happy.",
+        "gloss": [
+          { "en": "a wood", "fr": "un bois" },
+          { "en": "a valley", "fr": "une vallée" },
+          { "en": "a hill", "fr": "une colline" },
+          { "en": "a stream", "fr": "un ruisseau" }
+        ]
+      },
+      "contrast": {
+        "left": "a wood",
+        "right": "a forest",
+        "note": "Un « wood » se traverse en une heure et appartient à quelqu’un. Une « forest » est vaste, souvent ancienne, et porte un nom sur les cartes."
+      },
+      "trap": {
+        "wrong": "We walked in a little forest behind the house.",
+        "right": "We walked in a wood behind the house.",
+        "why": "Le français dit « petit bois » en ajoutant un adjectif ; l’anglais change carrément de mot. « A little forest » sonne comme une contradiction."
+      },
+      "examples": [
+        { "register": "bristol", "en": "The gorge is the only bit of real cliff you will see from a city bus.", "fr": "Les gorges sont la seule vraie falaise qu’on voie depuis un bus de ville." },
+        { "register": "work", "en": "The office looks over the valley, which is wasted on everyone by ten o’clock.", "fr": "Le bureau donne sur la vallée, et dès dix heures plus personne ne la regarde." }
+      ],
+      "seeAlso": ["w007", "w027"]
+    },
+    "w007": {
+      "image": "Il ne pleut pas beaucoup en Angleterre : il pleut souvent, et chaque façon de pleuvoir a son mot. C’est une langue de nuances mouillées.",
+      "rule": "La pluie se dit par intensité, pas par quantité : `drizzle` < `a shower` < `a downpour`. Et l’adjectif du ciel n’est pas celui de la température.",
+      "scale": {
+        "label": "De la bruine au déluge",
+        "steps": [
+          { "en": "drizzle", "fr": "de la bruine" },
+          { "en": "a shower", "fr": "une averse" },
+          { "en": "a downpour", "fr": "une trombe d’eau" }
+        ]
+      },
+      "scene": {
+        "where": "Un samedi matin, devant la fenêtre",
+        "text": "It was overcast when we left and mild enough to go without a coat, which was a mistake. By the time we reached the top it had gone chilly, then foggy, and there was a breeze coming straight off the water. Nobody turned back. That is not stoicism, it is simply that if you waited for better weather you would never leave the house between October and April.",
+        "gloss": [
+          { "en": "overcast", "fr": "couvert" },
+          { "en": "mild", "fr": "doux" },
+          { "en": "chilly", "fr": "frisquet" },
+          { "en": "a breeze", "fr": "une brise" }
+        ]
+      },
+      "contrast": {
+        "left": "It is mild today.",
+        "right": "It is chilly today.",
+        "note": "Deux mots pour la même petite fourchette de degrés : « mild » dit qu’il fait plus doux qu’attendu, « chilly » qu’il fait plus frais. C’est la surprise qui décide, pas le thermomètre."
+      },
+      "trap": {
+        "wrong": "There was a strong rain all afternoon.",
+        "right": "There was heavy rain all afternoon.",
+        "why": "La pluie est « heavy », jamais « strong ». C’est arbitraire, ça ne s’explique pas, et c’est la faute qu’on entend le plus chez un francophone."
+      },
+      "examples": [
+        { "register": "bristol", "en": "It drizzled the whole weekend and the balloons went up anyway.", "fr": "Il a bruiné tout le week-end et les montgolfières sont montées quand même." },
+        { "register": "work", "en": "Half the team came in soaked and nobody mentioned it once.", "fr": "La moitié de l’équipe est arrivée trempée et personne n’en a dit un mot." }
+      ],
+      "seeAlso": ["w006", "w074"]
+    },
+    "w008": {
+      "image": "La faune anglaise tient dans un jardin de ville : un renard qui traverse à minuit, une mouette qui vole des frites, un hérisson sous la haie.",
+      "rule": "Chaque espèce a son mot de groupe : `a flock` pour les oiseaux et les moutons, `a herd` pour les vaches, `a swarm` pour les insectes. « A group of » existe et ne se dit jamais.",
+      "scene": {
+        "where": "Un jardin de derrière, à la tombée du jour",
+        "text": "There is a fox that comes over the wall at about eleven and treats the whole street as a corridor. A hedgehog lives under the shed and we leave a gap in the fence for it. In August there is always a wasp in the kitchen and always a spider in the bath, and by September you stop screaming and start carrying them outside on a piece of card.",
+        "gloss": [
+          { "en": "a fox", "fr": "un renard" },
+          { "en": "a hedgehog", "fr": "un hérisson" },
+          { "en": "a wasp", "fr": "une guêpe" },
+          { "en": "a spider", "fr": "une araignée" }
+        ]
+      },
+      "trap": {
+        "wrong": "A group of birds went over the roof.",
+        "right": "A flock of birds went over the roof.",
+        "why": "L’anglais a gardé un mot de groupe par espèce là où le français dit « un groupe de ». « A group of birds » se comprend et se remarque."
+      },
+      "examples": [
+        { "register": "bristol", "en": "The seagulls here are the size of small dogs and twice as confident.", "fr": "Les mouettes d’ici font la taille d’un petit chien et sont deux fois plus sûres d’elles." },
+        { "register": "work", "en": "There was a wasp in the meeting room and the whole agenda stopped.", "fr": "Il y avait une guêpe en salle de réunion et l’ordre du jour s’est arrêté net." }
+      ],
+      "seeAlso": ["w027"]
+    }
+  }
+}
