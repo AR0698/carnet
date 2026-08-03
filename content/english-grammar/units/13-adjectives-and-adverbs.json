@@ -1,4 +1,215 @@
 {
   "group": "Adjectives and adverbs",
-  "items": []
+  "items": [
+    {
+      "id": "u098-a", "topicId": "u098", "tags": ["adjectifs", "ing-ed"],
+      "fields": { "regle": "L'adjectif en -ing décrit ce qui provoque l'effet, celui en -ed ce qu'on ressent : « the meeting was boring » / « I was bored ». Dire « I am boring » revient à s'annoncer ennuyeux." },
+      "exercises": [
+        { "type": "produce", "prompt": "Traduis : La présentation était ennuyeuse et j'étais épuisé.", "answerSpec": { "accepted": ["The presentation was boring and I was exhausted"] }, "hints": ["La cause en -ing, la personne en -ed."] },
+        { "type": "produce", "prompt": "Traduis : Je suis surpris par ces chiffres.", "answerSpec": { "accepted": ["I am surprised by those figures"] }, "hints": ["Ce que je ressens : -ed."] },
+        { "type": "produce", "prompt": "Traduis : Les résultats sont décevants.", "answerSpec": { "accepted": ["The results are disappointing"] }, "hints": ["Ce sont eux qui provoquent l'effet."] },
+        { "type": "fill_blank", "prompt": "Everyone left the town hall feeling ___ . (confuse)", "answerSpec": { "accepted": ["confused"] }, "hints": ["Ils subissent l'effet."] },
+        { "type": "fill_blank", "prompt": "It was the most ___ demo I have ever seen. (impress)", "answerSpec": { "accepted": ["impressive", "impressing"] }, "hints": ["La démonstration produit l'effet."] },
+        { "type": "transform", "source": "The workload exhausts me.", "prompt": "Réécris la phrase en commençant par « I am ».", "answerSpec": { "accepted": ["I am exhausted by the workload"] }, "hints": ["Le ressenti prend -ed."] },
+        { "type": "spot_error", "source": "I was very boring during the second hour.", "prompt": "Corrige la phrase pour dire que tu t'ennuyais.", "answerSpec": { "accepted": ["I was very bored during the second hour"] }, "hints": ["-ing dirait que c'est toi qui ennuies."] },
+        { "type": "mcq", "prompt": "The guardrails are ___ , but the model is not.", "answerSpec": { "accepted": ["reassuring"] }, "distractors": ["reassured", "reassure", "reassurable"], "hints": ["Ce sont elles qui rassurent."] }
+      ]
+    },
+    {
+      "id": "u099-a", "topicId": "u099", "tags": ["adjectifs", "ordre", "verbes-d-etat"],
+      "fields": { "regle": "L'ordre des épithètes : opinion, taille, âge, couleur, origine, matière, puis le nom — « a nice new house ». Après look, seem, feel, sound, taste, smell, on emploie un adjectif, pas un adverbe : « you look tired »." },
+      "exercises": [
+        { "type": "produce", "prompt": "Traduis : une belle vieille maison en pierre", "answerSpec": { "accepted": ["a beautiful old stone house"] }, "hints": ["Opinion, âge, matière, puis nom."] },
+        { "type": "produce", "prompt": "Traduis : Tu as l'air fatigué.", "answerSpec": { "accepted": ["You look tired"] }, "hints": ["Après look, un adjectif."] },
+        { "type": "produce", "prompt": "Traduis : Ce plan me semble raisonnable.", "answerSpec": { "accepted": ["That plan sounds reasonable to me"] }, "hints": ["sound + adjectif."] },
+        { "type": "fill_blank", "prompt": "They have bought a ___ Italian desk lamp. (small)", "answerSpec": { "accepted": ["small"] }, "hints": ["Taille avant origine."] },
+        { "type": "fill_blank", "prompt": "This coffee tastes ___ . (strange)", "answerSpec": { "accepted": ["strange"] }, "hints": ["taste appelle un adjectif."] },
+        { "type": "transform", "source": "The office is new, it is big, and it is grey.", "prompt": "Réécris en un seul groupe nominal, dans le bon ordre.", "answerSpec": { "accepted": ["a big new grey office"] }, "hints": ["Taille, âge, couleur."] },
+        { "type": "spot_error", "source": "You seem tiredly this morning.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["You seem tired this morning"] }, "hints": ["seem se construit avec un adjectif."] },
+        { "type": "mcq", "prompt": "She wore a ___ jacket to the town hall.", "answerSpec": { "accepted": ["lovely long black"] }, "distractors": ["black long lovely", "long lovely black", "black lovely long"], "hints": ["Opinion, taille, couleur."] }
+      ]
+    },
+    {
+      "id": "u100-a", "topicId": "u100", "tags": ["adverbes", "formation"],
+      "fields": { "regle": "L'adjectif qualifie un nom, l'adverbe un verbe ou un adjectif : « a quick answer » / « answer quickly ». La plupart des adverbes se forment en -ly." },
+      "exercises": [
+        { "type": "produce", "prompt": "Traduis : Elle a répondu rapidement et clairement.", "answerSpec": { "accepted": ["She answered quickly and clearly"] }, "hints": ["Deux adverbes en -ly."] },
+        { "type": "produce", "prompt": "Traduis : C'était une décision étonnamment courageuse.", "answerSpec": { "accepted": ["It was a surprisingly brave decision"] }, "hints": ["L'adverbe qualifie l'adjectif qui suit."] },
+        { "type": "produce", "prompt": "Traduis : Il conduit prudemment.", "answerSpec": { "accepted": ["He drives carefully"] }, "hints": ["L'adverbe qualifie le verbe."] },
+        { "type": "fill_blank", "prompt": "The migration went ___ smoothly, to everyone's surprise. (surprising)", "answerSpec": { "accepted": ["surprisingly"] }, "hints": ["Devant un autre adverbe."] },
+        { "type": "fill_blank", "prompt": "She speaks French ___ . (perfect)", "answerSpec": { "accepted": ["perfectly"] }, "hints": ["Qualifie le verbe speak."] },
+        { "type": "transform", "source": "He gave a careful explanation of the trade-off.", "prompt": "Réécris la phrase avec un adverbe.", "answerSpec": { "accepted": ["He explained the trade-off carefully"] }, "hints": ["Le nom devient verbe, l'adjectif adverbe."] },
+        { "type": "spot_error", "source": "The rollout went very quick on the second floor.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["The rollout went very quickly on the second floor"] }, "hints": ["Il qualifie le verbe."] },
+        { "type": "mcq", "prompt": "The team worked ___ on the handover all weekend.", "answerSpec": { "accepted": ["hard"] }, "distractors": ["hardly", "harder than", "hardly ever"], "hints": ["« hardly » veut dire à peine."] }
+      ]
+    },
+    {
+      "id": "u101-a", "topicId": "u101", "tags": ["adverbes", "formes-irregulieres"],
+      "fields": { "regle": "good donne l'adverbe well. fast, late, hard gardent la même forme. Attention aux pièges : hardly = à peine, lately = récemment." },
+      "exercises": [
+        { "type": "produce", "prompt": "Traduis : Elle parle très bien anglais.", "answerSpec": { "accepted": ["She speaks English very well"] }, "hints": ["L'adverbe de good est well."] },
+        { "type": "produce", "prompt": "Traduis : Je le connais à peine.", "answerSpec": { "accepted": ["I hardly know him"] }, "hints": ["hardly = presque pas."] },
+        { "type": "produce", "prompt": "Traduis : Il est arrivé tard, comme d'habitude.", "answerSpec": { "accepted": ["He arrived late, as usual"] }, "hints": ["late est aussi l'adverbe."] },
+        { "type": "fill_blank", "prompt": "The new connector runs very ___ . (fast)", "answerSpec": { "accepted": ["fast"] }, "hints": ["Pas de -ly."] },
+        { "type": "fill_blank", "prompt": "I have ___ seen him in the office lately. (hard)", "answerSpec": { "accepted": ["hardly"] }, "hints": ["À peine."] },
+        { "type": "transform", "source": "She did the job in a very good way.", "prompt": "Réécris la phrase avec un adverbe.", "answerSpec": { "accepted": ["She did the job very well"] }, "hints": ["good devient well."] },
+        { "type": "spot_error", "source": "He works very hardly, which is why he is exhausted.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["He works very hard, which is why he is exhausted"] }, "hints": ["hardly dirait l'inverse."] },
+        { "type": "mcq", "prompt": "Have you been to the new breakout space ___ ?", "answerSpec": { "accepted": ["lately"] }, "distractors": ["late", "latest", "later on"], "hints": ["« récemment »."] }
+      ]
+    },
+    {
+      "id": "u102-a", "topicId": "u102", "tags": ["so-such", "intensite"],
+      "fields": { "regle": "so + adjectif ou adverbe seul ; such + (a/an) + nom, éventuellement précédé d'un adjectif : « so good » mais « such a good idea »." },
+      "exercises": [
+        { "type": "produce", "prompt": "Traduis : C'était une si bonne idée que personne n'a discuté.", "answerSpec": { "accepted": ["It was such a good idea that nobody argued"] }, "hints": ["such + a + adjectif + nom."] },
+        { "type": "produce", "prompt": "Traduis : Le trajet était si long que j'ai dormi.", "answerSpec": { "accepted": ["The journey was so long that I slept"] }, "hints": ["so + adjectif seul."] },
+        { "type": "produce", "prompt": "Traduis : Il y avait tant de monde que nous sommes partis.", "answerSpec": { "accepted": ["There were so many people that we left"] }, "hints": ["so many devant un pluriel."] },
+        { "type": "fill_blank", "prompt": "It was ___ a brave decision that legal went pale.", "answerSpec": { "accepted": ["such"] }, "hints": ["Un nom suit."] },
+        { "type": "fill_blank", "prompt": "The room was ___ noisy that nobody could take a call.", "answerSpec": { "accepted": ["so"] }, "hints": ["Un adjectif seul."] },
+        { "type": "transform", "source": "The deck was very long, so nobody read it.", "prompt": "Réécris la phrase avec « so ... that ».", "answerSpec": { "accepted": ["The deck was so long that nobody read it"] }, "hints": ["so + adjectif + that."] },
+        { "type": "spot_error", "source": "It was so a useful workshop that we booked another.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["It was such a useful workshop that we booked another"] }, "hints": ["Devant un nom, c'est such."] },
+        { "type": "mcq", "prompt": "There was ___ little time that we skipped the questions.", "answerSpec": { "accepted": ["so"] }, "distractors": ["such", "such a", "too"], "hints": ["so little, so much, so many."] }
+      ]
+    },
+    {
+      "id": "u103-a", "topicId": "u103", "tags": ["enough-too"],
+      "fields": { "regle": "enough se place après l'adjectif ou l'adverbe (« old enough ») mais avant le nom (« enough time »). too précède toujours l'adjectif : « too expensive »." },
+      "exercises": [
+        { "type": "produce", "prompt": "Traduis : Il n'est pas assez expérimenté pour ce poste.", "answerSpec": { "accepted": ["He is not experienced enough for that job"] }, "hints": ["enough après l'adjectif."] },
+        { "type": "produce", "prompt": "Traduis : Nous n'avons pas assez de temps.", "answerSpec": { "accepted": ["We do not have enough time"] }, "hints": ["enough avant le nom."] },
+        { "type": "produce", "prompt": "Traduis : C'est trop cher pour ce budget.", "answerSpec": { "accepted": ["It is too expensive for that budget"] }, "hints": ["too + adjectif."] },
+        { "type": "fill_blank", "prompt": "The lift is not fast ___ for eight floors.", "answerSpec": { "accepted": ["enough"] }, "hints": ["Après l'adverbe."] },
+        { "type": "fill_blank", "prompt": "There are ___ many meetings in this diary.", "answerSpec": { "accepted": ["too"] }, "hints": ["too many devant un pluriel."] },
+        { "type": "transform", "source": "The room is too small for a workshop of twenty.", "prompt": "Réécris la phrase avec « not big enough ».", "answerSpec": { "accepted": ["The room is not big enough for a workshop of twenty"] }, "hints": ["enough se met après l'adjectif."] },
+        { "type": "spot_error", "source": "She is enough experienced to run the programme.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["She is experienced enough to run the programme"] }, "hints": ["Après l'adjectif, jamais avant."] },
+        { "type": "mcq", "prompt": "We did not have ___ to finish the pilot.", "answerSpec": { "accepted": ["enough money"] }, "distractors": ["money enough", "too money", "enough of money"], "hints": ["Devant un nom, enough passe devant."] }
+      ]
+    },
+    {
+      "id": "u104-a", "topicId": "u104", "tags": ["quite-rather-fairly"],
+      "fields": { "regle": "fairly est le plus faible, puis quite, puis rather, puis very. rather porte souvent une nuance négative, et quite devant un adjectif absolu (« quite right ») veut dire complètement." },
+      "exercises": [
+        { "type": "produce", "prompt": "Traduis : C'était plutôt décevant.", "answerSpec": { "accepted": ["It was rather disappointing"] }, "hints": ["rather et son ombre négative."] },
+        { "type": "produce", "prompt": "Traduis : Tu as tout à fait raison.", "answerSpec": { "accepted": ["You are quite right"] }, "hints": ["Devant un adjectif absolu, quite = complètement."] },
+        { "type": "produce", "prompt": "Traduis : Le trajet est assez facile.", "answerSpec": { "accepted": ["The journey is fairly easy"] }, "hints": ["Le degré le plus faible."] },
+        { "type": "fill_blank", "prompt": "The demo was ___ good — we will still see the other two.", "answerSpec": { "accepted": ["quite"] }, "hints": ["En britannique, cela freine l'éloge."] },
+        { "type": "fill_blank", "prompt": "It is ___ a long walk from Temple Meads.", "answerSpec": { "accepted": ["quite", "rather"] }, "hints": ["Devant a + nom."] },
+        { "type": "transform", "source": "The estimate was a bit too high for comfort.", "prompt": "Réécris la phrase avec « rather ».", "answerSpec": { "accepted": ["The estimate was rather high"] }, "hints": ["rather dit la gêne."] },
+        { "type": "spot_error", "source": "I am fairly sure that this is quite wrong, actually.", "prompt": "Réécris pour dire que c'est complètement faux.", "answerSpec": { "accepted": ["I am fairly sure that this is completely wrong, actually"] }, "hints": ["« quite wrong » resterait ambigu à l'oral."] },
+        { "type": "mcq", "prompt": "Dans un bureau britannique, « the deck was quite good » veut plutôt dire :", "answerSpec": { "accepted": ["un peu décevant"] }, "distractors": ["excellent", "parfait", "inutilisable"], "hints": ["quite rabote au lieu de renforcer."] }
+      ]
+    },
+    {
+      "id": "u105-a", "topicId": "u105", "tags": ["comparatif", "formation"],
+      "fields": { "regle": "Adjectif court : -er (cheaper). Adjectif long : more (more expensive). Irréguliers : good/better, bad/worse, far/further. Le complément est introduit par than." },
+      "exercises": [
+        { "type": "produce", "prompt": "Traduis : Bristol est moins cher que Londres.", "answerSpec": { "accepted": ["Bristol is cheaper than London"] }, "hints": ["Adjectif court : -er."] },
+        { "type": "produce", "prompt": "Traduis : Cette solution est plus coûteuse que prévu.", "answerSpec": { "accepted": ["This solution is more expensive than expected"] }, "hints": ["Adjectif long : more."] },
+        { "type": "produce", "prompt": "Traduis : Les choses vont mieux qu'en janvier.", "answerSpec": { "accepted": ["Things are better than in January"] }, "hints": ["good donne better."] },
+        { "type": "fill_blank", "prompt": "The second option is ___ than the first. (simple)", "answerSpec": { "accepted": ["simpler", "more simple"] }, "hints": ["Deux syllabes en -le : -er passe bien."] },
+        { "type": "fill_blank", "prompt": "The traffic is ___ than it was before the works. (bad)", "answerSpec": { "accepted": ["worse"] }, "hints": ["Comparatif irrégulier."] },
+        { "type": "transform", "source": "The old office was small. The new one is smaller still.", "prompt": "Réécris en une phrase avec « than ».", "answerSpec": { "accepted": ["The new office is smaller than the old one"] }, "hints": ["than introduit le second terme."] },
+        { "type": "spot_error", "source": "This approach is more cheaper than the last one.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["This approach is cheaper than the last one"] }, "hints": ["On ne cumule pas more et -er."] },
+        { "type": "mcq", "prompt": "The station is ___ than I remembered.", "answerSpec": { "accepted": ["further"] }, "distractors": ["farer", "more far", "furthest"], "hints": ["Comparatif irrégulier de far."] }
+      ]
+    },
+    {
+      "id": "u106-a", "topicId": "u106", "tags": ["comparatif", "renforcement"],
+      "fields": { "regle": "On renforce un comparatif avec much, far, a lot, a bit, slightly ; on l'atténue avec any et no dans les questions et les négations : « It isn't any better. »" },
+      "exercises": [
+        { "type": "produce", "prompt": "Traduis : C'est bien mieux que la version précédente.", "answerSpec": { "accepted": ["It is much better than the previous version"] }, "hints": ["much, jamais very, devant un comparatif."] },
+        { "type": "produce", "prompt": "Traduis : Ce n'est pas plus rapide du tout.", "answerSpec": { "accepted": ["It is not any faster"] }, "hints": ["any devant un comparatif, à la négative."] },
+        { "type": "produce", "prompt": "Traduis : Le second atelier était un peu plus court.", "answerSpec": { "accepted": ["The second workshop was a bit shorter", "The second workshop was slightly shorter"] }, "hints": ["a bit atténue."] },
+        { "type": "fill_blank", "prompt": "The new floor plan is ___ more expensive than the old one.", "answerSpec": { "accepted": ["far", "much", "a lot"] }, "hints": ["Un renforçateur de comparatif."] },
+        { "type": "fill_blank", "prompt": "Is the connector ___ faster since the update?", "answerSpec": { "accepted": ["any"] }, "hints": ["Question : any."] },
+        { "type": "transform", "source": "The second draft is better. The difference is enormous.", "prompt": "Réécris en une phrase avec « far ».", "answerSpec": { "accepted": ["The second draft is far better"] }, "hints": ["far renforce."] },
+        { "type": "spot_error", "source": "This dashboard is very better than the old one.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["This dashboard is much better than the old one"] }, "hints": ["very ne renforce jamais un comparatif."] },
+        { "type": "mcq", "prompt": "After three rewrites the deck is ___ clearer.", "answerSpec": { "accepted": ["no"] }, "distractors": ["very", "so", "such"], "hints": ["« no clearer » : pas plus clair du tout."] }
+      ]
+    },
+    {
+      "id": "u107-a", "topicId": "u107", "tags": ["comparatif", "as-as"],
+      "fields": { "regle": "as + adjectif + as pour l'égalité ; not as / not so ... as pour l'infériorité. Après than et as, le pronom sujet est correct en registre soigné : « as I am »." },
+      "exercises": [
+        { "type": "produce", "prompt": "Traduis : Ce n'est pas aussi simple qu'on le dit.", "answerSpec": { "accepted": ["It is not as simple as people say"] }, "hints": ["not as ... as."] },
+        { "type": "produce", "prompt": "Traduis : Elle travaille autant que moi.", "answerSpec": { "accepted": ["She works as much as I do"] }, "hints": ["as much as, avec l'auxiliaire."] },
+        { "type": "produce", "prompt": "Traduis : Le trajet a pris deux fois plus de temps que prévu.", "answerSpec": { "accepted": ["The journey took twice as long as expected"] }, "hints": ["twice as ... as."] },
+        { "type": "fill_blank", "prompt": "The pilot was not ___ expensive as the migration.", "answerSpec": { "accepted": ["as", "so"] }, "hints": ["Infériorité."] },
+        { "type": "fill_blank", "prompt": "Nobody knows the estate as well ___ she does.", "answerSpec": { "accepted": ["as"] }, "hints": ["Second terme de l'égalité."] },
+        { "type": "transform", "source": "The new tool is cheaper than the old one.", "prompt": "Réécris la phrase avec « not as expensive as ».", "answerSpec": { "accepted": ["The new tool is not as expensive as the old one"] }, "hints": ["On inverse l'adjectif et on nie."] },
+        { "type": "spot_error", "source": "This model is as good than the last one.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["This model is as good as the last one"] }, "hints": ["as ... as, jamais as ... than."] },
+        { "type": "mcq", "prompt": "He earns twice ___ I do.", "answerSpec": { "accepted": ["as much as"] }, "distractors": ["as much than", "more as", "so much than"], "hints": ["Structure figée."] }
+      ]
+    },
+    {
+      "id": "u108-a", "topicId": "u108", "tags": ["superlatif"],
+      "fields": { "regle": "Le superlatif prend the : the longest, the most enjoyable. Le cadre se donne par in pour un lieu (« the best in Bristol ») et par of pour un groupe ou une période." },
+      "exercises": [
+        { "type": "produce", "prompt": "Traduis : C'est le meilleur café de Bristol.", "answerSpec": { "accepted": ["It is the best coffee in Bristol"] }, "hints": ["Un lieu : in, pas of."] },
+        { "type": "produce", "prompt": "Traduis : Ce fut la semaine la plus longue de l'année.", "answerSpec": { "accepted": ["It was the longest week of the year"] }, "hints": ["Une période : of."] },
+        { "type": "produce", "prompt": "Traduis : C'est la partie la plus intéressante du rapport.", "answerSpec": { "accepted": ["It is the most interesting part of the report"] }, "hints": ["Adjectif long : the most."] },
+        { "type": "fill_blank", "prompt": "That was the ___ meeting I have attended this year. (bad)", "answerSpec": { "accepted": ["worst"] }, "hints": ["Superlatif irrégulier."] },
+        { "type": "fill_blank", "prompt": "She is the most experienced consultant ___ the firm.", "answerSpec": { "accepted": ["in"] }, "hints": ["Un lieu ou une organisation."] },
+        { "type": "transform", "source": "No other building on the estate is older.", "prompt": "Réécris la phrase avec un superlatif.", "answerSpec": { "accepted": ["It is the oldest building on the estate"] }, "hints": ["the + -est."] },
+        { "type": "spot_error", "source": "This is the more useful screen of the whole app.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["This is the most useful screen of the whole app"] }, "hints": ["Superlatif, pas comparatif."] },
+        { "type": "mcq", "prompt": "It is one of the ___ questions in the survey.", "answerSpec": { "accepted": ["hardest"] }, "distractors": ["harder", "most hard", "hardliest"], "hints": ["Après « one of the », superlatif et pluriel."] }
+      ]
+    },
+    {
+      "id": "u109-a", "topicId": "u109", "tags": ["ordre-des-mots", "lieu-temps"],
+      "fields": { "regle": "On ne sépare pas le verbe de son complément d'objet. Le lieu précède le temps : « I went to Bristol on Monday », jamais « I went on Monday to Bristol »." },
+      "exercises": [
+        { "type": "produce", "prompt": "Traduis : Je suis allé à Bristol lundi.", "answerSpec": { "accepted": ["I went to Bristol on Monday"] }, "hints": ["Lieu puis temps."] },
+        { "type": "produce", "prompt": "Traduis : Elle a lu le rapport hier soir.", "answerSpec": { "accepted": ["She read the report last night"] }, "hints": ["Le complément colle au verbe."] },
+        { "type": "produce", "prompt": "Traduis : Nous avons fini l'atelier tôt vendredi.", "answerSpec": { "accepted": ["We finished the workshop early on Friday"] }, "hints": ["Objet, puis manière, puis temps."] },
+        { "type": "fill_blank", "prompt": "They moved ___ the second floor last spring. (préposition)", "answerSpec": { "accepted": ["to"] }, "hints": ["Le lieu vient avant le temps."] },
+        { "type": "fill_blank", "prompt": "He explained the trade-off ___ the whole team on Tuesday.", "answerSpec": { "accepted": ["to"] }, "hints": ["explain something to somebody."] },
+        { "type": "transform", "source": "On Monday I sent to the client the invoice.", "prompt": "Remets la phrase dans le bon ordre.", "answerSpec": { "accepted": ["I sent the invoice to the client on Monday"] }, "hints": ["Objet, destinataire, temps."] },
+        { "type": "spot_error", "source": "I like very much this new floor plan.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["I like this new floor plan very much"] }, "hints": ["Rien ne s'insère entre le verbe et son objet."] },
+        { "type": "mcq", "prompt": "Laquelle est correcte ?", "answerSpec": { "accepted": ["She arrived at the office at nine"] }, "distractors": ["She arrived at nine at the office", "She arrived the office at nine", "At nine she arrived at the office at nine"], "hints": ["Lieu puis temps."] }
+      ]
+    },
+    {
+      "id": "u110-a", "topicId": "u110", "tags": ["ordre-des-mots", "adverbes-de-frequence"],
+      "fields": { "regle": "Les adverbes de fréquence se placent avant le verbe lexical mais après be et après l'auxiliaire : « I always check », « she is always late », « I have always thought so »." },
+      "exercises": [
+        { "type": "produce", "prompt": "Traduis : Je vérifie toujours les chiffres avant d'envoyer.", "answerSpec": { "accepted": ["I always check the figures before sending"] }, "hints": ["Avant le verbe lexical."] },
+        { "type": "produce", "prompt": "Traduis : Elle est toujours en retard le lundi.", "answerSpec": { "accepted": ["She is always late on Mondays"] }, "hints": ["Après be."] },
+        { "type": "produce", "prompt": "Traduis : Je l'ai toujours pensé.", "answerSpec": { "accepted": ["I have always thought so"] }, "hints": ["Après l'auxiliaire."] },
+        { "type": "fill_blank", "prompt": "He ___ answers emails at the weekend. (never, place-le)", "answerSpec": { "accepted": ["never"] }, "hints": ["Avant le verbe lexical."] },
+        { "type": "fill_blank", "prompt": "They have ___ been very clear about the scope. (never)", "answerSpec": { "accepted": ["never"] }, "hints": ["Entre l'auxiliaire et le participe."] },
+        { "type": "transform", "source": "Usually she works from home on Fridays.", "prompt": "Réécris en plaçant l'adverbe avant le verbe.", "answerSpec": { "accepted": ["She usually works from home on Fridays"] }, "hints": ["Position normale : devant le verbe lexical."] },
+        { "type": "spot_error", "source": "I go always to the market on Saturday.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["I always go to the market on Saturday"] }, "hints": ["L'adverbe précède le verbe lexical."] },
+        { "type": "mcq", "prompt": "Laquelle est correcte ?", "answerSpec": { "accepted": ["She has never used the desk app"] }, "distractors": ["She never has used the desk app", "She has used never the desk app", "Never she has used the desk app"], "hints": ["Après l'auxiliaire."] }
+      ]
+    },
+    {
+      "id": "u111-a", "topicId": "u111", "tags": ["still-yet-already"],
+      "fields": { "regle": "still : ça continue. not ... any more / any longer : ça a cessé. yet : pas encore, en fin de phrase, à la négative et à l'interrogative. already : plus tôt que prévu." },
+      "exercises": [
+        { "type": "produce", "prompt": "Traduis : Il travaille encore ici.", "answerSpec": { "accepted": ["He still works here"] }, "hints": ["still avant le verbe lexical."] },
+        { "type": "produce", "prompt": "Traduis : Ils n'utilisent plus cet outil.", "answerSpec": { "accepted": ["They do not use that tool any more", "They do not use that tool any longer"] }, "hints": ["En fin de phrase."] },
+        { "type": "produce", "prompt": "Traduis : Le contrat n'est pas encore signé.", "answerSpec": { "accepted": ["The contract has not been signed yet"] }, "hints": ["yet en fin de phrase."] },
+        { "type": "fill_blank", "prompt": "Have you finished the handover ___ ?", "answerSpec": { "accepted": ["yet"] }, "hints": ["Question, en fin de phrase."] },
+        { "type": "fill_blank", "prompt": "She has ___ answered — that was quick.", "answerSpec": { "accepted": ["already"] }, "hints": ["Plus tôt que prévu."] },
+        { "type": "transform", "source": "He used to work here, but he left last year.", "prompt": "Réécris la seconde partie avec « any more ».", "answerSpec": { "accepted": ["He does not work here any more"] }, "hints": ["La négation porte sur le verbe."] },
+        { "type": "spot_error", "source": "I have not received the invoice already.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["I have not received the invoice yet"] }, "hints": ["À la négative, c'est yet."] },
+        { "type": "mcq", "prompt": "The lift is ___ out of order, three weeks on.", "answerSpec": { "accepted": ["still"] }, "distractors": ["yet", "already", "any more"], "hints": ["La situation dure."] }
+      ]
+    },
+    {
+      "id": "u112-a", "topicId": "u112", "tags": ["even"],
+      "fields": { "regle": "even souligne l'inattendu et se place juste devant ce qu'il porte : « even the manager agreed ». « even though » introduit une proposition, « even if » une hypothèse." },
+      "exercises": [
+        { "type": "produce", "prompt": "Traduis : Même le directeur était d'accord.", "answerSpec": { "accepted": ["Even the director agreed"] }, "hints": ["even devant le groupe visé."] },
+        { "type": "produce", "prompt": "Traduis : Il est venu, même s'il était souffrant.", "answerSpec": { "accepted": ["He came, even though he was unwell"] }, "hints": ["Un fait réel : even though."] },
+        { "type": "produce", "prompt": "Traduis : Même s'il pleut, la fiesta aura lieu.", "answerSpec": { "accepted": ["Even if it rains, the fiesta will go ahead"] }, "hints": ["Une hypothèse : even if."] },
+        { "type": "fill_blank", "prompt": "She did not ___ read the statement of work.", "answerSpec": { "accepted": ["even"] }, "hints": ["Devant le verbe qu'il porte."] },
+        { "type": "fill_blank", "prompt": "___ though the guardrails held, nobody trusted the output.", "answerSpec": { "accepted": ["Even"] }, "hints": ["Un fait avéré."] },
+        { "type": "transform", "source": "Nobody expected the finance team to agree, but they did.", "prompt": "Réécris la seconde partie avec « even ».", "answerSpec": { "accepted": ["Even the finance team agreed"] }, "hints": ["even porte sur le groupe surprenant."] },
+        { "type": "spot_error", "source": "Even if he was ill, he came to the town hall.", "prompt": "Corrige la phrase : il était réellement malade.", "answerSpec": { "accepted": ["Even though he was ill, he came to the town hall"] }, "hints": ["Un fait réel appelle even though."] },
+        { "type": "mcq", "prompt": "The demo was so bad that ___ the sales team went quiet.", "answerSpec": { "accepted": ["even"] }, "distractors": ["even if", "even though", "also"], "hints": ["even porte directement sur le groupe nominal."] }
+      ]
+    }
+  ]
 }

@@ -1,4 +1,131 @@
 {
   "group": "Phrasal verbs",
-  "items": []
+  "items": [
+    {
+      "id": "u137-a", "topicId": "u137", "tags": ["phrasal-verbs", "place-du-pronom"],
+      "fields": { "regle": "Un phrasal verb sépare son complément quand celui-ci est un nom (« turn the light on » ou « turn on the light ») mais l'oblige au milieu quand c'est un pronom : « turn it on », jamais « turn on it »." },
+      "exercises": [
+        { "type": "produce", "prompt": "Traduis en plaçant le pronom : Éteins-la.", "answerSpec": { "accepted": ["Turn it off", "Switch it off"] }, "hints": ["Le pronom se glisse entre le verbe et la particule."] },
+        { "type": "produce", "prompt": "Traduis : J'ai enlevé mon manteau en entrant.", "answerSpec": { "accepted": ["I took my coat off as I came in", "I took off my coat as I came in"] }, "hints": ["Un nom peut se placer avant ou après la particule."] },
+        { "type": "produce", "prompt": "Traduis : Nous avons dû annuler l'atelier.", "answerSpec": { "accepted": ["We had to call the workshop off", "We had to call off the workshop"] }, "hints": ["call off = annuler."] },
+        { "type": "fill_blank", "prompt": "Here is the form — could you fill ___ in before Friday?", "answerSpec": { "accepted": ["it"] }, "hints": ["Un pronom se place au milieu."] },
+        { "type": "fill_blank", "prompt": "The demo starts at ten; don't be late, they won't put it ___ .", "answerSpec": { "accepted": ["off"] }, "hints": ["put off = reporter."] },
+        { "type": "transform", "source": "Please switch off it before you leave.", "prompt": "Corrige et réécris la phrase.", "answerSpec": { "accepted": ["Please switch it off before you leave"] }, "hints": ["Le pronom ne va jamais après la particule."] },
+        { "type": "spot_error", "source": "I looked up it in the glossary.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["I looked it up in the glossary"] }, "hints": ["Pronom au milieu."] },
+        { "type": "mcq", "prompt": "The migration is huge — we cannot put ___ any longer.", "answerSpec": { "accepted": ["it off"] }, "distractors": ["off it", "it away", "off"], "hints": ["Pronom entre le verbe et la particule."] }
+      ]
+    },
+    {
+      "id": "u138-a", "topicId": "u138", "tags": ["phrasal-verbs", "in-out"],
+      "fields": { "regle": "in dit l'entrée et l'inscription : check in, fill in, drop in, join in. out dit la sortie et l'extinction : check out, go out, run out, be out." },
+      "exercises": [
+        { "type": "produce", "prompt": "Traduis : Nous nous sommes enregistrés à l'hôtel vers minuit.", "answerSpec": { "accepted": ["We checked in at the hotel around midnight"] }, "hints": ["check in = s'enregistrer."] },
+        { "type": "produce", "prompt": "Traduis : Passe me voir quand tu es dans le coin.", "answerSpec": { "accepted": ["Drop in when you are nearby", "Drop in when you are in the area"] }, "hints": ["drop in = passer sans prévenir."] },
+        { "type": "produce", "prompt": "Traduis : Nous sommes à court de licences.", "answerSpec": { "accepted": ["We have run out of licences"] }, "hints": ["run out of = être à court de."] },
+        { "type": "fill_blank", "prompt": "Could you fill ___ this form before the induction?", "answerSpec": { "accepted": ["in"] }, "hints": ["Remplir un document."] },
+        { "type": "fill_blank", "prompt": "The lights went ___ during the town hall.", "answerSpec": { "accepted": ["out"] }, "hints": ["S'éteindre."] },
+        { "type": "transform", "source": "Everyone was invited to participate in the singing.", "prompt": "Réécris la phrase avec « join in ».", "answerSpec": { "accepted": ["Everyone was invited to join in the singing"] }, "hints": ["join in = se joindre à l'activité."] },
+        { "type": "spot_error", "source": "We have run out from milk again.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["We have run out of milk again"] }, "hints": ["run out of, jamais from."] },
+        { "type": "mcq", "prompt": "The hotel asks guests to check ___ by eleven.", "answerSpec": { "accepted": ["out"] }, "distractors": ["in", "off", "away"], "hints": ["Quitter l'hôtel."] }
+      ]
+    },
+    {
+      "id": "u139-a", "topicId": "u139", "tags": ["phrasal-verbs", "out"],
+      "fields": { "regle": "out marque souvent l'élucidation ou l'aboutissement : find out (découvrir), work out (calculer, s'arranger), sort out (régler), point out (faire remarquer), turn out (s'avérer)." },
+      "exercises": [
+        { "type": "produce", "prompt": "Traduis : Nous avons découvert la vérité trop tard.", "answerSpec": { "accepted": ["We found out the truth too late"] }, "hints": ["find out = apprendre, découvrir."] },
+        { "type": "produce", "prompt": "Traduis : Il s'est avéré que personne n'avait relu le contrat.", "answerSpec": { "accepted": ["It turned out that nobody had read the contract"] }, "hints": ["turn out = s'avérer."] },
+        { "type": "produce", "prompt": "Traduis : Peux-tu régler ça avec le fournisseur ?", "answerSpec": { "accepted": ["Can you sort that out with the supplier"] }, "hints": ["sort out = régler un problème."] },
+        { "type": "fill_blank", "prompt": "She pointed ___ that the pilot had never touched live data.", "answerSpec": { "accepted": ["out"] }, "hints": ["Faire remarquer."] },
+        { "type": "fill_blank", "prompt": "I still cannot work ___ how the invoice was calculated.", "answerSpec": { "accepted": ["out"] }, "hints": ["Comprendre par le calcul."] },
+        { "type": "transform", "source": "The rollout was eventually a success.", "prompt": "Réécris la phrase avec « turn out ».", "answerSpec": { "accepted": ["The rollout turned out to be a success"] }, "hints": ["turn out to be + attribut."] },
+        { "type": "spot_error", "source": "I will find about what happened at the steering group.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["I will find out what happened at the steering group"] }, "hints": ["find out, pas find about."] },
+        { "type": "mcq", "prompt": "It took us a week to ___ the licensing mess.", "answerSpec": { "accepted": ["sort out"] }, "distractors": ["sort in", "find up", "work in"], "hints": ["Régler un désordre."] }
+      ]
+    },
+    {
+      "id": "u140-a", "topicId": "u140", "tags": ["phrasal-verbs", "on-off"],
+      "fields": { "regle": "on dit la mise en marche et la continuation : put on, turn on, get on, carry on. off dit l'arrêt, le départ et l'annulation : turn off, set off, call off, put off." },
+      "exercises": [
+        { "type": "produce", "prompt": "Traduis : Nous sommes partis à six heures du matin.", "answerSpec": { "accepted": ["We set off at six in the morning"] }, "hints": ["set off = se mettre en route."] },
+        { "type": "produce", "prompt": "Traduis : Continue, je t'écoute.", "answerSpec": { "accepted": ["Carry on, I am listening", "Go on, I am listening"] }, "hints": ["carry on = continuer."] },
+        { "type": "produce", "prompt": "Traduis : Le comité a été annulé hier soir.", "answerSpec": { "accepted": ["The steering group was called off last night"] }, "hints": ["call off = annuler."] },
+        { "type": "fill_blank", "prompt": "Put your coat ___ , it is freezing out there.", "answerSpec": { "accepted": ["on"] }, "hints": ["Enfiler un vêtement."] },
+        { "type": "fill_blank", "prompt": "Don't put the handover ___ until your last morning.", "answerSpec": { "accepted": ["off"] }, "hints": ["Repousser."] },
+        { "type": "transform", "source": "How is your new team doing with the tooling?", "prompt": "Réécris la question avec « get on ».", "answerSpec": { "accepted": ["How is your new team getting on with the tooling"] }, "hints": ["get on with = se débrouiller avec."] },
+        { "type": "spot_error", "source": "Please turn the projector out before you leave.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["Please turn the projector off before you leave"] }, "hints": ["Un appareil s'éteint avec off."] },
+        { "type": "mcq", "prompt": "They ___ the launch until the guardrails were tested.", "answerSpec": { "accepted": ["put off"] }, "distractors": ["put on", "set off", "carried on"], "hints": ["Reporter."] }
+      ]
+    },
+    {
+      "id": "u141-a", "topicId": "u141", "tags": ["phrasal-verbs", "on-off"],
+      "fields": { "regle": "Autres emplois : get on with somebody (bien s'entendre), take on (embaucher, assumer), be off (partir, être absent), show off (frimer), doze off (s'assoupir), rip off (arnaquer)." },
+      "exercises": [
+        { "type": "produce", "prompt": "Traduis : Je m'entends bien avec mon supérieur direct.", "answerSpec": { "accepted": ["I get on well with my line manager"] }, "hints": ["get on with = s'entendre avec."] },
+        { "type": "produce", "prompt": "Traduis : Ils embauchent trois personnes ce trimestre.", "answerSpec": { "accepted": ["They are taking on three people this quarter"] }, "hints": ["take on = recruter."] },
+        { "type": "produce", "prompt": "Traduis : Je suis absent la semaine prochaine.", "answerSpec": { "accepted": ["I am off next week"] }, "hints": ["be off = ne pas travailler."] },
+        { "type": "fill_blank", "prompt": "He has taken ___ far too much work this month.", "answerSpec": { "accepted": ["on"] }, "hints": ["Assumer une charge."] },
+        { "type": "fill_blank", "prompt": "Two people dozed ___ during the second hour.", "answerSpec": { "accepted": ["off"] }, "hints": ["S'assoupir."] },
+        { "type": "transform", "source": "They charged us three times the going rate.", "prompt": "Réécris la phrase avec « rip off ».", "answerSpec": { "accepted": ["They ripped us off"] }, "hints": ["Le pronom se place au milieu."] },
+        { "type": "spot_error", "source": "I get on well my new colleagues.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["I get on well with my new colleagues"] }, "hints": ["with est obligatoire."] },
+        { "type": "mcq", "prompt": "She is always ___ about her day rate.", "answerSpec": { "accepted": ["showing off"] }, "distractors": ["showing on", "taking off", "getting off"], "hints": ["Frimer."] }
+      ]
+    },
+    {
+      "id": "u142-a", "topicId": "u142", "tags": ["phrasal-verbs", "up-down"],
+      "fields": { "regle": "up dit la hausse et l'achèvement : speed up, use up, break up. down dit la baisse et la panne : slow down, break down, cut down, turn down (baisser, mais aussi refuser)." },
+      "exercises": [
+        { "type": "produce", "prompt": "Traduis : L'ascenseur est encore tombé en panne.", "answerSpec": { "accepted": ["The lift has broken down again"] }, "hints": ["break down = tomber en panne."] },
+        { "type": "produce", "prompt": "Traduis : Ils ont refusé notre proposition.", "answerSpec": { "accepted": ["They turned our proposal down", "They turned down our proposal"] }, "hints": ["turn down = décliner."] },
+        { "type": "produce", "prompt": "Traduis : Nous devons réduire les déplacements.", "answerSpec": { "accepted": ["We need to cut down on travel"] }, "hints": ["cut down on = réduire."] },
+        { "type": "fill_blank", "prompt": "Can you slow ___ ? I am still taking notes.", "answerSpec": { "accepted": ["down"] }, "hints": ["Ralentir."] },
+        { "type": "fill_blank", "prompt": "The new connector should speed things ___ considerably.", "answerSpec": { "accepted": ["up"] }, "hints": ["Accélérer."] },
+        { "type": "transform", "source": "There is no printer paper left at all.", "prompt": "Réécris la phrase avec « use up ».", "answerSpec": { "accepted": ["We have used up all the printer paper"] }, "hints": ["use up = épuiser un stock."] },
+        { "type": "spot_error", "source": "My car broke up on the motorway.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["My car broke down on the motorway"] }, "hints": ["break up parle d'une séparation, pas d'une panne."] },
+        { "type": "mcq", "prompt": "They ___ the job because the day rate was too low.", "answerSpec": { "accepted": ["turned down"] }, "distractors": ["turned up", "broke down", "cut up"], "hints": ["Refuser."] }
+      ]
+    },
+    {
+      "id": "u143-a", "topicId": "u143", "tags": ["phrasal-verbs", "up"],
+      "fields": { "regle": "up marque aussi l'apparition et l'achèvement : turn up (arriver, se pointer), come up (surgir), bring up (soulever un sujet), give up (renoncer), make up (inventer, composer)." },
+      "exercises": [
+        { "type": "produce", "prompt": "Traduis : Il est arrivé avec une heure de retard.", "answerSpec": { "accepted": ["He turned up an hour late"] }, "hints": ["turn up = se pointer."] },
+        { "type": "produce", "prompt": "Traduis : Quelque chose d'urgent est survenu.", "answerSpec": { "accepted": ["Something urgent has come up"] }, "hints": ["come up = surgir."] },
+        { "type": "produce", "prompt": "Traduis : Je n'abandonnerai pas si facilement.", "answerSpec": { "accepted": ["I will not give up that easily"] }, "hints": ["give up = renoncer."] },
+        { "type": "fill_blank", "prompt": "Nobody dared bring ___ the question of the day rate.", "answerSpec": { "accepted": ["up"] }, "hints": ["Soulever un sujet."] },
+        { "type": "fill_blank", "prompt": "The model made the whole policy ___ , footnote and all.", "answerSpec": { "accepted": ["up"] }, "hints": ["make up = inventer."] },
+        { "type": "transform", "source": "Only four people came to the workshop.", "prompt": "Réécris la phrase avec « turn up ».", "answerSpec": { "accepted": ["Only four people turned up to the workshop", "Only four people turned up for the workshop"] }, "hints": ["turn up = se présenter."] },
+        { "type": "spot_error", "source": "She gave down smoking two years ago.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["She gave up smoking two years ago"] }, "hints": ["Renoncer se dit give up."] },
+        { "type": "mcq", "prompt": "Contractors ___ nearly half the team now.", "answerSpec": { "accepted": ["make up"] }, "distractors": ["make out", "bring up", "come up"], "hints": ["Constituer un ensemble."] }
+      ]
+    },
+    {
+      "id": "u144-a", "topicId": "u144", "tags": ["phrasal-verbs", "up"],
+      "fields": { "regle": "Encore up : catch up (rattraper), set up (mettre en place), do up (rénover, boutonner), take up (se mettre à, occuper), wash up (faire la vaisselle), tidy up (ranger)." },
+      "exercises": [
+        { "type": "produce", "prompt": "Traduis : Nous avons mis en place un environnement de test.", "answerSpec": { "accepted": ["We set up a test environment"] }, "hints": ["set up = mettre en place."] },
+        { "type": "produce", "prompt": "Traduis : Je dois rattraper mon retard sur les mails.", "answerSpec": { "accepted": ["I need to catch up on my emails"] }, "hints": ["catch up on = rattraper."] },
+        { "type": "produce", "prompt": "Traduis : Elle s'est mise au gallois l'an dernier.", "answerSpec": { "accepted": ["She took up Welsh last year"] }, "hints": ["take up = commencer une activité."] },
+        { "type": "fill_blank", "prompt": "That meeting took ___ my whole afternoon.", "answerSpec": { "accepted": ["up"] }, "hints": ["Occuper du temps."] },
+        { "type": "fill_blank", "prompt": "They are doing ___ the old warehouse by the water.", "answerSpec": { "accepted": ["up"] }, "hints": ["Rénover."] },
+        { "type": "transform", "source": "Could you make this desk tidy before you leave?", "prompt": "Réécris la phrase avec « tidy up ».", "answerSpec": { "accepted": ["Could you tidy this desk up before you leave", "Could you tidy up this desk before you leave"] }, "hints": ["Un nom peut passer avant ou après."] },
+        { "type": "spot_error", "source": "Let's catch up about the pilot on Thursday morning.", "prompt": "Corrige la préposition.", "answerSpec": { "accepted": ["Let's catch up on the pilot on Thursday morning"] }, "hints": ["catch up on quelque chose."] },
+        { "type": "mcq", "prompt": "Who is going to ___ after the leaving drinks?", "answerSpec": { "accepted": ["wash up"] }, "distractors": ["wash out", "do in", "tidy on"], "hints": ["Faire la vaisselle."] }
+      ]
+    },
+    {
+      "id": "u145-a", "topicId": "u145", "tags": ["phrasal-verbs", "away-back"],
+      "fields": { "regle": "away dit l'éloignement et la mise de côté : go away, put away, throw away, give away. back dit le retour : come back, call back, pay back, look back, get back to somebody." },
+      "exercises": [
+        { "type": "produce", "prompt": "Traduis : Je te rappelle dans dix minutes.", "answerSpec": { "accepted": ["I will call you back in ten minutes"] }, "hints": ["Le pronom se glisse au milieu."] },
+        { "type": "produce", "prompt": "Traduis : Ne jette pas ces câbles.", "answerSpec": { "accepted": ["Do not throw those cables away", "Do not throw away those cables"] }, "hints": ["throw away = jeter."] },
+        { "type": "produce", "prompt": "Traduis : Je reviens vers toi avant vendredi.", "answerSpec": { "accepted": ["I will get back to you before Friday"] }, "hints": ["get back to = revenir vers quelqu'un."] },
+        { "type": "fill_blank", "prompt": "Could you put those files ___ when you have finished?", "answerSpec": { "accepted": ["away"] }, "hints": ["Ranger."] },
+        { "type": "fill_blank", "prompt": "He paid me ___ the following month, to my surprise.", "answerSpec": { "accepted": ["back"] }, "hints": ["Rembourser."] },
+        { "type": "transform", "source": "She returned from Cardiff on Sunday evening.", "prompt": "Réécris la phrase avec « come back ».", "answerSpec": { "accepted": ["She came back from Cardiff on Sunday evening"] }, "hints": ["come back = revenir."] },
+        { "type": "spot_error", "source": "I will get back at you once legal has signed off.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["I will get back to you once legal has signed off"] }, "hints": ["« get back at » veut dire se venger."] },
+        { "type": "mcq", "prompt": "They ___ the old monitors to a local school.", "answerSpec": { "accepted": ["gave away"] }, "distractors": ["gave back", "threw back", "put back"], "hints": ["Donner sans contrepartie."] }
+      ]
+    }
+  ]
 }
