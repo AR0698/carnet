@@ -1,0 +1,79 @@
+{
+  "section": "Langue en situation",
+  "units": [
+    {
+      "id": "w065",
+      "title": "S’excuser et remercier",
+      "words": [
+        { "en": "sorry to bother you", "fr": "désolé de vous déranger", "eg": "{Sorry to bother you}, but is this the queue for the desk?", "clue": "La formule d’ouverture par défaut avec un inconnu." },
+        { "en": "my fault", "fr": "c’est ma faute", "eg": "That was entirely {my fault} and I should have checked." },
+        { "en": "no harm done", "fr": "il n’y a pas de mal", "eg": "Do not worry about it — {no harm done}." },
+        { "en": "I do apologise", "fr": "je vous prie de m’excuser", "eg": "{I do apologise}, the message went to the wrong address." },
+        { "en": "thanks a lot", "fr": "merci beaucoup", "eg": "{Thanks a lot}, that has saved me an afternoon." },
+        { "en": "much appreciated", "fr": "c’est très aimable", "eg": "Sent it over this morning — {much appreciated}." },
+        { "en": "you shouldn’t have", "fr": "il ne fallait pas", "eg": "Oh, {you shouldn’t have} — and I am very glad you did." },
+        { "en": "to make up for something", "fr": "se rattraper", "eg": "Let me buy the next one to {make up for} last week." }
+      ],
+      "odd": { "out": "to make up for something", "in": ["sorry to bother you", "my fault", "I do apologise"], "prompt": "Trois de ces formules servent à s’excuser. Laquelle sert à réparer ?", "why": "Se rattraper vient après l’excuse, et coûte quelque chose." }
+    },
+    {
+      "id": "w066",
+      "title": "Demander, permettre, suggérer",
+      "words": [
+        { "en": "would you mind", "fr": "cela vous ennuierait-il", "eg": "{Would you mind} shutting the window, it is freezing.", "no": { "would you mind to": "Après « would you mind », le verbe prend -ing : « would you mind shutting », jamais « to shut »." } },
+        { "en": "could you possibly", "fr": "pourriez-vous éventuellement", "eg": "{Could you possibly} send it before five?" },
+        { "en": "is it all right if", "fr": "est-ce que ça va si", "eg": "{Is it all right if} I take Friday off?" },
+        { "en": "feel free to", "fr": "n’hésitez pas à", "eg": "{Feel free to} say no, it is genuinely fine." },
+        { "en": "how about", "fr": "et si on", "eg": "{How about} Thursday instead?" },
+        { "en": "why don’t we", "fr": "pourquoi ne pas", "eg": "{Why don’t we} do it before the meeting rather than after?" },
+        { "en": "if you get a chance", "fr": "si vous avez un moment", "eg": "{If you get a chance}, have a look at the second page." },
+        { "en": "by all means", "fr": "je vous en prie", "eg": "{By all means}, take the whole file." }
+      ]
+    },
+    {
+      "id": "w067",
+      "title": "Donner son avis, approuver, contredire",
+      "words": [
+        { "en": "as far as I’m concerned", "fr": "en ce qui me concerne", "eg": "{As far as I’m concerned}, it was settled a month ago." },
+        { "en": "I’d say", "fr": "je dirais", "eg": "{I’d say} it takes three weeks, not two." },
+        { "en": "fair enough", "fr": "d’accord, ça se tient", "eg": "{Fair enough}, I had not thought of it that way.", "clue": "L’expression qui clôt une objection sans donner tout à fait raison." },
+        { "en": "I take your point", "fr": "je vois ce que vous voulez dire", "eg": "{I take your point}, but the dates do not move." },
+        { "en": "up to a point", "fr": "jusqu’à un certain point", "eg": "That is true {up to a point}, and then it stops being true." },
+        { "en": "to be honest", "fr": "pour être honnête", "eg": "{To be honest}, nobody read it before it went out." },
+        { "en": "I beg to differ", "fr": "permettez-moi de ne pas être d’accord", "eg": "{I beg to differ}, and I have the numbers here." },
+        { "en": "that’s one way of putting it", "fr": "c’est une façon de voir les choses", "eg": "{That’s one way of putting it}, and it is not mine." }
+      ],
+      "odd": { "out": "I’d say", "in": ["fair enough", "I take your point", "up to a point"], "prompt": "Trois de ces formules répondent à quelqu’un. Laquelle ouvre ?", "why": "« I’d say » lance un avis ; les trois autres réagissent à celui d’un autre." }
+    },
+    {
+      "id": "w068",
+      "title": "Goûts et préférences",
+      "words": [
+        { "en": "I’m not keen on it", "fr": "je n’aime pas trop", "eg": "{I’m not keen on it}, but I will go if everyone else is." },
+        { "en": "it’s not my thing", "fr": "ce n’est pas mon truc", "eg": "Cricket {is not my thing} and I have tried twice." },
+        { "en": "I’d rather", "fr": "je préférerais", "eg": "{I’d rather} walk than wait twenty minutes for a bus.", "no": { "I would rather to": "Après « would rather », le verbe reste nu : « I’d rather walk », jamais « to walk »." } },
+        { "en": "I can’t stand it", "fr": "je ne le supporte pas", "eg": "{I can’t stand it} when people reply without reading." },
+        { "en": "I don’t mind", "fr": "ça m’est égal", "eg": "{I don’t mind} either way, you choose." },
+        { "en": "to be fond of something", "fr": "avoir de l’affection pour", "eg": "He is genuinely {fond of} that terrible old car." },
+        { "en": "to grow on somebody", "fr": "finir par plaire", "eg": "The city {grows on} you, everyone says so and everyone is right." },
+        { "en": "I’m easy", "fr": "ça me va", "eg": "Pub or the flat — {I’m easy}." }
+      ],
+      "odd": { "out": "to grow on somebody", "in": ["I’m not keen on it", "it’s not my thing", "I can’t stand it"], "prompt": "Trois de ces formules disent qu’on n’aime pas. Laquelle dit le contraire ?", "why": "« To grow on you » décrit un goût qui vient avec le temps." }
+    },
+    {
+      "id": "w069",
+      "title": "Se saluer, se quitter",
+      "words": [
+        { "en": "are you all right?", "fr": "ça va ?", "eg": "{Are you all right?} is a greeting here, not a question about your health.", "clue": "Piège absolu : ce n’est pas de l’inquiétude, c’est bonjour." },
+        { "en": "how’s it going?", "fr": "comment ça va ?", "eg": "{How’s it going?} — and the answer is « not bad », whatever the truth." },
+        { "en": "long time no see", "fr": "ça fait un bail", "eg": "{Long time no see} — you have not changed a bit." },
+        { "en": "see you in a bit", "fr": "à tout à l’heure", "eg": "Right, {see you in a bit}." },
+        { "en": "take care", "fr": "prends soin de toi", "eg": "{Take care} — and let me know how it goes." },
+        { "en": "cheers", "fr": "merci, salut", "eg": "{Cheers} works as thank you, as goodbye, and as a toast.", "clue": "Le mot le plus utile du pays : trois sens, aucun effort." },
+        { "en": "all the best", "fr": "bonne continuation", "eg": "{All the best} — and do come back and see us." },
+        { "en": "give my regards to", "fr": "transmets mes amitiés à", "eg": "{Give my regards to} your mother when you see her." }
+      ],
+      "odd": { "out": "long time no see", "in": ["see you in a bit", "take care", "all the best"], "prompt": "Trois de ces formules servent à partir. Laquelle sert à arriver ?", "why": "« Long time no see » se dit en se retrouvant." }
+    }
+  ]
+}

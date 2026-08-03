@@ -1,0 +1,64 @@
+{
+  "section": "Apprendre",
+  "units": [
+    {
+      "id": "w001",
+      "title": "Apprendre du vocabulaire",
+      "words": [
+        { "en": "to look something up", "fr": "chercher un mot", "eg": "I had to {look} that one up — no idea what it meant.", "clue": "Le regard qui monte vers l'étagère du dictionnaire." },
+        { "en": "to guess from context", "fr": "deviner d'après le contexte", "eg": "Don't stop at every word — try to {guess from context}.", "clue": "On ne connaît pas le mot, mais la phrase autour le trahit." },
+        { "en": "to revise", "fr": "réviser", "eg": "I {revise} on the bus, ten minutes each way.", "clue": "Attention : rien à voir avec le fait de corriger un texte.", "no": { "to review": "« Review » en anglais britannique, c'est relire pour évaluer ; réviser pour un examen, c'est « revise »." } },
+        { "en": "to memorise", "fr": "apprendre par cœur", "eg": "There's no point trying to {memorise} a list you don't understand.", "also": ["to memorize"] },
+        { "en": "to pick something up", "fr": "attraper au vol, apprendre sans effort", "eg": "She {picked} up a lot of Bristolian just from the pub.", "clue": "Ramasser, comme on ramasse une pièce par terre." },
+        { "en": "a false friend", "fr": "un faux ami", "eg": "« Actually » is a classic {false friend} for French speakers." },
+        { "en": "to be worth learning", "fr": "valoir la peine d'être appris", "eg": "Not every word is {worth learning} — some you'll never say." },
+        { "en": "to make progress", "fr": "faire des progrès", "eg": "You only notice you're {making progress} when you look back a month.", "no": { "to make progresses|to do progress": "« Progress » ne se met pas au pluriel en anglais, et on le « fait » avec make, pas avec do." } }
+      ],
+      "odd": { "out": "to revise", "in": ["to look something up", "to guess from context", "to pick something up"], "prompt": "Trois de ces gestes servent à découvrir un mot inconnu. Lequel n'en fait pas partie ?", "why": "Réviser, c'est revenir sur ce qu'on connaît déjà." }
+    },
+    {
+      "id": "w002",
+      "title": "Tenir un carnet de vocabulaire",
+      "words": [
+        { "en": "an entry", "fr": "une entrée, une fiche", "eg": "Each {entry} has the word, the meaning and one real sentence." },
+        { "en": "a translation", "fr": "une traduction", "eg": "A {translation} on its own tells you what a word means, not when to say it." },
+        { "en": "to jot something down", "fr": "noter rapidement", "eg": "I {jot} words down on my phone and sort them out later.", "clue": "Trois secondes, pas plus — sinon le mot se perd." },
+        { "en": "a heading", "fr": "un intitulé, un titre de rubrique", "eg": "Group them under a {heading} like « the kitchen » rather than A to Z." },
+        { "en": "to cross something out", "fr": "barrer, rayer", "eg": "I {crossed} out half the list — I'd never use those words." },
+        { "en": "handwriting", "fr": "l'écriture manuscrite", "eg": "My {handwriting} gets worse the faster I take notes." },
+        { "en": "a highlighter", "fr": "un surligneur", "eg": "Put the {highlighter} down: if everything is yellow, nothing is." },
+        { "en": "to keep track of something", "fr": "suivre, garder trace de", "eg": "It's hard to {keep track of} which words you've actually used." }
+      ]
+    },
+    {
+      "id": "w003",
+      "title": "Se servir d'un dictionnaire",
+      "words": [
+        { "en": "a definition", "fr": "une définition", "eg": "The {definition} said « a small stream » and I still couldn't picture it." },
+        { "en": "pronunciation", "fr": "la prononciation", "eg": "Check the {pronunciation} before you use a word out loud." },
+        { "en": "stress", "fr": "l'accent tonique", "eg": "Put the {stress} on the wrong syllable and nobody follows you." },
+        { "en": "a synonym", "fr": "un synonyme", "eg": "« Tired » and « knackered » are near {synonyms}, but you'd never write the second." },
+        { "en": "an antonym", "fr": "un antonyme, un contraire", "eg": "The {antonym} of « generous » here would be « tight »." },
+        { "en": "an abbreviation", "fr": "une abréviation", "eg": "« ie » is an {abbreviation} that half the office uses wrongly." },
+        { "en": "informal", "fr": "familier, non soutenu", "eg": "It's marked {informal}, so keep it out of the report." },
+        { "en": "an example sentence", "fr": "une phrase d'exemple", "eg": "One good {example sentence} beats three definitions." }
+      ],
+      "odd": { "out": "an abbreviation", "in": ["a definition", "a synonym", "an antonym"], "prompt": "Trois de ces mots parlent du sens. Lequel parle de la forme écrite ?", "why": "Une abréviation raccourcit un mot ; les trois autres le situent par rapport aux autres mots." }
+    },
+    {
+      "id": "w004",
+      "title": "Les mots pour parler de la langue",
+      "words": [
+        { "en": "a phrase", "fr": "une expression, un groupe de mots", "eg": "« Bear with me » is a fixed {phrase}, not two separate words.", "no": { "a sentence": "« Sentence », c'est la phrase entière avec son verbe. « Phrase », c'est un morceau — un groupe de mots." } },
+        { "en": "an idiom", "fr": "une expression idiomatique", "eg": "« It's not my cup of tea » is an {idiom} — the words don't add up." },
+        { "en": "a collocation", "fr": "un mot qui va avec un autre", "eg": "« Heavy rain » works; « strong rain » doesn't. That's a {collocation}." },
+        { "en": "a prefix", "fr": "un préfixe", "eg": "Add the {prefix} « un- » and you get the opposite." },
+        { "en": "a suffix", "fr": "un suffixe", "eg": "The {suffix} « -ness » turns an adjective into a noun." },
+        { "en": "a syllable", "fr": "une syllabe", "eg": "« Comfortable » has three {syllables} when a British person says it." },
+        { "en": "a spelling", "fr": "une orthographe", "eg": "Both {spellings} are fine, but pick one and stick to it." },
+        { "en": "slang", "fr": "l'argot", "eg": "That's {slang} — lovely in the pub, wrong in an email." }
+      ],
+      "odd": { "out": "a syllable", "in": ["a prefix", "a suffix", "a spelling"], "prompt": "Lequel de ces mots ne concerne pas l'écrit ?", "why": "Une syllabe s'entend ; un préfixe, un suffixe et une orthographe se voient." }
+    }
+  ]
+}

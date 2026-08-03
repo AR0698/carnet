@@ -1,0 +1,94 @@
+{
+  "section": "Voyager",
+  "units": [
+    {
+      "id": "w046",
+      "title": "Réserver un voyage",
+      "words": [
+        { "en": "to book", "fr": "réserver", "eg": "{Book} the train six weeks out and it is a third of the price." },
+        { "en": "a booking", "fr": "une réservation", "eg": "The {booking} is in my name, not hers." },
+        { "en": "availability", "fr": "les disponibilités", "eg": "There is no {availability} that weekend anywhere in the city." },
+        { "en": "a refundable ticket", "fr": "un billet remboursable", "eg": "A {refundable ticket} costs double and is worth it once in ten trips." },
+        { "en": "off-peak", "fr": "en heures creuses", "eg": "Travel {off-peak} and you save more than the coffee costs." },
+        { "en": "a booking fee", "fr": "des frais de dossier", "eg": "There is a {booking fee} that appears on the very last screen." },
+        { "en": "to cancel", "fr": "annuler", "eg": "You can {cancel} up to twenty-four hours before, for a price." },
+        { "en": "an itinerary", "fr": "un itinéraire", "eg": "Send me the {itinerary} and I will meet you at the other end." }
+      ],
+      "odd": { "out": "an itinerary", "in": ["a booking fee", "a refundable ticket", "off-peak"], "prompt": "Trois de ces mots concernent le prix. Lequel concerne le trajet ?", "why": "L’itinéraire dit où l’on passe, pas ce que ça coûte." }
+    },
+    {
+      "id": "w047",
+      "title": "Prendre l’avion",
+      "words": [
+        { "en": "hand luggage", "fr": "un bagage à main", "eg": "Everything I own for four days goes in {hand luggage}.", "art": "suitcase", "no": { "a hand baggage": "« Luggage » ne se compte pas : jamais « a luggage », jamais « luggages »." } },
+        { "en": "the hold", "fr": "la soute", "eg": "Anything in the {hold} costs extra and arrives last." },
+        { "en": "a boarding pass", "fr": "une carte d’embarquement", "eg": "Screenshot the {boarding pass} — the airport wifi will fail you." },
+        { "en": "a departure gate", "fr": "une porte d’embarquement", "eg": "The {departure gate} was a twenty-minute walk from the board that announced it." },
+        { "en": "to take off", "fr": "décoller", "eg": "We {took off} an hour late and landed on time, somehow.", "art": "plane" },
+        { "en": "to land", "fr": "atterrir", "eg": "We {land} at six in the morning, which was a mistake." },
+        { "en": "a delay", "fr": "un retard", "eg": "A two-hour {delay} and not one word from anyone." },
+        { "en": "a connecting flight", "fr": "une correspondance", "eg": "Fifty minutes for a {connecting flight} is optimistic." }
+      ],
+      "odd": { "out": "a delay", "in": ["to take off", "to land", "a connecting flight"], "prompt": "Trois de ces mots décrivent le vol tel qu’il devrait se passer. Lequel décrit ce qui va de travers ?", "why": "Le retard n’est prévu nulle part." }
+    },
+    {
+      "id": "w048",
+      "title": "Hôtels et restaurants",
+      "words": [
+        { "en": "a bed and breakfast", "fr": "une chambre d’hôtes", "eg": "We stayed in a {bed and breakfast} run by a woman who talked us through the whole town." },
+        { "en": "an en suite", "fr": "une salle de bains privative", "eg": "Ask whether it has an {en suite} or you share with the landing." },
+        { "en": "to check in", "fr": "prendre possession de sa chambre", "eg": "You can {check in} from two and not a minute before." },
+        { "en": "the bill", "fr": "l’addition", "eg": "Can we get the {bill} when you have a moment?", "no": { "the check": "« Check » est américain ; au restaurant britannique on demande « the bill »." } },
+        { "en": "a service charge", "fr": "un service compris", "eg": "There is a twelve per cent {service charge} already on there." },
+        { "en": "a starter", "fr": "une entrée", "eg": "We shared a {starter} and regretted not having two.", "no": { "an entrance|an entrée": "« Entrée » en anglais américain désigne le plat principal. L’entrée britannique, c’est « a starter »." } },
+        { "en": "a main course", "fr": "un plat principal", "eg": "The {main course} came before the drinks, which says everything." },
+        { "en": "to book a table", "fr": "réserver une table", "eg": "You need to {book a table} on a Friday, even here." }
+      ]
+    },
+    {
+      "id": "w049",
+      "title": "Au café",
+      "words": [
+        { "en": "a flat white", "fr": "un flat white", "eg": "A {flat white} is the default order in half the shops in this city." },
+        { "en": "a builder’s tea", "fr": "un thé fort au lait", "eg": "He asked for a {builder’s tea} and got exactly what he wanted.", "clue": "Fort, avec du lait, et deux sucres si personne ne regarde." },
+        { "en": "takeaway", "fr": "à emporter", "eg": "Is that to drink in or {takeaway}?", "no": { "to take away|takeout": "« Takeout » est américain. En Grande-Bretagne, c’est « takeaway »." } },
+        { "en": "a top-up", "fr": "un rajout, un rallongé", "eg": "They will do you a {top-up} for nothing if you ask nicely." },
+        { "en": "a slice of cake", "fr": "une part de gâteau", "eg": "One {slice of cake} between two is a decision you will regret.", "art": "cake" },
+        { "en": "a mug", "fr": "un mug", "eg": "It comes in a {mug} the size of a small bucket.", "art": "mug" },
+        { "en": "loose leaf", "fr": "en vrac (thé)", "eg": "They do {loose leaf} if you have twenty minutes to spare." },
+        { "en": "a regular", "fr": "un habitué", "eg": "After a month you are a {regular} and they start the order before you speak." }
+      ],
+      "odd": { "out": "a regular", "in": ["a flat white", "a builder’s tea", "a top-up"], "prompt": "Trois de ces mots se commandent. Lequel désigne une personne ?", "why": "L’habitué est celui qui commande, pas ce qu’il commande." }
+    },
+    {
+      "id": "w050",
+      "title": "Visiter",
+      "words": [
+        { "en": "a sight", "fr": "un site à voir", "eg": "The bridge is the one {sight} everybody photographs." },
+        { "en": "a guided tour", "fr": "une visite guidée", "eg": "The {guided tour} lasts ninety minutes and is worth every one." },
+        { "en": "a viewpoint", "fr": "un point de vue", "eg": "There is a {viewpoint} above the gorge that nobody signposts." },
+        { "en": "a stately home", "fr": "un château, une demeure historique", "eg": "A {stately home} with a tea room is a British Sunday." },
+        { "en": "admission", "fr": "le droit d’entrée", "eg": "{Admission} is free and the car park costs nine pounds." },
+        { "en": "a landmark", "fr": "un monument, un repère", "eg": "You navigate this city by {landmarks}, not street names." },
+        { "en": "off the beaten track", "fr": "hors des sentiers battus", "eg": "The good bits are {off the beaten track} and always uphill." },
+        { "en": "a souvenir", "fr": "un souvenir (objet)", "eg": "The only {souvenir} worth buying is something you will actually use.", "no": { "a memory": "« Memory », c’est le souvenir qu’on garde en tête ; l’objet, c’est « a souvenir »." } }
+      ],
+      "odd": { "out": "admission", "in": ["a sight", "a landmark", "a viewpoint"], "prompt": "Trois de ces mots désignent une chose à voir. Lequel désigne un prix ?", "why": "Le droit d’entrée se paie avant de voir quoi que ce soit." }
+    },
+    {
+      "id": "w051",
+      "title": "Les vacances au bord de la mer",
+      "words": [
+        { "en": "the seaside", "fr": "le bord de mer", "eg": "A day at the {seaside} in this country involves a windbreak." },
+        { "en": "a pebble beach", "fr": "une plage de galets", "eg": "It is a {pebble beach}, so bring something to sit on." },
+        { "en": "the tide", "fr": "la marée", "eg": "Check the {tide} before you walk out to the island." },
+        { "en": "a pier", "fr": "une jetée", "eg": "Every seaside town has a {pier} and a story about it burning down." },
+        { "en": "a deckchair", "fr": "une chaise longue", "eg": "A {deckchair} costs four pounds and defeats most people." },
+        { "en": "an ice cream van", "fr": "un camion à glaces", "eg": "You hear the {ice cream van} long before you see it.", "art": "van" },
+        { "en": "a windbreak", "fr": "un paravent de plage", "eg": "The {windbreak} is not optional on the south coast in June." },
+        { "en": "paddling", "fr": "les pieds dans l’eau", "eg": "Nobody swims; everybody goes {paddling} up to the knees." }
+      ],
+      "odd": { "out": "the tide", "in": ["a deckchair", "a windbreak", "a pier"], "prompt": "Trois de ces mots sont des objets ou des constructions. Lequel est un phénomène ?", "why": "La marée ne s’installe pas, elle arrive." }
+    }
+  ]
+}

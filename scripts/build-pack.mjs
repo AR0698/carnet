@@ -18,6 +18,7 @@ import { fileURLToPath } from 'node:url';
 // Le schéma est en draft 2020-12 : c'est ce point d'entrée-là qu'il faut,
 // l'export par défaut d'ajv ne connaît que draft-07.
 import Ajv from 'ajv/dist/2020.js';
+import { compileWords, readArtKeys } from './vocab-words.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const PACK_ID = process.argv[2] ?? 'english-grammar';
@@ -41,6 +42,17 @@ for (const file of unitFiles) {
   items.push(...groupItems);
   perGroup.push({ file, group, items: groupItems });
 }
+
+// Le vocabulaire s'écrit autrement : un mot par ligne, dans `words/`, et le
+// compilateur en tire les trois exercices. Le reste du script ne fait aucune
+// différence entre ce qui vient de là et ce qui est écrit à la main — ce sont
+// les mêmes items, validés par le même schéma. Voir `scripts/vocab-words.mjs`.
+const compiled = compileWords(join(SRC, 'words'), {
+  artKeys: readArtKeys(join(ROOT, 'src', 'ui', 'vocabArt.ts')),
+  firstOrder: Math.max(0, ...base.topics.map((t) => t.order)) + 1,
+});
+items.push(...compiled.items);
+perGroup.push(...compiled.groups);
 
 // Les fiches de cours vivent à part des exercices : ce ne sont ni le même
 // travail de rédaction, ni le même rythme d'avancement, et une unité peut très
@@ -69,7 +81,7 @@ if (existsSync(lessonDir)) {
   }
 }
 
-const topics = base.topics.map((t) =>
+const topics = [...base.topics, ...compiled.topics].map((t) =>
   lessons.has(t.id) ? { ...t, lesson: lessons.get(t.id) } : t,
 );
 
@@ -90,7 +102,7 @@ if (!validate(pack)) {
 
 // --- validations sémantiques (hors de portée d'un JSON Schema) ---
 
-const problems = [];
+const problems = [...compiled.problems];
 const topicIds = new Set(pack.topics.map((t) => t.id));
 
 const seenTopicIds = new Set();
@@ -134,6 +146,22 @@ for (const it of pack.items) {
   if (seenItemIds.has(it.id)) problems.push(`item en double : ${it.id}`);
   seenItemIds.add(it.id);
   if (!topicIds.has(it.topicId)) problems.push(`item ${it.id} : notion inconnue (${it.topicId})`);
+}
+
+// Un mot enseigné par deux unités, ce sont deux jeux de cartes pour une seule
+// chose à savoir : l'un des deux traînera indéfiniment dans les nouveautés, et
+// le compte de « ce qu'il reste à ouvrir » — donc le compte à rebours — ment
+// d'autant. La vérification est ici et non dans le compilateur : elle doit
+// aussi voir les unités écrites à la main.
+const seenTerms = new Map();
+for (const it of pack.items) {
+  const term = it.fields.term?.toLowerCase();
+  if (!term) continue;
+  const twin = seenTerms.get(term);
+  if (twin && twin !== it.topicId) {
+    problems.push(`item ${it.id} : « ${it.fields.term} » est déjà enseigné par ${twin}`);
+  }
+  seenTerms.set(term, it.topicId);
 }
 
 const norm = (s) => s.toLowerCase().replace(/[^a-z0-9 ]/g, '').replace(/\s+/g, ' ').trim();
@@ -210,6 +238,28 @@ for (const it of pack.items) {
   const set = answersByTopic.get(it.topicId) ?? new Set();
   for (const ex of it.exercises) for (const a of ex.answerSpec.accepted) set.add(norm(a));
   answersByTopic.set(it.topicId, set);
+}
+
+// La scène d'une fiche de vocabulaire montre délibérément les mots de son unité
+// — c'est sa raison d'être. Ce qu'elle ne doit pas faire, c'est reprendre telle
+// quelle la phrase d'un exercice : le texte à trou de cette unité s'ouvrirait
+// alors déjà rempli. Une autre situation avec les mêmes mots, pas la même.
+const examplesByTopic = new Map();
+for (const it of pack.items) {
+  const phrase = it.fields.example;
+  if (!phrase || norm(phrase).length < 18) continue;
+  examplesByTopic.set(it.topicId, [...(examplesByTopic.get(it.topicId) ?? []), phrase]);
+}
+
+for (const t of pack.topics) {
+  const scene = t.lesson?.scene;
+  if (!scene) continue;
+  const haystack = norm(scene.text);
+  for (const phrase of examplesByTopic.get(t.id) ?? []) {
+    if (haystack.includes(norm(phrase))) {
+      problems.push(`fiche ${t.id} : la scène recopie la phrase d'un exercice — « ${phrase} »`);
+    }
+  }
 }
 
 for (const t of pack.topics) {

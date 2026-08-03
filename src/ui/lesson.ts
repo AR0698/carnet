@@ -17,7 +17,14 @@
  * étiquettes débordent n'explique plus rien.
  */
 
-import type { Lesson, LessonFigure, LessonRegister, Topic } from '../packs/schema';
+import type {
+  Lesson,
+  LessonFigure,
+  LessonRegister,
+  LessonScale,
+  LessonScene,
+  Topic,
+} from '../packs/schema';
 import { el } from './dom';
 import { listenButton } from './speech';
 
@@ -92,6 +99,62 @@ export function lessonFigure(figure: LessonFigure): HTMLElement {
   return el('div', { class: 'fig' }, [el('div', { class: 'fig__stack' }, [...rows, now])]);
 }
 
+/**
+ * L'échelle — la frise du temps, transposée au vocabulaire.
+ *
+ * Les échelons montent de gauche à droite, et la barre grossit avec eux : c'est
+ * le seul endroit du dessin qui porte l'information, le reste n'est que
+ * l'étiquette. Trois à cinq échelons, pas plus — au-delà, on ne range plus, on
+ * récite.
+ */
+export function lessonScale(scale: LessonScale): HTMLElement {
+  const last = Math.max(scale.steps.length - 1, 1);
+
+  return el('div', { class: 'lesson-scale' }, [
+    el('span', { class: 'lesson-scale__label' }, [scale.label]),
+    el(
+      'div',
+      { class: 'lesson-scale__steps' },
+      scale.steps.map((step, i) =>
+        el('div', { class: 'lesson-scale__step' }, [
+          el('span', { class: 'lesson-scale__en', lang: 'en' }, [step.en]),
+          el('span', { class: 'lesson-scale__fr' }, [step.fr]),
+          el('i', {
+            class: 'lesson-scale__bar',
+            style: `opacity:${(0.35 + (0.65 * i) / last).toFixed(2)}`,
+          }),
+        ]),
+      ),
+    ),
+  ]);
+}
+
+/**
+ * La scène — les mots de l'unité dans une situation.
+ *
+ * Le glossaire est **sous** le texte, et les sens ne sont jamais glissés entre
+ * parenthèses dans la phrase : une traduction posée à côté du mot se lit à sa
+ * place, et l'anglais n'est alors jamais lu. Le prix est un aller-retour du
+ * regard, et c'est un aller-retour utile — il oblige à revenir dans la phrase.
+ */
+function sceneBlock(scene: LessonScene, lang: string): HTMLElement {
+  return el('div', { class: 'lesson-scene' }, [
+    el('span', { class: 'lesson-scene__where' }, [scene.where]),
+    el('p', { class: 'lesson-scene__text', lang: 'en' }, [scene.text]),
+    el(
+      'div',
+      { class: 'lesson-gloss' },
+      scene.gloss.map((g) =>
+        el('span', { class: 'lesson-gloss__row' }, [
+          el('span', { class: 'lesson-gloss__en', lang: 'en' }, [g.en]),
+          el('span', { class: 'lesson-gloss__fr' }, [g.fr]),
+        ]),
+      ),
+    ),
+    listenButton(scene.text, lang),
+  ]);
+}
+
 /** Une ligne d'exemple : la phrase anglaise, sa version française, et l'écoute. */
 function exampleRow(example: Lesson['examples'][number], lang: string): HTMLElement {
   return el('div', { class: `lesson-eg lesson-eg--${example.register}` }, [
@@ -136,8 +199,14 @@ export function lessonCard(topic: Topic, options: LessonCardOptions): HTMLElemen
   return el('article', { class: 'lesson' }, [
     // L'image d'abord. C'est elle qui reste quand la formulation s'efface, et
     // c'est par elle qu'on retrouve la règle deux semaines plus tard.
+    //
+    // La frise et l'échelle sont deux façons de dessiner la même chose — ce que
+    // l'unité range — et occupent donc la même place : celle du schéma, en tête,
+    // avant qu'une phrase ait été lue. La grammaire range dans le temps, le
+    // vocabulaire range par degré ; aucune unité n'a les deux.
     el('div', { class: 'lesson-image' }, [
       lesson.figure && lessonFigure(lesson.figure),
+      lesson.scale && lessonScale(lesson.scale),
       el('p', { class: 'lesson-image__line' }, [lesson.image]),
     ]),
 
@@ -145,6 +214,12 @@ export function lessonCard(topic: Topic, options: LessonCardOptions): HTMLElemen
       el('span', { class: 'lesson-tag' }, ['La règle']),
       el('p', {}, [lesson.rule]),
     ]),
+
+    // La scène vient juste après la règle : elle en est la démonstration. Cinq
+    // mots de l'unité qui se tiennent dans le même paragraphe répondent à la
+    // seule question qu'une liste de vocabulaire laisse toujours ouverte —
+    // pourquoi ce mot-là, à ce moment-là.
+    lesson.scene && sceneBlock(lesson.scene, lang),
 
     lesson.contrast &&
       el('div', { class: 'lesson-contrast' }, [

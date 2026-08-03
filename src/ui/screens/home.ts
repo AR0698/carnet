@@ -12,6 +12,7 @@ import {
 } from '../../storage/countdown';
 import { loadPrefs, savePrefs } from '../../storage/prefs';
 import { GRAMMAR_PACK_ID, VOCAB_PACK_ID, VOCABULARY_PACK_ID } from '../../carnets';
+import { topicsWithLesson } from '../../packs/schema';
 import { bristolBanner, carnetGlyph } from '../art';
 import { el, mount } from '../dom';
 import type { Ctx } from '../types';
@@ -250,6 +251,29 @@ export async function renderHome(ctx: Ctx): Promise<void> {
     const order = el('button', { class: 'btn btn--link', type: 'button' }, ['Par où commencer']);
     order.addEventListener('click', () => void ctx.nav.order(carnet.id));
 
+    // Le cours de *ce* carnet-ci.
+    //
+    // Il vivait au pied de l'accueil, sans dire lequel il ouvrirait — c'était la
+    // grammaire, faute de mieux, et le vocabulaire n'avait aucune porte. Le lien
+    // vit donc maintenant dans le carnet dont il montre les fiches, et il annonce
+    // combien il y en a.
+    //
+    // Ce que ce déplacement ne change pas, et qui est l'essentiel : il reste un
+    // lien discret sur la dernière ligne de la carte, à côté de « Par où
+    // commencer », jamais parmi les boutons de durée. Une porte « lire la règle »
+    // aussi visible que « réviser 15 minutes » serait prise chaque fois que la
+    // session fait peur, et relire à la place de chercher est exactement le troc
+    // que cette application refuse.
+    const taught = topicsWithLesson(carnet.pack).length;
+    const course = el('button', { class: 'btn btn--link', type: 'button' }, [
+      `Le cours (${taught})`,
+    ]);
+    course.addEventListener('click', () => void ctx.nav.course({ packId: carnet.id }));
+
+    const links =
+      (canOrder || taught > 0) &&
+      el('div', { class: 'carnet__links' }, [canOrder && order, taught > 0 && course]);
+
     const head = el('div', { class: 'carnet__head' }, [
       carnetGlyph(GLYPHS[carnet.id] ?? 'culture'),
       el('div', {}, [el('h2', {}, [carnet.label]), el('p', { class: 'sub' }, [carnet.tagline])]),
@@ -257,10 +281,15 @@ export async function renderHome(ctx: Ctx): Promise<void> {
 
     // À quatre carnets, quatre cartes pleines transforment l'accueil en menu.
     // Celui qui n'a rien à proposer se replie : il dit quand il revient, et se tait.
+    //
+    // Il garde pourtant l'accès à ses fiches, et c'est cohérent avec le reste :
+    // le seul moment où lire ne remplace aucun effort, c'est justement celui où
+    // il n'y a rien à réviser.
     if (!empty && !state.workable) {
       return el('section', { class: 'card carnet carnet--quiet' }, [
         head,
         el('p', { class: 'notice' }, [restNotice(state)]),
+        links,
       ]);
     }
 
@@ -279,18 +308,17 @@ export async function renderHome(ctx: Ctx): Promise<void> {
         : el('p', { class: 'notice' }, ['Combien de temps as-tu, là, maintenant ?']),
       !empty && durations,
       carnet.personal && el('div', { class: 'carnet__links' }, [addWord, !empty && browse]),
-      canOrder && el('div', { class: 'carnet__links' }, [order]),
+      links,
     ]);
   }
 
   const insights = el('button', { class: 'btn btn--link', type: 'button' }, ['Où ça coince']);
   insights.addEventListener('click', () => void ctx.nav.insights());
 
-  // Le cours vit en pied de page, avec le diagnostic et la sauvegarde, et non
-  // à côté des boutons de session. Ce n'est pas de la timidité de mise en page :
-  // une porte « lire la règle » aussi visible que « réviser 15 minutes » serait
-  // prise chaque fois que la session fait peur, et relire à la place de
-  // chercher est exactement le troc que cette application refuse.
+  // La même porte, sans carnet désigné : elle ouvre l'index, où l'on choisit.
+  // Elle reste en pied de page avec le diagnostic et la sauvegarde, et non à
+  // côté des boutons de session — voir le lien par carnet, plus haut, pour le
+  // raisonnement complet.
   const course = el('button', { class: 'btn btn--link', type: 'button' }, ['Le cours']);
   course.addEventListener('click', () => void ctx.nav.course());
 

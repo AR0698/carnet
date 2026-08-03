@@ -1,0 +1,79 @@
+{
+  "section": "Les verbes clés",
+  "units": [
+    {
+      "id": "w081",
+      "title": "Make, do et take",
+      "words": [
+        { "en": "to make an effort", "fr": "faire un effort", "eg": "He {makes an effort} with names and people notice." },
+        { "en": "to make sense", "fr": "avoir du sens", "eg": "None of it {makes sense} until you see the second page." },
+        { "en": "to do the shopping", "fr": "faire les courses", "eg": "I {do the shopping} on the way home so it never becomes an outing." },
+        { "en": "to do your best", "fr": "faire de son mieux", "eg": "Just {do your best} and send it, it is a draft." },
+        { "en": "to take somebody’s place", "fr": "remplacer quelqu’un", "eg": "She {took his place} on the panel at two days’ notice." },
+        { "en": "to take part in something", "fr": "participer à", "eg": "Anyone can {take part in} it, which is the whole idea." },
+        { "en": "to make do with something", "fr": "se contenter de", "eg": "We had to {make do with} the small room and it was better." },
+        { "en": "to take your time", "fr": "prendre son temps", "eg": "{Take your time}, it is not going anywhere." }
+      ],
+      "odd": { "out": "to make sense", "in": ["to do the shopping", "to take part in something", "to make an effort"], "prompt": "Trois de ces expressions décrivent une action de quelqu’un. Laquelle décrit une propriété ?", "why": "« To make sense » se dit d’une idée, pas d’une personne qui agit." }
+    },
+    {
+      "id": "w082",
+      "title": "Give, keep et miss",
+      "words": [
+        { "en": "to give somebody a hand", "fr": "donner un coup de main", "eg": "{Give} me a hand with this and it takes two minutes." },
+        { "en": "to give something a go", "fr": "essayer", "eg": "{Give} it a go — the worst case is it does not work." },
+        { "en": "to keep an eye on something", "fr": "surveiller", "eg": "{Keep an eye on} the oven, that is all I am asking." },
+        { "en": "to keep in touch", "fr": "rester en contact", "eg": "We said we would {keep in touch} and, unusually, we did." },
+        { "en": "to keep something to yourself", "fr": "garder pour soi", "eg": "{Keep} it to yourself until it is signed." },
+        { "en": "to miss the point", "fr": "passer à côté du sujet", "eg": "The reply {missed the point} so completely it was almost impressive." },
+        { "en": "to miss out on something", "fr": "rater une occasion", "eg": "You will {miss out on} the good weather if you go in November." },
+        { "en": "to give in", "fr": "céder", "eg": "He held out for a fortnight and then {gave in}." }
+      ],
+      "odd": { "out": "to give in", "in": ["to keep an eye on something", "to keep in touch", "to keep something to yourself"], "prompt": "Trois de ces expressions demandent de maintenir quelque chose. Laquelle demande de lâcher ?", "why": "Céder, c’est arrêter de tenir." }
+    },
+    {
+      "id": "w083",
+      "title": "Get, et tout ce qu’il fait",
+      "words": [
+        { "en": "to get somewhere", "fr": "avancer, progresser", "eg": "After three hours we were finally {getting somewhere}." },
+        { "en": "to get in touch", "fr": "prendre contact", "eg": "{Get in touch} nearer the time and we will sort a date." },
+        { "en": "to get rid of something", "fr": "se débarrasser de", "eg": "It took a skip and a Saturday to {get rid of} it all." },
+        { "en": "to get away with something", "fr": "s’en tirer à bon compte", "eg": "He {got away with} it because nobody checked." },
+        { "en": "to get used to something", "fr": "s’habituer à", "eg": "You {get used to} the rain about eight months in.", "no": { "to get used to do": "Après « used to » au sens d’habitude acquise, le verbe prend -ing : « get used to driving »." } },
+        { "en": "to get on with something", "fr": "s’atteler à", "eg": "Right, I will let you {get on with} it." },
+        { "en": "to get the hang of something", "fr": "prendre le coup de main", "eg": "It takes a week to {get the hang of} the ticket machines." },
+        { "en": "to get through to somebody", "fr": "réussir à se faire comprendre", "eg": "I could not {get through to} him on that, and I tried twice." }
+      ]
+    },
+    {
+      "id": "w084",
+      "title": "Go, et ses emplois",
+      "words": [
+        { "en": "to go off", "fr": "se gâter, tourner", "eg": "The milk had {gone off} and the whole fridge knew it." },
+        { "en": "to go ahead", "fr": "aller de l’avant", "eg": "They decided to {go ahead} without the second quote." },
+        { "en": "to go without something", "fr": "se passer de", "eg": "We can {go without} the extra licence for a month." },
+        { "en": "to go down well", "fr": "être bien reçu", "eg": "The change did not {go down well} with the people who use it daily." },
+        { "en": "to be going on", "fr": "se passer", "eg": "Nobody would tell me what was {going on}." },
+        { "en": "to go over something", "fr": "revoir, reprendre", "eg": "Can we {go over} the numbers once more before it goes out?" },
+        { "en": "to go for something", "fr": "opter pour", "eg": "In the end we {went for} the cheaper option and regretted it twice." },
+        { "en": "to have a go at somebody", "fr": "s’en prendre à quelqu’un", "eg": "She {had a go at} him in front of everyone, which was a mistake." }
+      ],
+      "odd": { "out": "to go off", "in": ["to go ahead", "to go for something", "to go over something"], "prompt": "Trois de ces verbes décrivent une décision ou un travail. Lequel décrit de la nourriture ?", "why": "« To go off » se dit du lait, pas d’un projet." }
+    },
+    {
+      "id": "w085",
+      "title": "Les cinq sens",
+      "words": [
+        { "en": "to sound like", "fr": "avoir l’air (à l’oreille)", "eg": "That {sounds like} a plan, let us do it." },
+        { "en": "to smell of something", "fr": "sentir le", "eg": "The whole hall {smells of} chips on a Friday.", "no": { "to smell something": "« To smell fish » veut dire qu’on le renifle ; « to smell of fish », que ça sent." } },
+        { "en": "to taste of something", "fr": "avoir le goût de", "eg": "The water here {tastes of} nothing, which people find odd." },
+        { "en": "to feel like something", "fr": "avoir envie de", "eg": "I {feel like} a walk before it gets dark." },
+        { "en": "to look forward to something", "fr": "attendre avec impatience", "eg": "I am {looking forward to} it more than I expected.", "no": { "to look forward to do": "Ici « to » est une préposition : le verbe qui suit prend -ing." } },
+        { "en": "to keep an ear out", "fr": "tendre l’oreille", "eg": "{Keep an ear out} for the announcement, they say it once." },
+        { "en": "to catch sight of something", "fr": "apercevoir", "eg": "I {caught sight of} the balloons from the office window." },
+        { "en": "it looks as if", "fr": "on dirait que", "eg": "{It looks as if} the whole thing has been postponed." }
+      ],
+      "odd": { "out": "to feel like something", "in": ["to sound like", "to smell of something", "to taste of something"], "prompt": "Trois de ces verbes décrivent une perception. Lequel décrit une envie ?", "why": "« I feel like a walk » ne parle pas du toucher." }
+    }
+  ]
+}

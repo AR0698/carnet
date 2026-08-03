@@ -4,7 +4,7 @@ import { rendererFor, renderStatement, type ExerciseHandle } from '../../engine/
 import { canonicalAnswer, otherAnswers } from '../../engine/grading';
 import { formatDelay } from '../../engine/scheduler';
 import { recordAnswer, reviseAnswer, type RecordedAnswer, type Session } from '../../engine/session';
-import { contentLang, spokenSentence, topicOf } from '../../packs/schema';
+import { contentLang, isChoice, spokenSentence, topicOf } from '../../packs/schema';
 import { recordDispute } from '../../storage/disputes';
 import { el, mount } from '../dom';
 import { openLessonDialog } from '../lesson';
@@ -339,10 +339,10 @@ export function renderReview(ctx: Ctx, session: Session): void {
           verdict.append(
             el('div', { class: 'verdict__actions' }, [
               understandButton(),
-              // Pas de contestation sur un choix multiple : les formulations
-              // étaient sous les yeux, il n'y a pas d'équivalent à avoir
+              // Pas de contestation quand les formes étaient sous les yeux :
+              // rien n'a été formulé, il n'y a donc pas d'équivalent à avoir
               // trouvé autrement.
-              card.exercise.type !== 'mcq' &&
+              !isChoice(card.exercise.type) &&
                 disputeButton(recorded, entry, value.trim(), result.expected),
             ]),
           );

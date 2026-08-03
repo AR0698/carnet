@@ -1,0 +1,64 @@
+{
+  "section": "École et études",
+  "units": [
+    {
+      "id": "w031",
+      "title": "La langue de la salle de classe",
+      "words": [
+        { "en": "to hand something in", "fr": "rendre un devoir", "eg": "You {hand} it in on Friday, not the Friday after." },
+        { "en": "to take notes", "fr": "prendre des notes", "eg": "Nobody {takes notes} by hand any more and everybody says they should.", "no": { "to take note": "Au singulier, « take note » veut dire « prends-en bonne note » — ce n’est plus le carnet." } },
+        { "en": "to catch up", "fr": "rattraper son retard", "eg": "Miss two weeks and you never quite {catch up}." },
+        { "en": "a handout", "fr": "un polycopié", "eg": "There is a {handout} that answers most of this." },
+        { "en": "to swap", "fr": "échanger", "eg": "{Swap} papers with the person next to you." },
+        { "en": "a deadline", "fr": "une date limite", "eg": "The {deadline} moved twice and nobody told us." },
+        { "en": "to be stuck", "fr": "être bloqué", "eg": "If you are {stuck}, say so early rather than late." },
+        { "en": "to work something out", "fr": "trouver la solution", "eg": "Give me a minute, I will {work} it out." }
+      ]
+    },
+    {
+      "id": "w032",
+      "title": "L’école",
+      "words": [
+        { "en": "a state school", "fr": "une école publique", "eg": "Both girls are at the local {state school} and happy there." },
+        { "en": "a private school", "fr": "une école privée", "eg": "A {private school} here costs more than most mortgages." },
+        { "en": "primary school", "fr": "l’école primaire", "eg": "He starts {primary school} in September and cannot wait." },
+        { "en": "secondary school", "fr": "le collège et le lycée", "eg": "{Secondary school} runs from eleven to sixteen or eighteen." },
+        { "en": "a term", "fr": "un trimestre", "eg": "There are three {terms} and a very long summer.", "no": { "a semester": "« Semester » est universitaire et surtout américain ; l’école britannique compte en « terms »." } },
+        { "en": "a head teacher", "fr": "un directeur d’école", "eg": "The {head teacher} sends an email every Friday afternoon." },
+        { "en": "a form tutor", "fr": "un professeur principal", "eg": "Talk to her {form tutor} before you talk to anyone else." },
+        { "en": "a school run", "fr": "l’accompagnement scolaire", "eg": "The {school run} explains the traffic at eight fifteen." }
+      ],
+      "odd": { "out": "a term", "in": ["a head teacher", "a form tutor", "a school run"], "prompt": "Trois de ces mots concernent des personnes ou des trajets. Lequel découpe l’année ?", "why": "Le trimestre est une durée ; les autres sont des gens ou des habitudes." }
+    },
+    {
+      "id": "w033",
+      "title": "Apprendre l’anglais, passer des examens",
+      "words": [
+        { "en": "to sit an exam", "fr": "passer un examen", "eg": "I {sit} the exam in June whether I am ready or not.", "no": { "to pass an exam": "« To pass », c’est le réussir. Le passer, simplement, c’est « to sit » ou « to take »." } },
+        { "en": "to pass", "fr": "réussir un examen", "eg": "She {passed} first time and told nobody." },
+        { "en": "to fail", "fr": "échouer", "eg": "You can {fail} the whole thing on the listening alone." },
+        { "en": "a resit", "fr": "un rattrapage", "eg": "There is a {resit} in September, which costs money." },
+        { "en": "a mock", "fr": "un examen blanc", "eg": "The {mock} is the one that tells you the truth." },
+        { "en": "revision", "fr": "les révisions", "eg": "Two weeks of {revision} beats two nights of panic." },
+        { "en": "a mark", "fr": "une note", "eg": "The {mark} came back higher than the comments suggested.", "no": { "a note": "« Note » en anglais, c’est un mot écrit. La note d’un devoir, c’est « a mark » ou « a grade »." } },
+        { "en": "a certificate", "fr": "une attestation, un diplôme", "eg": "Keep the {certificate}, employers here do ask for it." }
+      ],
+      "odd": { "out": "revision", "in": ["to pass", "to fail", "a resit"], "prompt": "Trois de ces mots viennent après l’épreuve. Lequel vient avant ?", "why": "On révise avant ; on réussit, on échoue ou on repasse après." }
+    },
+    {
+      "id": "w034",
+      "title": "L’université",
+      "words": [
+        { "en": "an undergraduate", "fr": "un étudiant de licence", "eg": "Half the city is {undergraduates} from October to June." },
+        { "en": "a postgraduate", "fr": "un étudiant de master ou doctorat", "eg": "The {postgraduate} library is quieter and warmer." },
+        { "en": "a degree", "fr": "un diplôme universitaire", "eg": "She has a {degree} in something she has never once used." },
+        { "en": "a lecture", "fr": "un cours magistral", "eg": "The nine o’clock {lecture} is half empty by November.", "no": { "a lesson": "« Lesson », c’est le cours d’école. À l’université, on parle de « lecture »." } },
+        { "en": "a seminar", "fr": "un TD, un séminaire", "eg": "The {seminar} is where you actually have to speak." },
+        { "en": "a dissertation", "fr": "un mémoire", "eg": "The {dissertation} eats the whole final year." },
+        { "en": "a tutor", "fr": "un directeur d’études", "eg": "Your {tutor} is the person to email when it goes wrong." },
+        { "en": "tuition fees", "fr": "les frais de scolarité", "eg": "{Tuition fees} are why everyone here talks about debt." }
+      ],
+      "odd": { "out": "tuition fees", "in": ["a lecture", "a seminar", "a dissertation"], "prompt": "Trois de ces mots sont du travail universitaire. Lequel est de l’argent ?", "why": "Les frais de scolarité se paient ; le reste se fait." }
+    }
+  ]
+}

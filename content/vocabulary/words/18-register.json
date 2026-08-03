@@ -1,0 +1,93 @@
+{
+  "section": "Registre et style",
+  "units": [
+    {
+      "id": "w095",
+      "title": "Anglais soutenu, anglais familier",
+      "words": [
+        { "en": "to require", "fr": "exiger, nécessiter", "eg": "The form {requires} two forms of identification.", "clue": "Le mot des formulaires : à l’oral on dirait « need »." },
+        { "en": "to purchase", "fr": "acheter (soutenu)", "eg": "Tickets {purchased} online are non-refundable." },
+        { "en": "to obtain", "fr": "obtenir (soutenu)", "eg": "You can {obtain} a copy from the office, or just ask her." },
+        { "en": "sufficient", "fr": "suffisant (soutenu)", "eg": "There is {sufficient} evidence to proceed, which means enough." },
+        { "en": "a bloke", "fr": "un type", "eg": "A {bloke} in the queue told us the whole history of the building." },
+        { "en": "knackered", "fr": "crevé", "eg": "I was absolutely {knackered} by the end of that week." },
+        { "en": "a load of", "fr": "un tas de", "eg": "There is a {load of} stuff in that cupboard nobody has opened." },
+        { "en": "dodgy", "fr": "louche, douteux", "eg": "The wiring looked {dodgy} and the survey agreed." }
+      ],
+      "odd": { "out": "sufficient", "in": ["a bloke", "knackered", "dodgy"], "prompt": "Trois de ces mots sont familiers. Lequel est soutenu ?", "why": "« Sufficient » appartient au formulaire, pas au comptoir." }
+    },
+    {
+      "id": "w096",
+      "title": "Remplir un formulaire, écrire un CV",
+      "words": [
+        { "en": "a surname", "fr": "un nom de famille", "eg": "Put your {surname} in capitals, they always ask.", "no": { "a name": "Le prénom est « first name », le nom de famille « surname » ou « last name »." } },
+        { "en": "a date of birth", "fr": "une date de naissance", "eg": "Write the {date of birth} the British way: day, month, year." },
+        { "en": "a postcode", "fr": "un code postal", "eg": "The {postcode} does half the work of the address here." },
+        { "en": "block capitals", "fr": "en majuscules d’imprimerie", "eg": "Complete the form in {block capitals} and in black ink." },
+        { "en": "a National Insurance number", "fr": "un numéro de sécurité sociale", "eg": "You cannot be paid without a {National Insurance number}, so apply in week one." },
+        { "en": "employment history", "fr": "un parcours professionnel", "eg": "Put the {employment history} in reverse order, most recent first." },
+        { "en": "a gap", "fr": "un trou (dans un parcours)", "eg": "Explain the {gap} in one line rather than hoping nobody notices." },
+        { "en": "to tick a box", "fr": "cocher une case", "eg": "{Tick the box} if you want to be contacted, and they will anyway.", "no": { "to check a box": "« Check » est américain ; ici on coche : « tick »." } }
+      ]
+    },
+    {
+      "id": "w097",
+      "title": "Écrire un texte argumenté",
+      "words": [
+        { "en": "to outline", "fr": "présenter dans les grandes lignes", "eg": "The first paragraph should {outline} what follows and nothing more." },
+        { "en": "to illustrate", "fr": "illustrer par un exemple", "eg": "One good example is enough to {illustrate} the whole point." },
+        { "en": "an argument", "fr": "un argument", "eg": "The {argument} is sound; the evidence for it is not.", "no": { "a dispute": "En anglais, « argument » veut dire à la fois la dispute et le raisonnement. Ici, c’est le raisonnement." } },
+        { "en": "evidence", "fr": "des preuves", "eg": "There is no {evidence} either way, which is worth saying out loud.", "no": { "evidences|an evidence": "Indénombrable : « the evidence is », jamais « evidences »." } },
+        { "en": "to sum up", "fr": "résumer", "eg": "To {sum up}, three of the four objections answer themselves." },
+        { "en": "a draft", "fr": "un brouillon", "eg": "The first {draft} exists to be thrown away." },
+        { "en": "to bear something in mind", "fr": "garder à l’esprit", "eg": "{Bear in mind} that half the readers will stop at the first page." },
+        { "en": "a paragraph", "fr": "un paragraphe", "eg": "One idea per {paragraph}, and the idea in the first line." }
+      ],
+      "odd": { "out": "a draft", "in": ["to outline", "to illustrate", "to sum up"], "prompt": "Trois de ces mots sont des gestes d’écriture. Lequel est un état du texte ?", "why": "Le brouillon est le texte lui-même, à un moment donné." }
+    },
+    {
+      "id": "w098",
+      "title": "Lettres et courriels formels",
+      "words": [
+        { "en": "Dear Sir or Madam", "fr": "Madame, Monsieur", "eg": "Start with {Dear Sir or Madam} only when you genuinely do not know." },
+        { "en": "Yours faithfully", "fr": "Veuillez agréer mes salutations", "eg": "{Yours faithfully} goes with Dear Sir or Madam, and only with it.", "clue": "Sans le nom, c’est faithfully ; avec le nom, c’est sincerely." },
+        { "en": "Yours sincerely", "fr": "Cordialement (formel)", "eg": "{Yours sincerely} goes with a name you have actually used." },
+        { "en": "I am writing to", "fr": "je vous écris pour", "eg": "{I am writing to} confirm the arrangements for the fifteenth." },
+        { "en": "with reference to", "fr": "suite à", "eg": "{With reference to} your letter of the third, the answer is no." },
+        { "en": "please find attached", "fr": "veuillez trouver ci-joint", "eg": "{Please find attached} the signed copy and the revised dates." },
+        { "en": "at your earliest convenience", "fr": "dans les meilleurs délais", "eg": "Reply {at your earliest convenience}, which means this week." },
+        { "en": "I look forward to hearing from you", "fr": "dans l’attente de votre réponse", "eg": "{I look forward to hearing from you} is how nine letters out of ten end." }
+      ]
+    },
+    {
+      "id": "w099",
+      "title": "Courriels et messages familiers",
+      "words": [
+        { "en": "just a quick one", "fr": "juste un petit mot", "eg": "{Just a quick one} — are we still on for Thursday?" },
+        { "en": "hope you’re well", "fr": "j’espère que tu vas bien", "eg": "{Hope you’re well} is the opening line of every second email in this country." },
+        { "en": "sorry for the slow reply", "fr": "désolé de répondre si tard", "eg": "{Sorry for the slow reply}, it has been one of those fortnights." },
+        { "en": "let me know", "fr": "dis-moi", "eg": "{Let me know} either way and I will sort the rest." },
+        { "en": "no rush", "fr": "rien ne presse", "eg": "Have a look when you can, {no rush}." },
+        { "en": "speak soon", "fr": "à bientôt", "eg": "Right, {speak soon} — and thanks again." },
+        { "en": "any thoughts", "fr": "des idées ?", "eg": "Draft attached, {any thoughts} welcome." },
+        { "en": "cheers for that", "fr": "merci pour ça", "eg": "{Cheers for that}, it saved me a phone call." }
+      ],
+      "odd": { "out": "no rush", "in": ["just a quick one", "hope you’re well", "speak soon"], "prompt": "Trois de ces formules ouvrent ou ferment un message. Laquelle porte sur le délai ?", "why": "« No rush » dit quand répondre, pas bonjour ni au revoir." }
+    },
+    {
+      "id": "w100",
+      "title": "Les abréviations",
+      "words": [
+        { "en": "eg", "fr": "par exemple", "eg": "Bring something warm, {eg} the coat you never wear.", "clue": "Du latin exempli gratia — et ce n’est pas la même chose que ie." },
+        { "en": "ie", "fr": "c’est-à-dire", "eg": "The usual suspects, {ie} the three of us again." },
+        { "en": "asap", "fr": "dès que possible", "eg": "They want it {asap}, which in this office means Thursday." },
+        { "en": "RSVP", "fr": "réponse souhaitée", "eg": "The invitation says {RSVP} by the end of the month." },
+        { "en": "aka", "fr": "alias", "eg": "The back office, {aka} the room with the kettle." },
+        { "en": "PTO", "fr": "voir au dos", "eg": "There is a {PTO} at the bottom and most people miss it." },
+        { "en": "N/A", "fr": "sans objet", "eg": "Put {N/A} rather than leaving it blank, they send it back otherwise." },
+        { "en": "FYI", "fr": "pour information", "eg": "{FYI} — no action needed, just so you have seen it." }
+      ],
+      "odd": { "out": "asap", "in": ["eg", "ie", "aka"], "prompt": "Trois de ces abréviations servent à préciser un mot. Laquelle donne un délai ?", "why": "« Asap » parle du temps ; les trois autres reformulent." }
+    }
+  ]
+}

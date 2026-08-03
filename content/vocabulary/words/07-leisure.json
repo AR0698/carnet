@@ -1,0 +1,79 @@
+{
+  "section": "Loisirs et spectacle",
+  "units": [
+    {
+      "id": "w041",
+      "title": "Sport et loisirs",
+      "words": [
+        { "en": "to go for a run", "fr": "aller courir", "eg": "I {go for a run} along the towpath twice a week." },
+        { "en": "a kickabout", "fr": "un foot improvisé", "eg": "There is a {kickabout} on the downs every Sunday morning." },
+        { "en": "a leisure centre", "fr": "un centre sportif municipal", "eg": "The {leisure centre} pool is cheaper before nine." },
+        { "en": "to take something up", "fr": "se mettre à une activité", "eg": "He {took} up climbing at forty and has not shut up since." },
+        { "en": "to give something up", "fr": "arrêter une activité", "eg": "I {gave} up running and my knees forgave me." },
+        { "en": "keen on something", "fr": "passionné de", "eg": "She is very {keen on} sea swimming, which I do not understand." },
+        { "en": "a hobby", "fr": "un loisir", "eg": "Every {hobby} in this country ends up with a club and a newsletter." },
+        { "en": "a walk", "fr": "une randonnée, une promenade", "eg": "A proper {walk} on a Sunday is not optional here." }
+      ],
+      "odd": { "out": "a leisure centre", "in": ["a kickabout", "a walk", "a hobby"], "prompt": "Trois de ces mots désignent une activité. Lequel désigne un lieu ?", "why": "Le centre sportif est un bâtiment ; les trois autres sont des choses qu’on fait." }
+    },
+    {
+      "id": "w042",
+      "title": "Le sport de compétition",
+      "words": [
+        { "en": "a draw", "fr": "un match nul", "eg": "It finished a {draw} and both sets of fans were furious.", "no": { "an equality|a tie": "« Tie » se dit surtout aux États-Unis ; au Royaume-Uni un match nul est « a draw »." } },
+        { "en": "extra time", "fr": "les prolongations", "eg": "It went to {extra time} and then to penalties." },
+        { "en": "a fixture", "fr": "une rencontre au calendrier", "eg": "The {fixture} was moved to a Tuesday night for television." },
+        { "en": "an away game", "fr": "un match à l’extérieur", "eg": "It is an {away game}, so the pub will be quiet." },
+        { "en": "a season", "fr": "une saison", "eg": "The {season} runs from August to May and rules the year." },
+        { "en": "to be relegated", "fr": "être relégué", "eg": "They were {relegated} on the last day, again." },
+        { "en": "a referee", "fr": "un arbitre", "eg": "Nobody has ever agreed with a {referee} in the history of this country." },
+        { "en": "a fixture list", "fr": "un calendrier des matchs", "eg": "The {fixture list} comes out in June and people plan holidays around it." }
+      ]
+    },
+    {
+      "id": "w043",
+      "title": "Livres et films",
+      "words": [
+        { "en": "a novel", "fr": "un roman", "eg": "It is a {novel} about a family and a house, mostly the house.", "art": "book", "no": { "a roman": "Faux ami : « roman » en anglais concerne Rome. Le roman, c’est « a novel »." } },
+        { "en": "a plot", "fr": "l’intrigue", "eg": "The {plot} is thin and it does not matter at all." },
+        { "en": "a character", "fr": "un personnage", "eg": "Not one {character} in it is likeable, which is the point." },
+        { "en": "a setting", "fr": "le cadre, le décor", "eg": "The {setting} is a seaside town in about 1974." },
+        { "en": "a subtitle", "fr": "un sous-titre", "eg": "I watch everything with {subtitles} now, English included." },
+        { "en": "a review", "fr": "une critique", "eg": "The {review} gave away the ending in the second line." },
+        { "en": "gripping", "fr": "prenant, haletant", "eg": "The first hour is slow and the last is {gripping}." },
+        { "en": "to be based on something", "fr": "être tiré de", "eg": "It is {based on} a true story, which explains the odd bits." }
+      ],
+      "odd": { "out": "a review", "in": ["a plot", "a character", "a setting"], "prompt": "Trois de ces mots sont dans l’œuvre. Lequel est écrit après ?", "why": "La critique parle de l’œuvre depuis l’extérieur." }
+    },
+    {
+      "id": "w044",
+      "title": "La musique",
+      "words": [
+        { "en": "a gig", "fr": "un concert", "eg": "There is a {gig} on Thursday in a room above a pub." },
+        { "en": "a venue", "fr": "une salle, un lieu", "eg": "The best {venue} in town holds two hundred people." },
+        { "en": "a support act", "fr": "une première partie", "eg": "Get there early — the {support act} is often the better half." },
+        { "en": "a set", "fr": "un set, un passage", "eg": "Her {set} was forty minutes and felt like ten." },
+        { "en": "an encore", "fr": "un rappel", "eg": "They came back for one {encore} and left the lights on." },
+        { "en": "a tune", "fr": "un morceau, un air", "eg": "That {tune} has been in my head since Saturday." },
+        { "en": "lyrics", "fr": "les paroles", "eg": "The {lyrics} are half the reason anyone listens to them." },
+        { "en": "to be into something", "fr": "être branché par", "eg": "He is really {into} dub at the moment, which is very Bristol." }
+      ],
+      "odd": { "out": "a venue", "in": ["a gig", "a set", "an encore"], "prompt": "Trois de ces mots sont des moments de la soirée. Lequel est un endroit ?", "why": "La salle reste ; le concert, le set et le rappel passent." }
+    },
+    {
+      "id": "w045",
+      "title": "Les grandes occasions",
+      "words": [
+        { "en": "a bank holiday weekend", "fr": "un week-end prolongé", "eg": "Every {bank holiday weekend} it rains, and every year we forget." },
+        { "en": "Bonfire Night", "fr": "la nuit des feux (5 novembre)", "eg": "{Bonfire Night} is the fifth of November, and the dogs hate it." },
+        { "en": "a fireworks display", "fr": "un feu d’artifice", "eg": "The {fireworks display} starts at seven and the roads shut at five." },
+        { "en": "Boxing Day", "fr": "le lendemain de Noël", "eg": "{Boxing Day} is for leftovers and a walk, in that order." },
+        { "en": "a fête", "fr": "une kermesse de village", "eg": "The village {fête} has a cake stall and a tombola and always will." },
+        { "en": "a stall", "fr": "un stand", "eg": "There is a {stall} selling jam that has won prizes." },
+        { "en": "a raffle", "fr": "une tombola", "eg": "I bought five {raffle} tickets and won a bottle of something brown." },
+        { "en": "fancy dress", "fr": "un déguisement", "eg": "It said {fancy dress} and two people took it seriously.", "no": { "an elegant dress": "Faux ami : « fancy dress » veut dire déguisement, pas tenue chic." } }
+      ],
+      "odd": { "out": "a stall", "in": ["Bonfire Night", "Boxing Day", "a bank holiday weekend"], "prompt": "Trois de ces mots sont des dates. Lequel est un objet du décor ?", "why": "Le stand est là le jour de la fête ; les autres sont le jour lui-même." }
+    }
+  ]
+}

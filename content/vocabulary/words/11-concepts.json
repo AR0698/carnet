@@ -1,0 +1,80 @@
+{
+  "section": "Notions",
+  "units": [
+    {
+      "id": "w060",
+      "title": "Le temps qui passe",
+      "words": [
+        { "en": "a fortnight", "fr": "quinze jours", "eg": "We are away for a {fortnight} at the end of August.", "clue": "Quatorze nuits — le mot est un fossile, et personne ne s’en passe.", "art": "clock" },
+        { "en": "a decade", "fr": "une décennie", "eg": "The shop has been there the best part of a {decade}." },
+        { "en": "eventually", "fr": "finalement, au bout du compte", "eg": "It arrived {eventually}, three weeks after the email said it had.", "no": { "possibly|maybe": "Faux ami majeur : « eventually » veut dire « à la fin », jamais « éventuellement »." } },
+        { "en": "meanwhile", "fr": "pendant ce temps", "eg": "{Meanwhile}, nobody had told the people actually doing the work." },
+        { "en": "overnight", "fr": "du jour au lendemain", "eg": "The whole street flooded {overnight} and drained by lunchtime." },
+        { "en": "for the time being", "fr": "pour l’instant", "eg": "We are staying put {for the time being}." },
+        { "en": "at short notice", "fr": "au dernier moment", "eg": "They moved the meeting {at short notice} and half of us missed it." },
+        { "en": "beforehand", "fr": "au préalable", "eg": "Read it {beforehand} or the whole hour is wasted." }
+      ],
+      "odd": { "out": "a decade", "in": ["eventually", "meanwhile", "beforehand"], "prompt": "Trois de ces mots situent une action par rapport à une autre. Lequel mesure une durée ?", "why": "Une décennie se compte ; les trois autres se repèrent." }
+    },
+    {
+      "id": "w061",
+      "title": "Les nombres",
+      "words": [
+        { "en": "a couple of", "fr": "deux, deux ou trois", "eg": "Give me a {couple of} minutes and I will have it." },
+        { "en": "a dozen", "fr": "une douzaine", "eg": "Half a {dozen} people turned up and it was better for it." },
+        { "en": "roughly", "fr": "environ", "eg": "It is {roughly} four hundred, give or take." },
+        { "en": "a decimal point", "fr": "une virgule décimale", "eg": "English puts a {decimal point} where French puts a comma.", "clue": "3.5 en anglais, 3,5 en français : la même quantité, l’autre signe." },
+        { "en": "a ratio", "fr": "un rapport, une proportion", "eg": "The {ratio} is about one to three and has not moved in years." },
+        { "en": "per cent", "fr": "pour cent", "eg": "Twelve {per cent} of nothing is still nothing.", "no": { "percent|pourcent": "En anglais britannique on écrit « per cent » en deux mots." } },
+        { "en": "to work out at", "fr": "revenir à", "eg": "It {works out at} about nine pounds a head." },
+        { "en": "odd", "fr": "impair", "eg": "The houses on this side are all {odd} numbers." }
+      ],
+      "odd": { "out": "a decimal point", "in": ["a couple of", "a dozen", "roughly"], "prompt": "Trois de ces mots donnent une quantité approximative. Lequel est un signe ?", "why": "La virgule décimale s’écrit ; les autres se disent." }
+    },
+    {
+      "id": "w062",
+      "title": "Distances, dimensions et tailles",
+      "words": [
+        { "en": "a mile", "fr": "un mille (1,6 km)", "eg": "It is two {miles} to the station, which is forty minutes uphill." },
+        { "en": "a stone", "fr": "6,35 kg (unité de poids)", "eg": "British people still give their weight in {stone} and always will." },
+        { "en": "a pint", "fr": "une pinte (0,57 l)", "eg": "Milk comes in {pints} and petrol comes in litres, and nobody blinks." },
+        { "en": "width", "fr": "la largeur", "eg": "Measure the {width} of the doorway before you buy the sofa." },
+        { "en": "depth", "fr": "la profondeur", "eg": "The {depth} of the cupboard is the bit everybody forgets." },
+        { "en": "roughly the size of", "fr": "à peu près de la taille de", "eg": "It is {roughly the size of} a shoebox." },
+        { "en": "spacious", "fr": "spacieux", "eg": "The advert said {spacious} and it means there is a second window." },
+        { "en": "cramped", "fr": "exigu", "eg": "It is {cramped} but it is warm and it is ten minutes from work." }
+      ],
+      "odd": { "out": "spacious", "in": ["a mile", "a stone", "a pint"], "prompt": "Trois de ces mots sont des unités. Lequel est une impression ?", "why": "Spacieux ne se mesure pas ; on le ressent en entrant." }
+    },
+    {
+      "id": "w063",
+      "title": "Objets, matières, formes et couleurs",
+      "words": [
+        { "en": "a triangle", "fr": "un triangle", "eg": "The park is a {triangle} between three roads.", "art": "triangle" },
+        { "en": "a rectangle", "fr": "un rectangle", "eg": "Every window in the house is the same {rectangle}.", "art": "rectangle" },
+        { "en": "oval", "fr": "ovale", "eg": "The table is {oval}, which fits two more people than a round one.", "art": "oval" },
+        { "en": "a cylinder", "fr": "un cylindre", "eg": "It comes in a cardboard {cylinder} with a plastic lid.", "art": "cylinder" },
+        { "en": "leather", "fr": "le cuir", "eg": "Real {leather} lasts a decade and looks better every year." },
+        { "en": "wooden", "fr": "en bois", "eg": "It is a {wooden} floor under that carpet, apparently.", "no": { "in wood": "L’anglais préfère l’adjectif : « a wooden floor », pas « a floor in wood »." } },
+        { "en": "navy", "fr": "bleu marine", "eg": "Half the men at the wedding were in {navy}." },
+        { "en": "beige", "fr": "beige", "eg": "The whole flat was {beige} and we painted it in a fortnight." }
+      ],
+      "odd": { "out": "leather", "in": ["a triangle", "oval", "a cylinder"], "prompt": "Trois de ces mots décrivent une forme. Lequel décrit une matière ?", "why": "Le cuir peut prendre n’importe quelle forme." }
+    },
+    {
+      "id": "w064",
+      "title": "Contenants et quantités",
+      "words": [
+        { "en": "a jar", "fr": "un pot, un bocal", "eg": "There is a {jar} of something at the back of that cupboard, older than the flat.", "art": "jar" },
+        { "en": "a tin", "fr": "une boîte de conserve", "eg": "A {tin} of beans is the most British thing in any kitchen.", "art": "tin", "no": { "a can": "« Can » est américain pour la conserve ; ici c’est « a tin » — sauf pour la bière." } },
+        { "en": "a carton", "fr": "une brique", "eg": "Get a {carton} of the semi-skimmed, not the blue one.", "art": "carton" },
+        { "en": "a packet", "fr": "un paquet", "eg": "One {packet} between four is optimistic.", "art": "packet" },
+        { "en": "a tube", "fr": "un tube", "eg": "There is always one more use left in a {tube}.", "art": "tube" },
+        { "en": "a jug", "fr": "un pichet, une carafe", "eg": "They bring a {jug} of tap water without being asked here.", "art": "jug" },
+        { "en": "a bowl", "fr": "un bol, un saladier", "eg": "Use the big {bowl}, the small one always overflows.", "art": "bowl" },
+        { "en": "a slice", "fr": "une tranche", "eg": "Two {slices} of toast and the day can start." }
+      ],
+      "odd": { "out": "a slice", "in": ["a jar", "a tin", "a carton"], "prompt": "Trois de ces mots sont des emballages. Lequel est une part ?", "why": "Une tranche est ce qu’on coupe, pas ce qui contient." }
+    }
+  ]
+}

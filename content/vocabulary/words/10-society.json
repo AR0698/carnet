@@ -1,0 +1,65 @@
+{
+  "section": "Questions de société",
+  "units": [
+    {
+      "id": "w056",
+      "title": "La délinquance",
+      "words": [
+        { "en": "a burglary", "fr": "un cambriolage", "eg": "There was a {burglary} on the next street and the whole road bought cameras.", "clue": "Le vol avec entrée dans un bâtiment — le mot dit déjà par où c’est entré." },
+        { "en": "shoplifting", "fr": "le vol à l’étalage", "eg": "{Shoplifting} is why the good coffee is behind the counter now." },
+        { "en": "a witness", "fr": "un témoin", "eg": "They are looking for a {witness} who was on the bus that night." },
+        { "en": "to be charged with something", "fr": "être inculpé de", "eg": "He was {charged with} something minor and it took a year." },
+        { "en": "a fine", "fr": "une amende", "eg": "It is a sixty-pound {fine}, thirty if you pay within a fortnight." },
+        { "en": "vandalism", "fr": "le vandalisme", "eg": "Half of what the council calls {vandalism} is what the city calls art." },
+        { "en": "a neighbourhood watch", "fr": "une surveillance de quartier", "eg": "There is a {neighbourhood watch} sign and a very active group chat." },
+        { "en": "to report something", "fr": "signaler", "eg": "{Report} it online — nobody answers the non-emergency number." }
+      ],
+      "odd": { "out": "a witness", "in": ["a burglary", "shoplifting", "vandalism"], "prompt": "Trois de ces mots sont des délits. Lequel est une personne ?", "why": "Le témoin voit le délit ; il ne le commet pas." }
+    },
+    {
+      "id": "w057",
+      "title": "La politique",
+      "words": [
+        { "en": "a general election", "fr": "des élections législatives", "eg": "A {general election} has to be called within five years." },
+        { "en": "a constituency", "fr": "une circonscription", "eg": "This {constituency} has changed hands twice in ten years." },
+        { "en": "an MP", "fr": "un député", "eg": "Write to your {MP} — they do actually read it." },
+        { "en": "a polling station", "fr": "un bureau de vote", "eg": "The {polling station} is in a primary school, as it always is." },
+        { "en": "a turnout", "fr": "un taux de participation", "eg": "The {turnout} was under half and everyone drew their own conclusion." },
+        { "en": "a backbencher", "fr": "un député sans portefeuille", "eg": "As a {backbencher} she said the thing nobody in government could." },
+        { "en": "a manifesto", "fr": "un programme électoral", "eg": "The {manifesto} promised it and the budget did not fund it." },
+        { "en": "a council tax", "fr": "une taxe d’habitation", "eg": "The {council tax} band decides more than the postcode does." }
+      ],
+      "odd": { "out": "a council tax", "in": ["a general election", "a polling station", "a turnout"], "prompt": "Trois de ces mots concernent le vote. Lequel concerne l’impôt ?", "why": "La taxe d’habitation se paie tous les mois, pas tous les cinq ans." }
+    },
+    {
+      "id": "w058",
+      "title": "Le climat",
+      "words": [
+        { "en": "global warming", "fr": "le réchauffement climatique", "eg": "{Global warming} is why the winters here are wetter, not colder." },
+        { "en": "a carbon footprint", "fr": "une empreinte carbone", "eg": "Flying once wipes out a year of the rest of your {carbon footprint}." },
+        { "en": "renewable energy", "fr": "les énergies renouvelables", "eg": "More than a third of the grid is {renewable energy} on a windy day." },
+        { "en": "a flood", "fr": "une inondation", "eg": "The {flood} reached the second row of houses in 2020." },
+        { "en": "a drought", "fr": "une sécheresse", "eg": "Two months without rain and it was officially a {drought}." },
+        { "en": "recycling", "fr": "le tri, le recyclage", "eg": "The {recycling} is collected weekly and the rest fortnightly." },
+        { "en": "single-use plastic", "fr": "le plastique à usage unique", "eg": "{Single-use plastic} disappeared from the shops faster than anyone expected." },
+        { "en": "an insulation grant", "fr": "une aide à l’isolation", "eg": "There is an {insulation grant} that pays for most of it." }
+      ],
+      "odd": { "out": "recycling", "in": ["a flood", "a drought", "global warming"], "prompt": "Trois de ces mots décrivent ce qui arrive au climat. Lequel décrit ce qu’on fait ?", "why": "Le tri est une réponse, pas un phénomène." }
+    },
+    {
+      "id": "w059",
+      "title": "La guerre et la violence",
+      "words": [
+        { "en": "a ceasefire", "fr": "un cessez-le-feu", "eg": "The {ceasefire} held for nine days." },
+        { "en": "a refugee", "fr": "un réfugié", "eg": "The city took in more than a thousand {refugees} in a year." },
+        { "en": "aid", "fr": "l’aide humanitaire", "eg": "{Aid} reached the border and stopped there.", "no": { "an aid": "« Aid » ne se compte pas : jamais « an aid », jamais « aids »." } },
+        { "en": "a casualty", "fr": "une victime, un blessé", "eg": "The first {casualty} figures were wrong in both directions." },
+        { "en": "to break out", "fr": "éclater (conflit)", "eg": "Fighting {broke out} again the week the talks ended." },
+        { "en": "a peace talk", "fr": "une négociation de paix", "eg": "The {peace talks} moved to a third country and stalled there." },
+        { "en": "a veteran", "fr": "un ancien combattant", "eg": "Every town here has a {veteran} on the memorial committee." },
+        { "en": "Remembrance Day", "fr": "le jour du Souvenir", "eg": "On {Remembrance Day} the whole country stops for two minutes." }
+      ],
+      "odd": { "out": "aid", "in": ["a ceasefire", "a peace talk", "to break out"], "prompt": "Trois de ces mots concernent le cours du conflit. Lequel concerne le secours ?", "why": "L’aide humanitaire arrive pendant, sans rien changer au conflit lui-même." }
+    }
+  ]
+}

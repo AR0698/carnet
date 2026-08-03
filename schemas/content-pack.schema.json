@@ -78,6 +78,17 @@
   },
 
   "$defs": {
+    "gloss": {
+      "description": "Un mot et son sens — glossaire d'une scène, échelon d'une échelle.",
+      "type": "object",
+      "required": ["en", "fr"],
+      "additionalProperties": false,
+      "properties": {
+        "en": { "type": "string", "minLength": 1, "maxLength": 48 },
+        "fr": { "type": "string", "minLength": 1, "maxLength": 64 }
+      }
+    },
+
     "lesson": {
       "description": "La fiche de cours d'une notion : l'endroit où on va comprendre. Tient sur un écran, se lit dans un ordre fixe — image, règle, contraste, piège du francophone, exemples.",
       "type": "object",
@@ -128,6 +139,37 @@
                   "label": { "type": "string", "minLength": 1, "maxLength": 48 }
                 }
               }
+            }
+          }
+        },
+        "scene": {
+          "description": "Le vocabulaire de l'unité dans une situation plutôt qu'en liste : la réponse à « pourquoi ce mot-là, à ce moment-là ».",
+          "type": "object",
+          "required": ["where", "text", "gloss"],
+          "additionalProperties": false,
+          "properties": {
+            "where": { "type": "string", "minLength": 1, "maxLength": 90 },
+            "text": { "type": "string", "minLength": 1, "maxLength": 460 },
+            "gloss": {
+              "type": "array",
+              "minItems": 3,
+              "maxItems": 8,
+              "items": { "$ref": "#/$defs/gloss" }
+            }
+          }
+        },
+        "scale": {
+          "description": "Les mots de l'unité rangés par degré — ce que la frise du temps est à la grammaire.",
+          "type": "object",
+          "required": ["label", "steps"],
+          "additionalProperties": false,
+          "properties": {
+            "label": { "type": "string", "minLength": 1, "maxLength": 64 },
+            "steps": {
+              "type": "array",
+              "minItems": 3,
+              "maxItems": 5,
+              "items": { "$ref": "#/$defs/gloss" }
             }
           }
         },
@@ -200,7 +242,16 @@
       "additionalProperties": false,
       "properties": {
         "type": {
-          "enum": ["produce", "fill_blank", "spot_error", "transform", "mcq"]
+          "enum": [
+            "produce",
+            "fill_blank",
+            "spot_error",
+            "transform",
+            "mcq",
+            "picture",
+            "match",
+            "odd_one_out"
+          ]
         },
         "prompt": { "type": "string", "minLength": 1 },
         "source": {
@@ -232,16 +283,49 @@
           }
         },
         "distractors": {
-          "description": "Uniquement pour mcq : mauvaises réponses proposées.",
+          "description": "Pour mcq (mauvaises réponses proposées) et odd_one_out (les mots qui, eux, appartiennent bien à la famille).",
           "type": "array",
           "items": { "type": "string", "minLength": 1 }
+        },
+        "art": {
+          "description": "Uniquement pour picture : la clé du dessin dans ui/vocabArt.ts.",
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$"
+        },
+        "pairs": {
+          "description": "Uniquement pour match : les couples mot / sens à reformer.",
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 6,
+          "items": {
+            "type": "object",
+            "required": ["en", "fr"],
+            "additionalProperties": false,
+            "properties": {
+              "en": { "type": "string", "minLength": 1, "maxLength": 42 },
+              "fr": { "type": "string", "minLength": 1, "maxLength": 42 }
+            }
+          }
         }
       },
       "allOf": [
         {
-          "if": { "properties": { "type": { "const": "mcq" } }, "required": ["type"] },
+          "if": {
+            "properties": { "type": { "enum": ["mcq", "odd_one_out"] } },
+            "required": ["type"]
+          },
           "then": { "required": ["distractors"], "properties": { "distractors": { "minItems": 2 } } },
           "else": { "not": { "required": ["distractors"] } }
+        },
+        {
+          "if": { "properties": { "type": { "const": "picture" } }, "required": ["type"] },
+          "then": { "required": ["art"] },
+          "else": { "not": { "required": ["art"] } }
+        },
+        {
+          "if": { "properties": { "type": { "const": "match" } }, "required": ["type"] },
+          "then": { "required": ["pairs"] },
+          "else": { "not": { "required": ["pairs"] } }
         },
         {
           "if": {

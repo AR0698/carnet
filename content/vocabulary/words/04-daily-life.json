@@ -1,0 +1,225 @@
+{
+  "section": "La vie quotidienne",
+  "units": [
+    {
+      "id": "w016",
+      "title": "Les journées ordinaires",
+      "words": [
+        { "en": "to have a lie-in", "fr": "faire la grasse matinée", "eg": "Saturday is the only day I {have a lie-in}." },
+        { "en": "to nip out", "fr": "sortir deux minutes", "eg": "I am going to {nip out} for milk, back in five." },
+        { "en": "to get changed", "fr": "se changer", "eg": "Give me a minute to {get changed} and I will come down." },
+        { "en": "to pop round", "fr": "passer chez quelqu’un", "eg": "She said she would {pop round} after work." },
+        { "en": "to do the washing-up", "fr": "faire la vaisselle", "eg": "He cooks, I {do the washing-up}, and nobody has ever discussed it.", "no": { "to do the dishes": "« Do the dishes » est américain ; au Royaume-Uni c’est « the washing-up »." } },
+        { "en": "to put the kettle on", "fr": "mettre l’eau à chauffer", "eg": "Someone {put the kettle on} the moment we walked in.", "clue": "Le premier geste britannique, quelle que soit la nouvelle." },
+        { "en": "to have an early night", "fr": "se coucher tôt", "eg": "I am going to {have an early night} for once." },
+        { "en": "to be a morning person", "fr": "être du matin", "eg": "He is very much a {morning person} and does not hide it." }
+      ]
+    },
+    {
+      "id": "w017",
+      "title": "Là où on habite",
+      "words": [
+        { "en": "a terraced house", "fr": "une maison mitoyenne", "eg": "Most of the street is {terraced houses} from the 1890s.", "clue": "Les rangées de maisons collées les unes aux autres — la carte postale de Bristol." },
+        { "en": "a semi-detached house", "fr": "une maison jumelée", "eg": "They bought a {semi-detached house} with a garage that leaks." },
+        { "en": "a flat", "fr": "un appartement", "eg": "It is a one-bedroom {flat} above a bakery, which is better than it sounds.", "no": { "an apartment": "« Apartment » est américain ; en Grande-Bretagne on dit « flat »." } },
+        { "en": "a landlord", "fr": "un propriétaire bailleur", "eg": "The {landlord} has never once answered a message on a Friday." },
+        { "en": "a tenancy agreement", "fr": "un bail", "eg": "Read the {tenancy agreement} before you sign anything." },
+        { "en": "an estate agent", "fr": "un agent immobilier", "eg": "The {estate agent} called it cosy, which means small." },
+        { "en": "a garden", "fr": "un jardin", "eg": "Even the smallest house here has a {garden} the size of a rug.", "no": { "a yard": "« Yard » est américain, ou alors bétonné. Le carré d’herbe derrière la maison, c’est « the garden »." } },
+        { "en": "damp", "fr": "l’humidité", "eg": "There is {damp} in the back bedroom every winter." }
+      ],
+      "odd": { "out": "a garden", "in": ["a landlord", "an estate agent", "a tenancy agreement"], "prompt": "Trois de ces mots appartiennent à la location. Lequel n’en est pas ?", "why": "Le jardin fait partie du logement ; les trois autres font partie du contrat." }
+    },
+    {
+      "id": "w018",
+      "title": "Dans la maison",
+      "words": [
+        { "en": "a kettle", "fr": "une bouilloire", "eg": "The {kettle} takes up half the worktop and nobody minds.", "art": "kettle" },
+        { "en": "a tap", "fr": "un robinet", "eg": "The hot {tap} runs cold for a good minute.", "art": "tap", "no": { "a faucet": "« Faucet » est américain ; au Royaume-Uni c’est « tap »." } },
+        { "en": "a cupboard", "fr": "un placard", "eg": "The mugs live in the {cupboard} above the sink.", "art": "cupboard" },
+        { "en": "a duvet", "fr": "une couette", "eg": "We swap to the thick {duvet} in October.", "art": "duvet" },
+        { "en": "a cushion", "fr": "un coussin", "eg": "There is a {cushion} on that chair for a reason.", "art": "cushion" },
+        { "en": "a hoover", "fr": "un aspirateur", "eg": "The {hoover} is under the stairs with everything else.", "clue": "Une marque devenue le mot — et qui sert aussi de verbe.", "art": "hoover" },
+        { "en": "a bin", "fr": "une poubelle", "eg": "The {bin} goes out on Tuesday night, not Wednesday morning.", "art": "bin" },
+        { "en": "a shelf", "fr": "une étagère", "eg": "The top {shelf} is where things go to be forgotten.", "art": "shelf" }
+      ],
+      "odd": { "out": "a hoover", "in": ["a kettle", "a tap", "a cupboard"], "prompt": "Trois de ces objets vivent dans la cuisine. Lequel vit dans le placard sous l’escalier ?", "why": "L’aspirateur ne reste pas sur le plan de travail." }
+    },
+    {
+      "id": "w019",
+      "title": "L’argent",
+      "words": [
+        { "en": "a quid", "fr": "une livre (familier)", "eg": "It was about twelve {quid} for the two of us.", "clue": "Invariable : jamais de s au pluriel." },
+        { "en": "change", "fr": "la monnaie", "eg": "Have you got {change} for the machine?" },
+        { "en": "a payslip", "fr": "une fiche de paie", "eg": "Check the {payslip} — the tax code is wrong more often than you would think." },
+        { "en": "a direct debit", "fr": "un prélèvement automatique", "eg": "The gym takes it by {direct debit} and you forget it exists." },
+        { "en": "to be skint", "fr": "être fauché", "eg": "I am {skint} until Friday, so it is a night in." },
+        { "en": "to afford something", "fr": "avoir les moyens de", "eg": "We cannot {afford} that street, and we knew it before we looked." },
+        { "en": "a rip-off", "fr": "une arnaque, du vol", "eg": "Four pounds for a coffee is a {rip-off} and we paid it anyway." },
+        { "en": "to chip in", "fr": "participer à la cagnotte", "eg": "Everyone {chipped in} a fiver for the leaving present." }
+      ],
+      "odd": { "out": "a payslip", "in": ["a quid", "change", "a rip-off"], "prompt": "Trois de ces mots s’emploient au comptoir. Lequel appartient au bureau ?", "why": "La fiche de paie ne sort pas de la poche." }
+    },
+    {
+      "id": "w020",
+      "title": "La santé",
+      "words": [
+        { "en": "a surgery", "fr": "un cabinet médical", "eg": "The {surgery} opens at eight and the line is engaged by five past.", "clue": "Attention : ici, c’est le lieu, pas l’opération.", "no": { "an operation": "« A surgery », en Grande-Bretagne, c’est le cabinet du médecin. L’opération, c’est « an operation »." } },
+        { "en": "an appointment", "fr": "un rendez-vous", "eg": "I finally got an {appointment} for the week after next." },
+        { "en": "a prescription", "fr": "une ordonnance", "eg": "Take the {prescription} to any chemist and they will sort it." },
+        { "en": "a chemist", "fr": "une pharmacie", "eg": "There is a {chemist} on the corner that stays open late." },
+        { "en": "a sore throat", "fr": "un mal de gorge", "eg": "It started as a {sore throat} and turned into a fortnight." },
+        { "en": "to feel sick", "fr": "avoir la nausée", "eg": "I {feel sick} on the back seat, always have.", "no": { "to be ill": "« To feel sick » en anglais britannique, c’est avoir envie de vomir — pas être malade en général." } },
+        { "en": "a jab", "fr": "une piqûre, un vaccin", "eg": "The flu {jab} is free once you are over a certain age." },
+        { "en": "to be off work", "fr": "être en arrêt", "eg": "She has been {off work} since Easter and nobody says why." }
+      ]
+    },
+    {
+      "id": "w021",
+      "title": "Les vêtements",
+      "words": [
+        { "en": "a jumper", "fr": "un pull", "eg": "Bring a {jumper} even in July, especially in the evening.", "art": "jumper", "no": { "a sweater|a pullover": "« Sweater » est américain. Le mot de tous les jours en Grande-Bretagne, c’est « jumper »." } },
+        { "en": "trousers", "fr": "un pantalon", "eg": "These {trousers} are too long and I have never got round to it.", "art": "trousers", "no": { "a pants": "« Pants » en anglais britannique veut dire sous-vêtements. Le pantalon, c’est « trousers »." } },
+        { "en": "trainers", "fr": "des baskets", "eg": "Half the office wears {trainers} and nobody has ever mentioned it.", "art": "trainers" },
+        { "en": "wellies", "fr": "des bottes en caoutchouc", "eg": "You will want {wellies} if you are walking the coast path in March.", "art": "boots" },
+        { "en": "a coat", "fr": "un manteau", "eg": "The right {coat} matters more here than the right shoes.", "art": "coat" },
+        { "en": "gloves", "fr": "des gants", "eg": "I lose one of a pair of {gloves} every single winter.", "art": "gloves" },
+        { "en": "a shirt", "fr": "une chemise", "eg": "He wears a {shirt} to interviews and nowhere else.", "art": "shirt" },
+        { "en": "a belt", "fr": "une ceinture", "eg": "That {belt} has been on its last hole for two years.", "art": "belt" }
+      ],
+      "odd": { "out": "a belt", "in": ["a jumper", "a coat", "a shirt"], "prompt": "Trois de ces vêtements couvrent le buste. Lequel ne couvre rien ?", "why": "Une ceinture tient, elle n’habille pas." }
+    },
+    {
+      "id": "w022",
+      "title": "La mode et acheter des vêtements",
+      "words": [
+        { "en": "to try something on", "fr": "essayer un vêtement", "eg": "Just {try} it on, the sizes are all over the place." },
+        { "en": "a fitting room", "fr": "une cabine d’essayage", "eg": "The {fitting room} queue is longer than the till queue." },
+        { "en": "it suits you", "fr": "ça te va bien", "eg": "That colour really {suits you}.", "no": { "it fits you": "« It fits » parle de la taille ; « it suits you » parle de l’allure." } },
+        { "en": "it fits", "fr": "c’est à la bonne taille", "eg": "It {fits} across the shoulders and nowhere else." },
+        { "en": "a bargain", "fr": "une bonne affaire", "eg": "Twenty pounds in the sale — a proper {bargain}." },
+        { "en": "second-hand", "fr": "d’occasion", "eg": "Half my wardrobe is {second-hand} and the better half." },
+        { "en": "smart", "fr": "élégant, habillé", "eg": "The invitation says {smart}, which nobody can define.", "no": { "intelligent": "Faux ami : ici « smart » parle de la tenue, pas de l’esprit." } },
+        { "en": "scruffy jeans", "fr": "un jean élimé", "eg": "He turned up in {scruffy jeans} and was the best-dressed person there." }
+      ],
+      "odd": { "out": "a bargain", "in": ["to try something on", "a fitting room", "it fits"], "prompt": "Trois de ces mots concernent la taille et l’essayage. Lequel concerne le prix ?", "why": "Une bonne affaire ne dit rien de ce que ça donne sur soi." }
+    },
+    {
+      "id": "w023",
+      "title": "Faire les courses",
+      "words": [
+        { "en": "a trolley", "fr": "un caddie", "eg": "You need a pound coin for the {trolley} in some places.", "no": { "a cart": "« Cart » est américain ; ici c’est « trolley »." } },
+        { "en": "a till", "fr": "une caisse", "eg": "Only two {tills} open and forty people waiting." },
+        { "en": "a receipt", "fr": "un ticket de caisse", "eg": "Keep the {receipt} if you think you might bring it back." },
+        { "en": "a refund", "fr": "un remboursement", "eg": "They gave me a {refund} without asking a single question." },
+        { "en": "out of stock", "fr": "en rupture", "eg": "It has been {out of stock} since before Christmas." },
+        { "en": "a corner shop", "fr": "une supérette de quartier", "eg": "The {corner shop} is twice the price and open at eleven at night." },
+        { "en": "a bargain bin", "fr": "un bac de soldes", "eg": "Everything in the {bargain bin} is there for a reason." },
+        { "en": "loyalty points", "fr": "des points de fidélité", "eg": "Three years of {loyalty points} bought us one bag of coffee." }
+      ]
+    },
+    {
+      "id": "w024",
+      "title": "La nourriture",
+      "words": [
+        { "en": "a loaf", "fr": "un pain", "eg": "Get a {loaf} on your way back, the sliced one.", "art": "bread" },
+        { "en": "cheddar", "fr": "du cheddar", "eg": "Proper {cheddar} comes from about twenty miles down the road.", "art": "cheese" },
+        { "en": "a mushroom", "fr": "un champignon", "eg": "There is one {mushroom} left and we both want it.", "art": "mushroom" },
+        { "en": "a carrot", "fr": "une carotte", "eg": "Peel a {carrot} for me while you are there.", "art": "carrot" },
+        { "en": "an onion", "fr": "un oignon", "eg": "Start with an {onion} and you are halfway to dinner.", "art": "onion" },
+        { "en": "a strawberry", "fr": "une fraise", "eg": "The first {strawberry} of June is worth the eleven months.", "art": "strawberry" },
+        { "en": "cod", "fr": "du cabillaud", "eg": "It is {cod} and chips or nothing, in this town.", "art": "fish" },
+        { "en": "a jacket potato", "fr": "une pomme de terre au four", "eg": "A {jacket potato} with beans is the cheapest hot lunch in England." }
+      ],
+      "odd": { "out": "cheddar", "in": ["a carrot", "an onion", "a mushroom"], "prompt": "Trois de ces aliments poussent en terre ou dessus. Lequel se fabrique ?", "why": "Le cheddar sort d’une laiterie, pas d’un champ." }
+    },
+    {
+      "id": "w025",
+      "title": "Cuisiner",
+      "words": [
+        { "en": "a saucepan", "fr": "une casserole", "eg": "Put the {saucepan} on a low heat and leave it alone.", "art": "saucepan" },
+        { "en": "a frying pan", "fr": "une poêle", "eg": "The good {frying pan} is the one nobody is allowed to scrub.", "art": "pan" },
+        { "en": "a chopping board", "fr": "une planche à découper", "eg": "Use the plastic {chopping board} for the chicken.", "art": "chopping-board" },
+        { "en": "to simmer", "fr": "laisser frémir", "eg": "Let it {simmer} for twenty minutes with the lid off.", "clue": "Juste en dessous de l’ébullition — ça fait des bulles paresseuses." },
+        { "en": "to grate", "fr": "râper", "eg": "{Grate} the cheese while I do the sauce." },
+        { "en": "to whisk", "fr": "fouetter", "eg": "{Whisk} the eggs properly or you get lumps.", "art": "whisk" },
+        { "en": "a recipe", "fr": "une recette", "eg": "The {recipe} says forty minutes and means an hour.", "no": { "a receipt": "Piège d’orthographe : « receipt » est le ticket de caisse, « recipe » la recette." } },
+        { "en": "leftovers", "fr": "les restes", "eg": "Sunday {leftovers} are Monday lunch and that is the point." }
+      ],
+      "odd": { "out": "a recipe", "in": ["to simmer", "to grate", "to whisk"], "prompt": "Trois de ces mots sont des gestes. Lequel est un document ?", "why": "La recette se lit ; les trois autres se font." }
+    },
+    {
+      "id": "w026",
+      "title": "La vie en ville",
+      "words": [
+        { "en": "the high street", "fr": "la rue commerçante", "eg": "The {high street} is half charity shops and half coffee.", "clue": "Le nom générique de la rue principale des commerces, dans chaque ville anglaise." },
+        { "en": "a pavement", "fr": "un trottoir", "eg": "The {pavement} is too narrow for two people and a pushchair.", "no": { "a sidewalk": "« Sidewalk » est américain ; ici c’est « pavement »." } },
+        { "en": "a zebra crossing", "fr": "un passage piéton", "eg": "Cars actually stop at a {zebra crossing} here, which takes getting used to.", "art": "zebra-crossing" },
+        { "en": "a postbox", "fr": "une boîte aux lettres", "eg": "The {postbox} on the corner is emptied at nine.", "art": "postbox" },
+        { "en": "a bench", "fr": "un banc", "eg": "Every {bench} on the harbour has a name on it.", "art": "bench" },
+        { "en": "a lamppost", "fr": "un lampadaire", "eg": "Somebody has locked a bike to the {lamppost} and left it a year.", "art": "lamppost" },
+        { "en": "roadworks", "fr": "des travaux de voirie", "eg": "The {roadworks} were meant to last three weeks in April." },
+        { "en": "a cash machine", "fr": "un distributeur", "eg": "The nearest {cash machine} charges you two pounds." }
+      ]
+    },
+    {
+      "id": "w027",
+      "title": "La vie à la campagne",
+      "words": [
+        { "en": "a lane", "fr": "un chemin, une petite route", "eg": "The {lane} is one car wide with hedges either side." },
+        { "en": "a footpath", "fr": "un sentier", "eg": "There is a public {footpath} straight through the farm." },
+        { "en": "a hedge", "fr": "une haie", "eg": "The {hedge} gets cut once a year and it is an event." },
+        { "en": "a gate", "fr": "une barrière", "eg": "Shut the {gate} behind you — that one matters." },
+        { "en": "a village", "fr": "un village", "eg": "The {village} has a pub, a church and no shop." },
+        { "en": "a barn", "fr": "une grange", "eg": "The old {barn} is four flats now and they sold in a week." },
+        { "en": "a wheelbarrow", "fr": "une brouette", "eg": "Half the garden went out in a {wheelbarrow}.", "art": "wheelbarrow" },
+        { "en": "muddy", "fr": "boueux", "eg": "It is {muddy} from October to May, and that is being generous." }
+      ],
+      "odd": { "out": "a village", "in": ["a lane", "a footpath", "a gate"], "prompt": "Trois de ces mots concernent le passage. Lequel désigne un lieu habité ?", "why": "On traverse les trois autres ; on habite le village." }
+    },
+    {
+      "id": "w028",
+      "title": "Les transports",
+      "words": [
+        { "en": "a coach", "fr": "un autocar", "eg": "The {coach} to London takes three hours and costs almost nothing.", "clue": "Longue distance : le bus de ville, c’est « a bus ».", "art": "bus" },
+        { "en": "a return ticket", "fr": "un aller-retour", "eg": "A {return ticket} is barely more than a single, which makes no sense." },
+        { "en": "a single", "fr": "un aller simple", "eg": "One {single} to Temple Meads, please." },
+        { "en": "a platform", "fr": "un quai", "eg": "They change the {platform} at the last minute, every time.", "art": "train" },
+        { "en": "a season ticket", "fr": "un abonnement", "eg": "A {season ticket} pays for itself in about three weeks." },
+        { "en": "a ferry", "fr": "un bac, un ferry", "eg": "The little {ferry} across the harbour costs less than the bus.", "art": "ferry" },
+        { "en": "a cycle path", "fr": "une piste cyclable", "eg": "The {cycle path} runs the whole way along the old railway.", "art": "bicycle" },
+        { "en": "to change at", "fr": "changer à", "eg": "You {change at} Bristol Parkway, and you get eight minutes." }
+      ],
+      "odd": { "out": "a platform", "in": ["a single", "a return ticket", "a season ticket"], "prompt": "Trois de ces mots sont des titres de transport. Lequel est un lieu ?", "why": "Le quai est en gare ; les trois autres sont en poche." }
+    },
+    {
+      "id": "w029",
+      "title": "Sur la route",
+      "words": [
+        { "en": "a roundabout", "fr": "un rond-point", "eg": "Take the second exit at the {roundabout} and stay in the left lane." },
+        { "en": "a dual carriageway", "fr": "une deux fois deux voies", "eg": "It is a {dual carriageway} for four miles and then it is not." },
+        { "en": "a lay-by", "fr": "une aire d’arrêt", "eg": "Pull into the {lay-by} if you need to look at the map." },
+        { "en": "a speed bump", "fr": "un ralentisseur", "eg": "That road has a {speed bump} every thirty metres." },
+        { "en": "a traffic jam", "fr": "un embouteillage", "eg": "We sat in a {traffic jam} for an hour and moved a mile." },
+        { "en": "to give way", "fr": "céder le passage", "eg": "You {give way} to the right on that junction, not the left.", "no": { "to yield": "« Yield » est américain ; les panneaux britanniques disent « give way »." } },
+        { "en": "a petrol station", "fr": "une station-service", "eg": "The last {petrol station} before the motorway is the dearest." },
+        { "en": "traffic lights", "fr": "des feux tricolores", "eg": "The {traffic lights} at the top of the hill are out again.", "art": "traffic-lights" }
+      ]
+    },
+    {
+      "id": "w030",
+      "title": "Panneaux et avertissements",
+      "words": [
+        { "en": "mind the gap", "fr": "attention à la marche", "eg": "Every station in the country says {mind the gap}.", "clue": "« Mind » veut dire « fais attention à » — pas « penser »." },
+        { "en": "out of order", "fr": "hors service", "eg": "The lift has been {out of order} since we moved in." },
+        { "en": "no entry", "fr": "sens interdit, entrée interdite", "eg": "It is {no entry} from that end, whatever the map says." },
+        { "en": "keep off the grass", "fr": "pelouse interdite", "eg": "A {keep off the grass} sign in a park nobody obeys." },
+        { "en": "beware of the dog", "fr": "attention au chien", "eg": "The {beware of the dog} sign is on a gate with no dog behind it." },
+        { "en": "wet paint", "fr": "peinture fraîche", "eg": "There was a {wet paint} sign and I still touched it." },
+        { "en": "no through road", "fr": "voie sans issue", "eg": "A {no through road} means walkers can still get out at the end." },
+        { "en": "queue here", "fr": "file d’attente ici", "eg": "The sign says {queue here} and the British take it seriously." }
+      ],
+      "odd": { "out": "out of order", "in": ["no entry", "keep off the grass", "beware of the dog"], "prompt": "Trois de ces panneaux interdisent ou avertissent. Lequel constate une panne ?", "why": "« Out of order » ne demande rien : il annonce que ça ne marche pas." }
+    }
+  ]
+}

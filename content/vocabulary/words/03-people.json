@@ -1,0 +1,110 @@
+{
+  "section": "Les gens",
+  "units": [
+    {
+      "id": "w009",
+      "title": "Le corps et le mouvement",
+      "words": [
+        { "en": "a shoulder", "fr": "une épaule", "eg": "I slept badly and my {shoulder} has been stiff all day.", "art": "shoulder" },
+        { "en": "an elbow", "fr": "un coude", "eg": "He leaned on the bar with both {elbows} and settled in.", "art": "elbow" },
+        { "en": "a wrist", "fr": "un poignet", "eg": "She went over on her bike and broke her {wrist}.", "art": "wrist" },
+        { "en": "an ankle", "fr": "une cheville", "eg": "Mind the kerb — that is where people go over on an {ankle}.", "art": "ankle" },
+        { "en": "to limp", "fr": "boiter", "eg": "He was still {limping} a week later.", "clue": "Marcher en s’appuyant plus d’un côté que de l’autre." },
+        { "en": "to nod", "fr": "hocher la tête", "eg": "She just {nodded} and carried on writing.", "no": { "to shake the head": "« To shake your head », c’est dire non. Dire oui de la tête, c’est « to nod »." } },
+        { "en": "to wave", "fr": "faire signe de la main", "eg": "The driver {waved} us across." },
+        { "en": "to stretch", "fr": "s’étirer", "eg": "Stand up and {stretch} — you have been at that desk two hours." }
+      ],
+      "odd": { "out": "to stretch", "in": ["to nod", "to wave", "to limp"], "prompt": "Trois de ces gestes se voient de loin et disent quelque chose. Lequel ne dit rien ?", "why": "S’étirer n’adresse aucun message ; les trois autres se lisent." }
+    },
+    {
+      "id": "w010",
+      "title": "Décrire une apparence",
+      "words": [
+        { "en": "in his forties", "fr": "la quarantaine", "eg": "He is somewhere {in his forties}, hard to say.", "clue": "La façon anglaise de donner un âge sans le donner." },
+        { "en": "good-looking", "fr": "beau, séduisant", "eg": "The word {good-looking} works for a man or a woman." },
+        { "en": "plain", "fr": "quelconque, sans charme", "eg": "Calling someone {plain} is unkind and everyone knows it." },
+        { "en": "well-built", "fr": "costaud, bien bâti", "eg": "He is {well-built} — rugby, apparently, until his knee went." },
+        { "en": "slim", "fr": "mince", "eg": "She is tall and {slim} and always cold.", "no": { "thin": "« Thin » peut sonner maigre et inquiet ; « slim » est un compliment." } },
+        { "en": "freckles", "fr": "des taches de rousseur", "eg": "Two days of sun and the {freckles} come straight back." },
+        { "en": "wavy hair", "fr": "des cheveux ondulés", "eg": "She has {wavy hair} that goes curly in the rain.", "art": "hair" },
+        { "en": "scruffy", "fr": "négligé, débraillé", "eg": "He turned up looking {scruffy} and got the job anyway." }
+      ],
+      "odd": { "out": "scruffy", "in": ["slim", "well-built", "good-looking"], "prompt": "Trois de ces mots décrivent un physique. Lequel décrit une tenue ?", "why": "« Scruffy » parle de ce qu’on porte et de comment on le porte, pas du corps." }
+    },
+    {
+      "id": "w011",
+      "title": "Décrire un caractère",
+      "words": [
+        { "en": "easy-going", "fr": "facile à vivre", "eg": "My flatmate is {easy-going}, which is the only reason it works." },
+        { "en": "stubborn", "fr": "têtu", "eg": "He is {stubborn} in a way that is useful about twice a year." },
+        { "en": "reliable", "fr": "sur qui on peut compter", "eg": "She is the most {reliable} person on the team and the least noisy." },
+        { "en": "outgoing", "fr": "sociable, extraverti", "eg": "You do not have to be {outgoing} to make friends here, just regular." },
+        { "en": "big-headed", "fr": "prétentieux", "eg": "Nobody minds being good; they mind you being {big-headed} about it." },
+        { "en": "down to earth", "fr": "les pieds sur terre", "eg": "He is refreshingly {down to earth} for someone at that level." },
+        { "en": "sensible", "fr": "raisonnable, sensé", "eg": "The {sensible} thing would be to leave now and miss the traffic.", "no": { "sensitive": "Faux ami classique : « sensible » veut dire raisonnable. Sensible au sens français, c’est « sensitive »." } },
+        { "en": "moody", "fr": "lunatique, d’humeur changeante", "eg": "He goes {moody} when he has not eaten, which is most afternoons." }
+      ],
+      "odd": { "out": "sensible", "in": ["easy-going", "outgoing", "down to earth"], "prompt": "Trois de ces mots décrivent quelqu’un d’agréable à côtoyer. Lequel décrit un jugement ?", "why": "« Sensible » dit qu’on décide bien, pas qu’on est facile à vivre." }
+    },
+    {
+      "id": "w012",
+      "title": "Les émotions",
+      "words": [
+        { "en": "annoyed", "fr": "agacé", "eg": "I was {annoyed} for about ten minutes and then forgot about it." },
+        { "en": "furious", "fr": "furieux", "eg": "She was absolutely {furious}, and she was right to be.", "clue": "Le dernier échelon avant de sortir en claquant la porte." },
+        { "en": "upset", "fr": "peiné, contrarié", "eg": "Do not tell him tonight, he is already {upset} about the move.", "no": { "angry": "« Upset » n’est pas la colère : c’est la peine, le chagrin, la contrariété." } },
+        { "en": "relieved", "fr": "soulagé", "eg": "I was so {relieved} I had to sit down." },
+        { "en": "fed up", "fr": "qui en a assez", "eg": "Everyone is {fed up} with the roadworks by now." },
+        { "en": "nervous", "fr": "anxieux, qui a le trac", "eg": "I get {nervous} on the phone in English, never face to face." },
+        { "en": "delighted", "fr": "ravi", "eg": "They were {delighted} — she had not expected them to be." },
+        { "en": "homesick", "fr": "qui a le mal du pays", "eg": "The first November is when people get {homesick}." }
+      ],
+      "odd": { "out": "relieved", "in": ["annoyed", "fed up", "furious"], "prompt": "Trois de ces états sont désagréables. Lequel arrive quand ça va mieux ?", "why": "On est soulagé une fois que la chose redoutée est passée." }
+    },
+    {
+      "id": "w013",
+      "title": "Famille et amis",
+      "words": [
+        { "en": "a relative", "fr": "un membre de la famille", "eg": "I have a {relative} in Wales I have met twice." },
+        { "en": "a stepmother", "fr": "une belle-mère (par remariage)", "eg": "His {stepmother} is the one who taught him to drive." },
+        { "en": "a mother-in-law", "fr": "une belle-mère (du conjoint)", "eg": "My {mother-in-law} rings every Sunday at six.", "clue": "Anglais oblige : le remariage et le mariage n’emploient pas le même mot." },
+        { "en": "a nephew", "fr": "un neveu", "eg": "My {nephew} is nine and knows more about football than I ever will." },
+        { "en": "an only child", "fr": "un enfant unique", "eg": "She is an {only child} and finds our house exhausting." },
+        { "en": "a mate", "fr": "un pote", "eg": "He is a {mate} from work, not an old friend.", "clue": "Le mot britannique par excellence — et il sert aussi à interpeller un inconnu." },
+        { "en": "to get on with someone", "fr": "bien s’entendre avec quelqu’un", "eg": "They {get on} well, which makes the office bearable." },
+        { "en": "to fall out with someone", "fr": "se fâcher avec quelqu’un", "eg": "They {fell out} over something neither of them remembers." }
+      ],
+      "odd": { "out": "a mate", "in": ["a relative", "a nephew", "a stepmother"], "prompt": "Lequel de ces mots ne désigne pas quelqu’un de la famille ?", "why": "Un « mate » est un ami ; les trois autres sont des liens de parenté." }
+    },
+    {
+      "id": "w014",
+      "title": "Grandir",
+      "words": [
+        { "en": "to grow up", "fr": "grandir, être élevé", "eg": "I {grew} up in a town with one bus an hour." },
+        { "en": "to be brought up", "fr": "être élevé (par quelqu’un)", "eg": "She was {brought up} by her grandmother." },
+        { "en": "a toddler", "fr": "un tout-petit", "eg": "There is a {toddler} in the flat above and we know his routine by heart." },
+        { "en": "a teenager", "fr": "un adolescent", "eg": "As a {teenager} I would not have said a word in a shop." },
+        { "en": "to leave home", "fr": "quitter le nid", "eg": "Most people {leave home} at eighteen here, and it costs them." },
+        { "en": "to settle down", "fr": "se poser, se ranger", "eg": "They moved out here to {settle down}, and lasted a year." },
+        { "en": "to retire", "fr": "prendre sa retraite", "eg": "He is due to {retire} in the spring and dreads it." },
+        { "en": "an upbringing", "fr": "une éducation, une enfance", "eg": "You can hear his {upbringing} the moment he opens his mouth." }
+      ],
+      "odd": { "out": "to retire", "in": ["a toddler", "a teenager", "to grow up"], "prompt": "Trois de ces mots concernent le début de la vie. Lequel concerne la fin ?", "why": "Partir à la retraite arrive quarante ans après le reste." }
+    },
+    {
+      "id": "w015",
+      "title": "Amour, mariage et séparation",
+      "words": [
+        { "en": "to go out with someone", "fr": "sortir avec quelqu’un", "eg": "They have been {going out} for two years and nobody dares ask." },
+        { "en": "a partner", "fr": "un compagnon, une compagne", "eg": "Bring your {partner}, there is plenty of room.", "clue": "Le mot passe-partout : ni marié, ni pas marié, ni homme, ni femme." },
+        { "en": "to get engaged", "fr": "se fiancer", "eg": "They {got engaged} on the harbour, in the rain." },
+        { "en": "a wedding", "fr": "un mariage (la cérémonie)", "eg": "The {wedding} is in June and half of us are already invited.", "no": { "a marriage": "« Marriage », c’est l’union elle-même, qui dure. « Wedding », c’est la journée." } },
+        { "en": "to split up", "fr": "se séparer", "eg": "They {split up} in March and stayed friends, apparently." },
+        { "en": "to get divorced", "fr": "divorcer", "eg": "It took two years to {get divorced} and one afternoon to decide." },
+        { "en": "to fancy someone", "fr": "avoir un faible pour quelqu’un", "eg": "Everyone could see he {fancied} her except her." },
+        { "en": "a soft spot for someone", "fr": "un faible pour quelqu’un", "eg": "She has a {soft spot for} him, which is not the same thing." }
+      ],
+      "odd": { "out": "a partner", "in": ["to get engaged", "a wedding", "to get divorced"], "prompt": "Trois de ces mots concernent un statut officiel. Lequel n’en dit rien ?", "why": "« Partner » sert précisément à ne pas préciser." }
+    }
+  ]
+}

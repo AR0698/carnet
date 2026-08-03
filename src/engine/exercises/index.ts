@@ -9,7 +9,10 @@
 import type { Exercise, ExerciseType } from '../../packs/schema';
 import { el } from '../../ui/dom';
 import { fillBlank } from './fillBlank';
+import { match } from './match';
 import { mcq } from './mcq';
+import { oddOneOut } from './oddOneOut';
+import { picture } from './picture';
 import { produce } from './produce';
 import { spotError } from './spotError';
 import { transform } from './transform';
@@ -21,6 +24,9 @@ const RENDERERS: Record<ExerciseType, ExerciseRenderer> = {
   transform,
   spot_error: spotError,
   mcq,
+  picture,
+  match,
+  odd_one_out: oddOneOut,
 };
 
 export function rendererFor(type: ExerciseType): ExerciseRenderer {

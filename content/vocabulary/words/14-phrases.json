@@ -1,0 +1,107 @@
+{
+  "section": "Assembler des mots",
+  "units": [
+    {
+      "id": "w074",
+      "title": "Les mots qui vont ensemble",
+      "words": [
+        { "en": "heavy rain", "fr": "une forte pluie", "eg": "{Heavy rain} is forecast for the whole weekend.", "clue": "L’anglais dit lourd là où le français dit fort.", "no": { "strong rain": "La pluie est « heavy », jamais « strong ». C’est arbitraire, et ça ne se négocie pas." } },
+        { "en": "a strong accent", "fr": "un accent prononcé", "eg": "He has a {strong accent} and slows down for nobody." },
+        { "en": "to make a decision", "fr": "prendre une décision", "eg": "Somebody has to {make a decision} before Thursday.", "no": { "to take a decision": "Le français prend, l’anglais fait : « make a decision »." } },
+        { "en": "to do somebody a favour", "fr": "rendre un service", "eg": "{Do} me a favour and check the address before you send it." },
+        { "en": "to pay attention", "fr": "faire attention", "eg": "Nobody was {paying attention} to the second half of the slide." },
+        { "en": "to catch a cold", "fr": "attraper un rhume", "eg": "You will {catch a cold} standing out there in that." },
+        { "en": "bitterly cold", "fr": "un froid glacial", "eg": "It was {bitterly cold} on the platform and the train was late." },
+        { "en": "highly unlikely", "fr": "hautement improbable", "eg": "It is {highly unlikely}, which is not the same as impossible." }
+      ],
+      "odd": { "out": "a strong accent", "in": ["heavy rain", "bitterly cold", "highly unlikely"], "prompt": "Trois de ces couples décrivent une intensité de circonstance. Lequel décrit une personne ?", "why": "L’accent appartient à quelqu’un ; les autres au monde autour." }
+    },
+    {
+      "id": "w075",
+      "title": "Les expressions figées",
+      "words": [
+        { "en": "sooner or later", "fr": "tôt ou tard", "eg": "{Sooner or later} someone will ask who signed it off." },
+        { "en": "more or less", "fr": "plus ou moins", "eg": "It is {more or less} finished, which means two more days." },
+        { "en": "by and large", "fr": "dans l’ensemble", "eg": "{By and large} it has gone better than anyone expected." },
+        { "en": "on the whole", "fr": "globalement", "eg": "{On the whole} people are kinder here than the weather suggests." },
+        { "en": "in the long run", "fr": "à long terme", "eg": "{In the long run} it saves money, and nobody has that long." },
+        { "en": "as a rule", "fr": "en règle générale", "eg": "{As a rule} I do not answer email after seven." },
+        { "en": "for the sake of", "fr": "pour le bien de", "eg": "We kept the old name {for the sake of} the people who use it." },
+        { "en": "at any rate", "fr": "en tout cas", "eg": "{At any rate}, nothing happens before the new year." }
+      ],
+      "odd": { "out": "for the sake of", "in": ["by and large", "on the whole", "as a rule"], "prompt": "Trois de ces expressions nuancent une affirmation générale. Laquelle donne une raison ?", "why": "« For the sake of » explique pourquoi ; les trois autres tempèrent." }
+    },
+    {
+      "id": "w076",
+      "title": "Les formules de conversation",
+      "words": [
+        { "en": "mind you", "fr": "remarque, cela dit", "eg": "It was expensive. {Mind you}, it lasted fifteen years." },
+        { "en": "come to think of it", "fr": "maintenant que j’y pense", "eg": "{Come to think of it}, she did mention it in March." },
+        { "en": "the thing is", "fr": "le problème, c’est que", "eg": "{The thing is}, nobody actually owns that decision." },
+        { "en": "as it happens", "fr": "il se trouve que", "eg": "{As it happens}, I was there that afternoon." },
+        { "en": "not to worry", "fr": "ce n’est pas grave", "eg": "{Not to worry}, we will do it next week." },
+        { "en": "there you go", "fr": "et voilà", "eg": "One click and — {there you go}." },
+        { "en": "that’s that then", "fr": "eh bien voilà", "eg": "The funding is gone, so {that’s that then}." },
+        { "en": "you know what I mean", "fr": "tu vois ce que je veux dire", "eg": "It is fine, just not what we asked for, {you know what I mean}." }
+      ]
+    },
+    {
+      "id": "w077",
+      "title": "Verbe ou adjectif + préposition",
+      "words": [
+        { "en": "to depend on something", "fr": "dépendre de", "eg": "It {depends on} whether the survey comes back clean.", "no": { "to depend of": "Calque du français : en anglais c’est toujours « depend on »." } },
+        { "en": "to apologise for something", "fr": "s’excuser de", "eg": "He {apologised for} the delay and not for the mistake." },
+        { "en": "to succeed in doing something", "fr": "réussir à faire", "eg": "We {succeeded in} getting it approved by the skin of our teeth.", "no": { "to succeed to do": "Après « succeed in », le verbe prend -ing : « succeed in getting »." } },
+        { "en": "good at something", "fr": "bon en, doué pour", "eg": "She is very {good at} the part everybody else hates.", "no": { "good in": "On est « good at » quelque chose, jamais « good in »." } },
+        { "en": "interested in something", "fr": "intéressé par", "eg": "He is genuinely {interested in} how it works, not just whether it works." },
+        { "en": "responsible for something", "fr": "responsable de", "eg": "Nobody was quite {responsible for} that folder." },
+        { "en": "to insist on something", "fr": "insister pour", "eg": "She {insisted on} paying, which settled it." },
+        { "en": "similar to something", "fr": "semblable à", "eg": "It is {similar to} the old one, minus everything that worked." }
+      ]
+    },
+    {
+      "id": "w078",
+      "title": "Les locutions prépositionnelles",
+      "words": [
+        { "en": "on purpose", "fr": "exprès", "eg": "He did it {on purpose} and admitted it cheerfully." },
+        { "en": "by mistake", "fr": "par erreur", "eg": "I sent it to the whole list {by mistake}." },
+        { "en": "in charge of", "fr": "responsable de (une équipe)", "eg": "She is {in charge of} three teams and a budget nobody envies." },
+        { "en": "on the spot", "fr": "sur-le-champ", "eg": "They asked me to decide {on the spot} and I said no." },
+        { "en": "in advance", "fr": "à l’avance", "eg": "Pay {in advance} and it is ten per cent cheaper." },
+        { "en": "on behalf of", "fr": "au nom de", "eg": "I am writing {on behalf of} the whole team." },
+        { "en": "at short range", "fr": "de près", "eg": "It looks convincing until you see it {at short range}." },
+        { "en": "under pressure", "fr": "sous pression", "eg": "He is good {under pressure} and unbearable without any." }
+      ],
+      "odd": { "out": "in advance", "in": ["on purpose", "by mistake", "on behalf of"], "prompt": "Trois de ces locutions disent comment ou pourquoi on agit. Laquelle dit quand ?", "why": "« In advance » situe dans le temps, pas dans l’intention." }
+    },
+    {
+      "id": "w079",
+      "title": "Les verbes à particule : la forme",
+      "words": [
+        { "en": "to turn up", "fr": "arriver, se pointer", "eg": "Forty people said yes and twelve {turned up}." },
+        { "en": "to put something off", "fr": "reporter", "eg": "We {put} it off twice and then it decided itself." },
+        { "en": "to get by", "fr": "s’en sortir", "eg": "You can {get by} on schoolbook English for about a fortnight." },
+        { "en": "to bring something up", "fr": "aborder un sujet", "eg": "Do not {bring} it up in front of the client." },
+        { "en": "to carry on", "fr": "continuer", "eg": "{Carry on}, I was just listening." },
+        { "en": "to look after somebody", "fr": "s’occuper de quelqu’un", "eg": "Her neighbour {looks after} the cat and the plants." },
+        { "en": "to run out of something", "fr": "être à court de", "eg": "We {ran out of} chairs about ten minutes in." },
+        { "en": "to come across something", "fr": "tomber sur", "eg": "I {came across} it looking for something else entirely." }
+      ]
+    },
+    {
+      "id": "w080",
+      "title": "Les verbes à particule : le registre",
+      "words": [
+        { "en": "to find something out", "fr": "découvrir, apprendre", "eg": "We only {found} out afterwards, from someone else." },
+        { "en": "to point something out", "fr": "faire remarquer", "eg": "She {pointed} out that the dates did not add up." },
+        { "en": "to set something up", "fr": "mettre en place", "eg": "It takes an afternoon to {set} it up and five minutes a week after that." },
+        { "en": "to take over", "fr": "reprendre, prendre la suite", "eg": "He {takes over} in April and inherits all of it." },
+        { "en": "to go through something", "fr": "passer en revue", "eg": "Let us {go through} it line by line once, and once only." },
+        { "en": "to hold on", "fr": "patienter", "eg": "{Hold on}, I have the file open somewhere." },
+        { "en": "to make something up", "fr": "inventer", "eg": "Half of that answer was {made} up and it sounded excellent." },
+        { "en": "to give up", "fr": "abandonner", "eg": "Nobody {gives up} on the third attempt; they give up on the ninth." }
+      ],
+      "odd": { "out": "to hold on", "in": ["to find something out", "to point something out", "to make something up"], "prompt": "Trois de ces verbes concernent l’information. Lequel concerne l’attente ?", "why": "« Hold on » demande du temps, pas un renseignement." }
+    }
+  ]
+}

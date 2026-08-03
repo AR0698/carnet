@@ -1,0 +1,65 @@
+{
+  "section": "La fabrique des mots",
+  "units": [
+    {
+      "id": "w070",
+      "title": "Les préfixes qui changent le sens",
+      "words": [
+        { "en": "unlikely", "fr": "peu probable", "eg": "It is {unlikely} to be ready before Easter." },
+        { "en": "misleading", "fr": "trompeur", "eg": "The chart was {misleading} without being wrong.", "clue": "mis- = de travers, à côté." },
+        { "en": "to overestimate", "fr": "surestimer", "eg": "We {overestimated} how many people would come and ate leftovers for a week." },
+        { "en": "to underestimate", "fr": "sous-estimer", "eg": "Never {underestimate} how long the last ten per cent takes." },
+        { "en": "to rethink", "fr": "repenser", "eg": "That gives us a fortnight to {rethink} the whole thing." },
+        { "en": "irrelevant", "fr": "hors sujet", "eg": "Half the objections were {irrelevant} and took most of the hour." },
+        { "en": "impatient", "fr": "impatient", "eg": "He gets {impatient} about the third time you explain it." },
+        { "en": "to disagree", "fr": "ne pas être d’accord", "eg": "You can {disagree} without turning it into a fight." }
+      ],
+      "odd": { "out": "to rethink", "in": ["unlikely", "irrelevant", "impatient"], "prompt": "Trois de ces préfixes disent « non ». Lequel dit « à nouveau » ?", "why": "re- refait ; un-, ir- et im- nient." }
+    },
+    {
+      "id": "w071",
+      "title": "Les suffixes qui font des noms",
+      "words": [
+        { "en": "kindness", "fr": "la gentillesse", "eg": "Small acts of {kindness} are what makes a street liveable.", "clue": "-ness prend un adjectif et en fait une qualité." },
+        { "en": "an improvement", "fr": "une amélioration", "eg": "It is an {improvement} on last year, which is not saying much." },
+        { "en": "an arrangement", "fr": "un arrangement", "eg": "We came to an {arrangement} that suits nobody perfectly." },
+        { "en": "friendship", "fr": "l’amitié", "eg": "A {friendship} made in the first month rarely survives the first year." },
+        { "en": "an employer", "fr": "un employeur", "eg": "Your {employer} has to give it to you in writing." },
+        { "en": "an employee", "fr": "un salarié", "eg": "Every {employee} gets the same letter and reads it differently.", "clue": "-er fait celui qui agit, -ee celui qui subit." },
+        { "en": "membership", "fr": "l’adhésion", "eg": "{Membership} costs forty pounds and includes the newsletter nobody reads." },
+        { "en": "an assistant", "fr": "un assistant", "eg": "There is one {assistant} for the whole floor and she runs it." }
+      ],
+      "odd": { "out": "kindness", "in": ["an employer", "an employee", "an assistant"], "prompt": "Trois de ces noms désignent une personne. Lequel désigne une qualité ?", "why": "La gentillesse ne se serre pas la main." }
+    },
+    {
+      "id": "w072",
+      "title": "Les suffixes qui font des adjectifs",
+      "words": [
+        { "en": "affordable", "fr": "abordable", "eg": "Nothing within a mile of here is {affordable} on one salary.", "clue": "-able = qu’on peut faire." },
+        { "en": "hopeless", "fr": "nul, sans espoir", "eg": "I am {hopeless} at names and always have been.", "clue": "-less = sans." },
+        { "en": "thoughtful", "fr": "attentionné", "eg": "It was a {thoughtful} thing to do and she did not mention it." },
+        { "en": "risky", "fr": "risqué", "eg": "It is {risky} and it is also the only option left." },
+        { "en": "manageable", "fr": "gérable", "eg": "Split it in three and it becomes {manageable}." },
+        { "en": "childish", "fr": "puéril", "eg": "Refusing to reply is {childish} and everyone can see it.", "clue": "-ish colle souvent un reproche : childish n’est pas childlike." },
+        { "en": "creative", "fr": "créatif", "eg": "The {creative} bit takes an afternoon and the rest takes a month." },
+        { "en": "endless", "fr": "interminable", "eg": "The meeting was {endless} and decided nothing." }
+      ],
+      "odd": { "out": "thoughtful", "in": ["hopeless", "endless", "childish"], "prompt": "Trois de ces adjectifs sont négatifs. Lequel est un compliment ?", "why": "« Thoughtful » loue quelqu’un qui a pensé aux autres." }
+    },
+    {
+      "id": "w073",
+      "title": "Les noms composés",
+      "words": [
+        { "en": "a car park", "fr": "un parking", "eg": "The {car park} charges by the hour and never has a space.", "no": { "a parking": "« Parking » tout seul n’est pas un nom en anglais : c’est « a car park »." } },
+        { "en": "a traffic warden", "fr": "un agent de stationnement", "eg": "The {traffic warden} comes at nine and again at two." },
+        { "en": "a washing machine", "fr": "une machine à laver", "eg": "The {washing machine} is in the kitchen, as it is in every British house." },
+        { "en": "a dishwasher", "fr": "un lave-vaisselle", "eg": "There is a {dishwasher} and nobody has ever loaded it correctly." },
+        { "en": "a headache", "fr": "un mal de tête", "eg": "Two hours of that spreadsheet and I had a {headache}." },
+        { "en": "a haircut", "fr": "une coupe de cheveux", "eg": "A {haircut} here costs what a meal costs at home." },
+        { "en": "a takeaway", "fr": "un plat à emporter", "eg": "Friday is a {takeaway} and nobody argues." },
+        { "en": "a lie detector", "fr": "un détecteur de mensonges", "eg": "He said it with the calm of a man who has passed a {lie detector}." }
+      ],
+      "odd": { "out": "a headache", "in": ["a washing machine", "a dishwasher", "a lie detector"], "prompt": "Trois de ces noms composés sont des machines. Lequel est un symptôme ?", "why": "Le mal de tête n’a pas de prise de courant." }
+    }
+  ]
+}

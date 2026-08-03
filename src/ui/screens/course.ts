@@ -24,13 +24,16 @@ import { el, mount } from '../dom';
 import { lessonCard } from '../lesson';
 import type { Ctx } from '../types';
 
+/** Les carnets qui ont quelque chose à lire — les seuls à proposer ici. */
+function taughtCarnets(carnets: Carnet[]): Carnet[] {
+  return carnets.filter((c) => topicsWithLesson(c.pack).length > 0);
+}
+
 /** Le carnet demandé, ou le premier qui a des fiches — la grammaire d'abord. */
 function carnetForCourse(carnets: Carnet[], packId?: string): Carnet | undefined {
   if (packId) return carnets.find((c) => c.id === packId);
-  return (
-    carnets.find((c) => c.id === GRAMMAR_PACK_ID && topicsWithLesson(c.pack).length > 0) ??
-    carnets.find((c) => topicsWithLesson(c.pack).length > 0)
-  );
+  const taught = taughtCarnets(carnets);
+  return taught.find((c) => c.id === GRAMMAR_PACK_ID) ?? taught[0];
 }
 
 /** Tout le texte d'une fiche, aplati — c'est là-dedans que la recherche cherche. */
@@ -47,6 +50,13 @@ function haystack(topic: Topic): string {
     l.contrast?.left,
     l.contrast?.right,
     l.contrast?.note,
+    // La scène et l'échelle portent le gros du vocabulaire d'une unité : sans
+    // elles, chercher « bouilloire » ne trouverait pas la fiche qui l'enseigne.
+    l.scene?.where,
+    l.scene?.text,
+    ...(l.scene?.gloss ?? []).flatMap((g) => [g.en, g.fr]),
+    l.scale?.label,
+    ...(l.scale?.steps ?? []).flatMap((s) => [s.en, s.fr]),
     ...l.examples.flatMap((e) => [e.en, e.fr]),
   ]
     .filter(Boolean)
@@ -194,6 +204,31 @@ export async function renderCourse(ctx: Ctx, options: CourseOptions = {}): Promi
   search.addEventListener('input', () => draw((search as HTMLInputElement).value));
   draw('');
 
+  // Le choix du carnet, en tête.
+  //
+  // L'écran ouvrait la grammaire et rien d'autre : aucun chemin ne menait aux
+  // fiches de vocabulaire, qui existaient pourtant. Un onglet par carnet ayant
+  // des fiches — les autres n'en ont pas, et un onglet vide serait une promesse
+  // en l'air. À un seul carnet enseigné, la barre disparaît : choisir entre une
+  // chose n'est pas choisir.
+  const others = taughtCarnets(ctx.carnets);
+  const picker =
+    others.length > 1 &&
+    el(
+      'nav',
+      { class: 'course-picker', 'aria-label': 'Carnet' },
+      others.map((c) => {
+        const here = c.id === carnet.id;
+        const tab = el(
+          'button',
+          { class: 'course-picker__tab', type: 'button', 'aria-current': String(here) },
+          [c.label],
+        );
+        if (!here) tab.addEventListener('click', () => void renderCourse(ctx, { packId: c.id }));
+        return tab;
+      }),
+    );
+
   mount(
     ctx.root,
     el('div', { class: 'crumb' }, [back]),
@@ -205,8 +240,9 @@ export async function renderCourse(ctx: Ctx, options: CourseOptions = {}): Promi
       ]),
     ]),
     el('section', { class: 'card' }, [
+      picker,
       el('p', { class: 'notice' }, [
-        `${taught.length} fiche${taught.length > 1 ? 's' : ''} écrite${taught.length > 1 ? 's' : ''} ` +
+        `${carnet.label} — ${taught.length} fiche${taught.length > 1 ? 's' : ''} ` +
           `sur ${pack.topics.length} unités. Le cours ne fait avancer aucune carte : ` +
           'on y vient pour comprendre, pas pour réviser.',
       ]),

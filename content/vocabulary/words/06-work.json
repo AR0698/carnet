@@ -1,0 +1,94 @@
+{
+  "section": "Travail et entreprise",
+  "units": [
+    {
+      "id": "w035",
+      "title": "Les métiers",
+      "words": [
+        { "en": "a plumber", "fr": "un plombier", "eg": "A good {plumber} here is booked three weeks out." },
+        { "en": "an electrician", "fr": "un électricien", "eg": "The {electrician} took one look and said it was all fine." },
+        { "en": "a solicitor", "fr": "un avocat (conseil)", "eg": "You need a {solicitor} for the house, not a barrister.", "clue": "L’avocat du quotidien, celui des contrats et des ventes." },
+        { "en": "an accountant", "fr": "un comptable", "eg": "My {accountant} saves me more than she costs." },
+        { "en": "a nurse", "fr": "un infirmier, une infirmière", "eg": "A {nurse} on that ward does twelve-hour shifts." },
+        { "en": "a chef", "fr": "un chef cuisinier", "eg": "The {chef} changes the menu every fortnight." },
+        { "en": "self-employed", "fr": "à son compte", "eg": "He has been {self-employed} for a decade and would not go back." },
+        { "en": "a trade", "fr": "un métier manuel", "eg": "She learned a {trade} and has never been out of work." }
+      ],
+      "odd": { "out": "an accountant", "in": ["a plumber", "an electrician", "a chef"], "prompt": "Trois de ces métiers se font avec les mains. Lequel se fait avec des chiffres ?", "why": "Le comptable est le seul à ne rien fabriquer ni réparer." }
+    },
+    {
+      "id": "w036",
+      "title": "Parler de son travail",
+      "words": [
+        { "en": "a shift", "fr": "un poste, une garde", "eg": "She is on the late {shift} all this week." },
+        { "en": "overtime", "fr": "les heures supplémentaires", "eg": "Nobody here gets paid {overtime} and everybody does it." },
+        { "en": "annual leave", "fr": "les congés payés", "eg": "You get twenty-five days of {annual leave} plus bank holidays." },
+        { "en": "a bank holiday", "fr": "un jour férié", "eg": "The August {bank holiday} is the last long weekend until Christmas." },
+        { "en": "to work from home", "fr": "télétravailler", "eg": "Most of the team {work from home} on Mondays and Fridays." },
+        { "en": "a commute", "fr": "un trajet domicile-travail", "eg": "My {commute} is forty minutes and I would not shorten it.", "clue": "Le trajet régulier, pas le voyage." },
+        { "en": "a workload", "fr": "une charge de travail", "eg": "The {workload} doubled and the headcount did not." },
+        { "en": "notice", "fr": "un préavis", "eg": "He has handed in his {notice} and leaves at the end of the month." }
+      ],
+      "odd": { "out": "a commute", "in": ["a shift", "overtime", "annual leave"], "prompt": "Trois de ces mots sont du temps payé ou compté. Lequel ne l’est pas ?", "why": "Le trajet est le seul temps que personne ne compte." }
+    },
+    {
+      "id": "w037",
+      "title": "Faire carrière",
+      "words": [
+        { "en": "a CV", "fr": "un CV", "eg": "Keep the {CV} to two pages; nobody reads the third." },
+        { "en": "a covering letter", "fr": "une lettre de motivation", "eg": "The {covering letter} is where you say why this job, not any job.", "no": { "a motivation letter": "Calque du français. En anglais britannique on dit « covering letter »." } },
+        { "en": "a vacancy", "fr": "un poste à pourvoir", "eg": "There is a {vacancy} in the team and it has not been advertised yet." },
+        { "en": "to apply for something", "fr": "postuler à", "eg": "I {applied for} it on a Sunday and heard nothing for a month." },
+        { "en": "a shortlist", "fr": "une liste restreinte", "eg": "Four of us made the {shortlist} out of ninety." },
+        { "en": "a promotion", "fr": "une promotion", "eg": "The {promotion} came with a title and almost no money." },
+        { "en": "to be made redundant", "fr": "être licencié économique", "eg": "Half the floor was {made redundant} in one morning.", "clue": "Le poste disparaît — ce n’est pas la personne qui a fauté." },
+        { "en": "a reference", "fr": "une recommandation", "eg": "They will ask for a {reference} from your last employer." }
+      ]
+    },
+    {
+      "id": "w038",
+      "title": "Travailler au bureau",
+      "words": [
+        { "en": "stationery", "fr": "des fournitures de bureau", "eg": "The {stationery} cupboard is the only thing everybody knows the code for.", "no": { "stationary": "Piège d’orthographe : « stationary » avec un a veut dire immobile." } },
+        { "en": "a stapler", "fr": "une agrafeuse", "eg": "There is one {stapler} on this floor and it has a name." },
+        { "en": "a filing cabinet", "fr": "un classeur à tiroirs", "eg": "The {filing cabinet} has not been opened since the move." },
+        { "en": "a photocopier", "fr": "une photocopieuse", "eg": "The {photocopier} jams for everyone except one person." },
+        { "en": "a landline", "fr": "un téléphone fixe", "eg": "Nobody answers the {landline} and nobody dares unplug it." },
+        { "en": "an in-tray", "fr": "une bannette d’arrivée", "eg": "There is still an {in-tray} on that desk, for show." },
+        { "en": "a spare desk", "fr": "un bureau libre", "eg": "Grab the {spare desk} by the window while it is free." },
+        { "en": "a fire drill", "fr": "un exercice d’évacuation", "eg": "The {fire drill} is always on the coldest morning of the year." }
+      ],
+      "odd": { "out": "a fire drill", "in": ["a stapler", "a photocopier", "a filing cabinet"], "prompt": "Trois de ces mots sont des objets. Lequel est un événement ?", "why": "L’exercice d’évacuation a lieu ; les autres se posent sur un meuble." }
+    },
+    {
+      "id": "w039",
+      "title": "Diriger une entreprise",
+      "words": [
+        { "en": "a board", "fr": "un conseil d’administration", "eg": "It goes to the {board} in March, which means April." },
+        { "en": "headquarters", "fr": "le siège", "eg": "{Headquarters} is in Reading and nobody has ever been." },
+        { "en": "a branch", "fr": "une agence, une succursale", "eg": "They closed the Bath {branch} and kept the sign." },
+        { "en": "a subsidiary", "fr": "une filiale", "eg": "It is a {subsidiary} of a company you have definitely heard of." },
+        { "en": "a merger", "fr": "une fusion", "eg": "The {merger} was announced as a partnership, as they always are." },
+        { "en": "to take somebody on", "fr": "embaucher quelqu’un", "eg": "They {took} her on in June and promoted her by Christmas." },
+        { "en": "to lay somebody off", "fr": "licencier pour raison économique", "eg": "They {laid} forty people off and called it a restructure." },
+        { "en": "a headcount", "fr": "un effectif", "eg": "The {headcount} is frozen until the new financial year." }
+      ],
+      "odd": { "out": "a merger", "in": ["a board", "a branch", "headquarters"], "prompt": "Trois de ces mots désignent une partie de l’entreprise. Lequel désigne un événement ?", "why": "Une fusion arrive ; les trois autres existent en permanence." }
+    },
+    {
+      "id": "w040",
+      "title": "Affaires et finances",
+      "words": [
+        { "en": "turnover", "fr": "le chiffre d’affaires", "eg": "{Turnover} went up and profit went down, which happens.", "no": { "a turn over": "Un seul mot, et sans article : « turnover was up ten per cent »." } },
+        { "en": "profit", "fr": "le bénéfice", "eg": "There is no {profit} in it until the third year, and everyone knows." },
+        { "en": "an invoice", "fr": "une facture", "eg": "Send the {invoice} on the last day of the month, not the first." },
+        { "en": "an expense", "fr": "un frais professionnel", "eg": "Put the train on {expenses}, not the hotel bar." },
+        { "en": "a budget", "fr": "un budget", "eg": "The {budget} was set before anybody knew what the project was." },
+        { "en": "a forecast", "fr": "une prévision", "eg": "The {forecast} is revised every quarter and never downwards." },
+        { "en": "VAT", "fr": "la TVA", "eg": "Quote the price with {VAT} or you will have the conversation twice." },
+        { "en": "cash flow", "fr": "la trésorerie", "eg": "Plenty of profitable companies die of {cash flow}." }
+      ],
+      "odd": { "out": "an invoice", "in": ["turnover", "profit", "cash flow"], "prompt": "Trois de ces mots mesurent la santé d’une entreprise. Lequel est un document ?", "why": "La facture s’envoie ; les trois autres se lisent dans les comptes." }
+    }
+  ]
+}

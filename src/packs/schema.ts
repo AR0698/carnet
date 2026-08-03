@@ -11,7 +11,10 @@ export type ExerciseType =
   | 'fill_blank'
   | 'spot_error'
   | 'transform'
-  | 'mcq';
+  | 'mcq'
+  | 'picture'
+  | 'match'
+  | 'odd_one_out';
 
 export interface AnswerSpec {
   /** Réponses acceptées. La première sert de réponse canonique affichée. */
@@ -36,6 +39,12 @@ export interface Pitfall {
   explain: string;
 }
 
+/** Un mot et son sens, à rapprocher l'un de l'autre — exercice `match`. */
+export interface MatchPair {
+  en: string;
+  fr: string;
+}
+
 export interface Exercise {
   type: ExerciseType;
   /** La consigne. Pour `fill_blank`, contient le marqueur `___`. */
@@ -50,8 +59,29 @@ export interface Exercise {
   hints?: string[];
   /** Erreurs prévisibles, avec l'explication qui va avec. */
   pitfalls?: Pitfall[];
-  /** Uniquement pour `mcq`. */
+  /** Pour `mcq` et `odd_one_out`. */
   distractors?: string[];
+  /**
+   * Uniquement pour `picture` : la clé du dessin dans `ui/vocabArt.ts`.
+   *
+   * Une clé, pas un fichier ni une donnée en base64 : les dessins sont du code
+   * vectoriel, ils se colorent au thème et pèsent quelques centaines d'octets.
+   */
+  art?: string;
+  /** Uniquement pour `match` : les couples à reformer. */
+  pairs?: MatchPair[];
+}
+
+/**
+ * Les exercices où les formes sont sous les yeux.
+ *
+ * Deux conséquences dans l'interface : « En fait, je l'avais » n'a pas de sens
+ * (il n'y avait rien à formuler, donc pas d'équivalent à avoir trouvé
+ * autrement), et il n'y a pas de phrase juste à prononcer — voir
+ * `spokenSentence`.
+ */
+export function isChoice(type: ExerciseType): boolean {
+  return type === 'mcq' || type === 'match' || type === 'odd_one_out';
 }
 
 export interface PackItem {
@@ -128,6 +158,52 @@ export interface LessonContrast {
 }
 
 /**
+ * Un mot de la scène, et ce qu'il veut dire.
+ *
+ * Le sens est donné *sous* le texte et non entre parenthèses dedans : une
+ * traduction posée à côté du mot se lit à sa place, et la phrase anglaise n'est
+ * jamais lue.
+ */
+export interface LessonGloss {
+  en: string;
+  fr: string;
+}
+
+/**
+ * La scène — le vocabulaire de l'unité dans une situation, pas en liste.
+ *
+ * Un mot appris seul se range dans une case vide : on sait le traduire et on
+ * ne sait pas quand le dire. La scène répond à « pourquoi ce mot-là, à ce
+ * moment-là » en montrant cinq ou six mots de l'unité qui se tiennent dans le
+ * même paragraphe, parce qu'ils vivent réellement ensemble.
+ *
+ * Elle a sa place dans une fiche de cours et nulle part ailleurs : elle contient
+ * les formes attendues, et un exercice qui la montrerait d'abord ferait de la
+ * recopie. C'est la même règle que le `fields.passage` du carnet Culture.
+ */
+export interface LessonScene {
+  /** Où l'on est, en français — le décor tient en quelques mots. */
+  where: string;
+  /** Le paragraphe anglais. Court : on doit pouvoir le relire en entier. */
+  text: string;
+  gloss: LessonGloss[];
+}
+
+/**
+ * L'échelle — ce que la frise du temps est à la grammaire, pour le vocabulaire.
+ *
+ * Beaucoup de mots ne se distinguent pas par leur sens mais par leur degré :
+ * `drizzle`, `shower`, `downpour` disent tous la pluie. Alignés sur un axe
+ * gradué, ils se rangent d'un coup d'œil et se retrouvent les uns par les
+ * autres ; définis un par un, ils restent trois synonymes interchangeables.
+ */
+export interface LessonScale {
+  /** Ce que l'axe mesure : « de la bruine au déluge », « du agacé au furieux ». */
+  label: string;
+  steps: LessonGloss[];
+}
+
+/**
  * La fiche de cours d'une notion — l'endroit où on va comprendre.
  *
  * Elle tient sur un écran, sans défilement, et se lit dans un ordre fixe :
@@ -146,6 +222,10 @@ export interface Lesson {
   /** La règle en une phrase, si possible sous forme d'équation. */
   rule: string;
   figure?: LessonFigure;
+  /** Le vocabulaire de l'unité en situation. Absent des fiches de grammaire. */
+  scene?: LessonScene;
+  /** Les mots de l'unité rangés par degré, quand ils se distinguent ainsi. */
+  scale?: LessonScale;
   contrast?: LessonContrast;
   trap: LessonTrap;
   examples: LessonExample[];
@@ -207,6 +287,10 @@ export function contentLang(pack: ContentPack): string {
  * visée — et n'appartient pas à la phrase : on ne la prononce pas.
  */
 export function spokenSentence(exercise: Exercise): string {
+  // Un appariement n'a pas de phrase juste : sa réponse est une correspondance
+  // entre deux colonnes, et la prononcer donnerait une suite de mots sans
+  // syntaxe. Ses couples s'écoutent un par un dans la correction.
+  if (exercise.type === 'match') return '';
   const answer = exercise.answerSpec.accepted[0] ?? '';
   const filled = exercise.prompt.includes(BLANK)
     ? exercise.prompt.split(BLANK).join(answer)

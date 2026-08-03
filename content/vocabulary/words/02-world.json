@@ -1,0 +1,65 @@
+{
+  "section": "Le monde autour de nous",
+  "units": [
+    {
+      "id": "w005",
+      "title": "Pays, nationalités et langues",
+      "words": [
+        { "en": "the British Isles", "fr": "les îles Britanniques", "eg": "The {British Isles} include Ireland, which is not in the UK.", "clue": "La géographie, pas la politique : c’est le nom de l’archipel." },
+        { "en": "the mainland", "fr": "le continent", "eg": "The ferry runs twice a day from the {mainland}." },
+        { "en": "a native speaker", "fr": "un locuteur natif", "eg": "You do not need to sound like a {native speaker} to be understood." },
+        { "en": "fluent", "fr": "qui parle couramment", "eg": "She is {fluent} in three languages and shy in all of them.", "no": { "fluid|currently": "« Couramment » ne se dit pas « currently » — ce mot-là veut dire « actuellement »." } },
+        { "en": "an accent", "fr": "un accent", "eg": "The West Country {accent} keeps the r at the end of words." },
+        { "en": "a dialect", "fr": "un dialecte, un parler régional", "eg": "Half of what you hear at the market is {dialect}, not slang." },
+        { "en": "abroad", "fr": "à l’étranger", "eg": "They lived {abroad} for six years and came back for the schools.", "no": { "at abroad|to abroad": "« Abroad » se passe de préposition : on dit « to go abroad », jamais « to go to abroad »." } },
+        { "en": "a border", "fr": "une frontière", "eg": "The {border} between England and Wales runs through the middle of the field." }
+      ],
+      "odd": { "out": "a border", "in": ["an accent", "a dialect", "a native speaker"], "prompt": "Trois de ces mots parlent de la façon de parler. Lequel n’en est pas ?", "why": "Une frontière se trace sur une carte ; les trois autres s’entendent." }
+    },
+    {
+      "id": "w006",
+      "title": "Le monde physique",
+      "words": [
+        { "en": "a hill", "fr": "une colline", "eg": "Bristol is built on {hills} — you feel it in your legs by day three.", "art": "hill" },
+        { "en": "a stream", "fr": "un ruisseau", "eg": "There is a {stream} at the bottom of the garden, dry most of the summer.", "art": "river" },
+        { "en": "a cliff", "fr": "une falaise", "eg": "The path runs right along the top of the {cliff}.", "art": "cliff" },
+        { "en": "a wood", "fr": "un bois", "eg": "We walked through the {wood} and came out above the gorge.", "art": "forest", "no": { "a forest": "« Forest » est vaste et sauvage. Le petit bois derrière chez soi, c’est « a wood »." } },
+        { "en": "a valley", "fr": "une vallée", "eg": "The whole {valley} fills with mist first thing in the morning.", "art": "valley" },
+        { "en": "the coast", "fr": "la côte", "eg": "The {coast} is an hour away, which is why nobody stays in on a hot Sunday.", "art": "beach" },
+        { "en": "a field", "fr": "un champ, un pré", "eg": "Two {fields} further on there is a gate and then the lane.", "art": "field" },
+        { "en": "a waterfall", "fr": "une cascade", "eg": "After a week of rain the {waterfall} is worth the walk.", "art": "waterfall" }
+      ],
+      "odd": { "out": "the coast", "in": ["a hill", "a valley", "a cliff"], "prompt": "Trois de ces mots décrivent un relief. Lequel décrit une limite ?", "why": "La côte est l’endroit où la terre s’arrête ; les trois autres sont des formes du terrain." }
+    },
+    {
+      "id": "w007",
+      "title": "Le temps qu’il fait",
+      "words": [
+        { "en": "drizzle", "fr": "de la bruine", "eg": "It is not really raining, it is just {drizzle}.", "art": "drizzle", "clue": "Trop fin pour sortir le parapluie, assez pour être trempé au bout d’une heure." },
+        { "en": "a shower", "fr": "une averse", "eg": "We had a heavy {shower} at lunchtime and blue sky by two.", "art": "rain" },
+        { "en": "a downpour", "fr": "une averse violente", "eg": "The match was stopped by a {downpour} that lasted ten minutes." },
+        { "en": "overcast", "fr": "couvert", "eg": "The sky was {overcast} all week without a drop of rain.", "art": "cloud" },
+        { "en": "mild", "fr": "doux", "eg": "It stays {mild} here in January — that surprises people.", "clue": "Ni froid ni chaud, et surtout : plus chaud qu’on ne l’attendait." },
+        { "en": "chilly", "fr": "frisquet", "eg": "Take a coat, it goes {chilly} once the sun drops." },
+        { "en": "foggy", "fr": "brumeux", "eg": "The bridge closes when it gets too {foggy} to see the towers.", "art": "fog" },
+        { "en": "a breeze", "fr": "une brise", "eg": "There is a {breeze} off the water, which is why the balloons go up at dawn.", "art": "wind" }
+      ],
+      "odd": { "out": "mild", "in": ["drizzle", "a shower", "a downpour"], "prompt": "Trois de ces mots parlent de pluie. Lequel parle de température ?", "why": "« Mild » décrit une douceur de l’air, pas de l’eau qui tombe." }
+    },
+    {
+      "id": "w008",
+      "title": "Bêtes et bestioles",
+      "words": [
+        { "en": "a fox", "fr": "un renard", "eg": "There is a {fox} that crosses the road at the same hour every night.", "art": "fox" },
+        { "en": "a seagull", "fr": "une mouette", "eg": "A {seagull} took the chips straight out of my hand.", "art": "seagull" },
+        { "en": "a squirrel", "fr": "un écureuil", "eg": "The {squirrel} has worked out how to get into the bird feeder.", "art": "squirrel" },
+        { "en": "a hedgehog", "fr": "un hérisson", "eg": "Leave a gap under the fence so a {hedgehog} can get through.", "art": "hedgehog" },
+        { "en": "a wasp", "fr": "une guêpe", "eg": "Every beer garden in August comes with a {wasp}.", "art": "bee" },
+        { "en": "a spider", "fr": "une araignée", "eg": "The big {spider} in the bath means autumn has started.", "art": "spider" },
+        { "en": "a snail", "fr": "un escargot", "eg": "A {snail} got the lettuce before we did.", "art": "snail" },
+        { "en": "a flock", "fr": "un vol, un troupeau", "eg": "A {flock} of them lifted off the roof all at once.", "clue": "Le mot de groupe des oiseaux et des moutons.", "no": { "a group": "L’anglais a un mot de groupe par espèce : « a flock » pour les oiseaux et les moutons, « a herd » pour les vaches." } }
+      ],
+      "odd": { "out": "a hedgehog", "in": ["a wasp", "a spider", "a snail"], "prompt": "Lequel de ces animaux n’est ni un insecte ni une petite bestiole ?", "why": "Le hérisson est un mammifère ; les trois autres tiennent dans la main." }
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "section": "Mots et grammaire",
+  "units": [
+    {
+      "id": "w086",
+      "title": "Les noms indénombrables",
+      "words": [
+        { "en": "advice", "fr": "des conseils", "eg": "That is the best {advice} anyone gave me before moving.", "no": { "an advice|advices": "« Advice » ne se compte pas. Un conseil, c’est « a piece of advice »." } },
+        { "en": "furniture", "fr": "des meubles", "eg": "The flat came with {furniture} nobody would have chosen.", "no": { "furnitures|a furniture": "Jamais de pluriel : « the furniture is old »." } },
+        { "en": "information", "fr": "des informations", "eg": "There is not enough {information} on that page to decide anything.", "no": { "informations": "Indénombrable en anglais, contrairement au français." } },
+        { "en": "luggage", "fr": "des bagages", "eg": "All our {luggage} fitted in one boot, just about." },
+        { "en": "equipment", "fr": "du matériel", "eg": "The {equipment} arrived a fortnight after the people did." },
+        { "en": "a piece of advice", "fr": "un conseil", "eg": "One {piece of advice}: never sign the first version." },
+        { "en": "progress", "fr": "des progrès", "eg": "There has been real {progress}, just not where anyone was looking." },
+        { "en": "accommodation", "fr": "un logement", "eg": "{Accommodation} is the single biggest line in anyone’s budget here." }
+      ],
+      "odd": { "out": "a piece of advice", "in": ["furniture", "luggage", "equipment"], "prompt": "Trois de ces mots ne se comptent jamais. Lequel se compte ?", "why": "« A piece of » est précisément le tour qui permet de compter l’incomptable." }
+    },
+    {
+      "id": "w087",
+      "title": "Les constructions verbales I",
+      "words": [
+        { "en": "to manage to do something", "fr": "parvenir à faire", "eg": "We {managed to} finish it before the deadline moved again." },
+        { "en": "to refuse to do something", "fr": "refuser de faire", "eg": "He {refused to} put it in writing, which told us everything." },
+        { "en": "to offer to do something", "fr": "proposer de faire", "eg": "She {offered to} take the early train so we did not have to." },
+        { "en": "to avoid doing something", "fr": "éviter de faire", "eg": "You cannot {avoid} having that conversation for ever.", "no": { "to avoid to do": "Après « avoid », le verbe prend -ing." } },
+        { "en": "to suggest doing something", "fr": "proposer de faire", "eg": "Somebody {suggested} moving it to a Tuesday.", "no": { "to suggest to do": "« Suggest » ne prend jamais l’infinitif : « suggest doing », ou « suggest that we do »." } },
+        { "en": "to promise to do something", "fr": "promettre de faire", "eg": "They {promised to} come back with a date and never did." },
+        { "en": "to be worth doing something", "fr": "valoir la peine de faire", "eg": "It is {worth} asking before you assume." },
+        { "en": "to remind somebody to do something", "fr": "rappeler à quelqu’un de faire", "eg": "{Remind} me to send that before I leave." }
+      ]
+    },
+    {
+      "id": "w088",
+      "title": "Les constructions verbales II",
+      "words": [
+        { "en": "to let somebody do something", "fr": "laisser quelqu’un faire", "eg": "{Let} me do this bit, you have done enough.", "no": { "to let somebody to do": "Après « let », le verbe reste nu : « let me do », jamais « let me to do »." } },
+        { "en": "to make somebody do something", "fr": "faire faire à quelqu’un", "eg": "You cannot {make} people care by putting it in a slide." },
+        { "en": "to allow somebody to do something", "fr": "autoriser quelqu’un à faire", "eg": "They {allow} you to change the date once and once only." },
+        { "en": "to expect somebody to do something", "fr": "s’attendre à ce que quelqu’un fasse", "eg": "Nobody {expects} you to know all of it in the first month." },
+        { "en": "to spend time doing something", "fr": "passer du temps à faire", "eg": "I {spend} more time looking for files than reading them." },
+        { "en": "to be used to doing something", "fr": "être habitué à faire", "eg": "I am not {used to} driving on that side yet." },
+        { "en": "to prevent somebody from doing something", "fr": "empêcher quelqu’un de faire", "eg": "Nothing {prevents} you from asking twice." },
+        { "en": "to bother doing something", "fr": "se donner la peine de faire", "eg": "Do not {bother} printing it, nobody reads the paper copy." }
+      ]
+    },
+    {
+      "id": "w089",
+      "title": "Les adjectifs",
+      "words": [
+        { "en": "exhausted", "fr": "épuisé", "eg": "By Thursday everyone is {exhausted} and pretending not to be.", "clue": "Un adjectif extrême : on ne dit pas « very exhausted », on dit « absolutely »." },
+        { "en": "freezing", "fr": "glacial", "eg": "It was absolutely {freezing} on the platform." },
+        { "en": "enormous", "fr": "énorme", "eg": "The garden is {enormous} and entirely made of brambles." },
+        { "en": "tiny", "fr": "minuscule", "eg": "The kitchen is {tiny} and works better than the big one did." },
+        { "en": "awful", "fr": "affreux", "eg": "The coffee is {awful} and the company is excellent." },
+        { "en": "brilliant", "fr": "génial", "eg": "It was {brilliant}, honestly — best thing we did all year." },
+        { "en": "worthwhile", "fr": "qui en vaut la peine", "eg": "It is a long walk and entirely {worthwhile}." },
+        { "en": "annoying", "fr": "agaçant", "eg": "The most {annoying} part is that he was right." }
+      ],
+      "odd": { "out": "worthwhile", "in": ["exhausted", "freezing", "enormous"], "prompt": "Trois de ces adjectifs sont extrêmes et n’acceptent pas « very ». Lequel est ordinaire ?", "why": "On peut dire « very worthwhile » ; on ne dit pas « very freezing »." }
+    },
+    {
+      "id": "w090",
+      "title": "Prépositions de lieu et de mouvement",
+      "words": [
+        { "en": "opposite", "fr": "en face de", "eg": "The chemist is {opposite} the church, not next to it.", "no": { "in front of": "« In front of » veut dire devant, du même côté. En face, de l’autre côté de la rue, c’est « opposite »." } },
+        { "en": "next to", "fr": "à côté de", "eg": "Sit {next to} me and I will show you the trick." },
+        { "en": "along", "fr": "le long de", "eg": "Walk {along} the towpath for a mile and it opens out." },
+        { "en": "across", "fr": "de l’autre côté de", "eg": "The ferry takes you {across} in four minutes." },
+        { "en": "through", "fr": "à travers", "eg": "The path goes {through} the wood and comes out by the pub." },
+        { "en": "past", "fr": "devant, au-delà de", "eg": "Carry on {past} the bridge and take the second left." },
+        { "en": "towards", "fr": "vers", "eg": "Head {towards} the tower and you cannot get lost.", "also": ["toward"] },
+        { "en": "at the top of", "fr": "en haut de", "eg": "The view {at the top of} that hill is worth the climb." }
+      ],
+      "odd": { "out": "next to", "in": ["along", "across", "through"], "prompt": "Trois de ces prépositions décrivent un trajet. Laquelle décrit une position ?", "why": "« Next to » ne bouge pas ; les trois autres traversent." }
+    },
+    {
+      "id": "w091",
+      "title": "Les adverbes",
+      "words": [
+        { "en": "hardly", "fr": "à peine", "eg": "I could {hardly} hear a word over the music.", "no": { "hard": "« Hard » veut dire fort ou difficile ; « hardly » veut dire presque pas. Le piège est classique." } },
+        { "en": "barely", "fr": "tout juste", "eg": "We {barely} made the last train." },
+        { "en": "quite", "fr": "assez, plutôt", "eg": "It was {quite} good, which in this country is not a compliment." },
+        { "en": "rather", "fr": "assez, plutôt", "eg": "It is {rather} colder than the forecast promised." },
+        { "en": "gradually", "fr": "peu à peu", "eg": "It got easier {gradually}, and then all at once." },
+        { "en": "reluctantly", "fr": "à contrecœur", "eg": "He agreed {reluctantly} and made sure everyone knew it." },
+        { "en": "apparently", "fr": "apparemment", "eg": "{Apparently} it has been like that since the eighties." },
+        { "en": "on time", "fr": "à l’heure", "eg": "The bus was {on time}, which everyone mentioned." }
+      ],
+      "odd": { "out": "on time", "in": ["hardly", "barely", "quite"], "prompt": "Trois de ces adverbes disent un degré. Lequel dit un horaire ?", "why": "« On time » se compare à une heure, pas à une intensité." }
+    }
+  ]
+}

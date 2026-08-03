@@ -1,0 +1,64 @@
+{
+  "section": "Communication et technologie",
+  "units": [
+    {
+      "id": "w052",
+      "title": "Presse et télévision",
+      "words": [
+        { "en": "a headline", "fr": "un gros titre", "eg": "The {headline} says one thing and the article says another." },
+        { "en": "a broadsheet", "fr": "un journal de qualité", "eg": "The {broadsheet} coverage was three pages and the tabloid was one photograph.", "clue": "Le format historique du grand papier : le mot est resté pour dire le sérieux." },
+        { "en": "a tabloid", "fr": "un journal populaire", "eg": "A {tabloid} front page decides more elections than anyone admits." },
+        { "en": "the licence fee", "fr": "la redevance", "eg": "Everyone with a television pays the {licence fee} and everyone complains." },
+        { "en": "a soap", "fr": "un feuilleton", "eg": "That {soap} has been on since before I was born." },
+        { "en": "a documentary", "fr": "un documentaire", "eg": "There is a {documentary} about the bridge that everyone here has seen." },
+        { "en": "the news", "fr": "les informations", "eg": "The {news} is at six and at ten and never in between.", "no": { "the news are": "« News » est singulier : « the news is depressing », jamais « are »." } },
+        { "en": "a presenter", "fr": "un présentateur", "eg": "The {presenter} has been doing it for thirty years and it shows, in a good way." }
+      ],
+      "odd": { "out": "the licence fee", "in": ["a soap", "a documentary", "the news"], "prompt": "Trois de ces mots sont des programmes. Lequel est une facture ?", "why": "La redevance paie la télévision ; elle ne passe pas dessus." }
+    },
+    {
+      "id": "w053",
+      "title": "Téléphoner et écrire",
+      "words": [
+        { "en": "to ring somebody", "fr": "appeler quelqu’un", "eg": "{Ring} me when you land, whatever the time.", "clue": "Le verbe britannique par défaut : « call » marche aussi, « ring » sonne d’ici." },
+        { "en": "to be engaged", "fr": "être occupé (ligne)", "eg": "The line was {engaged} for an hour solid.", "no": { "to be busy": "« Busy » est américain pour une ligne occupée ; ici on dit « engaged »." } },
+        { "en": "to hang up", "fr": "raccrocher", "eg": "She {hung up} before I could say the important bit.", "art": "phone" },
+        { "en": "to put somebody through", "fr": "passer quelqu’un", "eg": "Hold on, I will {put} you through." },
+        { "en": "a missed call", "fr": "un appel manqué", "eg": "Three {missed calls} from a number I do not know." },
+        { "en": "to text somebody", "fr": "envoyer un texto", "eg": "{Text} me rather than ring, I am in meetings all day." },
+        { "en": "to get cut off", "fr": "être coupé", "eg": "We {got cut off} in the tunnel, as always." },
+        { "en": "a voicemail", "fr": "un message vocal", "eg": "Nobody under forty listens to a {voicemail}." }
+      ]
+    },
+    {
+      "id": "w054",
+      "title": "L’ordinateur",
+      "words": [
+        { "en": "a keyboard", "fr": "un clavier", "eg": "The British {keyboard} puts the at sign somewhere new every time you move country." },
+        { "en": "a screenshot", "fr": "une capture d’écran", "eg": "Send me a {screenshot} rather than describing it." },
+        { "en": "to back something up", "fr": "sauvegarder", "eg": "{Back} it up now, not on Friday." },
+        { "en": "a folder", "fr": "un dossier", "eg": "It is in a {folder} inside a folder with a name that made sense in March." },
+        { "en": "to crash", "fr": "planter", "eg": "The whole thing {crashed} and took the last twenty minutes with it." },
+        { "en": "a shortcut", "fr": "un raccourci", "eg": "Learn three {shortcuts} and you save an hour a week." },
+        { "en": "a plug-in", "fr": "une extension", "eg": "There is a {plug-in} that does it, and it breaks every update." },
+        { "en": "storage", "fr": "l’espace de stockage", "eg": "I ran out of {storage} on the morning of the deadline." }
+      ],
+      "odd": { "out": "to crash", "in": ["a keyboard", "a folder", "a plug-in"], "prompt": "Trois de ces mots sont des choses. Lequel est ce qui arrive ?", "why": "Planter est un événement, et jamais un bon." }
+    },
+    {
+      "id": "w055",
+      "title": "Courriel et internet",
+      "words": [
+        { "en": "an attachment", "fr": "une pièce jointe", "eg": "The email says « see {attachment} » and there is no attachment." },
+        { "en": "to reply all", "fr": "répondre à tous", "eg": "Someone hit {reply all} and forty people learned something private." },
+        { "en": "a thread", "fr": "un fil de discussion", "eg": "That {thread} is nineteen messages long and says nothing." },
+        { "en": "to forward", "fr": "faire suivre", "eg": "I will {forward} you the original so you can see the dates." },
+        { "en": "spam", "fr": "des indésirables", "eg": "It went to {spam} and sat there for a fortnight." },
+        { "en": "a browser", "fr": "un navigateur", "eg": "Try it in another {browser} before you ring anyone." },
+        { "en": "a link", "fr": "un lien", "eg": "The {link} in that message goes somewhere it should not." },
+        { "en": "to sign up", "fr": "s’inscrire", "eg": "You have to {sign up} to read three articles a month." }
+      ],
+      "odd": { "out": "a browser", "in": ["an attachment", "a thread", "to forward"], "prompt": "Trois de ces mots appartiennent au courriel. Lequel appartient au web ?", "why": "Le navigateur ouvre des pages, pas des messages." }
+    }
+  ]
+}

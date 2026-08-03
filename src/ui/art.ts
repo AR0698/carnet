@@ -49,7 +49,7 @@ const FILTERS = `
 let filtersPlanted = false;
 
 /** Plante les filtres au premier dessin demandé, jamais deux fois. */
-function plantFilters(): void {
+export function plantFilters(): void {
   if (filtersPlanted || typeof document === 'undefined') return;
   const host = el('div');
   host.innerHTML = FILTERS;

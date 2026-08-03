@@ -1,0 +1,50 @@
+{
+  "section": "Relier et enchaîner",
+  "units": [
+    {
+      "id": "w092",
+      "title": "Le temps et la suite des choses",
+      "words": [
+        { "en": "as soon as", "fr": "dès que", "eg": "Ring me {as soon as} you know either way." },
+        { "en": "by the time", "fr": "le temps que", "eg": "{By the time} we got there the good seats had gone." },
+        { "en": "in the meantime", "fr": "en attendant", "eg": "{In the meantime}, carry on as if nothing had changed." },
+        { "en": "afterwards", "fr": "ensuite, après", "eg": "We can talk about it {afterwards}, not in front of them.", "no": { "after": "« After » attend un complément. Tout seul, en fin de phrase, il faut « afterwards »." } },
+        { "en": "until then", "fr": "d’ici là", "eg": "It starts in April; {until then} nothing is decided." },
+        { "en": "from then on", "fr": "à partir de là", "eg": "{From then on} she checked everything twice." },
+        { "en": "no sooner", "fr": "à peine", "eg": "{No sooner} had we sat down than the fire alarm went off." },
+        { "en": "at the same time", "fr": "en même temps", "eg": "Two things were true {at the same time}, which is usually the problem." }
+      ],
+      "odd": { "out": "at the same time", "in": ["as soon as", "afterwards", "from then on"], "prompt": "Trois de ces mots ordonnent deux moments. Lequel les superpose ?", "why": "« At the same time » ne met rien avant ni après." }
+    },
+    {
+      "id": "w093",
+      "title": "Ajouter et opposer",
+      "words": [
+        { "en": "besides", "fr": "d’ailleurs, en plus", "eg": "It is too late, and {besides}, nobody wants to.", "no": { "beside": "« Beside » sans s veut dire à côté de. L’argument en plus, c’est « besides »." } },
+        { "en": "as well as", "fr": "ainsi que", "eg": "She runs the team {as well as} half the client relationship." },
+        { "en": "on top of that", "fr": "en plus de ça", "eg": "{On top of that}, the licence expires in June." },
+        { "en": "whereas", "fr": "tandis que", "eg": "The first version was slow {whereas} the second is simply wrong." },
+        { "en": "however", "fr": "cependant", "eg": "It works. {However}, nobody can explain why." },
+        { "en": "even so", "fr": "malgré tout", "eg": "It rained all week. {Even so}, we went out every day." },
+        { "en": "on the other hand", "fr": "d’un autre côté", "eg": "{On the other hand}, it does mean we can start in March." },
+        { "en": "despite", "fr": "malgré", "eg": "{Despite} the forecast, the whole thing went ahead.", "no": { "despite of": "« Despite » se passe de « of » : « despite the rain », ou « in spite of the rain »." } }
+      ],
+      "odd": { "out": "as well as", "in": ["whereas", "however", "even so"], "prompt": "Trois de ces mots opposent. Lequel ajoute ?", "why": "« As well as » empile ; les trois autres contredisent." }
+    },
+    {
+      "id": "w094",
+      "title": "Cause, but, conséquence, condition",
+      "words": [
+        { "en": "due to", "fr": "en raison de", "eg": "The delay was {due to} something nobody would name." },
+        { "en": "owing to", "fr": "à cause de", "eg": "{Owing to} the weather, the whole thing moved indoors." },
+        { "en": "so that", "fr": "pour que", "eg": "Write it down {so that} the next person does not start again." },
+        { "en": "in order to", "fr": "afin de", "eg": "We split it in two {in order to} get half of it signed off." },
+        { "en": "as a result", "fr": "par conséquent", "eg": "Two people left and {as a result} the deadline moved." },
+        { "en": "therefore", "fr": "donc, par conséquent", "eg": "The data is incomplete and {therefore} the conclusion is too." },
+        { "en": "unless", "fr": "à moins que", "eg": "Nothing happens {unless} somebody asks twice.", "no": { "except if": "« Unless » remplace « if not » à lui seul, et sonne bien plus naturel." } },
+        { "en": "as long as", "fr": "tant que, à condition que", "eg": "It is fine {as long as} you tell them before Friday." }
+      ],
+      "odd": { "out": "so that", "in": ["due to", "owing to", "as a result"], "prompt": "Trois de ces mots relient une cause à un effet. Lequel annonce une intention ?", "why": "« So that » dit le but visé, pas la cause subie." }
+    }
+  ]
+}
