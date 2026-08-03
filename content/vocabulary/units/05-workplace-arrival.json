@@ -1,0 +1,293 @@
+{
+  "group": "Workplace · Arriver dans la boîte",
+  "items": [
+    {
+      "id": "w1-line-manager",
+      "topicId": "v005",
+      "tags": ["Workplace · Arriver dans la boîte"],
+      "fields": {
+        "term": "a line manager",
+        "meaning": "le supérieur hiérarchique direct",
+        "example": "Your line manager signs off your leave, not the programme lead."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « le supérieur hiérarchique direct » ?",
+          "answerSpec": { "accepted": ["a line manager", "line manager"] },
+          "hints": ["La « ligne » hiérarchique : celui à qui tu rends compte au quotidien."],
+          "pitfalls": [
+            {
+              "answers": ["my responsible", "a responsible"],
+              "explain": "Calque du français : « responsible » est un adjectif en anglais, jamais un poste. On dit « my line manager », ou simplement « my manager »."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Your ___ signs off your leave, not the programme lead.",
+          "answerSpec": { "accepted": ["line manager"] },
+          "hints": ["le supérieur hiérarchique direct"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « le supérieur hiérarchique direct » ?",
+          "answerSpec": { "accepted": ["a line manager"] },
+          "distractors": ["a head manager", "a hierarchical superior", "a direct chief"]
+        }
+      ]
+    },
+    {
+      "id": "w1-direct-report",
+      "topicId": "v005",
+      "tags": ["Workplace · Arriver dans la boîte"],
+      "fields": {
+        "term": "a direct report",
+        "meaning": "un collaborateur qu'on encadre directement",
+        "example": "She has six direct reports and two contractors on the AI programme."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « un collaborateur qu'on encadre directement » ?",
+          "answerSpec": { "accepted": ["a direct report", "direct report"] },
+          "hints": ["Le mot dit la relation, pas le rang : c'est celui qui te rend compte."],
+          "pitfalls": [
+            {
+              "answers": ["a subordinate"],
+              "explain": "« Subordinate » existe, mais sonne militaire et froid dans un bureau britannique. On l'évite en parlant des gens."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "She has six ___ and two contractors on the AI programme.",
+          "answerSpec": { "accepted": ["direct reports"] },
+          "hints": ["des collaborateurs encadrés directement — au pluriel"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « un collaborateur qu'on encadre directement » ?",
+          "answerSpec": { "accepted": ["a direct report"] },
+          "distractors": ["a reporter", "a direct employee", "a team follower"]
+        }
+      ]
+    },
+    {
+      "id": "w1-probation",
+      "topicId": "v005",
+      "tags": ["Workplace · Arriver dans la boîte"],
+      "fields": {
+        "term": "a probation period",
+        "meaning": "une période d'essai",
+        "example": "You are on a three-month probation period before any tooling budget opens up."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « une période d'essai » (pour un salarié) ?",
+          "answerSpec": { "accepted": ["a probation period", "probation period", "a probationary period"] },
+          "hints": ["On dit aussi « to be on probation » — sans article."],
+          "pitfalls": [
+            {
+              "answers": ["a trial period"],
+              "explain": "« Trial period » se dit d'un logiciel ou d'un abonnement, pas d'une personne."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "You are on a three-month ___ period before any tooling budget opens up.",
+          "answerSpec": { "accepted": ["probation", "probationary"] },
+          "hints": ["d'essai"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « une période d'essai » pour un salarié ?",
+          "answerSpec": { "accepted": ["a probation period"] },
+          "distractors": ["a trial period", "a test period", "an essay period"]
+        }
+      ]
+    },
+    {
+      "id": "w1-induction",
+      "topicId": "v005",
+      "tags": ["Workplace · Arriver dans la boîte"],
+      "fields": {
+        "term": "an induction",
+        "meaning": "le parcours d'intégration des nouveaux arrivants",
+        "example": "Induction is Monday morning: fire drill, laptop, and the AI usage policy."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « le parcours d'intégration des nouveaux arrivants » ?",
+          "answerSpec": { "accepted": ["an induction", "induction"] },
+          "hints": ["Le mot britannique de référence ; « onboarding » s'entend aussi, surtout côté tech."],
+          "pitfalls": [
+            {
+              "answers": ["an integration"],
+              "explain": "Calque du français : en anglais, « integration » parle de systèmes qu'on branche ensemble, jamais de personnes qu'on accueille."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "___ is Monday morning: fire drill, laptop, and the AI usage policy.",
+          "answerSpec": { "accepted": ["Induction", "induction"] },
+          "hints": ["le parcours d'intégration"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « le parcours d'intégration des nouveaux arrivants » ?",
+          "answerSpec": { "accepted": ["an induction"] },
+          "distractors": ["an integration", "a welcome week", "an initiation"]
+        }
+      ]
+    },
+    {
+      "id": "w1-across",
+      "topicId": "v005",
+      "tags": ["Workplace · Arriver dans la boîte"],
+      "fields": {
+        "term": "to be across something",
+        "meaning": "tenir un sujet, en maîtriser le détail",
+        "example": "Is anyone across the retention rules before we let the model index the archive?"
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « tenir un sujet, en maîtriser le détail » ?",
+          "answerSpec": { "accepted": ["to be across something", "to be across", "be across something"] },
+          "hints": ["Très britannique : être « en travers » d'un sujet, c'est le tenir d'un bord à l'autre."],
+          "pitfalls": [
+            {
+              "answers": ["to be aware of something", "to be aware"],
+              "explain": "« Aware » dit que tu sais que ça existe. « Across » dit que tu tiens le dossier — c'est l'écart entre avoir lu le mail et pouvoir répondre en réunion."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Is anyone ___ the retention rules before we let the model index the archive?",
+          "answerSpec": { "accepted": ["across"] },
+          "hints": ["qui tient le sujet"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « tenir un sujet, en maîtriser le détail » ?",
+          "answerSpec": { "accepted": ["to be across something"] },
+          "distractors": ["to be over something", "to be through something", "to be upon something"]
+        }
+      ]
+    },
+    {
+      "id": "w1-crack-on",
+      "topicId": "v005",
+      "tags": ["Workplace · Arriver dans la boîte"],
+      "fields": {
+        "term": "to crack on",
+        "meaning": "s'y mettre, avancer sans traîner",
+        "example": "Right — let's crack on, the pilot starts on the first."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « s'y mettre, avancer sans traîner » ?",
+          "answerSpec": { "accepted": ["to crack on", "crack on"] },
+          "hints": ["Le mot qui clôt une réunion britannique, juste après « right »."],
+          "pitfalls": [
+            {
+              "answers": ["to crack down"],
+              "explain": "« Crack down on » veut dire sévir, réprimer. La particule change tout le sens."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Right — let's ___, the pilot starts on the first.",
+          "answerSpec": { "accepted": ["crack on"] },
+          "hints": ["s'y mettre, avancer"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « s'y mettre, avancer sans traîner » ?",
+          "answerSpec": { "accepted": ["to crack on"] },
+          "distractors": ["to crack up", "to crack down", "to crack out"]
+        }
+      ]
+    },
+    {
+      "id": "w1-quick-word",
+      "topicId": "v005",
+      "tags": ["Workplace · Arriver dans la boîte"],
+      "fields": {
+        "term": "to have a quick word",
+        "meaning": "dire deux mots en aparté — rarement anodin",
+        "example": "Can I have a quick word about the demo before you send it out?"
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « dire deux mots en aparté » ?",
+          "answerSpec": { "accepted": ["to have a quick word", "have a quick word", "a quick word"] },
+          "hints": ["« Quick » ne promet pas que ce sera léger — c'est souvent l'inverse."],
+          "pitfalls": [
+            {
+              "answers": ["to have a small talk", "to make small talk"],
+              "explain": "« Small talk », c'est la conversation de machine à café. « A quick word », c'est une remarque qu'on te fait à l'écart."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Can I have a quick ___ about the demo before you send it out?",
+          "answerSpec": { "accepted": ["word"] },
+          "hints": ["deux mots, en aparté"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « dire deux mots en aparté » ?",
+          "answerSpec": { "accepted": ["to have a quick word"] },
+          "distractors": ["to have a quick talk", "to say a quick word", "to take a quick word"]
+        }
+      ]
+    },
+    {
+      "id": "w1-chase-up",
+      "topicId": "v005",
+      "tags": ["Workplace · Arriver dans la boîte"],
+      "fields": {
+        "term": "to chase something up",
+        "meaning": "relancer, courir après une réponse",
+        "example": "I'll chase up legal on the data-processing agreement this afternoon."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « relancer, courir après une réponse » ?",
+          "answerSpec": { "accepted": ["to chase something up", "to chase up", "chase up"] },
+          "hints": ["L'image est celle de la poursuite : on court après le dossier, poliment."],
+          "pitfalls": [
+            {
+              "answers": ["to relaunch"],
+              "explain": "Faux ami : « relaunch » se dit d'un produit qu'on ressort, jamais d'une personne qu'on relance."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "I'll ___ legal on the data-processing agreement this afternoon.",
+          "answerSpec": { "accepted": ["chase up", "chase"] },
+          "hints": ["relancer"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « relancer, courir après une réponse » ?",
+          "answerSpec": { "accepted": ["to chase something up"] },
+          "distractors": ["to relaunch", "to chase something down", "to run after something"]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,293 @@
+{
+  "group": "Workplace · La mission et le client",
+  "items": [
+    {
+      "id": "w5-statement-of-work",
+      "topicId": "v009",
+      "tags": ["Workplace · La mission et le client"],
+      "fields": {
+        "term": "a statement of work",
+        "meaning": "le cadrage contractuel de la mission",
+        "example": "The statement of work says discovery, not delivery — that's another contract."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « le cadrage contractuel de la mission » ?",
+          "answerSpec": { "accepted": ["a statement of work", "statement of work", "an SOW"] },
+          "hints": ["Abrégé SOW à l'oral comme à l'écrit ; c'est lui qu'on relit quand ça déborde."],
+          "pitfalls": [
+            {
+              "answers": ["a specification", "a specification sheet"],
+              "explain": "La « specification » décrit ce qu'il faut construire. Le « statement of work » dit ce que tu t'engages à faire, et donc ce que tu ne feras pas."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The ___ of work says discovery, not delivery — that's another contract.",
+          "answerSpec": { "accepted": ["statement"] },
+          "hints": ["le cadrage contractuel"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « le cadrage contractuel de la mission » ?",
+          "answerSpec": { "accepted": ["a statement of work"] },
+          "distractors": ["a work statement", "a mission letter", "a specification sheet"]
+        }
+      ]
+    },
+    {
+      "id": "w5-scope-creep",
+      "topicId": "v009",
+      "tags": ["Workplace · La mission et le client"],
+      "fields": {
+        "term": "scope creep",
+        "meaning": "la dérive du périmètre",
+        "example": "Three extra dashboards later, that's scope creep, and nobody has repriced it."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « la dérive du périmètre » ?",
+          "answerSpec": { "accepted": ["scope creep"] },
+          "hints": ["« Creep » : ça rampe. Personne ne décide jamais rien, et pourtant ça s'étend."],
+          "pitfalls": [
+            {
+              "answers": ["scope drift", "perimeter creep"],
+              "explain": "L'expression figée est « scope creep ». « Perimeter » est un mot de géométrie ou de sécurité, jamais de contrat."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Three extra dashboards later, that's scope ___, and nobody has repriced it.",
+          "answerSpec": { "accepted": ["creep"] },
+          "hints": ["la dérive, ce qui rampe"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « la dérive du périmètre » ?",
+          "answerSpec": { "accepted": ["scope creep"] },
+          "distractors": ["scope drift", "scope leak", "scope slide"]
+        }
+      ]
+    },
+    {
+      "id": "w5-stakeholder",
+      "topicId": "v009",
+      "tags": ["Workplace · La mission et le client"],
+      "fields": {
+        "term": "a stakeholder",
+        "meaning": "une partie prenante",
+        "example": "Map your stakeholders before the kick-off, not after the first refusal."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « une partie prenante » ?",
+          "answerSpec": { "accepted": ["a stakeholder", "stakeholder"] },
+          "hints": ["« A stake » : la mise. Celui qui a quelque chose en jeu dans l'affaire."],
+          "pitfalls": [
+            {
+              "answers": ["a shareholder"],
+              "explain": "Un seul son d'écart, tout le sens : « shareholder » veut dire actionnaire. La partie prenante n'a pas forcément un centime dans la boîte."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Map your ___ before the kick-off, not after the first refusal.",
+          "answerSpec": { "accepted": ["stakeholders"] },
+          "hints": ["les parties prenantes — au pluriel"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « une partie prenante » ?",
+          "answerSpec": { "accepted": ["a stakeholder"] },
+          "distractors": ["a shareholder", "an interested party", "a concerned person"]
+        }
+      ]
+    },
+    {
+      "id": "w5-deliverable",
+      "topicId": "v009",
+      "tags": ["Workplace · La mission et le client"],
+      "fields": {
+        "term": "a deliverable",
+        "meaning": "un livrable",
+        "example": "The deliverable is a decision, not a deck — put that in writing."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « un livrable » ?",
+          "answerSpec": { "accepted": ["a deliverable", "deliverable"] },
+          "hints": ["Un adjectif devenu nom : ce qui est livrable, donc ce qui est dû."],
+          "pitfalls": [
+            {
+              "answers": ["a delivery"],
+              "explain": "« Delivery » est la livraison — le geste, la date. Le « deliverable » est la chose due elle-même."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The ___ is a decision, not a deck — put that in writing.",
+          "answerSpec": { "accepted": ["deliverable"] },
+          "hints": ["le livrable"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « un livrable » ?",
+          "answerSpec": { "accepted": ["a deliverable"] },
+          "distractors": ["a delivery", "a delivrable", "a due item"]
+        }
+      ]
+    },
+    {
+      "id": "w5-sign-off",
+      "topicId": "v009",
+      "tags": ["Workplace · La mission et le client"],
+      "fields": {
+        "term": "to sign something off",
+        "meaning": "valider formellement, donner son accord",
+        "example": "Legal has to sign off the data-processing agreement before we index anything."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « valider formellement, donner son accord » ?",
+          "answerSpec": { "accepted": ["to sign something off", "to sign off", "sign it off"] },
+          "hints": ["Le nom existe aussi : « we're waiting for sign-off »."],
+          "pitfalls": [
+            {
+              "answers": ["to validate"],
+              "explain": "Faux ami tenace : « validate » veut dire vérifier, prouver que c'est correct. Approuver, c'est « sign off » — ou « approve »."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Legal has to ___ the data-processing agreement before we index anything.",
+          "answerSpec": { "accepted": ["sign off"] },
+          "hints": ["valider formellement"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « valider formellement » ?",
+          "answerSpec": { "accepted": ["to sign something off"] },
+          "distractors": ["to validate something", "to sign something in", "to approve of something"]
+        }
+      ]
+    },
+    {
+      "id": "w5-day-rate",
+      "topicId": "v009",
+      "tags": ["Workplace · La mission et le client"],
+      "fields": {
+        "term": "a day rate",
+        "meaning": "un tarif journalier",
+        "example": "My day rate covers the workshop, not the write-up afterwards."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « un tarif journalier » ?",
+          "answerSpec": { "accepted": ["a day rate", "day rate", "a daily rate"] },
+          "hints": ["« Rate » est le mot du tarif : day rate, hourly rate, exchange rate."],
+          "pitfalls": [
+            {
+              "answers": ["a daily price", "a day price"],
+              "explain": "« Price » se dit d'une chose qu'on achète. Un temps facturé se dit toujours « rate »."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "My day ___ covers the workshop, not the write-up afterwards.",
+          "answerSpec": { "accepted": ["rate"] },
+          "hints": ["le tarif"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « un tarif journalier » ?",
+          "answerSpec": { "accepted": ["a day rate"] },
+          "distractors": ["a daily price", "a day fee", "a per-day cost"]
+        }
+      ]
+    },
+    {
+      "id": "w5-push-back",
+      "topicId": "v009",
+      "tags": ["Workplace · La mission et le client"],
+      "fields": {
+        "term": "to push back",
+        "meaning": "objecter, tenir tête sans se fâcher",
+        "example": "I pushed back on the deadline, politely, and got another fortnight."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « objecter, tenir tête sans se fâcher » ?",
+          "answerSpec": { "accepted": ["to push back", "push back", "to push back on something"] },
+          "hints": ["Le verbe attendu d'un consultant : on repousse la demande, pas la personne."],
+          "pitfalls": [
+            {
+              "answers": ["to contest"],
+              "explain": "« Contest » appartient au tribunal et à la compétition. Entre professionnels, on « pushes back », et ça reste courtois."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "I ___ on the deadline, politely, and got another fortnight.",
+          "answerSpec": { "accepted": ["pushed back"] },
+          "hints": ["j'ai objecté — au passé"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « objecter, tenir tête sans se fâcher » ?",
+          "answerSpec": { "accepted": ["to push back"] },
+          "distractors": ["to push away", "to contest", "to hold back"]
+        }
+      ]
+    },
+    {
+      "id": "w5-escalate",
+      "topicId": "v009",
+      "tags": ["Workplace · La mission et le client"],
+      "fields": {
+        "term": "to escalate something",
+        "meaning": "faire remonter au niveau au-dessus",
+        "example": "If it slips again I'll escalate it to the steering group, and we all lose a week."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « faire remonter au niveau au-dessus » ?",
+          "answerSpec": { "accepted": ["to escalate something", "to escalate"] },
+          "hints": ["Ce n'est pas s'emporter : c'est monter d'un cran dans la hiérarchie, et tout le monde le sait."],
+          "pitfalls": [
+            {
+              "answers": ["to escalade"],
+              "explain": "Calque de « escalader » : « escalade » n'existe pas comme verbe courant en anglais. C'est « escalate »."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "If it slips again I'll ___ it to the steering group, and we all lose a week.",
+          "answerSpec": { "accepted": ["escalate"] },
+          "hints": ["faire remonter"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « faire remonter au niveau au-dessus » ?",
+          "answerSpec": { "accepted": ["to escalate something"] },
+          "distractors": ["to escalade something", "to raise up something", "to mount something"]
+        }
+      ]
+    }
+  ]
+}

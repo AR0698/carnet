@@ -1,0 +1,301 @@
+{
+  "group": "Workplace · Ce qu'ils disent, ce qu'ils pensent",
+  "items": [
+    {
+      "id": "w3-i-hear-what-you-say",
+      "topicId": "v007",
+      "tags": ["Workplace · Ce qu'ils disent, ce qu'ils pensent"],
+      "fields": {
+        "term": "I hear what you say",
+        "meaning": "je ne suis pas d'accord, et le sujet est clos",
+        "example": "I hear what you say. Shall we move on to the next item?",
+        "passage": "— The model could draft the whole compliance report. — I hear what you say. Right, next item."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on poliment « je ne suis pas d'accord, et le sujet est clos » ?",
+          "answerSpec": { "accepted": ["I hear what you say", "I hear what you're saying"] },
+          "hints": ["Rien dans la phrase ne dit non. Ce qui dit non, c'est qu'elle ne dit rien d'autre."],
+          "pitfalls": [
+            {
+              "answers": ["I understand what you say", "I understand your point"],
+              "explain": "« Understand » ouvre la discussion : tu as compris, donc tu peux répondre. « Hear » la ferme — c'est accusé réception, sans suite."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "I ___ what you say. Shall we move on to the next item?",
+          "answerSpec": { "accepted": ["hear"] },
+          "hints": ["accuser réception sans rien accorder"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Laquelle veut dire « je ne suis pas d'accord, et le sujet est clos » ?",
+          "answerSpec": { "accepted": ["I hear what you say"] },
+          "distractors": ["I understand your point", "I take your word", "I am listening to you"]
+        }
+      ]
+    },
+    {
+      "id": "w3-greatest-respect",
+      "topicId": "v007",
+      "tags": ["Workplace · Ce qu'ils disent, ce qu'ils pensent"],
+      "fields": {
+        "term": "with the greatest respect",
+        "meaning": "vous avez tort, et je vais le montrer",
+        "example": "With the greatest respect, that figure came out of the pilot, not the plan.",
+        "passage": "— Adoption is at sixty per cent. — With the greatest respect, sixty per cent of licences issued is not adoption."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « vous avez tort » en ouvrant par une politesse ?",
+          "answerSpec": { "accepted": ["with the greatest respect", "with all due respect"] },
+          "hints": ["Plus la formule est cérémonieuse, plus la suite est raide."],
+          "pitfalls": [
+            {
+              "answers": ["with all my respect", "with all respect"],
+              "explain": "Calque du français : la formule anglaise est « with all due respect », ou « with the greatest respect ». Le respect y est dû, pas possédé."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "With the greatest ___, that figure came out of the pilot, not the plan.",
+          "answerSpec": { "accepted": ["respect"] },
+          "hints": ["la politesse qui annonce la contradiction"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Laquelle annonce « vous avez tort » sous une politesse ?",
+          "answerSpec": { "accepted": ["with the greatest respect"] },
+          "distractors": ["with all my respect", "in all honour", "with my best regards"]
+        }
+      ]
+    },
+    {
+      "id": "w3-not-bad",
+      "topicId": "v007",
+      "tags": ["Workplace · Ce qu'ils disent, ce qu'ils pensent"],
+      "fields": {
+        "term": "not bad",
+        "meaning": "très bien (litote britannique)",
+        "example": "The demo? Not bad at all, actually — the room went quiet.",
+        "passage": "— How did the board take it? — Not bad. Not bad at all. They asked for a second session."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment un Britannique dit-il « très bien » sans avoir l'air d'en faire trop ?",
+          "answerSpec": { "accepted": ["not bad", "not bad at all"] },
+          "hints": ["La litote : on nie le contraire plutôt que d'affirmer l'éloge."],
+          "pitfalls": [
+            {
+              "answers": ["quite good"],
+              "explain": "« Quite good » dit exactement l'inverse en anglais britannique : c'est en dessous de ce qu'on espérait."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The demo? ___ bad at all, actually — the room went quiet.",
+          "answerSpec": { "accepted": ["Not", "not"] },
+          "hints": ["nier le contraire plutôt que louer"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Laquelle, dans la bouche d'un Britannique, veut dire « très bien » ?",
+          "answerSpec": { "accepted": ["not bad"] },
+          "distractors": ["quite good", "not terrible", "fairly correct"]
+        }
+      ]
+    },
+    {
+      "id": "w3-quite-good",
+      "topicId": "v007",
+      "tags": ["Workplace · Ce qu'ils disent, ce qu'ils pensent"],
+      "fields": {
+        "term": "quite good",
+        "meaning": "moyen, un peu décevant",
+        "example": "The vendor was quite good. We'll still see the other two.",
+        "passage": "— And the third supplier? — Quite good. We'll still see the other two before we decide anything."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « moyen, un peu décevant » en deux mots qui ont l'air d'un compliment ?",
+          "answerSpec": { "accepted": ["quite good"] },
+          "hints": ["Aux États-Unis l'adverbe renforce ; au Royaume-Uni il rabote."],
+          "pitfalls": [
+            {
+              "answers": ["pretty good"],
+              "explain": "« Pretty good » est franchement positif des deux côtés de l'Atlantique. C'est « quite » qui freine, et seulement en britannique."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The vendor was ___ good. We'll still see the other two.",
+          "answerSpec": { "accepted": ["quite"] },
+          "hints": ["l'adverbe qui rabote au lieu de renforcer"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Laquelle veut dire « moyen, un peu décevant » ?",
+          "answerSpec": { "accepted": ["quite good"] },
+          "distractors": ["pretty good", "rather brilliant", "good enough"]
+        }
+      ]
+    },
+    {
+      "id": "w3-bear-in-mind",
+      "topicId": "v007",
+      "tags": ["Workplace · Ce qu'ils disent, ce qu'ils pensent"],
+      "fields": {
+        "term": "I'll bear it in mind",
+        "meaning": "c'est déjà oublié",
+        "example": "I'll bear it in mind. Now, about the budget.",
+        "passage": "— We could try an open-weight model instead. — I'll bear it in mind. Now, about the budget."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « je note » sans la moindre intention d'y revenir ?",
+          "answerSpec": { "accepted": ["I'll bear it in mind", "I will bear it in mind", "to bear it in mind"] },
+          "hints": ["« Bear in mind » veut dire garder à l'esprit ; à la première personne et au futur, c'est un rangement."],
+          "pitfalls": [
+            {
+              "answers": ["I'll think about it"],
+              "explain": "« I'll think about it » engage vraiment à y réfléchir. La formule britannique, elle, referme le sujet sans rien promettre."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "I'll ___ it in mind. Now, about the budget.",
+          "answerSpec": { "accepted": ["bear"] },
+          "hints": ["garder à l'esprit — en principe"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Laquelle veut dire « c'est déjà oublié » ?",
+          "answerSpec": { "accepted": ["I'll bear it in mind"] },
+          "distractors": ["I'll take it in mind", "I'll hold it in mind", "I'll carry it in mind"]
+        }
+      ]
+    },
+    {
+      "id": "w3-brave-decision",
+      "topicId": "v007",
+      "tags": ["Workplace · Ce qu'ils disent, ce qu'ils pensent"],
+      "fields": {
+        "term": "a brave decision",
+        "meaning": "une idée catastrophique",
+        "example": "Letting it answer customers unreviewed — that is a very brave decision.",
+        "passage": "— It will reply to customers with no human review. — That is a very brave decision, if I may say so."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « une idée catastrophique » en ayant l'air admiratif ?",
+          "answerSpec": { "accepted": ["a brave decision", "a brave move", "brave"] },
+          "hints": ["Le compliment est le message : plus il est appuyé, plus l'inquiétude est grande."],
+          "pitfalls": [
+            {
+              "answers": ["a courageous decision"],
+              "explain": "« Courageous » se prend au premier degré et loue vraiment. C'est « brave » qui porte l'ironie dans un bureau britannique."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Letting it answer customers unreviewed — that is a very ___ decision.",
+          "answerSpec": { "accepted": ["brave"] },
+          "hints": ["l'adjectif qui applaudit et qui alerte"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Laquelle veut dire « une idée catastrophique » ?",
+          "answerSpec": { "accepted": ["a brave decision"] },
+          "distractors": ["a courageous decision", "a bold call", "a daring plan"]
+        }
+      ]
+    },
+    {
+      "id": "w3-minor-comments",
+      "topicId": "v007",
+      "tags": ["Workplace · Ce qu'ils disent, ce qu'ils pensent"],
+      "fields": {
+        "term": "just a few minor comments",
+        "meaning": "c'est à refaire",
+        "example": "I've left just a few minor comments on the deck — have you got five minutes?",
+        "passage": "— Did the deck work for you? — Just a few minor comments. Nothing structural. Well, one thing."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment annonce-t-on « c'est à refaire » sans jamais le dire ?",
+          "answerSpec": { "accepted": ["just a few minor comments", "a few minor comments"] },
+          "hints": ["« Just », « a few », « minor » : trois amortisseurs dans une seule phrase. Compte le double."],
+          "pitfalls": [
+            {
+              "answers": ["some small remarks", "a few small remarks"],
+              "explain": "Compréhensible, mais la formule figée est « a few minor comments ». C'est elle qu'on entend, et c'est elle qui doit alerter."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "I've left just a few ___ comments on the deck — have you got five minutes?",
+          "answerSpec": { "accepted": ["minor"] },
+          "hints": ["mineur — en principe"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Laquelle veut dire « c'est à refaire » ?",
+          "answerSpec": { "accepted": ["just a few minor comments"] },
+          "distractors": ["some small remarks", "a couple of little notes", "a short review"]
+        }
+      ]
+    },
+    {
+      "id": "w3-correct-me",
+      "topicId": "v007",
+      "tags": ["Workplace · Ce qu'ils disent, ce qu'ils pensent"],
+      "fields": {
+        "term": "correct me if I'm wrong",
+        "meaning": "je ne me trompe pas, et vous le savez",
+        "example": "Correct me if I'm wrong, but the pilot never touched live data.",
+        "passage": "— Correct me if I'm wrong, but nobody has run this on real invoices yet. — … No. Nobody has."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « je ne me trompe pas, et vous le savez » ?",
+          "answerSpec": { "accepted": ["correct me if I'm wrong", "correct me if I am wrong"] },
+          "hints": ["L'invitation à le contredire est une manière de dire que personne ne le fera."],
+          "pitfalls": [
+            {
+              "answers": ["tell me if I'm wrong", "say if I'm wrong"],
+              "explain": "« Tell me » demande une information ; « correct me » demande une correction, donc suppose une faute — celle de l'autre."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "___ me if I'm wrong, but the pilot never touched live data.",
+          "answerSpec": { "accepted": ["Correct", "correct"] },
+          "hints": ["le verbe qui invite à la contradiction sans la craindre"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Laquelle veut dire « je ne me trompe pas, et vous le savez » ?",
+          "answerSpec": { "accepted": ["correct me if I'm wrong"] },
+          "distractors": ["tell me if I'm wrong", "say if I am mistaken", "warn me if I'm wrong"]
+        }
+      ]
+    }
+  ]
+}

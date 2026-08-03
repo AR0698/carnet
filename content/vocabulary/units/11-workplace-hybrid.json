@@ -1,0 +1,293 @@
+{
+  "group": "Workplace · Bureaux et hybride",
+  "items": [
+    {
+      "id": "w7-hot-desking",
+      "topicId": "v011",
+      "tags": ["Workplace · Bureaux et hybride"],
+      "fields": {
+        "term": "hot-desking",
+        "meaning": "le bureau non attribué",
+        "example": "The second floor is hot-desking: book a desk in the app or stand all day."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « le bureau non attribué » ?",
+          "answerSpec": { "accepted": ["hot-desking", "hot desking", "to hot-desk"] },
+          "hints": ["Le siège encore chaud de celui qui vient de partir."],
+          "pitfalls": [
+            {
+              "answers": ["flex office", "flex-office"],
+              "explain": "« Flex office » est une invention française : personne ne l'emploie au Royaume-Uni. On dit « hot-desking », ou « agile working » pour la démarche entière."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The second floor is ___: book a desk in the app or stand all day.",
+          "answerSpec": { "accepted": ["hot-desking", "hot desking"] },
+          "hints": ["le bureau non attribué"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « le bureau non attribué » ?",
+          "answerSpec": { "accepted": ["hot-desking"] },
+          "distractors": ["flex office", "free seating", "open desking"]
+        }
+      ]
+    },
+    {
+      "id": "w7-estate",
+      "topicId": "v011",
+      "tags": ["Workplace · Bureaux et hybride"],
+      "fields": {
+        "term": "the estate",
+        "meaning": "le parc immobilier de l'entreprise",
+        "example": "We're cutting the estate by a third and keeping the two best buildings."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « le parc immobilier de l'entreprise » ?",
+          "answerSpec": { "accepted": ["the estate", "estate", "the office estate"] },
+          "hints": ["Un mot que tu entendras en réunion immobilière sans qu'on l'explique jamais."],
+          "pitfalls": [
+            {
+              "answers": ["the real estate"],
+              "explain": "« Real estate » désigne le secteur de l'immobilier, surtout aux États-Unis. Le parc d'une entreprise britannique, c'est « the estate », tout court."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "We're cutting the ___ by a third and keeping the two best buildings.",
+          "answerSpec": { "accepted": ["estate"] },
+          "hints": ["le parc immobilier"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « le parc immobilier de l'entreprise » ?",
+          "answerSpec": { "accepted": ["the estate"] },
+          "distractors": ["the real estate", "the patrimony", "the premises pool"]
+        }
+      ]
+    },
+    {
+      "id": "w7-roll-out",
+      "topicId": "v011",
+      "tags": ["Workplace · Bureaux et hybride"],
+      "fields": {
+        "term": "a rollout",
+        "meaning": "un déploiement",
+        "example": "The rollout starts with one floor, never with the whole building."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « un déploiement » ?",
+          "answerSpec": { "accepted": ["a rollout", "rollout", "a roll-out"] },
+          "hints": ["Le verbe s'écrit en deux mots — « to roll out » — et le nom en un seul."],
+          "pitfalls": [
+            {
+              "answers": ["a deployment"],
+              "explain": "« Deployment » convient pour du logiciel qu'on pousse en production. Dès qu'il s'agit de gens, d'étages et de formations, c'est « rollout »."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The ___ starts with one floor, never with the whole building.",
+          "answerSpec": { "accepted": ["rollout", "roll-out"] },
+          "hints": ["le déploiement"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « un déploiement » auprès des équipes ?",
+          "answerSpec": { "accepted": ["a rollout"] },
+          "distractors": ["a roll-off", "a lay-out", "a run-out"]
+        }
+      ]
+    },
+    {
+      "id": "w7-adoption",
+      "topicId": "v011",
+      "tags": ["Workplace · Bureaux et hybride"],
+      "fields": {
+        "term": "adoption",
+        "meaning": "l'usage réel, l'appropriation par les équipes",
+        "example": "Buying licences is not adoption — you drive it floor by floor, with the managers."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « l'usage réel, l'appropriation par les équipes » ?",
+          "answerSpec": { "accepted": ["adoption", "user adoption", "take-up"] },
+          "hints": ["On dit « to drive adoption » : le verbe est « drive », jamais « make »."],
+          "pitfalls": [
+            {
+              "answers": ["appropriation"],
+              "explain": "Faux ami sévère : en anglais, « appropriation » veut dire s'emparer de ce qui ne vous appartient pas. Ce que tu cherches, c'est « adoption »."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Buying licences is not ___ — you drive it floor by floor, with the managers.",
+          "answerSpec": { "accepted": ["adoption"] },
+          "hints": ["l'usage réel"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « l'usage réel, l'appropriation par les équipes » ?",
+          "answerSpec": { "accepted": ["adoption"] },
+          "distractors": ["appropriation", "acceptation", "usership"]
+        }
+      ]
+    },
+    {
+      "id": "w7-town-hall",
+      "topicId": "v011",
+      "tags": ["Workplace · Bureaux et hybride"],
+      "fields": {
+        "term": "a town hall",
+        "meaning": "une réunion plénière ouverte à tous",
+        "example": "The chief executive does a town hall every quarter and takes live questions."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « une réunion plénière ouverte à tous » ?",
+          "answerSpec": { "accepted": ["a town hall", "town hall", "an all-hands"] },
+          "hints": ["« All-hands » se dit aussi, surtout dans la tech ; « town hall » passe partout."],
+          "pitfalls": [
+            {
+              "answers": ["a plenary", "a plenary session"],
+              "explain": "« Plenary » appartient aux colloques et aux institutions. En entreprise, c'est « a town hall »."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The chief executive does a ___ every quarter and takes live questions.",
+          "answerSpec": { "accepted": ["town hall"] },
+          "hints": ["une plénière"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « une réunion plénière ouverte à tous » ?",
+          "answerSpec": { "accepted": ["a town hall"] },
+          "distractors": ["a plenary", "a general assembly", "a company gathering"]
+        }
+      ]
+    },
+    {
+      "id": "w7-bed-in",
+      "topicId": "v011",
+      "tags": ["Workplace · Bureaux et hybride"],
+      "fields": {
+        "term": "to bed in",
+        "meaning": "s'installer, prendre ses marques",
+        "example": "Give the new floor plan a term to bed in before you measure anything."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « s'installer, prendre ses marques » — d'une organisation nouvelle ?",
+          "answerSpec": { "accepted": ["to bed in", "bed in"] },
+          "hints": ["Très britannique : comme une pièce mécanique qui trouve sa place à l'usage."],
+          "pitfalls": [
+            {
+              "answers": ["to settle down"],
+              "explain": "« Settle down » se dit de gens qui se calment ou qui posent leurs valises. « Bed in » se dit d'un changement qui finit par tenir."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Give the new floor plan a term to ___ before you measure anything.",
+          "answerSpec": { "accepted": ["bed in"] },
+          "hints": ["prendre ses marques"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « s'installer, prendre ses marques » ?",
+          "answerSpec": { "accepted": ["to bed in"] },
+          "distractors": ["to settle down", "to lay in", "to take root"]
+        }
+      ]
+    },
+    {
+      "id": "w7-breakout-space",
+      "topicId": "v011",
+      "tags": ["Workplace · Bureaux et hybride"],
+      "fields": {
+        "term": "a breakout space",
+        "meaning": "un espace de repli, pour s'isoler ou échanger",
+        "example": "Two meeting rooms and no breakout space — there's nowhere to take a call."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « un espace de repli, pour s'isoler ou échanger » ?",
+          "answerSpec": { "accepted": ["a breakout space", "breakout space", "a breakout area"] },
+          "hints": ["« To break out » : sortir du grand plateau, sans réserver une salle."],
+          "pitfalls": [
+            {
+              "answers": ["a relaxation area", "a break space"],
+              "explain": "Ce n'est pas une salle de détente : un « breakout space » sert à travailler autrement, à deux ou au téléphone."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Two meeting rooms and no ___ space — there's nowhere to take a call.",
+          "answerSpec": { "accepted": ["breakout"] },
+          "hints": ["de repli"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « un espace de repli » ?",
+          "answerSpec": { "accepted": ["a breakout space"] },
+          "distractors": ["a relaxation area", "a break space", "a retreat corner"]
+        }
+      ]
+    },
+    {
+      "id": "w7-presenteeism",
+      "topicId": "v011",
+      "tags": ["Workplace · Bureaux et hybride"],
+      "fields": {
+        "term": "presenteeism",
+        "meaning": "le présentéisme",
+        "example": "Mandating three days on site buys presenteeism, not collaboration."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « le présentéisme » ?",
+          "answerSpec": { "accepted": ["presenteeism"] },
+          "hints": ["Bâti sur « absenteeism », et tout aussi péjoratif."],
+          "pitfalls": [
+            {
+              "answers": ["presentism"],
+              "explain": "« Presentism » existe, mais c'est un mot d'historien : juger le passé avec les valeurs d'aujourd'hui. Ici c'est « presenteeism »."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Mandating three days on site buys ___, not collaboration.",
+          "answerSpec": { "accepted": ["presenteeism"] },
+          "hints": ["le présentéisme"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « le présentéisme » ?",
+          "answerSpec": { "accepted": ["presenteeism"] },
+          "distractors": ["presentism", "presenteeship", "attendanceism"]
+        }
+      ]
+    }
+  ]
+}

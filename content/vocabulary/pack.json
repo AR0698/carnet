@@ -3,7 +3,7 @@
     "id": "vocabulary",
     "title": "Vocabulaire",
     "subject": "Anglais",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "schemaVersion": 1,
     "locale": "fr-FR",
     "contentLocale": "en-GB"
@@ -35,6 +35,55 @@
       "title": "Le pub et la table",
       "group": "Le pub et la table",
       "order": 4,
+      "prerequisites": []
+    },
+    {
+      "id": "v005",
+      "title": "Arriver dans la boîte",
+      "group": "Workplace · Arriver dans la boîte",
+      "order": 5,
+      "prerequisites": []
+    },
+    {
+      "id": "v006",
+      "title": "En réunion",
+      "group": "Workplace · En réunion",
+      "order": 6,
+      "prerequisites": []
+    },
+    {
+      "id": "v007",
+      "title": "Ce qu'ils disent, ce qu'ils pensent",
+      "group": "Workplace · Ce qu'ils disent, ce qu'ils pensent",
+      "order": 7,
+      "prerequisites": []
+    },
+    {
+      "id": "v008",
+      "title": "Mails et messages",
+      "group": "Workplace · Mails et messages",
+      "order": 8,
+      "prerequisites": []
+    },
+    {
+      "id": "v009",
+      "title": "La mission et le client",
+      "group": "Workplace · La mission et le client",
+      "order": 9,
+      "prerequisites": []
+    },
+    {
+      "id": "v010",
+      "title": "L'IA au bureau",
+      "group": "Workplace · L'IA au bureau",
+      "order": 10,
+      "prerequisites": []
+    },
+    {
+      "id": "v011",
+      "title": "Bureaux et hybride",
+      "group": "Workplace · Bureaux et hybride",
+      "order": 11,
       "prerequisites": []
     }
   ]

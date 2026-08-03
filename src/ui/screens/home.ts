@@ -32,7 +32,7 @@ const HOW_IT_WORKS: string[] = [
   'Rien n’est rangé comme « su » avant d’avoir été retrouvé deux jours différents. Deux réussites d’affilée le même jour ne prouvent rien d’autre qu’une bonne mémoire de court terme.',
   'Les notions sont mélangées au sein d’une même session, jamais révisées en bloc. C’est plus dur sur le moment, et c’est ce qui tient.',
   'Dix nouvelles notions par jour et par carnet. Le reste attend : c’est l’espacement qui travaille, pas le volume.',
-  'Les trois carnets avancent séparément, chacun à son rythme. Tout vit sur cet appareil, hors ligne, sans compte.',
+  'Les carnets avancent séparément, chacun à son rythme. Tout vit sur cet appareil, hors ligne, sans compte.',
 ];
 
 interface ToggleOptions {

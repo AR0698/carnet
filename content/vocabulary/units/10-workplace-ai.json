@@ -1,0 +1,293 @@
+{
+  "group": "Workplace · L'IA au bureau",
+  "items": [
+    {
+      "id": "w6-human-in-the-loop",
+      "topicId": "v010",
+      "tags": ["Workplace · L'IA au bureau"],
+      "fields": {
+        "term": "a human in the loop",
+        "meaning": "un humain dans la boucle de décision",
+        "example": "Keep a human in the loop for anything that leaves the building."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « un humain dans la boucle de décision » ?",
+          "answerSpec": { "accepted": ["a human in the loop", "human in the loop"] },
+          "hints": ["Abrégé HITL dans les documents d'architecture."],
+          "pitfalls": [
+            {
+              "answers": ["a man in the loop"],
+              "explain": "La formule figée dit « human ». « Man » vient du vocabulaire militaire des années 1960 et se remarque aujourd'hui, mal."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Keep a human in the ___ for anything that leaves the building.",
+          "answerSpec": { "accepted": ["loop"] },
+          "hints": ["la boucle de décision"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « un humain dans la boucle de décision » ?",
+          "answerSpec": { "accepted": ["a human in the loop"] },
+          "distractors": ["a man in the loop", "a human in the chain", "a human on the circuit"]
+        }
+      ]
+    },
+    {
+      "id": "w6-guardrails",
+      "topicId": "v010",
+      "tags": ["Workplace · L'IA au bureau"],
+      "fields": {
+        "term": "guardrails",
+        "meaning": "les garde-fous",
+        "example": "The guardrails matter more than the model, which changes every six months."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « les garde-fous » (d'un système d'IA) ?",
+          "answerSpec": { "accepted": ["guardrails", "guard rails"] },
+          "hints": ["La glissière de sécurité au bord de la route : elle ne conduit pas, elle empêche de sortir."],
+          "pitfalls": [
+            {
+              "answers": ["safeguards"],
+              "explain": "« Safeguards » existe et se comprend, mais désigne des protections juridiques ou contractuelles. Le mot des projets d'IA, c'est « guardrails »."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The ___ matter more than the model, which changes every six months.",
+          "answerSpec": { "accepted": ["guardrails"] },
+          "hints": ["les garde-fous"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « les garde-fous » d'un système d'IA ?",
+          "answerSpec": { "accepted": ["guardrails"] },
+          "distractors": ["safety bars", "handrails", "guard barriers"]
+        }
+      ]
+    },
+    {
+      "id": "w6-hallucinate",
+      "topicId": "v010",
+      "tags": ["Workplace · L'IA au bureau"],
+      "fields": {
+        "term": "to hallucinate",
+        "meaning": "inventer une réponse de toutes pièces",
+        "example": "It hallucinated a policy that has never existed, footnote and all."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « inventer une réponse de toutes pièces », en parlant d'un modèle ?",
+          "answerSpec": { "accepted": ["to hallucinate", "hallucinate"] },
+          "hints": ["Le nom se dit aussi : « that's a hallucination »."],
+          "pitfalls": [
+            {
+              "answers": ["to invent", "to lie"],
+              "explain": "« Lie » suppose une intention de tromper, et personne n'accuse un modèle de mentir. Le terme du métier est « hallucinate »."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "It ___ a policy that has never existed, footnote and all.",
+          "answerSpec": { "accepted": ["hallucinated"] },
+          "hints": ["a inventé de toutes pièces — au passé"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « inventer une réponse de toutes pièces » ?",
+          "answerSpec": { "accepted": ["to hallucinate"] },
+          "distractors": ["to imagine", "to fabulate", "to dream up"]
+        }
+      ]
+    },
+    {
+      "id": "w6-proof-of-concept",
+      "topicId": "v010",
+      "tags": ["Workplace · L'IA au bureau"],
+      "fields": {
+        "term": "a proof of concept",
+        "meaning": "une preuve de concept",
+        "example": "It's a proof of concept: it proves the idea, it doesn't survive a Monday."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « une preuve de concept » ?",
+          "answerSpec": { "accepted": ["a proof of concept", "proof of concept", "a PoC"] },
+          "hints": ["Abrégé PoC, et prononcé « pock » aussi souvent qu'épelé."],
+          "pitfalls": [
+            {
+              "answers": ["a concept proof"],
+              "explain": "L'ordre des mots est figé : la preuve vient d'abord, le concept ensuite — proof *of* concept."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "It's a proof of ___: it proves the idea, it doesn't survive a Monday.",
+          "answerSpec": { "accepted": ["concept"] },
+          "hints": ["une preuve de…"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « une preuve de concept » ?",
+          "answerSpec": { "accepted": ["a proof of concept"] },
+          "distractors": ["a concept proof", "a pilot proof", "a demonstrator"]
+        }
+      ]
+    },
+    {
+      "id": "w6-productionise",
+      "topicId": "v010",
+      "tags": ["Workplace · L'IA au bureau"],
+      "fields": {
+        "term": "to productionise",
+        "meaning": "industrialiser, passer en production",
+        "example": "Nobody budgets for productionising the pilot, and that's where projects die."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « industrialiser, passer en production » ?",
+          "answerSpec": { "accepted": ["to productionise", "to productionize", "productionise"] },
+          "hints": ["Orthographe britannique en -ise : productionise, organise, prioritise."],
+          "pitfalls": [
+            {
+              "answers": ["to industrialise", "to industrialize"],
+              "explain": "« Industrialise » parle d'usines et d'économies entières. Pour un logiciel qui passe du pilote au vrai service, c'est « productionise »."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Nobody budgets for ___ the pilot, and that's where projects die.",
+          "answerSpec": { "accepted": ["productionising", "productionizing"] },
+          "hints": ["passer en production — en -ing"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « industrialiser, passer en production » ?",
+          "answerSpec": { "accepted": ["to productionise"] },
+          "distractors": ["to industrialise", "to productivise", "to production it"]
+        }
+      ]
+    },
+    {
+      "id": "w6-shadow-ai",
+      "topicId": "v010",
+      "tags": ["Workplace · L'IA au bureau"],
+      "fields": {
+        "term": "shadow AI",
+        "meaning": "l'IA utilisée hors de tout cadre officiel",
+        "example": "Half the team is already on shadow AI, and the policy is still in draft."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « l'IA utilisée hors de tout cadre officiel » ?",
+          "answerSpec": { "accepted": ["shadow AI", "shadow ai"] },
+          "hints": ["Bâti sur « shadow IT » : ce qui tourne dans l'ombre de la DSI."],
+          "pitfalls": [
+            {
+              "answers": ["hidden AI", "secret AI"],
+              "explain": "« Hidden » dit qu'on cache exprès. « Shadow » dit surtout que personne n'a regardé — ce qui est plus souvent le cas."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Half the team is already on ___ AI, and the policy is still in draft.",
+          "answerSpec": { "accepted": ["shadow"] },
+          "hints": ["dans l'ombre de la DSI"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « l'IA utilisée hors de tout cadre officiel » ?",
+          "answerSpec": { "accepted": ["shadow AI"] },
+          "distractors": ["hidden AI", "grey AI", "dark AI"]
+        }
+      ]
+    },
+    {
+      "id": "w6-off-the-shelf",
+      "topicId": "v010",
+      "tags": ["Workplace · L'IA au bureau"],
+      "fields": {
+        "term": "off the shelf",
+        "meaning": "sur étagère, prêt à l'emploi",
+        "example": "An off-the-shelf tool will do eighty per cent of it, at a tenth of the cost."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « sur étagère, prêt à l'emploi » ?",
+          "answerSpec": { "accepted": ["off the shelf", "off-the-shelf"] },
+          "hints": ["Le produit qu'on prend au rayon, par opposition à « bespoke », fait sur mesure."],
+          "pitfalls": [
+            {
+              "answers": ["on the shelf"],
+              "explain": "« On the shelf » veut dire laissé de côté, oublié au rayon. La préposition renverse le sens."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "An ___ tool will do eighty per cent of it, at a tenth of the cost.",
+          "answerSpec": { "accepted": ["off-the-shelf", "off the shelf"] },
+          "hints": ["prêt à l'emploi"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « sur étagère, prêt à l'emploi » ?",
+          "answerSpec": { "accepted": ["off the shelf"] },
+          "distractors": ["on the shelf", "out of the shelf", "over the counter"]
+        }
+      ]
+    },
+    {
+      "id": "w6-use-case",
+      "topicId": "v010",
+      "tags": ["Workplace · L'IA au bureau"],
+      "fields": {
+        "term": "a use case",
+        "meaning": "un cas d'usage",
+        "example": "Pick one use case and finish it; three half-built ones convince nobody."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « un cas d'usage » ?",
+          "answerSpec": { "accepted": ["a use case", "use case"] },
+          "hints": ["« Use » est ici un nom : on le prononce avec un s dur, comme dans « juice »."],
+          "pitfalls": [
+            {
+              "answers": ["a user case", "a usage case"],
+              "explain": "« User case » n'existe pas — la confusion vient de « user story », qui est autre chose. C'est « use case »."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Pick one ___ and finish it; three half-built ones convince nobody.",
+          "answerSpec": { "accepted": ["use case"] },
+          "hints": ["un cas d'usage"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « un cas d'usage » ?",
+          "answerSpec": { "accepted": ["a use case"] },
+          "distractors": ["a user case", "a case of use", "a usage case"]
+        }
+      ]
+    }
+  ]
+}

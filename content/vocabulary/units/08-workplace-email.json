@@ -1,0 +1,293 @@
+{
+  "group": "Workplace · Mails et messages",
+  "items": [
+    {
+      "id": "w4-loop-in",
+      "topicId": "v008",
+      "tags": ["Workplace · Mails et messages"],
+      "fields": {
+        "term": "to loop someone in",
+        "meaning": "mettre quelqu'un dans la boucle",
+        "example": "Looping in Priya, who owns the data platform."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « mettre quelqu'un dans la boucle » ?",
+          "answerSpec": { "accepted": ["to loop someone in", "to loop in", "loop someone in"] },
+          "hints": ["En tête de mail, le participe suffit : « Looping in Priya… »."],
+          "pitfalls": [
+            {
+              "answers": ["to put someone in the loop"],
+              "explain": "On dit « keep someone in the loop » (l'y garder) ou « loop someone in » (l'y faire entrer). « Put » ne se dit pas."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "___ in Priya, who owns the data platform.",
+          "answerSpec": { "accepted": ["Looping", "looping"] },
+          "hints": ["mettre dans la boucle"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « mettre quelqu'un dans la boucle » ?",
+          "answerSpec": { "accepted": ["to loop someone in"] },
+          "distractors": ["to put someone in the loop", "to link someone in", "to fold someone in"]
+        }
+      ]
+    },
+    {
+      "id": "w4-flag",
+      "topicId": "v008",
+      "tags": ["Workplace · Mails et messages"],
+      "fields": {
+        "term": "to flag something",
+        "meaning": "signaler, attirer l'attention sur",
+        "example": "Just flagging that the API quota resets on the first of the month."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « signaler, attirer l'attention sur » ?",
+          "answerSpec": { "accepted": ["to flag something", "to flag", "to flag something up"] },
+          "hints": ["On plante un drapeau : le sujet reste visible sans qu'on ait à trancher."],
+          "pitfalls": [
+            {
+              "answers": ["to signal something", "to signal"],
+              "explain": "« Signal » appartient à la technique — un signal, une transmission. Pour prévenir un collègue, c'est « flag »."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Just ___ that the API quota resets on the first of the month.",
+          "answerSpec": { "accepted": ["flagging"] },
+          "hints": ["signalant, attirant l'attention"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « signaler, attirer l'attention sur » ?",
+          "answerSpec": { "accepted": ["to flag something"] },
+          "distractors": ["to signal something", "to mark something up", "to point something"]
+        }
+      ]
+    },
+    {
+      "id": "w4-close-of-play",
+      "topicId": "v008",
+      "tags": ["Workplace · Mails et messages"],
+      "fields": {
+        "term": "by close of play",
+        "meaning": "d'ici la fin de la journée de travail",
+        "example": "Send me the revised numbers by close of play on Friday."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « d'ici la fin de la journée de travail » ?",
+          "answerSpec": { "accepted": ["by close of play", "close of play", "COP"] },
+          "hints": ["C'est du cricket : la journée s'arrête quand on cesse de jouer."],
+          "pitfalls": [
+            {
+              "answers": ["by close of business"],
+              "explain": "« Close of business » s'entend aussi, surtout en banque et côté américain. Au bureau britannique, c'est « close of play »."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Send me the revised numbers by close of ___ on Friday.",
+          "answerSpec": { "accepted": ["play"] },
+          "hints": ["le mot vient du cricket"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « d'ici la fin de la journée de travail » ?",
+          "answerSpec": { "accepted": ["by close of play"] },
+          "distractors": ["by close of hours", "by the day's close", "by close of shift"]
+        }
+      ]
+    },
+    {
+      "id": "w4-bear-with-me",
+      "topicId": "v008",
+      "tags": ["Workplace · Mails et messages"],
+      "fields": {
+        "term": "bear with me",
+        "meaning": "un instant, patiente",
+        "example": "Bear with me — I'm digging the logs out of the archive."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « un instant, patiente » ?",
+          "answerSpec": { "accepted": ["bear with me", "please bear with me"] },
+          "hints": ["« Bear » au sens de supporter : demande à l'autre de te supporter un moment."],
+          "pitfalls": [
+            {
+              "answers": ["bare with me"],
+              "explain": "Homophone, et la faute la plus répandue dans les mails : « bare » veut dire dénudé. C'est « bear »."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "___ with me — I'm digging the logs out of the archive.",
+          "answerSpec": { "accepted": ["Bear", "bear"] },
+          "hints": ["supporte-moi un instant"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « un instant, patiente » ?",
+          "answerSpec": { "accepted": ["bear with me"] },
+          "distractors": ["bare with me", "carry with me", "hold with me"]
+        }
+      ]
+    },
+    {
+      "id": "w4-give-a-shout",
+      "topicId": "v008",
+      "tags": ["Workplace · Mails et messages"],
+      "fields": {
+        "term": "to give someone a shout",
+        "meaning": "faire signe à quelqu'un",
+        "example": "Give me a shout if the connector falls over at the weekend."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « faire signe à quelqu'un » ?",
+          "answerSpec": { "accepted": ["to give someone a shout", "to give a shout", "give me a shout"] },
+          "hints": ["Personne ne crie : c'est la formule ordinaire pour « appelle-moi »."],
+          "pitfalls": [
+            {
+              "answers": ["to give someone a sign"],
+              "explain": "Calque de « faire signe » : « give a sign » évoque un geste mystérieux. Ce qu'on dit, c'est « give me a shout »."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Give me a ___ if the connector falls over at the weekend.",
+          "answerSpec": { "accepted": ["shout"] },
+          "hints": ["fais-moi signe"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « faire signe à quelqu'un » ?",
+          "answerSpec": { "accepted": ["to give someone a shout"] },
+          "distractors": ["to give someone a sign", "to make someone a call", "to throw someone a word"]
+        }
+      ]
+    },
+    {
+      "id": "w4-as-per-my-last-email",
+      "topicId": "v008",
+      "tags": ["Workplace · Mails et messages"],
+      "fields": {
+        "term": "as per my last email",
+        "meaning": "comme je te l'écrivais — et que tu ne l'as pas lu",
+        "example": "As per my last email, the migration window closes on the tenth."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « comme je te l'écrivais », sur un ton qui reproche ?",
+          "answerSpec": { "accepted": ["as per my last email", "as per my previous email"] },
+          "hints": ["La formule la plus polie qui existe pour dire « relis-moi »."],
+          "pitfalls": [
+            {
+              "answers": ["as per my last mail", "as per my previous mail"],
+              "explain": "Au Royaume-Uni, « mail » désigne le courrier postal. Le message électronique reste « an email »."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "As ___ my last email, the migration window closes on the tenth.",
+          "answerSpec": { "accepted": ["per"] },
+          "hints": ["conformément à"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « comme je te l'écrivais », avec le reproche dessous ?",
+          "answerSpec": { "accepted": ["as per my last email"] },
+          "distractors": ["as per my last mail", "like my last email said", "according my last email"]
+        }
+      ]
+    },
+    {
+      "id": "w4-happy-to",
+      "topicId": "v008",
+      "tags": ["Workplace · Mails et messages"],
+      "fields": {
+        "term": "happy to",
+        "meaning": "volontiers, je veux bien",
+        "example": "Happy to walk the team through it on Tuesday if that helps."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « volontiers, je veux bien » en tête d'un mail ?",
+          "answerSpec": { "accepted": ["happy to", "more than happy to"] },
+          "hints": ["Ni sujet ni auxiliaire : le mail britannique commence à l'adjectif."],
+          "pitfalls": [
+            {
+              "answers": ["with pleasure"],
+              "explain": "« With pleasure » sonne cérémonieux, presque serveur de restaurant. Entre collègues, c'est « happy to »."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "___ to walk the team through it on Tuesday if that helps.",
+          "answerSpec": { "accepted": ["Happy", "happy"] },
+          "hints": ["volontiers"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « volontiers, je veux bien » ?",
+          "answerSpec": { "accepted": ["happy to"] },
+          "distractors": ["with pleasure", "gladly to", "pleased of"]
+        }
+      ]
+    },
+    {
+      "id": "w4-snowed-under",
+      "topicId": "v008",
+      "tags": ["Workplace · Mails et messages"],
+      "fields": {
+        "term": "to be snowed under",
+        "meaning": "être débordé",
+        "example": "I'm completely snowed under until the steering group on the ninth."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « être débordé » ?",
+          "answerSpec": { "accepted": ["to be snowed under", "snowed under"] },
+          "hints": ["L'image de la neige qui recouvre : on est dessous, pas dedans."],
+          "pitfalls": [
+            {
+              "answers": ["to be overbooked", "to be overloaded"],
+              "explain": "« Overbooked » se dit d'un vol, « overloaded » d'une machine. Pour une personne ensevelie de travail, c'est « snowed under »."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "I'm completely snowed ___ until the steering group on the ninth.",
+          "answerSpec": { "accepted": ["under"] },
+          "hints": ["débordé"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « être débordé » ?",
+          "answerSpec": { "accepted": ["to be snowed under"] },
+          "distractors": ["to be snowed in", "to be overbooked", "to be under water"]
+        }
+      ]
+    }
+  ]
+}

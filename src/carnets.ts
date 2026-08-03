@@ -48,7 +48,7 @@ const STATIC_CARNETS: StaticCarnet[] = [
   {
     id: VOCABULARY_PACK_ID,
     label: 'Vocabulaire',
-    tagline: 'Le travail, la scène, la ville, le pub — quatre registres.',
+    tagline: 'Le bureau anglais, la tech, la scène, la ville, le pub.',
   },
   {
     id: CULTURE_PACK_ID,

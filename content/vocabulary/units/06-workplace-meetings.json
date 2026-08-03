@@ -1,0 +1,293 @@
+{
+  "group": "Workplace · En réunion",
+  "items": [
+    {
+      "id": "w2-touch-base",
+      "topicId": "v006",
+      "tags": ["Workplace · En réunion"],
+      "fields": {
+        "term": "to touch base",
+        "meaning": "faire un point rapide",
+        "example": "Let's touch base on Thursday, once the fine-tuning run has finished."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « faire un point rapide » ?",
+          "answerSpec": { "accepted": ["to touch base", "touch base"] },
+          "hints": ["Image du baseball : on repasse par la base, on ne s'y installe pas."],
+          "pitfalls": [
+            {
+              "answers": ["to touch bases", "to touch the base"],
+              "explain": "L'expression est figée : « base » reste au singulier et sans article."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Let's ___ on Thursday, once the fine-tuning run has finished.",
+          "answerSpec": { "accepted": ["touch base"] },
+          "hints": ["faire un point rapide"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « faire un point rapide » ?",
+          "answerSpec": { "accepted": ["to touch base"] },
+          "distractors": ["to touch bases", "to make a point", "to take a point"]
+        }
+      ]
+    },
+    {
+      "id": "w2-circle-back",
+      "topicId": "v006",
+      "tags": ["Workplace · En réunion"],
+      "fields": {
+        "term": "to circle back",
+        "meaning": "y revenir plus tard",
+        "example": "Good question — can we circle back to pricing once the pilot has run?"
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « y revenir plus tard » ?",
+          "answerSpec": { "accepted": ["to circle back", "circle back"] },
+          "hints": ["On fait le tour et on repasse au même endroit."],
+          "pitfalls": [
+            {
+              "answers": ["to come back on it", "to come back on"],
+              "explain": "Calque du français « revenir sur » : en anglais on revient *to* quelque chose, jamais *on*."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Good question — can we ___ to pricing once the pilot has run?",
+          "answerSpec": { "accepted": ["circle back"] },
+          "hints": ["y revenir plus tard"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « y revenir plus tard » ?",
+          "answerSpec": { "accepted": ["to circle back"] },
+          "distractors": ["to turn back", "to loop again", "to come back on it"]
+        }
+      ]
+    },
+    {
+      "id": "w2-park",
+      "topicId": "v006",
+      "tags": ["Workplace · En réunion"],
+      "fields": {
+        "term": "to park something",
+        "meaning": "mettre de côté sans trancher",
+        "example": "Let's park data residency and pick it up with legal in the room."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « mettre de côté sans trancher » ?",
+          "answerSpec": { "accepted": ["to park something", "to park", "park it"] },
+          "hints": ["On gare le sujet : il n'est ni réglé, ni jeté."],
+          "pitfalls": [
+            {
+              "answers": ["to postpone"],
+              "explain": "« Postpone » suppose une nouvelle date. « Park » n'en donne aucune — c'est précisément ce qui en fait une manœuvre de réunion."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Let's ___ data residency and pick it up with legal in the room.",
+          "answerSpec": { "accepted": ["park"] },
+          "hints": ["mettre de côté sans trancher"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « mettre de côté sans trancher » ?",
+          "answerSpec": { "accepted": ["to park something"] },
+          "distractors": ["to postpone something", "to store something", "to drop something"]
+        }
+      ]
+    },
+    {
+      "id": "w2-take-it-offline",
+      "topicId": "v006",
+      "tags": ["Workplace · En réunion"],
+      "fields": {
+        "term": "to take something offline",
+        "meaning": "en discuter à deux, hors de la réunion",
+        "example": "That one is between the two of you — take it offline and report back."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « en discuter à deux, hors de la réunion » ?",
+          "answerSpec": { "accepted": ["to take something offline", "to take it offline", "take it offline"] },
+          "hints": ["Rien à voir avec le réseau : « offline » veut dire hors de cette salle."],
+          "pitfalls": [
+            {
+              "answers": ["to take it out of the meeting", "to discuss it outside"],
+              "explain": "Compréhensible, mais ce n'est pas la formule. « Take it offline » est ce qui se dit, et personne n'y entend une histoire de connexion."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "That one is between the two of you — take it ___ and report back.",
+          "answerSpec": { "accepted": ["offline"] },
+          "hints": ["hors de la réunion"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « en discuter à deux, hors de la réunion » ?",
+          "answerSpec": { "accepted": ["to take something offline"] },
+          "distractors": ["to take something outside", "to take something apart", "to take something aside"]
+        }
+      ]
+    },
+    {
+      "id": "w2-low-hanging-fruit",
+      "topicId": "v006",
+      "tags": ["Workplace · En réunion"],
+      "fields": {
+        "term": "low-hanging fruit",
+        "meaning": "les gains faciles, ce qui se cueille sans échelle",
+        "example": "Document search is the low-hanging fruit; invoicing very much is not."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « les gains faciles, ce qui se cueille sans échelle » ?",
+          "answerSpec": { "accepted": ["low-hanging fruit", "the low-hanging fruit", "low hanging fruit"] },
+          "hints": ["Le fruit bas sur la branche : on le prend sans monter."],
+          "pitfalls": [
+            {
+              "answers": ["the easy fruits", "low-hanging fruits"],
+              "explain": "L'expression reste au singulier : « fruit » est indénombrable ici, même quand il y en a dix."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Document search is the ___ fruit; invoicing very much is not.",
+          "answerSpec": { "accepted": ["low-hanging", "low hanging"] },
+          "hints": ["qui pend bas sur la branche"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « les gains faciles » ?",
+          "answerSpec": { "accepted": ["low-hanging fruit"] },
+          "distractors": ["easy fruit", "the first harvest", "the quick catch"]
+        }
+      ]
+    },
+    {
+      "id": "w2-ballpark",
+      "topicId": "v006",
+      "tags": ["Workplace · En réunion"],
+      "fields": {
+        "term": "a ballpark figure",
+        "meaning": "un ordre de grandeur",
+        "example": "Give me a ballpark figure — I need to know whether it's five days or fifty."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « un ordre de grandeur » ?",
+          "answerSpec": { "accepted": ["a ballpark figure", "ballpark figure", "a ballpark"] },
+          "hints": ["Le stade entier, pas la place assise : on vise juste la bonne enceinte."],
+          "pitfalls": [
+            {
+              "answers": ["an estimation"],
+              "explain": "Faux ami : le chiffre s'appelle « an estimate ». « Estimation » désigne l'acte d'estimer, et sonne savant là où on demandait un chiffre au doigt mouillé."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Give me a ___ figure — I need to know whether it's five days or fifty.",
+          "answerSpec": { "accepted": ["ballpark"] },
+          "hints": ["un ordre de grandeur"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « un ordre de grandeur » ?",
+          "answerSpec": { "accepted": ["a ballpark figure"] },
+          "distractors": ["an estimation", "a rough number", "a magnitude order"]
+        }
+      ]
+    },
+    {
+      "id": "w2-run-past",
+      "topicId": "v006",
+      "tags": ["Workplace · En réunion"],
+      "fields": {
+        "term": "to run something past someone",
+        "meaning": "soumettre quelque chose à quelqu'un avant d'y aller",
+        "example": "Can I run the architecture past you before it goes to the steering group?"
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « soumettre quelque chose à quelqu'un avant d'y aller » ?",
+          "answerSpec": { "accepted": ["to run something past someone", "to run something past", "run it past you"] },
+          "hints": ["On fait passer l'idée devant quelqu'un, pour voir sa tête."],
+          "pitfalls": [
+            {
+              "answers": ["to submit it to someone", "to submit something"],
+              "explain": "« Submit » appartient au registre administratif : on soumet un dossier, une candidature. Entre collègues, on « runs it past » quelqu'un."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Can I run the architecture ___ you before it goes to the steering group?",
+          "answerSpec": { "accepted": ["past"] },
+          "hints": ["faire passer devant quelqu'un"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « soumettre quelque chose à quelqu'un avant d'y aller » ?",
+          "answerSpec": { "accepted": ["to run something past someone"] },
+          "distractors": ["to run something by the book", "to pass something over someone", "to submit something to someone"]
+        }
+      ]
+    },
+    {
+      "id": "w2-bandwidth",
+      "topicId": "v006",
+      "tags": ["Workplace · En réunion"],
+      "fields": {
+        "term": "to have the bandwidth",
+        "meaning": "avoir la capacité de s'en occuper",
+        "example": "Nobody has the bandwidth to run two pilots in the same quarter."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Comment dit-on « avoir la capacité de s'en occuper » ?",
+          "answerSpec": { "accepted": ["to have the bandwidth", "have the bandwidth", "to have bandwidth"] },
+          "hints": ["Le mot vient du réseau, et se dit maintenant d'une tête humaine."],
+          "pitfalls": [
+            {
+              "answers": ["to have the resources"],
+              "explain": "« Resources » parle budget et effectifs, donc de l'entreprise. « Bandwidth » parle de la charge d'une seule personne — c'est un refus poli, pas une demande de moyens."
+            }
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Nobody has the ___ to run two pilots in the same quarter.",
+          "answerSpec": { "accepted": ["bandwidth"] },
+          "hints": ["la capacité de s'en occuper"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Lequel veut dire « avoir la capacité de s'en occuper » ?",
+          "answerSpec": { "accepted": ["to have the bandwidth"] },
+          "distractors": ["to have the resources", "to have the room", "to have the throughput"]
+        }
+      ]
+    }
+  ]
+}
