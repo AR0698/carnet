@@ -2,227 +2,3720 @@
   "group": "Prepositions",
   "items": [
     {
-      "id": "u121-a", "topicId": "u121", "tags": ["prepositions", "temps"],
-      "fields": { "regle": "at pour l'heure et les fêtes (at six, at Christmas), on pour les jours et les dates (on Monday, on 3 May), in pour les mois, saisons, années et parties de journée (in June, in the morning). Rien devant next, last, this, every." },
+      "id": "u121-a",
+      "topicId": "u121",
+      "tags": [
+        "prepositions",
+        "temps"
+      ],
+      "fields": {
+        "regle": "at pour l'heure et les fêtes (at six, at Christmas), on pour les jours et les dates (on Monday, on 3 May), in pour les mois, saisons, années et parties de journée (in June, in the morning). Rien devant next, last, this, every."
+      },
       "exercises": [
-        { "type": "produce", "prompt": "Traduis : La réunion est lundi à neuf heures.", "answerSpec": { "accepted": ["The meeting is on Monday at nine"] }, "hints": ["Jour : on. Heure : at."] },
-        { "type": "produce", "prompt": "Traduis : Il commence en septembre.", "answerSpec": { "accepted": ["He starts in September"] }, "hints": ["Un mois : in."] },
-        { "type": "produce", "prompt": "Traduis : Je te vois la semaine prochaine.", "answerSpec": { "accepted": ["I will see you next week"] }, "hints": ["Rien devant next."] },
-        { "type": "fill_blank", "prompt": "The induction is ___ Monday morning.", "answerSpec": { "accepted": ["on"] }, "hints": ["Une matinée précise reste sur on."] },
-        { "type": "fill_blank", "prompt": "Nothing ever gets signed ___ August.", "answerSpec": { "accepted": ["in"] }, "hints": ["Un mois."] },
-        { "type": "transform", "source": "The workshop happens the fourteenth of June.", "prompt": "Corrige et réécris la phrase.", "answerSpec": { "accepted": ["The workshop happens on the fourteenth of June"] }, "hints": ["Une date : on."] },
-        { "type": "spot_error", "source": "I will call you in Friday afternoon.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["I will call you on Friday afternoon"] }, "hints": ["Un jour nommé prend on, même avec afternoon."] },
-        { "type": "mcq", "prompt": "The office closes ___ Christmas.", "answerSpec": { "accepted": ["at"] }, "distractors": ["in", "on", "by"], "hints": ["Une fête : at."] }
+        {
+          "type": "produce",
+          "prompt": "Traduis : La réunion est lundi à neuf heures.",
+          "answerSpec": {
+            "accepted": [
+              "The meeting is on Monday at nine"
+            ]
+          },
+          "hints": [
+            "Jour : on. Heure : at."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Il commence en septembre.",
+          "answerSpec": {
+            "accepted": [
+              "He starts in September"
+            ]
+          },
+          "hints": [
+            "Un mois : in."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Je te vois la semaine prochaine.",
+          "answerSpec": {
+            "accepted": [
+              "I will see you next week"
+            ]
+          },
+          "hints": [
+            "Rien devant next."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The induction is ___ Monday morning.",
+          "answerSpec": {
+            "accepted": [
+              "on"
+            ]
+          },
+          "hints": [
+            "Une matinée précise reste sur on."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Nothing ever gets signed ___ August.",
+          "answerSpec": {
+            "accepted": [
+              "in"
+            ]
+          },
+          "hints": [
+            "Un mois."
+          ]
+        },
+        {
+          "type": "transform",
+          "source": "The workshop happens the fourteenth of June.",
+          "prompt": "Corrige et réécris la phrase.",
+          "answerSpec": {
+            "accepted": [
+              "The workshop happens on the fourteenth of June"
+            ]
+          },
+          "hints": [
+            "Une date : on."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "source": "I will call you in Friday afternoon.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": {
+            "accepted": [
+              "I will call you on Friday afternoon"
+            ]
+          },
+          "hints": [
+            "Un jour nommé prend on, même avec afternoon."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "The office closes ___ Christmas.",
+          "answerSpec": {
+            "accepted": [
+              "at"
+            ]
+          },
+          "distractors": [
+            "in",
+            "on",
+            "by"
+          ],
+          "hints": [
+            "Une fête : at."
+          ]
+        }
       ]
     },
     {
-      "id": "u122-a", "topicId": "u122", "tags": ["prepositions", "expressions-figees"],
-      "fields": { "regle": "on time = à l'heure prévue ; in time = à temps, avec de la marge. at the end = au moment final ; in the end = finalement, après hésitation." },
+      "id": "u121-b",
+      "topicId": "u121",
+      "tags": [
+        "prepositions",
+        "temps"
+      ],
+      "fields": {
+        "regle": "Rappel : at l'heure, on le jour, in le mois. Et rien du tout devant next, last, this, every, all."
+      },
       "exercises": [
-        { "type": "produce", "prompt": "Traduis : Le train est parti à l'heure.", "answerSpec": { "accepted": ["The train left on time"] }, "hints": ["À l'heure prévue."] },
-        { "type": "produce", "prompt": "Traduis : Nous sommes arrivés juste à temps pour la démo.", "answerSpec": { "accepted": ["We arrived just in time for the demo"] }, "hints": ["Avec une marge."] },
-        { "type": "produce", "prompt": "Traduis : Finalement, ils ont choisi l'autre fournisseur.", "answerSpec": { "accepted": ["In the end, they chose the other supplier"] }, "hints": ["Après hésitation."] },
-        { "type": "fill_blank", "prompt": "There are always questions ___ the end of a town hall.", "answerSpec": { "accepted": ["at"] }, "hints": ["Le moment final."] },
-        { "type": "fill_blank", "prompt": "Send the figures ___ time for the board pack.", "answerSpec": { "accepted": ["in"] }, "hints": ["Avec assez d'avance."] },
-        { "type": "transform", "source": "After a lot of arguing, they signed the contract.", "prompt": "Réécris la phrase en commençant par « In the end ».", "answerSpec": { "accepted": ["In the end, they signed the contract"] }, "hints": ["Le résultat après hésitation."] },
-        { "type": "spot_error", "source": "At the end, we decided to keep the old tool.", "prompt": "Corrige la phrase : il s'agit de la décision finale.", "answerSpec": { "accepted": ["In the end, we decided to keep the old tool"] }, "hints": ["« at the end » demande un complément : at the end of…"] },
-        { "type": "mcq", "prompt": "The rollout started ___ time, for once.", "answerSpec": { "accepted": ["on"] }, "distractors": ["in", "at", "by"], "hints": ["À l'heure prévue."] }
+        {
+          "type": "produce",
+          "prompt": "Traduis : On se voit lundi prochain.",
+          "answerSpec": {
+            "accepted": [
+              "I will see you next Monday",
+              "See you next Monday"
+            ]
+          },
+          "hints": [
+            "Rien devant next."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Elle est arrivée à minuit.",
+          "answerSpec": {
+            "accepted": [
+              "She arrived at midnight"
+            ]
+          },
+          "hints": [
+            "Une heure : at."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Le pilote a démarré en janvier 2026.",
+          "answerSpec": {
+            "accepted": [
+              "The pilot started in January 2026"
+            ]
+          },
+          "hints": [
+            "Un mois : in."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Nothing gets decided ___ the weekend.",
+          "answerSpec": {
+            "accepted": [
+              "at"
+            ]
+          },
+          "hints": [
+            "at the weekend, en britannique."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "He calls his mother ___ Sunday evenings.",
+          "answerSpec": {
+            "accepted": [
+              "on"
+            ]
+          },
+          "hints": [
+            "Un jour nommé."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "The audit begins the third of March.",
+          "answerSpec": {
+            "accepted": [
+              "The audit begins on the third of March"
+            ]
+          },
+          "source": "The audit begins the third of March.",
+          "hints": [
+            "Une date : on."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "I will send it in Monday morning.",
+          "answerSpec": {
+            "accepted": [
+              "I will send it on Monday morning"
+            ]
+          },
+          "source": "I will send it in Monday morning.",
+          "hints": [
+            "Un jour nommé prend on."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "We never ship ___ Fridays.",
+          "answerSpec": {
+            "accepted": [
+              "on"
+            ]
+          },
+          "hints": [
+            "Un jour de la semaine."
+          ],
+          "distractors": [
+            "in",
+            "at",
+            "by"
+          ]
+        }
       ]
     },
     {
-      "id": "u123-a", "topicId": "u123", "tags": ["prepositions", "lieu"],
-      "fields": { "regle": "in dit l'intérieur d'un volume (in a room, in Bristol), on une surface (on the table, on the wall), at un point ou une adresse (at the station, at 22 Park Street)." },
+      "id": "u122-a",
+      "topicId": "u122",
+      "tags": [
+        "prepositions",
+        "expressions-figees"
+      ],
+      "fields": {
+        "regle": "on time = à l'heure prévue ; in time = à temps, avec de la marge. at the end = au moment final ; in the end = finalement, après hésitation."
+      },
       "exercises": [
-        { "type": "produce", "prompt": "Traduis : Les clés sont sur la table.", "answerSpec": { "accepted": ["The keys are on the table"] }, "hints": ["Une surface."] },
-        { "type": "produce", "prompt": "Traduis : Il attend à la gare.", "answerSpec": { "accepted": ["He is waiting at the station"] }, "hints": ["Un point de rendez-vous."] },
-        { "type": "produce", "prompt": "Traduis : Elle habite à Bristol depuis mars.", "answerSpec": { "accepted": ["She has lived in Bristol since March"] }, "hints": ["Une ville : in."] },
-        { "type": "fill_blank", "prompt": "There is a stain ___ the ceiling of the breakout space.", "answerSpec": { "accepted": ["on"] }, "hints": ["Une surface."] },
-        { "type": "fill_blank", "prompt": "We are ___ the second floor, next to legal.", "answerSpec": { "accepted": ["on"] }, "hints": ["Un étage se dit avec on."] },
-        { "type": "transform", "source": "My laptop is inside my bag.", "prompt": "Réécris la phrase avec « in ».", "answerSpec": { "accepted": ["My laptop is in my bag"] }, "hints": ["Un volume fermé."] },
-        { "type": "spot_error", "source": "She works in the reception desk on Mondays.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["She works at the reception desk on Mondays"] }, "hints": ["Un poste précis : at."] },
-        { "type": "mcq", "prompt": "The diagram is ___ page twelve.", "answerSpec": { "accepted": ["on"] }, "distractors": ["in", "at", "into"], "hints": ["Une page est une surface."] }
+        {
+          "type": "produce",
+          "prompt": "Traduis : Le train est parti à l'heure.",
+          "answerSpec": {
+            "accepted": [
+              "The train left on time"
+            ]
+          },
+          "hints": [
+            "À l'heure prévue."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Nous sommes arrivés juste à temps pour la démo.",
+          "answerSpec": {
+            "accepted": [
+              "We arrived just in time for the demo"
+            ]
+          },
+          "hints": [
+            "Avec une marge."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Finalement, ils ont choisi l'autre fournisseur.",
+          "answerSpec": {
+            "accepted": [
+              "In the end, they chose the other supplier"
+            ]
+          },
+          "hints": [
+            "Après hésitation."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "There are always questions ___ the end of a town hall.",
+          "answerSpec": {
+            "accepted": [
+              "at"
+            ]
+          },
+          "hints": [
+            "Le moment final."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Send the figures ___ time for the board pack.",
+          "answerSpec": {
+            "accepted": [
+              "in"
+            ]
+          },
+          "hints": [
+            "Avec assez d'avance."
+          ]
+        },
+        {
+          "type": "transform",
+          "source": "After a lot of arguing, they signed the contract.",
+          "prompt": "Réécris la phrase en commençant par « In the end ».",
+          "answerSpec": {
+            "accepted": [
+              "In the end, they signed the contract"
+            ]
+          },
+          "hints": [
+            "Le résultat après hésitation."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "source": "At the end, we decided to keep the old tool.",
+          "prompt": "Corrige la phrase : il s'agit de la décision finale.",
+          "answerSpec": {
+            "accepted": [
+              "In the end, we decided to keep the old tool"
+            ]
+          },
+          "hints": [
+            "« at the end » demande un complément : at the end of…"
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "The rollout started ___ time, for once.",
+          "answerSpec": {
+            "accepted": [
+              "on"
+            ]
+          },
+          "distractors": [
+            "in",
+            "at",
+            "by"
+          ],
+          "hints": [
+            "À l'heure prévue."
+          ]
+        }
       ]
     },
     {
-      "id": "u124-a", "topicId": "u124", "tags": ["prepositions", "lieu", "transports"],
-      "fields": { "regle": "in a car, in a taxi ; on a bus, on a train, on a plane, on a bike. On dit at home, at work, at school, in bed, in hospital, on holiday." },
+      "id": "u122-b",
+      "topicId": "u122",
+      "tags": [
+        "prepositions",
+        "figees"
+      ],
+      "fields": {
+        "regle": "in time laisse de la marge, on time colle à l'horaire ; at the end désigne le moment final, in the end le résultat après hésitation."
+      },
       "exercises": [
-        { "type": "produce", "prompt": "Traduis : Je suis dans le train.", "answerSpec": { "accepted": ["I am on the train"] }, "hints": ["Les transports collectifs prennent on."] },
-        { "type": "produce", "prompt": "Traduis : Elle est en congé cette semaine.", "answerSpec": { "accepted": ["She is on holiday this week"] }, "hints": ["on holiday, expression figée."] },
-        { "type": "produce", "prompt": "Traduis : Il travaille de chez lui le vendredi.", "answerSpec": { "accepted": ["He works at home on Fridays", "He works from home on Fridays"] }, "hints": ["at home ou from home."] },
-        { "type": "fill_blank", "prompt": "We left the folder ___ the taxi.", "answerSpec": { "accepted": ["in"] }, "hints": ["Une voiture : in."] },
-        { "type": "fill_blank", "prompt": "She has been ___ hospital since Tuesday.", "answerSpec": { "accepted": ["in"] }, "hints": ["Comme patiente, sans article."] },
-        { "type": "transform", "source": "I travelled by plane and read the whole report.", "prompt": "Réécris en commençant par « On the plane ».", "answerSpec": { "accepted": ["On the plane I read the whole report"] }, "hints": ["Un avion : on."] },
-        { "type": "spot_error", "source": "I read your email in the bus this morning.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["I read your email on the bus this morning"] }, "hints": ["Les transports collectifs prennent on."] },
-        { "type": "mcq", "prompt": "He is not answering — he is still ___ work.", "answerSpec": { "accepted": ["at"] }, "distractors": ["in", "on", "by"], "hints": ["Expression figée."] }
+        {
+          "type": "produce",
+          "prompt": "Traduis : Il est arrivé juste à temps pour la démo.",
+          "answerSpec": {
+            "accepted": [
+              "He got there just in time for the demo"
+            ]
+          },
+          "hints": [
+            "Avec de la marge."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Le comité a commencé à l'heure, pour une fois.",
+          "answerSpec": {
+            "accepted": [
+              "The steering group started on time, for once"
+            ]
+          },
+          "hints": [
+            "À l'horaire."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : À la fin de l'atelier, personne ne parlait.",
+          "answerSpec": {
+            "accepted": [
+              "At the end of the workshop, nobody was talking"
+            ]
+          },
+          "hints": [
+            "at the end of."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "___ the end, they kept the old supplier.",
+          "answerSpec": {
+            "accepted": [
+              "In"
+            ]
+          },
+          "hints": [
+            "Après hésitation."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Will the figures be ready ___ time for the board?",
+          "answerSpec": {
+            "accepted": [
+              "in"
+            ]
+          },
+          "hints": [
+            "Avec de la marge."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "After weeks of argument, they signed.",
+          "answerSpec": {
+            "accepted": [
+              "In the end, they signed"
+            ]
+          },
+          "source": "After weeks of argument, they signed.",
+          "hints": [
+            "Résultat final."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "The train left in time, to everyone's surprise.",
+          "answerSpec": {
+            "accepted": [
+              "The train left on time, to everyone's surprise"
+            ]
+          },
+          "source": "The train left in time, to everyone's surprise.",
+          "hints": [
+            "À l'heure prévue : on time."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "There are always questions ___ the end of a demo.",
+          "answerSpec": {
+            "accepted": [
+              "at"
+            ]
+          },
+          "hints": [
+            "Le moment final."
+          ],
+          "distractors": [
+            "in",
+            "on",
+            "by"
+          ]
+        }
       ]
     },
     {
-      "id": "u125-a", "topicId": "u125", "tags": ["prepositions", "lieu", "figees"],
-      "fields": { "regle": "Expressions à retenir : in the picture, in the sky, in a queue, in the rain ; on the left, on the coast, on a farm, on the radio ; at the top, at the door, at a party, at the front." },
+      "id": "u123-a",
+      "topicId": "u123",
+      "tags": [
+        "prepositions",
+        "lieu"
+      ],
+      "fields": {
+        "regle": "in dit l'intérieur d'un volume (in a room, in Bristol), on une surface (on the table, on the wall), at un point ou une adresse (at the station, at 22 Park Street)."
+      },
       "exercises": [
-        { "type": "produce", "prompt": "Traduis : Il est sur la photo, à gauche.", "answerSpec": { "accepted": ["He is in the picture, on the left"] }, "hints": ["in the picture, mais on the left."] },
-        { "type": "produce", "prompt": "Traduis : Nous avons fait la queue sous la pluie.", "answerSpec": { "accepted": ["We queued in the rain"] }, "hints": ["in the rain."] },
-        { "type": "produce", "prompt": "Traduis : Je l'ai entendu à la radio.", "answerSpec": { "accepted": ["I heard it on the radio"] }, "hints": ["on the radio."] },
-        { "type": "fill_blank", "prompt": "There is somebody ___ the door — probably the courier.", "answerSpec": { "accepted": ["at"] }, "hints": ["Un point précis."] },
-        { "type": "fill_blank", "prompt": "Her name is ___ the top of the list.", "answerSpec": { "accepted": ["at"] }, "hints": ["at the top of."] },
-        { "type": "transform", "source": "They live near the sea, in a village.", "prompt": "Réécris la première partie avec « on the coast ».", "answerSpec": { "accepted": ["They live on the coast, in a village"] }, "hints": ["on the coast."] },
-        { "type": "spot_error", "source": "We stood on a queue for twenty minutes.", "prompt": "Corrige la phrase en anglais britannique.", "answerSpec": { "accepted": ["We stood in a queue for twenty minutes"] }, "hints": ["« on line » est américain."] },
-        { "type": "mcq", "prompt": "I met three future colleagues ___ a party.", "answerSpec": { "accepted": ["at"] }, "distractors": ["in", "on", "into"], "hints": ["Un événement : at."] }
+        {
+          "type": "produce",
+          "prompt": "Traduis : Les clés sont sur la table.",
+          "answerSpec": {
+            "accepted": [
+              "The keys are on the table"
+            ]
+          },
+          "hints": [
+            "Une surface."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Il attend à la gare.",
+          "answerSpec": {
+            "accepted": [
+              "He is waiting at the station"
+            ]
+          },
+          "hints": [
+            "Un point de rendez-vous."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Elle habite à Bristol depuis mars.",
+          "answerSpec": {
+            "accepted": [
+              "She has lived in Bristol since March"
+            ]
+          },
+          "hints": [
+            "Une ville : in."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "There is a stain ___ the ceiling of the breakout space.",
+          "answerSpec": {
+            "accepted": [
+              "on"
+            ]
+          },
+          "hints": [
+            "Une surface."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "We are ___ the second floor, next to legal.",
+          "answerSpec": {
+            "accepted": [
+              "on"
+            ]
+          },
+          "hints": [
+            "Un étage se dit avec on."
+          ]
+        },
+        {
+          "type": "transform",
+          "source": "My laptop is inside my bag.",
+          "prompt": "Réécris la phrase avec « in ».",
+          "answerSpec": {
+            "accepted": [
+              "My laptop is in my bag"
+            ]
+          },
+          "hints": [
+            "Un volume fermé."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "source": "She works in the reception desk on Mondays.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": {
+            "accepted": [
+              "She works at the reception desk on Mondays"
+            ]
+          },
+          "hints": [
+            "Un poste précis : at."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "The diagram is ___ page twelve.",
+          "answerSpec": {
+            "accepted": [
+              "on"
+            ]
+          },
+          "distractors": [
+            "in",
+            "at",
+            "into"
+          ],
+          "hints": [
+            "Une page est une surface."
+          ]
+        }
       ]
     },
     {
-      "id": "u126-a", "topicId": "u126", "tags": ["prepositions", "mouvement"],
-      "fields": { "regle": "to marque la destination, into l'entrée dans un volume, at une cible visée sans mouvement d'entrée. « arrive in » pour une ville, « arrive at » pour un bâtiment, mais « arrive home » sans préposition." },
+      "id": "u123-b",
+      "topicId": "u123",
+      "tags": [
+        "prepositions",
+        "lieu"
+      ],
+      "fields": {
+        "regle": "in pour un volume, on pour une surface, at pour un point. La règle vaut aussi pour les images : in a photo, on a page, at a desk."
+      },
       "exercises": [
-        { "type": "produce", "prompt": "Traduis : Nous sommes arrivés à Bristol à minuit.", "answerSpec": { "accepted": ["We arrived in Bristol at midnight"] }, "hints": ["Une ville : arrive in."] },
-        { "type": "produce", "prompt": "Traduis : Il est entré dans la salle sans frapper.", "answerSpec": { "accepted": ["He walked into the room without knocking"] }, "hints": ["Entrée dans un volume : into."] },
-        { "type": "produce", "prompt": "Traduis : Je rentre à la maison à six heures.", "answerSpec": { "accepted": ["I get home at six", "I go home at six"] }, "hints": ["Pas de préposition devant home."] },
-        { "type": "fill_blank", "prompt": "They arrived ___ the airport two hours early.", "answerSpec": { "accepted": ["at"] }, "hints": ["Un bâtiment : arrive at."] },
-        { "type": "fill_blank", "prompt": "Stop shouting ___ the printer, it will not help.", "answerSpec": { "accepted": ["at"] }, "hints": ["Une cible visée."] },
-        { "type": "transform", "source": "She entered the meeting room ten minutes late.", "prompt": "Réécris la phrase avec « came into ».", "answerSpec": { "accepted": ["She came into the meeting room ten minutes late"] }, "hints": ["enter ne prend pas de préposition, come into si."] },
-        { "type": "spot_error", "source": "We arrived to Bristol on Sunday evening.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["We arrived in Bristol on Sunday evening"] }, "hints": ["arrive ne se construit jamais avec to."] },
-        { "type": "mcq", "prompt": "He threw the draft ___ the bin without reading it.", "answerSpec": { "accepted": ["into"] }, "distractors": ["to", "at", "on"], "hints": ["Entrée dans un contenant."] }
+        {
+          "type": "produce",
+          "prompt": "Traduis : Il est à son bureau depuis sept heures.",
+          "answerSpec": {
+            "accepted": [
+              "He has been at his desk since seven"
+            ]
+          },
+          "hints": [
+            "Un point de travail."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Le schéma est sur la page douze.",
+          "answerSpec": {
+            "accepted": [
+              "The diagram is on page twelve"
+            ]
+          },
+          "hints": [
+            "Une page : surface."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Ils sont sur la photo, au fond.",
+          "answerSpec": {
+            "accepted": [
+              "They are in the picture, at the back"
+            ]
+          },
+          "hints": [
+            "in a picture."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "There is a stain ___ the carpet of the breakout space.",
+          "answerSpec": {
+            "accepted": [
+              "on"
+            ]
+          },
+          "hints": [
+            "Une surface."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "She works ___ a consultancy near the water.",
+          "answerSpec": {
+            "accepted": [
+              "at",
+              "for",
+              "in"
+            ]
+          },
+          "hints": [
+            "Une organisation."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "My laptop is inside the drawer.",
+          "answerSpec": {
+            "accepted": [
+              "My laptop is in the drawer"
+            ]
+          },
+          "source": "My laptop is inside the drawer.",
+          "hints": [
+            "Volume fermé."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "Write your name in the top of the form.",
+          "answerSpec": {
+            "accepted": [
+              "Write your name at the top of the form"
+            ]
+          },
+          "source": "Write your name in the top of the form.",
+          "hints": [
+            "at the top of."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "We are ___ the third floor, next to finance.",
+          "answerSpec": {
+            "accepted": [
+              "on"
+            ]
+          },
+          "hints": [
+            "Un étage prend on."
+          ],
+          "distractors": [
+            "in",
+            "at",
+            "to"
+          ]
+        }
       ]
     },
     {
-      "id": "u127-a", "topicId": "u127", "tags": ["prepositions", "usages-divers"],
-      "fields": { "regle": "Autres emplois : in English, in pen, in a loud voice ; on the phone, on television, on purpose, on a diet ; at the age of, at 100 miles an hour, at a speed of." },
+      "id": "u124-a",
+      "topicId": "u124",
+      "tags": [
+        "prepositions",
+        "lieu",
+        "transports"
+      ],
+      "fields": {
+        "regle": "in a car, in a taxi ; on a bus, on a train, on a plane, on a bike. On dit at home, at work, at school, in bed, in hospital, on holiday."
+      },
       "exercises": [
-        { "type": "produce", "prompt": "Traduis : Écris-le en anglais, au stylo.", "answerSpec": { "accepted": ["Write it in English, in pen"] }, "hints": ["in English, in pen."] },
-        { "type": "produce", "prompt": "Traduis : Elle est au téléphone avec le client.", "answerSpec": { "accepted": ["She is on the phone to the client"] }, "hints": ["on the phone."] },
-        { "type": "produce", "prompt": "Traduis : Il l'a fait exprès.", "answerSpec": { "accepted": ["He did it on purpose"] }, "hints": ["on purpose."] },
-        { "type": "fill_blank", "prompt": "She became a partner ___ the age of thirty-one.", "answerSpec": { "accepted": ["at"] }, "hints": ["at the age of."] },
-        { "type": "fill_blank", "prompt": "The interview was ___ television last night.", "answerSpec": { "accepted": ["on"] }, "hints": ["on television, sans article."] },
-        { "type": "transform", "source": "He answered using a very loud voice.", "prompt": "Réécris la fin avec « in ».", "answerSpec": { "accepted": ["He answered in a very loud voice"] }, "hints": ["in a … voice."] },
-        { "type": "spot_error", "source": "Please do not write the form with pencil.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["Please do not write the form in pencil"] }, "hints": ["in pen, in pencil."] },
-        { "type": "mcq", "prompt": "The connector syncs ___ a speed of ten records a second.", "answerSpec": { "accepted": ["at"] }, "distractors": ["in", "on", "by"], "hints": ["Une vitesse : at."] }
+        {
+          "type": "produce",
+          "prompt": "Traduis : Je suis dans le train.",
+          "answerSpec": {
+            "accepted": [
+              "I am on the train"
+            ]
+          },
+          "hints": [
+            "Les transports collectifs prennent on."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Elle est en congé cette semaine.",
+          "answerSpec": {
+            "accepted": [
+              "She is on holiday this week"
+            ]
+          },
+          "hints": [
+            "on holiday, expression figée."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Il travaille de chez lui le vendredi.",
+          "answerSpec": {
+            "accepted": [
+              "He works at home on Fridays",
+              "He works from home on Fridays"
+            ]
+          },
+          "hints": [
+            "at home ou from home."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "We left the folder ___ the taxi.",
+          "answerSpec": {
+            "accepted": [
+              "in"
+            ]
+          },
+          "hints": [
+            "Une voiture : in."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "She has been ___ hospital since Tuesday.",
+          "answerSpec": {
+            "accepted": [
+              "in"
+            ]
+          },
+          "hints": [
+            "Comme patiente, sans article."
+          ]
+        },
+        {
+          "type": "transform",
+          "source": "I travelled by plane and read the whole report.",
+          "prompt": "Réécris en commençant par « On the plane ».",
+          "answerSpec": {
+            "accepted": [
+              "On the plane I read the whole report"
+            ]
+          },
+          "hints": [
+            "Un avion : on."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "source": "I read your email in the bus this morning.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": {
+            "accepted": [
+              "I read your email on the bus this morning"
+            ]
+          },
+          "hints": [
+            "Les transports collectifs prennent on."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "He is not answering — he is still ___ work.",
+          "answerSpec": {
+            "accepted": [
+              "at"
+            ]
+          },
+          "distractors": [
+            "in",
+            "on",
+            "by"
+          ],
+          "hints": [
+            "Expression figée."
+          ]
+        }
       ]
     },
     {
-      "id": "u128-a", "topicId": "u128", "tags": ["prepositions", "by"],
-      "fields": { "regle": "by dit l'agent au passif (« written by Anna »), le moyen de transport sans article (« by train »), le moyen (« by email », « by mistake ») et la marge d'écart (« by two points »)." },
+      "id": "u124-b",
+      "topicId": "u124",
+      "tags": [
+        "prepositions",
+        "transports"
+      ],
+      "fields": {
+        "regle": "in a car, on a bus, on a train, on a plane. Et les figées : at home, at work, in bed, on holiday, in hospital."
+      },
       "exercises": [
-        { "type": "produce", "prompt": "Traduis : Le rapport a été écrit par le stagiaire.", "answerSpec": { "accepted": ["The report was written by the intern"] }, "hints": ["Agent du passif."] },
-        { "type": "produce", "prompt": "Traduis : Je viens en train.", "answerSpec": { "accepted": ["I am coming by train"] }, "hints": ["by + transport, sans article."] },
-        { "type": "produce", "prompt": "Traduis : Je l'ai envoyé par erreur.", "answerSpec": { "accepted": ["I sent it by mistake"] }, "hints": ["by mistake."] },
-        { "type": "fill_blank", "prompt": "Send the figures ___ email before close of play.", "answerSpec": { "accepted": ["by"] }, "hints": ["Un moyen de transmission."] },
-        { "type": "fill_blank", "prompt": "We missed the target ___ four points.", "answerSpec": { "accepted": ["by"] }, "hints": ["Un écart chiffré."] },
-        { "type": "transform", "source": "Anna designed the whole floor plan.", "prompt": "Mets la phrase au passif.", "answerSpec": { "accepted": ["The whole floor plan was designed by Anna"] }, "hints": ["by introduit l'agent."] },
-        { "type": "spot_error", "source": "I always travel by the car when it rains.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["I always travel by car when it rains"] }, "hints": ["Pas d'article après by."] },
-        { "type": "mcq", "prompt": "The paper was signed ___ hand, which surprised everyone.", "answerSpec": { "accepted": ["by"] }, "distractors": ["with", "in", "at"], "hints": ["by hand : à la main."] }
+        {
+          "type": "produce",
+          "prompt": "Traduis : Je lis mes mails dans le train.",
+          "answerSpec": {
+            "accepted": [
+              "I read my emails on the train"
+            ]
+          },
+          "hints": [
+            "Transport collectif : on."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Elle est en congé jusqu'au neuf.",
+          "answerSpec": {
+            "accepted": [
+              "She is on holiday until the ninth"
+            ]
+          },
+          "hints": [
+            "on holiday."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Il a laissé son badge dans la voiture.",
+          "answerSpec": {
+            "accepted": [
+              "He left his badge in the car"
+            ]
+          },
+          "hints": [
+            "Une voiture : in."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Nobody answers the phone when they are ___ holiday.",
+          "answerSpec": {
+            "accepted": [
+              "on"
+            ]
+          },
+          "hints": [
+            "Expression figée."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "I do most of my thinking ___ the train home.",
+          "answerSpec": {
+            "accepted": [
+              "on"
+            ]
+          },
+          "hints": [
+            "Transport collectif."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "She travelled by plane and slept the whole way.",
+          "answerSpec": {
+            "accepted": [
+              "She slept the whole way on the plane"
+            ]
+          },
+          "source": "She travelled by plane and slept the whole way.",
+          "hints": [
+            "Un avion : on."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "He has been at hospital since Tuesday.",
+          "answerSpec": {
+            "accepted": [
+              "She has been in bed with a migraine all week"
+            ]
+          },
+          "source": "She has been at bed with a migraine all week.",
+          "hints": [
+            "in bed, sans article."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Sorry, I cannot talk — I am still ___ work.",
+          "answerSpec": {
+            "accepted": [
+              "at"
+            ]
+          },
+          "hints": [
+            "Expression figée."
+          ],
+          "distractors": [
+            "in",
+            "on",
+            "by"
+          ]
+        }
       ]
     },
     {
-      "id": "u129-a", "topicId": "u129", "tags": ["nom-preposition"],
-      "fields": { "regle": "Chaque nom impose sa préposition : a reason for, a cause of, an increase in, a demand for, an advantage of, a solution to, an attitude to, a relationship with." },
+      "id": "u125-a",
+      "topicId": "u125",
+      "tags": [
+        "prepositions",
+        "lieu",
+        "figees"
+      ],
+      "fields": {
+        "regle": "Expressions à retenir : in the picture, in the sky, in a queue, in the rain ; on the left, on the coast, on a farm, on the radio ; at the top, at the door, at a party, at the front."
+      },
       "exercises": [
-        { "type": "produce", "prompt": "Traduis : la raison du retard", "answerSpec": { "accepted": ["the reason for the delay"] }, "hints": ["reason for."] },
-        { "type": "produce", "prompt": "Traduis : la cause de l'incident", "answerSpec": { "accepted": ["the cause of the incident"] }, "hints": ["cause of."] },
-        { "type": "produce", "prompt": "Traduis : une solution à ce problème", "answerSpec": { "accepted": ["a solution to this problem"] }, "hints": ["solution to, jamais of."] },
-        { "type": "fill_blank", "prompt": "There has been a sharp increase ___ desk bookings.", "answerSpec": { "accepted": ["in"] }, "hints": ["increase in."] },
-        { "type": "fill_blank", "prompt": "The main advantage ___ hot-desking is the floor space.", "answerSpec": { "accepted": ["of"] }, "hints": ["advantage of."] },
-        { "type": "transform", "source": "Why was the launch postponed? Give the explanation.", "prompt": "Complète : « We still do not know the reason … »", "answerSpec": { "accepted": ["We still do not know the reason for the postponement"] }, "hints": ["reason for."] },
-        { "type": "spot_error", "source": "Nobody could find a solution of the licensing problem.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["Nobody could find a solution to the licensing problem"] }, "hints": ["solution to."] },
-        { "type": "mcq", "prompt": "She has a good working relationship ___ the steering group.", "answerSpec": { "accepted": ["with"] }, "distractors": ["to", "of", "for"], "hints": ["relationship with."] }
+        {
+          "type": "produce",
+          "prompt": "Traduis : Il est sur la photo, à gauche.",
+          "answerSpec": {
+            "accepted": [
+              "He is in the picture, on the left"
+            ]
+          },
+          "hints": [
+            "in the picture, mais on the left."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Nous avons fait la queue sous la pluie.",
+          "answerSpec": {
+            "accepted": [
+              "We queued in the rain"
+            ]
+          },
+          "hints": [
+            "in the rain."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Je l'ai entendu à la radio.",
+          "answerSpec": {
+            "accepted": [
+              "I heard it on the radio"
+            ]
+          },
+          "hints": [
+            "on the radio."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "There is somebody ___ the door — probably the courier.",
+          "answerSpec": {
+            "accepted": [
+              "at"
+            ]
+          },
+          "hints": [
+            "Un point précis."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Her name is ___ the top of the list.",
+          "answerSpec": {
+            "accepted": [
+              "at"
+            ]
+          },
+          "hints": [
+            "at the top of."
+          ]
+        },
+        {
+          "type": "transform",
+          "source": "They live near the sea, in a village.",
+          "prompt": "Réécris la première partie avec « on the coast ».",
+          "answerSpec": {
+            "accepted": [
+              "They live on the coast, in a village"
+            ]
+          },
+          "hints": [
+            "on the coast."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "source": "We stood on a queue for twenty minutes.",
+          "prompt": "Corrige la phrase en anglais britannique.",
+          "answerSpec": {
+            "accepted": [
+              "We stood in a queue for twenty minutes"
+            ]
+          },
+          "hints": [
+            "« on line » est américain."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "I met three future colleagues ___ a party.",
+          "answerSpec": {
+            "accepted": [
+              "at"
+            ]
+          },
+          "distractors": [
+            "in",
+            "on",
+            "into"
+          ],
+          "hints": [
+            "Un événement : at."
+          ]
+        }
       ]
     },
     {
-      "id": "u130-a", "topicId": "u130", "tags": ["adjectif-preposition"],
-      "fields": { "regle": "Premier lot : good at, bad at, interested in, keen on, fed up with, tired of, similar to, different from, married to." },
+      "id": "u125-b",
+      "topicId": "u125",
+      "tags": [
+        "prepositions",
+        "figees-lieu"
+      ],
+      "fields": {
+        "regle": "À retenir tel quel : in the rain, in a queue, on the left, on the coast, on the radio, at the door, at a party, at the front."
+      },
       "exercises": [
-        { "type": "produce", "prompt": "Traduis : Elle est douée pour les négociations.", "answerSpec": { "accepted": ["She is good at negotiating"] }, "hints": ["good at + -ing."] },
-        { "type": "produce", "prompt": "Traduis : Je m'intéresse à l'IA générative.", "answerSpec": { "accepted": ["I am interested in generative AI"] }, "hints": ["interested in."] },
-        { "type": "produce", "prompt": "Traduis : J'en ai assez des réunions du lundi.", "answerSpec": { "accepted": ["I am fed up with Monday meetings"] }, "hints": ["fed up with."] },
-        { "type": "fill_blank", "prompt": "This approach is very similar ___ the one we dropped.", "answerSpec": { "accepted": ["to"] }, "hints": ["similar to."] },
-        { "type": "fill_blank", "prompt": "He is married ___ a colleague from the Cardiff office.", "answerSpec": { "accepted": ["to"] }, "hints": ["married to, jamais with."] },
-        { "type": "transform", "source": "British understatement is not the same as French politeness.", "prompt": "Réécris la phrase avec « different from ».", "answerSpec": { "accepted": ["British understatement is different from French politeness"] }, "hints": ["different from en britannique."] },
-        { "type": "spot_error", "source": "She is very good in explaining trade-offs.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["She is very good at explaining trade-offs"] }, "hints": ["good at, toujours."] },
-        { "type": "mcq", "prompt": "I am not particularly keen ___ open-plan floors.", "answerSpec": { "accepted": ["on"] }, "distractors": ["of", "to", "with"], "hints": ["keen on."] }
+        {
+          "type": "produce",
+          "prompt": "Traduis : Il y a quelqu'un à la porte.",
+          "answerSpec": {
+            "accepted": [
+              "There is somebody at the door"
+            ]
+          },
+          "hints": [
+            "Un point précis."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Nous avons attendu sous la pluie vingt minutes.",
+          "answerSpec": {
+            "accepted": [
+              "We waited in the rain for twenty minutes"
+            ]
+          },
+          "hints": [
+            "in the rain."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Son bureau est sur la gauche, au fond.",
+          "answerSpec": {
+            "accepted": [
+              "Her office is on the left, at the back"
+            ]
+          },
+          "hints": [
+            "on the left, at the back."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "I heard the chief executive ___ the radio this morning.",
+          "answerSpec": {
+            "accepted": [
+              "on"
+            ]
+          },
+          "hints": [
+            "on the radio."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "They live ___ the coast, near Portishead.",
+          "answerSpec": {
+            "accepted": [
+              "on"
+            ]
+          },
+          "hints": [
+            "on the coast."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "We queued for an hour outside the museum.",
+          "answerSpec": {
+            "accepted": [
+              "We stood in a queue for an hour outside the museum"
+            ]
+          },
+          "source": "We queued for an hour outside the museum.",
+          "hints": [
+            "in a queue."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "I met three colleagues in a party last week.",
+          "answerSpec": {
+            "accepted": [
+              "I met three colleagues at a party last week"
+            ]
+          },
+          "source": "I met three colleagues in a party last week.",
+          "hints": [
+            "Un événement : at."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Her name is ___ the front of the report.",
+          "answerSpec": {
+            "accepted": [
+              "at"
+            ]
+          },
+          "hints": [
+            "at the front of."
+          ],
+          "distractors": [
+            "in",
+            "on",
+            "to"
+          ]
+        }
       ]
     },
     {
-      "id": "u131-a", "topicId": "u131", "tags": ["adjectif-preposition"],
-      "fields": { "regle": "Deuxième lot : sorry about (une situation), sorry for (ce qu'on a fait), afraid of, proud of, aware of, responsible for, famous for, surprised at ou by." },
+      "id": "u126-a",
+      "topicId": "u126",
+      "tags": [
+        "prepositions",
+        "mouvement"
+      ],
+      "fields": {
+        "regle": "to marque la destination, into l'entrée dans un volume, at une cible visée sans mouvement d'entrée. « arrive in » pour une ville, « arrive at » pour un bâtiment, mais « arrive home » sans préposition."
+      },
       "exercises": [
-        { "type": "produce", "prompt": "Traduis : Je suis désolé pour le retard.", "answerSpec": { "accepted": ["I am sorry about the delay"] }, "hints": ["sorry about + situation."] },
-        { "type": "produce", "prompt": "Traduis : Il est responsable du déploiement.", "answerSpec": { "accepted": ["He is responsible for the rollout"] }, "hints": ["responsible for."] },
-        { "type": "produce", "prompt": "Traduis : Bristol est connue pour ses murs peints.", "answerSpec": { "accepted": ["Bristol is famous for its painted walls"] }, "hints": ["famous for."] },
-        { "type": "fill_blank", "prompt": "Were you aware ___ the data-residency clause?", "answerSpec": { "accepted": ["of"] }, "hints": ["aware of."] },
-        { "type": "fill_blank", "prompt": "Everyone was surprised ___ how quickly it shipped.", "answerSpec": { "accepted": ["at", "by"] }, "hints": ["Les deux se disent."] },
-        { "type": "transform", "source": "He apologised because he had missed the handover.", "prompt": "Réécris avec « sorry for ».", "answerSpec": { "accepted": ["He was sorry for missing the handover"] }, "hints": ["sorry for + -ing."] },
-        { "type": "spot_error", "source": "She is responsible of the workplace programme.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["She is responsible for the workplace programme"] }, "hints": ["responsible for."] },
-        { "type": "mcq", "prompt": "He is genuinely proud ___ what the team shipped.", "answerSpec": { "accepted": ["of"] }, "distractors": ["for", "about", "with"], "hints": ["proud of."] }
+        {
+          "type": "produce",
+          "prompt": "Traduis : Nous sommes arrivés à Bristol à minuit.",
+          "answerSpec": {
+            "accepted": [
+              "We arrived in Bristol at midnight"
+            ]
+          },
+          "hints": [
+            "Une ville : arrive in."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Il est entré dans la salle sans frapper.",
+          "answerSpec": {
+            "accepted": [
+              "He walked into the room without knocking"
+            ]
+          },
+          "hints": [
+            "Entrée dans un volume : into."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Je rentre à la maison à six heures.",
+          "answerSpec": {
+            "accepted": [
+              "I get home at six",
+              "I go home at six"
+            ]
+          },
+          "hints": [
+            "Pas de préposition devant home."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "They arrived ___ the airport two hours early.",
+          "answerSpec": {
+            "accepted": [
+              "at"
+            ]
+          },
+          "hints": [
+            "Un bâtiment : arrive at."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Stop shouting ___ the printer, it will not help.",
+          "answerSpec": {
+            "accepted": [
+              "at"
+            ]
+          },
+          "hints": [
+            "Une cible visée."
+          ]
+        },
+        {
+          "type": "transform",
+          "source": "She entered the meeting room ten minutes late.",
+          "prompt": "Réécris la phrase avec « came into ».",
+          "answerSpec": {
+            "accepted": [
+              "She came into the meeting room ten minutes late"
+            ]
+          },
+          "hints": [
+            "enter ne prend pas de préposition, come into si."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "source": "We arrived to Bristol on Sunday evening.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": {
+            "accepted": [
+              "We arrived in Bristol on Sunday evening"
+            ]
+          },
+          "hints": [
+            "arrive ne se construit jamais avec to."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "He threw the draft ___ the bin without reading it.",
+          "answerSpec": {
+            "accepted": [
+              "into"
+            ]
+          },
+          "distractors": [
+            "to",
+            "at",
+            "on"
+          ],
+          "hints": [
+            "Entrée dans un contenant."
+          ]
+        }
       ]
     },
     {
-      "id": "u132-a", "topicId": "u132", "tags": ["verbe-preposition", "to-at"],
-      "fields": { "regle": "to : talk to, speak to, listen to, explain to, apologise to, belong to, happen to. at : look at, stare at, shout at (agressif), laugh at, point at, aim at." },
+      "id": "u126-b",
+      "topicId": "u126",
+      "tags": [
+        "prepositions",
+        "mouvement"
+      ],
+      "fields": {
+        "regle": "to marque la destination, into l'entrée, at la cible visée. arrive in une ville, arrive at un bâtiment, arrive home sans rien."
+      },
       "exercises": [
-        { "type": "produce", "prompt": "Traduis : Il faut que je parle au client.", "answerSpec": { "accepted": ["I need to speak to the client", "I need to talk to the client"] }, "hints": ["speak to, talk to."] },
-        { "type": "produce", "prompt": "Traduis : Regarde ces chiffres.", "answerSpec": { "accepted": ["Look at these figures"] }, "hints": ["look at."] },
-        { "type": "produce", "prompt": "Traduis : Peux-tu m'expliquer le contrat ?", "answerSpec": { "accepted": ["Can you explain the contract to me"] }, "hints": ["explain something to somebody."] },
-        { "type": "fill_blank", "prompt": "Nobody listens ___ the safety briefing any more.", "answerSpec": { "accepted": ["to"] }, "hints": ["listen to."] },
-        { "type": "fill_blank", "prompt": "He shouted ___ the contractor, which helped nobody.", "answerSpec": { "accepted": ["at"] }, "hints": ["shout at : agressif."] },
-        { "type": "transform", "source": "She apologised. The whole floor heard her.", "prompt": "Complète : « She apologised … the whole floor ».", "answerSpec": { "accepted": ["She apologised to the whole floor"] }, "hints": ["apologise to somebody."] },
-        { "type": "spot_error", "source": "Could you explain me the trade-off again?", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["Could you explain the trade-off to me again"] }, "hints": ["explain n'admet pas de complément direct de personne."] },
-        { "type": "mcq", "prompt": "That laptop belongs ___ the Cardiff office.", "answerSpec": { "accepted": ["to"] }, "distractors": ["at", "of", "with"], "hints": ["belong to."] }
+        {
+          "type": "produce",
+          "prompt": "Traduis : Nous sommes rentrés à la maison après minuit.",
+          "answerSpec": {
+            "accepted": [
+              "We got home after midnight"
+            ]
+          },
+          "hints": [
+            "Rien devant home."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Il est entré dans la salle sans frapper.",
+          "answerSpec": {
+            "accepted": [
+              "He came into the room without knocking"
+            ]
+          },
+          "hints": [
+            "Entrée : into."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Elle est arrivée au bureau à sept heures.",
+          "answerSpec": {
+            "accepted": [
+              "She arrived at the office at seven"
+            ]
+          },
+          "hints": [
+            "Un bâtiment : arrive at."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "They flew ___ Bristol on Sunday evening.",
+          "answerSpec": {
+            "accepted": [
+              "to"
+            ]
+          },
+          "hints": [
+            "Destination."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Stop shouting ___ the printer, it will not help.",
+          "answerSpec": {
+            "accepted": [
+              "at"
+            ]
+          },
+          "hints": [
+            "Cible visée."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "She entered the meeting room ten minutes late.",
+          "answerSpec": {
+            "accepted": [
+              "She went into the meeting room ten minutes late"
+            ]
+          },
+          "source": "She entered the meeting room ten minutes late.",
+          "hints": [
+            "go into."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "When did you arrive to Cardiff?",
+          "answerSpec": {
+            "accepted": [
+              "When did you arrive in Cardiff"
+            ]
+          },
+          "source": "When did you arrive to Cardiff?",
+          "hints": [
+            "arrive ne se construit jamais avec to."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "He threw the old deck ___ the recycling.",
+          "answerSpec": {
+            "accepted": [
+              "into"
+            ]
+          },
+          "hints": [
+            "Entrée dans un contenant."
+          ],
+          "distractors": [
+            "to",
+            "at",
+            "on"
+          ]
+        }
       ]
     },
     {
-      "id": "u133-a", "topicId": "u133", "tags": ["verbe-preposition", "about-for-of-after"],
-      "fields": { "regle": "about : talk about, complain about, dream about, care about. for : ask for, apply for, wait for, look for, pay for, search for. after : look after, take after." },
+      "id": "u127-a",
+      "topicId": "u127",
+      "tags": [
+        "prepositions",
+        "usages-divers"
+      ],
+      "fields": {
+        "regle": "Autres emplois : in English, in pen, in a loud voice ; on the phone, on television, on purpose, on a diet ; at the age of, at 100 miles an hour, at a speed of."
+      },
       "exercises": [
-        { "type": "produce", "prompt": "Traduis : Il a postulé pour un poste à Manchester.", "answerSpec": { "accepted": ["He applied for a job in Manchester"] }, "hints": ["apply for."] },
-        { "type": "produce", "prompt": "Traduis : Je cherche le rapport de mars.", "answerSpec": { "accepted": ["I am looking for the March report"] }, "hints": ["look for."] },
-        { "type": "produce", "prompt": "Traduis : Qui s'occupe des nouveaux arrivants ?", "answerSpec": { "accepted": ["Who looks after the new starters"] }, "hints": ["look after = s'occuper de."] },
-        { "type": "fill_blank", "prompt": "Two people complained ___ the noise on the plateau.", "answerSpec": { "accepted": ["about"] }, "hints": ["complain about."] },
-        { "type": "fill_blank", "prompt": "We are still waiting ___ legal to sign off.", "answerSpec": { "accepted": ["for"] }, "hints": ["wait for."] },
-        { "type": "transform", "source": "She requested a bigger budget in September.", "prompt": "Réécris la phrase avec « ask for ».", "answerSpec": { "accepted": ["She asked for a bigger budget in September"] }, "hints": ["ask for."] },
-        { "type": "spot_error", "source": "I am waiting the client since ten o'clock.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["I have been waiting for the client since ten o'clock"] }, "hints": ["wait for, et since appelle le present perfect."] },
-        { "type": "mcq", "prompt": "Nobody wants to pay ___ the extra dashboards.", "answerSpec": { "accepted": ["for"] }, "distractors": ["of", "about", "to"], "hints": ["pay for something."] }
+        {
+          "type": "produce",
+          "prompt": "Traduis : Écris-le en anglais, au stylo.",
+          "answerSpec": {
+            "accepted": [
+              "Write it in English, in pen"
+            ]
+          },
+          "hints": [
+            "in English, in pen."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Elle est au téléphone avec le client.",
+          "answerSpec": {
+            "accepted": [
+              "She is on the phone to the client"
+            ]
+          },
+          "hints": [
+            "on the phone."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Il l'a fait exprès.",
+          "answerSpec": {
+            "accepted": [
+              "He did it on purpose"
+            ]
+          },
+          "hints": [
+            "on purpose."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "She became a partner ___ the age of thirty-one.",
+          "answerSpec": {
+            "accepted": [
+              "at"
+            ]
+          },
+          "hints": [
+            "at the age of."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The interview was ___ television last night.",
+          "answerSpec": {
+            "accepted": [
+              "on"
+            ]
+          },
+          "hints": [
+            "on television, sans article."
+          ]
+        },
+        {
+          "type": "transform",
+          "source": "He answered using a very loud voice.",
+          "prompt": "Réécris la fin avec « in ».",
+          "answerSpec": {
+            "accepted": [
+              "He answered in a very loud voice"
+            ]
+          },
+          "hints": [
+            "in a … voice."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "source": "Please do not write the form with pencil.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": {
+            "accepted": [
+              "Please do not write the form in pencil"
+            ]
+          },
+          "hints": [
+            "in pen, in pencil."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "The connector syncs ___ a speed of ten records a second.",
+          "answerSpec": {
+            "accepted": [
+              "at"
+            ]
+          },
+          "distractors": [
+            "in",
+            "on",
+            "by"
+          ],
+          "hints": [
+            "Une vitesse : at."
+          ]
+        }
       ]
     },
     {
-      "id": "u134-a", "topicId": "u134", "tags": ["verbe-preposition", "about-of"],
-      "fields": { "regle": "Nuance : think about = réfléchir à ; think of = avoir une idée, une opinion. remind somebody of = faire penser à ; remind somebody about = rappeler une échéance. hear about = apprendre ; hear of = connaître l'existence." },
+      "id": "u127-b",
+      "topicId": "u127",
+      "tags": [
+        "prepositions",
+        "usages"
+      ],
+      "fields": {
+        "regle": "in English, in pen, in a loud voice ; on the phone, on purpose, on a diet ; at the age of, at a speed of, at fifty miles an hour."
+      },
       "exercises": [
-        { "type": "produce", "prompt": "Traduis : Je réfléchis à ta proposition.", "answerSpec": { "accepted": ["I am thinking about your proposal"] }, "hints": ["Réfléchir : think about."] },
-        { "type": "produce", "prompt": "Traduis : Que penses-tu du nouveau plateau ?", "answerSpec": { "accepted": ["What do you think of the new floor"] }, "hints": ["Une opinion : think of."] },
-        { "type": "produce", "prompt": "Traduis : Elle me fait penser à ma sœur.", "answerSpec": { "accepted": ["She reminds me of my sister"] }, "hints": ["remind of : ressemblance."] },
-        { "type": "fill_blank", "prompt": "Can you remind me ___ the deadline tomorrow?", "answerSpec": { "accepted": ["about", "of"] }, "hints": ["Un rappel d'échéance."] },
-        { "type": "fill_blank", "prompt": "I had never heard ___ that supplier before.", "answerSpec": { "accepted": ["of"] }, "hints": ["Connaître l'existence."] },
-        { "type": "transform", "source": "Somebody told me about the reorganisation last week.", "prompt": "Réécris la phrase avec « I heard about ».", "answerSpec": { "accepted": ["I heard about the reorganisation last week"] }, "hints": ["hear about : apprendre une nouvelle."] },
-        { "type": "spot_error", "source": "What do you think about the second candidate? Brilliant.", "prompt": "Corrige pour demander une opinion.", "answerSpec": { "accepted": ["What do you think of the second candidate? Brilliant"] }, "hints": ["Une opinion appelle think of."] },
-        { "type": "mcq", "prompt": "That smell always reminds me ___ the old office.", "answerSpec": { "accepted": ["of"] }, "distractors": ["about", "to", "with"], "hints": ["Ressemblance, souvenir."] }
+        {
+          "type": "produce",
+          "prompt": "Traduis : Elle est au téléphone avec le fournisseur.",
+          "answerSpec": {
+            "accepted": [
+              "She is on the phone to the supplier"
+            ]
+          },
+          "hints": [
+            "on the phone."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Écris-le en anglais, s'il te plaît.",
+          "answerSpec": {
+            "accepted": [
+              "Write it in English, please"
+            ]
+          },
+          "hints": [
+            "in English."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Il est devenu associé à trente-deux ans.",
+          "answerSpec": {
+            "accepted": [
+              "He became a partner at the age of thirty-two"
+            ]
+          },
+          "hints": [
+            "at the age of."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Nobody does that ___ purpose, I hope.",
+          "answerSpec": {
+            "accepted": [
+              "on"
+            ]
+          },
+          "hints": [
+            "on purpose."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The connector syncs ___ a rate of ten a second.",
+          "answerSpec": {
+            "accepted": [
+              "at"
+            ]
+          },
+          "hints": [
+            "Une vitesse."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "He answered using a very quiet voice.",
+          "answerSpec": {
+            "accepted": [
+              "He answered in a very quiet voice"
+            ]
+          },
+          "source": "He answered using a very quiet voice.",
+          "hints": [
+            "in a … voice."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "Please fill in the form with pen, not with pencil.",
+          "answerSpec": {
+            "accepted": [
+              "Please fill in the form in pen, not in pencil"
+            ]
+          },
+          "source": "Please fill in the form with pen, not with pencil.",
+          "hints": [
+            "in pen, in pencil."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "I saw the whole town hall ___ television.",
+          "answerSpec": {
+            "accepted": [
+              "on"
+            ]
+          },
+          "hints": [
+            "on television, sans article."
+          ],
+          "distractors": [
+            "in",
+            "at",
+            "by"
+          ]
+        }
       ]
     },
     {
-      "id": "u135-a", "topicId": "u135", "tags": ["verbe-preposition", "of-for-from-on"],
-      "fields": { "regle": "of : accuse of, approve of, consist of, suspect of. for : blame for, thank for, forgive for. from : suffer from, protect from, prevent from. on : depend on, rely on, insist on, live on, concentrate on." },
+      "id": "u128-a",
+      "topicId": "u128",
+      "tags": [
+        "prepositions",
+        "by"
+      ],
+      "fields": {
+        "regle": "by dit l'agent au passif (« written by Anna »), le moyen de transport sans article (« by train »), le moyen (« by email », « by mistake ») et la marge d'écart (« by two points »)."
+      },
       "exercises": [
-        { "type": "produce", "prompt": "Traduis : Cela dépend du budget.", "answerSpec": { "accepted": ["It depends on the budget"] }, "hints": ["depend on."] },
-        { "type": "produce", "prompt": "Traduis : L'équipe se compose de six personnes.", "answerSpec": { "accepted": ["The team consists of six people"] }, "hints": ["consist of."] },
-        { "type": "produce", "prompt": "Traduis : Il a insisté pour relire le contrat.", "answerSpec": { "accepted": ["He insisted on reading the contract"] }, "hints": ["insist on + -ing."] },
-        { "type": "fill_blank", "prompt": "Nobody blamed the intern ___ the broken build.", "answerSpec": { "accepted": ["for"] }, "hints": ["blame somebody for."] },
-        { "type": "fill_blank", "prompt": "You can rely ___ her to write the handover properly.", "answerSpec": { "accepted": ["on"] }, "hints": ["rely on."] },
-        { "type": "transform", "source": "The guardrails stop the model from leaking data.", "prompt": "Réécris la phrase avec « prevent ».", "answerSpec": { "accepted": ["The guardrails prevent the model from leaking data"] }, "hints": ["prevent somebody from -ing."] },
-        { "type": "spot_error", "source": "Everything depends of the steering group.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["Everything depends on the steering group"] }, "hints": ["depend on, jamais of."] },
-        { "type": "mcq", "prompt": "She thanked the team ___ staying late.", "answerSpec": { "accepted": ["for"] }, "distractors": ["of", "on", "about"], "hints": ["thank somebody for."] }
+        {
+          "type": "produce",
+          "prompt": "Traduis : Le rapport a été écrit par le stagiaire.",
+          "answerSpec": {
+            "accepted": [
+              "The report was written by the intern"
+            ]
+          },
+          "hints": [
+            "Agent du passif."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Je viens en train.",
+          "answerSpec": {
+            "accepted": [
+              "I am coming by train"
+            ]
+          },
+          "hints": [
+            "by + transport, sans article."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Je l'ai envoyé par erreur.",
+          "answerSpec": {
+            "accepted": [
+              "I sent it by mistake"
+            ]
+          },
+          "hints": [
+            "by mistake."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Send the figures ___ email before close of play.",
+          "answerSpec": {
+            "accepted": [
+              "by"
+            ]
+          },
+          "hints": [
+            "Un moyen de transmission."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "We missed the target ___ four points.",
+          "answerSpec": {
+            "accepted": [
+              "by"
+            ]
+          },
+          "hints": [
+            "Un écart chiffré."
+          ]
+        },
+        {
+          "type": "transform",
+          "source": "Anna designed the whole floor plan.",
+          "prompt": "Mets la phrase au passif.",
+          "answerSpec": {
+            "accepted": [
+              "The whole floor plan was designed by Anna"
+            ]
+          },
+          "hints": [
+            "by introduit l'agent."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "source": "I always travel by the car when it rains.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": {
+            "accepted": [
+              "I always travel by car when it rains"
+            ]
+          },
+          "hints": [
+            "Pas d'article après by."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "The paper was signed ___ hand, which surprised everyone.",
+          "answerSpec": {
+            "accepted": [
+              "by"
+            ]
+          },
+          "distractors": [
+            "with",
+            "in",
+            "at"
+          ],
+          "hints": [
+            "by hand : à la main."
+          ]
+        }
       ]
     },
     {
-      "id": "u136-a", "topicId": "u136", "tags": ["verbe-preposition", "in-into-with-to-on"],
-      "fields": { "regle": "in : believe in, succeed in, specialise in. into : crash into, divide into, translate into. with : collide with, provide with, agree with. to : happen to, prefer to, refer to. on : spend on, comment on." },
+      "id": "u128-b",
+      "topicId": "u128",
+      "tags": [
+        "prepositions",
+        "by"
+      ],
+      "fields": {
+        "regle": "by dit l'agent du passif, le moyen de transport sans article, le moyen tout court et la marge d'écart."
+      },
       "exercises": [
-        { "type": "produce", "prompt": "Traduis : Nous avons réussi à réduire le parc immobilier.", "answerSpec": { "accepted": ["We succeeded in cutting the estate"] }, "hints": ["succeed in + -ing."] },
-        { "type": "produce", "prompt": "Traduis : Le rapport est divisé en trois parties.", "answerSpec": { "accepted": ["The report is divided into three parts"] }, "hints": ["divide into."] },
-        { "type": "produce", "prompt": "Traduis : Je suis d'accord avec toi sur ce point.", "answerSpec": { "accepted": ["I agree with you on that point"] }, "hints": ["agree with somebody on something."] },
-        { "type": "fill_blank", "prompt": "The firm specialises ___ workplace transformation.", "answerSpec": { "accepted": ["in"] }, "hints": ["specialise in."] },
-        { "type": "fill_blank", "prompt": "They spent a fortune ___ licences nobody uses.", "answerSpec": { "accepted": ["on"] }, "hints": ["spend money on."] },
-        { "type": "transform", "source": "Could you put this deck into French before Friday?", "prompt": "Réécris la phrase avec « translate ».", "answerSpec": { "accepted": ["Could you translate this deck into French before Friday"] }, "hints": ["translate into."] },
-        { "type": "spot_error", "source": "The consultant provided us of a very short summary.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["The consultant provided us with a very short summary"] }, "hints": ["provide somebody with something."] },
-        { "type": "mcq", "prompt": "She refused to comment ___ the day rate.", "answerSpec": { "accepted": ["on"] }, "distractors": ["about", "of", "to"], "hints": ["comment on."] }
+        {
+          "type": "produce",
+          "prompt": "Traduis : Ça a été décidé par le comité de pilotage.",
+          "answerSpec": {
+            "accepted": [
+              "It was decided by the steering group"
+            ]
+          },
+          "hints": [
+            "Agent du passif."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Elle vient en train tous les mardis.",
+          "answerSpec": {
+            "accepted": [
+              "She comes by train every Tuesday"
+            ]
+          },
+          "hints": [
+            "by + transport, sans article."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Nous avons raté la cible de deux points.",
+          "answerSpec": {
+            "accepted": [
+              "We missed the target by two points"
+            ]
+          },
+          "hints": [
+            "Écart chiffré."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Send the pack ___ email before close of play.",
+          "answerSpec": {
+            "accepted": [
+              "by"
+            ]
+          },
+          "hints": [
+            "Moyen de transmission."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The whole thing was signed ___ hand, oddly enough.",
+          "answerSpec": {
+            "accepted": [
+              "by"
+            ]
+          },
+          "hints": [
+            "by hand."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "The intern wrote the minutes.",
+          "answerSpec": {
+            "accepted": [
+              "The minutes were written by the intern"
+            ]
+          },
+          "source": "The intern wrote the minutes.",
+          "hints": [
+            "Passif, agent avec by."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "I always travel by the train when it rains.",
+          "answerSpec": {
+            "accepted": [
+              "I always travel by train when it rains"
+            ]
+          },
+          "source": "I always travel by the train when it rains.",
+          "hints": [
+            "Pas d'article après by."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "He got the job ___ knowing the right people.",
+          "answerSpec": {
+            "accepted": [
+              "by"
+            ]
+          },
+          "hints": [
+            "Moyen."
+          ],
+          "distractors": [
+            "with",
+            "for",
+            "through of"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u129-a",
+      "topicId": "u129",
+      "tags": [
+        "nom-preposition"
+      ],
+      "fields": {
+        "regle": "Chaque nom impose sa préposition : a reason for, a cause of, an increase in, a demand for, an advantage of, a solution to, an attitude to, a relationship with."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : la raison du retard",
+          "answerSpec": {
+            "accepted": [
+              "the reason for the delay"
+            ]
+          },
+          "hints": [
+            "reason for."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : la cause de l'incident",
+          "answerSpec": {
+            "accepted": [
+              "the cause of the incident"
+            ]
+          },
+          "hints": [
+            "cause of."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : une solution à ce problème",
+          "answerSpec": {
+            "accepted": [
+              "a solution to this problem"
+            ]
+          },
+          "hints": [
+            "solution to, jamais of."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "There has been a sharp increase ___ desk bookings.",
+          "answerSpec": {
+            "accepted": [
+              "in"
+            ]
+          },
+          "hints": [
+            "increase in."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The main advantage ___ hot-desking is the floor space.",
+          "answerSpec": {
+            "accepted": [
+              "of"
+            ]
+          },
+          "hints": [
+            "advantage of."
+          ]
+        },
+        {
+          "type": "transform",
+          "source": "Why was the launch postponed? Give the explanation.",
+          "prompt": "Complète : « We still do not know the reason … »",
+          "answerSpec": {
+            "accepted": [
+              "We still do not know the reason for the postponement"
+            ]
+          },
+          "hints": [
+            "reason for."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "source": "Nobody could find a solution of the licensing problem.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": {
+            "accepted": [
+              "Nobody could find a solution to the licensing problem"
+            ]
+          },
+          "hints": [
+            "solution to."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "She has a good working relationship ___ the steering group.",
+          "answerSpec": {
+            "accepted": [
+              "with"
+            ]
+          },
+          "distractors": [
+            "to",
+            "of",
+            "for"
+          ],
+          "hints": [
+            "relationship with."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u129-b",
+      "topicId": "u129",
+      "tags": [
+        "nom-preposition"
+      ],
+      "fields": {
+        "regle": "Chaque nom impose sa préposition : a reason for, a cause of, an increase in, a demand for, an attitude to, a relationship with, a solution to."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : la cause du retard",
+          "answerSpec": {
+            "accepted": [
+              "the cause of the delay"
+            ]
+          },
+          "hints": [
+            "cause of."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : une forte demande de bureaux fermés",
+          "answerSpec": {
+            "accepted": [
+              "a strong demand for closed offices"
+            ]
+          },
+          "hints": [
+            "demand for."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : son attitude vis-à-vis du télétravail",
+          "answerSpec": {
+            "accepted": [
+              "her attitude to working from home"
+            ]
+          },
+          "hints": [
+            "attitude to."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "There has been a sharp fall ___ desk bookings.",
+          "answerSpec": {
+            "accepted": [
+              "in"
+            ]
+          },
+          "hints": [
+            "fall in."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "I can see no reason ___ that decision.",
+          "answerSpec": {
+            "accepted": [
+              "for"
+            ]
+          },
+          "hints": [
+            "reason for."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "Why did the pilot fail? Nobody explained.",
+          "answerSpec": {
+            "accepted": [
+              "Nobody explained the reason for the failure"
+            ]
+          },
+          "source": "Why did the pilot fail? Nobody explained.",
+          "hints": [
+            "reason for."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "We finally found a solution of the licensing mess.",
+          "answerSpec": {
+            "accepted": [
+              "We finally found a solution to the licensing mess"
+            ]
+          },
+          "source": "We finally found a solution of the licensing mess.",
+          "hints": [
+            "solution to."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "He has a difficult relationship ___ the finance team.",
+          "answerSpec": {
+            "accepted": [
+              "with"
+            ]
+          },
+          "hints": [
+            "relationship with."
+          ],
+          "distractors": [
+            "to",
+            "of",
+            "for"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u130-a",
+      "topicId": "u130",
+      "tags": [
+        "adjectif-preposition"
+      ],
+      "fields": {
+        "regle": "Premier lot : good at, bad at, interested in, keen on, fed up with, tired of, similar to, different from, married to."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Elle est douée pour les négociations.",
+          "answerSpec": {
+            "accepted": [
+              "She is good at negotiating"
+            ]
+          },
+          "hints": [
+            "good at + -ing."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Je m'intéresse à l'IA générative.",
+          "answerSpec": {
+            "accepted": [
+              "I am interested in generative AI"
+            ]
+          },
+          "hints": [
+            "interested in."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : J'en ai assez des réunions du lundi.",
+          "answerSpec": {
+            "accepted": [
+              "I am fed up with Monday meetings"
+            ]
+          },
+          "hints": [
+            "fed up with."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "This approach is very similar ___ the one we dropped.",
+          "answerSpec": {
+            "accepted": [
+              "to"
+            ]
+          },
+          "hints": [
+            "similar to."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "He is married ___ a colleague from the Cardiff office.",
+          "answerSpec": {
+            "accepted": [
+              "to"
+            ]
+          },
+          "hints": [
+            "married to, jamais with."
+          ]
+        },
+        {
+          "type": "transform",
+          "source": "British understatement is not the same as French politeness.",
+          "prompt": "Réécris la phrase avec « different from ».",
+          "answerSpec": {
+            "accepted": [
+              "British understatement is different from French politeness"
+            ]
+          },
+          "hints": [
+            "different from en britannique."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "source": "She is very good in explaining trade-offs.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": {
+            "accepted": [
+              "She is very good at explaining trade-offs"
+            ]
+          },
+          "hints": [
+            "good at, toujours."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "I am not particularly keen ___ open-plan floors.",
+          "answerSpec": {
+            "accepted": [
+              "on"
+            ]
+          },
+          "distractors": [
+            "of",
+            "to",
+            "with"
+          ],
+          "hints": [
+            "keen on."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u130-b",
+      "topicId": "u130",
+      "tags": [
+        "adjectif-preposition"
+      ],
+      "fields": {
+        "regle": "good at, bad at, interested in, keen on, fed up with, tired of, similar to, different from, married to, famous for."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Il est nul en négociation.",
+          "answerSpec": {
+            "accepted": [
+              "He is bad at negotiating"
+            ]
+          },
+          "hints": [
+            "bad at + -ing."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : J'en ai assez de ce plateau bruyant.",
+          "answerSpec": {
+            "accepted": [
+              "I am fed up with this noisy floor"
+            ]
+          },
+          "hints": [
+            "fed up with."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Ce cas est différent du précédent.",
+          "answerSpec": {
+            "accepted": [
+              "This case is different from the previous one"
+            ]
+          },
+          "hints": [
+            "different from."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "She is very keen ___ activity-based working.",
+          "answerSpec": {
+            "accepted": [
+              "on"
+            ]
+          },
+          "hints": [
+            "keen on."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "I am tired ___ hearing about flex office.",
+          "answerSpec": {
+            "accepted": [
+              "of"
+            ]
+          },
+          "hints": [
+            "tired of."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "Their proposal resembles ours.",
+          "answerSpec": {
+            "accepted": [
+              "Their proposal is similar to ours"
+            ]
+          },
+          "source": "Their proposal resembles ours.",
+          "hints": [
+            "similar to."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "He is married with a colleague from Leeds.",
+          "answerSpec": {
+            "accepted": [
+              "He is married to a colleague from Leeds"
+            ]
+          },
+          "source": "He is married with a colleague from Leeds.",
+          "hints": [
+            "married to."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Are you interested ___ running the workshop?",
+          "answerSpec": {
+            "accepted": [
+              "in"
+            ]
+          },
+          "hints": [
+            "interested in + -ing."
+          ],
+          "distractors": [
+            "to",
+            "by",
+            "for"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u131-a",
+      "topicId": "u131",
+      "tags": [
+        "adjectif-preposition"
+      ],
+      "fields": {
+        "regle": "Deuxième lot : sorry about (une situation), sorry for (ce qu'on a fait), afraid of, proud of, aware of, responsible for, famous for, surprised at ou by."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Je suis désolé pour le retard.",
+          "answerSpec": {
+            "accepted": [
+              "I am sorry about the delay"
+            ]
+          },
+          "hints": [
+            "sorry about + situation."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Il est responsable du déploiement.",
+          "answerSpec": {
+            "accepted": [
+              "He is responsible for the rollout"
+            ]
+          },
+          "hints": [
+            "responsible for."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Bristol est connue pour ses murs peints.",
+          "answerSpec": {
+            "accepted": [
+              "Bristol is famous for its painted walls"
+            ]
+          },
+          "hints": [
+            "famous for."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Were you aware ___ the data-residency clause?",
+          "answerSpec": {
+            "accepted": [
+              "of"
+            ]
+          },
+          "hints": [
+            "aware of."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Everyone was surprised ___ how quickly it shipped.",
+          "answerSpec": {
+            "accepted": [
+              "at",
+              "by"
+            ]
+          },
+          "hints": [
+            "Les deux se disent."
+          ]
+        },
+        {
+          "type": "transform",
+          "source": "He apologised because he had missed the handover.",
+          "prompt": "Réécris avec « sorry for ».",
+          "answerSpec": {
+            "accepted": [
+              "He was sorry for missing the handover"
+            ]
+          },
+          "hints": [
+            "sorry for + -ing."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "source": "She is responsible of the workplace programme.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": {
+            "accepted": [
+              "She is responsible for the workplace programme"
+            ]
+          },
+          "hints": [
+            "responsible for."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "He is genuinely proud ___ what the team shipped.",
+          "answerSpec": {
+            "accepted": [
+              "of"
+            ]
+          },
+          "distractors": [
+            "for",
+            "about",
+            "with"
+          ],
+          "hints": [
+            "proud of."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u131-b",
+      "topicId": "u131",
+      "tags": [
+        "adjectif-preposition"
+      ],
+      "fields": {
+        "regle": "sorry about une situation, sorry for un acte ; afraid of, proud of, aware of, responsible for, surprised at, capable of, short of."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Je suis désolé de t'avoir interrompu.",
+          "answerSpec": {
+            "accepted": [
+              "I am sorry for interrupting you"
+            ]
+          },
+          "hints": [
+            "sorry for + -ing."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Nous sommes à court de licences.",
+          "answerSpec": {
+            "accepted": [
+              "We are short of licences"
+            ]
+          },
+          "hints": [
+            "short of."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Elle est fière de ce que l'équipe a livré.",
+          "answerSpec": {
+            "accepted": [
+              "She is proud of what the team shipped"
+            ]
+          },
+          "hints": [
+            "proud of."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Were you aware ___ the retention rules?",
+          "answerSpec": {
+            "accepted": [
+              "of"
+            ]
+          },
+          "hints": [
+            "aware of."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "He is responsible ___ the whole estate programme.",
+          "answerSpec": {
+            "accepted": [
+              "for"
+            ]
+          },
+          "hints": [
+            "responsible for."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "Nobody expected the finance team to agree.",
+          "answerSpec": {
+            "accepted": [
+              "Everyone was surprised at the finance team agreeing"
+            ]
+          },
+          "source": "Nobody expected the finance team to agree.",
+          "hints": [
+            "surprised at."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "I am sorry of the delay, it was my fault.",
+          "answerSpec": {
+            "accepted": [
+              "I am sorry about the delay, it was my fault"
+            ]
+          },
+          "source": "I am sorry of the delay, it was my fault.",
+          "hints": [
+            "sorry about + situation."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "That model is perfectly ___ of writing a policy.",
+          "answerSpec": {
+            "accepted": [
+              "capable"
+            ]
+          },
+          "hints": [
+            "capable of."
+          ],
+          "distractors": [
+            "able",
+            "possible",
+            "likely"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u132-a",
+      "topicId": "u132",
+      "tags": [
+        "verbe-preposition",
+        "to-at"
+      ],
+      "fields": {
+        "regle": "to : talk to, speak to, listen to, explain to, apologise to, belong to, happen to. at : look at, stare at, shout at (agressif), laugh at, point at, aim at."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Il faut que je parle au client.",
+          "answerSpec": {
+            "accepted": [
+              "I need to speak to the client",
+              "I need to talk to the client"
+            ]
+          },
+          "hints": [
+            "speak to, talk to."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Regarde ces chiffres.",
+          "answerSpec": {
+            "accepted": [
+              "Look at these figures"
+            ]
+          },
+          "hints": [
+            "look at."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Peux-tu m'expliquer le contrat ?",
+          "answerSpec": {
+            "accepted": [
+              "Can you explain the contract to me"
+            ]
+          },
+          "hints": [
+            "explain something to somebody."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Nobody listens ___ the safety briefing any more.",
+          "answerSpec": {
+            "accepted": [
+              "to"
+            ]
+          },
+          "hints": [
+            "listen to."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "He shouted ___ the contractor, which helped nobody.",
+          "answerSpec": {
+            "accepted": [
+              "at"
+            ]
+          },
+          "hints": [
+            "shout at : agressif."
+          ]
+        },
+        {
+          "type": "transform",
+          "source": "She apologised. The whole floor heard her.",
+          "prompt": "Complète : « She apologised … the whole floor ».",
+          "answerSpec": {
+            "accepted": [
+              "She apologised to the whole floor"
+            ]
+          },
+          "hints": [
+            "apologise to somebody."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "source": "Could you explain me the trade-off again?",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": {
+            "accepted": [
+              "Could you explain the trade-off to me again"
+            ]
+          },
+          "hints": [
+            "explain n'admet pas de complément direct de personne."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "That laptop belongs ___ the Cardiff office.",
+          "answerSpec": {
+            "accepted": [
+              "to"
+            ]
+          },
+          "distractors": [
+            "at",
+            "of",
+            "with"
+          ],
+          "hints": [
+            "belong to."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u132-b",
+      "topicId": "u132",
+      "tags": [
+        "verbe-preposition",
+        "to-at"
+      ],
+      "fields": {
+        "regle": "to : talk to, listen to, explain to, apologise to, belong to, happen to. at : look at, stare at, shout at, laugh at, point at."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Personne n'écoute la présentation de sécurité.",
+          "answerSpec": {
+            "accepted": [
+              "Nobody listens to the safety briefing"
+            ]
+          },
+          "hints": [
+            "listen to."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Qu'est-ce qui est arrivé au connecteur ?",
+          "answerSpec": {
+            "accepted": [
+              "What happened to the connector"
+            ]
+          },
+          "hints": [
+            "happen to."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Il s'est excusé auprès de toute l'équipe.",
+          "answerSpec": {
+            "accepted": [
+              "He apologised to the whole team"
+            ]
+          },
+          "hints": [
+            "apologise to."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Stop staring ___ your phone during the demo.",
+          "answerSpec": {
+            "accepted": [
+              "at"
+            ]
+          },
+          "hints": [
+            "stare at."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "That badge belongs ___ the Cardiff office.",
+          "answerSpec": {
+            "accepted": [
+              "to"
+            ]
+          },
+          "hints": [
+            "belong to."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "Please describe the trade-off to me.",
+          "answerSpec": {
+            "accepted": [
+              "Please explain the trade-off to me"
+            ]
+          },
+          "source": "Please describe the trade-off to me.",
+          "hints": [
+            "explain to."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "Can you explain me why the scope changed?",
+          "answerSpec": {
+            "accepted": [
+              "Can you explain to me why the scope changed"
+            ]
+          },
+          "source": "Can you explain me why the scope changed?",
+          "hints": [
+            "explain n'admet pas de complément direct de personne."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Everyone laughed ___ the third slide.",
+          "answerSpec": {
+            "accepted": [
+              "at"
+            ]
+          },
+          "hints": [
+            "laugh at."
+          ],
+          "distractors": [
+            "of",
+            "to",
+            "about of"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u133-a",
+      "topicId": "u133",
+      "tags": [
+        "verbe-preposition",
+        "about-for-of-after"
+      ],
+      "fields": {
+        "regle": "about : talk about, complain about, dream about, care about. for : ask for, apply for, wait for, look for, pay for, search for. after : look after, take after."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Il a postulé pour un poste à Manchester.",
+          "answerSpec": {
+            "accepted": [
+              "He applied for a job in Manchester"
+            ]
+          },
+          "hints": [
+            "apply for."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Je cherche le rapport de mars.",
+          "answerSpec": {
+            "accepted": [
+              "I am looking for the March report"
+            ]
+          },
+          "hints": [
+            "look for."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Qui s'occupe des nouveaux arrivants ?",
+          "answerSpec": {
+            "accepted": [
+              "Who looks after the new starters"
+            ]
+          },
+          "hints": [
+            "look after = s'occuper de."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Two people complained ___ the noise on the plateau.",
+          "answerSpec": {
+            "accepted": [
+              "about"
+            ]
+          },
+          "hints": [
+            "complain about."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "We are still waiting ___ legal to sign off.",
+          "answerSpec": {
+            "accepted": [
+              "for"
+            ]
+          },
+          "hints": [
+            "wait for."
+          ]
+        },
+        {
+          "type": "transform",
+          "source": "She requested a bigger budget in September.",
+          "prompt": "Réécris la phrase avec « ask for ».",
+          "answerSpec": {
+            "accepted": [
+              "She asked for a bigger budget in September"
+            ]
+          },
+          "hints": [
+            "ask for."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "source": "I am waiting the client since ten o'clock.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": {
+            "accepted": [
+              "I have been waiting for the client since ten o'clock"
+            ]
+          },
+          "hints": [
+            "wait for, et since appelle le present perfect."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Nobody wants to pay ___ the extra dashboards.",
+          "answerSpec": {
+            "accepted": [
+              "for"
+            ]
+          },
+          "distractors": [
+            "of",
+            "about",
+            "to"
+          ],
+          "hints": [
+            "pay for something."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u133-b",
+      "topicId": "u133",
+      "tags": [
+        "verbe-preposition",
+        "about-for-after"
+      ],
+      "fields": {
+        "regle": "about : talk about, complain about, care about. for : ask for, apply for, wait for, look for, pay for. after : look after, take after."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Qui s'occupe des nouveaux arrivants ?",
+          "answerSpec": {
+            "accepted": [
+              "Who looks after the new starters"
+            ]
+          },
+          "hints": [
+            "look after."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Elle a demandé une augmentation en septembre.",
+          "answerSpec": {
+            "accepted": [
+              "She asked for a rise in September"
+            ]
+          },
+          "hints": [
+            "ask for."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Nous attendons toujours la réponse du service juridique.",
+          "answerSpec": {
+            "accepted": [
+              "We are still waiting for legal to answer"
+            ]
+          },
+          "hints": [
+            "wait for."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Two people complained ___ the temperature on the floor.",
+          "answerSpec": {
+            "accepted": [
+              "about"
+            ]
+          },
+          "hints": [
+            "complain about."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "He applied ___ a job in Manchester last month.",
+          "answerSpec": {
+            "accepted": [
+              "for"
+            ]
+          },
+          "hints": [
+            "apply for."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "He resembles his father in every way.",
+          "answerSpec": {
+            "accepted": [
+              "He takes after his father in every way"
+            ]
+          },
+          "source": "He resembles his father in every way.",
+          "hints": [
+            "take after."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "Nobody wants to pay the extra dashboards.",
+          "answerSpec": {
+            "accepted": [
+              "Nobody wants to pay for the extra dashboards"
+            ]
+          },
+          "source": "Nobody wants to pay the extra dashboards.",
+          "hints": [
+            "pay for something."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "I am ___ for the March version of the report.",
+          "answerSpec": {
+            "accepted": [
+              "looking"
+            ]
+          },
+          "hints": [
+            "look for."
+          ],
+          "distractors": [
+            "searching",
+            "waiting",
+            "asking"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u134-a",
+      "topicId": "u134",
+      "tags": [
+        "verbe-preposition",
+        "about-of"
+      ],
+      "fields": {
+        "regle": "Nuance : think about = réfléchir à ; think of = avoir une idée, une opinion. remind somebody of = faire penser à ; remind somebody about = rappeler une échéance. hear about = apprendre ; hear of = connaître l'existence."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Je réfléchis à ta proposition.",
+          "answerSpec": {
+            "accepted": [
+              "I am thinking about your proposal"
+            ]
+          },
+          "hints": [
+            "Réfléchir : think about."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Que penses-tu du nouveau plateau ?",
+          "answerSpec": {
+            "accepted": [
+              "What do you think of the new floor"
+            ]
+          },
+          "hints": [
+            "Une opinion : think of."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Elle me fait penser à ma sœur.",
+          "answerSpec": {
+            "accepted": [
+              "She reminds me of my sister"
+            ]
+          },
+          "hints": [
+            "remind of : ressemblance."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Can you remind me ___ the deadline tomorrow?",
+          "answerSpec": {
+            "accepted": [
+              "about",
+              "of"
+            ]
+          },
+          "hints": [
+            "Un rappel d'échéance."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "I had never heard ___ that supplier before.",
+          "answerSpec": {
+            "accepted": [
+              "of"
+            ]
+          },
+          "hints": [
+            "Connaître l'existence."
+          ]
+        },
+        {
+          "type": "transform",
+          "source": "Somebody told me about the reorganisation last week.",
+          "prompt": "Réécris la phrase avec « I heard about ».",
+          "answerSpec": {
+            "accepted": [
+              "I heard about the reorganisation last week"
+            ]
+          },
+          "hints": [
+            "hear about : apprendre une nouvelle."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "source": "What do you think about the second candidate? Brilliant.",
+          "prompt": "Corrige pour demander une opinion.",
+          "answerSpec": {
+            "accepted": [
+              "What do you think of the second candidate? Brilliant"
+            ]
+          },
+          "hints": [
+            "Une opinion appelle think of."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "That smell always reminds me ___ the old office.",
+          "answerSpec": {
+            "accepted": [
+              "of"
+            ]
+          },
+          "distractors": [
+            "about",
+            "to",
+            "with"
+          ],
+          "hints": [
+            "Ressemblance, souvenir."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u134-b",
+      "topicId": "u134",
+      "tags": [
+        "verbe-preposition",
+        "about-of"
+      ],
+      "fields": {
+        "regle": "think about réfléchir, think of avoir une opinion ; remind of ressembler, remind about rappeler une échéance ; hear about apprendre, hear of connaître l'existence."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Que penses-tu de leur proposition ?",
+          "answerSpec": {
+            "accepted": [
+              "What do you think of their proposal"
+            ]
+          },
+          "hints": [
+            "Une opinion : think of."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Je réfléchis encore à la date de départ.",
+          "answerSpec": {
+            "accepted": [
+              "I am still thinking about the departure date"
+            ]
+          },
+          "hints": [
+            "Réfléchir : think about."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Ce bâtiment me rappelle mon ancienne école.",
+          "answerSpec": {
+            "accepted": [
+              "That building reminds me of my old school"
+            ]
+          },
+          "hints": [
+            "remind of."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Can you remind me ___ the deadline tomorrow morning?",
+          "answerSpec": {
+            "accepted": [
+              "about",
+              "of"
+            ]
+          },
+          "hints": [
+            "Rappel d'échéance."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "I had never heard ___ that consultancy before today.",
+          "answerSpec": {
+            "accepted": [
+              "of"
+            ]
+          },
+          "hints": [
+            "Connaître l'existence."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "Somebody told me about the reorganisation.",
+          "answerSpec": {
+            "accepted": [
+              "I heard about the reorganisation"
+            ]
+          },
+          "source": "Somebody told me about the reorganisation.",
+          "hints": [
+            "hear about."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "What do you think about the second supplier? Excellent.",
+          "answerSpec": {
+            "accepted": [
+              "What do you think of the second supplier? Excellent"
+            ]
+          },
+          "source": "What do you think about the second supplier? Excellent.",
+          "hints": [
+            "Une opinion appelle think of."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "That smell always reminds me ___ the old canteen.",
+          "answerSpec": {
+            "accepted": [
+              "of"
+            ]
+          },
+          "hints": [
+            "Ressemblance, souvenir."
+          ],
+          "distractors": [
+            "about",
+            "to",
+            "with"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u135-a",
+      "topicId": "u135",
+      "tags": [
+        "verbe-preposition",
+        "of-for-from-on"
+      ],
+      "fields": {
+        "regle": "of : accuse of, approve of, consist of, suspect of. for : blame for, thank for, forgive for. from : suffer from, protect from, prevent from. on : depend on, rely on, insist on, live on, concentrate on."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Cela dépend du budget.",
+          "answerSpec": {
+            "accepted": [
+              "It depends on the budget"
+            ]
+          },
+          "hints": [
+            "depend on."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : L'équipe se compose de six personnes.",
+          "answerSpec": {
+            "accepted": [
+              "The team consists of six people"
+            ]
+          },
+          "hints": [
+            "consist of."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Il a insisté pour relire le contrat.",
+          "answerSpec": {
+            "accepted": [
+              "He insisted on reading the contract"
+            ]
+          },
+          "hints": [
+            "insist on + -ing."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Nobody blamed the intern ___ the broken build.",
+          "answerSpec": {
+            "accepted": [
+              "for"
+            ]
+          },
+          "hints": [
+            "blame somebody for."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "You can rely ___ her to write the handover properly.",
+          "answerSpec": {
+            "accepted": [
+              "on"
+            ]
+          },
+          "hints": [
+            "rely on."
+          ]
+        },
+        {
+          "type": "transform",
+          "source": "The guardrails stop the model from leaking data.",
+          "prompt": "Réécris la phrase avec « prevent ».",
+          "answerSpec": {
+            "accepted": [
+              "The guardrails prevent the model from leaking data"
+            ]
+          },
+          "hints": [
+            "prevent somebody from -ing."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "source": "Everything depends of the steering group.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": {
+            "accepted": [
+              "Everything depends on the steering group"
+            ]
+          },
+          "hints": [
+            "depend on, jamais of."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "She thanked the team ___ staying late.",
+          "answerSpec": {
+            "accepted": [
+              "for"
+            ]
+          },
+          "distractors": [
+            "of",
+            "on",
+            "about"
+          ],
+          "hints": [
+            "thank somebody for."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u135-b",
+      "topicId": "u135",
+      "tags": [
+        "verbe-preposition",
+        "of-for-from-on"
+      ],
+      "fields": {
+        "regle": "of : accuse of, approve of, consist of. for : blame for, thank for, forgive for. from : suffer from, protect from, prevent from. on : depend on, rely on, insist on, concentrate on."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Tout dépend du comité de pilotage.",
+          "answerSpec": {
+            "accepted": [
+              "Everything depends on the steering group"
+            ]
+          },
+          "hints": [
+            "depend on."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Personne n'a accusé le stagiaire de quoi que ce soit.",
+          "answerSpec": {
+            "accepted": [
+              "Nobody accused the intern of anything"
+            ]
+          },
+          "hints": [
+            "accuse of."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Les garde-fous empêchent le modèle de sortir des données.",
+          "answerSpec": {
+            "accepted": [
+              "The guardrails prevent the model from leaking data"
+            ]
+          },
+          "hints": [
+            "prevent from + -ing."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "You can rely ___ her to write a proper handover.",
+          "answerSpec": {
+            "accepted": [
+              "on"
+            ]
+          },
+          "hints": [
+            "rely on."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The programme consists ___ three phases and a review.",
+          "answerSpec": {
+            "accepted": [
+              "of"
+            ]
+          },
+          "hints": [
+            "consist of."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "He would not stop until he had read the contract.",
+          "answerSpec": {
+            "accepted": [
+              "He insisted on reading the contract"
+            ]
+          },
+          "source": "He would not stop until he had read the contract.",
+          "hints": [
+            "insist on + -ing."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "They thanked the team of staying late.",
+          "answerSpec": {
+            "accepted": [
+              "They thanked the team for staying late"
+            ]
+          },
+          "source": "They thanked the team of staying late.",
+          "hints": [
+            "thank somebody for."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "She has suffered ___ back pain since the office move.",
+          "answerSpec": {
+            "accepted": [
+              "from"
+            ]
+          },
+          "hints": [
+            "suffer from."
+          ],
+          "distractors": [
+            "of",
+            "with",
+            "by"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u136-a",
+      "topicId": "u136",
+      "tags": [
+        "verbe-preposition",
+        "in-into-with-to-on"
+      ],
+      "fields": {
+        "regle": "in : believe in, succeed in, specialise in. into : crash into, divide into, translate into. with : collide with, provide with, agree with. to : happen to, prefer to, refer to. on : spend on, comment on."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Nous avons réussi à réduire le parc immobilier.",
+          "answerSpec": {
+            "accepted": [
+              "We succeeded in cutting the estate"
+            ]
+          },
+          "hints": [
+            "succeed in + -ing."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Le rapport est divisé en trois parties.",
+          "answerSpec": {
+            "accepted": [
+              "The report is divided into three parts"
+            ]
+          },
+          "hints": [
+            "divide into."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Je suis d'accord avec toi sur ce point.",
+          "answerSpec": {
+            "accepted": [
+              "I agree with you on that point"
+            ]
+          },
+          "hints": [
+            "agree with somebody on something."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The firm specialises ___ workplace transformation.",
+          "answerSpec": {
+            "accepted": [
+              "in"
+            ]
+          },
+          "hints": [
+            "specialise in."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "They spent a fortune ___ licences nobody uses.",
+          "answerSpec": {
+            "accepted": [
+              "on"
+            ]
+          },
+          "hints": [
+            "spend money on."
+          ]
+        },
+        {
+          "type": "transform",
+          "source": "Could you put this deck into French before Friday?",
+          "prompt": "Réécris la phrase avec « translate ».",
+          "answerSpec": {
+            "accepted": [
+              "Could you translate this deck into French before Friday"
+            ]
+          },
+          "hints": [
+            "translate into."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "source": "The consultant provided us of a very short summary.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": {
+            "accepted": [
+              "The consultant provided us with a very short summary"
+            ]
+          },
+          "hints": [
+            "provide somebody with something."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "She refused to comment ___ the day rate.",
+          "answerSpec": {
+            "accepted": [
+              "on"
+            ]
+          },
+          "distractors": [
+            "about",
+            "of",
+            "to"
+          ],
+          "hints": [
+            "comment on."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u136-b",
+      "topicId": "u136",
+      "tags": [
+        "verbe-preposition",
+        "in-into-with"
+      ],
+      "fields": {
+        "regle": "in : believe in, succeed in, specialise in. into : crash into, divide into, translate into. with : provide with, collide with, agree with. on : spend on, comment on."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Le cabinet est spécialisé dans l'environnement de travail.",
+          "answerSpec": {
+            "accepted": [
+              "The firm specialises in workplace transformation"
+            ]
+          },
+          "hints": [
+            "specialise in."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Peux-tu traduire ce document en gallois ?",
+          "answerSpec": {
+            "accepted": [
+              "Can you translate that document into Welsh"
+            ]
+          },
+          "hints": [
+            "translate into."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Ils ont dépensé une fortune en licences.",
+          "answerSpec": {
+            "accepted": [
+              "They spent a fortune on licences"
+            ]
+          },
+          "hints": [
+            "spend on."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The report is divided ___ four sections and an annexe.",
+          "answerSpec": {
+            "accepted": [
+              "into"
+            ]
+          },
+          "hints": [
+            "divide into."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "She refused to comment ___ the day rate.",
+          "answerSpec": {
+            "accepted": [
+              "on"
+            ]
+          },
+          "hints": [
+            "comment on."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "They gave us a very short summary.",
+          "answerSpec": {
+            "accepted": [
+              "They provided us with a very short summary"
+            ]
+          },
+          "source": "They gave us a very short summary.",
+          "hints": [
+            "provide with."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "I agree with you about that the scope has changed.",
+          "answerSpec": {
+            "accepted": [
+              "I agree with you that the scope has changed"
+            ]
+          },
+          "source": "I agree with you about that the scope has changed.",
+          "hints": [
+            "about et that ne se cumulent pas."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Nobody believes ___ that roadmap any more.",
+          "answerSpec": {
+            "accepted": [
+              "in"
+            ]
+          },
+          "hints": [
+            "believe in."
+          ],
+          "distractors": [
+            "to",
+            "at",
+            "on"
+          ]
+        }
       ]
     }
   ]
