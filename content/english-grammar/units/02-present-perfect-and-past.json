@@ -198,7 +198,7 @@
         },
         {
           "type": "transform",
-          "prompt": "The client answered. We can start now.",
+          "prompt": "Fais des deux phrases une seule : le résultat compte maintenant.",
           "answerSpec": {
             "accepted": [
               "The client has answered, so we can start now"
@@ -211,7 +211,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "I have finished the handover yesterday.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "I finished the handover yesterday"
@@ -441,7 +441,7 @@
         },
         {
           "type": "transform",
-          "prompt": "The migration is not finished. It is late.",
+          "prompt": "Fais des deux phrases une seule avec « still » pour dire que ça tarde.",
           "answerSpec": {
             "accepted": [
               "The migration has still not finished"
@@ -454,7 +454,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "Have you seen the new floor plan already?",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "Have you seen the new floor plan yet"
@@ -680,7 +680,7 @@
         },
         {
           "type": "transform",
-          "prompt": "He started at nine and he is still writing.",
+          "prompt": "Réécris en une phrase avec « since » : ça a commencé à neuf heures et dure encore.",
           "answerSpec": {
             "accepted": [
               "He has been writing since nine"
@@ -693,7 +693,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "I am working here since March.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "I have been working here since March"
@@ -917,7 +917,7 @@
         },
         {
           "type": "transform",
-          "prompt": "He is tired. He has painted since dawn.",
+          "prompt": "Réécris en une phrase : c'est la durée de l'activité qui explique la fatigue.",
           "answerSpec": {
             "accepted": [
               "He is tired: he has been painting since dawn"
@@ -930,7 +930,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "I have been reading five chapters this week.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "I have read five chapters this week"
@@ -1154,7 +1154,7 @@
         },
         {
           "type": "transform",
-          "prompt": "He moved to Bristol in 2021 and still lives there.",
+          "prompt": "Réécris en une seule phrase avec « since » : il y habite toujours.",
           "answerSpec": {
             "accepted": [
               "He has been living in Bristol since 2021"
@@ -1167,7 +1167,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "How long are you working on the migration?",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "How long have you been working on the migration"
@@ -1392,7 +1392,7 @@
         },
         {
           "type": "transform",
-          "prompt": "When did the estate review begin? Two years ago.",
+          "prompt": "Réécris la réponse en une phrase avec « for » : la durée court encore.",
           "answerSpec": {
             "accepted": [
               "The estate review has been going on for two years"
@@ -1405,7 +1405,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "I work here since two years.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "I have been working here for two years"
@@ -1630,7 +1630,7 @@
         },
         {
           "type": "transform",
-          "prompt": "She has joined the board in April.",
+          "prompt": "Corrige le temps : un mois nommé ferme la période.",
           "answerSpec": {
             "accepted": [
               "She joined the board in April"
@@ -1643,7 +1643,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "Did you ever work with a British steering group?",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "Have you ever worked with a British steering group"
@@ -1869,7 +1869,7 @@
         },
         {
           "type": "transform",
-          "prompt": "There is no coffee. Somebody finished it at eight.",
+          "prompt": "Réécris les deux phrases : annonce le fait au present perfect, puis donne l'heure.",
           "answerSpec": {
             "accepted": [
               "Somebody has finished the coffee: they finished it at eight"
@@ -1882,7 +1882,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "I have spoken to legal at nine this morning.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "I spoke to legal at nine this morning"
@@ -2105,7 +2105,7 @@
         },
         {
           "type": "transform",
-          "prompt": "The demo failed. Nobody tested it first.",
+          "prompt": "Fais des deux phrases une seule avec « because », en marquant laquelle a précédé l'autre.",
           "answerSpec": {
             "accepted": [
               "The demo failed because nobody had tested it"
@@ -2118,7 +2118,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "When we arrived, the client already left.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "When we arrived, the client had already left"
@@ -2342,7 +2342,7 @@
         },
         {
           "type": "transform",
-          "prompt": "He started at six. At nine he was still writing.",
+          "prompt": "Réécris en une phrase avec « by nine » : dis depuis combien de temps il écrivait.",
           "answerSpec": {
             "accepted": [
               "By nine he had been writing for three hours"
@@ -2355,7 +2355,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "She was waiting for two hours when he arrived.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "She had been waiting for two hours when he arrived"
@@ -2584,7 +2584,7 @@
         },
         {
           "type": "transform",
-          "prompt": "Do you have got any questions before we start?",
+          "prompt": "Corrige la question : on ne cumule pas « do » et « got ».",
           "answerSpec": {
             "accepted": [
               "Have you got any questions before we start",
@@ -2598,7 +2598,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "We had got a workshop last Thursday.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "We had a workshop last Thursday"
@@ -2820,7 +2820,7 @@
         },
         {
           "type": "transform",
-          "prompt": "I smoked for years. I stopped in 2020.",
+          "prompt": "Réécris les deux phrases avec « used to » : l'habitude est révolue.",
           "answerSpec": {
             "accepted": [
               "I used to smoke, but I stopped in 2020"
@@ -2833,7 +2833,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "I am used to work from home on Fridays.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "I am used to working from home on Fridays"

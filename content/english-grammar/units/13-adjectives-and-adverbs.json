@@ -192,7 +192,7 @@
         },
         {
           "type": "transform",
-          "prompt": "The workload exhausts the whole team.",
+          "prompt": "Réécris la phrase du point de vue de l'équipe, qui subit.",
           "answerSpec": {
             "accepted": [
               "The whole team is exhausted by the workload"
@@ -205,7 +205,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "I was very boring during the third hour.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "I was very bored during the third hour"
@@ -425,7 +425,7 @@
         },
         {
           "type": "transform",
-          "prompt": "The chair is old, it is leather, and it is huge.",
+          "prompt": "Réunis les trois informations en un seul groupe nominal, dans l'ordre attendu.",
           "answerSpec": {
             "accepted": [
               "a huge old leather chair"
@@ -438,7 +438,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "You seem tiredly this afternoon.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "You seem tired this afternoon"
@@ -656,7 +656,7 @@
         },
         {
           "type": "transform",
-          "prompt": "He gave a careful explanation of the trade-off.",
+          "prompt": "Réécris la phrase en remplaçant l'adjectif par un adverbe.",
           "answerSpec": {
             "accepted": [
               "He explained the trade-off carefully"
@@ -669,7 +669,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "The migration went very quick in the end.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "The migration went very quickly in the end"
@@ -887,7 +887,7 @@
         },
         {
           "type": "transform",
-          "prompt": "She did the job in a very good way.",
+          "prompt": "Réécris la phrase avec l'adverbe qui convient.",
           "answerSpec": {
             "accepted": [
               "She did the job very well"
@@ -900,7 +900,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "He works very hardly, which is why he is exhausted.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "He works very hard, which is why he is exhausted"
@@ -1118,7 +1118,7 @@
         },
         {
           "type": "transform",
-          "prompt": "The deck was very long, so nobody read it.",
+          "prompt": "Réécris les deux propositions en une seule avec « so … that ».",
           "answerSpec": {
             "accepted": [
               "The deck was so long that nobody read it"
@@ -1131,7 +1131,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "It was so a useful workshop that we booked another.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "It was such a useful workshop that we booked another"
@@ -1348,7 +1348,7 @@
         },
         {
           "type": "transform",
-          "prompt": "The room is too small for twenty people.",
+          "prompt": "Réécris la phrase avec « enough », en gardant le même sens.",
           "answerSpec": {
             "accepted": [
               "The room is not big enough for twenty people"
@@ -1361,7 +1361,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "She is enough experienced to run the programme.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "She is experienced enough to run the programme"
@@ -1580,7 +1580,7 @@
         },
         {
           "type": "transform",
-          "prompt": "The estimate was a bit too high for comfort.",
+          "prompt": "Réécris la phrase avec « rather ».",
           "answerSpec": {
             "accepted": [
               "The estimate was rather high"
@@ -1593,7 +1593,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "I am fairly sure this is quite wrong, in fact.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "I am fairly sure this is completely wrong, in fact"
@@ -1814,7 +1814,7 @@
         },
         {
           "type": "transform",
-          "prompt": "The old office was small. The new one is even smaller.",
+          "prompt": "Réécris les deux phrases en une comparaison avec « than ».",
           "answerSpec": {
             "accepted": [
               "The new office is smaller than the old one"
@@ -1827,7 +1827,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "This approach is more cheaper than the last one.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "This approach is cheaper than the last one"
@@ -2051,7 +2051,7 @@
         },
         {
           "type": "transform",
-          "prompt": "The second draft is better. The difference is enormous.",
+          "prompt": "Réécris les deux phrases en une seule, en renforçant le comparatif.",
           "answerSpec": {
             "accepted": [
               "The second draft is far better"
@@ -2064,7 +2064,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "This dashboard is very better than the old one.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "This dashboard is much better than the old one"
@@ -2284,7 +2284,7 @@
         },
         {
           "type": "transform",
-          "prompt": "The new tool is cheaper than the old one.",
+          "prompt": "Réécris la phrase avec « as … as », en gardant le même sens.",
           "answerSpec": {
             "accepted": [
               "The new tool is not as expensive as the old one"
@@ -2297,7 +2297,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "This model is as good than the last one.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "This model is as good as the last one"
@@ -2514,7 +2514,7 @@
         },
         {
           "type": "transform",
-          "prompt": "No other building on the estate is older.",
+          "prompt": "Réécris la phrase au superlatif.",
           "answerSpec": {
             "accepted": [
               "It is the oldest building on the estate"
@@ -2527,7 +2527,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "This is the more useful screen of the whole app.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "This is the most useful screen of the whole app"
@@ -2745,7 +2745,7 @@
         },
         {
           "type": "transform",
-          "prompt": "On Monday I sent to the client the invoice.",
+          "prompt": "Remets la phrase dans l'ordre : verbe, objet, destinataire, temps.",
           "answerSpec": {
             "accepted": [
               "I sent the invoice to the client on Monday"
@@ -2758,7 +2758,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "I like very much this new floor plan.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "I like this new floor plan very much"
@@ -2976,7 +2976,7 @@
         },
         {
           "type": "transform",
-          "prompt": "Usually she works from the Bristol office.",
+          "prompt": "Replace l'adverbe à sa place, devant le verbe.",
           "answerSpec": {
             "accepted": [
               "She usually works from the Bristol office"
@@ -2989,7 +2989,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "I go always to the market on Saturday.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "I always go to the market on Saturday"
@@ -3207,7 +3207,7 @@
         },
         {
           "type": "transform",
-          "prompt": "He worked here, but he left last year.",
+          "prompt": "Réécris les deux phrases en une seule avec « any more ».",
           "answerSpec": {
             "accepted": [
               "He does not work here any more"
@@ -3220,7 +3220,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "I have not received the invoice already.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "I have not received the invoice yet"
@@ -3437,7 +3437,7 @@
         },
         {
           "type": "transform",
-          "prompt": "Nobody expected the finance team to agree, but they did.",
+          "prompt": "Réécris les deux phrases en une seule avec « even ».",
           "answerSpec": {
             "accepted": [
               "Even the finance team agreed"
@@ -3450,7 +3450,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "Even if he was ill, he came to the review.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "Even though he was ill, he came to the review"

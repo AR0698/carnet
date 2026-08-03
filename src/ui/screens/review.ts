@@ -303,6 +303,22 @@ export function renderReview(ctx: Ctx, session: Session): void {
         input.lock();
 
         const result = renderer.grade(card.exercise, value);
+
+        // Ratée sans qu'aucune erreur anticipée ne corresponde : c'est le
+        // moment de donner la règle, tant que la question est encore chaude.
+        // Le mode cahier le faisait déjà ; l'écran, lui, ne montrait que la
+        // comparaison mot à mot, et l'indice restait derrière un bouton qui
+        // avait disparu avec la réponse.
+        //
+        // L'explication d'un `pitfall` passe devant quand il y en a une : elle
+        // vise la faute commise, là où l'indice ne rappelle que la règle. Et
+        // rien ne s'affiche si l'indice a déjà été demandé avant de répondre —
+        // le relire ne serait qu'une ligne de plus à sauter.
+        const fallbackHint =
+          !result.correct && !result.correction?.explanation && !usedHint
+            ? card.exercise.hints?.[0]
+            : undefined;
+
         const verdict = el(
           'div',
           { class: `verdict ${result.correct ? 'verdict--ok' : 'verdict--ko'}` },
@@ -311,6 +327,7 @@ export function renderReview(ctx: Ctx, session: Session): void {
             result.correction?.diff && renderDiff(result.correction.diff),
             result.correction?.explanation &&
               el('p', { class: 'why' }, [result.correction.explanation.text]),
+            fallbackHint && el('p', { class: 'why' }, [fallbackHint]),
             alternativesLine(result.alternatives),
             listenButton(spokenSentence(card.exercise), lang),
           ],

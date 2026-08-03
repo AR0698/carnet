@@ -191,7 +191,7 @@
         },
         {
           "type": "transform",
-          "prompt": "He gave me three informations about the estate.",
+          "prompt": "Corrige la phrase : « information » ne se compte pas directement.",
           "answerSpec": {
             "accepted": [
               "He gave me three pieces of information about the estate"
@@ -204,7 +204,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "The researches show a drop in adoption.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "The research shows a drop in adoption"
@@ -422,7 +422,7 @@
         },
         {
           "type": "transform",
-          "prompt": "We do not have enough rooms in the diary for another review.",
+          "prompt": "Corrige la phrase : il s'agit de la place disponible, pas des pièces.",
           "answerSpec": {
             "accepted": [
               "We do not have enough room in the diary for another review"
@@ -435,7 +435,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "She has many experiences of British meetings.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "She has a lot of experience of British meetings"
@@ -653,7 +653,7 @@
         },
         {
           "type": "transform",
-          "prompt": "My sister is architect in Bath.",
+          "prompt": "Corrige la phrase : un métier ne reste jamais sans article.",
           "answerSpec": {
             "accepted": [
               "My sister is an architect in Bath"
@@ -666,7 +666,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "She gave me an information and two advices.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "She gave me some information and some advice"
@@ -885,7 +885,7 @@
         },
         {
           "type": "transform",
-          "prompt": "I bought a laptop. A laptop was faulty.",
+          "prompt": "Corrige la seconde phrase : l'objet est maintenant connu des deux côtés.",
           "answerSpec": {
             "accepted": [
               "I bought a laptop. The laptop was faulty"
@@ -898,7 +898,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "Shut a door, there is a draught.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "Shut the door, there is a draught"
@@ -1119,7 +1119,7 @@
         },
         {
           "type": "transform",
-          "prompt": "He was first person to raise the risk.",
+          "prompt": "Corrige la phrase : il manque un article devant l'ordinal.",
           "answerSpec": {
             "accepted": [
               "He was the first person to raise the risk"
@@ -1132,7 +1132,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "Moon was full over the harbour last night.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "The moon was full over the harbour last night"
@@ -1353,7 +1353,7 @@
         },
         {
           "type": "transform",
-          "prompt": "He spent two years in the prison for fraud.",
+          "prompt": "Corrige la phrase : il y est détenu, il n'y est pas en visite.",
           "answerSpec": {
             "accepted": [
               "He spent two years in prison for fraud"
@@ -1366,7 +1366,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "She is in the bed with the flu.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "She is in bed with the flu"
@@ -1588,7 +1588,7 @@
         },
         {
           "type": "transform",
-          "prompt": "The life is expensive in the south-west.",
+          "prompt": "Corrige la phrase : la notion est prise en général.",
           "answerSpec": {
             "accepted": [
               "Life is expensive in the south-west"
@@ -1601,7 +1601,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "I am interested in the workplace design.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "I am interested in workplace design"
@@ -1821,7 +1821,7 @@
         },
         {
           "type": "transform",
-          "prompt": "Young people are leaving the city.",
+          "prompt": "Réécris la phrase avec « the » suivi d'un adjectif.",
           "answerSpec": {
             "accepted": [
               "The young are leaving the city"
@@ -1834,7 +1834,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "The giraffe have the longest neck of all mammals.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "The giraffe has the longest neck of all mammals"
@@ -2057,7 +2057,7 @@
         },
         {
           "type": "transform",
-          "prompt": "I have never been to the Scotland.",
+          "prompt": "Corrige la phrase : un pays au singulier ne prend pas d'article.",
           "answerSpec": {
             "accepted": [
               "I have never been to Scotland"
@@ -2070,7 +2070,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "She has just moved to the Bristol.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "She has just moved to Bristol"
@@ -2291,7 +2291,7 @@
         },
         {
           "type": "transform",
-          "prompt": "The Mount Snowdon is busy in August.",
+          "prompt": "Corrige la phrase : un sommet isolé ne prend pas d'article.",
           "answerSpec": {
             "accepted": [
               "Mount Snowdon is busy in August"
@@ -2304,7 +2304,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "They walk every spring in Pyrenees.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "They walk every spring in the Pyrenees"
@@ -2522,7 +2522,7 @@
         },
         {
           "type": "transform",
-          "prompt": "The police is looking into it.",
+          "prompt": "Corrige l'accord du verbe.",
           "answerSpec": {
             "accepted": [
               "The police are looking into it"
@@ -2535,7 +2535,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "There were only four persons at the review.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "There were only four people at the review"
@@ -2753,7 +2753,7 @@
         },
         {
           "type": "transform",
-          "prompt": "We ran a review of three hours.",
+          "prompt": "Réécris la phrase en nom composé.",
           "answerSpec": {
             "accepted": [
               "We ran a three-hour review"
@@ -2766,7 +2766,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "She gave a forty-minutes presentation.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "She gave a forty-minute presentation"
@@ -2984,7 +2984,7 @@
         },
         {
           "type": "transform",
-          "prompt": "The report of Anna is on the shared drive.",
+          "prompt": "Réécris la phrase avec un génitif.",
           "answerSpec": {
             "accepted": [
               "Anna's report is on the shared drive"
@@ -2997,7 +2997,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "I am reading the policy of the company.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "I am reading the company's policy"

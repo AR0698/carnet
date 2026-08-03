@@ -201,7 +201,7 @@
         },
         {
           "type": "transform",
-          "prompt": "The intern took the minutes. She is Welsh.",
+          "prompt": "Fais des deux phrases une seule avec une relative.",
           "answerSpec": {
             "accepted": [
               "The intern who took the minutes is Welsh"
@@ -214,7 +214,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "The client who she called is furious.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "The client who called is furious"
@@ -436,7 +436,7 @@
         },
         {
           "type": "transform",
-          "prompt": "The policy that they published last week is unreadable.",
+          "prompt": "Allège la phrase : le relatif est complément, il peut tomber.",
           "answerSpec": {
             "accepted": [
               "The policy they published last week is unreadable"
@@ -449,7 +449,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "The woman sits next to me is from Leeds.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "The woman who sits next to me is from Leeds"
@@ -668,7 +668,7 @@
         },
         {
           "type": "transform",
-          "prompt": "That is the manager. His team wrote the policy.",
+          "prompt": "Fais des deux phrases une seule avec « whose ».",
           "answerSpec": {
             "accepted": [
               "That is the manager whose team wrote the policy"
@@ -681,7 +681,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "The colleague which laptop was stolen has resigned.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "The colleague whose laptop was stolen has resigned"
@@ -903,7 +903,7 @@
         },
         {
           "type": "transform",
-          "prompt": "We stayed in Portishead. It is half an hour away.",
+          "prompt": "Fais des deux phrases une seule : la seconde est une information accessoire.",
           "answerSpec": {
             "accepted": [
               "We stayed in Portishead, which is half an hour away"
@@ -916,7 +916,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "My line manager, that started in April, is already leaving.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "My line manager, who started in April, is already leaving"
@@ -1136,7 +1136,7 @@
         },
         {
           "type": "transform",
-          "prompt": "The budget was refused again. It is becoming a habit.",
+          "prompt": "Fais des deux phrases une seule : la relative reprend toute la première.",
           "answerSpec": {
             "accepted": [
               "The budget was refused again, which is becoming a habit"
@@ -1149,7 +1149,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "They cancelled the pilot, what surprised nobody.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "They cancelled the pilot, which surprised nobody"
@@ -1368,7 +1368,7 @@
         },
         {
           "type": "transform",
-          "prompt": "The man who is standing by the lift works in IT.",
+          "prompt": "Allège la relative en proposition participiale.",
           "answerSpec": {
             "accepted": [
               "The man standing by the lift works in IT"
@@ -1381,7 +1381,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "The policy writing by legal is still in draft.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "The policy written by legal is still in draft"

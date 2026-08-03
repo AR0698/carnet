@@ -191,7 +191,7 @@
         },
         {
           "type": "transform",
-          "prompt": "The audit begins the third of March.",
+          "prompt": "Ajoute la préposition qui manque devant la date.",
           "answerSpec": {
             "accepted": [
               "The audit begins on the third of March"
@@ -204,7 +204,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "I will send it in Monday morning.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "I will send it on Monday morning"
@@ -423,7 +423,7 @@
         },
         {
           "type": "transform",
-          "prompt": "After weeks of argument, they signed.",
+          "prompt": "Réécris la phrase avec « in the end ».",
           "answerSpec": {
             "accepted": [
               "In the end, they signed"
@@ -436,7 +436,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "The train left in time, to everyone's surprise.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "The train left on time, to everyone's surprise"
@@ -657,7 +657,7 @@
         },
         {
           "type": "transform",
-          "prompt": "My laptop is inside the drawer.",
+          "prompt": "Réécris la phrase avec une préposition simple.",
           "answerSpec": {
             "accepted": [
               "My laptop is in the drawer"
@@ -670,7 +670,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "Write your name in the top of the form.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "Write your name at the top of the form"
@@ -891,7 +891,7 @@
         },
         {
           "type": "transform",
-          "prompt": "She travelled by plane and slept the whole way.",
+          "prompt": "Réécris la phrase en disant dans quel véhicule elle a dormi.",
           "answerSpec": {
             "accepted": [
               "She slept the whole way on the plane"
@@ -1124,7 +1124,7 @@
         },
         {
           "type": "transform",
-          "prompt": "We queued for an hour outside the museum.",
+          "prompt": "Réécris la phrase avec « stand in a queue ».",
           "answerSpec": {
             "accepted": [
               "We stood in a queue for an hour outside the museum"
@@ -1137,7 +1137,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "I met three colleagues in a party last week.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "I met three colleagues at a party last week"
@@ -1357,7 +1357,7 @@
         },
         {
           "type": "transform",
-          "prompt": "She entered the meeting room ten minutes late.",
+          "prompt": "Réécris la phrase avec « go into ».",
           "answerSpec": {
             "accepted": [
               "She went into the meeting room ten minutes late"
@@ -1370,7 +1370,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "When did you arrive to Cardiff?",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "When did you arrive in Cardiff"
@@ -1589,7 +1589,7 @@
         },
         {
           "type": "transform",
-          "prompt": "He answered using a very quiet voice.",
+          "prompt": "Remplace « using » par la préposition qui convient.",
           "answerSpec": {
             "accepted": [
               "He answered in a very quiet voice"
@@ -1602,7 +1602,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "Please fill in the form with pen, not with pencil.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "Please fill in the form in pen, not in pencil"
@@ -1821,7 +1821,7 @@
         },
         {
           "type": "transform",
-          "prompt": "The intern wrote the minutes.",
+          "prompt": "Mets la phrase au passif, en gardant l'auteur.",
           "answerSpec": {
             "accepted": [
               "The minutes were written by the intern"
@@ -1834,7 +1834,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "I always travel by the train when it rains.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "I always travel by train when it rains"
@@ -2051,7 +2051,7 @@
         },
         {
           "type": "transform",
-          "prompt": "Why did the pilot fail? Nobody explained.",
+          "prompt": "Réécris les deux phrases en une seule avec « the reason for ».",
           "answerSpec": {
             "accepted": [
               "Nobody explained the reason for the failure"
@@ -2064,7 +2064,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "We finally found a solution of the licensing mess.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "We finally found a solution to the licensing mess"
@@ -2281,7 +2281,7 @@
         },
         {
           "type": "transform",
-          "prompt": "Their proposal resembles ours.",
+          "prompt": "Réécris la phrase avec « similar ».",
           "answerSpec": {
             "accepted": [
               "Their proposal is similar to ours"
@@ -2294,7 +2294,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "He is married with a colleague from Leeds.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "He is married to a colleague from Leeds"
@@ -2512,7 +2512,7 @@
         },
         {
           "type": "transform",
-          "prompt": "Nobody expected the finance team to agree.",
+          "prompt": "Réécris la phrase avec « surprised », en commençant par « Everyone ».",
           "answerSpec": {
             "accepted": [
               "Everyone was surprised at the finance team agreeing"
@@ -2525,7 +2525,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "I am sorry of the delay, it was my fault.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "I am sorry about the delay, it was my fault"
@@ -2745,7 +2745,7 @@
         },
         {
           "type": "transform",
-          "prompt": "Please describe the trade-off to me.",
+          "prompt": "Réécris la phrase avec « explain ».",
           "answerSpec": {
             "accepted": [
               "Please explain the trade-off to me"
@@ -2758,7 +2758,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "Can you explain me why the scope changed?",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "Can you explain to me why the scope changed"
@@ -2977,7 +2977,7 @@
         },
         {
           "type": "transform",
-          "prompt": "He resembles his father in every way.",
+          "prompt": "Réécris la phrase avec « take after ».",
           "answerSpec": {
             "accepted": [
               "He takes after his father in every way"
@@ -2990,7 +2990,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "Nobody wants to pay the extra dashboards.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "Nobody wants to pay for the extra dashboards"
@@ -3211,7 +3211,7 @@
         },
         {
           "type": "transform",
-          "prompt": "Somebody told me about the reorganisation.",
+          "prompt": "Réécris la phrase de ton point de vue, avec « hear ».",
           "answerSpec": {
             "accepted": [
               "I heard about the reorganisation"
@@ -3224,7 +3224,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "What do you think about the second supplier? Excellent.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "What do you think of the second supplier? Excellent"
@@ -3443,7 +3443,7 @@
         },
         {
           "type": "transform",
-          "prompt": "He would not stop until he had read the contract.",
+          "prompt": "Réécris la phrase avec « insist ».",
           "answerSpec": {
             "accepted": [
               "He insisted on reading the contract"
@@ -3456,7 +3456,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "They thanked the team of staying late.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "They thanked the team for staying late"
@@ -3675,7 +3675,7 @@
         },
         {
           "type": "transform",
-          "prompt": "They gave us a very short summary.",
+          "prompt": "Réécris la phrase avec « provide ».",
           "answerSpec": {
             "accepted": [
               "They provided us with a very short summary"
@@ -3688,7 +3688,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "I agree with you about that the scope has changed.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "I agree with you that the scope has changed"

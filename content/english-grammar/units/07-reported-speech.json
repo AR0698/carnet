@@ -196,7 +196,7 @@
         },
         {
           "type": "transform",
-          "prompt": "\"I am waiting for legal,\" he said.",
+          "prompt": "Rapporte la phrase au discours indirect.",
           "answerSpec": {
             "accepted": [
               "He said he was waiting for legal"
@@ -209,7 +209,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "She said me that the scope had changed.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "She told me that the scope had changed"
@@ -431,7 +431,7 @@
         },
         {
           "type": "transform",
-          "prompt": "\"Do not touch the settings,\" she said to me.",
+          "prompt": "Rapporte l'ordre au discours indirect.",
           "answerSpec": {
             "accepted": [
               "She told me not to touch the settings"
@@ -444,7 +444,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "He asked me where did I live.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "He asked me where I lived"

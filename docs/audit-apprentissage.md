@@ -139,17 +139,36 @@ Constats honnêtes, par ordre de valeur.
 2. **Rien ne demande jamais de reformuler une règle avec ses mots.**
    S'expliquer à soi-même est la technique la plus rentable qui manque
    aujourd'hui à l'application. Ce serait un type d'exercice, pas une fiche.
-3. **En mode écran, l'indice n'est toujours pas montré après une faute** quand
-   aucune erreur anticipée ne correspond. Le mode cahier, lui, le fait. La fiche
-   comble ce trou là où elle existe, mais l'incohérence entre les deux modes
-   reste.
-4. **226 exercices `transform` sur 290 ont un énoncé identique à leur phrase de
-   départ** : la consigne ne dit pas quelle transformation appliquer. Défaut de
-   contenu antérieur à ce travail, signalé et non corrigé ici.
-5. **Le repêchage en choix multiple** après deux échecs est un bon geste — il
+3. **Le repêchage en choix multiple** après deux échecs est un bon geste — il
    évite l'enlisement — mais reconnaître n'est pas produire. Il est justement
    exclu de la planification FSRS, ce qui est le bon arbitrage ; à ne pas
    relâcher.
+
+### Corrigé depuis
+
+Deux constats de la première version de cet audit ont été traités. Ils sont
+gardés ici parce qu'ils disent quelque chose sur la façon dont ces défauts
+passent inaperçus.
+
+- **L'indice après une faute, en mode écran.** Le mode cahier montrait la règle
+  quand la réponse était fausse ; l'écran, lui, n'affichait que la comparaison
+  mot à mot, et l'indice restait derrière un bouton qui disparaissait avec la
+  réponse. Les deux modes se comportent désormais pareil, l'explication d'une
+  erreur anticipée passant devant l'indice quand il y en a une.
+- **288 énoncés qui recopiaient leur phrase de départ**, et non 226 comme
+  annoncé — le compte initial mélangeait `transform` et `spot_error`. Sur un
+  `spot_error`, l'étiquette « Cette phrase contient une faute » sauvait la
+  mise ; sur un `transform`, **l'exercice était insoluble** : la phrase
+  s'affichait deux fois et rien ne disait quelle transformation appliquer. Les
+  145 consignes de `transform` ont été écrites une par une, les 143
+  `spot_error` ont retrouvé la formule des items d'origine, et l'assemblage
+  refuse désormais un énoncé identique à sa phrase de départ.
+
+Ce que ces deux défauts ont en commun mérite d'être retenu : **aucun des deux
+ne casse quoi que ce soit.** Le pack se construisait, les tests passaient,
+l'écran s'affichait. Il a fallu lire la sortie d'un renderer et compter des
+chaînes de caractères pour les voir. Les contrôles d'assemblage sont le seul
+endroit où ce genre de chose se rattrape.
 
 ---
 

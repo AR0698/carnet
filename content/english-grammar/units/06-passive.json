@@ -193,7 +193,7 @@
         },
         {
           "type": "transform",
-          "prompt": "Somebody stole my badge.",
+          "prompt": "Mets la phrase au passif : l'auteur est inconnu, il disparaît.",
           "answerSpec": {
             "accepted": [
               "My badge was stolen"
@@ -431,7 +431,7 @@
         },
         {
           "type": "transform",
-          "prompt": "They are refitting the second floor.",
+          "prompt": "Mets la phrase au passif : les travaux sont en cours.",
           "answerSpec": {
             "accepted": [
               "The second floor is being refitted"
@@ -444,7 +444,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "The invoice must to be paid this week.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "The invoice must be paid this week"
@@ -667,7 +667,7 @@
         },
         {
           "type": "transform",
-          "prompt": "Somebody sent me the wrong version.",
+          "prompt": "Mets la phrase au passif en commençant par la personne.",
           "answerSpec": {
             "accepted": [
               "I was sent the wrong version"
@@ -680,7 +680,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "It was explained me the whole policy.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "I had the whole policy explained to me",
@@ -906,7 +906,7 @@
         },
         {
           "type": "transform",
-          "prompt": "People say the pilot cost a fortune.",
+          "prompt": "Réécris la phrase en tournure impersonnelle, en commençant par « The pilot ».",
           "answerSpec": {
             "accepted": [
               "The pilot is said to have cost a fortune"
@@ -919,7 +919,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "He is said that he speaks Welsh.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "He is said to speak Welsh",
@@ -1143,7 +1143,7 @@
         },
         {
           "type": "transform",
-          "prompt": "A plumber is coming to repair our boiler.",
+          "prompt": "Réécris la phrase avec « have something done » : on le fait faire.",
           "answerSpec": {
             "accepted": [
               "We are having our boiler repaired"
@@ -1156,7 +1156,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "I had repaired my laptop by IT.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "I had my laptop repaired by IT"

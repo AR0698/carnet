@@ -195,7 +195,7 @@
         },
         {
           "type": "transform",
-          "prompt": "I do not have the budget, so I cannot hire.",
+          "prompt": "Réécris les deux phrases en une hypothèse irréelle du présent.",
           "answerSpec": {
             "accepted": [
               "If I had the budget, I would hire"
@@ -208,7 +208,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "If it will rain, the fiesta is cancelled.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "If it rains, the fiesta is cancelled"
@@ -431,7 +431,7 @@
         },
         {
           "type": "transform",
-          "prompt": "I cannot come, and I am sorry about it.",
+          "prompt": "Réécris les deux phrases en un regret, avec « wish ».",
           "answerSpec": {
             "accepted": [
               "I wish I could come"
@@ -444,7 +444,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "I wish I would have more time before the board.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "I wish I had more time before the board"
@@ -670,7 +670,7 @@
         },
         {
           "type": "transform",
-          "prompt": "Nobody warned us, so we missed the deadline.",
+          "prompt": "Réécris les deux phrases en une hypothèse irréelle du passé.",
           "answerSpec": {
             "accepted": [
               "If somebody had warned us, we would not have missed the deadline"
@@ -683,7 +683,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "If I would have known, I would have said something.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "If I had known, I would have said something"
@@ -906,7 +906,7 @@
         },
         {
           "type": "transform",
-          "prompt": "He keeps interrupting, and it is unbearable.",
+          "prompt": "Réécris les deux phrases en reproche, avec « wish ».",
           "answerSpec": {
             "accepted": [
               "I wish he would stop interrupting"
@@ -919,7 +919,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "I wish you would be taller.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "I wish you were taller"

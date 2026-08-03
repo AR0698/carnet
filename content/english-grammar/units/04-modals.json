@@ -198,7 +198,7 @@
         },
         {
           "type": "transform",
-          "prompt": "I did not manage to open the file.",
+          "prompt": "Réécris la phrase avec « be able to ».",
           "answerSpec": {
             "accepted": [
               "I was not able to open the file"
@@ -211,7 +211,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "I will can join the call at four.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "I will be able to join the call at four"
@@ -431,7 +431,7 @@
         },
         {
           "type": "transform",
-          "prompt": "It was possible to test it, but nobody did.",
+          "prompt": "Réécris la phrase : la possibilité existait et personne ne l'a saisie.",
           "answerSpec": {
             "accepted": [
               "We could have tested it"
@@ -444,7 +444,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "You could told me before the meeting.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "You could have told me before the meeting"
@@ -668,7 +668,7 @@
         },
         {
           "type": "transform",
-          "prompt": "I am sure nobody read it: there is not a single comment.",
+          "prompt": "Réécris la première phrase en déduction : personne n'a pu la lire.",
           "answerSpec": {
             "accepted": [
               "Nobody can have read it"
@@ -681,7 +681,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "He must to be the new line manager.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "He must be the new line manager"
@@ -910,7 +910,7 @@
         },
         {
           "type": "transform",
-          "prompt": "Perhaps the budget will not go through.",
+          "prompt": "Réécris la phrase avec un modal de possibilité.",
           "answerSpec": {
             "accepted": [
               "The budget might not go through"
@@ -923,7 +923,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "They might to accept the day rate.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "They might accept the day rate"
@@ -1147,7 +1147,7 @@
         },
         {
           "type": "transform",
-          "prompt": "There is no point waiting. Let us begin.",
+          "prompt": "Réécris les deux phrases en une seule avec « might as well ».",
           "answerSpec": {
             "accepted": [
               "We might as well begin"
@@ -1160,7 +1160,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "May you pass me the report, please?",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "Could you pass me the report, please"
@@ -1380,7 +1380,7 @@
         },
         {
           "type": "transform",
-          "prompt": "It was compulsory to attend the induction.",
+          "prompt": "Réécris la phrase : dis l'obligation passée avec « have to ».",
           "answerSpec": {
             "accepted": [
               "We had to attend the induction"
@@ -1393,7 +1393,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "Yesterday I must rewrite the whole deck.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "Yesterday I had to rewrite the whole deck"
@@ -1624,7 +1624,7 @@
         },
         {
           "type": "transform",
-          "prompt": "It is forbidden to record the town hall.",
+          "prompt": "Réécris la phrase en interdiction, avec un modal.",
           "answerSpec": {
             "accepted": [
               "You must not record the town hall"
@@ -1637,7 +1637,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "You must not come if you are busy, it is optional.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "You do not have to come if you are busy, it is optional"
@@ -1860,7 +1860,7 @@
         },
         {
           "type": "transform",
-          "prompt": "It was a mistake not to test the connector.",
+          "prompt": "Réécris la phrase en reproche : il aurait fallu tester.",
           "answerSpec": {
             "accepted": [
               "We should have tested the connector"
@@ -1873,7 +1873,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "You should to push back on that deadline.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "You should push back on that deadline"
@@ -2103,7 +2103,7 @@
         },
         {
           "type": "transform",
-          "prompt": "My advice: hire a second consultant.",
+          "prompt": "Réécris le conseil avec « recommend ».",
           "answerSpec": {
             "accepted": [
               "I recommend that you should hire a second consultant"
@@ -2116,7 +2116,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "I suggest him to write the handover first.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "I suggest that he should write the handover first"
@@ -2342,7 +2342,7 @@
         },
         {
           "type": "transform",
-          "prompt": "You should leave now, or you will miss the train.",
+          "prompt": "Réécris le conseil avec « had better » : il y a urgence.",
           "answerSpec": {
             "accepted": [
               "You had better leave now"
@@ -2355,7 +2355,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "You had better to answer that email.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "You had better answer that email"
@@ -2581,7 +2581,7 @@
         },
         {
           "type": "transform",
-          "prompt": "He had the habit of arriving before eight.",
+          "prompt": "Réécris la phrase avec « would » : c'était une habitude.",
           "answerSpec": {
             "accepted": [
               "He would arrive before eight"
@@ -2594,7 +2594,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "When I was a student, I would have a bike.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "When I was a student, I used to have a bike"
@@ -2820,7 +2820,7 @@
         },
         {
           "type": "transform",
-          "prompt": "Please send me the figures.",
+          "prompt": "Réécris la demande en question polie.",
           "answerSpec": {
             "accepted": [
               "Could you send me the figures, please"
@@ -2833,7 +2833,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "Would you mind to open the window?",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "Would you mind opening the window"

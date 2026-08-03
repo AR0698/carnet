@@ -195,7 +195,7 @@
         },
         {
           "type": "transform",
-          "prompt": "Please switch off it before the fire drill.",
+          "prompt": "Corrige la place du pronom.",
           "answerSpec": {
             "accepted": [
               "Please switch it off before the fire drill"
@@ -208,7 +208,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "I looked up it in the glossary.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "I looked it up in the glossary"
@@ -428,7 +428,7 @@
         },
         {
           "type": "transform",
-          "prompt": "We registered at the hotel around midnight.",
+          "prompt": "Réécris la phrase avec « check in ».",
           "answerSpec": {
             "accepted": [
               "We checked in at the hotel around midnight"
@@ -441,7 +441,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "We have run out from paper again.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "We have run out of paper again"
@@ -660,7 +660,7 @@
         },
         {
           "type": "transform",
-          "prompt": "The rollout was eventually a success.",
+          "prompt": "Réécris la phrase avec « turn out ».",
           "answerSpec": {
             "accepted": [
               "The rollout turned out to be a success"
@@ -673,7 +673,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "I will find about what happened at the review.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "I will find out what happened at the review"
@@ -893,7 +893,7 @@
         },
         {
           "type": "transform",
-          "prompt": "How is the new team managing with the tooling?",
+          "prompt": "Réécris la question avec « get on with ».",
           "answerSpec": {
             "accepted": [
               "How is the new team getting on with the tooling"
@@ -906,7 +906,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "Please turn the projector out before you leave.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "Please turn the projector off before you leave"
@@ -1125,7 +1125,7 @@
         },
         {
           "type": "transform",
-          "prompt": "I am not working next week.",
+          "prompt": "Réécris la phrase avec « be off ».",
           "answerSpec": {
             "accepted": [
               "I am off next week"
@@ -1138,7 +1138,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "I get on well my new colleagues.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "I get on well with my new colleagues"
@@ -1359,7 +1359,7 @@
         },
         {
           "type": "transform",
-          "prompt": "There is no printer paper left at all.",
+          "prompt": "Réécris la phrase avec « use up ».",
           "answerSpec": {
             "accepted": [
               "We have used up all the printer paper"
@@ -1372,7 +1372,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "My car broke up on the motorway.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "My car broke down on the motorway"
@@ -1592,7 +1592,7 @@
         },
         {
           "type": "transform",
-          "prompt": "Only five people came to the workshop.",
+          "prompt": "Réécris la phrase avec « turn up ».",
           "answerSpec": {
             "accepted": [
               "Only five people turned up to the workshop"
@@ -1605,7 +1605,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "She gave down smoking three years ago.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "She gave up smoking three years ago"
@@ -1825,7 +1825,7 @@
         },
         {
           "type": "transform",
-          "prompt": "Could you make this desk tidy before you go?",
+          "prompt": "Réécris la demande avec « tidy up ».",
           "answerSpec": {
             "accepted": [
               "Could you tidy this desk up before you go"
@@ -1838,7 +1838,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "Let us catch up about the pilot on Thursday.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "Let us catch up on the pilot on Thursday"
@@ -2059,7 +2059,7 @@
         },
         {
           "type": "transform",
-          "prompt": "They donated the old monitors to a local school.",
+          "prompt": "Réécris la phrase avec « give away ».",
           "answerSpec": {
             "accepted": [
               "They gave the old monitors away to a local school"
@@ -2072,7 +2072,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "I will get back at you once legal has signed.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "I will get back to you once legal has signed"

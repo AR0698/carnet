@@ -152,6 +152,21 @@ for (const it of pack.items) {
   }
 }
 
+// `transform` et `spot_error` affichent la phrase de départ dans son propre
+// bloc, puis l'énoncé juste en dessous. Quand les deux sont identiques, la
+// phrase apparaît deux fois et il ne reste aucune consigne : sur un
+// `spot_error` l'étiquette sauve la mise, sur un `transform` l'exercice devient
+// insoluble — rien ne dit quelle transformation appliquer. C'est passé
+// inaperçu sur 288 exercices, d'où ce garde-fou.
+for (const it of pack.items) {
+  for (const [k, ex] of it.exercises.entries()) {
+    if (!ex.source) continue;
+    if (norm(ex.prompt) === norm(ex.source)) {
+      problems.push(`item ${it.id} / exercice ${k} : l'énoncé recopie la phrase de départ, il ne reste aucune consigne`);
+    }
+  }
+}
+
 // Une erreur anticipée qui figure aussi parmi les bonnes réponses ferait
 // passer une réponse juste pour une faute expliquée. Erreur silencieuse et
 // difficile à repérer à la lecture.

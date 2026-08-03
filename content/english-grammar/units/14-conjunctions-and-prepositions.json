@@ -200,7 +200,7 @@
         },
         {
           "type": "transform",
-          "prompt": "Although she was exhausted, she ran the workshop.",
+          "prompt": "Réécris la phrase avec « in spite of ».",
           "answerSpec": {
             "accepted": [
               "In spite of being exhausted, she ran the workshop"
@@ -213,7 +213,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "Despite of the noise, the demo went well.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "Despite the noise, the demo went well"
@@ -431,7 +431,7 @@
         },
         {
           "type": "transform",
-          "prompt": "The lift might fail, so we keep the stairs open.",
+          "prompt": "Fais des deux phrases une seule avec « in case ».",
           "answerSpec": {
             "accepted": [
               "We keep the stairs open in case the lift fails"
@@ -444,7 +444,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "Take a coat in case it will be cold.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "Take a coat in case it is cold"
@@ -664,7 +664,7 @@
         },
         {
           "type": "transform",
-          "prompt": "If you do not book a desk, you will stand all day.",
+          "prompt": "Réécris la phrase avec « unless ».",
           "answerSpec": {
             "accepted": [
               "Unless you book a desk, you will stand all day"
@@ -677,7 +677,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "Unless you do not hurry, you will miss the train.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "Unless you hurry, you will miss the train"
@@ -901,7 +901,7 @@
         },
         {
           "type": "transform",
-          "prompt": "Because the room was double-booked, we met outside.",
+          "prompt": "Réécris la phrase en remplaçant « because » par « as ».",
           "answerSpec": {
             "accepted": [
               "As the room was double-booked, we met outside"
@@ -914,7 +914,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "As I was a student, I lived in Cardiff.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "When I was a student, I lived in Cardiff"
@@ -1132,7 +1132,7 @@
         },
         {
           "type": "transform",
-          "prompt": "I did it the way you asked.",
+          "prompt": "Réécris la phrase avec « as ».",
           "answerSpec": {
             "accepted": [
               "I did it as you asked"
@@ -1145,7 +1145,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "Like I mentioned in the meeting, the scope has moved.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "As I mentioned in the meeting, the scope has moved"
@@ -1374,7 +1374,7 @@
         },
         {
           "type": "transform",
-          "prompt": "She looks like she has been working all night.",
+          "prompt": "Réécris la phrase en registre soigné, avec « as if ».",
           "answerSpec": {
             "accepted": [
               "She looks as if she has been working all night"
@@ -1387,7 +1387,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "He speaks as if he would be in charge.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "He speaks as if he were in charge",
@@ -1606,7 +1606,7 @@
         },
         {
           "type": "transform",
-          "prompt": "I read the pack during my journey.",
+          "prompt": "Réécris la phrase avec « while » suivi d'un sujet et d'un verbe.",
           "answerSpec": {
             "accepted": [
               "I read the pack while I was travelling"
@@ -1619,7 +1619,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "She stayed in Bath during four years.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "She stayed in Bath for four years"
@@ -1839,7 +1839,7 @@
         },
         {
           "type": "transform",
-          "prompt": "We waited. At four she finally called.",
+          "prompt": "Fais des deux phrases une seule avec « until ».",
           "answerSpec": {
             "accepted": [
               "We waited until she called at four"
@@ -1852,7 +1852,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "Please reply until Monday morning.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "Please reply by Monday morning"

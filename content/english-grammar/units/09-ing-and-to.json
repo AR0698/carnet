@@ -192,7 +192,7 @@
         },
         {
           "type": "transform",
-          "prompt": "He suggested that we should park the question.",
+          "prompt": "Réécris la phrase avec « suggest » suivi d'un verbe en -ing.",
           "answerSpec": {
             "accepted": [
               "He suggested parking the question"
@@ -205,7 +205,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "I enjoy to present to a British audience.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "I enjoy presenting to a British audience"
@@ -423,7 +423,7 @@
         },
         {
           "type": "transform",
-          "prompt": "He said he would call back, and he meant it.",
+          "prompt": "Réécris les deux phrases en une seule avec « promise ».",
           "answerSpec": {
             "accepted": [
               "He promised to call back"
@@ -436,7 +436,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "They agreed reviewing the scope next week.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "They agreed to review the scope next week"
@@ -656,7 +656,7 @@
         },
         {
           "type": "transform",
-          "prompt": "He said to me: do not touch the settings.",
+          "prompt": "Rapporte l'ordre avec « tell » et un complément de personne.",
           "answerSpec": {
             "accepted": [
               "He told me not to touch the settings"
@@ -669,7 +669,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "I want that you read the contract first.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "I want you to read the contract first"
@@ -892,7 +892,7 @@
         },
         {
           "type": "transform",
-          "prompt": "He was talking, then he went quiet.",
+          "prompt": "Fais des deux phrases une seule avec « stop ».",
           "answerSpec": {
             "accepted": [
               "He stopped talking"
@@ -905,7 +905,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "Remember locking the door when you leave tonight.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "Remember to lock the door when you leave tonight"
@@ -1130,7 +1130,7 @@
         },
         {
           "type": "transform",
-          "prompt": "The wifi is bad. Move nearer the window and see.",
+          "prompt": "Réécris le conseil avec « try » : c'est une méthode à tester.",
           "answerSpec": {
             "accepted": [
               "Try moving nearer the window"
@@ -1143,7 +1143,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "He helped me to carrying the boxes.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "He helped me carry the boxes",
@@ -1367,7 +1367,7 @@
         },
         {
           "type": "transform",
-          "prompt": "My preference would be a shorter meeting.",
+          "prompt": "Réécris la phrase avec « would prefer ».",
           "answerSpec": {
             "accepted": [
               "I would prefer to have a shorter meeting"
@@ -1380,7 +1380,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "I would like working from home on Fridays, if possible.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "I would like to work from home on Fridays, if possible"
@@ -1603,7 +1603,7 @@
         },
         {
           "type": "transform",
-          "prompt": "I do not want to go. Staying is my choice.",
+          "prompt": "Réécris les deux phrases en une seule avec « would rather ».",
           "answerSpec": {
             "accepted": [
               "I would rather stay"
@@ -1616,7 +1616,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "I would rather to work from the Bristol office.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "I would rather work from the Bristol office"
@@ -1836,7 +1836,7 @@
         },
         {
           "type": "transform",
-          "prompt": "He left. He did not tell anybody.",
+          "prompt": "Fais des deux phrases une seule avec « without ».",
           "answerSpec": {
             "accepted": [
               "He left without telling anybody"
@@ -1849,7 +1849,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "Thank you for to come at such short notice.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "Thank you for coming at such short notice"
@@ -2072,7 +2072,7 @@
         },
         {
           "type": "transform",
-          "prompt": "At first the noise bothered her. Now it does not.",
+          "prompt": "Réécris les deux phrases en une seule avec « get used to ».",
           "answerSpec": {
             "accepted": [
               "She has got used to the noise"
@@ -2085,7 +2085,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "I am used to answer emails in English now.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "I am used to answering emails in English now"
@@ -2303,7 +2303,7 @@
         },
         {
           "type": "transform",
-          "prompt": "He said sorry because he had interrupted.",
+          "prompt": "Réécris la phrase avec « apologise ».",
           "answerSpec": {
             "accepted": [
               "He apologised for interrupting"
@@ -2316,7 +2316,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "I look forward to hear from you.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "I look forward to hearing from you"
@@ -2540,7 +2540,7 @@
         },
         {
           "type": "transform",
-          "prompt": "Do not bother calling him, he never answers.",
+          "prompt": "Réécris la phrase avec « there is no point ».",
           "answerSpec": {
             "accepted": [
               "There is no point in calling him"
@@ -2553,7 +2553,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "It is worth to book the room early.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "It is worth booking the room early"
@@ -2776,7 +2776,7 @@
         },
         {
           "type": "transform",
-          "prompt": "I called legal. I wanted them to check the clause.",
+          "prompt": "Fais des deux phrases une seule avec « so that ».",
           "answerSpec": {
             "accepted": [
               "I called legal so that they could check the clause"
@@ -2789,7 +2789,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "I came here for learning English.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "I came here to learn English"
@@ -3011,7 +3011,7 @@
         },
         {
           "type": "transform",
-          "prompt": "Nobody can read that font. It is too small.",
+          "prompt": "Réécris les deux phrases en une seule avec « too … to ».",
           "answerSpec": {
             "accepted": [
               "That font is too small to read"
@@ -3024,7 +3024,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "This tool is easy for using.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "This tool is easy to use"
@@ -3248,7 +3248,7 @@
         },
         {
           "type": "transform",
-          "prompt": "He does not dare push back on the deadline.",
+          "prompt": "Réécris la phrase avec « afraid » : il n'ose pas.",
           "answerSpec": {
             "accepted": [
               "He is afraid to push back on the deadline"
@@ -3261,7 +3261,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "I am interested in see the new floor plan.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "I am interested in seeing the new floor plan"
@@ -3480,7 +3480,7 @@
         },
         {
           "type": "transform",
-          "prompt": "She was walking into the lift. I saw her.",
+          "prompt": "Fais des deux phrases une seule : tu l'as vue en pleine action.",
           "answerSpec": {
             "accepted": [
               "I saw her walking into the lift"
@@ -3493,7 +3493,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "I saw him to leave the building at six.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "I saw him leave the building at six"
@@ -3712,7 +3712,7 @@
         },
         {
           "type": "transform",
-          "prompt": "Because she felt unwell, she left early.",
+          "prompt": "Réécris la phrase en remplaçant la cause par une proposition en -ing.",
           "answerSpec": {
             "accepted": [
               "Feeling unwell, she left early"
@@ -3725,7 +3725,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "Having wrote the handover, he went on leave.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "Having written the handover, he went on leave"

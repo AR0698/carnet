@@ -197,7 +197,7 @@
         },
         {
           "type": "transform",
-          "prompt": "The migration runs at the moment.",
+          "prompt": "Réécris la phrase : l'action est en cours, là, maintenant.",
           "answerSpec": {
             "accepted": [
               "The migration is running at the moment"
@@ -210,7 +210,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "I am knowing the answer to that one.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "I know the answer to that one"
@@ -436,7 +436,7 @@
         },
         {
           "type": "transform",
-          "prompt": "He is going to the office every Tuesday.",
+          "prompt": "Réécris la phrase : c'est une habitude, pas une action en cours.",
           "answerSpec": {
             "accepted": [
               "He goes to the office every Tuesday"
@@ -449,7 +449,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "She don't answer emails at the weekend.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "She does not answer emails at the weekend",
@@ -674,7 +674,7 @@
         },
         {
           "type": "transform",
-          "prompt": "I stay in a hotel until the flat is ready.",
+          "prompt": "Réécris la phrase pour dire que la situation est provisoire.",
           "answerSpec": {
             "accepted": [
               "I am staying in a hotel until the flat is ready"
@@ -687,7 +687,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "What do you do this afternoon? Anything planned?",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "What are you doing this afternoon? Anything planned"
@@ -915,7 +915,7 @@
         },
         {
           "type": "transform",
-          "prompt": "The weather becomes worse.",
+          "prompt": "Réécris la phrase pour marquer une évolution en cours.",
           "answerSpec": {
             "accepted": [
               "The weather is getting worse"
@@ -928,7 +928,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "He always is asking for exceptions to the policy.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "He is always asking for exceptions to the policy"
@@ -1151,7 +1151,7 @@
         },
         {
           "type": "transform",
-          "prompt": "He has arrived in Bristol three years ago.",
+          "prompt": "Corrige le temps : « three years ago » ferme la période.",
           "answerSpec": {
             "accepted": [
               "He arrived in Bristol three years ago"
@@ -1164,7 +1164,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "Where did you went after the leaving drinks?",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "Where did you go after the leaving drinks"
@@ -1384,7 +1384,7 @@
         },
         {
           "type": "transform",
-          "prompt": "I read the handover. Then the lights went out.",
+          "prompt": "Fais des deux phrases une seule : la première était en cours quand la seconde est arrivée.",
           "answerSpec": {
             "accepted": [
               "I was reading the handover when the lights went out"
@@ -1397,7 +1397,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "While I was walking home, I was seeing my old manager.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "While I was walking home, I saw my old manager"

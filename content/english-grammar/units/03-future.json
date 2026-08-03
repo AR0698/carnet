@@ -196,7 +196,7 @@
         },
         {
           "type": "transform",
-          "prompt": "I will have dinner with the client tomorrow. It is arranged.",
+          "prompt": "Réécris la phrase : le dîner est déjà arrangé.",
           "answerSpec": {
             "accepted": [
               "I am having dinner with the client tomorrow"
@@ -209,7 +209,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "What time does the conference start tomorrow? I am starting at nine.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "What time does the conference start tomorrow? It starts at nine"
@@ -437,7 +437,7 @@
         },
         {
           "type": "transform",
-          "prompt": "We have decided to run a pilot first.",
+          "prompt": "Réécris la phrase avec « going to » : la décision est déjà prise.",
           "answerSpec": {
             "accepted": [
               "We are going to run a pilot first"
@@ -450,7 +450,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "I am going to call you back later, I promise.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "I will call you back later, I promise"
@@ -680,7 +680,7 @@
         },
         {
           "type": "transform",
-          "prompt": "That looks heavy. I offer to carry it.",
+          "prompt": "Réécris la seconde phrase : l'offre se décide à l'instant.",
           "answerSpec": {
             "accepted": [
               "That looks heavy — I will carry it"
@@ -693,7 +693,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "I think it will to rain before the fiesta.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "I think it will rain before the fiesta"
@@ -921,7 +921,7 @@
         },
         {
           "type": "transform",
-          "prompt": "Perhaps nobody comes to the town hall.",
+          "prompt": "Réécris la phrase avec « probably » : c'est une prédiction.",
           "answerSpec": {
             "accepted": [
               "Probably nobody will come to the town hall"
@@ -934,7 +934,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "I will probably not to attend the plenary.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "I probably will not attend the plenary"
@@ -1161,7 +1161,7 @@
         },
         {
           "type": "transform",
-          "prompt": "My plan is to productionise the pilot next year.",
+          "prompt": "Réécris la phrase avec « going to » : le plan est déjà formé.",
           "answerSpec": {
             "accepted": [
               "I am going to productionise the pilot next year"
@@ -1174,7 +1174,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "Wait, I think I am going to help you with that box.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "Wait, I think I will help you with that box"
@@ -1401,7 +1401,7 @@
         },
         {
           "type": "transform",
-          "prompt": "I finish the report before Monday.",
+          "prompt": "Réécris la phrase : ce sera achevé avant lundi.",
           "answerSpec": {
             "accepted": [
               "I will have finished the report by Monday"
@@ -1414,7 +1414,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "By next year they will finished the rollout.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "By next year they will have finished the rollout"
@@ -1641,7 +1641,7 @@
         },
         {
           "type": "transform",
-          "prompt": "I will read it. Then I will answer.",
+          "prompt": "Fais des deux phrases une seule avec « when » : dis ce qui doit être fini d'abord.",
           "answerSpec": {
             "accepted": [
               "When I have read it, I will answer"
@@ -1654,7 +1654,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "I will tell you as soon as I will know.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "I will tell you as soon as I know"

@@ -191,7 +191,7 @@
         },
         {
           "type": "transform",
-          "prompt": "I built this dashboard without any help.",
+          "prompt": "Réécris la phrase avec un pronom réfléchi, en fin de phrase.",
           "answerSpec": {
             "accepted": [
               "I built this dashboard myself"
@@ -204,7 +204,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "She concentrated herself on the numbers.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "She concentrated on the numbers"
@@ -426,7 +426,7 @@
         },
         {
           "type": "transform",
-          "prompt": "Nobody helped me: I wrote the whole pack alone.",
+          "prompt": "Réécris les deux phrases en une seule avec « on my own ».",
           "answerSpec": {
             "accepted": [
               "I wrote the whole pack on my own"
@@ -439,7 +439,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "He is a my colleague from the Leeds office.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "He is a colleague of mine from the Leeds office"
@@ -657,7 +657,7 @@
         },
         {
           "type": "transform",
-          "prompt": "A review is planned for Thursday.",
+          "prompt": "Réécris la phrase avec « there » : on annonce une existence.",
           "answerSpec": {
             "accepted": [
               "There is a review planned for Thursday"
@@ -670,7 +670,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "It is a queue at the coffee machine every morning.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "There is a queue at the coffee machine every morning"
@@ -889,7 +889,7 @@
         },
         {
           "type": "transform",
-          "prompt": "There were no volunteers for the town hall.",
+          "prompt": "Réécris la phrase avec « not any » à la place de « no ».",
           "answerSpec": {
             "accepted": [
               "There were not any volunteers for the town hall"
@@ -902,7 +902,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "I have not got some time before the call.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "I have not got any time before the call"
@@ -1124,7 +1124,7 @@
         },
         {
           "type": "transform",
-          "prompt": "I did not tell anybody about the offer.",
+          "prompt": "Réécris la phrase en faisant porter la négation sur le pronom.",
           "answerSpec": {
             "accepted": [
               "I told nobody about the offer"
@@ -1137,7 +1137,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "We did not find nothing wrong with the data.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "We did not find anything wrong with the data"
@@ -1355,7 +1355,7 @@
         },
         {
           "type": "transform",
-          "prompt": "We received almost no feedback after the rollout.",
+          "prompt": "Réécris la phrase avec « little ».",
           "answerSpec": {
             "accepted": [
               "We received little feedback after the rollout"
@@ -1368,7 +1368,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "She gave me a few advice before the interview.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "She gave me a little advice before the interview"
@@ -1596,7 +1596,7 @@
         },
         {
           "type": "transform",
-          "prompt": "Every single invoice was wrong.",
+          "prompt": "Réécris la phrase avec « all » et un pluriel.",
           "answerSpec": {
             "accepted": [
               "All the invoices were wrong"
@@ -1609,7 +1609,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "Most of consultants would say the same.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "Most consultants would say the same"
@@ -1826,7 +1826,7 @@
         },
         {
           "type": "transform",
-          "prompt": "The first option is bad and so is the second.",
+          "prompt": "Réécris les deux phrases en une seule avec « both ».",
           "answerSpec": {
             "accepted": [
               "Both options are bad"
@@ -1839,7 +1839,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "Neither of the suppliers have replied yet.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "Neither of the suppliers has replied yet"
@@ -2063,7 +2063,7 @@
         },
         {
           "type": "transform",
-          "prompt": "The review lasted all afternoon.",
+          "prompt": "Réécris la phrase avec « whole ».",
           "answerSpec": {
             "accepted": [
               "The review lasted the whole afternoon"
@@ -2076,7 +2076,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "Every guardrails were reviewed by legal.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "All the guardrails were reviewed by legal"
@@ -2294,7 +2294,7 @@
         },
         {
           "type": "transform",
-          "prompt": "The two floors have their own printer.",
+          "prompt": "Réécris la phrase avec « each » : on prend les étages un par un.",
           "answerSpec": {
             "accepted": [
               "Each floor has its own printer"
@@ -2307,7 +2307,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "Each of the fifty desks have a monitor.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "Each of the fifty desks has a monitor"

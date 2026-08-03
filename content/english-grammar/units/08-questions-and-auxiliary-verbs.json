@@ -192,7 +192,7 @@
         },
         {
           "type": "transform",
-          "prompt": "You spoke to somebody in legal. Who?",
+          "prompt": "Pose la question correspondante avec « who ».",
           "answerSpec": {
             "accepted": [
               "Who did you speak to in legal"
@@ -205,7 +205,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "What time you arrived this morning?",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "What time did you arrive this morning"
@@ -425,7 +425,7 @@
         },
         {
           "type": "transform",
-          "prompt": "Where does she work? I do not know.",
+          "prompt": "Fais des deux phrases une seule : enchâsse la question.",
           "answerSpec": {
             "accepted": [
               "I do not know where she works"
@@ -438,7 +438,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "Could you tell me where is the breakout space?",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "Could you tell me where the breakout space is"
@@ -661,7 +661,7 @@
         },
         {
           "type": "transform",
-          "prompt": "He can speak Welsh. I can speak Welsh too.",
+          "prompt": "Réécris la seconde phrase en reprise, avec « so ».",
           "answerSpec": {
             "accepted": [
               "He can speak Welsh, and so can I"
@@ -674,7 +674,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "I do not have the bandwidth. — Neither I do.",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "I do not have the bandwidth. — Neither do I"
@@ -898,7 +898,7 @@
         },
         {
           "type": "transform",
-          "prompt": "The lift is broken. Ask for confirmation.",
+          "prompt": "Ajoute le question tag qui convient.",
           "answerSpec": {
             "accepted": [
               "The lift is broken, is not it"
@@ -911,7 +911,7 @@
         },
         {
           "type": "spot_error",
-          "prompt": "You work in Bristol, don't you work?",
+          "prompt": "Corrige la phrase.",
           "answerSpec": {
             "accepted": [
               "You work in Bristol, don't you"
