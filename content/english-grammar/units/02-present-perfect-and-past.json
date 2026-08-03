@@ -4,7 +4,10 @@
     {
       "id": "u007-a",
       "topicId": "u007",
-      "tags": ["present-perfect", "resultat-present"],
+      "tags": [
+        "present-perfect",
+        "resultat-present"
+      ],
       "fields": {
         "regle": "have/has + participe passé : une action passée dont le résultat compte maintenant."
       },
@@ -12,65 +15,240 @@
         {
           "type": "produce",
           "prompt": "Traduis : « J'ai perdu mon parapluie. » (et je ne l'ai toujours pas)",
-          "answerSpec": { "accepted": ["I've lost my umbrella", "I have lost my umbrella"] },
-          "hints": ["Le résultat dure encore : have + participe passé."]
+          "answerSpec": {
+            "accepted": [
+              "I've lost my umbrella",
+              "I have lost my umbrella"
+            ]
+          },
+          "hints": [
+            "Le résultat dure encore : have + participe passé."
+          ]
         },
         {
           "type": "produce",
           "prompt": "Traduis : « Elle vient de finir son rapport. »",
           "answerSpec": {
-            "accepted": ["She has just finished her report", "She's just finished her report"]
+            "accepted": [
+              "She has just finished her report",
+              "She's just finished her report"
+            ]
           },
-          "hints": ["just se glisse entre have et le participe passé."]
+          "hints": [
+            "just se glisse entre have et le participe passé."
+          ]
         },
         {
           "type": "produce",
           "prompt": "Traduis : « Ils sont déjà partis. »",
-          "answerSpec": { "accepted": ["They've already left", "They have already left"] },
-          "hints": ["already se place aussi entre l'auxiliaire et le participe."]
+          "answerSpec": {
+            "accepted": [
+              "They've already left",
+              "They have already left"
+            ]
+          },
+          "hints": [
+            "already se place aussi entre l'auxiliaire et le participe."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "Someone ___ the window. Look at the glass. (break)",
-          "answerSpec": { "accepted": ["has broken", "'s broken"] },
-          "hints": ["Le résultat est visible maintenant : present perfect."]
+          "answerSpec": {
+            "accepted": [
+              "has broken",
+              "'s broken"
+            ]
+          },
+          "hints": [
+            "Le résultat est visible maintenant : present perfect."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "I can't come out — I ___ my homework yet. (not / do)",
-          "answerSpec": { "accepted": ["haven't done", "have not done"] },
-          "hints": ["yet accompagne le present perfect à la forme négative."]
+          "answerSpec": {
+            "accepted": [
+              "haven't done",
+              "have not done"
+            ]
+          },
+          "hints": [
+            "yet accompagne le present perfect à la forme négative."
+          ]
         },
         {
           "type": "transform",
           "source": "Priya cleaned the whole kitchen.",
           "prompt": "Réécris la phrase pour insister sur le résultat, encore visible maintenant.",
           "answerSpec": {
-            "accepted": ["Priya has cleaned the whole kitchen", "Priya's cleaned the whole kitchen"]
+            "accepted": [
+              "Priya has cleaned the whole kitchen",
+              "Priya's cleaned the whole kitchen"
+            ]
           },
-          "hints": ["On abandonne le prétérit pour have/has + participe passé."]
+          "hints": [
+            "On abandonne le prétérit pour have/has + participe passé."
+          ]
         },
         {
           "type": "spot_error",
           "source": "I have finish my coffee.",
           "prompt": "Corrige la phrase.",
-          "answerSpec": { "accepted": ["I have finished my coffee", "I've finished my coffee"] },
-          "hints": ["Après have, il faut le participe passé, pas la base verbale."]
+          "answerSpec": {
+            "accepted": [
+              "I have finished my coffee",
+              "I've finished my coffee"
+            ]
+          },
+          "hints": [
+            "Après have, il faut le participe passé, pas la base verbale."
+          ]
         },
         {
           "type": "mcq",
           "prompt": "The lift ___ down again.",
-          "answerSpec": { "accepted": ["has broken"] },
-          "distractors": ["has break", "have broken", "is broken down"],
-          "hints": ["Panne récente dont l'effet dure : has + participe passé."]
+          "answerSpec": {
+            "accepted": [
+              "has broken"
+            ]
+          },
+          "distractors": [
+            "has break",
+            "have broken",
+            "is broken down"
+          ],
+          "hints": [
+            "Panne récente dont l'effet dure : has + participe passé."
+          ]
         }
       ]
     },
-
+    {
+      "id": "u007-b",
+      "topicId": "u007",
+      "tags": [
+        "present-perfect",
+        "bilan"
+      ],
+      "fields": {
+        "regle": "Le present perfect relie le passé au présent : un résultat encore vrai, une expérience de vie, une nouvelle fraîche. Jamais avec une date fermée."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : J'ai perdu mon badge — je ne peux pas entrer.",
+          "answerSpec": {
+            "accepted": [
+              "I have lost my badge",
+              "I've lost my badge"
+            ]
+          },
+          "hints": [
+            "Le résultat vaut maintenant."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Elle a déjà travaillé au Royaume-Uni.",
+          "answerSpec": {
+            "accepted": [
+              "She has already worked in the United Kingdom"
+            ]
+          },
+          "hints": [
+            "Expérience, sans date."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Le fournisseur vient de répondre.",
+          "answerSpec": {
+            "accepted": [
+              "The supplier has just replied"
+            ]
+          },
+          "hints": [
+            "just + present perfect."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Legal ___ the agreement at last. (sign off)",
+          "answerSpec": {
+            "accepted": [
+              "has signed off"
+            ]
+          },
+          "hints": [
+            "Résultat acquis."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "I have never ___ to Wales, oddly enough. (be)",
+          "answerSpec": {
+            "accepted": [
+              "been"
+            ]
+          },
+          "hints": [
+            "Participe passé de be."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "The client answered. We can start now.",
+          "answerSpec": {
+            "accepted": [
+              "The client has answered, so we can start now"
+            ]
+          },
+          "source": "The client answered. We can start now.",
+          "hints": [
+            "Le résultat porte sur le présent."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "I have finished the handover yesterday.",
+          "answerSpec": {
+            "accepted": [
+              "I finished the handover yesterday"
+            ]
+          },
+          "source": "I have finished the handover yesterday.",
+          "hints": [
+            "Une date fermée exclut le present perfect."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "___ you ever ___ a town hall in English?",
+          "answerSpec": {
+            "accepted": [
+              "Have … run"
+            ]
+          },
+          "hints": [
+            "Expérience de vie."
+          ],
+          "distractors": [
+            "Did … run",
+            "Do … run",
+            "Are … running"
+          ]
+        }
+      ]
+    },
     {
       "id": "u008-a",
       "topicId": "u008",
-      "tags": ["present-perfect", "experience", "periode-non-terminee"],
+      "tags": [
+        "present-perfect",
+        "experience",
+        "periode-non-terminee"
+      ],
       "fields": {
         "regle": "Expérience de vie (ever, never) et période encore ouverte (today, this week)."
       },
@@ -78,16 +256,28 @@
         {
           "type": "produce",
           "prompt": "Traduis : « Je ne suis jamais allé en Écosse. »",
-          "answerSpec": { "accepted": ["I've never been to Scotland", "I have never been to Scotland"] },
-          "hints": ["Expérience de vie : have + been to pour « être allé »."]
+          "answerSpec": {
+            "accepted": [
+              "I've never been to Scotland",
+              "I have never been to Scotland"
+            ]
+          },
+          "hints": [
+            "Expérience de vie : have + been to pour « être allé »."
+          ]
         },
         {
           "type": "produce",
           "prompt": "Traduis : « Est-ce que tu as déjà goûté des huîtres ? »",
           "answerSpec": {
-            "accepted": ["Have you ever tried oysters", "Have you ever eaten oysters"]
+            "accepted": [
+              "Have you ever tried oysters",
+              "Have you ever eaten oysters"
+            ]
           },
-          "hints": ["ever se place juste avant le participe passé."]
+          "hints": [
+            "ever se place juste avant le participe passé."
+          ]
         },
         {
           "type": "produce",
@@ -99,48 +289,208 @@
               "It's the best book I have ever read"
             ]
           },
-          "hints": ["Après un superlatif, l'anglais emploie le present perfect."]
+          "hints": [
+            "Après un superlatif, l'anglais emploie le present perfect."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "We ___ three cups of tea today. (drink)",
-          "answerSpec": { "accepted": ["have drunk", "'ve drunk", "have had", "'ve had"] },
-          "hints": ["today n'est pas terminé : la période reste ouverte."]
+          "answerSpec": {
+            "accepted": [
+              "have drunk",
+              "'ve drunk",
+              "have had",
+              "'ve had"
+            ]
+          },
+          "hints": [
+            "today n'est pas terminé : la période reste ouverte."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "Ravi ___ that documentary twice. (watch)",
-          "answerSpec": { "accepted": ["has watched", "'s watched"] },
-          "hints": ["Nombre de fois dans une vie : present perfect."]
+          "answerSpec": {
+            "accepted": [
+              "has watched",
+              "'s watched"
+            ]
+          },
+          "hints": [
+            "Nombre de fois dans une vie : present perfect."
+          ]
         },
         {
           "type": "transform",
           "source": "Greta went to Iceland in 2019.",
           "prompt": "Réécris la phrase comme une expérience de vie, en commençant par « Greta has ».",
-          "answerSpec": { "accepted": ["Greta has been to Iceland"] },
-          "hints": ["Sans date précise, l'expérience compte plus que le moment."]
+          "answerSpec": {
+            "accepted": [
+              "Greta has been to Iceland"
+            ]
+          },
+          "hints": [
+            "Sans date précise, l'expérience compte plus que le moment."
+          ]
         },
         {
           "type": "spot_error",
           "source": "Have you ever went to a live concert?",
           "prompt": "Corrige la phrase.",
-          "answerSpec": { "accepted": ["Have you ever been to a live concert"] },
-          "hints": ["Après have, on met le participe passé : been, pas went."]
+          "answerSpec": {
+            "accepted": [
+              "Have you ever been to a live concert"
+            ]
+          },
+          "hints": [
+            "Après have, on met le participe passé : been, pas went."
+          ]
         },
         {
           "type": "mcq",
           "prompt": "This ___ a very quiet week so far.",
-          "answerSpec": { "accepted": ["has been"] },
-          "distractors": ["was", "has be", "is been"],
-          "hints": ["so far : la semaine n'est pas finie."]
+          "answerSpec": {
+            "accepted": [
+              "has been"
+            ]
+          },
+          "distractors": [
+            "was",
+            "has be",
+            "is been"
+          ],
+          "hints": [
+            "so far : la semaine n'est pas finie."
+          ]
         }
       ]
     },
-
+    {
+      "id": "u008-b",
+      "topicId": "u008",
+      "tags": [
+        "present-perfect",
+        "ever-never-yet"
+      ],
+      "fields": {
+        "regle": "Les compagnons du present perfect : ever et never pour l'expérience, yet et already pour ce qui est attendu, still not pour ce qui tarde."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Je n'ai jamais entendu parler de ce fournisseur.",
+          "answerSpec": {
+            "accepted": [
+              "I have never heard of that supplier",
+              "I've never heard of that supplier"
+            ]
+          },
+          "hints": [
+            "never + participe."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Ils n'ont pas encore reprisé le périmètre.",
+          "answerSpec": {
+            "accepted": [
+              "They have not repriced the scope yet",
+              "They haven't repriced the scope yet"
+            ]
+          },
+          "hints": [
+            "yet en fin de phrase."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Elle a déjà relu tout le contrat.",
+          "answerSpec": {
+            "accepted": [
+              "She has already read the whole contract through"
+            ]
+          },
+          "hints": [
+            "already avant le participe."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Has the invoice arrived ___ ?",
+          "answerSpec": {
+            "accepted": [
+              "yet"
+            ]
+          },
+          "hints": [
+            "Question, en fin de phrase."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "He has ___ answered — that was fast.",
+          "answerSpec": {
+            "accepted": [
+              "already"
+            ]
+          },
+          "hints": [
+            "Plus tôt que prévu."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "The migration is not finished. It is late.",
+          "answerSpec": {
+            "accepted": [
+              "The migration has still not finished"
+            ]
+          },
+          "source": "The migration is not finished. It is late.",
+          "hints": [
+            "still not : ça tarde."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "Have you seen the new floor plan already?",
+          "answerSpec": {
+            "accepted": [
+              "Have you seen the new floor plan yet"
+            ]
+          },
+          "source": "Have you seen the new floor plan already?",
+          "hints": [
+            "Dans une question neutre, c'est yet."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "I have ___ met anyone who reads the whole statement of work.",
+          "answerSpec": {
+            "accepted": [
+              "never"
+            ]
+          },
+          "hints": [
+            "Expérience nulle."
+          ],
+          "distractors": [
+            "ever",
+            "yet",
+            "still"
+          ]
+        }
+      ]
+    },
     {
       "id": "u009-a",
       "topicId": "u009",
-      "tags": ["present-perfect-continuous", "duree"],
+      "tags": [
+        "present-perfect-continuous",
+        "duree"
+      ],
       "fields": {
         "regle": "have/has been + -ing : une activité qui a duré jusqu'à maintenant, ou qui vient de cesser."
       },
@@ -154,7 +504,9 @@
               "I have been learning Italian for two years"
             ]
           },
-          "hints": ["Activité commencée dans le passé et toujours en cours."]
+          "hints": [
+            "Activité commencée dans le passé et toujours en cours."
+          ]
         },
         {
           "type": "produce",
@@ -165,7 +517,9 @@
               "Your hands are dirty. What have you been doing"
             ]
           },
-          "hints": ["L'activité récente explique l'état présent."]
+          "hints": [
+            "L'activité récente explique l'état présent."
+          ]
         },
         {
           "type": "produce",
@@ -176,26 +530,48 @@
               "He has been waiting since this morning"
             ]
           },
-          "hints": ["since + point de départ, avec have been + -ing."]
+          "hints": [
+            "since + point de départ, avec have been + -ing."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "The garden is soaked — it ___ all night. (rain)",
-          "answerSpec": { "accepted": ["has been raining", "'s been raining"] },
-          "hints": ["L'activité vient de s'arrêter, ses traces sont là."]
+          "answerSpec": {
+            "accepted": [
+              "has been raining",
+              "'s been raining"
+            ]
+          },
+          "hints": [
+            "L'activité vient de s'arrêter, ses traces sont là."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "They ___ for a flat since January. (look)",
-          "answerSpec": { "accepted": ["have been looking", "'ve been looking"] },
-          "hints": ["Recherche encore en cours : have been + -ing."]
+          "answerSpec": {
+            "accepted": [
+              "have been looking",
+              "'ve been looking"
+            ]
+          },
+          "hints": [
+            "Recherche encore en cours : have been + -ing."
+          ]
         },
         {
           "type": "transform",
           "source": "Felix started painting the shed at nine.",
           "prompt": "Dis depuis combien de temps il peint, en commençant par « Felix has ».",
-          "answerSpec": { "accepted": ["Felix has been painting the shed since nine"] },
-          "hints": ["Un point de départ précis appelle since."]
+          "answerSpec": {
+            "accepted": [
+              "Felix has been painting the shed since nine"
+            ]
+          },
+          "hints": [
+            "Un point de départ précis appelle since."
+          ]
         },
         {
           "type": "spot_error",
@@ -207,22 +583,153 @@
               "I have been waiting here for an hour"
             ]
           },
-          "hints": ["Une durée qui remonte au passé demande have been + -ing."]
+          "hints": [
+            "Une durée qui remonte au passé demande have been + -ing."
+          ]
         },
         {
           "type": "mcq",
           "prompt": "You look exhausted. ___ ?",
-          "answerSpec": { "accepted": ["Have you been running"] },
-          "distractors": ["Are you running", "Do you run", "Have you run"],
-          "hints": ["L'activité récente explique l'état actuel."]
+          "answerSpec": {
+            "accepted": [
+              "Have you been running"
+            ]
+          },
+          "distractors": [
+            "Are you running",
+            "Do you run",
+            "Have you run"
+          ],
+          "hints": [
+            "L'activité récente explique l'état actuel."
+          ]
         }
       ]
     },
-
+    {
+      "id": "u009-b",
+      "topicId": "u009",
+      "tags": [
+        "present-perfect-continu",
+        "duree"
+      ],
+      "fields": {
+        "regle": "Le present perfect continu insiste sur la durée d'une activité qui court encore, ou dont la trace se voit : « I've been reading all morning. »"
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Je relis des contrats depuis ce matin.",
+          "answerSpec": {
+            "accepted": [
+              "I have been reading contracts since this morning",
+              "I've been reading contracts since this morning"
+            ]
+          },
+          "hints": [
+            "Activité qui dure encore."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Ils travaillent sur ce pilote depuis six mois.",
+          "answerSpec": {
+            "accepted": [
+              "They have been working on that pilot for six months"
+            ]
+          },
+          "hints": [
+            "for + durée."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Tu as l'air épuisé — tu as couru ?",
+          "answerSpec": {
+            "accepted": [
+              "You look exhausted — have you been running"
+            ]
+          },
+          "hints": [
+            "La trace visible d'une activité."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "She ___ for the steering group all week. (prepare, forme en cours)",
+          "answerSpec": {
+            "accepted": [
+              "has been preparing"
+            ]
+          },
+          "hints": [
+            "Durée continue."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "How long have you ___ waiting for legal?",
+          "answerSpec": {
+            "accepted": [
+              "been"
+            ]
+          },
+          "hints": [
+            "been + -ing."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "He started at nine and he is still writing.",
+          "answerSpec": {
+            "accepted": [
+              "He has been writing since nine"
+            ]
+          },
+          "source": "He started at nine and he is still writing.",
+          "hints": [
+            "since + point de départ."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "I am working here since March.",
+          "answerSpec": {
+            "accepted": [
+              "I have been working here since March"
+            ]
+          },
+          "source": "I am working here since March.",
+          "hints": [
+            "since exige le present perfect."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "The connector ___ ___ badly for weeks now.",
+          "answerSpec": {
+            "accepted": [
+              "has been behaving"
+            ]
+          },
+          "hints": [
+            "Durée jusqu'à maintenant."
+          ],
+          "distractors": [
+            "behaves",
+            "behaved",
+            "is behaving"
+          ]
+        }
+      ]
+    },
     {
       "id": "u010-a",
       "topicId": "u010",
-      "tags": ["present-perfect", "continu-vs-simple"],
+      "tags": [
+        "present-perfect",
+        "continu-vs-simple"
+      ],
       "fields": {
         "regle": "Le continu regarde l'activité et sa durée ; le simple regarde le résultat et la quantité."
       },
@@ -236,7 +743,9 @@
               "I have written three letters this morning"
             ]
           },
-          "hints": ["Une quantité achevée : present perfect simple."]
+          "hints": [
+            "Une quantité achevée : present perfect simple."
+          ]
         },
         {
           "type": "produce",
@@ -247,7 +756,9 @@
               "I have been writing letters since this morning"
             ]
           },
-          "hints": ["L'activité continue : have been + -ing."]
+          "hints": [
+            "L'activité continue : have been + -ing."
+          ]
         },
         {
           "type": "produce",
@@ -258,48 +769,205 @@
               "She has repainted two rooms this week"
             ]
           },
-          "hints": ["Combien de choses faites : forme simple."]
+          "hints": [
+            "Combien de choses faites : forme simple."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "How many pages ___ so far? (you / read)",
-          "answerSpec": { "accepted": ["have you read"] },
-          "hints": ["how many compte un résultat : forme simple."]
+          "answerSpec": {
+            "accepted": [
+              "have you read"
+            ]
+          },
+          "hints": [
+            "how many compte un résultat : forme simple."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "How long ___ that novel? (you / read)",
-          "answerSpec": { "accepted": ["have you been reading"] },
-          "hints": ["how long mesure une durée : forme continue."]
+          "answerSpec": {
+            "accepted": [
+              "have you been reading"
+            ]
+          },
+          "hints": [
+            "how long mesure une durée : forme continue."
+          ]
         },
         {
           "type": "transform",
           "source": "Anna has been baking bread all morning.",
           "prompt": "Réécris la phrase pour dire combien de pains elle a faits : « four loaves ».",
-          "answerSpec": { "accepted": ["Anna has baked four loaves this morning"] },
-          "hints": ["Dès qu'on compte le résultat, on passe au simple."]
+          "answerSpec": {
+            "accepted": [
+              "Anna has baked four loaves this morning"
+            ]
+          },
+          "hints": [
+            "Dès qu'on compte le résultat, on passe au simple."
+          ]
         },
         {
           "type": "spot_error",
           "source": "I have been finding my passport at last.",
           "prompt": "Corrige la phrase.",
-          "answerSpec": { "accepted": ["I have found my passport at last", "I've found my passport at last"] },
-          "hints": ["Trouver est instantané : pas de forme continue."]
+          "answerSpec": {
+            "accepted": [
+              "I have found my passport at last",
+              "I've found my passport at last"
+            ]
+          },
+          "hints": [
+            "Trouver est instantané : pas de forme continue."
+          ]
         },
         {
           "type": "mcq",
           "prompt": "She's tired — she ___ all day.",
-          "answerSpec": { "accepted": ["has been travelling"] },
-          "distractors": ["has travelled", "is travelling", "travels"],
-          "hints": ["La fatigue vient de la durée de l'activité."]
+          "answerSpec": {
+            "accepted": [
+              "has been travelling"
+            ]
+          },
+          "distractors": [
+            "has travelled",
+            "is travelling",
+            "travels"
+          ],
+          "hints": [
+            "La fatigue vient de la durée de l'activité."
+          ]
         }
       ]
     },
-
+    {
+      "id": "u010-b",
+      "topicId": "u010",
+      "tags": [
+        "present-perfect",
+        "continu-vs-simple"
+      ],
+      "fields": {
+        "regle": "Le continu regarde l'activité, le simple le résultat chiffré. « I've been writing the report » (j'y étais) contre « I've written three reports » (voilà le compte)."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : J'ai écrit trois notes ce matin.",
+          "answerSpec": {
+            "accepted": [
+              "I have written three notes this morning",
+              "I've written three notes this morning"
+            ]
+          },
+          "hints": [
+            "Un résultat compté : simple."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : J'écris des notes depuis ce matin.",
+          "answerSpec": {
+            "accepted": [
+              "I have been writing notes since this morning"
+            ]
+          },
+          "hints": [
+            "L'activité elle-même : continu."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Combien de fois as-tu présenté ça ?",
+          "answerSpec": {
+            "accepted": [
+              "How many times have you presented that"
+            ]
+          },
+          "hints": [
+            "Un compte : simple."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "She ___ four candidates today. (interview)",
+          "answerSpec": {
+            "accepted": [
+              "has interviewed"
+            ]
+          },
+          "hints": [
+            "Quantité close."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "They ___ about the estate all afternoon. (argue, forme en cours)",
+          "answerSpec": {
+            "accepted": [
+              "have been arguing"
+            ]
+          },
+          "hints": [
+            "Activité en cours."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "He is tired. He has painted since dawn.",
+          "answerSpec": {
+            "accepted": [
+              "He is tired: he has been painting since dawn"
+            ]
+          },
+          "source": "He is tired. He has painted since dawn.",
+          "hints": [
+            "La durée appelle le continu."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "I have been reading five chapters this week.",
+          "answerSpec": {
+            "accepted": [
+              "I have read five chapters this week"
+            ]
+          },
+          "source": "I have been reading five chapters this week.",
+          "hints": [
+            "Un nombre exclut le continu."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "We ___ ___ two hundred desks so far.",
+          "answerSpec": {
+            "accepted": [
+              "have booked"
+            ]
+          },
+          "hints": [
+            "Un total."
+          ],
+          "distractors": [
+            "have been booking",
+            "book",
+            "booked"
+          ]
+        }
+      ]
+    },
     {
       "id": "u011-a",
       "topicId": "u011",
-      "tags": ["how-long", "duree", "question"],
+      "tags": [
+        "how-long",
+        "duree",
+        "question"
+      ],
       "fields": {
         "regle": "How long have you been ...? interroge une situation commencée dans le passé et toujours vraie."
       },
@@ -308,15 +976,26 @@
           "type": "produce",
           "prompt": "Traduis : « Depuis combien de temps est-ce que tu vis ici ? »",
           "answerSpec": {
-            "accepted": ["How long have you been living here", "How long have you lived here"]
+            "accepted": [
+              "How long have you been living here",
+              "How long have you lived here"
+            ]
           },
-          "hints": ["Une situation encore vraie se questionne au present perfect."]
+          "hints": [
+            "Une situation encore vraie se questionne au present perfect."
+          ]
         },
         {
           "type": "produce",
           "prompt": "Traduis : « Depuis combien de temps est-ce qu'ils se connaissent ? »",
-          "answerSpec": { "accepted": ["How long have they known each other"] },
-          "hints": ["know est un verbe d'état : jamais de forme en -ing."]
+          "answerSpec": {
+            "accepted": [
+              "How long have they known each other"
+            ]
+          },
+          "hints": [
+            "know est un verbe d'état : jamais de forme en -ing."
+          ]
         },
         {
           "type": "produce",
@@ -327,19 +1006,33 @@
               "How long have you been playing the guitar"
             ]
           },
-          "hints": ["Activité durable et toujours en cours : have been + -ing."]
+          "hints": [
+            "Activité durable et toujours en cours : have been + -ing."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "How long ___ that jacket? (Diego / have)",
-          "answerSpec": { "accepted": ["has Diego had"] },
-          "hints": ["have au sens de posséder ne se met pas en -ing."]
+          "answerSpec": {
+            "accepted": [
+              "has Diego had"
+            ]
+          },
+          "hints": [
+            "have au sens de posséder ne se met pas en -ing."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "How long ___ out of order? (this machine / be)",
-          "answerSpec": { "accepted": ["has this machine been"] },
-          "hints": ["be reste au participe passé : been."]
+          "answerSpec": {
+            "accepted": [
+              "has this machine been"
+            ]
+          },
+          "hints": [
+            "be reste au participe passé : been."
+          ]
         },
         {
           "type": "transform",
@@ -351,7 +1044,9 @@
               "How long has Maya taught at that school"
             ]
           },
-          "hints": ["Le présent devient present perfect quand on demande la durée."]
+          "hints": [
+            "Le présent devient present perfect quand on demande la durée."
+          ]
         },
         {
           "type": "spot_error",
@@ -363,22 +1058,154 @@
               "How long have you worked in this office"
             ]
           },
-          "hints": ["Une durée qui part du passé ne se dit pas au présent."]
+          "hints": [
+            "Une durée qui part du passé ne se dit pas au présent."
+          ]
         },
         {
           "type": "mcq",
           "prompt": "How long ___ each other?",
-          "answerSpec": { "accepted": ["have they known"] },
-          "distractors": ["do they know", "have they been knowing", "are they knowing"],
-          "hints": ["Verbe d'état : forme simple obligatoire."]
+          "answerSpec": {
+            "accepted": [
+              "have they known"
+            ]
+          },
+          "distractors": [
+            "do they know",
+            "have they been knowing",
+            "are they knowing"
+          ],
+          "hints": [
+            "Verbe d'état : forme simple obligatoire."
+          ]
         }
       ]
     },
-
+    {
+      "id": "u011-b",
+      "topicId": "u011",
+      "tags": [
+        "how-long",
+        "duree"
+      ],
+      "fields": {
+        "regle": "« How long have you been -ing ? » demande depuis quand une activité dure. La réponse prend for pour une durée, since pour un point de départ."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Depuis combien de temps travailles-tu ici ?",
+          "answerSpec": {
+            "accepted": [
+              "How long have you been working here"
+            ]
+          },
+          "hints": [
+            "how long + present perfect continu."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Depuis combien de temps ce poste est-il vacant ?",
+          "answerSpec": {
+            "accepted": [
+              "How long has that job been vacant"
+            ]
+          },
+          "hints": [
+            "État : present perfect simple."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : J'attends une réponse depuis dix jours.",
+          "answerSpec": {
+            "accepted": [
+              "I have been waiting for an answer for ten days"
+            ]
+          },
+          "hints": [
+            "for + durée."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "How long ___ you known your line manager? (have / do)",
+          "answerSpec": {
+            "accepted": [
+              "have"
+            ]
+          },
+          "hints": [
+            "Un état qui dure."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "They have been in that building ___ 2019.",
+          "answerSpec": {
+            "accepted": [
+              "since"
+            ]
+          },
+          "hints": [
+            "Point de départ."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "He moved to Bristol in 2021 and still lives there.",
+          "answerSpec": {
+            "accepted": [
+              "He has been living in Bristol since 2021"
+            ]
+          },
+          "source": "He moved to Bristol in 2021 and still lives there.",
+          "hints": [
+            "La situation court encore."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "How long are you working on the migration?",
+          "answerSpec": {
+            "accepted": [
+              "How long have you been working on the migration"
+            ]
+          },
+          "source": "How long are you working on the migration?",
+          "hints": [
+            "La durée jusqu'à maintenant."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "___ has the lift been out of order?",
+          "answerSpec": {
+            "accepted": [
+              "How long"
+            ]
+          },
+          "hints": [
+            "On demande la durée."
+          ],
+          "distractors": [
+            "How much time ago",
+            "Since when time",
+            "How far"
+          ]
+        }
+      ]
+    },
     {
       "id": "u012-a",
       "topicId": "u012",
-      "tags": ["for", "since", "when", "how-long"],
+      "tags": [
+        "for",
+        "since",
+        "when",
+        "how-long"
+      ],
       "fields": {
         "regle": "for + durée, since + point de départ. when ...? va avec le prétérit, how long ...? avec le present perfect."
       },
@@ -387,64 +1214,235 @@
           "type": "produce",
           "prompt": "Traduis : « Nous habitons ici depuis six ans. »",
           "answerSpec": {
-            "accepted": ["We've lived here for six years", "We have lived here for six years"]
+            "accepted": [
+              "We've lived here for six years",
+              "We have lived here for six years"
+            ]
           },
-          "hints": ["Une durée chiffrée demande for."]
+          "hints": [
+            "Une durée chiffrée demande for."
+          ]
         },
         {
           "type": "produce",
           "prompt": "Traduis : « Je ne l'ai pas vue depuis Noël. »",
           "answerSpec": {
-            "accepted": ["I haven't seen her since Christmas", "I have not seen her since Christmas"]
+            "accepted": [
+              "I haven't seen her since Christmas",
+              "I have not seen her since Christmas"
+            ]
           },
-          "hints": ["Un point de départ daté demande since."]
+          "hints": [
+            "Un point de départ daté demande since."
+          ]
         },
         {
           "type": "produce",
           "prompt": "Traduis : « Quand est-ce qu'elle a déménagé à Berlin ? »",
-          "answerSpec": { "accepted": ["When did she move to Berlin"] },
-          "hints": ["when ...? demande un moment précis : prétérit."]
+          "answerSpec": {
+            "accepted": [
+              "When did she move to Berlin"
+            ]
+          },
+          "hints": [
+            "when ...? demande un moment précis : prétérit."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "Hugo has had that scooter ___ 2021.",
-          "answerSpec": { "accepted": ["since"] },
-          "hints": ["Une année est un point de départ, pas une durée."]
+          "answerSpec": {
+            "accepted": [
+              "since"
+            ]
+          },
+          "hints": [
+            "Une année est un point de départ, pas une durée."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "The shop has been closed ___ three weeks.",
-          "answerSpec": { "accepted": ["for"] },
-          "hints": ["« trois semaines » mesure une durée."]
+          "answerSpec": {
+            "accepted": [
+              "for"
+            ]
+          },
+          "hints": [
+            "« trois semaines » mesure une durée."
+          ]
         },
         {
           "type": "transform",
           "source": "Zoe joined the choir eight months ago.",
           "prompt": "Dis la même chose avec « for », en commençant par « Zoe has ».",
-          "answerSpec": { "accepted": ["Zoe has been in the choir for eight months"] },
-          "hints": ["ago + prétérit devient for + present perfect."]
+          "answerSpec": {
+            "accepted": [
+              "Zoe has been in the choir for eight months"
+            ]
+          },
+          "hints": [
+            "ago + prétérit devient for + present perfect."
+          ]
         },
         {
           "type": "spot_error",
           "source": "They have been friends since ten years.",
           "prompt": "Corrige la phrase.",
-          "answerSpec": { "accepted": ["They have been friends for ten years", "They've been friends for ten years"] },
-          "hints": ["« dix ans » est une durée : for, pas since."]
+          "answerSpec": {
+            "accepted": [
+              "They have been friends for ten years",
+              "They've been friends for ten years"
+            ]
+          },
+          "hints": [
+            "« dix ans » est une durée : for, pas since."
+          ]
         },
         {
           "type": "mcq",
           "prompt": "How long ___ this flat?",
-          "answerSpec": { "accepted": ["have you rented"] },
-          "distractors": ["did you rent", "do you rent", "are you renting"],
-          "hints": ["how long ...? appelle le present perfect."]
+          "answerSpec": {
+            "accepted": [
+              "have you rented"
+            ]
+          },
+          "distractors": [
+            "did you rent",
+            "do you rent",
+            "are you renting"
+          ],
+          "hints": [
+            "how long ...? appelle le present perfect."
+          ]
         }
       ]
     },
-
+    {
+      "id": "u012-b",
+      "topicId": "u012",
+      "tags": [
+        "for-since",
+        "when"
+      ],
+      "fields": {
+        "regle": "for mesure une durée (for two years), since donne le point de départ (since March). When ... ? appelle le prétérit, how long ... ? le present perfect."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Il est consultant depuis douze ans.",
+          "answerSpec": {
+            "accepted": [
+              "He has been a consultant for twelve years"
+            ]
+          },
+          "hints": [
+            "Durée chiffrée : for."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Quand as-tu commencé à Bristol ?",
+          "answerSpec": {
+            "accepted": [
+              "When did you start in Bristol"
+            ]
+          },
+          "hints": [
+            "when : prétérit."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Nous n'avons plus de nouvelles depuis vendredi.",
+          "answerSpec": {
+            "accepted": [
+              "We have not heard anything since Friday",
+              "We haven't heard anything since Friday"
+            ]
+          },
+          "hints": [
+            "since + jour."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "I have not seen her ___ the last town hall.",
+          "answerSpec": {
+            "accepted": [
+              "since"
+            ]
+          },
+          "hints": [
+            "Un repère dans le temps."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "They stayed in Cardiff ___ three nights.",
+          "answerSpec": {
+            "accepted": [
+              "for"
+            ]
+          },
+          "hints": [
+            "Une durée."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "When did the estate review begin? Two years ago.",
+          "answerSpec": {
+            "accepted": [
+              "The estate review has been going on for two years"
+            ]
+          },
+          "source": "When did the estate review begin? Two years ago.",
+          "hints": [
+            "Une durée qui court encore."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "I work here since two years.",
+          "answerSpec": {
+            "accepted": [
+              "I have been working here for two years"
+            ]
+          },
+          "source": "I work here since two years.",
+          "hints": [
+            "Durée chiffrée : for, et present perfect."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "___ did you last speak to the client?",
+          "answerSpec": {
+            "accepted": [
+              "When"
+            ]
+          },
+          "hints": [
+            "Une date passée : prétérit."
+          ],
+          "distractors": [
+            "How long",
+            "Since when have",
+            "For how long have"
+          ]
+        }
+      ]
+    },
     {
       "id": "u013-a",
       "topicId": "u013",
-      "tags": ["present-perfect", "past-simple", "moment-precis"],
+      "tags": [
+        "present-perfect",
+        "past-simple",
+        "moment-precis"
+      ],
       "fields": {
         "regle": "Un moment passé précisé (yesterday, in 2020, last week) impose le prétérit, jamais le present perfect."
       },
@@ -452,61 +1450,237 @@
         {
           "type": "produce",
           "prompt": "Traduis : « J'ai vu ce film hier soir. »",
-          "answerSpec": { "accepted": ["I saw that film last night", "I saw this film last night"] },
-          "hints": ["last night date l'action : prétérit obligatoire."]
+          "answerSpec": {
+            "accepted": [
+              "I saw that film last night",
+              "I saw this film last night"
+            ]
+          },
+          "hints": [
+            "last night date l'action : prétérit obligatoire."
+          ]
         },
         {
           "type": "produce",
           "prompt": "Traduis : « J'ai déjà vu ce film. » (sans dire quand)",
-          "answerSpec": { "accepted": ["I've already seen that film", "I have already seen that film"] },
-          "hints": ["Sans repère de temps, le present perfect convient."]
+          "answerSpec": {
+            "accepted": [
+              "I've already seen that film",
+              "I have already seen that film"
+            ]
+          },
+          "hints": [
+            "Sans repère de temps, le present perfect convient."
+          ]
         },
         {
           "type": "produce",
           "prompt": "Traduis : « Mon oncle a vécu au Canada dans les années quatre-vingt. »",
-          "answerSpec": { "accepted": ["My uncle lived in Canada in the eighties"] },
-          "hints": ["Une période close du passé : prétérit."]
+          "answerSpec": {
+            "accepted": [
+              "My uncle lived in Canada in the eighties"
+            ]
+          },
+          "hints": [
+            "Une période close du passé : prétérit."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "Sam ___ his exam last Thursday. (pass)",
-          "answerSpec": { "accepted": ["passed"] },
-          "hints": ["Jour précisé : prétérit."]
+          "answerSpec": {
+            "accepted": [
+              "passed"
+            ]
+          },
+          "hints": [
+            "Jour précisé : prétérit."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "I ___ that email — I'll do it now. (not / send)",
-          "answerSpec": { "accepted": ["haven't sent", "have not sent"] },
-          "hints": ["Aucun moment donné, le résultat manque encore."]
+          "answerSpec": {
+            "accepted": [
+              "haven't sent",
+              "have not sent"
+            ]
+          },
+          "hints": [
+            "Aucun moment donné, le résultat manque encore."
+          ]
         },
         {
           "type": "transform",
           "source": "Otto has repaired the fence.",
           "prompt": "Ajoute « on Saturday » et adapte le temps du verbe.",
-          "answerSpec": { "accepted": ["Otto repaired the fence on Saturday"] },
-          "hints": ["Dès qu'on date l'action, on repasse au prétérit."]
+          "answerSpec": {
+            "accepted": [
+              "Otto repaired the fence on Saturday"
+            ]
+          },
+          "hints": [
+            "Dès qu'on date l'action, on repasse au prétérit."
+          ]
         },
         {
           "type": "spot_error",
           "source": "I have booked the tickets two days ago.",
           "prompt": "Corrige la phrase.",
-          "answerSpec": { "accepted": ["I booked the tickets two days ago"] },
-          "hints": ["ago date l'action : prétérit obligatoire."]
+          "answerSpec": {
+            "accepted": [
+              "I booked the tickets two days ago"
+            ]
+          },
+          "hints": [
+            "ago date l'action : prétérit obligatoire."
+          ]
         },
         {
           "type": "mcq",
           "prompt": "Marie ___ her bag on the tram this morning.",
-          "answerSpec": { "accepted": ["left"] },
-          "distractors": ["has left", "has leaved", "was leaving"],
-          "hints": ["Le matin est passé et le moment est précisé."]
+          "answerSpec": {
+            "accepted": [
+              "left"
+            ]
+          },
+          "distractors": [
+            "has left",
+            "has leaved",
+            "was leaving"
+          ],
+          "hints": [
+            "Le matin est passé et le moment est précisé."
+          ]
         }
       ]
     },
-
+    {
+      "id": "u013-b",
+      "topicId": "u013",
+      "tags": [
+        "present-perfect",
+        "preterit",
+        "contraste"
+      ],
+      "fields": {
+        "regle": "Passé fermé, prétérit. Période encore ouverte ou résultat actuel, present perfect. « this morning » à onze heures est encore ouvert ; à vingt heures, il est clos."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis (il est dix heures) : J'ai reçu trois mails ce matin.",
+          "answerSpec": {
+            "accepted": [
+              "I have had three emails this morning",
+              "I've had three emails this morning"
+            ]
+          },
+          "hints": [
+            "La matinée n'est pas finie."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis (il est vingt heures) : J'ai reçu trois mails ce matin.",
+          "answerSpec": {
+            "accepted": [
+              "I had three emails this morning"
+            ]
+          },
+          "hints": [
+            "La matinée est close."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Le train est parti il y a dix minutes.",
+          "answerSpec": {
+            "accepted": [
+              "The train left ten minutes ago"
+            ]
+          },
+          "hints": [
+            "ago : prétérit."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "I ___ him at the market last Saturday. (see)",
+          "answerSpec": {
+            "accepted": [
+              "saw"
+            ]
+          },
+          "hints": [
+            "Période close."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "We ___ a lot of interest this week. (have)",
+          "answerSpec": {
+            "accepted": [
+              "have had"
+            ]
+          },
+          "hints": [
+            "La semaine court encore."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "She has joined the board in April.",
+          "answerSpec": {
+            "accepted": [
+              "She joined the board in April"
+            ]
+          },
+          "source": "She has joined the board in April.",
+          "hints": [
+            "Un mois nommé ferme la période."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "Did you ever work with a British steering group?",
+          "answerSpec": {
+            "accepted": [
+              "Have you ever worked with a British steering group"
+            ]
+          },
+          "source": "Did you ever work with a British steering group?",
+          "hints": [
+            "Une expérience de vie : present perfect."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "The chief executive ___ the estate policy last month.",
+          "answerSpec": {
+            "accepted": [
+              "announced"
+            ]
+          },
+          "hints": [
+            "Mois clos."
+          ],
+          "distractors": [
+            "has announced",
+            "has been announcing",
+            "announces"
+          ]
+        }
+      ]
+    },
     {
       "id": "u014-a",
       "topicId": "u014",
-      "tags": ["present-perfect", "past-simple", "nouvelle"],
+      "tags": [
+        "present-perfect",
+        "past-simple",
+        "nouvelle"
+      ],
       "fields": {
         "regle": "On annonce une nouvelle au present perfect, puis on donne les détails au prétérit."
       },
@@ -520,13 +1694,22 @@
               "My computer has broken down — it stopped during the meeting"
             ]
           },
-          "hints": ["Annonce au present perfect, détail daté au prétérit."]
+          "hints": [
+            "Annonce au present perfect, détail daté au prétérit."
+          ]
         },
         {
           "type": "produce",
           "prompt": "Traduis : « Est-ce que tu as déjà déjeuné ? »",
-          "answerSpec": { "accepted": ["Have you had lunch yet", "Have you already had lunch"] },
-          "hints": ["yet en fin de question, avec le present perfect."]
+          "answerSpec": {
+            "accepted": [
+              "Have you had lunch yet",
+              "Have you already had lunch"
+            ]
+          },
+          "hints": [
+            "yet en fin de question, avec le present perfect."
+          ]
         },
         {
           "type": "produce",
@@ -537,48 +1720,205 @@
               "It has not rained all month"
             ]
           },
-          "hints": ["Le mois n'est pas fini : période encore ouverte."]
+          "hints": [
+            "Le mois n'est pas fini : période encore ouverte."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "Great news — Ines ___ the job! (get)",
-          "answerSpec": { "accepted": ["has got", "'s got", "has gotten"] },
-          "hints": ["Une nouvelle toute fraîche s'annonce au present perfect."]
+          "answerSpec": {
+            "accepted": [
+              "has got",
+              "'s got",
+              "has gotten"
+            ]
+          },
+          "hints": [
+            "Une nouvelle toute fraîche s'annonce au present perfect."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "She ___ the letter on Monday. (receive)",
-          "answerSpec": { "accepted": ["received"] },
-          "hints": ["Le détail est daté : prétérit."]
+          "answerSpec": {
+            "accepted": [
+              "received"
+            ]
+          },
+          "hints": [
+            "Le détail est daté : prétérit."
+          ]
         },
         {
           "type": "transform",
           "source": "The council has repaired the bridge.",
           "prompt": "Ajoute le détail « the work took four months » après la phrase.",
-          "answerSpec": { "accepted": ["The council has repaired the bridge. The work took four months"] },
-          "hints": ["La nouvelle reste au perfect, le détail passe au prétérit."]
+          "answerSpec": {
+            "accepted": [
+              "The council has repaired the bridge. The work took four months"
+            ]
+          },
+          "hints": [
+            "La nouvelle reste au perfect, le détail passe au prétérit."
+          ]
         },
         {
           "type": "spot_error",
           "source": "Did you ever tried Japanese food?",
           "prompt": "Corrige la phrase.",
-          "answerSpec": { "accepted": ["Have you ever tried Japanese food"] },
-          "hints": ["ever interroge une expérience : present perfect."]
+          "answerSpec": {
+            "accepted": [
+              "Have you ever tried Japanese food"
+            ]
+          },
+          "hints": [
+            "ever interroge une expérience : present perfect."
+          ]
         },
         {
           "type": "mcq",
           "prompt": "Look — the cat ___ the whole bowl.",
-          "answerSpec": { "accepted": ["has eaten"] },
-          "distractors": ["ate", "has ate", "did eat"],
-          "hints": ["Le résultat est sous les yeux, à l'instant."]
+          "answerSpec": {
+            "accepted": [
+              "has eaten"
+            ]
+          },
+          "distractors": [
+            "ate",
+            "has ate",
+            "did eat"
+          ],
+          "hints": [
+            "Le résultat est sous les yeux, à l'instant."
+          ]
         }
       ]
     },
-
+    {
+      "id": "u014-b",
+      "topicId": "u014",
+      "tags": [
+        "present-perfect",
+        "preterit",
+        "nouvelle"
+      ],
+      "fields": {
+        "regle": "Une nouvelle s'annonce au present perfect, puis les détails passent au prétérit : « The lift has broken down. It stopped between two floors. »"
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : L'ascenseur est tombé en panne. Il s'est arrêté entre deux étages.",
+          "answerSpec": {
+            "accepted": [
+              "The lift has broken down. It stopped between two floors"
+            ]
+          },
+          "hints": [
+            "Annonce puis détail."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Ils ont trouvé un fournisseur. Ils l'ont rencontré à Manchester.",
+          "answerSpec": {
+            "accepted": [
+              "They have found a supplier. They met him in Manchester"
+            ]
+          },
+          "hints": [
+            "Le détail recule au prétérit."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Le modèle a inventé une règle qui n'existe pas.",
+          "answerSpec": {
+            "accepted": [
+              "The model has invented a rule that does not exist"
+            ]
+          },
+          "hints": [
+            "Résultat encore vrai."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Someone ___ my chair. They took it this morning. (take)",
+          "answerSpec": {
+            "accepted": [
+              "has taken"
+            ]
+          },
+          "hints": [
+            "L'annonce."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The pilot has finished. It ___ six months. (last)",
+          "answerSpec": {
+            "accepted": [
+              "lasted"
+            ]
+          },
+          "hints": [
+            "Le détail."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "There is no coffee. Somebody finished it at eight.",
+          "answerSpec": {
+            "accepted": [
+              "Somebody has finished the coffee: they finished it at eight"
+            ]
+          },
+          "source": "There is no coffee. Somebody finished it at eight.",
+          "hints": [
+            "Annonce au present perfect."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "I have spoken to legal at nine this morning.",
+          "answerSpec": {
+            "accepted": [
+              "I spoke to legal at nine this morning"
+            ]
+          },
+          "source": "I have spoken to legal at nine this morning.",
+          "hints": [
+            "Une heure précise ferme la période."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Good news — the client ___ the statement of work.",
+          "answerSpec": {
+            "accepted": [
+              "has approved"
+            ]
+          },
+          "hints": [
+            "Nouvelle fraîche."
+          ],
+          "distractors": [
+            "approved yesterday",
+            "approves",
+            "was approving"
+          ]
+        }
+      ]
+    },
     {
       "id": "u015-a",
       "topicId": "u015",
-      "tags": ["past-perfect", "anteriorite"],
+      "tags": [
+        "past-perfect",
+        "anteriorite"
+      ],
       "fields": {
         "regle": "had + participe passé : une action antérieure à un autre moment du passé."
       },
@@ -586,61 +1926,235 @@
         {
           "type": "produce",
           "prompt": "Traduis : « Quand je suis arrivé, le train était déjà parti. »",
-          "answerSpec": { "accepted": ["When I arrived, the train had already left"] },
-          "hints": ["L'action la plus ancienne prend had + participe passé."]
+          "answerSpec": {
+            "accepted": [
+              "When I arrived, the train had already left"
+            ]
+          },
+          "hints": [
+            "L'action la plus ancienne prend had + participe passé."
+          ]
         },
         {
           "type": "produce",
           "prompt": "Traduis : « Elle m'a dit qu'elle avait oublié mon anniversaire. »",
-          "answerSpec": { "accepted": ["She told me she had forgotten my birthday"] },
-          "hints": ["Un passé dans le passé : had + participe."]
+          "answerSpec": {
+            "accepted": [
+              "She told me she had forgotten my birthday"
+            ]
+          },
+          "hints": [
+            "Un passé dans le passé : had + participe."
+          ]
         },
         {
           "type": "produce",
           "prompt": "Traduis : « Nous n'avions jamais vu autant de neige. »",
-          "answerSpec": { "accepted": ["We had never seen so much snow", "We'd never seen so much snow"] },
-          "hints": ["never s'insère entre had et le participe."]
+          "answerSpec": {
+            "accepted": [
+              "We had never seen so much snow",
+              "We'd never seen so much snow"
+            ]
+          },
+          "hints": [
+            "never s'insère entre had et le participe."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "The room was empty — everyone ___ home. (go)",
-          "answerSpec": { "accepted": ["had gone", "'d gone"] },
-          "hints": ["Le départ précède le constat."]
+          "answerSpec": {
+            "accepted": [
+              "had gone",
+              "'d gone"
+            ]
+          },
+          "hints": [
+            "Le départ précède le constat."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "I didn't recognise her because she ___ her hair. (cut)",
-          "answerSpec": { "accepted": ["had cut", "'d cut"] },
-          "hints": ["La cause est antérieure à l'effet raconté au prétérit."]
+          "answerSpec": {
+            "accepted": [
+              "had cut",
+              "'d cut"
+            ]
+          },
+          "hints": [
+            "La cause est antérieure à l'effet raconté au prétérit."
+          ]
         },
         {
           "type": "transform",
           "source": "Julian locked the door. Then he remembered his phone.",
           "prompt": "Fais-en une seule phrase commençant par « When Julian remembered his phone ».",
-          "answerSpec": { "accepted": ["When Julian remembered his phone, he had already locked the door"] },
-          "hints": ["L'action la plus ancienne passe au past perfect."]
+          "answerSpec": {
+            "accepted": [
+              "When Julian remembered his phone, he had already locked the door"
+            ]
+          },
+          "hints": [
+            "L'action la plus ancienne passe au past perfect."
+          ]
         },
         {
           "type": "spot_error",
           "source": "By the time we arrived, the concert has finished.",
           "prompt": "Corrige la phrase.",
-          "answerSpec": { "accepted": ["By the time we arrived, the concert had finished"] },
-          "hints": ["Dans un récit au passé, l'antériorité se dit avec had."]
+          "answerSpec": {
+            "accepted": [
+              "By the time we arrived, the concert had finished"
+            ]
+          },
+          "hints": [
+            "Dans un récit au passé, l'antériorité se dit avec had."
+          ]
         },
         {
           "type": "mcq",
           "prompt": "She was upset because she ___ her wallet.",
-          "answerSpec": { "accepted": ["had lost"] },
-          "distractors": ["has lost", "did lose", "had lose"],
-          "hints": ["La perte précède le sentiment raconté au prétérit."]
+          "answerSpec": {
+            "accepted": [
+              "had lost"
+            ]
+          },
+          "distractors": [
+            "has lost",
+            "did lose",
+            "had lose"
+          ],
+          "hints": [
+            "La perte précède le sentiment raconté au prétérit."
+          ]
         }
       ]
     },
-
+    {
+      "id": "u015-b",
+      "topicId": "u015",
+      "tags": [
+        "past-perfect",
+        "anteriorite"
+      ],
+      "fields": {
+        "regle": "Le past perfect place un fait avant un autre fait passé : « By the time I arrived, everyone had left. » Sans lui, l'ordre des événements se perd."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Quand je suis arrivé, la réunion avait déjà commencé.",
+          "answerSpec": {
+            "accepted": [
+              "When I arrived, the meeting had already started"
+            ]
+          },
+          "hints": [
+            "Antériorité dans le passé."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Il a dit qu'il avait déjà signé.",
+          "answerSpec": {
+            "accepted": [
+              "He said he had already signed"
+            ]
+          },
+          "hints": [
+            "Discours rapporté : recul d'un cran."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Nous ne savions pas qu'ils avaient changé de fournisseur.",
+          "answerSpec": {
+            "accepted": [
+              "We did not know they had changed supplier",
+              "We didn't know they had changed supplier"
+            ]
+          },
+          "hints": [
+            "Le fait est antérieur."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "By the time legal replied, we ___ the deadline. (miss)",
+          "answerSpec": {
+            "accepted": [
+              "had missed"
+            ]
+          },
+          "hints": [
+            "Avant l'autre fait passé."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "She had never ___ to Bristol before that trip. (be)",
+          "answerSpec": {
+            "accepted": [
+              "been"
+            ]
+          },
+          "hints": [
+            "had + participe."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "The demo failed. Nobody tested it first.",
+          "answerSpec": {
+            "accepted": [
+              "The demo failed because nobody had tested it"
+            ]
+          },
+          "source": "The demo failed. Nobody tested it first.",
+          "hints": [
+            "La cause précède."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "When we arrived, the client already left.",
+          "answerSpec": {
+            "accepted": [
+              "When we arrived, the client had already left"
+            ]
+          },
+          "source": "When we arrived, the client already left.",
+          "hints": [
+            "Le départ précède l'arrivée."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "He realised he ___ the wrong version.",
+          "answerSpec": {
+            "accepted": [
+              "had sent"
+            ]
+          },
+          "hints": [
+            "Antérieur au constat."
+          ],
+          "distractors": [
+            "has sent",
+            "sends",
+            "was sending"
+          ]
+        }
+      ]
+    },
     {
       "id": "u016-a",
       "topicId": "u016",
-      "tags": ["past-perfect-continuous", "duree-anterieure"],
+      "tags": [
+        "past-perfect-continuous",
+        "duree-anterieure"
+      ],
       "fields": {
         "regle": "had been + -ing : une activité qui avait duré jusqu'à un moment du passé."
       },
@@ -654,7 +2168,9 @@
               "He'd been waiting for an hour when she finally arrived"
             ]
           },
-          "hints": ["Durée antérieure à un point du passé : had been + -ing."]
+          "hints": [
+            "Durée antérieure à un point du passé : had been + -ing."
+          ]
         },
         {
           "type": "produce",
@@ -665,32 +2181,60 @@
               "Her eyes were red. She had been crying"
             ]
           },
-          "hints": ["L'activité récente explique l'état constaté."]
+          "hints": [
+            "L'activité récente explique l'état constaté."
+          ]
         },
         {
           "type": "produce",
           "prompt": "Traduis : « Nous roulions depuis des heures quand la voiture s'est arrêtée. »",
-          "answerSpec": { "accepted": ["We had been driving for hours when the car stopped"] },
-          "hints": ["La durée précède l'incident raconté au prétérit."]
+          "answerSpec": {
+            "accepted": [
+              "We had been driving for hours when the car stopped"
+            ]
+          },
+          "hints": [
+            "La durée précède l'incident raconté au prétérit."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "The path was muddy because it ___ all week. (rain)",
-          "answerSpec": { "accepted": ["had been raining", "'d been raining"] },
-          "hints": ["Activité longue et antérieure au constat."]
+          "answerSpec": {
+            "accepted": [
+              "had been raining",
+              "'d been raining"
+            ]
+          },
+          "hints": [
+            "Activité longue et antérieure au constat."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "They ___ the flat for months before they found a buyer. (advertise)",
-          "answerSpec": { "accepted": ["had been advertising", "'d been advertising"] },
-          "hints": ["before situe l'activité avant l'événement."]
+          "answerSpec": {
+            "accepted": [
+              "had been advertising",
+              "'d been advertising"
+            ]
+          },
+          "hints": [
+            "before situe l'activité avant l'événement."
+          ]
         },
         {
           "type": "transform",
           "source": "Amara started revising at six. At ten she was still revising.",
           "prompt": "Fais-en une seule phrase commençant par « By ten, Amara ».",
-          "answerSpec": { "accepted": ["By ten, Amara had been revising for four hours"] },
-          "hints": ["Une durée close dans le passé : had been + -ing + for."]
+          "answerSpec": {
+            "accepted": [
+              "By ten, Amara had been revising for four hours"
+            ]
+          },
+          "hints": [
+            "Une durée close dans le passé : had been + -ing + for."
+          ]
         },
         {
           "type": "spot_error",
@@ -702,22 +2246,153 @@
               "She was tired because she'd been working all night"
             ]
           },
-          "hints": ["Après had been, le verbe prend -ing."]
+          "hints": [
+            "Après had been, le verbe prend -ing."
+          ]
         },
         {
           "type": "mcq",
           "prompt": "The pitch was frozen — it ___ since midnight.",
-          "answerSpec": { "accepted": ["had been snowing"] },
-          "distractors": ["has been snowing", "was snowing", "had snowing"],
-          "hints": ["Le récit est au passé, la durée le précède."]
+          "answerSpec": {
+            "accepted": [
+              "had been snowing"
+            ]
+          },
+          "distractors": [
+            "has been snowing",
+            "was snowing",
+            "had snowing"
+          ],
+          "hints": [
+            "Le récit est au passé, la durée le précède."
+          ]
         }
       ]
     },
-
+    {
+      "id": "u016-b",
+      "topicId": "u016",
+      "tags": [
+        "past-perfect-continu",
+        "duree-passee"
+      ],
+      "fields": {
+        "regle": "Le past perfect continu dit la durée d'une activité antérieure à un moment passé : « She had been waiting for an hour when he finally called. »"
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Elle attendait depuis une heure quand il a enfin appelé.",
+          "answerSpec": {
+            "accepted": [
+              "She had been waiting for an hour when he finally called"
+            ]
+          },
+          "hints": [
+            "Durée avant un fait passé."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Ils travaillaient dessus depuis des mois avant que le budget ne tombe.",
+          "answerSpec": {
+            "accepted": [
+              "They had been working on it for months before the budget came through"
+            ]
+          },
+          "hints": [
+            "Antériorité longue."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Il était épuisé : il avait présenté toute la journée.",
+          "answerSpec": {
+            "accepted": [
+              "He was exhausted: he had been presenting all day"
+            ]
+          },
+          "hints": [
+            "La trace d'une activité."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The room was warm — the heating ___ all night. (run, forme en cours)",
+          "answerSpec": {
+            "accepted": [
+              "had been running"
+            ]
+          },
+          "hints": [
+            "Durée antérieure."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "We ___ been queuing for twenty minutes when the doors opened.",
+          "answerSpec": {
+            "accepted": [
+              "had"
+            ]
+          },
+          "hints": [
+            "had + been + -ing."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "He started at six. At nine he was still writing.",
+          "answerSpec": {
+            "accepted": [
+              "By nine he had been writing for three hours"
+            ]
+          },
+          "source": "He started at six. At nine he was still writing.",
+          "hints": [
+            "Durée jusqu'à un point passé."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "She was waiting for two hours when he arrived.",
+          "answerSpec": {
+            "accepted": [
+              "She had been waiting for two hours when he arrived"
+            ]
+          },
+          "source": "She was waiting for two hours when he arrived.",
+          "hints": [
+            "La durée précède l'arrivée."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "The team ___ ___ ___ on the pilot before it was cancelled.",
+          "answerSpec": {
+            "accepted": [
+              "had been working"
+            ]
+          },
+          "hints": [
+            "Durée antérieure à l'annulation."
+          ],
+          "distractors": [
+            "has been working",
+            "was working since",
+            "worked for"
+          ]
+        }
+      ]
+    },
     {
       "id": "u017-a",
       "topicId": "u017",
-      "tags": ["have", "have-got", "possession"],
+      "tags": [
+        "have",
+        "have-got",
+        "possession"
+      ],
       "fields": {
         "regle": "have got = have pour la possession, au présent seulement. Au passé, seul had existe."
       },
@@ -725,8 +2400,15 @@
         {
           "type": "produce",
           "prompt": "Traduis : « J'ai deux frères. » (avec have got)",
-          "answerSpec": { "accepted": ["I've got two brothers", "I have got two brothers"] },
-          "hints": ["have got exprime la possession au présent."]
+          "answerSpec": {
+            "accepted": [
+              "I've got two brothers",
+              "I have got two brothers"
+            ]
+          },
+          "hints": [
+            "have got exprime la possession au présent."
+          ]
         },
         {
           "type": "produce",
@@ -737,7 +2419,9 @@
               "Do you have any change"
             ]
           },
-          "hints": ["Deux tournures possibles : have you got ou do you have."]
+          "hints": [
+            "Deux tournures possibles : have you got ou do you have."
+          ]
         },
         {
           "type": "produce",
@@ -748,48 +2432,209 @@
               "We did not have a car at the time"
             ]
           },
-          "hints": ["Au passé, have got n'existe pas : did not have."]
+          "hints": [
+            "Au passé, have got n'existe pas : did not have."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "___ a moment? I need your advice. (you / have got)",
-          "answerSpec": { "accepted": ["Have you got"] },
-          "hints": ["have got se questionne sans do."]
+          "answerSpec": {
+            "accepted": [
+              "Have you got"
+            ]
+          },
+          "hints": [
+            "have got se questionne sans do."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "We usually ___ breakfast at seven. (have)",
-          "answerSpec": { "accepted": ["have"] },
-          "hints": ["have breakfast est une action : jamais have got."]
+          "answerSpec": {
+            "accepted": [
+              "have"
+            ]
+          },
+          "hints": [
+            "have breakfast est une action : jamais have got."
+          ]
         },
         {
           "type": "transform",
           "source": "Léon has got a small workshop.",
           "prompt": "Mets la phrase au passé.",
-          "answerSpec": { "accepted": ["Léon had a small workshop", "Leon had a small workshop"] },
-          "hints": ["Au passé, got disparaît : il ne reste que had."]
+          "answerSpec": {
+            "accepted": [
+              "Léon had a small workshop",
+              "Leon had a small workshop"
+            ]
+          },
+          "hints": [
+            "Au passé, got disparaît : il ne reste que had."
+          ]
         },
         {
           "type": "spot_error",
           "source": "Do you have got a bike?",
           "prompt": "Corrige la phrase.",
-          "answerSpec": { "accepted": ["Have you got a bike", "Do you have a bike"] },
-          "hints": ["On choisit une tournure ou l'autre, jamais les deux."]
+          "answerSpec": {
+            "accepted": [
+              "Have you got a bike",
+              "Do you have a bike"
+            ]
+          },
+          "hints": [
+            "On choisit une tournure ou l'autre, jamais les deux."
+          ]
         },
         {
           "type": "mcq",
           "prompt": "We ___ a lovely time in Porto last spring.",
-          "answerSpec": { "accepted": ["had"] },
-          "distractors": ["had got", "have got", "were having got"],
-          "hints": ["have a good time est une action, et l'action est passée."]
+          "answerSpec": {
+            "accepted": [
+              "had"
+            ]
+          },
+          "distractors": [
+            "had got",
+            "have got",
+            "were having got"
+          ],
+          "hints": [
+            "have a good time est une action, et l'action est passée."
+          ]
         }
       ]
     },
-
+    {
+      "id": "u017-b",
+      "topicId": "u017",
+      "tags": [
+        "have",
+        "have-got",
+        "possession"
+      ],
+      "fields": {
+        "regle": "have got se limite au présent et dit la possession ou l'état ; have s'emploie partout, et seul lui admet les emplois d'action : have lunch, have a look, have a word."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : As-tu une minute ?",
+          "answerSpec": {
+            "accepted": [
+              "Have you got a minute",
+              "Do you have a minute"
+            ]
+          },
+          "hints": [
+            "Possession momentanée."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Nous avons déjeuné avec le client.",
+          "answerSpec": {
+            "accepted": [
+              "We had lunch with the client"
+            ]
+          },
+          "hints": [
+            "Action : jamais have got."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Elle n'a pas de bureau attitré.",
+          "answerSpec": {
+            "accepted": [
+              "She has not got a desk of her own",
+              "She doesn't have a desk of her own"
+            ]
+          },
+          "hints": [
+            "Possession, à la négative."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "I ___ got two direct reports and a contractor.",
+          "answerSpec": {
+            "accepted": [
+              "have",
+              "'ve"
+            ]
+          },
+          "hints": [
+            "Présent seulement."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Can I ___ a quick word about the deck?",
+          "answerSpec": {
+            "accepted": [
+              "have"
+            ]
+          },
+          "hints": [
+            "Action figée."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "Do you have got any questions before we start?",
+          "answerSpec": {
+            "accepted": [
+              "Have you got any questions before we start",
+              "Do you have any questions before we start"
+            ]
+          },
+          "source": "Do you have got any questions before we start?",
+          "hints": [
+            "On ne cumule pas do et got."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "We had got a workshop last Thursday.",
+          "answerSpec": {
+            "accepted": [
+              "We had a workshop last Thursday"
+            ]
+          },
+          "source": "We had got a workshop last Thursday.",
+          "hints": [
+            "have got n'existe pas au passé."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Let me ___ a look at the numbers.",
+          "answerSpec": {
+            "accepted": [
+              "have"
+            ]
+          },
+          "hints": [
+            "Emploi d'action."
+          ],
+          "distractors": [
+            "have got",
+            "get got",
+            "be having"
+          ]
+        }
+      ]
+    },
     {
       "id": "u018-a",
       "topicId": "u018",
-      "tags": ["used-to", "habitude-passee"],
+      "tags": [
+        "used-to",
+        "habitude-passee"
+      ],
       "fields": {
         "regle": "used to + base verbale : une habitude ou un état du passé qui n'est plus vrai."
       },
@@ -797,8 +2642,14 @@
         {
           "type": "produce",
           "prompt": "Traduis : « Avant, je buvais du café tous les matins. »",
-          "answerSpec": { "accepted": ["I used to drink coffee every morning"] },
-          "hints": ["used to marque une habitude révolue."]
+          "answerSpec": {
+            "accepted": [
+              "I used to drink coffee every morning"
+            ]
+          },
+          "hints": [
+            "used to marque une habitude révolue."
+          ]
         },
         {
           "type": "produce",
@@ -809,46 +2660,206 @@
               "There did not use to be a supermarket here"
             ]
           },
-          "hints": ["À la forme négative : didn't use to, sans -d."]
+          "hints": [
+            "À la forme négative : didn't use to, sans -d."
+          ]
         },
         {
           "type": "produce",
           "prompt": "Traduis : « Est-ce que tu jouais au rugby quand tu étais jeune ? »",
-          "answerSpec": { "accepted": ["Did you use to play rugby when you were young"] },
-          "hints": ["Question : did + sujet + use to, sans -d."]
+          "answerSpec": {
+            "accepted": [
+              "Did you use to play rugby when you were young"
+            ]
+          },
+          "hints": [
+            "Question : did + sujet + use to, sans -d."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "This street ___ much quieter. (used to / be)",
-          "answerSpec": { "accepted": ["used to be"] },
-          "hints": ["Un état passé qui a changé."]
+          "answerSpec": {
+            "accepted": [
+              "used to be"
+            ]
+          },
+          "hints": [
+            "Un état passé qui a changé."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "My grandmother ___ her own bread every Sunday. (used to / bake)",
-          "answerSpec": { "accepted": ["used to bake"] },
-          "hints": ["Habitude régulière, aujourd'hui terminée."]
+          "answerSpec": {
+            "accepted": [
+              "used to bake"
+            ]
+          },
+          "hints": [
+            "Habitude régulière, aujourd'hui terminée."
+          ]
         },
         {
           "type": "transform",
           "source": "Elias played the trumpet for years, but he stopped in 2018.",
           "prompt": "Réécris la première partie avec « used to », en commençant par « Elias ».",
-          "answerSpec": { "accepted": ["Elias used to play the trumpet"] },
-          "hints": ["used to suffit à dire que c'est fini."]
+          "answerSpec": {
+            "accepted": [
+              "Elias used to play the trumpet"
+            ]
+          },
+          "hints": [
+            "used to suffit à dire que c'est fini."
+          ]
         },
         {
           "type": "spot_error",
           "source": "I didn't used to like olives.",
           "prompt": "Corrige la phrase.",
-          "answerSpec": { "accepted": ["I didn't use to like olives", "I did not use to like olives"] },
-          "hints": ["Après did, la marque du passé disparaît : use to."]
+          "answerSpec": {
+            "accepted": [
+              "I didn't use to like olives",
+              "I did not use to like olives"
+            ]
+          },
+          "hints": [
+            "Après did, la marque du passé disparaît : use to."
+          ]
         },
         {
           "type": "mcq",
           "prompt": "There ___ a cinema on this corner.",
-          "answerSpec": { "accepted": ["used to be"] },
-          "distractors": ["use to be", "used to being", "is used to be"],
-          "hints": ["Un lieu qui existait autrefois et plus maintenant."]
+          "answerSpec": {
+            "accepted": [
+              "used to be"
+            ]
+          },
+          "distractors": [
+            "use to be",
+            "used to being",
+            "is used to be"
+          ],
+          "hints": [
+            "Un lieu qui existait autrefois et plus maintenant."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u018-b",
+      "topicId": "u018",
+      "tags": [
+        "used-to",
+        "habitude-passee"
+      ],
+      "fields": {
+        "regle": "used to dit une habitude passée qui n'a plus cours : « I used to cycle to work. » Ne pas confondre avec « to be used to -ing », qui dit qu'on y est habitué."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : J'allais au bureau à vélo, avant.",
+          "answerSpec": {
+            "accepted": [
+              "I used to cycle to work"
+            ]
+          },
+          "hints": [
+            "Habitude révolue."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Il n'y avait pas de bureaux partagés à l'époque.",
+          "answerSpec": {
+            "accepted": [
+              "There did not use to be hot-desking then",
+              "There didn't use to be hot-desking then"
+            ]
+          },
+          "hints": [
+            "Négation : did not use to."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Maintenant je suis habitué à travailler en anglais.",
+          "answerSpec": {
+            "accepted": [
+              "I am used to working in English now"
+            ]
+          },
+          "hints": [
+            "be used to + -ing : tout autre chose."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The team ___ to meet every Monday, but not any more.",
+          "answerSpec": {
+            "accepted": [
+              "used"
+            ]
+          },
+          "hints": [
+            "Habitude passée."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "She is not used ___ presenting to a board.",
+          "answerSpec": {
+            "accepted": [
+              "to"
+            ]
+          },
+          "hints": [
+            "be used to + -ing."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "I smoked for years. I stopped in 2020.",
+          "answerSpec": {
+            "accepted": [
+              "I used to smoke, but I stopped in 2020"
+            ]
+          },
+          "source": "I smoked for years. I stopped in 2020.",
+          "hints": [
+            "Habitude révolue."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "I am used to work from home on Fridays.",
+          "answerSpec": {
+            "accepted": [
+              "I am used to working from home on Fridays"
+            ]
+          },
+          "source": "I am used to work from home on Fridays.",
+          "hints": [
+            "Après be used to, un -ing."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "There ___ a cinema where the flats are now.",
+          "answerSpec": {
+            "accepted": [
+              "used to be"
+            ]
+          },
+          "hints": [
+            "Situation passée révolue."
+          ],
+          "distractors": [
+            "was used to be",
+            "used to being",
+            "is used to be"
+          ]
         }
       ]
     }

@@ -4,7 +4,10 @@
     {
       "id": "u001-a",
       "topicId": "u001",
-      "tags": ["present-continuous", "action-en-cours"],
+      "tags": [
+        "present-continuous",
+        "action-en-cours"
+      ],
       "fields": {
         "regle": "be + verbe en -ing : ce qui se passe au moment où l'on parle, ou une évolution en cours."
       },
@@ -18,13 +21,21 @@
               "I am looking for my glasses at the moment"
             ]
           },
-          "hints": ["Action en cours maintenant : be + verbe en -ing."]
+          "hints": [
+            "Action en cours maintenant : be + verbe en -ing."
+          ]
         },
         {
           "type": "produce",
           "prompt": "Traduis : « Pourquoi est-ce que tu ris ? »",
-          "answerSpec": { "accepted": ["Why are you laughing"] },
-          "hints": ["Question au présent continu : be passe avant le sujet."]
+          "answerSpec": {
+            "accepted": [
+              "Why are you laughing"
+            ]
+          },
+          "hints": [
+            "Question au présent continu : be passe avant le sujet."
+          ]
         },
         {
           "type": "produce",
@@ -35,48 +46,208 @@
               "They are building a new school near the park"
             ]
           },
-          "hints": ["Un chantier en cours se dit au présent continu."]
+          "hints": [
+            "Un chantier en cours se dit au présent continu."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "Don't go in — Karim ___ a call. (take)",
-          "answerSpec": { "accepted": ["is taking", "'s taking"] },
-          "hints": ["Ce qui se passe à l'instant même : be + -ing."]
+          "answerSpec": {
+            "accepted": [
+              "is taking",
+              "'s taking"
+            ]
+          },
+          "hints": [
+            "Ce qui se passe à l'instant même : be + -ing."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "The evenings ___ longer since March. (get)",
-          "answerSpec": { "accepted": ["are getting", "'re getting"] },
-          "hints": ["Une évolution progressive se dit au présent continu."]
+          "answerSpec": {
+            "accepted": [
+              "are getting",
+              "'re getting"
+            ]
+          },
+          "hints": [
+            "Une évolution progressive se dit au présent continu."
+          ]
         },
         {
           "type": "transform",
           "source": "Sofia reads a magazine on the balcony.",
           "prompt": "Réécris la phrase pour dire que Sofia est en train de lire, là, maintenant.",
-          "answerSpec": { "accepted": ["Sofia is reading a magazine on the balcony"] },
-          "hints": ["On passe de l'habitude (présent simple) à l'action en cours (be + -ing)."]
+          "answerSpec": {
+            "accepted": [
+              "Sofia is reading a magazine on the balcony"
+            ]
+          },
+          "hints": [
+            "On passe de l'habitude (présent simple) à l'action en cours (be + -ing)."
+          ]
         },
         {
           "type": "spot_error",
           "source": "Look, it rains again.",
           "prompt": "Corrige la phrase.",
-          "answerSpec": { "accepted": ["Look, it's raining again", "Look, it is raining again"] },
-          "hints": ["Ce qu'on voit se produire sous ses yeux demande be + -ing."]
+          "answerSpec": {
+            "accepted": [
+              "Look, it's raining again",
+              "Look, it is raining again"
+            ]
+          },
+          "hints": [
+            "Ce qu'on voit se produire sous ses yeux demande be + -ing."
+          ]
         },
         {
           "type": "mcq",
           "prompt": "Quiet please — I ___ to concentrate.",
-          "answerSpec": { "accepted": ["am trying"] },
-          "distractors": ["try", "tries", "am tried"],
-          "hints": ["Un effort en cours au moment où l'on parle."]
+          "answerSpec": {
+            "accepted": [
+              "am trying"
+            ]
+          },
+          "distractors": [
+            "try",
+            "tries",
+            "am tried"
+          ],
+          "hints": [
+            "Un effort en cours au moment où l'on parle."
+          ]
         }
       ]
     },
-
+    {
+      "id": "u001-b",
+      "topicId": "u001",
+      "tags": [
+        "present-continu",
+        "en-cours"
+      ],
+      "fields": {
+        "regle": "Le présent continu décrit ce qui est en train de se faire, ou une situation provisoire. Les verbes d'état — know, like, want, believe, belong — ne s'y mettent pas."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Je suis en train de relire le contrat.",
+          "answerSpec": {
+            "accepted": [
+              "I am reading the contract through",
+              "I'm reading the contract through"
+            ]
+          },
+          "hints": [
+            "Une action en cours : be + -ing."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Elle travaille à Cardiff ce mois-ci, à titre provisoire.",
+          "answerSpec": {
+            "accepted": [
+              "She is working in Cardiff this month"
+            ]
+          },
+          "hints": [
+            "Situation provisoire : présent continu."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Ce que tu dis n'a pas de sens.",
+          "answerSpec": {
+            "accepted": [
+              "What you are saying does not make sense",
+              "What you're saying doesn't make sense"
+            ]
+          },
+          "hints": [
+            "make sense reste au présent simple : c'est un état."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Be quiet — the client ___ on the other line. (wait)",
+          "answerSpec": {
+            "accepted": [
+              "is waiting"
+            ]
+          },
+          "hints": [
+            "Maintenant, à cet instant."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "I ___ the point you are making, but I disagree. (see)",
+          "answerSpec": {
+            "accepted": [
+              "see"
+            ]
+          },
+          "hints": [
+            "Verbe de perception : présent simple."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "The migration runs at the moment.",
+          "answerSpec": {
+            "accepted": [
+              "The migration is running at the moment"
+            ]
+          },
+          "source": "The migration runs at the moment.",
+          "hints": [
+            "« at the moment » appelle le continu."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "I am knowing the answer to that one.",
+          "answerSpec": {
+            "accepted": [
+              "I know the answer to that one"
+            ]
+          },
+          "source": "I am knowing the answer to that one.",
+          "hints": [
+            "know est un verbe d'état."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Look — the lift ___ again.",
+          "answerSpec": {
+            "accepted": [
+              "is breaking down"
+            ]
+          },
+          "hints": [
+            "« Look » situe l'action à l'instant."
+          ],
+          "distractors": [
+            "breaks down",
+            "broke down",
+            "has broken down"
+          ]
+        }
+      ]
+    },
     {
       "id": "u002-a",
       "topicId": "u002",
-      "tags": ["present-simple", "habitude", "verite-generale"],
+      "tags": [
+        "present-simple",
+        "habitude",
+        "verite-generale"
+      ],
       "fields": {
         "regle": "Habitudes, vérités générales, horaires. Verbe nu, sauf -s à la 3e personne du singulier."
       },
@@ -85,35 +256,64 @@
           "type": "produce",
           "prompt": "Traduis : « Mon frère travaille dans une librairie. »",
           "answerSpec": {
-            "accepted": ["My brother works in a bookshop", "My brother works in a bookstore"]
+            "accepted": [
+              "My brother works in a bookshop",
+              "My brother works in a bookstore"
+            ]
           },
-          "hints": ["Situation durable : présent simple, avec -s à la 3e personne."]
+          "hints": [
+            "Situation durable : présent simple, avec -s à la 3e personne."
+          ]
         },
         {
           "type": "produce",
           "prompt": "Traduis : « Nous ne mangeons pas de viande. »",
-          "answerSpec": { "accepted": ["We don't eat meat", "We do not eat meat"] },
-          "hints": ["Négation : do not / does not + verbe à la base."]
+          "answerSpec": {
+            "accepted": [
+              "We don't eat meat",
+              "We do not eat meat"
+            ]
+          },
+          "hints": [
+            "Négation : do not / does not + verbe à la base."
+          ]
         },
         {
           "type": "produce",
           "prompt": "Traduis : « Est-ce que ce train s'arrête à Lyon ? »",
           "answerSpec": {
-            "accepted": ["Does this train stop in Lyon", "Does this train stop at Lyon"]
+            "accepted": [
+              "Does this train stop in Lyon",
+              "Does this train stop at Lyon"
+            ]
           },
-          "hints": ["Question : does + sujet + verbe à la base, sans -s."]
+          "hints": [
+            "Question : does + sujet + verbe à la base, sans -s."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "Elena ___ four languages fluently. (speak)",
-          "answerSpec": { "accepted": ["speaks"] },
-          "hints": ["3e personne du singulier : le verbe prend un -s."]
+          "answerSpec": {
+            "accepted": [
+              "speaks"
+            ]
+          },
+          "hints": [
+            "3e personne du singulier : le verbe prend un -s."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "The museum ___ at six on Sundays. (close)",
-          "answerSpec": { "accepted": ["closes"] },
-          "hints": ["Un horaire régulier se dit au présent simple."]
+          "answerSpec": {
+            "accepted": [
+              "closes"
+            ]
+          },
+          "hints": [
+            "Un horaire régulier se dit au présent simple."
+          ]
         },
         {
           "type": "transform",
@@ -125,31 +325,169 @@
               "Ben does not go to the pool on Mondays"
             ]
           },
-          "hints": ["Le -s passe sur l'auxiliaire : does not + verbe nu."]
+          "hints": [
+            "Le -s passe sur l'auxiliaire : does not + verbe nu."
+          ]
         },
         {
           "type": "spot_error",
           "source": "She don't like spicy food.",
           "prompt": "Corrige la phrase.",
           "answerSpec": {
-            "accepted": ["She doesn't like spicy food", "She does not like spicy food"]
+            "accepted": [
+              "She doesn't like spicy food",
+              "She does not like spicy food"
+            ]
           },
-          "hints": ["À la 3e personne, la négation se fait avec does not."]
+          "hints": [
+            "À la 3e personne, la négation se fait avec does not."
+          ]
         },
         {
           "type": "mcq",
           "prompt": "My neighbour ___ the piano every evening.",
-          "answerSpec": { "accepted": ["plays"] },
-          "distractors": ["play", "is play", "playing"],
-          "hints": ["Habitude quotidienne, 3e personne du singulier."]
+          "answerSpec": {
+            "accepted": [
+              "plays"
+            ]
+          },
+          "distractors": [
+            "play",
+            "is play",
+            "playing"
+          ],
+          "hints": [
+            "Habitude quotidienne, 3e personne du singulier."
+          ]
         }
       ]
     },
-
+    {
+      "id": "u002-b",
+      "topicId": "u002",
+      "tags": [
+        "present-simple",
+        "habitude"
+      ],
+      "fields": {
+        "regle": "Le présent simple dit l'habitude, la vérité générale et le programme fixe. Troisième personne du singulier en -s, et do/does aux questions et aux négations."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Le comité se réunit tous les quinze jours.",
+          "answerSpec": {
+            "accepted": [
+              "The steering group meets every fortnight"
+            ]
+          },
+          "hints": [
+            "Habitude régulière."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Elle ne travaille pas le vendredi.",
+          "answerSpec": {
+            "accepted": [
+              "She does not work on Fridays",
+              "She doesn't work on Fridays"
+            ]
+          },
+          "hints": [
+            "Négation : does not + base verbale."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : À quelle heure part le dernier train ?",
+          "answerSpec": {
+            "accepted": [
+              "What time does the last train leave"
+            ]
+          },
+          "hints": [
+            "Horaire fixe : présent simple."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Water ___ at a hundred degrees. (boil)",
+          "answerSpec": {
+            "accepted": [
+              "boils"
+            ]
+          },
+          "hints": [
+            "Vérité générale, troisième personne."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "___ your line manager know about the delay? (do / does)",
+          "answerSpec": {
+            "accepted": [
+              "Does"
+            ]
+          },
+          "hints": [
+            "Sujet au singulier."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "He is going to the office every Tuesday.",
+          "answerSpec": {
+            "accepted": [
+              "He goes to the office every Tuesday"
+            ]
+          },
+          "source": "He is going to the office every Tuesday.",
+          "hints": [
+            "Une habitude ne se met pas au continu."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "She don't answer emails at the weekend.",
+          "answerSpec": {
+            "accepted": [
+              "She does not answer emails at the weekend",
+              "She doesn't answer emails at the weekend"
+            ]
+          },
+          "source": "She don't answer emails at the weekend.",
+          "hints": [
+            "Troisième personne : does."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "The connector ___ every night at two.",
+          "answerSpec": {
+            "accepted": [
+              "syncs"
+            ]
+          },
+          "hints": [
+            "Régularité."
+          ],
+          "distractors": [
+            "is syncing",
+            "sync",
+            "has synced"
+          ]
+        }
+      ]
+    },
     {
       "id": "u003-a",
       "topicId": "u003",
-      "tags": ["present-simple", "present-continuous", "verbes-detat"],
+      "tags": [
+        "present-simple",
+        "present-continuous",
+        "verbes-detat"
+      ],
       "fields": {
         "regle": "Les verbes d'état (know, want, understand, belong…) ne se mettent pas en -ing."
       },
@@ -157,63 +495,236 @@
         {
           "type": "produce",
           "prompt": "Traduis : « Je connais cette chanson. »",
-          "answerSpec": { "accepted": ["I know this song", "I know that song"] },
-          "hints": ["know est un verbe d'état : jamais de forme en -ing."]
+          "answerSpec": {
+            "accepted": [
+              "I know this song",
+              "I know that song"
+            ]
+          },
+          "hints": [
+            "know est un verbe d'état : jamais de forme en -ing."
+          ]
         },
         {
           "type": "produce",
           "prompt": "Traduis : « Elle veut rentrer chez elle maintenant. »",
-          "answerSpec": { "accepted": ["She wants to go home now"] },
-          "hints": ["want décrit un état, même au moment présent : présent simple."]
+          "answerSpec": {
+            "accepted": [
+              "She wants to go home now"
+            ]
+          },
+          "hints": [
+            "want décrit un état, même au moment présent : présent simple."
+          ]
         },
         {
           "type": "produce",
           "prompt": "Traduis : « Qu'est-ce que tu regardes ? »",
-          "answerSpec": { "accepted": ["What are you watching"] },
-          "hints": ["watch est une action : le continu convient."]
+          "answerSpec": {
+            "accepted": [
+              "What are you watching"
+            ]
+          },
+          "hints": [
+            "watch est une action : le continu convient."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "I ___ exactly what you mean. (understand)",
-          "answerSpec": { "accepted": ["understand"] },
-          "hints": ["understand est un verbe d'état : présent simple."]
+          "answerSpec": {
+            "accepted": [
+              "understand"
+            ]
+          },
+          "hints": [
+            "understand est un verbe d'état : présent simple."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "Careful, you ___ on my scarf. (stand)",
-          "answerSpec": { "accepted": ["are standing"] },
-          "hints": ["Position occupée à l'instant : be + -ing."]
+          "answerSpec": {
+            "accepted": [
+              "are standing"
+            ]
+          },
+          "hints": [
+            "Position occupée à l'instant : be + -ing."
+          ]
         },
         {
           "type": "transform",
           "source": "Marcus wants a strong coffee.",
           "prompt": "Pose la question correspondante avec « what ».",
-          "answerSpec": { "accepted": ["What does Marcus want"] },
-          "hints": ["Question au présent simple : does + sujet + verbe nu."]
+          "answerSpec": {
+            "accepted": [
+              "What does Marcus want"
+            ]
+          },
+          "hints": [
+            "Question au présent simple : does + sujet + verbe nu."
+          ]
         },
         {
           "type": "spot_error",
           "source": "I am not understanding this rule.",
           "prompt": "Corrige la phrase.",
           "answerSpec": {
-            "accepted": ["I don't understand this rule", "I do not understand this rule"]
+            "accepted": [
+              "I don't understand this rule",
+              "I do not understand this rule"
+            ]
           },
-          "hints": ["Un verbe d'état se nie au présent simple, pas au continu."]
+          "hints": [
+            "Un verbe d'état se nie au présent simple, pas au continu."
+          ]
         },
         {
           "type": "mcq",
           "prompt": "This soup ___ delicious.",
-          "answerSpec": { "accepted": ["tastes"] },
-          "distractors": ["is tasting", "taste", "is taste"],
-          "hints": ["taste au sens de « avoir tel goût » est un verbe d'état."]
+          "answerSpec": {
+            "accepted": [
+              "tastes"
+            ]
+          },
+          "distractors": [
+            "is tasting",
+            "taste",
+            "is taste"
+          ],
+          "hints": [
+            "taste au sens de « avoir tel goût » est un verbe d'état."
+          ]
         }
       ]
     },
-
+    {
+      "id": "u003-b",
+      "topicId": "u003",
+      "tags": [
+        "present-simple",
+        "present-continu",
+        "contraste"
+      ],
+      "fields": {
+        "regle": "Le simple dit ce qui est vrai en général, le continu ce qui se passe maintenant ou provisoirement. « I work in Bristol » (toujours) contre « I'm working from home » (cette semaine)."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Je travaille chez un cabinet de conseil, mais en ce moment je suis en mission chez un client.",
+          "answerSpec": {
+            "accepted": [
+              "I work for a consultancy, but at the moment I am working on a client site"
+            ]
+          },
+          "hints": [
+            "Le permanent au simple, le provisoire au continu."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : D'habitude il prend le bus, mais aujourd'hui il marche.",
+          "answerSpec": {
+            "accepted": [
+              "He usually takes the bus, but today he is walking"
+            ]
+          },
+          "hints": [
+            "Habitude contre exception du jour."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Les prix augmentent chaque année.",
+          "answerSpec": {
+            "accepted": [
+              "Prices go up every year"
+            ]
+          },
+          "hints": [
+            "Régularité : présent simple."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "She ___ French, but she is speaking English today. (speak)",
+          "answerSpec": {
+            "accepted": [
+              "speaks"
+            ]
+          },
+          "hints": [
+            "Compétence permanente."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Sorry, I can't talk — I ___ a demo right now. (run)",
+          "answerSpec": {
+            "accepted": [
+              "am running",
+              "'m running"
+            ]
+          },
+          "hints": [
+            "À cet instant précis."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "I stay in a hotel until the flat is ready.",
+          "answerSpec": {
+            "accepted": [
+              "I am staying in a hotel until the flat is ready"
+            ]
+          },
+          "source": "I stay in a hotel until the flat is ready.",
+          "hints": [
+            "Situation temporaire."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "What do you do this afternoon? Anything planned?",
+          "answerSpec": {
+            "accepted": [
+              "What are you doing this afternoon? Anything planned"
+            ]
+          },
+          "source": "What do you do this afternoon? Anything planned?",
+          "hints": [
+            "On parle de cet après-midi, pas du métier."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "These days more and more people ___ from home.",
+          "answerSpec": {
+            "accepted": [
+              "are working"
+            ]
+          },
+          "hints": [
+            "« These days » marque une évolution en cours."
+          ],
+          "distractors": [
+            "work",
+            "worked",
+            "have worked"
+          ]
+        }
+      ]
+    },
     {
       "id": "u004-a",
       "topicId": "u004",
-      "tags": ["present-simple", "present-continuous", "double-sens"],
+      "tags": [
+        "present-simple",
+        "present-continuous",
+        "double-sens"
+      ],
       "fields": {
         "regle": "think, have, see changent de sens au continu. always + -ing exprime l'agacement."
       },
@@ -221,36 +732,66 @@
         {
           "type": "produce",
           "prompt": "Traduis : « Je pense que tu as raison. »",
-          "answerSpec": { "accepted": ["I think you're right", "I think you are right"] },
-          "hints": ["think = avoir une opinion : verbe d'état, présent simple."]
+          "answerSpec": {
+            "accepted": [
+              "I think you're right",
+              "I think you are right"
+            ]
+          },
+          "hints": [
+            "think = avoir une opinion : verbe d'état, présent simple."
+          ]
         },
         {
           "type": "produce",
           "prompt": "Traduis : « Je réfléchis à ta proposition. »",
           "answerSpec": {
-            "accepted": ["I'm thinking about your offer", "I am thinking about your offer"]
+            "accepted": [
+              "I'm thinking about your offer",
+              "I am thinking about your offer"
+            ]
           },
-          "hints": ["think = réfléchir : c'est une activité, donc be + -ing."]
+          "hints": [
+            "think = réfléchir : c'est une activité, donc be + -ing."
+          ]
         },
         {
           "type": "produce",
           "prompt": "Traduis : « Il perd tout le temps ses clés. » (avec une pointe d'agacement)",
           "answerSpec": {
-            "accepted": ["He's always losing his keys", "He is always losing his keys"]
+            "accepted": [
+              "He's always losing his keys",
+              "He is always losing his keys"
+            ]
           },
-          "hints": ["always + forme en -ing : l'habitude qui exaspère."]
+          "hints": [
+            "always + forme en -ing : l'habitude qui exaspère."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "Yasmin ___ a headache this morning. (have)",
-          "answerSpec": { "accepted": ["has"] },
-          "hints": ["have = posséder, ressentir : verbe d'état."]
+          "answerSpec": {
+            "accepted": [
+              "has"
+            ]
+          },
+          "hints": [
+            "have = posséder, ressentir : verbe d'état."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "They ___ lunch right now — call back later. (have)",
-          "answerSpec": { "accepted": ["are having", "'re having"] },
-          "hints": ["have lunch = prendre un repas, c'est une action : be + -ing."]
+          "answerSpec": {
+            "accepted": [
+              "are having",
+              "'re having"
+            ]
+          },
+          "hints": [
+            "have lunch = prendre un repas, c'est une action : be + -ing."
+          ]
         },
         {
           "type": "transform",
@@ -262,29 +803,168 @@
               "Has Clara got a small flat in Nantes"
             ]
           },
-          "hints": ["have au sens de posséder se questionne avec does."]
+          "hints": [
+            "have au sens de posséder se questionne avec does."
+          ]
         },
         {
           "type": "spot_error",
           "source": "I am seeing that you are tired.",
           "prompt": "Corrige la phrase.",
-          "answerSpec": { "accepted": ["I see that you are tired", "I see that you're tired"] },
-          "hints": ["see = comprendre, constater : verbe d'état, présent simple."]
+          "answerSpec": {
+            "accepted": [
+              "I see that you are tired",
+              "I see that you're tired"
+            ]
+          },
+          "hints": [
+            "see = comprendre, constater : verbe d'état, présent simple."
+          ]
         },
         {
           "type": "mcq",
           "prompt": "She ___ about changing jobs.",
-          "answerSpec": { "accepted": ["is thinking"] },
-          "distractors": ["thinks", "is think", "think"],
-          "hints": ["Ici think veut dire « réfléchir » : forme en -ing."]
+          "answerSpec": {
+            "accepted": [
+              "is thinking"
+            ]
+          },
+          "distractors": [
+            "thinks",
+            "is think",
+            "think"
+          ],
+          "hints": [
+            "Ici think veut dire « réfléchir » : forme en -ing."
+          ]
         }
       ]
     },
-
+    {
+      "id": "u004-b",
+      "topicId": "u004",
+      "tags": [
+        "present-continu",
+        "always",
+        "evolution"
+      ],
+      "fields": {
+        "regle": "Le continu sert aussi à dire l'évolution (« it's getting harder ») et, avec always, l'agacement (« he's always losing his badge »)."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Ça devient de plus en plus difficile de réserver un bureau.",
+          "answerSpec": {
+            "accepted": [
+              "It is getting harder and harder to book a desk",
+              "It's getting harder and harder to book a desk"
+            ]
+          },
+          "hints": [
+            "Une évolution : continu."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Il perd toujours son badge — c'est agaçant.",
+          "answerSpec": {
+            "accepted": [
+              "He is always losing his badge"
+            ]
+          },
+          "hints": [
+            "always + continu : reproche."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Le nombre de licences inutilisées augmente.",
+          "answerSpec": {
+            "accepted": [
+              "The number of unused licences is rising"
+            ]
+          },
+          "hints": [
+            "Évolution en cours."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The rent ___ every year, and nobody says anything. (rise)",
+          "answerSpec": {
+            "accepted": [
+              "is rising"
+            ]
+          },
+          "hints": [
+            "Tendance, pas fait ponctuel."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "They are ___ complaining about the second floor. (always)",
+          "answerSpec": {
+            "accepted": [
+              "always"
+            ]
+          },
+          "hints": [
+            "L'adverbe se glisse entre l'auxiliaire et le participe."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "The weather becomes worse.",
+          "answerSpec": {
+            "accepted": [
+              "The weather is getting worse"
+            ]
+          },
+          "source": "The weather becomes worse.",
+          "hints": [
+            "Une évolution appelle le continu."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "He always is asking for exceptions to the policy.",
+          "answerSpec": {
+            "accepted": [
+              "He is always asking for exceptions to the policy"
+            ]
+          },
+          "source": "He always is asking for exceptions to the policy.",
+          "hints": [
+            "always se place après l'auxiliaire."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Adoption ___ slowly, but it is going in the right direction.",
+          "answerSpec": {
+            "accepted": [
+              "is improving"
+            ]
+          },
+          "hints": [
+            "Une évolution."
+          ],
+          "distractors": [
+            "improves",
+            "improved",
+            "had improved"
+          ]
+        }
+      ]
+    },
     {
       "id": "u005-a",
       "topicId": "u005",
-      "tags": ["past-simple", "action-terminee"],
+      "tags": [
+        "past-simple",
+        "action-terminee"
+      ],
       "fields": {
         "regle": "Action terminée, souvent avec un repère de temps passé. Négation et question : did."
       },
@@ -292,65 +972,235 @@
         {
           "type": "produce",
           "prompt": "Traduis : « Nous avons visité le château samedi dernier. »",
-          "answerSpec": { "accepted": ["We visited the castle last Saturday"] },
-          "hints": ["Repère de temps passé et fini : prétérit simple."]
+          "answerSpec": {
+            "accepted": [
+              "We visited the castle last Saturday"
+            ]
+          },
+          "hints": [
+            "Repère de temps passé et fini : prétérit simple."
+          ]
         },
         {
           "type": "produce",
           "prompt": "Traduis : « Il n'a pas répondu à mon message. »",
           "answerSpec": {
-            "accepted": ["He didn't answer my message", "He did not answer my message"]
+            "accepted": [
+              "He didn't answer my message",
+              "He did not answer my message"
+            ]
           },
-          "hints": ["Négation au prétérit : did not + verbe à la base."]
+          "hints": [
+            "Négation au prétérit : did not + verbe à la base."
+          ]
         },
         {
           "type": "produce",
           "prompt": "Traduis : « Quand est-ce que tu as acheté cette voiture ? »",
           "answerSpec": {
-            "accepted": ["When did you buy this car", "When did you buy that car"]
+            "accepted": [
+              "When did you buy this car",
+              "When did you buy that car"
+            ]
           },
-          "hints": ["Question au prétérit : did + sujet + verbe nu."]
+          "hints": [
+            "Question au prétérit : did + sujet + verbe nu."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "Iris ___ her keys on the bus yesterday. (leave)",
-          "answerSpec": { "accepted": ["left"] },
-          "hints": ["leave est irrégulier : left."]
+          "answerSpec": {
+            "accepted": [
+              "left"
+            ]
+          },
+          "hints": [
+            "leave est irrégulier : left."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "We ___ the film — it was far too long. (not / finish)",
-          "answerSpec": { "accepted": ["didn't finish", "did not finish"] },
-          "hints": ["Après did not, le verbe reste à la base."]
+          "answerSpec": {
+            "accepted": [
+              "didn't finish",
+              "did not finish"
+            ]
+          },
+          "hints": [
+            "Après did not, le verbe reste à la base."
+          ]
         },
         {
           "type": "transform",
           "source": "Oscar builds furniture in his garage.",
           "prompt": "Mets la phrase au prétérit et termine par « last winter ».",
-          "answerSpec": { "accepted": ["Oscar built furniture in his garage last winter"] },
-          "hints": ["build est irrégulier : built."]
+          "answerSpec": {
+            "accepted": [
+              "Oscar built furniture in his garage last winter"
+            ]
+          },
+          "hints": [
+            "build est irrégulier : built."
+          ]
         },
         {
           "type": "spot_error",
           "source": "She goed to the market very early.",
           "prompt": "Corrige la phrase.",
-          "answerSpec": { "accepted": ["She went to the market very early"] },
-          "hints": ["go est irrégulier : went, jamais goed."]
+          "answerSpec": {
+            "accepted": [
+              "She went to the market very early"
+            ]
+          },
+          "hints": [
+            "go est irrégulier : went, jamais goed."
+          ]
         },
         {
           "type": "mcq",
           "prompt": "They ___ the train by two minutes.",
-          "answerSpec": { "accepted": ["missed"] },
-          "distractors": ["miss", "did missed", "have miss"],
-          "hints": ["Événement passé et daté : prétérit simple."]
+          "answerSpec": {
+            "accepted": [
+              "missed"
+            ]
+          },
+          "distractors": [
+            "miss",
+            "did missed",
+            "have miss"
+          ],
+          "hints": [
+            "Événement passé et daté : prétérit simple."
+          ]
         }
       ]
     },
-
+    {
+      "id": "u005-b",
+      "topicId": "u005",
+      "tags": [
+        "preterit",
+        "passe-revolu"
+      ],
+      "fields": {
+        "regle": "Le prétérit dit une action terminée dans un passé fermé : hier, l'an dernier, en 2019. Le lien avec le présent est rompu — c'est ce qui le sépare du present perfect."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Nous avons signé le contrat en mars.",
+          "answerSpec": {
+            "accepted": [
+              "We signed the contract in March"
+            ]
+          },
+          "hints": [
+            "Une date fermée : prétérit."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Elle n'est pas venue à la plénière hier.",
+          "answerSpec": {
+            "accepted": [
+              "She did not come to the town hall yesterday",
+              "She didn't come to the town hall yesterday"
+            ]
+          },
+          "hints": [
+            "did not + base verbale."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Combien de temps as-tu passé sur cette migration ?",
+          "answerSpec": {
+            "accepted": [
+              "How long did you spend on that migration"
+            ]
+          },
+          "hints": [
+            "Question au prétérit : did + base."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The bridge ___ in 1864. (open)",
+          "answerSpec": {
+            "accepted": [
+              "opened"
+            ]
+          },
+          "hints": [
+            "Une date précise."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "I ___ him at the conference last spring. (meet)",
+          "answerSpec": {
+            "accepted": [
+              "met"
+            ]
+          },
+          "hints": [
+            "Prétérit irrégulier."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "He has arrived in Bristol three years ago.",
+          "answerSpec": {
+            "accepted": [
+              "He arrived in Bristol three years ago"
+            ]
+          },
+          "source": "He has arrived in Bristol three years ago.",
+          "hints": [
+            "« ago » interdit le present perfect."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "Where did you went after the leaving drinks?",
+          "answerSpec": {
+            "accepted": [
+              "Where did you go after the leaving drinks"
+            ]
+          },
+          "source": "Where did you went after the leaving drinks?",
+          "hints": [
+            "Après did, la base verbale."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "The pilot ___ six months and cost a fortune.",
+          "answerSpec": {
+            "accepted": [
+              "lasted"
+            ]
+          },
+          "hints": [
+            "Période close."
+          ],
+          "distractors": [
+            "has lasted",
+            "lasts",
+            "was lasting"
+          ]
+        }
+      ]
+    },
     {
       "id": "u006-a",
       "topicId": "u006",
-      "tags": ["past-continuous", "arriere-plan"],
+      "tags": [
+        "past-continuous",
+        "arriere-plan"
+      ],
       "fields": {
         "regle": "was/were + -ing : décor d'une scène passée, souvent interrompu par un prétérit simple."
       },
@@ -358,8 +1208,14 @@
         {
           "type": "produce",
           "prompt": "Traduis : « Je lisais quand le téléphone a sonné. »",
-          "answerSpec": { "accepted": ["I was reading when the phone rang"] },
-          "hints": ["L'action longue prend was/were + -ing, l'interruption le prétérit."]
+          "answerSpec": {
+            "accepted": [
+              "I was reading when the phone rang"
+            ]
+          },
+          "hints": [
+            "L'action longue prend was/were + -ing, l'interruption le prétérit."
+          ]
         },
         {
           "type": "produce",
@@ -370,46 +1226,204 @@
               "What were you doing yesterday at eight"
             ]
           },
-          "hints": ["À un moment précis du passé : were + sujet + -ing."]
+          "hints": [
+            "À un moment précis du passé : were + sujet + -ing."
+          ]
         },
         {
           "type": "produce",
           "prompt": "Traduis : « Il pleuvait quand nous sommes sortis. »",
-          "answerSpec": { "accepted": ["It was raining when we went out"] },
-          "hints": ["Le temps qu'il faisait plante le décor : past continuous."]
+          "answerSpec": {
+            "accepted": [
+              "It was raining when we went out"
+            ]
+          },
+          "hints": [
+            "Le temps qu'il faisait plante le décor : past continuous."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "While Leila ___ , someone knocked twice. (cook)",
-          "answerSpec": { "accepted": ["was cooking"] },
-          "hints": ["Après while, l'action en cours : was/were + -ing."]
+          "answerSpec": {
+            "accepted": [
+              "was cooking"
+            ]
+          },
+          "hints": [
+            "Après while, l'action en cours : was/were + -ing."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "The children ___ in the garden all afternoon. (play)",
-          "answerSpec": { "accepted": ["were playing"] },
-          "hints": ["Sujet pluriel : were + -ing."]
+          "answerSpec": {
+            "accepted": [
+              "were playing"
+            ]
+          },
+          "hints": [
+            "Sujet pluriel : were + -ing."
+          ]
         },
         {
           "type": "transform",
           "source": "Noah walked home.",
           "prompt": "Réécris la phrase pour que l'action soit en cours, en ajoutant « when the storm broke ».",
-          "answerSpec": { "accepted": ["Noah was walking home when the storm broke"] },
-          "hints": ["Le décor passe au continu, l'événement soudain reste au prétérit."]
+          "answerSpec": {
+            "accepted": [
+              "Noah was walking home when the storm broke"
+            ]
+          },
+          "hints": [
+            "Le décor passe au continu, l'événement soudain reste au prétérit."
+          ]
         },
         {
           "type": "spot_error",
           "source": "While we were wait for the bus, it started to snow.",
           "prompt": "Corrige la phrase.",
-          "answerSpec": { "accepted": ["While we were waiting for the bus, it started to snow"] },
-          "hints": ["Après was/were, le verbe prend -ing."]
+          "answerSpec": {
+            "accepted": [
+              "While we were waiting for the bus, it started to snow"
+            ]
+          },
+          "hints": [
+            "Après was/were, le verbe prend -ing."
+          ]
         },
         {
           "type": "mcq",
           "prompt": "She ___ her bike when I saw her.",
-          "answerSpec": { "accepted": ["was riding"] },
-          "distractors": ["rode", "is riding", "was rode"],
-          "hints": ["Action déjà en cours au moment où l'autre se produit."]
+          "answerSpec": {
+            "accepted": [
+              "was riding"
+            ]
+          },
+          "distractors": [
+            "rode",
+            "is riding",
+            "was rode"
+          ],
+          "hints": [
+            "Action déjà en cours au moment où l'autre se produit."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u006-b",
+      "topicId": "u006",
+      "tags": [
+        "preterit-continu",
+        "arriere-plan"
+      ],
+      "fields": {
+        "regle": "Le prétérit continu pose le décor : une action en cours quand une autre survient. « I was reading when the phone rang. » Le continu porte le cadre, le simple l'événement."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Je relisais le rapport quand le serveur est tombé.",
+          "answerSpec": {
+            "accepted": [
+              "I was reading the report when the server went down"
+            ]
+          },
+          "hints": [
+            "Cadre au continu, événement au prétérit."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Pendant qu'elle présentait, deux personnes sont sorties.",
+          "answerSpec": {
+            "accepted": [
+              "While she was presenting, two people left"
+            ]
+          },
+          "hints": [
+            "while + continu."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : À huit heures hier soir, nous étions encore au bureau.",
+          "answerSpec": {
+            "accepted": [
+              "At eight last night we were still in the office"
+            ]
+          },
+          "hints": [
+            "Un instant précis dans le passé."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "It ___ when we came out of the pub. (rain)",
+          "answerSpec": {
+            "accepted": [
+              "was raining"
+            ]
+          },
+          "hints": [
+            "Décor en cours."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "She ___ her laptop when the fire alarm went off. (close)",
+          "answerSpec": {
+            "accepted": [
+              "was closing"
+            ]
+          },
+          "hints": [
+            "Action interrompue."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "I read the handover. Then the lights went out.",
+          "answerSpec": {
+            "accepted": [
+              "I was reading the handover when the lights went out"
+            ]
+          },
+          "source": "I read the handover. Then the lights went out.",
+          "hints": [
+            "Une action interrompt l'autre."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "While I was walking home, I was seeing my old manager.",
+          "answerSpec": {
+            "accepted": [
+              "While I was walking home, I saw my old manager"
+            ]
+          },
+          "source": "While I was walking home, I was seeing my old manager.",
+          "hints": [
+            "L'événement ponctuel va au prétérit simple."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "The team ___ the demo when the client walked in.",
+          "answerSpec": {
+            "accepted": [
+              "was rehearsing"
+            ]
+          },
+          "hints": [
+            "Action en cours, interrompue."
+          ],
+          "distractors": [
+            "rehearsed",
+            "has rehearsed",
+            "rehearses"
+          ]
         }
       ]
     }

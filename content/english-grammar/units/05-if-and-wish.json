@@ -4,7 +4,11 @@
     {
       "id": "u038-a",
       "topicId": "u038",
-      "tags": ["conditionnel", "if-present", "if-preterit"],
+      "tags": [
+        "conditionnel",
+        "if-present",
+        "if-preterit"
+      ],
       "fields": {
         "regle": "if + présent → will : possible. if + prétérit → would : imaginaire ou peu probable."
       },
@@ -13,9 +17,14 @@
           "type": "produce",
           "prompt": "Traduis : « Si tu pars maintenant, tu attraperas ton train. »",
           "answerSpec": {
-            "accepted": ["If you leave now, you'll catch your train", "If you leave now, you will catch your train"]
+            "accepted": [
+              "If you leave now, you'll catch your train",
+              "If you leave now, you will catch your train"
+            ]
           },
-          "hints": ["Éventualité réelle : if + présent, puis will."]
+          "hints": [
+            "Éventualité réelle : if + présent, puis will."
+          ]
         },
         {
           "type": "produce",
@@ -26,25 +35,45 @@
               "If I won the lottery, I'd open a bookshop"
             ]
           },
-          "hints": ["Hypothèse improbable : if + prétérit, puis would."]
+          "hints": [
+            "Hypothèse improbable : if + prétérit, puis would."
+          ]
         },
         {
           "type": "produce",
           "prompt": "Traduis : « Qu'est-ce que tu ferais si on te proposait ce poste ? »",
-          "answerSpec": { "accepted": ["What would you do if they offered you that job"] },
-          "hints": ["Question hypothétique : would dans la principale."]
+          "answerSpec": {
+            "accepted": [
+              "What would you do if they offered you that job"
+            ]
+          },
+          "hints": [
+            "Question hypothétique : would dans la principale."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "If it ___ tomorrow, we'll cancel the picnic. (rain)",
-          "answerSpec": { "accepted": ["rains"] },
-          "hints": ["Après if, jamais will : présent simple."]
+          "answerSpec": {
+            "accepted": [
+              "rains"
+            ]
+          },
+          "hints": [
+            "Après if, jamais will : présent simple."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "If I ___ more space, I would buy a piano. (have)",
-          "answerSpec": { "accepted": ["had"] },
-          "hints": ["Situation contraire à la réalité : prétérit après if."]
+          "answerSpec": {
+            "accepted": [
+              "had"
+            ]
+          },
+          "hints": [
+            "Situation contraire à la réalité : prétérit après if."
+          ]
         },
         {
           "type": "transform",
@@ -56,29 +85,167 @@
               "If I had a car, I would not take the bus"
             ]
           },
-          "hints": ["La réalité s'inverse : prétérit après if, would ensuite."]
+          "hints": [
+            "La réalité s'inverse : prétérit après if, would ensuite."
+          ]
         },
         {
           "type": "spot_error",
           "source": "If you will need help, call me.",
           "prompt": "Corrige la phrase.",
-          "answerSpec": { "accepted": ["If you need help, call me"] },
-          "hints": ["Après if, on n'emploie pas will."]
+          "answerSpec": {
+            "accepted": [
+              "If you need help, call me"
+            ]
+          },
+          "hints": [
+            "Après if, on n'emploie pas will."
+          ]
         },
         {
           "type": "mcq",
           "prompt": "If she ___ earlier, she would sleep better.",
-          "answerSpec": { "accepted": ["went to bed"] },
-          "distractors": ["will go to bed", "goes to bed", "would go to bed"],
-          "hints": ["La principale est en would : la condition passe au prétérit."]
+          "answerSpec": {
+            "accepted": [
+              "went to bed"
+            ]
+          },
+          "distractors": [
+            "will go to bed",
+            "goes to bed",
+            "would go to bed"
+          ],
+          "hints": [
+            "La principale est en would : la condition passe au prétérit."
+          ]
         }
       ]
     },
-
+    {
+      "id": "u038-b",
+      "topicId": "u038",
+      "tags": [
+        "conditionnel",
+        "type-1-2"
+      ],
+      "fields": {
+        "regle": "if + présent → will : la condition est ouverte. if + prétérit → would : elle est improbable ou irréelle."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Si tu demandes, ils diront oui.",
+          "answerSpec": {
+            "accepted": [
+              "If you ask, they will say yes"
+            ]
+          },
+          "hints": [
+            "Condition ouverte."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Si j'avais son numéro, je l'appellerais.",
+          "answerSpec": {
+            "accepted": [
+              "If I had his number, I would call him"
+            ]
+          },
+          "hints": [
+            "Irréel du présent."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Que ferais-tu à ma place ?",
+          "answerSpec": {
+            "accepted": [
+              "What would you do in my position"
+            ]
+          },
+          "hints": [
+            "would + base."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "If the client ___ , we will reprice. (complain)",
+          "answerSpec": {
+            "accepted": [
+              "complains"
+            ]
+          },
+          "hints": [
+            "Présent dans la condition ouverte."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "If I ___ you, I would push back on the deadline. (be)",
+          "answerSpec": {
+            "accepted": [
+              "were",
+              "was"
+            ]
+          },
+          "hints": [
+            "Irréel : were à toutes les personnes."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "I do not have the budget, so I cannot hire.",
+          "answerSpec": {
+            "accepted": [
+              "If I had the budget, I would hire"
+            ]
+          },
+          "source": "I do not have the budget, so I cannot hire.",
+          "hints": [
+            "Irréel du présent."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "If it will rain, the fiesta is cancelled.",
+          "answerSpec": {
+            "accepted": [
+              "If it rains, the fiesta is cancelled"
+            ]
+          },
+          "source": "If it will rain, the fiesta is cancelled.",
+          "hints": [
+            "Jamais de will après if."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "If they ___ more time, the pilot would work.",
+          "answerSpec": {
+            "accepted": [
+              "had"
+            ]
+          },
+          "hints": [
+            "Irréel du présent."
+          ],
+          "distractors": [
+            "would have",
+            "will have",
+            "have had"
+          ]
+        }
+      ]
+    },
     {
       "id": "u039-a",
       "topicId": "u039",
-      "tags": ["wish", "present-irreel", "were"],
+      "tags": [
+        "wish",
+        "present-irreel",
+        "were"
+      ],
       "fields": {
         "regle": "I wish + prétérit : regret sur le présent. Avec be, were à toutes les personnes."
       },
@@ -86,61 +253,234 @@
         {
           "type": "produce",
           "prompt": "Traduis : « J'aimerais parler mieux allemand. »",
-          "answerSpec": { "accepted": ["I wish I spoke better German"] },
-          "hints": ["Regret sur le présent : wish + prétérit."]
+          "answerSpec": {
+            "accepted": [
+              "I wish I spoke better German"
+            ]
+          },
+          "hints": [
+            "Regret sur le présent : wish + prétérit."
+          ]
         },
         {
           "type": "produce",
           "prompt": "Traduis : « Si seulement j'étais plus grande. »",
-          "answerSpec": { "accepted": ["I wish I were taller", "If only I were taller"] },
-          "hints": ["Avec be, l'irréel emploie were, même au singulier."]
+          "answerSpec": {
+            "accepted": [
+              "I wish I were taller",
+              "If only I were taller"
+            ]
+          },
+          "hints": [
+            "Avec be, l'irréel emploie were, même au singulier."
+          ]
         },
         {
           "type": "produce",
           "prompt": "Traduis : « Je regrette de ne pas avoir de jardin. »",
-          "answerSpec": { "accepted": ["I wish I had a garden"] },
-          "hints": ["La phrase française négative devient positive en anglais."]
+          "answerSpec": {
+            "accepted": [
+              "I wish I had a garden"
+            ]
+          },
+          "hints": [
+            "La phrase française négative devient positive en anglais."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "I wish this room ___ a window. (have)",
-          "answerSpec": { "accepted": ["had"] },
-          "hints": ["Regret sur une situation actuelle : prétérit."]
+          "answerSpec": {
+            "accepted": [
+              "had"
+            ]
+          },
+          "hints": [
+            "Regret sur une situation actuelle : prétérit."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "If only he ___ so loudly. (not / talk)",
-          "answerSpec": { "accepted": ["didn't talk", "did not talk"] },
-          "hints": ["if only fonctionne comme I wish."]
+          "answerSpec": {
+            "accepted": [
+              "didn't talk",
+              "did not talk"
+            ]
+          },
+          "hints": [
+            "if only fonctionne comme I wish."
+          ]
         },
         {
           "type": "transform",
           "source": "I can't drive, and it's a problem.",
           "prompt": "Exprime le regret, en commençant par « I wish ».",
-          "answerSpec": { "accepted": ["I wish I could drive"] },
-          "hints": ["can devient could après wish."]
+          "answerSpec": {
+            "accepted": [
+              "I wish I could drive"
+            ]
+          },
+          "hints": [
+            "can devient could après wish."
+          ]
         },
         {
           "type": "spot_error",
           "source": "I wish I have more free time.",
           "prompt": "Corrige la phrase.",
-          "answerSpec": { "accepted": ["I wish I had more free time"] },
-          "hints": ["Après wish, le présent devient prétérit."]
+          "answerSpec": {
+            "accepted": [
+              "I wish I had more free time"
+            ]
+          },
+          "hints": [
+            "Après wish, le présent devient prétérit."
+          ]
         },
         {
           "type": "mcq",
           "prompt": "I wish the neighbours ___ quieter.",
-          "answerSpec": { "accepted": ["were"] },
-          "distractors": ["are", "would be quiet", "have been"],
-          "hints": ["Regret sur un état présent, avec be."]
+          "answerSpec": {
+            "accepted": [
+              "were"
+            ]
+          },
+          "distractors": [
+            "are",
+            "would be quiet",
+            "have been"
+          ],
+          "hints": [
+            "Regret sur un état présent, avec be."
+          ]
         }
       ]
     },
-
+    {
+      "id": "u039-b",
+      "topicId": "u039",
+      "tags": [
+        "irreel-present",
+        "wish"
+      ],
+      "fields": {
+        "regle": "« I wish I knew » dit un regret sur le présent : le verbe recule au prétérit. « I wish he wouldn't » exprime l'agacement devant une habitude."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : J'aimerais parler gallois.",
+          "answerSpec": {
+            "accepted": [
+              "I wish I spoke Welsh"
+            ]
+          },
+          "hints": [
+            "Regret sur le présent : prétérit."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Si seulement il arrêtait de reporter.",
+          "answerSpec": {
+            "accepted": [
+              "I wish he would stop putting things off"
+            ]
+          },
+          "hints": [
+            "Agacement : would."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : J'aimerais qu'on ait un vrai espace de repli.",
+          "answerSpec": {
+            "accepted": [
+              "I wish we had a proper breakout space"
+            ]
+          },
+          "hints": [
+            "Souhait irréel."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "I wish I ___ the answer. (know)",
+          "answerSpec": {
+            "accepted": [
+              "knew"
+            ]
+          },
+          "hints": [
+            "Prétérit du regret."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "She wishes she ___ not so far from the office. (live)",
+          "answerSpec": {
+            "accepted": [
+              "did",
+              "didn't live"
+            ]
+          },
+          "hints": [
+            "Négation au prétérit."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "I cannot come, and I am sorry about it.",
+          "answerSpec": {
+            "accepted": [
+              "I wish I could come"
+            ]
+          },
+          "source": "I cannot come, and I am sorry about it.",
+          "hints": [
+            "Regret sur le présent."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "I wish I would have more time before the board.",
+          "answerSpec": {
+            "accepted": [
+              "I wish I had more time before the board"
+            ]
+          },
+          "source": "I wish I would have more time before the board.",
+          "hints": [
+            "Regret sur le présent : prétérit."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "I wish this lift ___ so slow.",
+          "answerSpec": {
+            "accepted": [
+              "were not"
+            ]
+          },
+          "hints": [
+            "Irréel du présent."
+          ],
+          "distractors": [
+            "will not be",
+            "would not have been",
+            "is not"
+          ]
+        }
+      ]
+    },
     {
       "id": "u040-a",
       "topicId": "u040",
-      "tags": ["troisieme-conditionnel", "regret-passe"],
+      "tags": [
+        "troisieme-conditionnel",
+        "regret-passe"
+      ],
       "fields": {
         "regle": "if + had + participe → would have + participe. I wish I had ... : regret sur le passé."
       },
@@ -154,13 +494,22 @@
               "If I'd known, I would have come earlier"
             ]
           },
-          "hints": ["Passé irréel : if + had + participe, puis would have + participe."]
+          "hints": [
+            "Passé irréel : if + had + participe, puis would have + participe."
+          ]
         },
         {
           "type": "produce",
           "prompt": "Traduis : « Je regrette de ne pas avoir accepté ce poste. »",
-          "answerSpec": { "accepted": ["I wish I had accepted that job", "I wish I'd accepted that job"] },
-          "hints": ["Regret sur le passé : wish + had + participe."]
+          "answerSpec": {
+            "accepted": [
+              "I wish I had accepted that job",
+              "I wish I'd accepted that job"
+            ]
+          },
+          "hints": [
+            "Regret sur le passé : wish + had + participe."
+          ]
         },
         {
           "type": "produce",
@@ -171,19 +520,35 @@
               "She would not have missed the train if she had got up on time"
             ]
           },
-          "hints": ["Les deux membres se mettent au passé irréel."]
+          "hints": [
+            "Les deux membres se mettent au passé irréel."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "If we ___ the map, we wouldn't have got lost. (bring)",
-          "answerSpec": { "accepted": ["had brought", "'d brought"] },
-          "hints": ["Condition passée non réalisée : had + participe."]
+          "answerSpec": {
+            "accepted": [
+              "had brought",
+              "'d brought"
+            ]
+          },
+          "hints": [
+            "Condition passée non réalisée : had + participe."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "I wish I ___ my umbrella yesterday. (take)",
-          "answerSpec": { "accepted": ["had taken", "'d taken"] },
-          "hints": ["Le regret porte sur hier : had + participe."]
+          "answerSpec": {
+            "accepted": [
+              "had taken",
+              "'d taken"
+            ]
+          },
+          "hints": [
+            "Le regret porte sur hier : had + participe."
+          ]
         },
         {
           "type": "transform",
@@ -195,7 +560,9 @@
               "If Thea had revised, she would have passed the test"
             ]
           },
-          "hints": ["On inverse les faits : négatif devient positif."]
+          "hints": [
+            "On inverse les faits : négatif devient positif."
+          ]
         },
         {
           "type": "spot_error",
@@ -207,22 +574,153 @@
               "If I'd known, I would have said something"
             ]
           },
-          "hints": ["Jamais would après if : c'est had qui porte la condition."]
+          "hints": [
+            "Jamais would après if : c'est had qui porte la condition."
+          ]
         },
         {
           "type": "mcq",
           "prompt": "We ___ the ferry if we had left an hour earlier.",
-          "answerSpec": { "accepted": ["would have caught"] },
-          "distractors": ["would catch", "had caught", "will have caught"],
-          "hints": ["Résultat imaginaire d'une condition passée."]
+          "answerSpec": {
+            "accepted": [
+              "would have caught"
+            ]
+          },
+          "distractors": [
+            "would catch",
+            "had caught",
+            "will have caught"
+          ],
+          "hints": [
+            "Résultat imaginaire d'une condition passée."
+          ]
         }
       ]
     },
-
+    {
+      "id": "u040-b",
+      "topicId": "u040",
+      "tags": [
+        "irreel-passe",
+        "regret"
+      ],
+      "fields": {
+        "regle": "if + past perfect → would have : le passé qu'on ne peut plus changer. « I wish I had known » dit le regret du passé."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Si j'avais su, je ne serais pas venu.",
+          "answerSpec": {
+            "accepted": [
+              "If I had known, I would not have come"
+            ]
+          },
+          "hints": [
+            "Irréel du passé."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : J'aurais aimé qu'on me prévienne.",
+          "answerSpec": {
+            "accepted": [
+              "I wish somebody had told me"
+            ]
+          },
+          "hints": [
+            "Regret du passé."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Ils auraient signé si le périmètre avait été écrit.",
+          "answerSpec": {
+            "accepted": [
+              "They would have signed if the scope had been written down"
+            ]
+          },
+          "hints": [
+            "would have + participe."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "If we ___ tested it, the demo would not have failed. (have)",
+          "answerSpec": {
+            "accepted": [
+              "had"
+            ]
+          },
+          "hints": [
+            "Past perfect dans la condition."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "I wish I ___ read the contract before signing. (have)",
+          "answerSpec": {
+            "accepted": [
+              "had"
+            ]
+          },
+          "hints": [
+            "Regret sur le passé."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "Nobody warned us, so we missed the deadline.",
+          "answerSpec": {
+            "accepted": [
+              "If somebody had warned us, we would not have missed the deadline"
+            ]
+          },
+          "source": "Nobody warned us, so we missed the deadline.",
+          "hints": [
+            "Irréel du passé."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "If I would have known, I would have said something.",
+          "answerSpec": {
+            "accepted": [
+              "If I had known, I would have said something"
+            ]
+          },
+          "source": "If I would have known, I would have said something.",
+          "hints": [
+            "Pas de would dans la subordonnée en if."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "She ___ the job if she had applied.",
+          "answerSpec": {
+            "accepted": [
+              "would have got"
+            ]
+          },
+          "hints": [
+            "Irréel du passé."
+          ],
+          "distractors": [
+            "would get",
+            "had got",
+            "will have got"
+          ]
+        }
+      ]
+    },
     {
       "id": "u041-a",
       "topicId": "u041",
-      "tags": ["wish", "would", "hope"],
+      "tags": [
+        "wish",
+        "would",
+        "hope"
+      ],
       "fields": {
         "regle": "wish ... would : agacement devant ce qui ne change pas. Pour l'avenir souhaité, on emploie hope, pas wish."
       },
@@ -230,8 +728,14 @@
         {
           "type": "produce",
           "prompt": "Traduis : « J'aimerais que tu arrêtes de m'interrompre. »",
-          "answerSpec": { "accepted": ["I wish you would stop interrupting me"] },
-          "hints": ["Agacement devant une habitude d'autrui : wish + would."]
+          "answerSpec": {
+            "accepted": [
+              "I wish you would stop interrupting me"
+            ]
+          },
+          "hints": [
+            "Agacement devant une habitude d'autrui : wish + would."
+          ]
         },
         {
           "type": "produce",
@@ -242,46 +746,206 @@
               "I hope the weather is nice tomorrow"
             ]
           },
-          "hints": ["Pour l'avenir, on emploie hope, jamais wish."]
+          "hints": [
+            "Pour l'avenir, on emploie hope, jamais wish."
+          ]
         },
         {
           "type": "produce",
           "prompt": "Traduis : « J'aimerais que cette pluie s'arrête. »",
-          "answerSpec": { "accepted": ["I wish this rain would stop"] },
-          "hints": ["On souhaite un changement qui ne vient pas."]
+          "answerSpec": {
+            "accepted": [
+              "I wish this rain would stop"
+            ]
+          },
+          "hints": [
+            "On souhaite un changement qui ne vient pas."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "I wish they ___ playing that song. (would / stop)",
-          "answerSpec": { "accepted": ["would stop"] },
-          "hints": ["Le comportement dérange et se répète."]
+          "answerSpec": {
+            "accepted": [
+              "would stop"
+            ]
+          },
+          "hints": [
+            "Le comportement dérange et se répète."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "I ___ you enjoy the concert tonight. (hope)",
-          "answerSpec": { "accepted": ["hope"] },
-          "hints": ["Souhait tourné vers l'avenir : hope."]
+          "answerSpec": {
+            "accepted": [
+              "hope"
+            ]
+          },
+          "hints": [
+            "Souhait tourné vers l'avenir : hope."
+          ]
         },
         {
           "type": "transform",
           "source": "The dog barks all night and it's annoying.",
           "prompt": "Exprime l'agacement, en commençant par « I wish ».",
-          "answerSpec": { "accepted": ["I wish the dog would stop barking all night", "I wish the dog wouldn't bark all night"] },
-          "hints": ["wish + would vise le comportement d'un autre."]
+          "answerSpec": {
+            "accepted": [
+              "I wish the dog would stop barking all night",
+              "I wish the dog wouldn't bark all night"
+            ]
+          },
+          "hints": [
+            "wish + would vise le comportement d'un autre."
+          ]
         },
         {
           "type": "spot_error",
           "source": "I wish you will come to the party.",
           "prompt": "Corrige la phrase.",
-          "answerSpec": { "accepted": ["I hope you will come to the party", "I hope you come to the party"] },
-          "hints": ["Un souhait réalisable pour l'avenir demande hope."]
+          "answerSpec": {
+            "accepted": [
+              "I hope you will come to the party",
+              "I hope you come to the party"
+            ]
+          },
+          "hints": [
+            "Un souhait réalisable pour l'avenir demande hope."
+          ]
         },
         {
           "type": "mcq",
           "prompt": "I wish my laptop ___ so slowly.",
-          "answerSpec": { "accepted": ["didn't start"] },
-          "distractors": ["wouldn't started", "won't start", "doesn't start"],
-          "hints": ["Regret sur une situation actuelle : prétérit."]
+          "answerSpec": {
+            "accepted": [
+              "didn't start"
+            ]
+          },
+          "distractors": [
+            "wouldn't started",
+            "won't start",
+            "doesn't start"
+          ],
+          "hints": [
+            "Regret sur une situation actuelle : prétérit."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u041-b",
+      "topicId": "u041",
+      "tags": [
+        "wish",
+        "if-only"
+      ],
+      "fields": {
+        "regle": "wish + would vise le comportement d'autrui, wish + prétérit une situation présente, wish + past perfect un fait passé. « If only » double l'intensité."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Si seulement j'avais accepté ce poste.",
+          "answerSpec": {
+            "accepted": [
+              "If only I had taken that job"
+            ]
+          },
+          "hints": [
+            "Regret du passé."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : J'aimerais que tu m'écoutes.",
+          "answerSpec": {
+            "accepted": [
+              "I wish you would listen to me"
+            ]
+          },
+          "hints": [
+            "Comportement d'autrui."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Si seulement ce plateau était plus calme.",
+          "answerSpec": {
+            "accepted": [
+              "If only this floor were quieter"
+            ]
+          },
+          "hints": [
+            "Situation présente irréelle."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "If ___ I had booked a desk this morning.",
+          "answerSpec": {
+            "accepted": [
+              "only"
+            ]
+          },
+          "hints": [
+            "If only."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "I wish they ___ answer emails at the weekend. (stop)",
+          "answerSpec": {
+            "accepted": [
+              "would stop"
+            ]
+          },
+          "hints": [
+            "Agacement devant une habitude."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "He keeps interrupting, and it is unbearable.",
+          "answerSpec": {
+            "accepted": [
+              "I wish he would stop interrupting"
+            ]
+          },
+          "source": "He keeps interrupting, and it is unbearable.",
+          "hints": [
+            "Agacement : would."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "I wish you would be taller.",
+          "answerSpec": {
+            "accepted": [
+              "I wish you were taller"
+            ]
+          },
+          "source": "I wish you would be taller.",
+          "hints": [
+            "would ne se dit pas d'un état qu'on ne choisit pas."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "If only somebody ___ the guardrails before launch.",
+          "answerSpec": {
+            "accepted": [
+              "had checked"
+            ]
+          },
+          "hints": [
+            "Regret sur le passé."
+          ],
+          "distractors": [
+            "would check",
+            "checks",
+            "has checked"
+          ]
         }
       ]
     }
