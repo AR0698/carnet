@@ -1,0 +1,413 @@
+{
+  "group": "Present perfect and past",
+  "lessons": {
+    "u007": {
+      "image": "Le sol est trempé : il a plu. Tu ne dis pas quand, tu montres la trace que ça laisse maintenant.",
+      "rule": "have / has + participe passé = c'est fait, et ce qui compte n'est pas la date mais le résultat aujourd'hui.",
+      "figure": {
+        "now": "maintenant",
+        "spans": [
+          { "from": 26, "to": 50, "label": "…et ça compte encore", "tone": "quiet" }
+        ],
+        "marks": [{ "at": 26, "label": "c'est arrivé, on ne dit pas quand" }]
+      },
+      "contrast": {
+        "left": "I've lost my keys.",
+        "right": "I lost my keys on Friday.",
+        "note": "Le premier explique pourquoi tu es dehors ; le second raconte le vendredi."
+      },
+      "trap": {
+        "wrong": "Have you already eat?",
+        "right": "Have you already eaten?",
+        "why": "Après have, il faut le participe passé, jamais l'infinitif. En français « manger » et « mangé » se confondent à l'oreille, et l'oubli passe inaperçu en parlant."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "Someone's nicked the seat off my bike again.",
+          "fr": "On m'a encore piqué la selle du vélo."
+        },
+        {
+          "register": "work",
+          "en": "I've pushed the fix, so the dashboard should be green now.",
+          "fr": "J'ai poussé le correctif, le tableau de bord devrait être au vert."
+        }
+      ],
+      "seeAlso": ["u005", "u008", "u013"]
+    },
+
+    "u008": {
+      "image": "Le compteur d'une vie. Ce que tu as déjà fait au moins une fois, sans préciser quand.",
+      "rule": "Pour un bilan — ever, never, the first time, so far — l'anglais compte depuis toujours jusqu'à maintenant.",
+      "figure": {
+        "now": "maintenant",
+        "spans": [
+          { "from": 5, "to": 50, "label": "toute la vie jusqu'ici", "open": "left" }
+        ]
+      },
+      "contrast": {
+        "left": "She's gone to Bristol.",
+        "right": "She's been to Bristol.",
+        "note": "Elle y est encore — ou elle y est allée et elle en est revenue. Un seul mot sépare les deux."
+      },
+      "trap": {
+        "wrong": "It's the first time I go to a gig here.",
+        "right": "It's the first time I've been to a gig here.",
+        "why": "« C'est la première fois que je viens » se dit au présent en français. L'anglais compte les fois précédentes, donc il regarde en arrière : present perfect obligatoire."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "Have you ever walked the whole gorge at low tide?",
+          "fr": "Tu as déjà fait toute la gorge à marée basse ?"
+        },
+        {
+          "register": "work",
+          "en": "That's the third outage we've had this quarter.",
+          "fr": "Ça fait la troisième panne du trimestre."
+        }
+      ],
+      "seeAlso": ["u007", "u013", "u014"]
+    },
+
+    "u009": {
+      "image": "Il ouvre la porte, les mains pleines de cambouis. Tu n'as pas vu la scène, mais tu sais qu'elle a duré.",
+      "rule": "have been + -ing = ça a commencé avant, ça dure encore ou vient de s'arrêter, et l'effet se voit.",
+      "figure": {
+        "now": "maintenant",
+        "spans": [
+          { "from": 12, "to": 50, "label": "ça dure depuis un moment", "open": "left" }
+        ]
+      },
+      "contrast": {
+        "left": "It's been raining.",
+        "right": "It rained last night.",
+        "note": "Les rues sont encore mouillées — ou c'est un fait d'hier soir, refermé."
+      },
+      "trap": {
+        "wrong": "I work here since March.",
+        "right": "I've been working here since March.",
+        "why": "C'est la faute la plus tenace des francophones, tous niveaux confondus : le français garde le présent avec « depuis ». L'anglais exige un perfect dès qu'une durée part du passé et arrive jusqu'à maintenant."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "They've been doing up that pub on Gloucester Road for two years.",
+          "fr": "Ça fait deux ans qu'ils retapent ce pub sur Gloucester Road."
+        },
+        {
+          "register": "work",
+          "en": "I've been staring at this prompt all morning and it still ignores the format.",
+          "fr": "Je suis sur ce prompt depuis ce matin et il ignore toujours le format."
+        }
+      ],
+      "seeAlso": ["u010", "u011", "u012"]
+    },
+
+    "u010": {
+      "image": "La durée ou le résultat : soit tu montres le chantier, soit tu montres le mur fini.",
+      "rule": "have been + -ing insiste sur l'activité et sa durée ; have + participe insiste sur ce qui est achevé, et sur combien.",
+      "figure": {
+        "now": "maintenant",
+        "spans": [
+          { "from": 14, "to": 50, "label": "l'activité, et sa durée", "open": "left" },
+          { "from": 40, "to": 50, "label": "le résultat, fini", "tone": "quiet" }
+        ]
+      },
+      "contrast": {
+        "left": "I've been reading the report.",
+        "right": "I've read the report.",
+        "note": "J'y ai passé du temps, je n'ai pas forcément fini — ou c'est lu, tu peux me poser des questions."
+      },
+      "trap": {
+        "wrong": "I've been writing three emails.",
+        "right": "I've written three emails.",
+        "why": "Dès qu'on compte — trois mails, deux tickets, cinq kilomètres — c'est le résultat qui parle, et la forme en -ing devient impossible."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "She's been learning to sail on the harbour and she's already passed the first level.",
+          "fr": "Elle apprend à naviguer sur le port et elle a déjà validé le premier niveau."
+        },
+        {
+          "register": "work",
+          "en": "We've been reviewing that pull request all week and we've left forty comments.",
+          "fr": "On relit cette pull request depuis une semaine et on a laissé quarante commentaires."
+        }
+      ],
+      "seeAlso": ["u009", "u011", "u014"]
+    },
+
+    "u011": {
+      "image": "La question du chronomètre : depuis quand ça tourne, sans avoir encore été arrêté.",
+      "rule": "How long ... ? regarde une durée qui court toujours : elle appelle un perfect, jamais un présent.",
+      "figure": {
+        "now": "maintenant",
+        "spans": [
+          { "from": 15, "to": 50, "label": "combien de temps déjà ?", "open": "left" }
+        ]
+      },
+      "contrast": {
+        "left": "How long have you been here?",
+        "right": "When did you arrive?",
+        "note": "Une durée encore ouverte — ou un instant fermé. Deux questions, deux temps, jamais interchangeables."
+      },
+      "trap": {
+        "wrong": "Since how long are you here?",
+        "right": "How long have you been here?",
+        "why": "« Depuis combien de temps es-tu là ? » se calque mot à mot et donne une phrase qu'aucun anglophone ne dit. How long porte déjà la durée : since devient inutile, et le présent devient faux."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "How long have you been living up in Montpelier?",
+          "fr": "Ça fait combien de temps que tu vis à Montpelier ?"
+        },
+        {
+          "register": "work",
+          "en": "How long has this queue been backing up?",
+          "fr": "Ça fait combien de temps que cette file s'accumule ?"
+        }
+      ],
+      "seeAlso": ["u009", "u012", "u010"]
+    },
+
+    "u012": {
+      "image": "Since plante un piquet sur le calendrier. For déroule un mètre ruban.",
+      "rule": "since + le point de départ (Monday, 2019, I moved) ; for + la longueur (two days, ten years, ages).",
+      "figure": {
+        "now": "maintenant",
+        "spans": [
+          { "from": 18, "to": 50, "label": "for : toute cette longueur" }
+        ],
+        "marks": [{ "at": 18, "label": "since : ce point-là" }]
+      },
+      "contrast": {
+        "left": "I've been here since Tuesday.",
+        "right": "I've been here for three days.",
+        "note": "Le jour où ça a commencé — ou le temps que ça a duré. Le français dit « depuis » dans les deux cas."
+      },
+      "trap": {
+        "wrong": "I've lived here since three years.",
+        "right": "I've lived here for three years.",
+        "why": "« Depuis » traduit for et since indifféremment, alors l'un est choisi au hasard. Test simple : si ce qui suit est une date ou un événement, c'est since ; si c'est une durée, c'est for."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "The sound system has been running since midnight.",
+          "fr": "Le sound system tourne depuis minuit."
+        },
+        {
+          "register": "work",
+          "en": "We've been on this migration for six sprints.",
+          "fr": "Ça fait six sprints qu'on est sur cette migration."
+        }
+      ],
+      "seeAlso": ["u011", "u009", "u013"]
+    },
+
+    "u013": {
+      "image": "Deux boîtes : celle du passé fermé, avec une étiquette datée, et celle du présent, où le passé continue de compter.",
+      "rule": "Une date, un moment terminé, une histoire qu'on raconte → prétérit. Un bilan qui touche maintenant → present perfect.",
+      "figure": {
+        "now": "maintenant",
+        "spans": [
+          { "from": 30, "to": 50, "label": "perfect : jusqu'à maintenant", "tone": "quiet" }
+        ],
+        "marks": [{ "at": 15, "label": "prétérit : là, et c'est clos" }]
+      },
+      "contrast": {
+        "left": "I've finished the deck.",
+        "right": "I finished the deck at midnight.",
+        "note": "Le résultat qui t'intéresse maintenant — ou l'heure à laquelle c'est tombé."
+      },
+      "trap": {
+        "wrong": "I've been to the studio last Thursday.",
+        "right": "I went to the studio last Thursday.",
+        "why": "Dès qu'un mot de temps ferme le passé — yesterday, last week, in 2019, ago — le present perfect devient impossible, même si le français continue d'utiliser un passé composé."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "They've repainted the mural on Nelson Street.",
+          "fr": "Ils ont repeint la fresque de Nelson Street."
+        },
+        {
+          "register": "work",
+          "en": "We shipped the beta in June and nobody has complained since.",
+          "fr": "On a livré la bêta en juin et personne ne s'est plaint depuis."
+        }
+      ],
+      "seeAlso": ["u005", "u007", "u014"]
+    },
+
+    "u014": {
+      "image": "La journée n'est pas finie : tant que la fenêtre est ouverte, le compteur tourne encore.",
+      "rule": "Si la période dure encore — today, this week, this year — l'anglais reste au present perfect ; refermée, elle bascule au prétérit.",
+      "figure": {
+        "now": "maintenant",
+        "spans": [
+          { "from": 28, "to": 68, "label": "cette semaine, pas finie", "open": "right" },
+          { "from": 5, "to": 22, "label": "la semaine dernière, close", "tone": "quiet" }
+        ]
+      },
+      "contrast": {
+        "left": "I haven't seen her this week.",
+        "right": "I didn't see her last week.",
+        "note": "La semaine en cours peut encore changer d'avis ; celle d'avant est classée."
+      },
+      "trap": {
+        "wrong": "Did you drink your coffee this morning?",
+        "right": "Have you drunk your coffee this morning?",
+        "why": "Tant qu'on est encore le matin, la période est ouverte et l'anglais garde le perfect. À midi passé, la même phrase repasse au prétérit — c'est l'horloge qui décide, pas le sens."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "The fiesta's been quieter this year than it was in 2019.",
+          "fr": "La fiesta est plus calme cette année qu'en 2019."
+        },
+        {
+          "register": "work",
+          "en": "Nobody has touched that repo this quarter.",
+          "fr": "Personne n'a touché à ce dépôt ce trimestre."
+        }
+      ],
+      "seeAlso": ["u013", "u007", "u012"]
+    },
+
+    "u015": {
+      "image": "Un passé derrière le passé. Quand tu arrives, c'était déjà plié — tu as raté la scène de deux minutes.",
+      "rule": "had + participe passé = c'était déjà fait avant l'autre moment passé dont on parle.",
+      "figure": {
+        "now": "maintenant",
+        "marks": [
+          { "at": 12, "label": "ça, c'était déjà fait" },
+          { "at": 34, "label": "quand ça, c'est arrivé" }
+        ]
+      },
+      "contrast": {
+        "left": "When I arrived, the set had finished.",
+        "right": "When I arrived, the set finished.",
+        "note": "Tu as tout raté — ou ils ont fini pile à ton arrivée. Le sens bascule complètement."
+      },
+      "trap": {
+        "wrong": "When I got there, the gig already finished.",
+        "right": "When I got there, the gig had already finished.",
+        "why": "Le français se contente d'un passé composé et laisse le contexte trancher. L'anglais veut voir l'ordre des deux événements dans la forme du verbe."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "By the time we reached the Downs, the balloons had all gone up.",
+          "fr": "Le temps qu'on arrive aux Downs, les ballons étaient tous partis."
+        },
+        {
+          "register": "work",
+          "en": "The alert only fired after the database had already filled up.",
+          "fr": "L'alerte ne s'est déclenchée qu'une fois la base déjà pleine."
+        }
+      ],
+      "seeAlso": ["u016", "u006", "u005"]
+    },
+
+    "u016": {
+      "image": "Avant la scène passée, quelque chose tournait déjà depuis un moment — et ça expliquait l'état des lieux.",
+      "rule": "had been + -ing = ça durait déjà depuis un certain temps au moment passé dont on parle.",
+      "figure": {
+        "now": "maintenant",
+        "spans": [
+          { "from": 6, "to": 34, "label": "ça durait déjà depuis…", "open": "left" }
+        ],
+        "marks": [{ "at": 34, "label": "…quand ça arrive" }]
+      },
+      "contrast": {
+        "left": "He was tired: he'd been driving all night.",
+        "right": "He was tired: he'd driven all night.",
+        "note": "La durée qui explique l'état — ou le trajet vu comme accompli. Le premier montre la fatigue, le second le kilométrage."
+      },
+      "trap": {
+        "wrong": "She was working there since two years when they closed.",
+        "right": "She had been working there for two years when they closed.",
+        "why": "Même faute que « depuis » au présent, décalée d'un cran dans le passé : la durée qui court jusqu'à un moment passé demande un past perfect, pas un imparfait."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "We'd been queuing in the rain for an hour before they opened the doors.",
+          "fr": "On faisait la queue sous la pluie depuis une heure avant qu'ils ouvrent."
+        },
+        {
+          "register": "work",
+          "en": "The job had been retrying quietly for days before anyone noticed.",
+          "fr": "Le job réessayait dans son coin depuis des jours avant que quelqu'un le voie."
+        }
+      ],
+      "seeAlso": ["u015", "u009", "u006"]
+    },
+
+    "u017": {
+      "image": "En anglais, on ne possède pas son âge, on l'est. Et ce qu'on a, on l'a « got ».",
+      "rule": "have got = have au présent, en plus parlé. Mais l'âge, la faim, la peur et le froid se disent avec be.",
+      "contrast": {
+        "left": "I've got a meeting at four.",
+        "right": "I have a meeting at four.",
+        "note": "Même sens exactement. Got est plus courant à l'oral en Grande-Bretagne, et disparaît au passé : hier, c'était I had."
+      },
+      "trap": {
+        "wrong": "I have 30 years and I have hungry.",
+        "right": "I'm 30 and I'm hungry.",
+        "why": "« Avoir 30 ans », « avoir faim », « avoir froid », « avoir raison » : le français les construit tous avec avoir, l'anglais tous avec be. C'est une liste courte, et elle trahit un francophone en une phrase."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "Have you got a fiver? The bar's cash only tonight.",
+          "fr": "T'as cinq livres ? Le bar est en espèces seulement ce soir."
+        },
+        {
+          "register": "work",
+          "en": "We've got a hard stop at half three, so let's start with the blockers.",
+          "fr": "On doit s'arrêter net à 15 h 30, alors commençons par les bloquants."
+        }
+      ],
+      "seeAlso": ["u004", "u018"]
+    },
+
+    "u018": {
+      "image": "Une habitude rangée au grenier : c'était vrai avant, ça ne l'est plus, et c'est justement ce qu'on veut faire entendre.",
+      "rule": "used to + infinitif = c'était mon habitude ou mon état autrefois, et ça a cessé.",
+      "figure": {
+        "now": "maintenant",
+        "spans": [
+          { "from": 6, "to": 30, "label": "c'était comme ça avant", "tone": "quiet" }
+        ]
+      },
+      "contrast": {
+        "left": "I used to swim there.",
+        "right": "I'm used to swimming there.",
+        "note": "J'y allais autrefois — ou j'y suis habitué aujourd'hui. Deux règles différentes, séparées par un seul verbe be."
+      },
+      "trap": {
+        "wrong": "Before, I was going to the Bearpit every day.",
+        "right": "I used to go to the Bearpit every day.",
+        "why": "L'imparfait français d'habitude — « j'allais », « je prenais » — n'a pas de traduction directe. Rendu par un past continuous, il décrit une scène en cours au lieu d'une habitude révolue."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "There used to be a record shop where that coffee place is now.",
+          "fr": "Il y avait un disquaire là où il y a ce café maintenant."
+        },
+        {
+          "register": "work",
+          "en": "We used to deploy by hand on Friday afternoons, and it went exactly as you'd expect.",
+          "fr": "Avant, on déployait à la main le vendredi après-midi, et ça se passait exactement comme tu l'imagines."
+        }
+      ],
+      "seeAlso": ["u061", "u017", "u005"]
+    }
+  }
+}

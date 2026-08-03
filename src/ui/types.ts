@@ -1,5 +1,6 @@
 import type { Carnet, CarnetFailure } from '../carnets';
 import type { SessionMode } from '../engine/session';
+import type { CourseOptions } from './screens/course';
 
 export interface AnsweredCard {
   topicTitle: string;
@@ -31,6 +32,13 @@ export interface Nav {
   insights(): Promise<void>;
   order(packId: string): Promise<void>;
   backup(): Promise<void>;
+  /**
+   * Le cours. Sans `topicId`, l'index ; avec, la fiche demandée.
+   *
+   * N'est jamais appelé depuis une session en cours : là-bas, la fiche s'ouvre
+   * par-dessus (`openLessonDialog`), sinon la file de révision serait perdue.
+   */
+  course(opts?: CourseOptions): Promise<void>;
 }
 
 export interface Ctx {

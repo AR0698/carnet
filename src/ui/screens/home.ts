@@ -286,6 +286,14 @@ export async function renderHome(ctx: Ctx): Promise<void> {
   const insights = el('button', { class: 'btn btn--link', type: 'button' }, ['Où ça coince']);
   insights.addEventListener('click', () => void ctx.nav.insights());
 
+  // Le cours vit en pied de page, avec le diagnostic et la sauvegarde, et non
+  // à côté des boutons de session. Ce n'est pas de la timidité de mise en page :
+  // une porte « lire la règle » aussi visible que « réviser 15 minutes » serait
+  // prise chaque fois que la session fait peur, et relire à la place de
+  // chercher est exactement le troc que cette application refuse.
+  const course = el('button', { class: 'btn btn--link', type: 'button' }, ['Le cours']);
+  course.addEventListener('click', () => void ctx.nav.course());
+
   const backup = el('button', { class: 'btn btn--link', type: 'button' }, ['Sauvegarder mes données']);
   backup.addEventListener('click', () => void ctx.nav.backup());
 
@@ -340,6 +348,6 @@ export async function renderHome(ctx: Ctx): Promise<void> {
         HOW_IT_WORKS.map((line) => el('li', {}, [line])),
       ),
     ]),
-    el('div', { class: 'footer-actions' }, [insights, backup]),
+    el('div', { class: 'footer-actions' }, [insights, course, backup]),
   );
 }

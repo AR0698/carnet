@@ -1,0 +1,214 @@
+{
+  "group": "Present and past",
+  "lessons": {
+    "u001": {
+      "image": "La caméra tourne. Ce que tu décris est en train de se dérouler sous tes yeux, et le film n'est pas fini.",
+      "rule": "am / is / are + -ing = c'est commencé, ce n'est pas terminé, ça se déroule autour de maintenant.",
+      "figure": {
+        "now": "maintenant",
+        "spans": [
+          { "from": 18, "to": 82, "label": "l'action est en cours", "open": "both" }
+        ]
+      },
+      "contrast": {
+        "left": "It's raining.",
+        "right": "It rains a lot here.",
+        "note": "Là, tout de suite, en regardant par la fenêtre — ou en général, tous les mois de l'année."
+      },
+      "trap": {
+        "wrong": "Look, it rains!",
+        "right": "Look, it's raining!",
+        "why": "Le français n'a qu'un présent : « il pleut » sert pour maintenant et pour d'habitude. L'anglais oblige à choisir, et le calque tombe toujours du mauvais côté."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "The 8 is stuck on Park Street again, so I'm walking up.",
+          "fr": "Le 8 est encore bloqué sur Park Street, du coup je monte à pied."
+        },
+        {
+          "register": "work",
+          "en": "I can't make the standup, I'm still chasing that deploy.",
+          "fr": "Je ne peux pas venir au standup, je suis encore sur ce déploiement."
+        }
+      ],
+      "seeAlso": ["u002", "u003", "u019"]
+    },
+
+    "u002": {
+      "image": "L'horaire affiché à l'arrêt de bus : c'est vrai avant que tu arrives, et ça le restera après ton départ.",
+      "rule": "I do = ce qui se répète, ce qui est vrai en général, ce qui ne dépend pas du moment où on parle.",
+      "figure": {
+        "now": "maintenant",
+        "spans": [
+          {
+            "from": 5,
+            "to": 95,
+            "label": "vrai avant, vrai maintenant, vrai après",
+            "open": "both",
+            "tone": "quiet"
+          }
+        ]
+      },
+      "contrast": {
+        "left": "She works at the Watershed.",
+        "right": "She's working at the Watershed.",
+        "note": "C'est son métier — ou c'est juste ce qu'elle fait cet après-midi, et ça s'arrêtera."
+      },
+      "trap": {
+        "wrong": "He work at Temple Meads.",
+        "right": "He works at Temple Meads.",
+        "why": "Le -s de la troisième personne n'a aucun équivalent français. Il ne s'entend presque pas, il se voit toujours à l'écrit, et c'est la faute qui survit le plus longtemps."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "The Tobacco Factory market opens at ten every Sunday.",
+          "fr": "Le marché de la Tobacco Factory ouvre à dix heures tous les dimanches."
+        },
+        {
+          "register": "work",
+          "en": "Our nightly job rebuilds the whole index at two in the morning.",
+          "fr": "Notre job de nuit reconstruit tout l'index à deux heures du matin."
+        }
+      ],
+      "seeAlso": ["u001", "u003", "u004"]
+    },
+
+    "u003": {
+      "image": "Deux objectifs sur le même appareil : le zoom serré sur l'instant, le grand-angle sur ce qui dure.",
+      "rule": "-ing pour une période autour de maintenant, même large ; présent simple pour ce qui est vrai sans limite de temps.",
+      "figure": {
+        "now": "maintenant",
+        "spans": [
+          { "from": 30, "to": 70, "label": "en ce moment (-ing)" },
+          { "from": 5, "to": 95, "label": "en général (présent simple)", "open": "both", "tone": "quiet" }
+        ]
+      },
+      "contrast": {
+        "left": "I'm living in Easton.",
+        "right": "I live in Easton.",
+        "note": "Le premier laisse entendre que c'est provisoire, le second que c'est chez toi."
+      },
+      "trap": {
+        "wrong": "These days I work on a new project.",
+        "right": "These days I'm working on a new project.",
+        "why": "« En ce moment » se dit en français avec un présent tout simple. En anglais, une période autour de maintenant — cette semaine, ces temps-ci — appelle le -ing, même si l'action n'a pas lieu à la seconde où tu parles."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "I usually cycle in, but the towpath is flooded so I'm getting the train this week.",
+          "fr": "D'habitude je viens à vélo, mais le chemin de halage est inondé, alors je prends le train cette semaine."
+        },
+        {
+          "register": "work",
+          "en": "We ship on Thursdays, though this month we're releasing whenever the tests go green.",
+          "fr": "On livre le jeudi, mais ce mois-ci on met en prod dès que les tests passent."
+        }
+      ],
+      "seeAlso": ["u001", "u002", "u004"]
+    },
+
+    "u004": {
+      "image": "Certains verbes ne bougent pas. On ne peut pas être en train de savoir quelque chose : ou tu le sais, ou tu ne le sais pas.",
+      "rule": "Les verbes d'état — know, want, need, like, mean, belong, prefer — n'ont pas de forme en -ing.",
+      "figure": {
+        "now": "maintenant",
+        "spans": [
+          { "from": 5, "to": 95, "label": "un état : il est, il ne se déroule pas", "open": "both", "tone": "quiet" }
+        ]
+      },
+      "contrast": {
+        "left": "I think it's a fair price.",
+        "right": "I'm thinking about it.",
+        "note": "Une opinion qu'on a — ou une activité mentale en cours. Le même verbe change de camp selon le sens."
+      },
+      "trap": {
+        "wrong": "I'm knowing this place well.",
+        "right": "I know this place well.",
+        "why": "Le français conjugue « je connais » comme n'importe quel verbe, sans marquer qu'il s'agit d'un état. L'anglais, lui, réserve le -ing à ce qui se déroule."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "I don't want another pint, but I do want the last of those chips.",
+          "fr": "Je ne veux pas une autre pinte, mais je veux bien la fin de ces frites."
+        },
+        {
+          "register": "work",
+          "en": "I don't understand the stack trace, so I'm looking through the logs.",
+          "fr": "Je ne comprends pas la trace d'erreur, donc je suis en train d'éplucher les logs."
+        }
+      ],
+      "seeAlso": ["u001", "u003", "u017"]
+    },
+
+    "u005": {
+      "image": "Un point posé sur la ligne du temps, derrière toi. C'est fini, et on sait quand.",
+      "rule": "I did = c'est arrivé à un moment terminé, dit ou sous-entendu — hier, en 2019, quand j'étais étudiant.",
+      "figure": {
+        "now": "maintenant",
+        "marks": [{ "at": 22, "label": "hier soir, et c'est clos" }]
+      },
+      "contrast": {
+        "left": "I saw them at the Louisiana last night.",
+        "right": "I've seen them live twice.",
+        "note": "Un moment daté, fermé — ou un fait sans date, qu'on porte encore."
+      },
+      "trap": {
+        "wrong": "I have seen him yesterday.",
+        "right": "I saw him yesterday.",
+        "why": "« Je l'ai vu hier » a exactement la forme du present perfect, et c'est un piège de ressemblance : dès qu'un moment passé est nommé, l'anglais impose le prétérit."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "We queued for an hour outside Thekla and it was worth every minute.",
+          "fr": "On a fait la queue une heure devant le Thekla, et ça valait chaque minute."
+        },
+        {
+          "register": "work",
+          "en": "The incident started at 03:12 and we rolled back twenty minutes later.",
+          "fr": "L'incident a commencé à 3 h 12 et on a fait le rollback vingt minutes plus tard."
+        }
+      ],
+      "seeAlso": ["u006", "u013", "u007"]
+    },
+
+    "u006": {
+      "image": "Le décor était déjà planté quand l'événement est tombé dedans. Le fond bouge, le fait tranche.",
+      "rule": "was / were + -ing = l'action était déjà en cours au moment où une autre est arrivée.",
+      "figure": {
+        "now": "maintenant",
+        "spans": [
+          { "from": 8, "to": 40, "label": "j'étais déjà en train de…", "open": "left" }
+        ],
+        "marks": [{ "at": 30, "label": "…et là, ça arrive" }]
+      },
+      "contrast": {
+        "left": "I was walking home when the rain started.",
+        "right": "I walked home in the rain.",
+        "note": "Le premier plante un décor et le fait interrompre ; le second raconte un trajet, du début à la fin."
+      },
+      "trap": {
+        "wrong": "When I arrived, they played their last song.",
+        "right": "When I arrived, they were playing their last song.",
+        "why": "Le français dit « ils jouaient » avec un imparfait qu'on oublie de traduire. Sans -ing, la phrase anglaise raconte qu'ils ont commencé à ton arrivée — le contraire de ce que tu voulais dire."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "We were crossing the harbour bridge when the whole crowd started cheering.",
+          "fr": "On traversait la passerelle du port quand toute la foule s'est mise à crier."
+        },
+        {
+          "register": "work",
+          "en": "I was writing the postmortem when the same alert fired again.",
+          "fr": "J'étais en train d'écrire le postmortem quand la même alerte est repartie."
+        }
+      ],
+      "seeAlso": ["u005", "u015", "u016"]
+    }
+  }
+}

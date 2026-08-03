@@ -1,0 +1,240 @@
+{
+  "group": "Future",
+  "lessons": {
+    "u019": {
+      "image": "L'agenda et le tableau des départs. C'est déjà écrit quelque part — ce n'est plus une prévision, c'est une réservation.",
+      "rule": "Rendez-vous déjà pris → présent en -ing. Horaire officiel, fixé par un tiers → présent simple.",
+      "figure": {
+        "now": "maintenant",
+        "marks": [{ "at": 76, "label": "déjà calé dans l'agenda" }]
+      },
+      "contrast": {
+        "left": "I'm seeing the landlord at six.",
+        "right": "The last train leaves at 23:40.",
+        "note": "Mon rendez-vous, que j'ai pris — ou l'horaire de la compagnie, que personne autour de la table ne décide."
+      },
+      "trap": {
+        "wrong": "Tomorrow I will meet the client at nine.",
+        "right": "Tomorrow I'm meeting the client at nine.",
+        "why": "Le français met un futur pour tout ce qui vient. En anglais, un rendez-vous déjà pris se dit au présent : will ferait entendre que tu viens de le décider en parlant."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "We're getting the ferry across to the M Shed on Saturday.",
+          "fr": "On prend le ferry pour le M Shed samedi."
+        },
+        {
+          "register": "work",
+          "en": "The all-hands starts at four and the demo goes first.",
+          "fr": "L'all-hands commence à seize heures et la démo passe en premier."
+        }
+      ],
+      "seeAlso": ["u020", "u023", "u001"]
+    },
+
+    "u020": {
+      "image": "Le nuage noir qu'on voit arriver, ou la décision déjà prise avant d'ouvrir la bouche.",
+      "rule": "going to = l'intention était là avant de parler, ou la preuve est sous les yeux maintenant.",
+      "figure": {
+        "now": "maintenant",
+        "spans": [
+          { "from": 32, "to": 50, "label": "la décision, ou le signe, est déjà là", "tone": "quiet" }
+        ],
+        "marks": [{ "at": 74, "label": "ce qui va arriver" }]
+      },
+      "contrast": {
+        "left": "It's going to rain.",
+        "right": "It will rain tomorrow.",
+        "note": "Je vois les nuages d'ici — ou je fais une prévision, sans rien avoir sous les yeux."
+      },
+      "trap": {
+        "wrong": "Look at those clouds, it will rain.",
+        "right": "Look at those clouds, it's going to rain.",
+        "why": "Le français dit « il va pleuvoir » et « il pleuvra » presque indifféremment. L'anglais tranche : dès qu'il y a une preuve visible ou une intention déjà formée, c'est going to."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "We're going to move out of Bedminster before the rent goes up again.",
+          "fr": "On va quitter Bedminster avant que le loyer remonte."
+        },
+        {
+          "register": "work",
+          "en": "At this burn rate we're going to blow the GPU budget by Thursday.",
+          "fr": "À ce rythme, on va faire exploser le budget GPU avant jeudi."
+        }
+      ],
+      "seeAlso": ["u023", "u021", "u019"]
+    },
+
+    "u021": {
+      "image": "La décision qui naît pendant la phrase. Personne ne la connaissait avant que tu la dises — pas même toi.",
+      "rule": "will = ce qu'on décide à l'instant, ce qu'on promet, ce qu'on propose spontanément.",
+      "figure": {
+        "now": "maintenant",
+        "marks": [
+          { "at": 50, "label": "je décide en parlant" },
+          { "at": 80, "label": "et ça se fera" }
+        ]
+      },
+      "contrast": {
+        "left": "I'll get this round.",
+        "right": "I'm getting this round.",
+        "note": "Je viens de le décider, là — ou c'était convenu avant qu'on arrive au bar."
+      },
+      "trap": {
+        "wrong": "Wait, I come with you.",
+        "right": "Wait, I'll come with you.",
+        "why": "Le français utilise le présent pour une décision immédiate : « j'arrive », « je viens ». En anglais ce présent-là dit une habitude, et la phrase devient incompréhensible."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "It's chucking it down — I'll grab us a cab.",
+          "fr": "Il tombe des cordes, je nous prends un taxi."
+        },
+        {
+          "register": "work",
+          "en": "Nobody's picked that ticket up? Fine, I'll take it.",
+          "fr": "Personne n'a pris ce ticket ? Bon, je le prends."
+        }
+      ],
+      "seeAlso": ["u022", "u023", "u020"]
+    },
+
+    "u022": {
+      "image": "La main tendue : une offre, une promesse, un refus. Will ne parle pas que du temps, il parle de volonté.",
+      "rule": "will sert aussi à proposer, promettre, insister ou refuser — et won't dit souvent « ça ne veut pas ».",
+      "contrast": {
+        "left": "The door won't open.",
+        "right": "The door doesn't open.",
+        "note": "Elle résiste, là, maintenant — ou elle n'est pas faite pour s'ouvrir. Won't prête une mauvaise volonté aux objets."
+      },
+      "trap": {
+        "wrong": "I promise I call you tonight.",
+        "right": "I promise I'll call you tonight.",
+        "why": "Après une promesse, le français reste volontiers au présent. L'anglais exige will : sans lui, la phrase décrit une habitude au lieu d'un engagement."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "Shall I keep you a seat by the window?",
+          "fr": "Je te garde une place près de la fenêtre ?"
+        },
+        {
+          "register": "work",
+          "en": "The build won't start on my machine and I've tried everything.",
+          "fr": "Le build refuse de démarrer sur ma machine et j'ai tout essayé."
+        }
+      ],
+      "seeAlso": ["u021", "u023", "u037"]
+    },
+
+    "u023": {
+      "image": "Deux futurs selon l'ancienneté de la décision : celle prise avant d'entrer dans la pièce, celle prise en la traversant.",
+      "rule": "going to pour une décision antérieure à la conversation ; will pour celle qui se prend en parlant.",
+      "figure": {
+        "now": "maintenant",
+        "marks": [
+          { "at": 22, "label": "going to : décidé avant" },
+          { "at": 50, "label": "will : décidé là" }
+        ]
+      },
+      "contrast": {
+        "left": "I'm going to help you.",
+        "right": "I'll help you.",
+        "note": "C'était prévu depuis un moment — ou je viens de le proposer en voyant ta tête."
+      },
+      "trap": {
+        "wrong": "That box looks heavy. I'm going to give you a hand.",
+        "right": "That box looks heavy. I'll give you a hand.",
+        "why": "Une offre spontanée ne peut pas être going to : tu n'avais rien décidé avant de voir la boîte. Le français ne marque pas cette différence, l'anglais l'entend immédiatement."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "We're going to do the Severn Beach line on Sunday if the weather holds.",
+          "fr": "On va faire la ligne de Severn Beach dimanche si le temps tient."
+        },
+        {
+          "register": "work",
+          "en": "You're stuck on the auth flow? I'll pair with you after lunch.",
+          "fr": "Tu bloques sur le flux d'authentification ? Je fais du pair avec toi après le déjeuner."
+        }
+      ],
+      "seeAlso": ["u020", "u021", "u019"]
+    },
+
+    "u024": {
+      "image": "Rendez-vous pris avec le futur lui-même : demain à dix heures, la scène sera déjà en train de se jouer.",
+      "rule": "will be + -ing = ce sera en cours à ce moment-là. will have + participe = ce sera déjà terminé avant ce moment-là.",
+      "figure": {
+        "now": "maintenant",
+        "spans": [
+          { "from": 58, "to": 88, "label": "will be doing : en cours à ce moment" },
+          { "from": 52, "to": 70, "label": "will have done : déjà fini avant", "tone": "quiet" }
+        ],
+        "marks": [{ "at": 76, "label": "demain, 10 h" }]
+      },
+      "contrast": {
+        "left": "This time tomorrow I'll be flying.",
+        "right": "By this time tomorrow I'll have landed.",
+        "note": "En l'air à cette heure-là — ou déjà posé avant cette heure-là."
+      },
+      "trap": {
+        "wrong": "Tomorrow at ten I will work.",
+        "right": "Tomorrow at ten I'll be working.",
+        "why": "Le futur simple français couvre les deux. En anglais, will work annonce un fait ponctuel ; pour dire qu'on sera en plein dedans à cette heure précise, il faut le -ing."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "Don't ring me at six, I'll be cycling back over the bridge.",
+          "fr": "Ne m'appelle pas à six heures, je serai en train de rentrer à vélo par le pont."
+        },
+        {
+          "register": "work",
+          "en": "By Friday the migration will have run on every region.",
+          "fr": "D'ici vendredi la migration sera passée sur toutes les régions."
+        }
+      ],
+      "seeAlso": ["u021", "u023", "u015"]
+    },
+
+    "u025": {
+      "image": "Après when, l'anglais coupe le futur. Le temps est déjà porté par la phrase principale, inutile de le dire deux fois.",
+      "rule": "Après when, as soon as, until, before, after : présent pour le futur, present perfect quand une étape doit être finie d'abord.",
+      "figure": {
+        "now": "maintenant",
+        "marks": [
+          { "at": 62, "label": "when I arrive (présent)" },
+          { "at": 82, "label": "I'll call you (futur)" }
+        ]
+      },
+      "contrast": {
+        "left": "I'll call you when I arrive.",
+        "right": "I'll call you when I've finished.",
+        "note": "Le simple fait d'arriver — ou une étape qui doit être bouclée avant que l'autre commence."
+      },
+      "trap": {
+        "wrong": "I'll call you when I will arrive.",
+        "right": "I'll call you when I arrive.",
+        "why": "Le français met un futur des deux côtés : « je t'appellerai quand j'arriverai ». L'anglais l'interdit après when — c'est l'une des rares règles anglaises plus strictes que la française, et elle s'entend tout de suite."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "Text me when you get to the top of Christmas Steps.",
+          "fr": "Envoie-moi un message quand tu arrives en haut de Christmas Steps."
+        },
+        {
+          "register": "work",
+          "en": "We'll open the traffic up as soon as the canary has been green for an hour.",
+          "fr": "On ouvrira le trafic dès que le canary sera au vert depuis une heure."
+        }
+      ],
+      "seeAlso": ["u021", "u038", "u019"]
+    }
+  }
+}

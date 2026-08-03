@@ -4,9 +4,10 @@ import { rendererFor, renderStatement, type ExerciseHandle } from '../../engine/
 import { canonicalAnswer, otherAnswers } from '../../engine/grading';
 import { formatDelay } from '../../engine/scheduler';
 import { recordAnswer, reviseAnswer, type RecordedAnswer, type Session } from '../../engine/session';
-import { contentLang, spokenSentence } from '../../packs/schema';
+import { contentLang, spokenSentence, topicOf } from '../../packs/schema';
 import { recordDispute } from '../../storage/disputes';
 import { el, mount } from '../dom';
+import { openLessonDialog } from '../lesson';
 import { listenButton, stopSpeaking } from '../speech';
 import type { AnsweredCard, Ctx } from '../types';
 
@@ -135,6 +136,36 @@ export function renderReview(ctx: Ctx, session: Session): void {
           listenButton(passage!, lang),
         ])
       );
+    }
+
+    /**
+     * « Pourquoi ? » — la fiche de l'unité, ouverte par-dessus la session.
+     *
+     * Trois choses en font un bouton et non une explication dépliée d'office.
+     * D'abord le moment : il n'apparaît qu'**après** la réponse, jamais avant,
+     * sans quoi la règle serait sous les yeux au moment de la produire et le
+     * rappel deviendrait de la recopie. Ensuite la trace : une faute qu'on
+     * vient de faire et qui est corrigée dans la foulée se retient mieux que
+     * la même règle lue sans s'être trompé — c'est le seul instant où cette
+     * fiche vaut mieux qu'un exercice de plus. Enfin l'effet de bord : elle
+     * s'ouvre en fenêtre, la file de révision reste derrière, intacte, et rien
+     * de ce qui est lu ici ne déplace la moindre carte.
+     */
+    function understandButton(): HTMLElement | false {
+      const topic = topicOf(session.pack, card.item.topicId);
+      if (!topic?.lesson) return false;
+
+      const button = el('button', { class: 'btn btn--link btn--why', type: 'button' }, [
+        'Comprendre cette règle',
+      ]);
+      button.addEventListener('click', () => {
+        stopSpeaking();
+        openLessonDialog(topic, {
+          lang,
+          resolve: (id) => topicOf(session.pack, id),
+        });
+      });
+      return button;
     }
 
     /**
@@ -287,10 +318,17 @@ export function renderReview(ctx: Ctx, session: Session): void {
 
         const { recorded, entry } = await commit({ correct: result.correct }, verdict);
 
-        // Pas de contestation sur un choix multiple : les formulations étaient
-        // sous les yeux, il n'y a pas d'équivalent à avoir trouvé autrement.
-        if (!result.correct && card.exercise.type !== 'mcq') {
-          verdict.append(disputeButton(recorded, entry, value.trim(), result.expected));
+        if (!result.correct) {
+          verdict.append(
+            el('div', { class: 'verdict__actions' }, [
+              understandButton(),
+              // Pas de contestation sur un choix multiple : les formulations
+              // étaient sous les yeux, il n'y a pas d'équivalent à avoir
+              // trouvé autrement.
+              card.exercise.type !== 'mcq' &&
+                disputeButton(recorded, entry, value.trim(), result.expected),
+            ]),
+          );
         }
       };
 
@@ -307,9 +345,10 @@ export function renderReview(ctx: Ctx, session: Session): void {
         label,
       ]);
       button.addEventListener('click', () => {
-        void commit(
-          judgement,
-          el('div', { class: `verdict ${judgement.correct ? 'verdict--ok' : 'verdict--ko'}` }, [
+        const verdict = el(
+          'div',
+          { class: `verdict ${judgement.correct ? 'verdict--ok' : 'verdict--ko'}` },
+          [
             el('strong', {}, [
               judgement.correct ? 'Compté juste.' : 'Comptée manquée — elle revient vite.',
             ]),
@@ -319,8 +358,16 @@ export function renderReview(ctx: Ctx, session: Session): void {
               !usedHint &&
               card.exercise.hints?.[0] &&
               el('p', { class: 'why' }, [card.exercise.hints[0]!]),
-          ]),
+          ],
         );
+
+        // L'accès à la fiche vient après l'échéance, pas avant : la dernière
+        // chose lue doit rester « on la revoit demain », qui est ce que fait
+        // l'application, et non une invitation à lire.
+        void commit(judgement, verdict).then(() => {
+          const why = judgement.correct ? false : understandButton();
+          if (why) verdict.append(el('div', { class: 'verdict__actions' }, [why]));
+        });
       });
       return button;
     }

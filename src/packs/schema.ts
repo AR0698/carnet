@@ -63,6 +63,96 @@ export interface PackItem {
   exercises: Exercise[];
 }
 
+/**
+ * Un segment de l'axe du temps — de `from` à `to`, en pourcentage de l'axe.
+ *
+ * `open` dit de quel côté l'action déborde du cadre : une action commencée
+ * avant le début du dessin et qui dure encore n'a ni début ni fin à montrer,
+ * et un segment aux deux bouts francs mentirait sur ce point précis.
+ */
+export interface LessonSpan {
+  from: number;
+  to: number;
+  label: string;
+  open?: 'left' | 'right' | 'both';
+  /** `quiet` pour ce qui sert de décor, `strong` pour ce que la règle vise. */
+  tone?: 'strong' | 'quiet';
+}
+
+/** Un instant ponctuel sur l'axe — un fait daté, par opposition à une durée. */
+export interface LessonMark {
+  at: number;
+  label: string;
+}
+
+/**
+ * Le dessin de la règle : un axe du temps, ses durées et ses instants.
+ *
+ * C'est un schéma, pas une décoration. Une règle de temps grammatical se voit
+ * sur un axe bien plus vite qu'elle ne se lit — et ce qui est vu en même temps
+ * que lu se retrouve par deux chemins au lieu d'un.
+ */
+export interface LessonFigure {
+  /** Étiquette du repère « maintenant ». Sans elle, pas de repère tracé. */
+  now?: string;
+  spans?: LessonSpan[];
+  marks?: LessonMark[];
+}
+
+/** Les deux registres qu'on va réellement parler. */
+export type LessonRegister = 'bristol' | 'work';
+
+export interface LessonExample {
+  register: LessonRegister;
+  en: string;
+  /** La même chose en français — jamais du mot à mot, ce qu'on dirait vraiment. */
+  fr: string;
+}
+
+/**
+ * Le calque du français : la faute qu'on fait parce que la phrase française
+ * est construite autrement, et ce qu'il faut dire à la place.
+ */
+export interface LessonTrap {
+  wrong: string;
+  right: string;
+  /** Pourquoi le français pousse à l'erreur — une phrase. */
+  why: string;
+}
+
+/** Les deux formes que l'unité sert à distinguer, et ce qui les sépare. */
+export interface LessonContrast {
+  left: string;
+  right: string;
+  note: string;
+}
+
+/**
+ * La fiche de cours d'une notion — l'endroit où on va comprendre.
+ *
+ * Elle tient sur un écran, sans défilement, et se lit dans un ordre fixe :
+ * l'image d'abord, la règle ensuite, puis le contraste, le piège du
+ * francophone, et deux phrases qu'on pourrait vraiment prononcer. Cet ordre
+ * n'est pas décoratif — on retient un cas concret bien avant une formulation
+ * abstraite, et la formulation ne s'accroche que si elle arrive après.
+ *
+ * Une fiche ne se planifie pas et ne produit aucune carte : elle se consulte.
+ * C'est délibéré (§ audit) — relire donne l'impression de savoir, et cette
+ * impression est précisément ce que le moteur combat partout ailleurs.
+ */
+export interface Lesson {
+  /** L'accroche mentale : la règle attachée à quelque chose qui se voit. */
+  image: string;
+  /** La règle en une phrase, si possible sous forme d'équation. */
+  rule: string;
+  figure?: LessonFigure;
+  contrast?: LessonContrast;
+  trap: LessonTrap;
+  examples: LessonExample[];
+  /** Les unités voisines — celles qu'on confond avec celle-ci. */
+  seeAlso?: string[];
+}
+
 export interface Topic {
   id: string;
   title: string;
@@ -71,6 +161,8 @@ export interface Topic {
   order: number;
   /** Groupe thématique d'affichage (optionnel). */
   group?: string;
+  /** La fiche de cours, quand elle est écrite. Toutes ne le sont pas encore. */
+  lesson?: Lesson;
 }
 
 export interface PackMeta {
@@ -140,4 +232,24 @@ export function isScheduled(exercise: Exercise): boolean {
 /** Le filet de secours d'un item, s'il en a un. */
 export function rescueExercise(item: PackItem): Exercise | undefined {
   return item.exercises.find((e) => e.type === 'mcq');
+}
+
+/** La notion d'un identifiant, si le pack la connaît. */
+export function topicOf(pack: ContentPack, topicId: string): Topic | undefined {
+  return pack.topics.find((t) => t.id === topicId);
+}
+
+/**
+ * La fiche d'une notion, si elle est écrite.
+ *
+ * Toutes les unités n'en ont pas : l'appelant doit toujours pouvoir se passer
+ * de fiche, et l'interface ne montre l'accès que là où il mène quelque part.
+ */
+export function lessonOf(pack: ContentPack, topicId: string): Lesson | undefined {
+  return topicOf(pack, topicId)?.lesson;
+}
+
+/** Les notions du pack qui ont une fiche, dans l'ordre du parcours. */
+export function topicsWithLesson(pack: ContentPack): Topic[] {
+  return pack.topics.filter((t) => t.lesson).sort((a, b) => a.order - b.order);
 }

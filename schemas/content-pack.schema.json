@@ -46,7 +46,8 @@
             "description": "Ordre suggéré de progression, jamais un verrou d'accès.",
             "type": "array",
             "items": { "type": "string", "minLength": 1 }
-          }
+          },
+          "lesson": { "$ref": "#/$defs/lesson" }
         }
       }
     },
@@ -77,6 +78,106 @@
   },
 
   "$defs": {
+    "lesson": {
+      "description": "La fiche de cours d'une notion : l'endroit où on va comprendre. Tient sur un écran, se lit dans un ordre fixe — image, règle, contraste, piège du francophone, exemples.",
+      "type": "object",
+      "required": ["image", "rule", "trap", "examples"],
+      "additionalProperties": false,
+      "properties": {
+        "image": {
+          "description": "L'accroche mentale : la règle attachée à quelque chose qui se voit.",
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 220
+        },
+        "rule": {
+          "description": "La règle en une phrase, si possible sous forme d'équation.",
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 220
+        },
+        "figure": {
+          "description": "Le dessin de la règle : un axe du temps, ses durées et ses instants.",
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "now": { "type": "string", "minLength": 1, "maxLength": 24 },
+            "spans": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["from", "to", "label"],
+                "additionalProperties": false,
+                "properties": {
+                  "from": { "type": "number", "minimum": 0, "maximum": 100 },
+                  "to": { "type": "number", "minimum": 0, "maximum": 100 },
+                  "label": { "type": "string", "minLength": 1, "maxLength": 48 },
+                  "open": { "enum": ["left", "right", "both"] },
+                  "tone": { "enum": ["strong", "quiet"] }
+                }
+              }
+            },
+            "marks": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["at", "label"],
+                "additionalProperties": false,
+                "properties": {
+                  "at": { "type": "number", "minimum": 0, "maximum": 100 },
+                  "label": { "type": "string", "minLength": 1, "maxLength": 48 }
+                }
+              }
+            }
+          }
+        },
+        "contrast": {
+          "description": "Les deux formes que l'unité sert à distinguer, et ce qui les sépare.",
+          "type": "object",
+          "required": ["left", "right", "note"],
+          "additionalProperties": false,
+          "properties": {
+            "left": { "type": "string", "minLength": 1, "maxLength": 90 },
+            "right": { "type": "string", "minLength": 1, "maxLength": 90 },
+            "note": { "type": "string", "minLength": 1, "maxLength": 200 }
+          }
+        },
+        "trap": {
+          "description": "Le calque du français : la faute qu'on fait parce que la phrase française est construite autrement.",
+          "type": "object",
+          "required": ["wrong", "right", "why"],
+          "additionalProperties": false,
+          "properties": {
+            "wrong": { "type": "string", "minLength": 1, "maxLength": 120 },
+            "right": { "type": "string", "minLength": 1, "maxLength": 120 },
+            "why": { "type": "string", "minLength": 1, "maxLength": 220 }
+          }
+        },
+        "examples": {
+          "description": "Deux registres, pas un de plus : la ville et le travail.",
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 3,
+          "items": {
+            "type": "object",
+            "required": ["register", "en", "fr"],
+            "additionalProperties": false,
+            "properties": {
+              "register": { "enum": ["bristol", "work"] },
+              "en": { "type": "string", "minLength": 1, "maxLength": 140 },
+              "fr": { "type": "string", "minLength": 1, "maxLength": 140 }
+            }
+          }
+        },
+        "seeAlso": {
+          "description": "Les unités voisines — celles qu'on confond avec celle-ci.",
+          "type": "array",
+          "maxItems": 4,
+          "items": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+
     "answerSpec": {
       "type": "object",
       "required": ["accepted"],

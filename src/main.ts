@@ -8,6 +8,7 @@ import { initServiceWorker, onServiceWorkerChange } from './pwa/register';
 import { requestPersistentStorage } from './storage/persist';
 import { el, mount } from './ui/dom';
 import { renderBackup } from './ui/screens/backup';
+import { renderCourse } from './ui/screens/course';
 import { renderHome } from './ui/screens/home';
 import { renderInsights } from './ui/screens/insights';
 import { renderOrder } from './ui/screens/order';
@@ -17,7 +18,7 @@ import { renderVocab } from './ui/screens/vocab';
 import { warmVoices } from './ui/speech';
 import type { Ctx, Nav } from './ui/types';
 
-type Screen = 'home' | 'review' | 'summary' | 'vocab' | 'insights' | 'order' | 'backup';
+type Screen = 'home' | 'review' | 'summary' | 'vocab' | 'insights' | 'order' | 'backup' | 'course';
 
 async function boot(): Promise<void> {
   const root = document.querySelector<HTMLElement>('#app');
@@ -81,6 +82,10 @@ async function boot(): Promise<void> {
       async backup() {
         screen = 'backup';
         await renderBackup(ctx);
+      },
+      async course(opts) {
+        screen = 'course';
+        await renderCourse(ctx, opts);
       },
     };
     ctx.nav = nav;

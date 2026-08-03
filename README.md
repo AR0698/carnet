@@ -276,6 +276,41 @@ une mémoire mais une série d'échecs, et la carte revient sans fin à un jour
 d'intervalle. `resetCard` la remet à neuf et rouvre la porte de graduation ; le
 journal, lui, est conservé — ce qui a eu lieu a eu lieu.
 
+## Le cours — l'endroit où on va comprendre
+
+Une fiche par unité : l'image mentale, la règle en une phrase, le contraste avec
+la règle voisine, le piège du francophone, et deux phrases qu'on pourrait
+vraiment dire — une dans la ville, une au bureau. Le tout sur un seul écran,
+sans rien de repliable. C'est la contrainte de départ : on vient y chercher une
+réponse en quelques secondes, pas un chapitre.
+
+Les règles de temps portent en plus une **frise** : les durées, les instants, et
+le repère « maintenant » toujours au milieu. Le passé à gauche, l'avenir à
+droite, dans les 145 fiches — un axe qui se réorganise d'une unité à l'autre
+obligerait à le relire avant de lire la règle. Ce n'est pas une décoration : ce
+qui est vu en même temps que lu se retrouve par deux chemins au lieu d'un.
+
+**Le cours s'ouvre depuis une faute.** Après une réponse fausse — et seulement
+après, jamais avant — un lien « Comprendre cette règle » ouvre la fiche
+par-dessus la session. La file de révision reste derrière, intacte. C'est le
+moment où cette fiche vaut mieux qu'un exercice de plus : une erreur sur
+laquelle on s'était engagé, corrigée dans la foulée, tient mieux que la même
+règle lue sans s'être trompé.
+
+**Et il n'est jamais sur le chemin le plus court.** Il vit en pied d'accueil,
+avec le diagnostic et la sauvegarde, jamais à côté des boutons de session. Il ne
+produit aucune carte, ne déplace aucune échéance, ne compte dans aucune
+statistique. Relire donne le sentiment très net de savoir, et ce sentiment ne
+prédit pas ce dont on se souviendra la semaine suivante ; une porte « lire la
+règle » aussi visible que « réviser 15 minutes » serait prise chaque fois que la
+session fait peur. Le raisonnement complet, et l'audit du reste de
+l'application, sont dans [`docs/audit-apprentissage.md`](docs/audit-apprentissage.md).
+
+Les fiches vivent dans `content/<pack>/lessons/`, un fichier par groupe, et sont
+raccrochées à leur notion au moment de l'assemblage. Une unité peut très bien
+avoir ses exercices sans avoir encore sa fiche : l'accès n'apparaît que là où il
+mène quelque part.
+
 ## Sauvegarde
 
 Les packs se retéléchargent ; les mots de Discovery, non. C'est la seule donnée
@@ -413,18 +448,21 @@ src/
     setup.ts            IndexedDB en mémoire, installé avant tout import
     helpers.ts          fabriques minimales de packs et de cartes
   packs/
-    schema.ts           types du pack de contenu
+    schema.ts           types du pack de contenu (dont la fiche de cours)
     validate.ts         validation au chargement
     index.ts            chargement (fetch de /packs/<id>.json)
   ui/
     tokens.css          design tokens — seule source des couleurs et des rythmes
     fonts.css           faces auto-hébergées, sous-ensemble latin
     art.ts              illustrations vectorielles
+    lesson.ts           la fiche de cours : frise du temps, rendu, fenêtre modale
     app.css             styles
     speech.ts           lecture à voix haute (speechSynthesis)
     screens/            accueil, révision, bilan, vocabulaire, diagnostic,
-                        ordre de découverte, sauvegarde
-content/<pack>/         sources du contenu, une unité par fichier
+                        ordre de découverte, sauvegarde, cours
+content/<pack>/
+  units/                exercices, un fichier par groupe thématique
+  lessons/              fiches de cours, un fichier par groupe thématique
 public/packs/           packs assemblés, servis en statique
 ```
 

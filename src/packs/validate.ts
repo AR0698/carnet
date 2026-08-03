@@ -12,6 +12,7 @@ import {
   type ContentPack,
   type Exercise,
   type ExerciseType,
+  type Lesson,
 } from './schema';
 
 const EXERCISE_TYPES: ExerciseType[] = [
@@ -85,6 +86,47 @@ function validateExercise(ex: unknown, where: string, issues: string[]): void {
   }
 }
 
+/**
+ * La fiche de cours d'une notion, quand il y en a une.
+ *
+ * Le pack est téléchargé : une fiche à moitié écrite ou tronquée en chemin
+ * planterait l'écran de cours au moment précis où on vient y chercher de
+ * l'aide. Mieux vaut refuser le pack au chargement, avec une raison lisible,
+ * que casser après une réponse ratée.
+ */
+function validateLesson(lesson: unknown, where: string, issues: string[]): void {
+  if (typeof lesson !== 'object' || lesson === null) {
+    issues.push(`${where} : lesson doit être un objet`);
+    return;
+  }
+  const l = lesson as Partial<Lesson>;
+
+  for (const key of ['image', 'rule'] as const) {
+    if (!isNonEmptyString(l[key])) issues.push(`${where} : lesson.${key} manquant`);
+  }
+
+  if (typeof l.trap !== 'object' || l.trap === null) {
+    issues.push(`${where} : lesson.trap manquant`);
+  } else {
+    for (const key of ['wrong', 'right', 'why'] as const) {
+      if (!isNonEmptyString(l.trap[key])) issues.push(`${where} : lesson.trap.${key} manquant`);
+    }
+  }
+
+  if (!Array.isArray(l.examples) || l.examples.length === 0) {
+    issues.push(`${where} : lesson.examples doit contenir au moins un exemple`);
+  } else {
+    l.examples.forEach((e, i) => {
+      if (e?.register !== 'bristol' && e?.register !== 'work') {
+        issues.push(`${where} / exemple ${i} : register inconnu (${String(e?.register)})`);
+      }
+      for (const key of ['en', 'fr'] as const) {
+        if (!isNonEmptyString(e?.[key])) issues.push(`${where} / exemple ${i} : ${key} manquant`);
+      }
+    });
+  }
+}
+
 export function validatePack(raw: unknown): ContentPack {
   const issues: string[] = [];
 
@@ -128,6 +170,7 @@ export function validatePack(raw: unknown): ContentPack {
       if (!isNonEmptyString(t.title)) issues.push(`topic ${t.id} : title manquant`);
       if (typeof t.order !== 'number') issues.push(`topic ${t.id} : order manquant`);
       if (!Array.isArray(t.prerequisites)) issues.push(`topic ${t.id} : prerequisites doit être un tableau`);
+      if (t.lesson !== undefined) validateLesson(t.lesson, `topic ${t.id}`, issues);
     }
     // Les prérequis inconnus sont une erreur de données, pas un verrou pédagogique.
     for (const t of pack.topics) {

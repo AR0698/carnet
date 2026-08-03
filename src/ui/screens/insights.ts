@@ -20,6 +20,8 @@ import {
   type LeechCard,
   type TopicInsight,
 } from '../../engine/insights';
+import { carnetOf } from '../../carnets';
+import { lessonOf } from '../../packs/schema';
 import { allCards, resetCard } from '../../storage/cards';
 import { db } from '../../storage/db';
 import { clearDispute, listDisputes, type Dispute } from '../../storage/disputes';
@@ -35,10 +37,30 @@ const TREND_LABEL: Record<TopicInsight['trend'], string> = {
   unknown: '',
 };
 
-function topicRow(topic: TopicInsight): HTMLElement {
+/**
+ * Une notion et ce qu'on en sait, avec l'accès à sa fiche quand elle existe.
+ *
+ * L'écran continue de ne proposer aucun « travailler cette notion » : filtrer
+ * une session sur une notion, c'est de la pratique en bloc, et c'est ce que
+ * l'application combat. Lire la règle n'est pas s'entraîner dessus — ça ne
+ * réordonne rien, ça ne déplace aucune carte, et c'est la seule chose utile à
+ * faire devant une notion basse qu'on ne comprend pas.
+ */
+function topicRow(topic: TopicInsight, open?: () => void): HTMLElement {
   const trend = TREND_LABEL[topic.trend];
+
+  const title = open
+    ? (() => {
+        const b = el('button', { class: 'btn btn--link insight__title', type: 'button' }, [
+          topic.title,
+        ]);
+        b.addEventListener('click', open);
+        return b;
+      })()
+    : el('span', { class: 'insight__title' }, [topic.title]);
+
   return el('li', { class: 'insight' }, [
-    el('span', { class: 'insight__title' }, [topic.title]),
+    title,
     el('span', { class: 'insight__meta' }, [
       `${percent(topic.accuracy)} sur ${topic.answers} réponse${topic.answers > 1 ? 's' : ''}`,
       trend && ` · ${trend}`,
@@ -57,6 +79,15 @@ export async function renderInsights(ctx: Ctx): Promise<void> {
 
   const back = el('button', { class: 'btn btn--link', type: 'button' }, ['← Retour aux carnets']);
   back.addEventListener('click', () => void ctx.nav.home());
+
+  /** L'ouverture de la fiche, seulement pour les notions qui en ont une. */
+  const opener = (topic: TopicInsight): (() => void) | undefined => {
+    const pack = carnetOf(ctx.carnets, topic.packId)?.pack;
+    if (!pack || !lessonOf(pack, topic.topicId)) return undefined;
+    return () => void ctx.nav.course({ packId: topic.packId, topicId: topic.topicId });
+  };
+
+  const row = (topic: TopicInsight) => topicRow(topic, opener(topic));
 
   function carnetBlock(carnet: CarnetInsight): HTMLElement | false {
     if (carnet.answers === 0) return false;
@@ -84,7 +115,7 @@ export async function renderInsights(ctx: Ctx): Promise<void> {
             el(
               'ul',
               { class: 'insight-list' },
-              (attention.length > 0 ? attention : carnet.weak).map(topicRow),
+              (attention.length > 0 ? attention : carnet.weak).map(row),
             ),
             attention.length === 0 &&
               el('p', { class: 'notice' }, [
@@ -95,7 +126,7 @@ export async function renderInsights(ctx: Ctx): Promise<void> {
       carnet.strong.length > 0 &&
         el('details', { class: 'how' }, [
           el('summary', {}, ['Ce qui tient']),
-          el('ul', { class: 'insight-list' }, carnet.strong.map(topicRow)),
+          el('ul', { class: 'insight-list' }, carnet.strong.map(row)),
         ]),
 
       carnet.undecided > 0 &&

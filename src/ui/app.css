@@ -1202,3 +1202,390 @@ body::before {
   border-color: var(--harbour);
   box-shadow: 0 0 0 3px var(--harbour-soft);
 }
+
+/* ---------- le cours ----------
+   Une fiche se lit d'un seul tenant : rien n'y est repliable, et l'ordre des
+   blocs est le même dans les 145 unités. Ce qui change d'une fiche à l'autre,
+   c'est le contenu — jamais l'endroit où le regard doit aller le chercher. */
+
+/* La frise du temps. Une ligne par durée, étiquette au-dessus de la barre :
+   deux étiquettes sur la même ligne se chevauchent dès qu'on passe sur un
+   téléphone, et une frise illisible coûte plus qu'elle ne rapporte. */
+.fig {
+  background: var(--card);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-control);
+  padding: var(--space-4) var(--space-4) var(--space-5);
+}
+
+.fig--empty {
+  display: none;
+}
+
+.fig__stack {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.fig__label {
+  display: block;
+  font-size: var(--text-xs);
+  color: var(--ink-soft);
+  margin-bottom: 2px;
+}
+
+.fig__track {
+  position: relative;
+  height: 10px;
+}
+
+/* L'axe lui-même : discret, il ne fait que porter les durées. */
+.fig__rule {
+  position: absolute;
+  inset-block: 50%;
+  inset-inline: 0;
+  height: 1px;
+  background: var(--border-soft);
+}
+
+.fig__bar {
+  position: absolute;
+  inset-block: 0;
+  border-radius: var(--radius-pill);
+  background: var(--harbour);
+}
+
+.fig__bar--quiet {
+  background: color-mix(in srgb, var(--harbour) 28%, var(--paper));
+}
+
+/* Une action commencée avant le cadre, ou qui n'y finit pas, n'a pas de bord
+   franc de ce côté-là : le dégradé dit « ça continue », ce qu'une extrémité
+   nette dirait faux. */
+.fig__bar--open-left {
+  mask-image: linear-gradient(to right, transparent, #000 16%);
+}
+
+.fig__bar--open-right {
+  mask-image: linear-gradient(to left, transparent, #000 16%);
+}
+
+.fig__bar--open-both {
+  mask-image: linear-gradient(to right, transparent, #000 12%, #000 88%, transparent);
+}
+
+.fig__dot {
+  position: absolute;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  margin-top: -5px;
+  margin-left: -5px;
+  border-radius: 50%;
+  background: var(--brick);
+}
+
+/* « Maintenant » traverse toute la pile, toujours au milieu : le passé à
+   gauche, l'avenir à droite, dans chaque fiche. Un repère qui se déplace
+   obligerait à relire l'axe avant de lire la règle. */
+.fig__now {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: calc(-1 * var(--space-4));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: none;
+  /* Le bloc n'a pas de largeur propre : il se dimensionne sur son étiquette.
+     Sans ce recentrage, `left: 50%` place son bord gauche au milieu et le
+     trait pointillé atterrit une demi-étiquette plus loin — le repère ne
+     tombe plus en face des durées qu'il est censé couper. */
+  transform: translateX(-50%);
+}
+
+.fig__now i {
+  flex: 1;
+  width: 0;
+  border-left: 1px dashed color-mix(in srgb, var(--ink) 35%, var(--paper));
+}
+
+.fig__now span {
+  font-size: var(--text-xs);
+  color: var(--ink-faint);
+  background: var(--card);
+  padding: 0 var(--space-1);
+  white-space: nowrap;
+}
+
+/* --- la fiche --- */
+
+.lesson {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.lesson-tag {
+  font-size: var(--text-xs);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.lesson-image {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+/* L'image mentale est écrite à la main : c'est une phrase qu'on se dit, pas
+   une définition qu'on récite. */
+.lesson-image__line {
+  font-family: var(--font-hand);
+  font-size: var(--text-lg);
+  line-height: 1.4;
+  color: var(--ink);
+}
+
+.lesson-rule p {
+  font-size: var(--text-base);
+  line-height: 1.5;
+}
+
+.lesson-contrast {
+  background: var(--harbour-soft);
+  border-radius: var(--radius-control);
+  padding: var(--space-3) var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.lesson-contrast__pair {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+  font-weight: 600;
+}
+
+.lesson-contrast__vs {
+  color: var(--ink-faint);
+  font-weight: 400;
+}
+
+.lesson-contrast__note {
+  font-size: var(--text-sm);
+  color: var(--ink-soft);
+}
+
+/* Le piège reprend les couleurs de la correction — brique pour ce qui est
+   faux, parc pour ce qui est juste. La même faute doit se reconnaître ici et
+   dans le verdict d'un exercice, sinon ce sont deux langages à apprendre. */
+.lesson-trap {
+  background: var(--brick-soft);
+  border-radius: var(--radius-control);
+  padding: var(--space-3) var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.lesson-trap__wrong {
+  color: var(--brick);
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+}
+
+/* Le signe reste net : `display: inline-block` le sort du soulignement du
+   parent, que rien d'autre ne peut lever. La marge remplace l'espace, qui se
+   ferait manger par le même barré. */
+.lesson-trap__wrong::before {
+  content: '✗';
+  margin-right: 0.35em;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.lesson-trap__right {
+  color: color-mix(in srgb, var(--park) 78%, var(--ink));
+  font-weight: 600;
+}
+
+.lesson-trap__right::before {
+  content: '✓';
+  margin-right: 0.35em;
+}
+
+.lesson-trap__why {
+  font-size: var(--text-sm);
+  color: var(--ink-soft);
+  margin-top: var(--space-1);
+}
+
+.lesson-egs {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.lesson-eg {
+  border-left: 3px solid var(--border-soft);
+  padding-left: var(--space-3);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.lesson-eg--bristol {
+  border-left-color: var(--terracotta);
+}
+
+.lesson-eg--work {
+  border-left-color: var(--teal);
+}
+
+.lesson-eg__tag {
+  font-size: var(--text-xs);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.lesson-eg__en {
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.lesson-eg__fr {
+  font-size: var(--text-sm);
+  color: var(--ink-soft);
+}
+
+.lesson-see__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-4);
+  margin-top: var(--space-1);
+}
+
+.lesson-link {
+  text-align: left;
+}
+
+/* --- la fiche par-dessus une session --- */
+
+.lesson-dialog {
+  width: min(34rem, calc(100vw - 2 * var(--space-4)));
+  max-height: 86vh;
+  overflow-y: auto;
+  border: none;
+  border-radius: var(--radius-card);
+  background: var(--paper);
+  color: var(--ink);
+  padding: var(--space-5);
+  box-shadow: 0 12px 40px color-mix(in srgb, var(--ink) 24%, transparent);
+}
+
+.lesson-dialog::backdrop {
+  background: color-mix(in srgb, var(--ink) 45%, transparent);
+}
+
+.lesson-dialog__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+}
+
+.lesson-dialog__close {
+  flex: none;
+}
+
+/* Le lien vers la fiche, dans le verdict d'une réponse ratée. */
+.verdict__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-4);
+  margin-top: var(--space-1);
+}
+
+.btn--why {
+  font-weight: 600;
+}
+
+/* --- l'index du cours --- */
+
+.course-search {
+  width: 100%;
+  font: inherit;
+  font-size: var(--text-base);
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-control);
+  background: var(--card);
+  color: var(--ink);
+}
+
+.course-index {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.course-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.course-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+/* Chaque entrée montre sa règle sous le titre : on reconnaît beaucoup plus
+   vite la règle qu'on cherche à sa formulation qu'au nom de l'unité. */
+.course-row {
+  width: 100%;
+  text-align: left;
+  font: inherit;
+  cursor: pointer;
+  background: var(--card);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-control);
+  padding: var(--space-3) var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  transition: border-color var(--dur) var(--ease);
+}
+
+.course-row:hover {
+  border-color: var(--harbour);
+}
+
+.course-row__title {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.course-row__rule {
+  font-size: var(--text-sm);
+  color: var(--ink-soft);
+}
+
+.course-steps {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-3);
+  margin-top: var(--space-4);
+}

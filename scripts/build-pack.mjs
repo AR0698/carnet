@@ -12,7 +12,7 @@
  * Il échoue bruyamment : un pack invalide ne doit jamais atteindre `public/`.
  */
 
-import { readFileSync, readdirSync, writeFileSync, mkdirSync } from 'node:fs';
+import { existsSync, readFileSync, readdirSync, writeFileSync, mkdirSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 // Le schéma est en draft 2020-12 : c'est ce point d'entrée-là qu'il faut,
@@ -42,7 +42,38 @@ for (const file of unitFiles) {
   perGroup.push({ file, group, items: groupItems });
 }
 
-const pack = { meta: base.meta, topics: base.topics, items };
+// Les fiches de cours vivent à part des exercices : ce ne sont ni le même
+// travail de rédaction, ni le même rythme d'avancement, et une unité peut très
+// bien avoir ses exercices sans avoir encore sa fiche. Elles sont raccrochées
+// ici à leur notion, une fois pour toutes, pour que l'application n'ait jamais
+// deux fichiers à recoller à l'exécution.
+const lessonDir = join(SRC, 'lessons');
+const lessons = new Map();
+const lessonSources = new Map();
+const duplicateLessons = [];
+
+if (existsSync(lessonDir)) {
+  const lessonFiles = readdirSync(lessonDir)
+    .filter((f) => f.endsWith('.json'))
+    .sort();
+
+  for (const file of lessonFiles) {
+    const { lessons: fileLessons = {} } = readJson(join(lessonDir, file));
+    for (const [topicId, lesson] of Object.entries(fileLessons)) {
+      if (lessons.has(topicId)) {
+        duplicateLessons.push(`fiche en double pour ${topicId} (${lessonSources.get(topicId)} et ${file})`);
+      }
+      lessons.set(topicId, lesson);
+      lessonSources.set(topicId, file);
+    }
+  }
+}
+
+const topics = base.topics.map((t) =>
+  lessons.has(t.id) ? { ...t, lesson: lessons.get(t.id) } : t,
+);
+
+const pack = { meta: base.meta, topics, items };
 
 // --- validation structurelle (JSON Schema) ---
 
@@ -68,6 +99,33 @@ for (const t of pack.topics) {
   seenTopicIds.add(t.id);
   for (const p of t.prerequisites) {
     if (!topicIds.has(p)) problems.push(`notion ${t.id} : prérequis inconnu (${p})`);
+  }
+}
+
+problems.push(...duplicateLessons);
+
+// Une fiche écrite pour une notion qui n'existe pas ne s'affichera jamais, et
+// rien ne le signalerait : elle disparaîtrait sans bruit à la fusion.
+for (const topicId of lessons.keys()) {
+  if (!topicIds.has(topicId)) {
+    problems.push(`fiche ${topicId} (${lessonSources.get(topicId)}) : notion inconnue`);
+  }
+}
+
+for (const t of pack.topics) {
+  if (!t.lesson) continue;
+  const where = `fiche ${t.id}`;
+
+  for (const ref of t.lesson.seeAlso ?? []) {
+    if (ref === t.id) problems.push(`${where} : se renvoie à elle-même`);
+    else if (!topicIds.has(ref)) problems.push(`${where} : renvoi vers une notion inconnue (${ref})`);
+  }
+
+  // Les deux registres sont la raison d'être de ces fiches : une règle vue
+  // seulement au bureau ne se reconnaît pas au pub, et réciproquement.
+  const registers = new Set(t.lesson.examples.map((e) => e.register));
+  for (const wanted of ['bristol', 'work']) {
+    if (!registers.has(wanted)) problems.push(`${where} : aucun exemple du registre « ${wanted} »`);
   }
 }
 
@@ -128,6 +186,33 @@ for (const it of pack.items) {
   }
 }
 
+// Une fiche qui contient mot pour mot la réponse attendue par un exercice de sa
+// propre unité transforme le rappel en recopie : il suffit d'ouvrir la fiche
+// pour avoir la phrase sous les yeux. Ailleurs dans le pack, c'est le même
+// recyclage que pour les exercices, et on le signale pareil.
+const answersByTopic = new Map();
+for (const it of pack.items) {
+  const set = answersByTopic.get(it.topicId) ?? new Set();
+  for (const ex of it.exercises) for (const a of ex.answerSpec.accepted) set.add(norm(a));
+  answersByTopic.set(it.topicId, set);
+}
+
+for (const t of pack.topics) {
+  if (!t.lesson) continue;
+  for (const example of t.lesson.examples) {
+    const key = norm(example.en);
+    if (key.length < 18) continue;
+    if (answersByTopic.get(t.id)?.has(key)) {
+      problems.push(`fiche ${t.id} : l'exemple « ${example.en} » est la réponse d'un exercice de la même unité`);
+    }
+    const seen = sentences.get(key);
+    if (seen && seen !== t.id) {
+      problems.push(`phrase recyclée entre ${seen} et la fiche ${t.id} : « ${example.en} »`);
+    }
+    sentences.set(key, t.id);
+  }
+}
+
 if (problems.length > 0) {
   console.error(`\n✗ ${problems.length} problème(s) de contenu :\n`);
   for (const p of problems.slice(0, 40)) console.error(`  ${p}`);
@@ -151,14 +236,18 @@ console.log(`\npack ${pack.meta.id}@${pack.meta.version}`);
 for (const g of perGroup) {
   const topicsOfGroup = pack.topics.filter((t) => t.group === g.group);
   const done = topicsOfGroup.filter((t) => withItems.has(t.id)).length;
+  const taught = topicsOfGroup.filter((t) => t.lesson).length;
   const flag = done === topicsOfGroup.length ? '✓' : done === 0 ? ' ' : '~';
   console.log(
     `  ${flag} ${g.group.padEnd(34)} ${String(done).padStart(3)}/${String(topicsOfGroup.length).padEnd(3)} unités` +
-      `  ${String(g.items.flatMap((i) => i.exercises).length).padStart(4)} exercices`,
+      `  ${String(g.items.flatMap((i) => i.exercises).length).padStart(4)} exercices` +
+      `  ${String(taught).padStart(3)} fiche${taught > 1 ? 's' : ' '}`,
   );
 }
+const taughtTotal = pack.topics.filter((t) => t.lesson).length;
 console.log(
   `\n  ${withItems.size}/${pack.topics.length} unités couvertes · ` +
+    `${taughtTotal}/${pack.topics.length} fiches de cours · ` +
     `${exercises.length} exercices · ` +
     Object.entries(byType)
       .sort((a, b) => b[1] - a[1])
