@@ -18,7 +18,7 @@ un domaine = un **pack de contenu**, ajouté sans toucher au code.
 | Carnet | Ce qu'on y travaille | D'où vient le contenu |
 | --- | --- | --- |
 | **Grammaire** | la mécanique de la langue, unité par unité | `public/packs/english-grammar.json` |
-| **Vocabulaire** | quatre registres : tech et IA, la scène, la ville, le pub | `public/packs/vocabulary.json` |
+| **Vocabulaire** | onze registres : le bureau anglais, la tech et l'IA, la scène, la ville, le pub | `public/packs/vocabulary.json` |
 | **Culture** | Bristol racontée en anglais, et les mots qu'on y attrape | `public/packs/bristol-culture.json` |
 | **Discovery** | le vocabulaire saisi à la main | IndexedDB, écrit par l'apprenante |
 
@@ -26,12 +26,13 @@ Chacun a sa propre file d'échéances, son propre quota de nouveautés et sa pro
 progression. Rien ne se mélange entre carnets : réviser la grammaire ne fait pas
 avancer le vocabulaire.
 
-Un seul carnet pour les quatre thèmes, et non un carnet par thème : chacun a
-son propre quota de dix nouveautés par jour, si bien que sept carnets
-autoriseraient soixante-dix nouvelles cartes quotidiennes — et le plafond de
-charge, la meilleure idée de l'application, s'effondrerait. Les thèmes sont donc
-des **notions** à l'intérieur d'un même carnet. Bénéfice secondaire : le
-diagnostic par notion donne gratuitement la justesse par thème.
+Un seul carnet pour les onze thèmes, et non un carnet par thème : chacun aurait
+son propre quota de dix nouveautés par jour, si bien que onze carnets
+autoriseraient cent dix nouvelles cartes quotidiennes — et le plafond de charge,
+la meilleure idée de l'application, s'effondrerait. Les thèmes sont donc des
+**notions** à l'intérieur d'un même carnet, et l'on dit « celui-ci d'abord » par
+l'écran *Par où commencer*, pas en ouvrant un carnet de plus. Bénéfice
+secondaire : le diagnostic par notion donne gratuitement la justesse par thème.
 
 Un carnet qui n'a rien à revoir se replie sur une ligne. À quatre, des cartes
 pleines transformeraient l'accueil en menu.
@@ -98,6 +99,50 @@ ménage **mot par mot**, au moment où on le modifie : effacer la phrase d'exemp
 retire le texte à trou et lui seul ; supprimer un mot retire ses cartes et les
 réponses qui s'y rapportaient. Aucun balayage global, jamais.
 
+## Welcome to the workplace — l'anglais du bureau
+
+Sept registres, cinquante-six expressions, cent soixante-huit exercices, écrits
+pour quelqu'un qui part encadrer une équipe en Angleterre. Les exemples sont
+tirés du même monde d'un bout à l'autre : un pilote d'IA, une migration, un
+comité de pilotage, un plateau qu'on réaménage.
+
+| Registre | Ce qu'on y apprend |
+| --- | --- |
+| Arriver dans la boîte | `line manager`, `a direct report`, `to be across something`, `to crack on`, `a quick word` |
+| En réunion | `to touch base`, `to park it`, `low-hanging fruit`, `a ballpark figure`, `to have the bandwidth` |
+| Ce qu'ils disent, ce qu'ils pensent | la litote britannique : `I hear what you say`, `quite good`, `a brave decision` |
+| Mails et messages | `to loop someone in`, `by close of play`, `bear with me`, `as per my last email` |
+| La mission et le client | `a statement of work`, `scope creep`, `to sign off`, `a day rate`, `to push back` |
+| L'IA au bureau | `a human in the loop`, `guardrails`, `to hallucinate`, `to productionise`, `shadow AI` |
+| Bureaux et hybride | `hot-desking`, `the estate`, `a rollout`, `adoption`, `to bed in`, `presenteeism` |
+
+**Le registre de la litote mérite son propre groupe.** C'est là qu'un cadre
+francophone se fait avoir, et jamais sur le vocabulaire technique : `I hear what
+you say` ferme la discussion, `quite good` est une déception, `just a few minor
+comments` veut dire que c'est à refaire, et `that's a very brave decision`
+signale qu'on court à la catastrophe. Ces items portent un `fields.passage` —
+le même champ que le carnet Culture — qui montre l'expression dans un
+mini-dialogue, après la réponse : la formule seule ne dit rien, c'est
+l'enchaînement qui la trahit.
+
+Les fautes anticipées visent les calques du français, parce que ce sont eux qui
+reviennent : `my responsible` pour `my line manager`, `an estimation` pour
+`a ballpark figure`, `to validate` pour `to sign off`, `appropriation` pour
+`adoption`, et `flex office` — une invention française que personne n'emploie
+au Royaume-Uni.
+
+**Pourquoi sept groupes dans le carnet Vocabulaire et non un huitième carnet.**
+Chaque carnet a son propre quota de dix nouveautés par jour : un carnet de plus,
+ce sont dix nouvelles cartes quotidiennes de plus à porter, et le plafond de
+charge — la meilleure idée de l'application — s'effrite d'autant. Le levier
+prévu pour dire « le bureau d'abord » existe déjà : l'écran *Par où commencer*,
+où l'on coche les sept groupes `Workplace`, qui s'ouvrent alors avant le pub et
+la scène. L'ordre des découvertes appartient à l'apprenante ; ce n'est pas une
+raison pour lui ouvrir dix cartes de plus par jour.
+
+*(Le module s'appelle « Welcome **to** the workplace ». `Welcome in` est un
+calque du français : en anglais on souhaite la bienvenue **to** un lieu.)*
+
 ## Culture — la ville comme matière
 
 Six unités : le pont suspendu et Brunel, la Fiesta des montgolfières, Banksy et
@@ -120,7 +165,7 @@ mot, explication de l'erreur quand elle est prévue dans le contenu.
 
 Ce qui distingue une réponse venue toute seule d'une réponse arrachée, c'est le
 délai jusqu'à la **première frappe**, pas le temps total. La différence n'est pas
-cosmétique : mesuré sur les 476 cartes de grammaire, le temps total rendait la
+cosmétique : mesuré sur les 476 cartes de grammaire d'alors, le temps total rendait la
 mention « facile » inatteignable pour **69 %** d'entre elles — 4 % pour les
 exercices de production contre 98 % pour les textes à trou. La note ne mesurait
 plus la mémoire mais la longueur de la réponse, et pénalisait exactement les
@@ -181,8 +226,8 @@ mécanisme.
 Ce qui appartient en revanche à l'apprenante, c'est **l'ordre dans lequel le
 neuf s'ouvre** — pas l'ordre des révisions. C'est l'objet de l'écran *Par où
 commencer*, accessible depuis chaque carnet qui a encore des notions fermées :
-on y coche des groupes, et `newCards()` les sert en premier. Avec 476 cartes en
-réserve dans la seule grammaire — près de cinquante jours de nouveautés — cet
+on y coche des groupes, et `newCards()` les sert en premier. Avec 1 015 cartes en
+réserve dans la seule grammaire — plus de cent jours de nouveautés — cet
 ordre change vraiment ce qu'on sait dans un mois.
 
 La distinction tient en une phrase : **l'ordre des révisions appartient au
@@ -222,30 +267,70 @@ Tout tient dans `src/ui/tokens.css` : c'est la seule source des couleurs et des
 rythmes, et aucune valeur brute ne figure ailleurs dans les feuilles de style ni
 dans les illustrations.
 
-La palette est relevée sur l'aquarelle de couverture et sur les photos du
-voyage — papier grainé et encre brune du dessin, bleu pétrole, jaune des
-montgolfières, brique de Stokes Croft, vert des parcs, pierre de Bath. Les noms
-disent le rôle et l'origine : `--harbour` porte les actions, `--brick` les
-erreurs, `--park` les réussites, `--balloon` les mises en garde.
+**Le registre est celui de l'affiche sérigraphiée, pas du carnet de voyage.**
+Bristol ne s'est pas fabriqué une image en peignant des aquarelles : elle l'a
+fabriquée en collant des affiches sur les palissades de Stokes Croft, en tirant
+des pochettes de sound system et en peignant des murs la nuit. Une aquarelle
+raconte la ville vue par un visiteur ; une affiche collée raconte la ville qui
+parle d'elle-même. Massive Attack, Roni Size, les murs de Stokes Croft : c'est
+de là que vient tout ce qui suit.
 
-Les illustrations (`src/ui/art.ts`) sont **vectorielles et originales**, écrites
-dans le registre de l'aquarelle : lavis qui bavent — un `feTurbulence` déplacé,
-seul moyen honnête d'obtenir un bord de pinceau sans texture bitmap — et trait
-d'encre par-dessus. Elles pèsent quelques kilo-octets, restent nettes à toutes
-les tailles et fonctionnent en mode avion. Une photo nette à côté d'une
-aquarelle, l'un des deux perd toujours.
+Quatre partis pris, et ils décident du reste :
 
-Le mouvement reprend les mêmes codes, et rien d'autre : le lavis qui se diffuse à
-l'apparition d'une carte, le câble du pont qui se trace, les montgolfières qui
-dérivent. Aucune durée n'est écrite en dur — toutes viennent des tokens, si bien
-que `prefers-reduced-motion` les met à zéro d'un seul endroit.
+| Parti pris | Ce que ça donne |
+| --- | --- |
+| **Deux encres, pas un dégradé** | Une sérigraphie tire une couleur après l'autre : aplats plats, bords nets, aucune teinte qui se fond dans une autre. |
+| **Le noir porte l'action** | Le bouton principal est un rectangle d'encre, pas un galet coloré. Le contraste fait le travail, la couleur reste un accident. |
+| **Le décalage se voit** | `--misprint` est la seconde encre mal calée. Elle déborde d'un millimètre sous les cartes, sous le titre, sous chaque silhouette. C'est un défaut d'impression, et c'est ce qui distingue une affiche tirée à la main d'un aplat d'écran. |
+| **Rien n'est arrondi** | Un angle à seize pixels est une convention d'interface. Le papier est coupé droit : deux pixels, pas seize. |
 
-Les polices (Bricolage Grotesque, Inter, Kalam) sont auto-hébergées en
-sous-ensemble latin uniquement. Les paquets `@fontsource` livrent aussi le
+La palette vient du béton du Bearpit et du papier journal, de l'encre de bombe,
+de la brique de Stokes Croft, du bleu dub, du jaune de pochoir. Les noms disent
+le rôle **et** l'origine : `--harbour` porte les liens et la progression,
+`--brick` les erreurs, `--park` les réussites, `--balloon` les mises en garde.
+`--misprint` n'habille aucun contrôle : un défaut d'impression ne signale rien,
+il décore — la règle vaut dans les deux sens, et c'est pourquoi le liseré de
+focus est bleu et non rouge.
+
+**Le tirage de nuit.** `prefers-color-scheme: dark` ne déclenche pas un « mode
+sombre » d'interface mais l'autre tirage de la même affiche : encres claires sur
+papier noir. Les rôles ne bougent pas, seules les valeurs s'inversent — et
+comme les aplats pleins deviennent clairs, le texte qu'ils portent devient
+sombre. C'est tout le travail de `--on-solid`, qui existe pour cette seule
+raison.
+
+Les illustrations (`src/ui/art.ts`) sont **vectorielles et originales**, et
+empruntent trois procédés à l'impression : le **décalage** (chaque silhouette
+est tirée deux fois, la passe de `--misprint` puis celle d'encre), le
+**crachotis** d'une bombe autour du pochoir (`feTurbulence` seuillé en alpha —
+seul moyen honnête d'obtenir cette poussière sans texture bitmap), et la
+**trame** de demi-ton du ciel. Elles pèsent quelques kilo-octets, restent nettes
+à toutes les tailles et fonctionnent en mode avion.
+
+Le mouvement reprend les mêmes codes, et rien d'autre : le passage de raclette
+qui découvre une carte d'un bord à l'autre, sans fondu, et la dérive des
+ballons. Aucune durée n'est écrite en dur — toutes viennent des tokens, si bien
+que `prefers-reduced-motion` les met à zéro d'un seul endroit. Un détail qui
+compte : le `clip-path` de la raclette arrive sur un débord **négatif**. L'état
+final d'une animation `both` reste appliqué pour de bon, et un `inset(0 0 0 0)`
+rognerait définitivement la seconde encre décalée sous la carte.
+
+Les polices (Anton, Inter, Permanent Marker) sont auto-hébergées en
+sous-ensemble latin uniquement, et chacune a un emploi qui n'est pas
+interchangeable : **Anton** pour les titres — la condensée grasse des affiches
+collées, employée en capitales et jamais en petit ; **Inter** pour lire, la
+seule surface de l'écran qui ne doit pas avoir d'avis ; **Permanent Marker**
+pour ce qui est écrit à la main — les mots du carnet personnel, la signature du
+dessin : un feutre, pas une plume. Les paquets `@fontsource` livrent aussi le
 cyrillique, le grec et le vietnamien : importer leur feuille complète ferait
 entrer une douzaine de `.woff2` dans le précache pour des alphabets qu'aucun
 carnet n'écrira. Les faces sont donc déclarées à la main dans
 `src/ui/fonts.css`.
+
+Les icônes de l'application sont produites par `scripts/make-icons.mjs`, qui
+tire le même pochoir en deux passes — la montgolfière en encre, décalée d'une
+passe rouge. La palette y est recopiée à la main : si `tokens.css` change, ces
+quatre constantes changent aussi.
 
 ## Démarrer
 
@@ -260,7 +345,7 @@ npm run dev
 | `npm run build` | packs, typecheck, tests, puis build statique dans `dist/` |
 | `npm test` | la suite de tests (vitest) |
 | `npm run test:watch` | les tests en continu pendant qu'on code |
-| `npm run pack` | reconstruit les deux packs de contenu |
+| `npm run pack` | reconstruit les trois packs de contenu |
 | `npm run typecheck` | typecheck seul |
 | `npm run preview` | sert le build de production (http://localhost:4173) |
 | `npm run icons` | régénère les icônes depuis `scripts/make-icons.mjs` |
@@ -273,7 +358,7 @@ jamais par `npm run dev`.
 
 ```
 src/
-  carnets.ts            racine de composition : ouvre les trois carnets
+  carnets.ts            racine de composition : ouvre les quatre carnets
   engine/
     scheduler.ts        enveloppe ts-fsrs + porte de graduation
     grading.ts          correction normalisée (tolérante sur la forme, stricte sur le sens)
@@ -357,7 +442,7 @@ Rien d'autre ne bouge : ni le moteur, ni la session, ni l'interface.
 
 ## Ce que les tests garantissent
 
-`npm test` — 46 cas, moins d'une seconde. Ils ne cherchent pas la couverture :
+`npm test` — 49 cas, moins d'une seconde. Ils ne cherchent pas la couverture :
 ils tiennent les quatre endroits où une erreur détruit des données sans rien
 signaler.
 
@@ -389,7 +474,7 @@ Deux stratégies de cache, volontairement distinctes :
 
 - **coquille de l'application** (HTML, JS, CSS, polices, icônes) : précachée,
   servie cache-first. C'est ce qui permet d'ouvrir l'application en mode avion.
-  316 Ko, dont 112 Ko de polices.
+  312 Ko, dont 96 Ko de polices.
 - **packs de contenu** (`/packs/*.json`) : stale-while-revalidate, dans un cache
   séparé (`carnet-packs`). Corriger une phrase d'exercice n'invalide donc pas
   tout le cache de l'application, et inversement.
@@ -455,19 +540,20 @@ le signale et la progression reste intacte.
 | --- | --- |
 | 1. Squelette — Dexie, FSRS, boucle de révision persistante | fait |
 | 2. PWA réelle — manifest, service worker, meta iOS | fait, reste à valider sur iPhone et Android réels |
-| 3. Contenu grammaire — 5 types d'exercice | en cours (68/145 unités, 544 exercices) |
+| 3. Contenu grammaire — 5 types d'exercice | fait (145/145 unités, 1 160 exercices) |
 | 4. Modes de réponse — écran, cahier, écoute | fait |
 | 5. Rétention — export/import de sauvegarde | fait |
-| 6. Direction artistique — palette, typographie, illustrations, mouvement | fait |
+| 6. Direction artistique — sérigraphie, pochoir, tirage de nuit | fait |
 | 7. Discovery — vocabulaire saisi à la main | fait |
 | 8. Culture — Bristol | amorcé (6 unités, 18 expressions) |
 | 9. Diagnostic — notions fragiles, cartes-sangsues, contestations | fait |
 | 10. Tests sur les chemins de données | fait |
-| 11. Vocabulaire thématique — 4 registres, 32 expressions | fait |
+| 11. Vocabulaire thématique — 11 registres, 88 expressions | fait |
 | 12. Ordre de découverte choisi par groupe | fait |
-| 13. Série hebdomadaire | à faire |
+| 13. Module Workplace — 7 registres, 56 expressions | fait |
+| 14. Série hebdomadaire | à faire |
 
-Deux points restent ouverts côté image : l'aquarelle de couverture, signée
-Zayane, n'est pas embarquée — les illustrations sont des dessins vectoriels
-originaux écrits dans son registre. L'intégrer supposerait son accord et un scan
-à plat. Les photos du voyage ont nourri la palette sans être affichées.
+Aucune image n'est embarquée et il n'est plus prévu d'en embarquer : toutes les
+illustrations sont des dessins vectoriels originaux, écrits dans le registre de
+la sérigraphie. Une photo posée à côté d'un pochoir, l'un des deux perd
+toujours.
