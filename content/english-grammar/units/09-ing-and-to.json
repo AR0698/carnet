@@ -4,7 +4,9 @@
     {
       "id": "u053-a",
       "topicId": "u053",
-      "tags": ["verbe-plus-ing"],
+      "tags": [
+        "verbe-plus-ing"
+      ],
       "fields": {
         "regle": "enjoy, avoid, finish, mind, suggest, keep, give up… se construisent avec -ing."
       },
@@ -12,61 +14,233 @@
         {
           "type": "produce",
           "prompt": "Traduis : « J'adore cuisiner le week-end. »",
-          "answerSpec": { "accepted": ["I enjoy cooking at the weekend", "I love cooking at the weekend"] },
-          "hints": ["Après enjoy, le verbe prend -ing."]
+          "answerSpec": {
+            "accepted": [
+              "I enjoy cooking at the weekend",
+              "I love cooking at the weekend"
+            ]
+          },
+          "hints": [
+            "Après enjoy, le verbe prend -ing."
+          ]
         },
         {
           "type": "produce",
           "prompt": "Traduis : « Elle a arrêté de fumer l'an dernier. »",
-          "answerSpec": { "accepted": ["She gave up smoking last year", "She stopped smoking last year"] },
-          "hints": ["give up et stop sont suivis de -ing."]
+          "answerSpec": {
+            "accepted": [
+              "She gave up smoking last year",
+              "She stopped smoking last year"
+            ]
+          },
+          "hints": [
+            "give up et stop sont suivis de -ing."
+          ]
         },
         {
           "type": "produce",
           "prompt": "Traduis : « Il évite de prendre l'autoroute. »",
-          "answerSpec": { "accepted": ["He avoids taking the motorway"] },
-          "hints": ["avoid se construit toujours avec -ing."]
+          "answerSpec": {
+            "accepted": [
+              "He avoids taking the motorway"
+            ]
+          },
+          "hints": [
+            "avoid se construit toujours avec -ing."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "Would you mind ___ the door? (shut)",
-          "answerSpec": { "accepted": ["shutting", "closing"] },
-          "hints": ["Après mind, le verbe prend -ing."]
+          "answerSpec": {
+            "accepted": [
+              "shutting",
+              "closing"
+            ]
+          },
+          "hints": [
+            "Après mind, le verbe prend -ing."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "They kept ___ about the same problem. (talk)",
-          "answerSpec": { "accepted": ["talking"] },
-          "hints": ["keep + -ing : l'action se répète sans fin."]
+          "answerSpec": {
+            "accepted": [
+              "talking"
+            ]
+          },
+          "hints": [
+            "keep + -ing : l'action se répète sans fin."
+          ]
         },
         {
           "type": "transform",
           "source": "Let's meet on Thursday.",
           "prompt": "Réécris la proposition avec « suggest », en commençant par « I suggest ».",
-          "answerSpec": { "accepted": ["I suggest meeting on Thursday"] },
-          "hints": ["suggest est suivi de -ing, jamais de to."]
+          "answerSpec": {
+            "accepted": [
+              "I suggest meeting on Thursday"
+            ]
+          },
+          "hints": [
+            "suggest est suivi de -ing, jamais de to."
+          ]
         },
         {
           "type": "spot_error",
           "source": "I've finished to read the article.",
           "prompt": "Corrige la phrase.",
-          "answerSpec": { "accepted": ["I've finished reading the article", "I have finished reading the article"] },
-          "hints": ["finish demande -ing."]
+          "answerSpec": {
+            "accepted": [
+              "I've finished reading the article",
+              "I have finished reading the article"
+            ]
+          },
+          "hints": [
+            "finish demande -ing."
+          ]
         },
         {
           "type": "mcq",
           "prompt": "She denied ___ the message.",
-          "answerSpec": { "accepted": ["sending"] },
-          "distractors": ["to send", "send", "to sending"],
-          "hints": ["deny fait partie des verbes suivis de -ing."]
+          "answerSpec": {
+            "accepted": [
+              "sending"
+            ]
+          },
+          "distractors": [
+            "to send",
+            "send",
+            "to sending"
+          ],
+          "hints": [
+            "deny fait partie des verbes suivis de -ing."
+          ]
         }
       ]
     },
-
+    {
+      "id": "u053-b",
+      "topicId": "u053",
+      "tags": [
+        "verbe-ing"
+      ],
+      "fields": {
+        "regle": "Après enjoy, stop, finish, avoid, mind, suggest, keep, deny, admit, consider : le verbe suivant prend -ing."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : J'évite de répondre aux mails le week-end.",
+          "answerSpec": {
+            "accepted": [
+              "I avoid answering emails at the weekend"
+            ]
+          },
+          "hints": [
+            "avoid + -ing."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Il a arrêté de reporter la passation.",
+          "answerSpec": {
+            "accepted": [
+              "He stopped putting the handover off"
+            ]
+          },
+          "hints": [
+            "stop + -ing."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Elle a nié avoir vu le contrat.",
+          "answerSpec": {
+            "accepted": [
+              "She denied seeing the contract"
+            ]
+          },
+          "hints": [
+            "deny + -ing."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Would you mind ___ the door? (close)",
+          "answerSpec": {
+            "accepted": [
+              "closing"
+            ]
+          },
+          "hints": [
+            "mind + -ing."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "They keep ___ the same question. (ask)",
+          "answerSpec": {
+            "accepted": [
+              "asking"
+            ]
+          },
+          "hints": [
+            "keep + -ing."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "He suggested that we should park the question.",
+          "answerSpec": {
+            "accepted": [
+              "He suggested parking the question"
+            ]
+          },
+          "source": "He suggested that we should park the question.",
+          "hints": [
+            "suggest + -ing."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "I enjoy to present to a British audience.",
+          "answerSpec": {
+            "accepted": [
+              "I enjoy presenting to a British audience"
+            ]
+          },
+          "source": "I enjoy to present to a British audience.",
+          "hints": [
+            "enjoy + -ing."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "We have finished ___ the whole estate.",
+          "answerSpec": {
+            "accepted": [
+              "reviewing"
+            ]
+          },
+          "hints": [
+            "finish + -ing."
+          ],
+          "distractors": [
+            "to review",
+            "review",
+            "reviewed"
+          ]
+        }
+      ]
+    },
     {
       "id": "u054-a",
       "topicId": "u054",
-      "tags": ["verbe-plus-to"],
+      "tags": [
+        "verbe-plus-to"
+      ],
       "fields": {
         "regle": "decide, hope, promise, refuse, manage, offer, agree, learn… se construisent avec to + base verbale."
       },
@@ -74,61 +248,231 @@
         {
           "type": "produce",
           "prompt": "Traduis : « Nous avons décidé de rester une nuit de plus. »",
-          "answerSpec": { "accepted": ["We decided to stay one more night", "We decided to stay another night"] },
-          "hints": ["decide se construit avec to + base verbale."]
+          "answerSpec": {
+            "accepted": [
+              "We decided to stay one more night",
+              "We decided to stay another night"
+            ]
+          },
+          "hints": [
+            "decide se construit avec to + base verbale."
+          ]
         },
         {
           "type": "produce",
           "prompt": "Traduis : « Il a refusé de signer le document. »",
-          "answerSpec": { "accepted": ["He refused to sign the document"] },
-          "hints": ["refuse to + base verbale."]
+          "answerSpec": {
+            "accepted": [
+              "He refused to sign the document"
+            ]
+          },
+          "hints": [
+            "refuse to + base verbale."
+          ]
         },
         {
           "type": "produce",
           "prompt": "Traduis : « J'ai oublié de fermer le robinet. »",
-          "answerSpec": { "accepted": ["I forgot to turn off the tap"] },
-          "hints": ["forget to : l'action n'a pas été faite."]
+          "answerSpec": {
+            "accepted": [
+              "I forgot to turn off the tap"
+            ]
+          },
+          "hints": [
+            "forget to : l'action n'a pas été faite."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "She promised ___ me the recipe. (send)",
-          "answerSpec": { "accepted": ["to send"] },
-          "hints": ["promise to + base verbale."]
+          "answerSpec": {
+            "accepted": [
+              "to send"
+            ]
+          },
+          "hints": [
+            "promise to + base verbale."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "We managed ___ the last bus. (catch)",
-          "answerSpec": { "accepted": ["to catch"] },
-          "hints": ["manage to : on a réussi malgré la difficulté."]
+          "answerSpec": {
+            "accepted": [
+              "to catch"
+            ]
+          },
+          "hints": [
+            "manage to : on a réussi malgré la difficulté."
+          ]
         },
         {
           "type": "transform",
           "source": "Emil said he would help with the move.",
           "prompt": "Réécris la phrase avec « offered », en commençant par « Emil ».",
-          "answerSpec": { "accepted": ["Emil offered to help with the move"] },
-          "hints": ["offer to + base verbale."]
+          "answerSpec": {
+            "accepted": [
+              "Emil offered to help with the move"
+            ]
+          },
+          "hints": [
+            "offer to + base verbale."
+          ]
         },
         {
           "type": "spot_error",
           "source": "They hope finding a bigger place.",
           "prompt": "Corrige la phrase.",
-          "answerSpec": { "accepted": ["They hope to find a bigger place"] },
-          "hints": ["hope se construit avec to, pas avec -ing."]
+          "answerSpec": {
+            "accepted": [
+              "They hope to find a bigger place"
+            ]
+          },
+          "hints": [
+            "hope se construit avec to, pas avec -ing."
+          ]
         },
         {
           "type": "mcq",
           "prompt": "He agreed ___ the car back on Sunday.",
-          "answerSpec": { "accepted": ["to bring"] },
-          "distractors": ["bringing", "bring", "to bringing"],
-          "hints": ["agree to + base verbale."]
+          "answerSpec": {
+            "accepted": [
+              "to bring"
+            ]
+          },
+          "distractors": [
+            "bringing",
+            "bring",
+            "to bringing"
+          ],
+          "hints": [
+            "agree to + base verbale."
+          ]
         }
       ]
     },
-
+    {
+      "id": "u054-b",
+      "topicId": "u054",
+      "tags": [
+        "verbe-to"
+      ],
+      "fields": {
+        "regle": "Après decide, offer, refuse, promise, agree, manage, hope, learn, fail, pretend : infinitif complet avec to."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Ils ont refusé de signer avant l'audit.",
+          "answerSpec": {
+            "accepted": [
+              "They refused to sign before the audit"
+            ]
+          },
+          "hints": [
+            "refuse + to."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Elle a réussi à joindre le fournisseur.",
+          "answerSpec": {
+            "accepted": [
+              "She managed to reach the supplier"
+            ]
+          },
+          "hints": [
+            "manage + to."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Il a promis de me répondre avant vendredi.",
+          "answerSpec": {
+            "accepted": [
+              "He promised to answer me before Friday"
+            ]
+          },
+          "hints": [
+            "promise + to."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "We have decided ___ a pilot first. (run)",
+          "answerSpec": {
+            "accepted": [
+              "to run"
+            ]
+          },
+          "hints": [
+            "decide + to."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "He pretended ___ the email. (not see)",
+          "answerSpec": {
+            "accepted": [
+              "not to see"
+            ]
+          },
+          "hints": [
+            "Négation avant to."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "He said he would call back, and he meant it.",
+          "answerSpec": {
+            "accepted": [
+              "He promised to call back"
+            ]
+          },
+          "source": "He said he would call back, and he meant it.",
+          "hints": [
+            "promise + to."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "They agreed reviewing the scope next week.",
+          "answerSpec": {
+            "accepted": [
+              "They agreed to review the scope next week"
+            ]
+          },
+          "source": "They agreed reviewing the scope next week.",
+          "hints": [
+            "agree + to."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Nobody offered ___ the minutes.",
+          "answerSpec": {
+            "accepted": [
+              "to take"
+            ]
+          },
+          "hints": [
+            "offer + to."
+          ],
+          "distractors": [
+            "taking",
+            "take",
+            "for taking"
+          ]
+        }
+      ]
+    },
     {
       "id": "u055-a",
       "topicId": "u055",
-      "tags": ["verbe-objet-to", "want-somebody-to"],
+      "tags": [
+        "verbe-objet-to",
+        "want-somebody-to"
+      ],
       "fields": {
         "regle": "want / expect / ask / tell / advise + complément + to + base. Jamais « want that »."
       },
@@ -136,61 +480,234 @@
         {
           "type": "produce",
           "prompt": "Traduis : « Je veux que tu m'écoutes. »",
-          "answerSpec": { "accepted": ["I want you to listen to me"] },
-          "hints": ["want somebody to + base : jamais that."]
+          "answerSpec": {
+            "accepted": [
+              "I want you to listen to me"
+            ]
+          },
+          "hints": [
+            "want somebody to + base : jamais that."
+          ]
         },
         {
           "type": "produce",
           "prompt": "Traduis : « Ils m'ont conseillé d'attendre. »",
-          "answerSpec": { "accepted": ["They advised me to wait"] },
-          "hints": ["advise somebody to + base verbale."]
+          "answerSpec": {
+            "accepted": [
+              "They advised me to wait"
+            ]
+          },
+          "hints": [
+            "advise somebody to + base verbale."
+          ]
         },
         {
           "type": "produce",
           "prompt": "Traduis : « Elle ne s'attendait pas à ce que je vienne. »",
-          "answerSpec": { "accepted": ["She didn't expect me to come", "She did not expect me to come"] },
-          "hints": ["expect somebody to + base verbale."]
+          "answerSpec": {
+            "accepted": [
+              "She didn't expect me to come",
+              "She did not expect me to come"
+            ]
+          },
+          "hints": [
+            "expect somebody to + base verbale."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "The teacher told us ___ in pairs. (work)",
-          "answerSpec": { "accepted": ["to work"] },
-          "hints": ["tell somebody to + base."]
+          "answerSpec": {
+            "accepted": [
+              "to work"
+            ]
+          },
+          "hints": [
+            "tell somebody to + base."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "I'd like you ___ this letter. (read)",
-          "answerSpec": { "accepted": ["to read"] },
-          "hints": ["would like somebody to + base."]
+          "answerSpec": {
+            "accepted": [
+              "to read"
+            ]
+          },
+          "hints": [
+            "would like somebody to + base."
+          ]
         },
         {
           "type": "transform",
           "source": "Please don't slam the door.",
           "prompt": "Réécris la demande en commençant par « I'd rather you ».",
-          "answerSpec": { "accepted": ["I'd rather you didn't slam the door", "I would rather you didn't slam the door"] },
-          "hints": ["would rather + sujet + prétérit, contrairement à want."]
+          "answerSpec": {
+            "accepted": [
+              "I'd rather you didn't slam the door",
+              "I would rather you didn't slam the door"
+            ]
+          },
+          "hints": [
+            "would rather + sujet + prétérit, contrairement à want."
+          ]
         },
         {
           "type": "spot_error",
           "source": "I want that you call me back.",
           "prompt": "Corrige la phrase.",
-          "answerSpec": { "accepted": ["I want you to call me back"] },
-          "hints": ["want ne se construit jamais avec that."]
+          "answerSpec": {
+            "accepted": [
+              "I want you to call me back"
+            ]
+          },
+          "hints": [
+            "want ne se construit jamais avec that."
+          ]
         },
         {
           "type": "mcq",
           "prompt": "She asked ___ the window.",
-          "answerSpec": { "accepted": ["me to open"] },
-          "distractors": ["that I open", "me opening", "to me open"],
-          "hints": ["ask somebody to + base verbale."]
+          "answerSpec": {
+            "accepted": [
+              "me to open"
+            ]
+          },
+          "distractors": [
+            "that I open",
+            "me opening",
+            "to me open"
+          ],
+          "hints": [
+            "ask somebody to + base verbale."
+          ]
         }
       ]
     },
-
+    {
+      "id": "u055-b",
+      "topicId": "u055",
+      "tags": [
+        "verbe-objet-to"
+      ],
+      "fields": {
+        "regle": "want, ask, tell, advise, expect, allow, persuade, remind prennent un complément puis to : « I want you to read this. »"
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Je veux que tu relises ça avant l'envoi.",
+          "answerSpec": {
+            "accepted": [
+              "I want you to read this through before it goes"
+            ]
+          },
+          "hints": [
+            "want + objet + to."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Elle m'a conseillé d'attendre l'audit.",
+          "answerSpec": {
+            "accepted": [
+              "She advised me to wait for the audit"
+            ]
+          },
+          "hints": [
+            "advise + objet + to."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Ils ne nous ont pas permis d'enregistrer.",
+          "answerSpec": {
+            "accepted": [
+              "They did not allow us to record"
+            ]
+          },
+          "hints": [
+            "allow + objet + to."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Remind me ___ the room for Thursday. (book)",
+          "answerSpec": {
+            "accepted": [
+              "to book"
+            ]
+          },
+          "hints": [
+            "remind + objet + to."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Nobody expected the finance team ___ . (agree)",
+          "answerSpec": {
+            "accepted": [
+              "to agree"
+            ]
+          },
+          "hints": [
+            "expect + objet + to."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "He said to me: do not touch the settings.",
+          "answerSpec": {
+            "accepted": [
+              "He told me not to touch the settings"
+            ]
+          },
+          "source": "He said to me: do not touch the settings.",
+          "hints": [
+            "tell + objet + not to."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "I want that you read the contract first.",
+          "answerSpec": {
+            "accepted": [
+              "I want you to read the contract first"
+            ]
+          },
+          "source": "I want that you read the contract first.",
+          "hints": [
+            "want ne se construit pas avec that."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "She persuaded the board ___ the pilot.",
+          "answerSpec": {
+            "accepted": [
+              "to fund"
+            ]
+          },
+          "hints": [
+            "persuade + objet + to."
+          ],
+          "distractors": [
+            "funding",
+            "that fund",
+            "for funding"
+          ]
+        }
+      ]
+    },
     {
       "id": "u056-a",
       "topicId": "u056",
-      "tags": ["remember", "regret", "stop", "double-construction"],
+      "tags": [
+        "remember",
+        "regret",
+        "stop",
+        "double-construction"
+      ],
       "fields": {
         "regle": "remember/forget/regret + -ing regardent en arrière ; + to regardent en avant. stop + -ing : cesser ; stop to : s'arrêter pour."
       },
@@ -198,61 +715,234 @@
         {
           "type": "produce",
           "prompt": "Traduis : « Je me souviens d'avoir fermé la porte. »",
-          "answerSpec": { "accepted": ["I remember locking the door", "I remember closing the door"] },
-          "hints": ["Souvenir d'une action déjà faite : remember + -ing."]
+          "answerSpec": {
+            "accepted": [
+              "I remember locking the door",
+              "I remember closing the door"
+            ]
+          },
+          "hints": [
+            "Souvenir d'une action déjà faite : remember + -ing."
+          ]
         },
         {
           "type": "produce",
           "prompt": "Traduis : « N'oublie pas d'éteindre la lumière. »",
-          "answerSpec": { "accepted": ["Don't forget to turn off the light", "Do not forget to turn off the light"] },
-          "hints": ["Action encore à faire : forget to + base."]
+          "answerSpec": {
+            "accepted": [
+              "Don't forget to turn off the light",
+              "Do not forget to turn off the light"
+            ]
+          },
+          "hints": [
+            "Action encore à faire : forget to + base."
+          ]
         },
         {
           "type": "produce",
           "prompt": "Traduis : « Il s'est arrêté pour acheter du pain. »",
-          "answerSpec": { "accepted": ["He stopped to buy some bread"] },
-          "hints": ["stop to : on s'interrompt dans un but."]
+          "answerSpec": {
+            "accepted": [
+              "He stopped to buy some bread"
+            ]
+          },
+          "hints": [
+            "stop to : on s'interrompt dans un but."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "I regret ___ you this, but the trip is off. (tell)",
-          "answerSpec": { "accepted": ["to tell"] },
-          "hints": ["I regret to tell you : annonce désagréable, au moment de parler."]
+          "answerSpec": {
+            "accepted": [
+              "to tell"
+            ]
+          },
+          "hints": [
+            "I regret to tell you : annonce désagréable, au moment de parler."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "She stopped ___ the radio because it was too loud. (play)",
-          "answerSpec": { "accepted": ["playing"] },
-          "hints": ["stop + -ing : l'activité cesse."]
+          "answerSpec": {
+            "accepted": [
+              "playing"
+            ]
+          },
+          "hints": [
+            "stop + -ing : l'activité cesse."
+          ]
         },
         {
           "type": "transform",
           "source": "Vincent posted the letter, and he remembers doing it.",
           "prompt": "Réécris la phrase en commençant par « Vincent remembers ».",
-          "answerSpec": { "accepted": ["Vincent remembers posting the letter"] },
-          "hints": ["Le souvenir porte sur une action passée : -ing."]
+          "answerSpec": {
+            "accepted": [
+              "Vincent remembers posting the letter"
+            ]
+          },
+          "hints": [
+            "Le souvenir porte sur une action passée : -ing."
+          ]
         },
         {
           "type": "spot_error",
           "source": "Remember locking the door before you leave tonight.",
           "prompt": "Corrige la phrase : il s'agit d'une consigne pour plus tard.",
-          "answerSpec": { "accepted": ["Remember to lock the door before you leave tonight"] },
-          "hints": ["Une action encore à faire demande to."]
+          "answerSpec": {
+            "accepted": [
+              "Remember to lock the door before you leave tonight"
+            ]
+          },
+          "hints": [
+            "Une action encore à faire demande to."
+          ]
         },
         {
           "type": "mcq",
           "prompt": "I'll never forget ___ the Northern Lights.",
-          "answerSpec": { "accepted": ["seeing"] },
-          "distractors": ["to see", "see", "to seeing"],
-          "hints": ["Souvenir marquant d'une expérience vécue."]
+          "answerSpec": {
+            "accepted": [
+              "seeing"
+            ]
+          },
+          "distractors": [
+            "to see",
+            "see",
+            "to seeing"
+          ],
+          "hints": [
+            "Souvenir marquant d'une expérience vécue."
+          ]
         }
       ]
     },
-
+    {
+      "id": "u056-b",
+      "topicId": "u056",
+      "tags": [
+        "ing-ou-to",
+        "sens"
+      ],
+      "fields": {
+        "regle": "remember, forget, regret, stop, try changent de sens : -ing regarde en arrière, to regarde en avant."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Je me souviens d'avoir signé ce document.",
+          "answerSpec": {
+            "accepted": [
+              "I remember signing that document"
+            ]
+          },
+          "hints": [
+            "Souvenir : -ing."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : N'oublie pas d'envoyer les chiffres.",
+          "answerSpec": {
+            "accepted": [
+              "Do not forget to send the figures"
+            ]
+          },
+          "hints": [
+            "Une chose à faire : to."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Il s'est arrêté pour relire la clause.",
+          "answerSpec": {
+            "accepted": [
+              "He stopped to read the clause again"
+            ]
+          },
+          "hints": [
+            "But : to."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "I regret ___ you that the budget was refused. (tell)",
+          "answerSpec": {
+            "accepted": [
+              "to tell"
+            ]
+          },
+          "hints": [
+            "regret to tell : mauvaise nouvelle."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "She regrets ___ the offer last year. (refuse)",
+          "answerSpec": {
+            "accepted": [
+              "refusing"
+            ]
+          },
+          "hints": [
+            "Regret d'un acte passé."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "He was talking, then he went quiet.",
+          "answerSpec": {
+            "accepted": [
+              "He stopped talking"
+            ]
+          },
+          "source": "He was talking, then he went quiet.",
+          "hints": [
+            "stop + -ing : cesser."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "Remember locking the door when you leave tonight.",
+          "answerSpec": {
+            "accepted": [
+              "Remember to lock the door when you leave tonight"
+            ]
+          },
+          "source": "Remember locking the door when you leave tonight.",
+          "hints": [
+            "Consigne pour plus tard : to."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "I remember ___ the connector — it never worked.",
+          "answerSpec": {
+            "accepted": [
+              "testing"
+            ]
+          },
+          "hints": [
+            "Souvenir d'un fait passé."
+          ],
+          "distractors": [
+            "to test",
+            "test",
+            "having test"
+          ]
+        }
+      ]
+    },
     {
       "id": "u057-a",
       "topicId": "u057",
-      "tags": ["try", "need", "help"],
+      "tags": [
+        "try",
+        "need",
+        "help"
+      ],
       "fields": {
         "regle": "try to = s'efforcer ; try + -ing = essayer pour voir. need + -ing a un sens passif. help (to) do : les deux se disent."
       },
@@ -260,61 +950,238 @@
         {
           "type": "produce",
           "prompt": "Traduis : « J'ai essayé d'ouvrir la fenêtre, mais elle est bloquée. »",
-          "answerSpec": { "accepted": ["I tried to open the window, but it's stuck", "I tried to open the window but it is stuck"] },
-          "hints": ["Effort difficile : try to + base verbale."]
+          "answerSpec": {
+            "accepted": [
+              "I tried to open the window, but it's stuck",
+              "I tried to open the window but it is stuck"
+            ]
+          },
+          "hints": [
+            "Effort difficile : try to + base verbale."
+          ]
         },
         {
           "type": "produce",
           "prompt": "Traduis : « Essaie d'ajouter un peu de sel, pour voir. »",
-          "answerSpec": { "accepted": ["Try adding a little salt"] },
-          "hints": ["Expérience à tenter : try + -ing."]
+          "answerSpec": {
+            "accepted": [
+              "Try adding a little salt"
+            ]
+          },
+          "hints": [
+            "Expérience à tenter : try + -ing."
+          ]
         },
         {
           "type": "produce",
           "prompt": "Traduis : « Ce vélo a besoin d'être réparé. »",
-          "answerSpec": { "accepted": ["This bike needs repairing", "This bike needs to be repaired"] },
-          "hints": ["need + -ing équivaut à need to be + participe."]
+          "answerSpec": {
+            "accepted": [
+              "This bike needs repairing",
+              "This bike needs to be repaired"
+            ]
+          },
+          "hints": [
+            "need + -ing équivaut à need to be + participe."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "The windows need ___ before the guests arrive. (clean)",
-          "answerSpec": { "accepted": ["cleaning", "to be cleaned"] },
-          "hints": ["Le sujet subit l'action : sens passif."]
+          "answerSpec": {
+            "accepted": [
+              "cleaning",
+              "to be cleaned"
+            ]
+          },
+          "hints": [
+            "Le sujet subit l'action : sens passif."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "Could you help me ___ this table? (move)",
-          "answerSpec": { "accepted": ["move", "to move"] },
-          "hints": ["Après help, to est facultatif."]
+          "answerSpec": {
+            "accepted": [
+              "move",
+              "to move"
+            ]
+          },
+          "hints": [
+            "Après help, to est facultatif."
+          ]
         },
         {
           "type": "transform",
           "source": "The tap still drips. Perhaps a new washer would work.",
           "prompt": "Propose la solution avec « try », en commençant par « Try ».",
-          "answerSpec": { "accepted": ["Try fitting a new washer", "Try putting in a new washer"] },
-          "hints": ["Une solution à tester : try + -ing."]
+          "answerSpec": {
+            "accepted": [
+              "Try fitting a new washer",
+              "Try putting in a new washer"
+            ]
+          },
+          "hints": [
+            "Une solution à tester : try + -ing."
+          ]
         },
         {
           "type": "spot_error",
           "source": "My jacket needs to clean.",
           "prompt": "Corrige la phrase.",
-          "answerSpec": { "accepted": ["My jacket needs cleaning", "My jacket needs to be cleaned"] },
-          "hints": ["Le sujet subit l'action : -ing ou to be + participe."]
+          "answerSpec": {
+            "accepted": [
+              "My jacket needs cleaning",
+              "My jacket needs to be cleaned"
+            ]
+          },
+          "hints": [
+            "Le sujet subit l'action : -ing ou to be + participe."
+          ]
         },
         {
           "type": "mcq",
           "prompt": "I tried ___ her all evening, but her phone was off.",
-          "answerSpec": { "accepted": ["to call"] },
-          "distractors": ["calling", "call", "to calling"],
-          "hints": ["On s'est efforcé, sans y parvenir."]
+          "answerSpec": {
+            "accepted": [
+              "to call"
+            ]
+          },
+          "distractors": [
+            "calling",
+            "call",
+            "to calling"
+          ],
+          "hints": [
+            "On s'est efforcé, sans y parvenir."
+          ]
         }
       ]
     },
-
+    {
+      "id": "u057-b",
+      "topicId": "u057",
+      "tags": [
+        "try-need-help"
+      ],
+      "fields": {
+        "regle": "try to = s'efforcer, try -ing = essayer pour voir. need to = avoir besoin de faire, need -ing = avoir besoin d'être fait."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Essaie de redémarrer le connecteur.",
+          "answerSpec": {
+            "accepted": [
+              "Try restarting the connector"
+            ]
+          },
+          "hints": [
+            "Essayer pour voir."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : J'essaie de comprendre ce calcul depuis une heure.",
+          "answerSpec": {
+            "accepted": [
+              "I have been trying to understand that calculation for an hour"
+            ]
+          },
+          "hints": [
+            "S'efforcer : to."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Ce rapport a besoin d'être relu.",
+          "answerSpec": {
+            "accepted": [
+              "That report needs reading through"
+            ]
+          },
+          "hints": [
+            "need + -ing, sens passif."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "You need ___ legal before you index anything. (ask)",
+          "answerSpec": {
+            "accepted": [
+              "to ask"
+            ]
+          },
+          "hints": [
+            "Avoir besoin de faire."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The floor plan needs ___ before the rollout. (change)",
+          "answerSpec": {
+            "accepted": [
+              "changing"
+            ]
+          },
+          "hints": [
+            "Besoin d'être fait."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "The wifi is bad. Move nearer the window and see.",
+          "answerSpec": {
+            "accepted": [
+              "Try moving nearer the window"
+            ]
+          },
+          "source": "The wifi is bad. Move nearer the window and see.",
+          "hints": [
+            "Essayer pour voir."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "He helped me to carrying the boxes.",
+          "answerSpec": {
+            "accepted": [
+              "He helped me carry the boxes",
+              "He helped me to carry the boxes"
+            ]
+          },
+          "source": "He helped me to carrying the boxes.",
+          "hints": [
+            "help admet la base nue ou to, jamais -ing."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Your laptop needs ___ — IT can do it today.",
+          "answerSpec": {
+            "accepted": [
+              "fixing"
+            ]
+          },
+          "hints": [
+            "Besoin d'être réparé."
+          ],
+          "distractors": [
+            "to fix",
+            "fix",
+            "being fix"
+          ]
+        }
+      ]
+    },
     {
       "id": "u058-a",
       "topicId": "u058",
-      "tags": ["like", "would-like", "gouts"],
+      "tags": [
+        "like",
+        "would-like",
+        "gouts"
+      ],
       "fields": {
         "regle": "like + -ing : ce qu'on aime en général. would like to : ce qu'on veut à cette occasion."
       },
@@ -322,61 +1189,234 @@
         {
           "type": "produce",
           "prompt": "Traduis : « J'aime marcher au bord de l'eau. »",
-          "answerSpec": { "accepted": ["I like walking by the water"] },
-          "hints": ["Goût général : like + -ing."]
+          "answerSpec": {
+            "accepted": [
+              "I like walking by the water"
+            ]
+          },
+          "hints": [
+            "Goût général : like + -ing."
+          ]
         },
         {
           "type": "produce",
           "prompt": "Traduis : « J'aimerais réserver une table pour deux. »",
-          "answerSpec": { "accepted": ["I'd like to book a table for two", "I would like to book a table for two"] },
-          "hints": ["Demande précise : would like to + base."]
+          "answerSpec": {
+            "accepted": [
+              "I'd like to book a table for two",
+              "I would like to book a table for two"
+            ]
+          },
+          "hints": [
+            "Demande précise : would like to + base."
+          ]
         },
         {
           "type": "produce",
           "prompt": "Traduis : « Elle déteste attendre au téléphone. »",
-          "answerSpec": { "accepted": ["She hates waiting on the phone"] },
-          "hints": ["hate + -ing pour une aversion générale."]
+          "answerSpec": {
+            "accepted": [
+              "She hates waiting on the phone"
+            ]
+          },
+          "hints": [
+            "hate + -ing pour une aversion générale."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "Would you like ___ with us tonight? (come)",
-          "answerSpec": { "accepted": ["to come"] },
-          "hints": ["would like s'accompagne de to."]
+          "answerSpec": {
+            "accepted": [
+              "to come"
+            ]
+          },
+          "hints": [
+            "would like s'accompagne de to."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "He doesn't like ___ up early. (get)",
-          "answerSpec": { "accepted": ["getting", "to get"] },
-          "hints": ["Habitude qui déplaît : -ing."]
+          "answerSpec": {
+            "accepted": [
+              "getting",
+              "to get"
+            ]
+          },
+          "hints": [
+            "Habitude qui déplaît : -ing."
+          ]
         },
         {
           "type": "transform",
           "source": "I want a coffee, please.",
           "prompt": "Réécris la demande poliment, en commençant par « I'd like ».",
-          "answerSpec": { "accepted": ["I'd like a coffee please", "I would like a coffee please"] },
-          "hints": ["would like adoucit want."]
+          "answerSpec": {
+            "accepted": [
+              "I'd like a coffee please",
+              "I would like a coffee please"
+            ]
+          },
+          "hints": [
+            "would like adoucit want."
+          ]
         },
         {
           "type": "spot_error",
           "source": "I would like swimming this afternoon.",
           "prompt": "Corrige la phrase.",
-          "answerSpec": { "accepted": ["I would like to swim this afternoon", "I'd like to swim this afternoon"] },
-          "hints": ["would like appelle to, pas -ing."]
+          "answerSpec": {
+            "accepted": [
+              "I would like to swim this afternoon",
+              "I'd like to swim this afternoon"
+            ]
+          },
+          "hints": [
+            "would like appelle to, pas -ing."
+          ]
         },
         {
           "type": "mcq",
           "prompt": "I love ___ to the market on Saturdays.",
-          "answerSpec": { "accepted": ["going"] },
-          "distractors": ["to going", "go", "for going"],
-          "hints": ["Plaisir habituel : -ing."]
+          "answerSpec": {
+            "accepted": [
+              "going"
+            ]
+          },
+          "distractors": [
+            "to going",
+            "go",
+            "for going"
+          ],
+          "hints": [
+            "Plaisir habituel : -ing."
+          ]
         }
       ]
     },
-
+    {
+      "id": "u058-b",
+      "topicId": "u058",
+      "tags": [
+        "like-would-like"
+      ],
+      "fields": {
+        "regle": "like + -ing dit ce qu'on aime en général ; would like + to une envie ponctuelle. Après would love, would prefer, would hate : to."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : J'aime bien travailler en anglais.",
+          "answerSpec": {
+            "accepted": [
+              "I like working in English"
+            ]
+          },
+          "hints": [
+            "Goût général : -ing."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : J'aimerais voir le périmètre avant de m'engager.",
+          "answerSpec": {
+            "accepted": [
+              "I would like to see the scope before I commit"
+            ]
+          },
+          "hints": [
+            "Envie ponctuelle : to."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Elle détesterait présenter sans notes.",
+          "answerSpec": {
+            "accepted": [
+              "She would hate to present without notes"
+            ]
+          },
+          "hints": [
+            "would hate + to."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Would you like ___ the workshop on Thursday? (join)",
+          "answerSpec": {
+            "accepted": [
+              "to join"
+            ]
+          },
+          "hints": [
+            "would like + to."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "He does not like ___ interrupted. (be)",
+          "answerSpec": {
+            "accepted": [
+              "being"
+            ]
+          },
+          "hints": [
+            "Goût général, passif."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "My preference would be a shorter meeting.",
+          "answerSpec": {
+            "accepted": [
+              "I would prefer to have a shorter meeting"
+            ]
+          },
+          "source": "My preference would be a shorter meeting.",
+          "hints": [
+            "would prefer + to."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "I would like working from home on Fridays, if possible.",
+          "answerSpec": {
+            "accepted": [
+              "I would like to work from home on Fridays, if possible"
+            ]
+          },
+          "source": "I would like working from home on Fridays, if possible.",
+          "hints": [
+            "Demande ponctuelle : to."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "I love ___ along the harbour in the morning.",
+          "answerSpec": {
+            "accepted": [
+              "walking"
+            ]
+          },
+          "hints": [
+            "Goût général."
+          ],
+          "distractors": [
+            "to walking",
+            "walk",
+            "for walking"
+          ]
+        }
+      ]
+    },
     {
       "id": "u059-a",
       "topicId": "u059",
-      "tags": ["prefer", "would-rather"],
+      "tags": [
+        "prefer",
+        "would-rather"
+      ],
       "fields": {
         "regle": "prefer A to B ; prefer to do rather than do. would rather + base verbale, sans to."
       },
@@ -384,8 +1424,14 @@
         {
           "type": "produce",
           "prompt": "Traduis : « Je préfère le thé au café. »",
-          "answerSpec": { "accepted": ["I prefer tea to coffee"] },
-          "hints": ["prefer A to B, avec to entre les deux."]
+          "answerSpec": {
+            "accepted": [
+              "I prefer tea to coffee"
+            ]
+          },
+          "hints": [
+            "prefer A to B, avec to entre les deux."
+          ]
         },
         {
           "type": "produce",
@@ -396,7 +1442,9 @@
               "I would rather stay at home tonight"
             ]
           },
-          "hints": ["would rather + base verbale, jamais to."]
+          "hints": [
+            "would rather + base verbale, jamais to."
+          ]
         },
         {
           "type": "produce",
@@ -407,48 +1455,203 @@
               "I prefer walking to taking the underground"
             ]
           },
-          "hints": ["prefer to do rather than do, ou prefer -ing to -ing."]
+          "hints": [
+            "prefer to do rather than do, ou prefer -ing to -ing."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "I'd rather ___ tomorrow, if that suits you. (start)",
-          "answerSpec": { "accepted": ["start"] },
-          "hints": ["Après would rather, la base verbale nue."]
+          "answerSpec": {
+            "accepted": [
+              "start"
+            ]
+          },
+          "hints": [
+            "Après would rather, la base verbale nue."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "She prefers cycling ___ driving.",
-          "answerSpec": { "accepted": ["to"] },
-          "hints": ["prefer + -ing to + -ing."]
+          "answerSpec": {
+            "accepted": [
+              "to"
+            ]
+          },
+          "hints": [
+            "prefer + -ing to + -ing."
+          ]
         },
         {
           "type": "transform",
           "source": "I don't want to go out. Staying in would be better.",
           "prompt": "Réécris la préférence en commençant par « I'd rather ».",
-          "answerSpec": { "accepted": ["I'd rather stay in", "I would rather stay in"] },
-          "hints": ["would rather + base verbale."]
+          "answerSpec": {
+            "accepted": [
+              "I'd rather stay in",
+              "I would rather stay in"
+            ]
+          },
+          "hints": [
+            "would rather + base verbale."
+          ]
         },
         {
           "type": "spot_error",
           "source": "I would rather to leave early.",
           "prompt": "Corrige la phrase.",
-          "answerSpec": { "accepted": ["I would rather leave early", "I'd rather leave early"] },
-          "hints": ["Pas de to après would rather."]
+          "answerSpec": {
+            "accepted": [
+              "I would rather leave early",
+              "I'd rather leave early"
+            ]
+          },
+          "hints": [
+            "Pas de to après would rather."
+          ]
         },
         {
           "type": "mcq",
           "prompt": "We'd rather ___ the earlier train.",
-          "answerSpec": { "accepted": ["take"] },
-          "distractors": ["to take", "taking", "took"],
-          "hints": ["Base verbale nue après would rather."]
+          "answerSpec": {
+            "accepted": [
+              "take"
+            ]
+          },
+          "distractors": [
+            "to take",
+            "taking",
+            "took"
+          ],
+          "hints": [
+            "Base verbale nue après would rather."
+          ]
         }
       ]
     },
-
+    {
+      "id": "u059-b",
+      "topicId": "u059",
+      "tags": [
+        "prefer",
+        "would-rather"
+      ],
+      "fields": {
+        "regle": "prefer A to B, prefer to do rather than do ; would rather + base nue, et would rather que quelqu'un fasse se dit au prétérit."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Je préfère le train à l'avion.",
+          "answerSpec": {
+            "accepted": [
+              "I prefer the train to the plane"
+            ]
+          },
+          "hints": [
+            "prefer A to B."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Je préférerais commencer par les chiffres.",
+          "answerSpec": {
+            "accepted": [
+              "I would rather start with the figures"
+            ]
+          },
+          "hints": [
+            "would rather + base nue."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Je préférerais que tu ne dises rien.",
+          "answerSpec": {
+            "accepted": [
+              "I would rather you did not say anything"
+            ]
+          },
+          "hints": [
+            "would rather + sujet + prétérit."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "I would rather ___ this offline. (discuss)",
+          "answerSpec": {
+            "accepted": [
+              "discuss"
+            ]
+          },
+          "hints": [
+            "Base nue."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "She prefers writing ___ presenting.",
+          "answerSpec": {
+            "accepted": [
+              "to"
+            ]
+          },
+          "hints": [
+            "prefer A to B."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "I do not want to go. Staying is my choice.",
+          "answerSpec": {
+            "accepted": [
+              "I would rather stay"
+            ]
+          },
+          "source": "I do not want to go. Staying is my choice.",
+          "hints": [
+            "would rather + base nue."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "I would rather to work from the Bristol office.",
+          "answerSpec": {
+            "accepted": [
+              "I would rather work from the Bristol office"
+            ]
+          },
+          "source": "I would rather to work from the Bristol office.",
+          "hints": [
+            "Pas de to après would rather."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "I would rather you ___ the client directly.",
+          "answerSpec": {
+            "accepted": [
+              "called"
+            ]
+          },
+          "hints": [
+            "Prétérit après would rather + sujet."
+          ],
+          "distractors": [
+            "call",
+            "to call",
+            "will call"
+          ]
+        }
+      ]
+    },
     {
       "id": "u060-a",
       "topicId": "u060",
-      "tags": ["preposition-plus-ing"],
+      "tags": [
+        "preposition-plus-ing"
+      ],
       "fields": {
         "regle": "Après une préposition (in, for, about, without, after, before, by), le verbe prend -ing."
       },
@@ -456,61 +1659,234 @@
         {
           "type": "produce",
           "prompt": "Traduis : « Merci de m'avoir aidée. »",
-          "answerSpec": { "accepted": ["Thank you for helping me", "Thanks for helping me"] },
-          "hints": ["Après for, le verbe prend -ing."]
+          "answerSpec": {
+            "accepted": [
+              "Thank you for helping me",
+              "Thanks for helping me"
+            ]
+          },
+          "hints": [
+            "Après for, le verbe prend -ing."
+          ]
         },
         {
           "type": "produce",
           "prompt": "Traduis : « Il est parti sans rien dire. »",
-          "answerSpec": { "accepted": ["He left without saying anything", "He left without saying a word"] },
-          "hints": ["without + -ing."]
+          "answerSpec": {
+            "accepted": [
+              "He left without saying anything",
+              "He left without saying a word"
+            ]
+          },
+          "hints": [
+            "without + -ing."
+          ]
         },
         {
           "type": "produce",
           "prompt": "Traduis : « Après avoir lu le contrat, elle a hésité. »",
-          "answerSpec": { "accepted": ["After reading the contract, she hesitated"] },
-          "hints": ["after est une préposition ici : after + -ing."]
+          "answerSpec": {
+            "accepted": [
+              "After reading the contract, she hesitated"
+            ]
+          },
+          "hints": [
+            "after est une préposition ici : after + -ing."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "She's very good at ___ problems. (solve)",
-          "answerSpec": { "accepted": ["solving"] },
-          "hints": ["good at + -ing."]
+          "answerSpec": {
+            "accepted": [
+              "solving"
+            ]
+          },
+          "hints": [
+            "good at + -ing."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "We saved money by ___ our own lunch. (make)",
-          "answerSpec": { "accepted": ["making"] },
-          "hints": ["by + -ing indique le moyen."]
+          "answerSpec": {
+            "accepted": [
+              "making"
+            ]
+          },
+          "hints": [
+            "by + -ing indique le moyen."
+          ]
         },
         {
           "type": "transform",
           "source": "First check the pressure. Then start the engine.",
           "prompt": "Fais-en une phrase commençant par « Before starting the engine ».",
-          "answerSpec": { "accepted": ["Before starting the engine, check the pressure"] },
-          "hints": ["before + -ing."]
+          "answerSpec": {
+            "accepted": [
+              "Before starting the engine, check the pressure"
+            ]
+          },
+          "hints": [
+            "before + -ing."
+          ]
         },
         {
           "type": "spot_error",
           "source": "She apologised for be late.",
           "prompt": "Corrige la phrase.",
-          "answerSpec": { "accepted": ["She apologised for being late", "She apologized for being late"] },
-          "hints": ["Après for, le verbe prend -ing : being."]
+          "answerSpec": {
+            "accepted": [
+              "She apologised for being late",
+              "She apologized for being late"
+            ]
+          },
+          "hints": [
+            "Après for, le verbe prend -ing : being."
+          ]
         },
         {
           "type": "mcq",
           "prompt": "I'm not interested in ___ that series.",
-          "answerSpec": { "accepted": ["watching"] },
-          "distractors": ["to watch", "watch", "for watching"],
-          "hints": ["interested in + -ing."]
+          "answerSpec": {
+            "accepted": [
+              "watching"
+            ]
+          },
+          "distractors": [
+            "to watch",
+            "watch",
+            "for watching"
+          ],
+          "hints": [
+            "interested in + -ing."
+          ]
         }
       ]
     },
-
+    {
+      "id": "u060-b",
+      "topicId": "u060",
+      "tags": [
+        "preposition-ing"
+      ],
+      "fields": {
+        "regle": "Après une préposition, le verbe prend toujours -ing : before leaving, after signing, without asking, instead of waiting."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Il est parti sans rien dire.",
+          "answerSpec": {
+            "accepted": [
+              "He left without saying anything"
+            ]
+          },
+          "hints": [
+            "without + -ing."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Relis-le avant d'envoyer.",
+          "answerSpec": {
+            "accepted": [
+              "Read it through before sending"
+            ]
+          },
+          "hints": [
+            "before + -ing."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Au lieu d'attendre, elle a appelé le fournisseur.",
+          "answerSpec": {
+            "accepted": [
+              "Instead of waiting, she called the supplier"
+            ]
+          },
+          "hints": [
+            "instead of + -ing."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "After ___ the contract, he asked for a rise. (sign)",
+          "answerSpec": {
+            "accepted": [
+              "signing"
+            ]
+          },
+          "hints": [
+            "after + -ing."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "She is good at ___ a room. (read)",
+          "answerSpec": {
+            "accepted": [
+              "reading"
+            ]
+          },
+          "hints": [
+            "Préposition + -ing."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "He left. He did not tell anybody.",
+          "answerSpec": {
+            "accepted": [
+              "He left without telling anybody"
+            ]
+          },
+          "source": "He left. He did not tell anybody.",
+          "hints": [
+            "without + -ing."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "Thank you for to come at such short notice.",
+          "answerSpec": {
+            "accepted": [
+              "Thank you for coming at such short notice"
+            ]
+          },
+          "source": "Thank you for to come at such short notice.",
+          "hints": [
+            "Préposition + -ing."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "He apologised for ___ the deadline.",
+          "answerSpec": {
+            "accepted": [
+              "missing"
+            ]
+          },
+          "hints": [
+            "for + -ing."
+          ],
+          "distractors": [
+            "to miss",
+            "miss",
+            "having miss"
+          ]
+        }
+      ]
+    },
     {
       "id": "u061-a",
       "topicId": "u061",
-      "tags": ["be-used-to", "get-used-to", "habitude"],
+      "tags": [
+        "be-used-to",
+        "get-used-to",
+        "habitude"
+      ],
       "fields": {
         "regle": "be used to + -ing : c'est devenu familier. get used to + -ing : on s'y habitue. À ne pas confondre avec used to + base."
       },
@@ -518,61 +1894,233 @@
         {
           "type": "produce",
           "prompt": "Traduis : « J'ai l'habitude de travailler tard. »",
-          "answerSpec": { "accepted": ["I'm used to working late", "I am used to working late"] },
-          "hints": ["be used to + verbe en -ing."]
+          "answerSpec": {
+            "accepted": [
+              "I'm used to working late",
+              "I am used to working late"
+            ]
+          },
+          "hints": [
+            "be used to + verbe en -ing."
+          ]
         },
         {
           "type": "produce",
           "prompt": "Traduis : « Elle s'habitue peu à peu au climat. »",
-          "answerSpec": { "accepted": ["She's getting used to the climate", "She is getting used to the climate"] },
-          "hints": ["get used to marque l'adaptation en cours."]
+          "answerSpec": {
+            "accepted": [
+              "She's getting used to the climate",
+              "She is getting used to the climate"
+            ]
+          },
+          "hints": [
+            "get used to marque l'adaptation en cours."
+          ]
         },
         {
           "type": "produce",
           "prompt": "Traduis : « Avant, il se levait à cinq heures. »",
-          "answerSpec": { "accepted": ["He used to get up at five"] },
-          "hints": ["used to + base verbale : habitude passée, sans be."]
+          "answerSpec": {
+            "accepted": [
+              "He used to get up at five"
+            ]
+          },
+          "hints": [
+            "used to + base verbale : habitude passée, sans be."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "I can't get used to ___ on the left. (drive)",
-          "answerSpec": { "accepted": ["driving"] },
-          "hints": ["to est ici une préposition : le verbe prend -ing."]
+          "answerSpec": {
+            "accepted": [
+              "driving"
+            ]
+          },
+          "hints": [
+            "to est ici une préposition : le verbe prend -ing."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "They ___ used to the noise after a month. (get, au prétérit)",
-          "answerSpec": { "accepted": ["got"] },
-          "hints": ["L'adaptation est achevée : prétérit de get."]
+          "answerSpec": {
+            "accepted": [
+              "got"
+            ]
+          },
+          "hints": [
+            "L'adaptation est achevée : prétérit de get."
+          ]
         },
         {
           "type": "transform",
           "source": "At first the silence felt strange, but now it doesn't.",
           "prompt": "Réécris la fin en commençant par « Now I'm used to ».",
-          "answerSpec": { "accepted": ["Now I'm used to the silence", "Now I am used to the silence"] },
-          "hints": ["be used to + nom ou verbe en -ing."]
+          "answerSpec": {
+            "accepted": [
+              "Now I'm used to the silence",
+              "Now I am used to the silence"
+            ]
+          },
+          "hints": [
+            "be used to + nom ou verbe en -ing."
+          ]
         },
         {
           "type": "spot_error",
           "source": "I'm used to get up early.",
           "prompt": "Corrige la phrase.",
-          "answerSpec": { "accepted": ["I'm used to getting up early", "I am used to getting up early"] },
-          "hints": ["Après be used to, le verbe prend -ing."]
+          "answerSpec": {
+            "accepted": [
+              "I'm used to getting up early",
+              "I am used to getting up early"
+            ]
+          },
+          "hints": [
+            "Après be used to, le verbe prend -ing."
+          ]
         },
         {
           "type": "mcq",
           "prompt": "It took a while, but she got used to ___ in a big city.",
-          "answerSpec": { "accepted": ["living"] },
-          "distractors": ["live", "to live", "lived"],
-          "hints": ["get used to + -ing."]
+          "answerSpec": {
+            "accepted": [
+              "living"
+            ]
+          },
+          "distractors": [
+            "live",
+            "to live",
+            "lived"
+          ],
+          "hints": [
+            "get used to + -ing."
+          ]
         }
       ]
     },
-
+    {
+      "id": "u061-b",
+      "topicId": "u061",
+      "tags": [
+        "be-used-to"
+      ],
+      "fields": {
+        "regle": "be used to + -ing : y être habitué. get used to : s'y habituer. À ne pas confondre avec used to + base, qui dit une habitude révolue."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Je m'habitue peu à peu aux litotes britanniques.",
+          "answerSpec": {
+            "accepted": [
+              "I am getting used to British understatement"
+            ]
+          },
+          "hints": [
+            "get used to + nom ou -ing."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Elle a l'habitude de présenter devant un conseil.",
+          "answerSpec": {
+            "accepted": [
+              "She is used to presenting to a board"
+            ]
+          },
+          "hints": [
+            "be used to + -ing."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Avant, je prenais le vélo tous les jours.",
+          "answerSpec": {
+            "accepted": [
+              "I used to take the bike every day"
+            ]
+          },
+          "hints": [
+            "Habitude révolue : used to + base."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "He is not used ___ having his own office. (to / for)",
+          "answerSpec": {
+            "accepted": [
+              "to"
+            ]
+          },
+          "hints": [
+            "be used to."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "You will soon get used to ___ a desk every morning. (book)",
+          "answerSpec": {
+            "accepted": [
+              "booking"
+            ]
+          },
+          "hints": [
+            "get used to + -ing."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "At first the noise bothered her. Now it does not.",
+          "answerSpec": {
+            "accepted": [
+              "She has got used to the noise"
+            ]
+          },
+          "source": "At first the noise bothered her. Now it does not.",
+          "hints": [
+            "get used to + nom."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "I am used to answer emails in English now.",
+          "answerSpec": {
+            "accepted": [
+              "I am used to answering emails in English now"
+            ]
+          },
+          "source": "I am used to answer emails in English now.",
+          "hints": [
+            "be used to + -ing."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "It took him a term ___ the open-plan floor.",
+          "answerSpec": {
+            "accepted": [
+              "to get used to"
+            ]
+          },
+          "hints": [
+            "S'habituer progressivement."
+          ],
+          "distractors": [
+            "to used to",
+            "being used to",
+            "to be use to"
+          ]
+        }
+      ]
+    },
     {
       "id": "u062-a",
       "topicId": "u062",
-      "tags": ["verbe-preposition-ing"],
+      "tags": [
+        "verbe-preposition-ing"
+      ],
       "fields": {
         "regle": "succeed in, insist on, apologise for, accuse of, dream of, look forward to… tous suivis de -ing."
       },
@@ -580,61 +2128,232 @@
         {
           "type": "produce",
           "prompt": "Traduis : « Il a insisté pour payer. »",
-          "answerSpec": { "accepted": ["He insisted on paying"] },
-          "hints": ["insist on + -ing."]
+          "answerSpec": {
+            "accepted": [
+              "He insisted on paying"
+            ]
+          },
+          "hints": [
+            "insist on + -ing."
+          ]
         },
         {
           "type": "produce",
           "prompt": "Traduis : « J'ai hâte de te revoir. »",
-          "answerSpec": { "accepted": ["I'm looking forward to seeing you again", "I am looking forward to seeing you again"] },
-          "hints": ["look forward to : ici to est une préposition, d'où -ing."]
+          "answerSpec": {
+            "accepted": [
+              "I'm looking forward to seeing you again",
+              "I am looking forward to seeing you again"
+            ]
+          },
+          "hints": [
+            "look forward to : ici to est une préposition, d'où -ing."
+          ]
         },
         {
           "type": "produce",
           "prompt": "Traduis : « Elle a réussi à convaincre le jury. »",
-          "answerSpec": { "accepted": ["She succeeded in convincing the jury"] },
-          "hints": ["succeed in + -ing."]
+          "answerSpec": {
+            "accepted": [
+              "She succeeded in convincing the jury"
+            ]
+          },
+          "hints": [
+            "succeed in + -ing."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "They accused him of ___ the file. (delete)",
-          "answerSpec": { "accepted": ["deleting"] },
-          "hints": ["accuse somebody of + -ing."]
+          "answerSpec": {
+            "accepted": [
+              "deleting"
+            ]
+          },
+          "hints": [
+            "accuse somebody of + -ing."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "She dreams of ___ her own studio. (open)",
-          "answerSpec": { "accepted": ["opening"] },
-          "hints": ["dream of + -ing."]
+          "answerSpec": {
+            "accepted": [
+              "opening"
+            ]
+          },
+          "hints": [
+            "dream of + -ing."
+          ]
         },
         {
           "type": "transform",
           "source": "He wouldn't stop until he had checked every page.",
           "prompt": "Réécris la phrase avec « insisted on », en commençant par « He ».",
-          "answerSpec": { "accepted": ["He insisted on checking every page"] },
-          "hints": ["insist on + -ing."]
+          "answerSpec": {
+            "accepted": [
+              "He insisted on checking every page"
+            ]
+          },
+          "hints": [
+            "insist on + -ing."
+          ]
         },
         {
           "type": "spot_error",
           "source": "I look forward to hear from you.",
           "prompt": "Corrige la phrase.",
-          "answerSpec": { "accepted": ["I look forward to hearing from you"] },
-          "hints": ["to est une préposition dans cette expression : -ing."]
+          "answerSpec": {
+            "accepted": [
+              "I look forward to hearing from you"
+            ]
+          },
+          "hints": [
+            "to est une préposition dans cette expression : -ing."
+          ]
         },
         {
           "type": "mcq",
           "prompt": "He congratulated her on ___ the contest.",
-          "answerSpec": { "accepted": ["winning"] },
-          "distractors": ["to win", "win", "won"],
-          "hints": ["congratulate on + -ing."]
+          "answerSpec": {
+            "accepted": [
+              "winning"
+            ]
+          },
+          "distractors": [
+            "to win",
+            "win",
+            "won"
+          ],
+          "hints": [
+            "congratulate on + -ing."
+          ]
         }
       ]
     },
-
+    {
+      "id": "u062-b",
+      "topicId": "u062",
+      "tags": [
+        "verbe-preposition-ing"
+      ],
+      "fields": {
+        "regle": "succeed in -ing, insist on -ing, accuse of -ing, apologise for -ing, look forward to -ing, prevent from -ing."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Nous avons réussi à réduire le parc d'un tiers.",
+          "answerSpec": {
+            "accepted": [
+              "We succeeded in cutting the estate by a third"
+            ]
+          },
+          "hints": [
+            "succeed in + -ing."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : J'attends notre réunion avec impatience.",
+          "answerSpec": {
+            "accepted": [
+              "I look forward to meeting you"
+            ]
+          },
+          "hints": [
+            "look forward to + -ing."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Il a insisté pour relire le périmètre lui-même.",
+          "answerSpec": {
+            "accepted": [
+              "He insisted on reading the scope himself"
+            ]
+          },
+          "hints": [
+            "insist on + -ing."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "They accused the intern ___ leaking the figures. (of / for)",
+          "answerSpec": {
+            "accepted": [
+              "of"
+            ]
+          },
+          "hints": [
+            "accuse of + -ing."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Nothing prevents us ___ shipping on Thursday. (from)",
+          "answerSpec": {
+            "accepted": [
+              "from"
+            ]
+          },
+          "hints": [
+            "prevent from + -ing."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "He said sorry because he had interrupted.",
+          "answerSpec": {
+            "accepted": [
+              "He apologised for interrupting"
+            ]
+          },
+          "source": "He said sorry because he had interrupted.",
+          "hints": [
+            "apologise for + -ing."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "I look forward to hear from you.",
+          "answerSpec": {
+            "accepted": [
+              "I look forward to hearing from you"
+            ]
+          },
+          "source": "I look forward to hear from you.",
+          "hints": [
+            "to est ici une préposition : -ing."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "She succeeded ___ the whole board.",
+          "answerSpec": {
+            "accepted": [
+              "in convincing"
+            ]
+          },
+          "hints": [
+            "succeed in + -ing."
+          ],
+          "distractors": [
+            "to convince",
+            "convincing",
+            "at convincing"
+          ]
+        }
+      ]
+    },
     {
       "id": "u063-a",
       "topicId": "u063",
-      "tags": ["worth", "no-point", "expressions-ing"],
+      "tags": [
+        "worth",
+        "no-point",
+        "expressions-ing"
+      ],
       "fields": {
         "regle": "It's worth -ing, there's no point in -ing, it's no use -ing, have difficulty -ing."
       },
@@ -642,8 +2361,15 @@
         {
           "type": "produce",
           "prompt": "Traduis : « Ça vaut la peine de réserver à l'avance. »",
-          "answerSpec": { "accepted": ["It's worth booking in advance", "It is worth booking in advance"] },
-          "hints": ["worth + -ing, sans préposition."]
+          "answerSpec": {
+            "accepted": [
+              "It's worth booking in advance",
+              "It is worth booking in advance"
+            ]
+          },
+          "hints": [
+            "worth + -ing, sans préposition."
+          ]
         },
         {
           "type": "produce",
@@ -654,7 +2380,9 @@
               "It's no use arguing with him"
             ]
           },
-          "hints": ["no point in + -ing, ou no use + -ing."]
+          "hints": [
+            "no point in + -ing, ou no use + -ing."
+          ]
         },
         {
           "type": "produce",
@@ -665,48 +2393,205 @@
               "I'm having trouble sleeping at the moment"
             ]
           },
-          "hints": ["have difficulty / trouble + -ing, sans préposition."]
+          "hints": [
+            "have difficulty / trouble + -ing, sans préposition."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "It's not worth ___ the whole thing. (rewrite)",
-          "answerSpec": { "accepted": ["rewriting"] },
-          "hints": ["worth est toujours suivi de -ing."]
+          "answerSpec": {
+            "accepted": [
+              "rewriting"
+            ]
+          },
+          "hints": [
+            "worth est toujours suivi de -ing."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "There's no point in ___ now — the shop is shut. (hurry)",
-          "answerSpec": { "accepted": ["hurrying"] },
-          "hints": ["no point in + -ing."]
+          "answerSpec": {
+            "accepted": [
+              "hurrying"
+            ]
+          },
+          "hints": [
+            "no point in + -ing."
+          ]
         },
         {
           "type": "transform",
           "source": "Don't bother phoning — the line is down.",
           "prompt": "Réécris la phrase en commençant par « It's no use ».",
-          "answerSpec": { "accepted": ["It's no use phoning", "It is no use phoning"] },
-          "hints": ["it's no use + -ing."]
+          "answerSpec": {
+            "accepted": [
+              "It's no use phoning",
+              "It is no use phoning"
+            ]
+          },
+          "hints": [
+            "it's no use + -ing."
+          ]
         },
         {
           "type": "spot_error",
           "source": "This museum is worth to visit.",
           "prompt": "Corrige la phrase.",
-          "answerSpec": { "accepted": ["This museum is worth visiting"] },
-          "hints": ["worth ne se construit jamais avec to."]
+          "answerSpec": {
+            "accepted": [
+              "This museum is worth visiting"
+            ]
+          },
+          "hints": [
+            "worth ne se construit jamais avec to."
+          ]
         },
         {
           "type": "mcq",
           "prompt": "It's no use ___ about the weather.",
-          "answerSpec": { "accepted": ["complaining"] },
-          "distractors": ["to complain", "complain", "for complaining"],
-          "hints": ["it's no use + -ing."]
+          "answerSpec": {
+            "accepted": [
+              "complaining"
+            ]
+          },
+          "distractors": [
+            "to complain",
+            "complain",
+            "for complaining"
+          ],
+          "hints": [
+            "it's no use + -ing."
+          ]
         }
       ]
     },
-
+    {
+      "id": "u063-b",
+      "topicId": "u063",
+      "tags": [
+        "no-point",
+        "worth"
+      ],
+      "fields": {
+        "regle": "there's no point in -ing, it's worth -ing, it's no use -ing, have difficulty -ing : toutes ces tournures appellent le -ing."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Ça ne sert à rien de livrer un vendredi.",
+          "answerSpec": {
+            "accepted": [
+              "There is no point in shipping on a Friday"
+            ]
+          },
+          "hints": [
+            "no point in + -ing."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Ça vaut le coup de lire le contrat en entier.",
+          "answerSpec": {
+            "accepted": [
+              "It is worth reading the contract in full"
+            ]
+          },
+          "hints": [
+            "worth + -ing."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : J'ai du mal à suivre son accent.",
+          "answerSpec": {
+            "accepted": [
+              "I have difficulty following his accent"
+            ]
+          },
+          "hints": [
+            "have difficulty + -ing."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "It is no use ___ about the noise. (complain)",
+          "answerSpec": {
+            "accepted": [
+              "complaining"
+            ]
+          },
+          "hints": [
+            "no use + -ing."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "There is no point ___ arguing with the audit.",
+          "answerSpec": {
+            "accepted": [
+              "in"
+            ]
+          },
+          "hints": [
+            "no point in."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "Do not bother calling him, he never answers.",
+          "answerSpec": {
+            "accepted": [
+              "There is no point in calling him"
+            ]
+          },
+          "source": "Do not bother calling him, he never answers.",
+          "hints": [
+            "no point in + -ing."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "It is worth to book the room early.",
+          "answerSpec": {
+            "accepted": [
+              "It is worth booking the room early"
+            ]
+          },
+          "source": "It is worth to book the room early.",
+          "hints": [
+            "worth + -ing."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "I had trouble ___ a desk on the second floor.",
+          "answerSpec": {
+            "accepted": [
+              "finding"
+            ]
+          },
+          "hints": [
+            "have trouble + -ing."
+          ],
+          "distractors": [
+            "to find",
+            "find",
+            "for finding"
+          ]
+        }
+      ]
+    },
     {
       "id": "u064-a",
       "topicId": "u064",
-      "tags": ["but", "to-infinitif", "so-that", "for"],
+      "tags": [
+        "but",
+        "to-infinitif",
+        "so-that",
+        "for"
+      ],
       "fields": {
         "regle": "to + base pour le but. for + nom pour l'usage. so that + sujet + verbe quand le but concerne quelqu'un d'autre."
       },
@@ -714,14 +2599,27 @@
         {
           "type": "produce",
           "prompt": "Traduis : « Je suis venu pour te parler. »",
-          "answerSpec": { "accepted": ["I came to talk to you", "I came to speak to you"] },
-          "hints": ["Le but s'exprime par to + base verbale."]
+          "answerSpec": {
+            "accepted": [
+              "I came to talk to you",
+              "I came to speak to you"
+            ]
+          },
+          "hints": [
+            "Le but s'exprime par to + base verbale."
+          ]
         },
         {
           "type": "produce",
           "prompt": "Traduis : « Elle a laissé la porte ouverte pour que le chat puisse sortir. »",
-          "answerSpec": { "accepted": ["She left the door open so that the cat could go out"] },
-          "hints": ["Un autre sujet : so that + sujet + verbe."]
+          "answerSpec": {
+            "accepted": [
+              "She left the door open so that the cat could go out"
+            ]
+          },
+          "hints": [
+            "Un autre sujet : so that + sujet + verbe."
+          ]
         },
         {
           "type": "produce",
@@ -732,48 +2630,202 @@
               "This knife is used for cutting bread"
             ]
           },
-          "hints": ["for + -ing décrit l'usage d'un objet."]
+          "hints": [
+            "for + -ing décrit l'usage d'un objet."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "I went to the desk ___ ask for a map. (to)",
-          "answerSpec": { "accepted": ["to"] },
-          "hints": ["Le but personnel : to + base verbale."]
+          "answerSpec": {
+            "accepted": [
+              "to"
+            ]
+          },
+          "hints": [
+            "Le but personnel : to + base verbale."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "Speak up ___ that everyone can hear you. (so)",
-          "answerSpec": { "accepted": ["so"] },
-          "hints": ["so that introduit un but concernant les autres."]
+          "answerSpec": {
+            "accepted": [
+              "so"
+            ]
+          },
+          "hints": [
+            "so that introduit un but concernant les autres."
+          ]
         },
         {
           "type": "transform",
           "source": "I bought a second alarm clock. I don't want to oversleep.",
           "prompt": "Fais-en une seule phrase avec « so that I ».",
-          "answerSpec": { "accepted": ["I bought a second alarm clock so that I wouldn't oversleep"] },
-          "hints": ["so that + sujet + would/wouldn't dans un récit au passé."]
+          "answerSpec": {
+            "accepted": [
+              "I bought a second alarm clock so that I wouldn't oversleep"
+            ]
+          },
+          "hints": [
+            "so that + sujet + would/wouldn't dans un récit au passé."
+          ]
         },
         {
           "type": "spot_error",
           "source": "She phoned for tell us the news.",
           "prompt": "Corrige la phrase.",
-          "answerSpec": { "accepted": ["She phoned to tell us the news"] },
-          "hints": ["Le but devant un verbe se dit to, jamais for."]
+          "answerSpec": {
+            "accepted": [
+              "She phoned to tell us the news"
+            ]
+          },
+          "hints": [
+            "Le but devant un verbe se dit to, jamais for."
+          ]
         },
         {
           "type": "mcq",
           "prompt": "He wore gloves ___ his hands warm.",
-          "answerSpec": { "accepted": ["to keep"] },
-          "distractors": ["for keep", "for keeping", "so keep"],
-          "hints": ["But de l'action : to + base verbale."]
+          "answerSpec": {
+            "accepted": [
+              "to keep"
+            ]
+          },
+          "distractors": [
+            "for keep",
+            "for keeping",
+            "so keep"
+          ],
+          "hints": [
+            "But de l'action : to + base verbale."
+          ]
         }
       ]
     },
-
+    {
+      "id": "u064-b",
+      "topicId": "u064",
+      "tags": [
+        "but",
+        "so-that"
+      ],
+      "fields": {
+        "regle": "Le but se dit avec to, in order to, so as to ; avec un sujet différent, il faut so that. for + nom, jamais for + -ing pour exprimer un but."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Je suis venu tôt pour préparer la salle.",
+          "answerSpec": {
+            "accepted": [
+              "I came early to set the room up"
+            ]
+          },
+          "hints": [
+            "But : to."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Je t'envoie le pack pour que tu puisses le relire.",
+          "answerSpec": {
+            "accepted": [
+              "I am sending you the pack so that you can read it through"
+            ]
+          },
+          "hints": [
+            "Sujet différent : so that."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Nous sommes venus pour la réunion.",
+          "answerSpec": {
+            "accepted": [
+              "We came for the meeting"
+            ]
+          },
+          "hints": [
+            "for + nom."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "He left early ___ that he would not miss the train.",
+          "answerSpec": {
+            "accepted": [
+              "so"
+            ]
+          },
+          "hints": [
+            "so that."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "She wrote it down ___ order to remember.",
+          "answerSpec": {
+            "accepted": [
+              "in"
+            ]
+          },
+          "hints": [
+            "in order to."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "I called legal. I wanted them to check the clause.",
+          "answerSpec": {
+            "accepted": [
+              "I called legal so that they could check the clause"
+            ]
+          },
+          "source": "I called legal. I wanted them to check the clause.",
+          "hints": [
+            "Sujet différent."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "I came here for learning English.",
+          "answerSpec": {
+            "accepted": [
+              "I came here to learn English"
+            ]
+          },
+          "source": "I came here for learning English.",
+          "hints": [
+            "Un but s'exprime avec to."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Book the room early ___ avoid a scramble.",
+          "answerSpec": {
+            "accepted": [
+              "so as to"
+            ]
+          },
+          "hints": [
+            "But, registre soigné."
+          ],
+          "distractors": [
+            "for to",
+            "for",
+            "so that to"
+          ]
+        }
+      ]
+    },
     {
       "id": "u065-a",
       "topicId": "u065",
-      "tags": ["adjectif-plus-to", "it-is-easy-to"],
+      "tags": [
+        "adjectif-plus-to",
+        "it-is-easy-to"
+      ],
       "fields": {
         "regle": "It's easy/hard/nice to do. Avec la personne concernée : It's kind of you to ... ou I'm glad to ..."
       },
@@ -781,61 +2833,235 @@
         {
           "type": "produce",
           "prompt": "Traduis : « C'est difficile de trouver un logement ici. »",
-          "answerSpec": { "accepted": ["It's hard to find a place to live here", "It is difficult to find a place to live here"] },
-          "hints": ["It's + adjectif + to + base verbale."]
+          "answerSpec": {
+            "accepted": [
+              "It's hard to find a place to live here",
+              "It is difficult to find a place to live here"
+            ]
+          },
+          "hints": [
+            "It's + adjectif + to + base verbale."
+          ]
         },
         {
           "type": "produce",
           "prompt": "Traduis : « C'est gentil de ta part de m'avoir attendue. »",
-          "answerSpec": { "accepted": ["It's kind of you to wait for me", "It was kind of you to wait for me"] },
-          "hints": ["kind of somebody to do : le jugement porte sur la personne."]
+          "answerSpec": {
+            "accepted": [
+              "It's kind of you to wait for me",
+              "It was kind of you to wait for me"
+            ]
+          },
+          "hints": [
+            "kind of somebody to do : le jugement porte sur la personne."
+          ]
         },
         {
           "type": "produce",
           "prompt": "Traduis : « Je suis content de te voir. »",
-          "answerSpec": { "accepted": ["I'm glad to see you", "I am glad to see you"] },
-          "hints": ["Adjectif de sentiment + to + base verbale."]
+          "answerSpec": {
+            "accepted": [
+              "I'm glad to see you",
+              "I am glad to see you"
+            ]
+          },
+          "hints": [
+            "Adjectif de sentiment + to + base verbale."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "This handle is easy ___ turn. (to)",
-          "answerSpec": { "accepted": ["to"] },
-          "hints": ["easy to + base verbale, sans complément répété."]
+          "answerSpec": {
+            "accepted": [
+              "to"
+            ]
+          },
+          "hints": [
+            "easy to + base verbale, sans complément répété."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "It was silly ___ me to forget the tickets. (of)",
-          "answerSpec": { "accepted": ["of"] },
-          "hints": ["Un jugement sur la personne s'introduit par of."]
+          "answerSpec": {
+            "accepted": [
+              "of"
+            ]
+          },
+          "hints": [
+            "Un jugement sur la personne s'introduit par of."
+          ]
         },
         {
           "type": "transform",
           "source": "Reading his handwriting is very difficult.",
           "prompt": "Réécris la phrase en commençant par « His handwriting ».",
-          "answerSpec": { "accepted": ["His handwriting is very difficult to read"] },
-          "hints": ["L'objet devient sujet, suivi de adjectif + to + verbe."]
+          "answerSpec": {
+            "accepted": [
+              "His handwriting is very difficult to read"
+            ]
+          },
+          "hints": [
+            "L'objet devient sujet, suivi de adjectif + to + verbe."
+          ]
         },
         {
           "type": "spot_error",
           "source": "It's important checking the dates.",
           "prompt": "Corrige la phrase.",
-          "answerSpec": { "accepted": ["It's important to check the dates", "It is important to check the dates"] },
-          "hints": ["Après it's + adjectif, on emploie to + base."]
+          "answerSpec": {
+            "accepted": [
+              "It's important to check the dates",
+              "It is important to check the dates"
+            ]
+          },
+          "hints": [
+            "Après it's + adjectif, on emploie to + base."
+          ]
         },
         {
           "type": "mcq",
           "prompt": "This chair isn't very comfortable ___ .",
-          "answerSpec": { "accepted": ["to sit on"] },
-          "distractors": ["to sit", "for sitting on it", "to sit on it"],
-          "hints": ["La préposition reste, mais le complément ne se répète pas."]
+          "answerSpec": {
+            "accepted": [
+              "to sit on"
+            ]
+          },
+          "distractors": [
+            "to sit",
+            "for sitting on it",
+            "to sit on it"
+          ],
+          "hints": [
+            "La préposition reste, mais le complément ne se répète pas."
+          ]
         }
       ]
     },
-
+    {
+      "id": "u065-b",
+      "topicId": "u065",
+      "tags": [
+        "adjectif-to"
+      ],
+      "fields": {
+        "regle": "Après un adjectif, l'infinitif : easy to use, difficult to explain, glad to help, the first to arrive."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Ce tableau de bord est facile à lire.",
+          "answerSpec": {
+            "accepted": [
+              "That dashboard is easy to read"
+            ]
+          },
+          "hints": [
+            "Adjectif + to."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Elle a été la première à soulever le risque.",
+          "answerSpec": {
+            "accepted": [
+              "She was the first to raise the risk"
+            ]
+          },
+          "hints": [
+            "Ordinal + to."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Je suis ravi de vous aider.",
+          "answerSpec": {
+            "accepted": [
+              "I am glad to help"
+            ]
+          },
+          "hints": [
+            "Adjectif + to."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "That clause is difficult ___ explain to a client.",
+          "answerSpec": {
+            "accepted": [
+              "to"
+            ]
+          },
+          "hints": [
+            "Adjectif + to."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "He was surprised ___ hear that the pilot had stopped.",
+          "answerSpec": {
+            "accepted": [
+              "to"
+            ]
+          },
+          "hints": [
+            "Adjectif + to."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "Nobody can read that font. It is too small.",
+          "answerSpec": {
+            "accepted": [
+              "That font is too small to read"
+            ]
+          },
+          "source": "Nobody can read that font. It is too small.",
+          "hints": [
+            "too + adjectif + to."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "This tool is easy for using.",
+          "answerSpec": {
+            "accepted": [
+              "This tool is easy to use"
+            ]
+          },
+          "source": "This tool is easy for using.",
+          "hints": [
+            "Adjectif + to."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "He was the last ___ the building on Friday.",
+          "answerSpec": {
+            "accepted": [
+              "to leave"
+            ]
+          },
+          "hints": [
+            "Ordinal + to."
+          ],
+          "distractors": [
+            "leaving",
+            "for leaving",
+            "left"
+          ]
+        }
+      ]
+    },
     {
       "id": "u066-a",
       "topicId": "u066",
-      "tags": ["afraid-to", "afraid-of", "sorry-for"],
+      "tags": [
+        "afraid-to",
+        "afraid-of",
+        "sorry-for"
+      ],
       "fields": {
         "regle": "afraid to do : on n'ose pas. afraid of -ing : on redoute que ça arrive. sorry for -ing : regret d'une action passée."
       },
@@ -843,61 +3069,235 @@
         {
           "type": "produce",
           "prompt": "Traduis : « Elle n'osait pas poser la question. »",
-          "answerSpec": { "accepted": ["She was afraid to ask the question"] },
-          "hints": ["afraid to do : on choisit de ne pas le faire."]
+          "answerSpec": {
+            "accepted": [
+              "She was afraid to ask the question"
+            ]
+          },
+          "hints": [
+            "afraid to do : on choisit de ne pas le faire."
+          ]
         },
         {
           "type": "produce",
           "prompt": "Traduis : « J'ai peur de tomber sur cette glace. »",
-          "answerSpec": { "accepted": ["I'm afraid of falling on this ice", "I am afraid of falling on this ice"] },
-          "hints": ["afraid of + -ing : on redoute un accident."]
+          "answerSpec": {
+            "accepted": [
+              "I'm afraid of falling on this ice",
+              "I am afraid of falling on this ice"
+            ]
+          },
+          "hints": [
+            "afraid of + -ing : on redoute un accident."
+          ]
         },
         {
           "type": "produce",
           "prompt": "Traduis : « Désolé de t'avoir dérangée. »",
-          "answerSpec": { "accepted": ["Sorry for disturbing you", "I'm sorry for disturbing you"] },
-          "hints": ["sorry for + -ing pour une action déjà commise."]
+          "answerSpec": {
+            "accepted": [
+              "Sorry for disturbing you",
+              "I'm sorry for disturbing you"
+            ]
+          },
+          "hints": [
+            "sorry for + -ing pour une action déjà commise."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "He's not interested ___ joining the club. (in)",
-          "answerSpec": { "accepted": ["in"] },
-          "hints": ["interested in + -ing."]
+          "answerSpec": {
+            "accepted": [
+              "in"
+            ]
+          },
+          "hints": [
+            "interested in + -ing."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "She was afraid ___ tell them the truth. (to)",
-          "answerSpec": { "accepted": ["to"] },
-          "hints": ["On n'ose pas agir : afraid to + base."]
+          "answerSpec": {
+            "accepted": [
+              "to"
+            ]
+          },
+          "hints": [
+            "On n'ose pas agir : afraid to + base."
+          ]
         },
         {
           "type": "transform",
           "source": "The path was icy, so I didn't want to run.",
           "prompt": "Réécris la seconde partie avec « afraid of », en commençant par « I was ».",
-          "answerSpec": { "accepted": ["I was afraid of slipping", "I was afraid of falling"] },
-          "hints": ["afraid of + -ing : la crainte d'un accident."]
+          "answerSpec": {
+            "accepted": [
+              "I was afraid of slipping",
+              "I was afraid of falling"
+            ]
+          },
+          "hints": [
+            "afraid of + -ing : la crainte d'un accident."
+          ]
         },
         {
           "type": "spot_error",
           "source": "I'm sorry to shout at you yesterday.",
           "prompt": "Corrige la phrase.",
-          "answerSpec": { "accepted": ["I'm sorry for shouting at you yesterday", "I am sorry for shouting at you yesterday"] },
-          "hints": ["Un regret sur le passé : sorry for + -ing."]
+          "answerSpec": {
+            "accepted": [
+              "I'm sorry for shouting at you yesterday",
+              "I am sorry for shouting at you yesterday"
+            ]
+          },
+          "hints": [
+            "Un regret sur le passé : sorry for + -ing."
+          ]
         },
         {
           "type": "mcq",
           "prompt": "She's afraid ___ alone at night.",
-          "answerSpec": { "accepted": ["of walking"] },
-          "distractors": ["to walking", "for walking", "of to walk"],
-          "hints": ["Crainte de ce qui pourrait arriver : of + -ing."]
+          "answerSpec": {
+            "accepted": [
+              "of walking"
+            ]
+          },
+          "distractors": [
+            "to walking",
+            "for walking",
+            "of to walk"
+          ],
+          "hints": [
+            "Crainte de ce qui pourrait arriver : of + -ing."
+          ]
         }
       ]
     },
-
+    {
+      "id": "u066-b",
+      "topicId": "u066",
+      "tags": [
+        "afraid-to",
+        "afraid-of"
+      ],
+      "fields": {
+        "regle": "afraid to do : on n'ose pas. afraid of doing : on craint que ça arrive. Même écart pour sorry to / sorry for, interested to / interested in."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Je n'ose pas lui dire.",
+          "answerSpec": {
+            "accepted": [
+              "I am afraid to tell him"
+            ]
+          },
+          "hints": [
+            "On n'ose pas : to."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : J'ai peur de me tromper de version.",
+          "answerSpec": {
+            "accepted": [
+              "I am afraid of sending the wrong version"
+            ]
+          },
+          "hints": [
+            "On craint l'accident : of + -ing."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Je serais curieux de voir les chiffres.",
+          "answerSpec": {
+            "accepted": [
+              "I would be interested to see the figures"
+            ]
+          },
+          "hints": [
+            "Curiosité ponctuelle : to."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "She was afraid ___ losing her badge again. (of / to)",
+          "answerSpec": {
+            "accepted": [
+              "of"
+            ]
+          },
+          "hints": [
+            "Crainte d'un accident."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "I am sorry ___ interrupt, but legal is on the line.",
+          "answerSpec": {
+            "accepted": [
+              "to"
+            ]
+          },
+          "hints": [
+            "sorry to + base."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "He does not dare push back on the deadline.",
+          "answerSpec": {
+            "accepted": [
+              "He is afraid to push back on the deadline"
+            ]
+          },
+          "source": "He does not dare push back on the deadline.",
+          "hints": [
+            "On n'ose pas."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "I am interested in see the new floor plan.",
+          "answerSpec": {
+            "accepted": [
+              "I am interested in seeing the new floor plan"
+            ]
+          },
+          "source": "I am interested in see the new floor plan.",
+          "hints": [
+            "Préposition + -ing."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Everyone is afraid ___ the first question.",
+          "answerSpec": {
+            "accepted": [
+              "of asking"
+            ]
+          },
+          "hints": [
+            "Crainte de ce qui pourrait arriver."
+          ],
+          "distractors": [
+            "to asking",
+            "of ask",
+            "for asking"
+          ]
+        }
+      ]
+    },
     {
       "id": "u067-a",
       "topicId": "u067",
-      "tags": ["see-somebody-do", "see-somebody-doing"],
+      "tags": [
+        "see-somebody-do",
+        "see-somebody-doing"
+      ],
       "fields": {
         "regle": "see/hear somebody do : l'action entière. see/hear somebody doing : on en saisit un moment."
       },
@@ -905,61 +3305,231 @@
         {
           "type": "produce",
           "prompt": "Traduis : « Je l'ai vu sortir de l'immeuble. » (toute l'action)",
-          "answerSpec": { "accepted": ["I saw him leave the building"] },
-          "hints": ["Action complète observée : see somebody + base verbale."]
+          "answerSpec": {
+            "accepted": [
+              "I saw him leave the building"
+            ]
+          },
+          "hints": [
+            "Action complète observée : see somebody + base verbale."
+          ]
         },
         {
           "type": "produce",
           "prompt": "Traduis : « Je l'ai entendue chanter dans la cuisine. » (au passage)",
-          "answerSpec": { "accepted": ["I heard her singing in the kitchen"] },
-          "hints": ["Un moment saisi : hear somebody + -ing."]
+          "answerSpec": {
+            "accepted": [
+              "I heard her singing in the kitchen"
+            ]
+          },
+          "hints": [
+            "Un moment saisi : hear somebody + -ing."
+          ]
         },
         {
           "type": "produce",
           "prompt": "Traduis : « Nous avons regardé le soleil se coucher. »",
-          "answerSpec": { "accepted": ["We watched the sun go down", "We watched the sun set"] },
-          "hints": ["Action suivie du début à la fin : base verbale."]
+          "answerSpec": {
+            "accepted": [
+              "We watched the sun go down",
+              "We watched the sun set"
+            ]
+          },
+          "hints": [
+            "Action suivie du début à la fin : base verbale."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "I saw her ___ the letter and put it in her bag. (read)",
-          "answerSpec": { "accepted": ["read"] },
-          "hints": ["Les deux actions sont vues en entier."]
+          "answerSpec": {
+            "accepted": [
+              "read"
+            ]
+          },
+          "hints": [
+            "Les deux actions sont vues en entier."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "As I passed, I heard someone ___ the piano. (play)",
-          "answerSpec": { "accepted": ["playing"] },
-          "hints": ["On saisit l'activité en cours : -ing."]
+          "answerSpec": {
+            "accepted": [
+              "playing"
+            ]
+          },
+          "hints": [
+            "On saisit l'activité en cours : -ing."
+          ]
         },
         {
           "type": "transform",
           "source": "Sonia was crossing the square. I noticed her.",
           "prompt": "Fais-en une phrase commençant par « I noticed Sonia ».",
-          "answerSpec": { "accepted": ["I noticed Sonia crossing the square"] },
-          "hints": ["Action en cours au moment de la perception : -ing."]
+          "answerSpec": {
+            "accepted": [
+              "I noticed Sonia crossing the square"
+            ]
+          },
+          "hints": [
+            "Action en cours au moment de la perception : -ing."
+          ]
         },
         {
           "type": "spot_error",
           "source": "I saw him to fall off his bike.",
           "prompt": "Corrige la phrase.",
-          "answerSpec": { "accepted": ["I saw him fall off his bike"] },
-          "hints": ["Après see somebody, pas de to."]
+          "answerSpec": {
+            "accepted": [
+              "I saw him fall off his bike"
+            ]
+          },
+          "hints": [
+            "Après see somebody, pas de to."
+          ]
         },
         {
           "type": "mcq",
           "prompt": "We heard the door ___ and then footsteps.",
-          "answerSpec": { "accepted": ["open"] },
-          "distractors": ["to open", "opened", "opens"],
-          "hints": ["Bruit unique et complet : base verbale."]
+          "answerSpec": {
+            "accepted": [
+              "open"
+            ]
+          },
+          "distractors": [
+            "to open",
+            "opened",
+            "opens"
+          ],
+          "hints": [
+            "Bruit unique et complet : base verbale."
+          ]
         }
       ]
     },
-
+    {
+      "id": "u067-b",
+      "topicId": "u067",
+      "tags": [
+        "see-somebody-do"
+      ],
+      "fields": {
+        "regle": "see somebody do : l'action entière. see somebody doing : l'action en cours, entrevue. Même règle pour hear et watch."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Je l'ai vu signer le contrat.",
+          "answerSpec": {
+            "accepted": [
+              "I saw him sign the contract"
+            ]
+          },
+          "hints": [
+            "Action entière : base nue."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Je l'ai vu qui traversait le pont.",
+          "answerSpec": {
+            "accepted": [
+              "I saw him crossing the bridge"
+            ]
+          },
+          "hints": [
+            "Action en cours : -ing."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Nous l'avons entendue présenter deux fois.",
+          "answerSpec": {
+            "accepted": [
+              "We heard her present twice"
+            ]
+          },
+          "hints": [
+            "Action entière."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "I watched the whole team ___ the room in silence. (leave)",
+          "answerSpec": {
+            "accepted": [
+              "leave"
+            ]
+          },
+          "hints": [
+            "Action entière."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "I heard somebody ___ in the breakout space. (argue)",
+          "answerSpec": {
+            "accepted": [
+              "arguing"
+            ]
+          },
+          "hints": [
+            "Action en cours."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "She was walking into the lift. I saw her.",
+          "answerSpec": {
+            "accepted": [
+              "I saw her walking into the lift"
+            ]
+          },
+          "source": "She was walking into the lift. I saw her.",
+          "hints": [
+            "Action en cours."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "I saw him to leave the building at six.",
+          "answerSpec": {
+            "accepted": [
+              "I saw him leave the building at six"
+            ]
+          },
+          "source": "I saw him to leave the building at six.",
+          "hints": [
+            "Pas de to après see."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "I heard the chief executive ___ the whole speech.",
+          "answerSpec": {
+            "accepted": [
+              "give"
+            ]
+          },
+          "hints": [
+            "Action entière."
+          ],
+          "distractors": [
+            "to give",
+            "giving of",
+            "gave"
+          ]
+        }
+      ]
+    },
     {
       "id": "u068-a",
       "topicId": "u068",
-      "tags": ["ing-clauses", "participe-present"],
+      "tags": [
+        "ing-clauses",
+        "participe-present"
+      ],
       "fields": {
         "regle": "Une proposition en -ing dit ce qui se passait en même temps, ou la cause : Feeling tired, she went to bed."
       },
@@ -967,53 +3537,221 @@
         {
           "type": "produce",
           "prompt": "Traduis : « Il s'est blessé au genou en jouant au foot. »",
-          "answerSpec": { "accepted": ["He hurt his knee playing football"] },
-          "hints": ["L'action simultanée se met en -ing, sans préposition."]
+          "answerSpec": {
+            "accepted": [
+              "He hurt his knee playing football"
+            ]
+          },
+          "hints": [
+            "L'action simultanée se met en -ing, sans préposition."
+          ]
         },
         {
           "type": "produce",
           "prompt": "Traduis : « Ne sachant pas quoi dire, je suis resté silencieux. »",
-          "answerSpec": { "accepted": ["Not knowing what to say, I stayed silent"] },
-          "hints": ["Une cause en tête de phrase : Not + -ing."]
+          "answerSpec": {
+            "accepted": [
+              "Not knowing what to say, I stayed silent"
+            ]
+          },
+          "hints": [
+            "Une cause en tête de phrase : Not + -ing."
+          ]
         },
         {
           "type": "produce",
           "prompt": "Traduis : « Ayant terminé ses examens, elle est partie en Grèce. »",
-          "answerSpec": { "accepted": ["Having finished her exams, she went to Greece"] },
-          "hints": ["Action antérieure : Having + participe passé."]
+          "answerSpec": {
+            "accepted": [
+              "Having finished her exams, she went to Greece"
+            ]
+          },
+          "hints": [
+            "Action antérieure : Having + participe passé."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "___ the noise, the baby woke up. (hear)",
-          "answerSpec": { "accepted": ["Hearing"] },
-          "hints": ["Cause immédiate exprimée en -ing."]
+          "answerSpec": {
+            "accepted": [
+              "Hearing"
+            ]
+          },
+          "hints": [
+            "Cause immédiate exprimée en -ing."
+          ]
         },
         {
           "type": "fill_blank",
           "prompt": "She sat by the window, ___ the rain. (watch)",
-          "answerSpec": { "accepted": ["watching"] },
-          "hints": ["Deux actions simultanées : la seconde en -ing."]
+          "answerSpec": {
+            "accepted": [
+              "watching"
+            ]
+          },
+          "hints": [
+            "Deux actions simultanées : la seconde en -ing."
+          ]
         },
         {
           "type": "transform",
           "source": "Because he lived far from the centre, Ismaël had to cycle.",
           "prompt": "Réécris le début avec une proposition en -ing.",
-          "answerSpec": { "accepted": ["Living far from the centre, Ismaël had to cycle", "Living far from the centre, Ismael had to cycle"] },
-          "hints": ["because he lived devient simplement living."]
+          "answerSpec": {
+            "accepted": [
+              "Living far from the centre, Ismaël had to cycle",
+              "Living far from the centre, Ismael had to cycle"
+            ]
+          },
+          "hints": [
+            "because he lived devient simplement living."
+          ]
         },
         {
           "type": "spot_error",
           "source": "Being tired, so I went to bed early.",
           "prompt": "Corrige la phrase.",
-          "answerSpec": { "accepted": ["Being tired, I went to bed early"] },
-          "hints": ["La proposition en -ing remplace déjà la conjonction."]
+          "answerSpec": {
+            "accepted": [
+              "Being tired, I went to bed early"
+            ]
+          },
+          "hints": [
+            "La proposition en -ing remplace déjà la conjonction."
+          ]
         },
         {
           "type": "mcq",
           "prompt": "___ the letter twice, she finally understood.",
-          "answerSpec": { "accepted": ["Having read"] },
-          "distractors": ["Reading", "Read", "Have read"],
-          "hints": ["Action achevée avant l'autre : Having + participe."]
+          "answerSpec": {
+            "accepted": [
+              "Having read"
+            ]
+          },
+          "distractors": [
+            "Reading",
+            "Read",
+            "Have read"
+          ],
+          "hints": [
+            "Action achevée avant l'autre : Having + participe."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u068-b",
+      "topicId": "u068",
+      "tags": [
+        "participiales-ing"
+      ],
+      "fields": {
+        "regle": "Une proposition en -ing raccourcit une subordonnée quand le sujet est le même : « He hurt his knee playing football. »"
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Il s'est fait mal au dos en soulevant les cartons.",
+          "answerSpec": {
+            "accepted": [
+              "He hurt his back lifting the boxes"
+            ]
+          },
+          "hints": [
+            "Simultanéité, même sujet."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Ne sachant pas quoi dire, elle s'est tue.",
+          "answerSpec": {
+            "accepted": [
+              "Not knowing what to say, she said nothing"
+            ]
+          },
+          "hints": [
+            "Négation avant le -ing."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Ayant relu le contrat, il a refusé de signer.",
+          "answerSpec": {
+            "accepted": [
+              "Having read the contract, he refused to sign"
+            ]
+          },
+          "hints": [
+            "Antériorité : having + participe."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "___ the noise, he moved to the breakout space. (hate)",
+          "answerSpec": {
+            "accepted": [
+              "Hating"
+            ]
+          },
+          "hints": [
+            "Cause, même sujet."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "___ finished the audit, they went to the pub. (have)",
+          "answerSpec": {
+            "accepted": [
+              "Having"
+            ]
+          },
+          "hints": [
+            "Antériorité."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "Because she felt unwell, she left early.",
+          "answerSpec": {
+            "accepted": [
+              "Feeling unwell, she left early"
+            ]
+          },
+          "source": "Because she felt unwell, she left early.",
+          "hints": [
+            "Cause en -ing."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "Having wrote the handover, he went on leave.",
+          "answerSpec": {
+            "accepted": [
+              "Having written the handover, he went on leave"
+            ]
+          },
+          "source": "Having wrote the handover, he went on leave.",
+          "hints": [
+            "Participe passé après having."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "___ the connector, he finally understood the failure.",
+          "answerSpec": {
+            "accepted": [
+              "Testing"
+            ]
+          },
+          "hints": [
+            "Simultanéité, même sujet."
+          ],
+          "distractors": [
+            "To test",
+            "Tested",
+            "For testing"
+          ]
         }
       ]
     }
