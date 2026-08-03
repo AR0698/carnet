@@ -33,25 +33,21 @@ body {
   gap: var(--space-5);
 }
 
-/* Les titres sont des affiches : capitales, condensées, serrées. Anton n'a
-   qu'une graisse — en demander une autre ferait fabriquer un faux gras, et une
-   condensée épaissie de force devient une bouillie. */
 h1,
 h2,
 h3 {
   font-family: var(--font-display);
-  font-weight: 400;
-  letter-spacing: var(--track-tight);
-  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: -0.015em;
   margin: 0;
-  line-height: 1.02;
+  line-height: 1.2;
 }
 
 h1 {
   font-size: var(--text-2xl);
 }
 h2 {
-  font-size: var(--text-xl);
+  font-size: var(--text-lg);
 }
 
 p {
@@ -62,64 +58,44 @@ p {
 
 .btn {
   font: inherit;
-  font-size: var(--text-sm);
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  border: var(--edge) solid transparent;
+  font-weight: 500;
+  border: 1px solid transparent;
   border-radius: var(--radius-control);
   padding: var(--space-3) var(--space-5);
   cursor: pointer;
   transition:
     background-color var(--dur-fast) var(--ease),
-    border-color var(--dur-fast) var(--ease),
-    color var(--dur-fast) var(--ease);
+    border-color var(--dur-fast) var(--ease);
 }
 
-/* Le liseré de focus dit quelque chose, donc il prend une couleur qui a un
-   rôle. `--misprint` reste au décor : un défaut d'impression ne signale rien. */
 .btn:focus-visible {
-  outline: var(--offset) solid var(--harbour);
+  outline: 2px solid var(--harbour);
   outline-offset: 2px;
 }
 
-/* Le geste principal est un rectangle d'encre, pas un galet coloré — et la
-   seconde encre déborde derrière lui. Enfoncé, le bouton vient se poser
-   exactement dessus : le décalage se referme, l'affiche est calée. */
 .btn--primary {
-  background: var(--ink);
-  color: var(--on-solid);
-  border-color: var(--ink);
-  box-shadow: var(--offset) var(--offset) 0 var(--misprint);
+  background: var(--harbour);
+  color: var(--card);
 }
 
 .btn--primary:hover {
-  background: var(--harbour);
-  border-color: var(--harbour);
-}
-
-.btn--primary:active {
-  box-shadow: none;
-  transform: translate(var(--offset), var(--offset));
+  background: color-mix(in srgb, var(--harbour) 88%, var(--ink));
 }
 
 .btn--quiet {
   background: transparent;
-  color: var(--ink);
-  border-color: var(--rule);
+  color: var(--ink-soft);
+  border-color: var(--border-soft);
 }
 
-/* L'inversion plutôt que le fond gris : c'est ce que fait une affiche. */
 .btn--quiet:hover {
-  background: var(--ink);
-  color: var(--on-solid);
-  border-color: var(--ink);
+  background: var(--card);
+  color: var(--ink);
 }
 
-/* Le lien n'est pas une affiche : il reste en bas de casse, et se lit.
-   Sa zone tactile, elle, ne se lit pas — et c'est bien le problème. Mesuré sur
-   l'accueil, ce bouton faisait 23 px de haut alors que « Par où commencer »,
-   « Voir mes mots », « Où ça coince » et « Sauvegarder mes données » ne sont
+/* Le lien se lit ; sa zone tactile, elle, ne se lit pas — et c'est bien le
+   problème. Mesuré sur l'accueil, ce bouton faisait 23 px de haut alors que
+   « Par où commencer », « Où ça coince » et « Sauvegarder mes données » ne sont
    atteignables que par lui. Le `inline-flex` porte la cible à 44 px sans
    déplacer d'un pixel le texte ni son soulignement. */
 .btn--link {
@@ -131,11 +107,7 @@ p {
   align-items: center;
   color: var(--harbour);
   font-size: var(--text-sm);
-  font-weight: 500;
-  letter-spacing: normal;
-  text-transform: none;
   text-decoration: underline;
-  text-decoration-thickness: 2px;
   text-underline-offset: 3px;
 }
 
@@ -146,11 +118,9 @@ p {
 
 /* ---------- carte ---------- */
 
-/* Une feuille collée sur le béton : un bord franc, et la seconde encre qui
-   dépasse en bas à droite. */
 .card {
   background: var(--card);
-  border: var(--edge) solid var(--rule);
+  border: 1px solid var(--border-soft);
   border-radius: var(--radius-card);
   box-shadow: var(--shadow-card);
   padding: var(--space-5);
@@ -186,16 +156,13 @@ p {
 
 .stat b {
   font-family: var(--font-display);
-  font-size: var(--text-2xl);
-  font-weight: 400;
-  letter-spacing: var(--track-tight);
-  line-height: 0.9;
+  font-size: var(--text-xl);
+  font-weight: 600;
+  line-height: 1;
 }
 
 .stat span {
   font-size: var(--text-xs);
-  letter-spacing: var(--track-stencil);
-  text-transform: uppercase;
   color: var(--ink-soft);
 }
 
@@ -272,7 +239,7 @@ p {
 /* ---------- encarts PWA ---------- */
 
 .pwa-note {
-  border: var(--edge) dashed var(--rule);
+  border: 1px dashed var(--border-soft);
   border-radius: var(--radius-card);
   padding: var(--space-4) var(--space-5);
   display: flex;
@@ -309,24 +276,22 @@ p {
 
 .progress {
   flex: 1;
-  height: 6px;
-  background: transparent;
-  border: var(--edge) solid var(--rule);
+  height: 3px;
+  background: var(--border-soft);
+  border-radius: var(--radius-pill);
   overflow: hidden;
 }
 
 .progress i {
   display: block;
   height: 100%;
-  background: var(--ink);
+  background: var(--harbour);
   transition: width var(--dur) var(--ease);
 }
 
-/* La mention au pochoir : petite, très espacée, jamais en bas de casse. */
 .topic-label {
   font-size: var(--text-xs);
-  letter-spacing: var(--track-stencil);
-  font-weight: 600;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--ink-faint);
 }
@@ -359,7 +324,7 @@ p {
   font-family: var(--font-body);
   color: var(--ink);
   background: var(--paper);
-  border: var(--edge) solid var(--rule);
+  border: 1px solid var(--border-soft);
   border-radius: var(--radius-control);
   padding: var(--space-3);
   width: 100%;
@@ -408,8 +373,7 @@ p {
 
 .ex-source__label {
   font-size: var(--text-xs);
-  letter-spacing: var(--track-stencil);
-  font-weight: 600;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--ink-faint);
 }
@@ -444,7 +408,7 @@ p {
   text-align: left;
   background: var(--paper);
   color: var(--ink);
-  border: var(--edge) solid var(--rule);
+  border: 1px solid var(--border-soft);
   border-radius: var(--radius-control);
   padding: var(--space-3) var(--space-4);
   cursor: pointer;
@@ -480,7 +444,7 @@ p {
 
 /* La carte porte la marge d'un vrai cahier : un trait à gauche, rien de plus. */
 .card--paper {
-  border-left: var(--offset) solid var(--misprint);
+  border-left: 2px solid color-mix(in srgb, var(--brick) 35%, var(--card));
 }
 
 /* Le trou reste un trou : on n'écrit pas dedans, on le recopie. */
@@ -520,8 +484,7 @@ p {
 
 .reveal__label {
   font-size: var(--text-xs);
-  letter-spacing: var(--track-stencil);
-  font-weight: 600;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--ink-faint);
 }
@@ -555,11 +518,11 @@ p {
 
 .judge__btn {
   flex: 1;
-  font-size: var(--text-xs);
+  font-size: var(--text-sm);
   padding: var(--space-3) var(--space-2);
   background: var(--paper);
   color: var(--ink);
-  border-color: var(--rule);
+  border-color: var(--border-soft);
 }
 
 .judge__btn--easy:hover {
@@ -642,8 +605,7 @@ p {
 
 .diff__label {
   font-size: var(--text-xs);
-  letter-spacing: var(--track-stencil);
-  font-weight: 600;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--ink-faint);
 }
@@ -671,7 +633,7 @@ p {
 
 .why {
   background: var(--card);
-  border-left: var(--offset) solid var(--harbour);
+  border-left: 3px solid var(--harbour);
   border-radius: 0 var(--radius-control) var(--radius-control) 0;
   padding: var(--space-3) var(--space-4);
   color: var(--ink);
@@ -697,12 +659,11 @@ p {
   flex-wrap: wrap;
 }
 
-/* Des carrés, pas des pastilles : une case de calendrier tamponnée. */
 .dot {
-  width: 12px;
-  height: 12px;
-  border: var(--edge) solid var(--rule);
-  background: transparent;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--border-soft);
 }
 
 .dot--on {
@@ -715,17 +676,17 @@ p {
 }
 
 .error {
-  border-left: var(--offset) solid var(--brick);
+  border-left: 3px solid var(--brick);
   padding-left: var(--space-4);
   white-space: pre-wrap;
   font-size: var(--text-sm);
 }
 
-/* ---------- grain du béton ----------
-   Le fond n'est pas une surface d'écran : c'est du papier journal collé sur un
-   mur. Le bruit est produit par un `feTurbulence` en SVG incorporé — aucune
-   image, quelques centaines d'octets, et ça ne s'imprime pas sur les pixels du
-   texte puisque la couche est au-dessous. */
+/* ---------- grain du papier ----------
+   Une texture, pas un quadrillage : ce n'est plus un cahier d'écolier français
+   mais du papier aquarelle. Le bruit est produit par un `feTurbulence` en SVG
+   incorporé — aucune image, quelques centaines d'octets, et ça ne s'imprime pas
+   sur les pixels du texte puisque la couche est au-dessous. */
 
 body::before {
   content: '';
@@ -737,7 +698,7 @@ body::before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.86' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23g)' opacity='0.05'/%3E%3C/svg%3E");
 }
 
-/* Les filtres de pochoir vivent dans un SVG sans surface, planté en tête de
+/* Les filtres d'aquarelle vivent dans un SVG sans surface, planté en tête de
    document : il ne doit rien occuper ni rien intercepter. */
 .gtb-defs {
   position: absolute;
@@ -752,32 +713,29 @@ body::before {
   gap: var(--space-3);
 }
 
-/* L'affiche mord sur les marges du conteneur : une affiche encadrée de blanc
-   n'est plus une affiche, c'est une vignette. */
+/* L'illustration mord sur les marges du conteneur : une aquarelle encadrée de
+   blanc n'est plus une aquarelle, c'est une vignette. */
 .gtb-banner {
-  margin: calc(var(--space-5) * -1) calc(var(--space-4) * -1) var(--space-3);
+  margin: calc(var(--space-5) * -1) calc(var(--space-4) * -1) var(--space-2);
+  border-bottom: 1px solid var(--border-soft);
   background: var(--paper);
 }
 
 .gtb-banner__svg {
   display: block;
   width: 100%;
-  height: clamp(132px, 33vw, 196px);
+  height: clamp(152px, 38vw, 222px);
 }
 
-/* Le titre est tiré deux fois : l'encre, et la passe mal calée dessous. C'est
-   la signature de toute la direction artistique, et elle vit ici. */
 .masthead--hero h1 {
   font-size: var(--text-3xl);
-  line-height: 0.92;
-  text-shadow: var(--offset) var(--offset) 0 var(--misprint);
+  letter-spacing: -0.03em;
 }
 
-/* La signature du dessin : au feutre, pas composée. */
+/* La signature du dessin : écrite à la main, pas composée. */
 .masthead--hero .sub {
   font-family: var(--font-hand);
   font-size: var(--text-base);
-  line-height: 1.35;
   color: var(--ink-soft);
 }
 
@@ -795,17 +753,16 @@ body::before {
   margin-top: var(--space-1);
 }
 
-/* Le dessin est plus haut que large depuis qu'il porte sa seconde encre :
-   c'est la largeur qui est fixée, la hauteur suit. */
 .gtb-glyph {
   flex: none;
   width: 2.5rem;
+  height: 2.5rem;
 }
 
 .gtb-glyph svg {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .carnet__links {
@@ -882,8 +839,7 @@ body::before {
 
 .btn--danger-solid {
   background: var(--brick);
-  color: var(--on-solid);
-  border-color: var(--brick);
+  color: var(--card);
 }
 
 .btn--danger-solid:hover {
@@ -904,7 +860,7 @@ body::before {
 
 .vocab-item {
   background: var(--card);
-  border: var(--edge) solid var(--rule);
+  border: 1px solid var(--border-soft);
   border-radius: var(--radius-card);
   box-shadow: var(--shadow-card);
   padding: var(--space-4) var(--space-5);
@@ -956,13 +912,9 @@ body::before {
   padding-top: var(--space-1);
 }
 
-/* Une étiquette tamponnée, pas une pastille : coupée droit, en capitales. */
 .chip {
   flex: none;
   font-size: var(--text-xs);
-  font-weight: 600;
-  letter-spacing: var(--track-stencil);
-  text-transform: uppercase;
   border-radius: var(--radius-pill);
   padding: 2px var(--space-3);
   white-space: nowrap;
@@ -1004,35 +956,43 @@ body::before {
 
 .passage__label {
   font-size: var(--text-xs);
-  letter-spacing: var(--track-stencil);
-  font-weight: 600;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--ink-faint);
 }
 
 /* ---------- mouvement ----------
-   Deux gestes, empruntés à l'atelier et à rien d'autre : le passage de
-   raclette — la carte se découvre d'un bord à l'autre, sans fondu — et la
-   dérive des ballons. Aucun glissement d'interface. Sous
-   `prefers-reduced-motion`, les durées tombent à zéro dans `tokens.css` et il
-   ne reste que l'état d'arrivée.
+   Trois gestes, tous empruntés au dessin : le lavis qui se diffuse, le trait
+   qui se trace, les ballons qui dérivent. Rien de générique, aucun glissement
+   d'interface. Sous `prefers-reduced-motion`, les durées tombent à zéro dans
+   `tokens.css` et il ne reste que l'état d'arrivée. */
 
-   Le débord négatif du `clip-path` n'est pas cosmétique : l'état d'arrivée
-   d'une animation `both` reste appliqué pour de bon, et un `inset(0 0 0 0)`
-   rognerait définitivement la seconde encre décalée sous la carte. */
-
-@keyframes gtb-pull {
+@keyframes gtb-wash-in {
   from {
-    clip-path: inset(0 100% calc(var(--offset) * -2) 0);
+    opacity: 0;
+    clip-path: inset(0 0 12% 0 round var(--radius-card));
   }
   to {
-    clip-path: inset(0 calc(var(--offset) * -2) calc(var(--offset) * -2) 0);
+    opacity: 1;
+    clip-path: inset(0 0 0 0 round var(--radius-card));
   }
 }
 
 .card,
 .vocab-item {
-  animation: gtb-pull var(--dur-cut) var(--ease-cut) both;
+  animation: gtb-wash-in var(--dur-wash) var(--ease-wash) both;
+}
+
+@keyframes gtb-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.gtb-draw {
+  stroke-dasharray: 460;
+  stroke-dashoffset: 460;
+  animation: gtb-draw calc(var(--dur-wash) * 2.4) var(--ease-wash) forwards;
 }
 
 @keyframes gtb-drift {
@@ -1106,6 +1066,7 @@ body::before {
 
 .carnet--quiet .gtb-glyph {
   width: 2rem;
+  height: 2rem;
   opacity: 0.65;
 }
 
@@ -1121,4 +1082,123 @@ body::before {
 .card > .toggle:first-child {
   border-top: none;
   padding-top: 0;
+}
+
+/* ---------- compte à rebours ----------
+   Une application de répétition espacée n'a pas de fin : elle propose ce qui est
+   dû, chaque jour, indéfiniment. C'est honnête et c'est démoralisant. Le départ,
+   lui, a une date — et c'est la seule chose de cet écran qui avance toute seule.
+   D'où le lavis vert d'eau plutôt qu'une carte blanche : c'est une étiquette de
+   bagage collée en tête du carnet, pas une notification. */
+
+.countdown {
+  background: var(--wash);
+  border: 1px solid color-mix(in srgb, var(--park) 22%, var(--wash));
+  border-radius: var(--radius-card);
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.countdown__head {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-3);
+}
+
+/* Le nombre est le sujet de la carte : il a la taille d'un titre, pas d'un
+   chiffre de statistique. */
+.countdown__days {
+  font-family: var(--font-display);
+  font-size: var(--text-3xl);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 0.95;
+  color: var(--ink);
+}
+
+/* Écrit à la main, comme les légendes de l'aquarelle. */
+.countdown__label {
+  font-family: var(--font-hand);
+  font-size: var(--text-lg);
+  line-height: 1.15;
+  color: var(--ink-soft);
+}
+
+.countdown__bar {
+  height: 6px;
+  background: color-mix(in srgb, var(--ink) 10%, var(--wash));
+  border-radius: var(--radius-pill);
+  overflow: hidden;
+}
+
+.countdown__bar i {
+  display: block;
+  height: 100%;
+  background: var(--park);
+  border-radius: var(--radius-pill);
+  transition: width var(--dur-wash) var(--ease-wash);
+}
+
+.countdown__line {
+  font-size: var(--text-sm);
+  line-height: 1.5;
+  color: var(--ink);
+}
+
+.countdown__meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+  font-size: var(--text-xs);
+  color: var(--ink-soft);
+}
+
+/* Le jour est arrivé : le lavis passe au jaune des montgolfières, et le
+   compteur cesse de compter. */
+.countdown--arrived {
+  background: var(--balloon);
+  border-color: color-mix(in srgb, var(--balloon-text) 25%, var(--balloon));
+}
+
+.countdown--arrived .countdown__label,
+.countdown--arrived .countdown__line,
+.countdown--arrived .countdown__meta {
+  color: var(--balloon-text);
+}
+
+/* Le réglage de la date reste replié : on ne change pas son billet chaque jour.
+   La règle `[hidden]` est indispensable — `display: flex` bat la feuille de
+   style du navigateur, et le formulaire resterait visible malgré l'attribut. */
+.countdown__form {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+  padding-top: var(--space-3);
+  border-top: 1px solid color-mix(in srgb, var(--ink) 12%, transparent);
+}
+
+.countdown__form[hidden] {
+  display: none;
+}
+
+.countdown__date {
+  font: inherit;
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-control);
+  padding: var(--space-2) var(--space-3);
+  min-height: 44px;
+}
+
+.countdown__date:focus {
+  outline: none;
+  border-color: var(--harbour);
+  box-shadow: 0 0 0 3px var(--harbour-soft);
 }

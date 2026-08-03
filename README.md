@@ -61,6 +61,42 @@ vide, la date du prochain rendez-vous. L'application n'envoie pas de
 notification — il faut l'ouvrir. Une carte en retard n'est jamais perdue : elle
 remonte en tête dès l'ouverture suivante.
 
+## Le compte à rebours
+
+Une application de répétition espacée n'a pas de fin : elle propose ce qui est
+dû, chaque jour, indéfiniment. C'est honnête, et c'est démoralisant. Le départ,
+lui, a une date — et c'est la seule chose de l'accueil qui avance toute seule.
+
+La carte en tête d'écran dit trois choses, et pas une de plus :
+
+- **combien de jours il reste**, en gros, avec la part du chemin déjà faite ;
+- **ce qu'il reste à ouvrir dedans** : les cartes encore fermées, divisées par
+  les jours qui restent. « Il reste 1 223 cartes à ouvrir et 365 jours pour le
+  faire : 4 par jour suffisent » ;
+- **si le compte tombe juste.** Quand le rythme nécessaire dépasse le plafond de
+  dix nouveautés par carnet et par jour, la carte le dit : la date tiendra, le
+  programme entier non, et c'est l'ordre d'ouverture qui décidera de ce qu'on
+  saura. C'est le seul endroit de l'application qui puisse contredire
+  l'apprenante, et c'est pour ça qu'il existe.
+
+La date est **modifiable** — personne ne part exactement un an après avoir
+installé une application. À défaut, le compteur s'arme au premier lancement pour
+365 jours, parce qu'un compteur qui attend d'être réglé à la main ne démarre
+jamais.
+
+Deux détails qui auraient faussé le compte :
+
+- **On compte des jours, pas des heures.** Deux fois par an, le passage à
+  l'heure d'été fait qu'un « jour » dure 23 ou 25 heures ; une division sèche
+  rendrait 364,96 et le compteur perdrait un jour un matin de mars, sans raison
+  visible. `daysBetween` arrondit, et compare des minuits locaux.
+- **Les dates traversent le `kv` en texte.** Le `kv` est exporté et réimporté
+  tel quel par la sauvegarde, sans réveil des dates : une `Date` y partirait en
+  texte et reviendrait en texte, sans que rien ne le signale. On stocke donc
+  deux chaînes ISO, et `parseDateInput` relit la valeur du champ comme une date
+  **locale** — `new Date('2027-08-03')` serait lue en UTC et reculerait d'un
+  jour à l'ouest de Greenwich.
+
 ## Discovery — le carnet qu'on écrit soi-même
 
 Un bouton **J'ai un mot à ajouter**, atteignable depuis l'accueil. Deux champs
@@ -267,70 +303,69 @@ Tout tient dans `src/ui/tokens.css` : c'est la seule source des couleurs et des
 rythmes, et aucune valeur brute ne figure ailleurs dans les feuilles de style ni
 dans les illustrations.
 
-**Le registre est celui de l'affiche sérigraphiée, pas du carnet de voyage.**
-Bristol ne s'est pas fabriqué une image en peignant des aquarelles : elle l'a
-fabriquée en collant des affiches sur les palissades de Stokes Croft, en tirant
-des pochettes de sound system et en peignant des murs la nuit. Une aquarelle
-raconte la ville vue par un visiteur ; une affiche collée raconte la ville qui
-parle d'elle-même. Massive Attack, Roni Size, les murs de Stokes Croft : c'est
-de là que vient tout ce qui suit.
+La palette est relevée sur l'aquarelle de couverture et sur les photos du
+voyage — papier grainé et encre brune du dessin, bleu pétrole du port, jaune des
+montgolfières, brique de Stokes Croft, vert des parcs. Les noms disent le rôle
+et l'origine : `--harbour` porte les actions, `--brick` les erreurs, `--park`
+les réussites, `--balloon` les mises en garde.
 
-Quatre partis pris, et ils décident du reste :
+Les teintes d'illustration sont relevées une par une sur le dessin, et ne
+servent qu'à lui : les fuseaux prune et bleu nuit des ballons, l'ocre des
+pylônes et l'ambre des câbles, et la rangée de maisons — orange, sarcelle, rose,
+jaune. Une rangée de quatre maisons de la même couleur ne serait pas
+Cliftonwood, ce serait un lotissement.
 
-| Parti pris | Ce que ça donne |
-| --- | --- |
-| **Deux encres, pas un dégradé** | Une sérigraphie tire une couleur après l'autre : aplats plats, bords nets, aucune teinte qui se fond dans une autre. |
-| **Le noir porte l'action** | Le bouton principal est un rectangle d'encre, pas un galet coloré. Le contraste fait le travail, la couleur reste un accident. |
-| **Le décalage se voit** | `--misprint` est la seconde encre mal calée. Elle déborde d'un millimètre sous les cartes, sous le titre, sous chaque silhouette. C'est un défaut d'impression, et c'est ce qui distingue une affiche tirée à la main d'un aplat d'écran. |
-| **Rien n'est arrondi** | Un angle à seize pixels est une convention d'interface. Le papier est coupé droit : deux pixels, pas seize. |
+Les illustrations (`src/ui/art.ts`) sont **vectorielles et originales**, écrites
+dans le registre de l'aquarelle : lavis qui bavent — un `feTurbulence` déplacé,
+seul moyen honnête d'obtenir un bord de pinceau sans texture bitmap — et trait
+d'encre par-dessus. Elles pèsent quelques kilo-octets, restent nettes à toutes
+les tailles et fonctionnent en mode avion. Une photo nette à côté d'une
+aquarelle, l'un des deux perd toujours.
 
-La palette vient du béton du Bearpit et du papier journal, de l'encre de bombe,
-de la brique de Stokes Croft, du bleu dub, du jaune de pochoir. Les noms disent
-le rôle **et** l'origine : `--harbour` porte les liens et la progression,
-`--brick` les erreurs, `--park` les réussites, `--balloon` les mises en garde.
-`--misprint` n'habille aucun contrôle : un défaut d'impression ne signale rien,
-il décore — la règle vaut dans les deux sens, et c'est pourquoi le liseré de
-focus est bleu et non rouge.
+Trois choses que le dessin a apprises en cours de route, et qu'un aplat unique
+perdrait :
 
-**Le tirage de nuit.** `prefers-color-scheme: dark` ne déclenche pas un « mode
-sombre » d'interface mais l'autre tirage de la même affiche : encres claires sur
-papier noir. Les rôles ne bougent pas, seules les valeurs s'inversent — et
-comme les aplats pleins deviennent clairs, le texte qu'ils portent devient
-sombre. C'est tout le travail de `--on-solid`, qui existe pour cette seule
-raison.
+- **Le papier reste nu.** Un grand lavis de ciel et deux aplats de sol rendaient
+  toute la bannière terne. Sur l'aquarelle de couverture, c'est le blanc du
+  papier qui fait chanter les couleurs ; il ne reste donc qu'un lavis d'herbe,
+  juste sous les maisons.
+- **Les fuseaux sont de vraies bandes**, détourées par l'enveloppe du ballon.
+  La même forme rétrécie donne une lentille centrale, jamais les quartiers d'un
+  ballon — et chaque `clipPath` porte son index, sans quoi les trois ballons
+  partageraient le premier détourage.
+- **L'ordre fait la profondeur.** Le pont d'abord, la rangée de maisons
+  par-dessus. Dessinée avant, la plus haute se faisait trancher le toit par le
+  tablier : deux plans à la même distance, et le dessin s'aplatit.
 
-Les illustrations (`src/ui/art.ts`) sont **vectorielles et originales**, et
-empruntent trois procédés à l'impression : le **décalage** (chaque silhouette
-est tirée deux fois, la passe de `--misprint` puis celle d'encre), le
-**crachotis** d'une bombe autour du pochoir (`feTurbulence` seuillé en alpha —
-seul moyen honnête d'obtenir cette poussière sans texture bitmap), et la
-**trame** de demi-ton du ciel. Elles pèsent quelques kilo-octets, restent nettes
-à toutes les tailles et fonctionnent en mode avion.
+Le mouvement reprend les mêmes codes, et rien d'autre : le lavis qui se diffuse à
+l'apparition d'une carte, le câble du pont qui se trace, les montgolfières qui
+dérivent. Aucune durée n'est écrite en dur — toutes viennent des tokens, si bien
+que `prefers-reduced-motion` les met à zéro d'un seul endroit.
 
-Le mouvement reprend les mêmes codes, et rien d'autre : le passage de raclette
-qui découvre une carte d'un bord à l'autre, sans fondu, et la dérive des
-ballons. Aucune durée n'est écrite en dur — toutes viennent des tokens, si bien
-que `prefers-reduced-motion` les met à zéro d'un seul endroit. Un détail qui
-compte : le `clip-path` de la raclette arrive sur un débord **négatif**. L'état
-final d'une animation `both` reste appliqué pour de bon, et un `inset(0 0 0 0)`
-rognerait définitivement la seconde encre décalée sous la carte.
-
-Les polices (Anton, Inter, Permanent Marker) sont auto-hébergées en
-sous-ensemble latin uniquement, et chacune a un emploi qui n'est pas
-interchangeable : **Anton** pour les titres — la condensée grasse des affiches
-collées, employée en capitales et jamais en petit ; **Inter** pour lire, la
-seule surface de l'écran qui ne doit pas avoir d'avis ; **Permanent Marker**
-pour ce qui est écrit à la main — les mots du carnet personnel, la signature du
-dessin : un feutre, pas une plume. Les paquets `@fontsource` livrent aussi le
+Les polices (Bricolage Grotesque, Inter, Kalam) sont auto-hébergées en
+sous-ensemble latin uniquement. Les paquets `@fontsource` livrent aussi le
 cyrillique, le grec et le vietnamien : importer leur feuille complète ferait
 entrer une douzaine de `.woff2` dans le précache pour des alphabets qu'aucun
 carnet n'écrira. Les faces sont donc déclarées à la main dans
 `src/ui/fonts.css`.
 
-Les icônes de l'application sont produites par `scripts/make-icons.mjs`, qui
-tire le même pochoir en deux passes — la montgolfière en encre, décalée d'une
-passe rouge. La palette y est recopiée à la main : si `tokens.css` change, ces
-quatre constantes changent aussi.
+### Ce que la mesure a corrigé
+
+Les deux niveaux d'encre atténuée et le vert des réussites étaient réglés à
+l'œil. Mesurés, ils ne passaient pas :
+
+| Ce qui était réglé à l'œil | Mesuré | Corrigé à |
+| --- | --- | --- |
+| `--ink-faint` à 38 %, sous les mentions en petites capitales posées sur un aplat teinté | **2,2:1** | 68 % → 4,9:1 |
+| `--ink-soft` à 62 %, sur un aplat teinté | 4,1:1 | 78 % → 6,2:1 |
+| `--park` #5c8a3f, pour le mot manquant d'une correction | 4,1:1 | #517a37 → 5,0:1 |
+
+La hiérarchie ne se fait donc pas en délavant le texte mais par la casse et le
+corps. Trois zones tactiles étaient également sous le minimum de 44 px : les
+liens de l'accueil (23 px — et ce sont les seuls accès à *Par où commencer*, *Où
+ça coince* et *Sauvegarder mes données*), le dépliant *Comment ça tient en
+mémoire* (39 px), et le champ du texte à trou (37 px), qui est pourtant la
+saisie la plus fréquente de l'application.
 
 ## Démarrer
 
@@ -366,6 +401,7 @@ src/
     session.ts          composition de la session, quota de nouveautés, persistance
     exercises/          un fichier par type d'exercice + registre
   storage/
+    countdown.ts        le compte à rebours : jours restants, date de départ
     db.ts               schéma Dexie versionné (cards / reviews / kv / vocab)
     cards.ts            synchronisation pack → cartes, requêtes de sélection
     vocab.ts            carnet Discovery : stockage et vue « pack »
@@ -474,7 +510,7 @@ Deux stratégies de cache, volontairement distinctes :
 
 - **coquille de l'application** (HTML, JS, CSS, polices, icônes) : précachée,
   servie cache-first. C'est ce qui permet d'ouvrir l'application en mode avion.
-  312 Ko, dont 96 Ko de polices.
+  334 Ko, dont 112 Ko de polices.
 - **packs de contenu** (`/packs/*.json`) : stale-while-revalidate, dans un cache
   séparé (`carnet-packs`). Corriger une phrase d'exercice n'invalide donc pas
   tout le cache de l'application, et inversement.
@@ -551,9 +587,10 @@ le signale et la progression reste intacte.
 | 11. Vocabulaire thématique — 11 registres, 88 expressions | fait |
 | 12. Ordre de découverte choisi par groupe | fait |
 | 13. Module Workplace — 7 registres, 56 expressions | fait |
-| 14. Série hebdomadaire | à faire |
+| 14. Compte à rebours — jours restants, cartes restantes, rythme exigé | fait |
+| 15. Série hebdomadaire | à faire |
 
-Aucune image n'est embarquée et il n'est plus prévu d'en embarquer : toutes les
-illustrations sont des dessins vectoriels originaux, écrits dans le registre de
-la sérigraphie. Une photo posée à côté d'un pochoir, l'un des deux perd
-toujours.
+Un point reste ouvert côté image : l'aquarelle de couverture, signée Zayane,
+n'est pas embarquée — les illustrations sont des dessins vectoriels originaux
+écrits dans son registre. L'intégrer supposerait son accord et un scan à plat.
+Les photos du voyage ont nourri la palette sans être affichées.

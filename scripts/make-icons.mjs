@@ -22,9 +22,10 @@ import { fileURLToPath } from 'node:url';
 
 const OUT_DIR = join(dirname(fileURLToPath(import.meta.url)), '..', 'public', 'icons');
 
-const PAPER = [0xe7, 0xe3, 0xda];
-const INK = [0x14, 0x12, 0x10];
-const MISPRINT = [0xd9, 0x3b, 0x2b];
+const PAPER = [0xfb, 0xf8, 0xf1];
+const TERRACOTTA = [0xcd, 0x6b, 0x41];
+const AMBER = [0xf0, 0xb6, 0x2c];
+const INK = [0x2b, 0x25, 0x21];
 
 /** Motif de référence, exprimé dans un carré de 512. */
 const DESIGN = 512;
@@ -32,46 +33,47 @@ const DESIGN = 512;
 /** Suréchantillonnage : 4 × 4 suffit à effacer l'escalier des courbes. */
 const SS = 4;
 
-/** Décalage de la seconde encre, dans le carré de référence. */
-const OFFSET = 17;
-
 /**
  * L'enveloppe est une ellipse prolongée par un triangle : gonflée en haut, elle
- * retombe en goutte vers la nacelle.
- *
- * Un seul niveau, aucun fuseau clair : c'est un pochoir, et un pochoir ne
- * connaît que le plein et le vide.
+ * retombe en goutte vers la nacelle. Le fuseau clair reprend la même
+ * construction, en plus étroit.
  */
-const stencil = (color, d = 0) => [
+const SHAPES = [
   // Pas d'horizon : le motif maskable est réduit vers le centre, et une bande
-  // de sol s'y retrouverait à flotter au milieu du vide.
+  // de sol s'y retrouverait à flotter au milieu du vide. Sur l'aquarelle aussi
+  // les ballons sont posés sur le papier nu.
 
   // enveloppe
-  { kind: 'ellipse', cx: 256 + d, cy: 206 + d, rx: 116, ry: 128, color },
+  { kind: 'ellipse', cx: 256, cy: 206, rx: 116, ry: 128, color: TERRACOTTA },
   // Le triangle part de la largeur exacte de l'ellipse à cette hauteur (± 109),
   // sans quoi un ressaut apparaît à la jonction des deux formes.
   {
     kind: 'polygon',
     points: [
-      [147 + d, 250 + d],
-      [365 + d, 250 + d],
-      [256 + d, 362 + d],
+      [147, 250],
+      [365, 250],
+      [256, 362],
     ],
-    color,
+    color: TERRACOTTA,
+  },
+
+  // fuseau clair, au centre
+  { kind: 'ellipse', cx: 256, cy: 206, rx: 33, ry: 128, color: AMBER },
+  {
+    kind: 'polygon',
+    points: [
+      [224, 250],
+      [288, 250],
+      [256, 360],
+    ],
+    color: AMBER,
   },
 
   // suspentes et nacelle
-  { kind: 'rect', x: 216 + d, y: 352 + d, w: 7, h: 36, color },
-  { kind: 'rect', x: 289 + d, y: 352 + d, w: 7, h: 36, color },
-  { kind: 'rect', x: 210 + d, y: 386 + d, w: 92, h: 46, color },
+  { kind: 'rect', x: 216, y: 352, w: 7, h: 36, color: INK },
+  { kind: 'rect', x: 289, y: 352, w: 7, h: 36, color: INK },
+  { kind: 'rect', x: 210, y: 386, w: 92, h: 46, color: INK },
 ];
-
-/**
- * Deux passes, comme sur l'affiche : la seconde encre d'abord, mal calée, puis
- * l'encre par-dessus. Les formes tardives recouvrent les premières — c'est ce
- * qui laisse dépasser un liseré rouge en bas à droite, et rien ailleurs.
- */
-const SHAPES = [...stencil(MISPRINT, OFFSET), ...stencil(INK)];
 
 function insideRect(s, x, y) {
   return x >= s.x && x < s.x + s.w && y >= s.y && y < s.y + s.h;
