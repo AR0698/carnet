@@ -1,7 +1,15 @@
 import type { Carnet } from '../../carnets';
 import { formatDelay } from '../../engine/scheduler';
-import { remainingNewQuota } from '../../engine/session';
+import { MAX_NEW_PER_DAY, remainingNewQuota } from '../../engine/session';
 import { countAll, nextDueDate, type PackCounts } from '../../storage/cards';
+import {
+  dateInputValue,
+  loadCountdown,
+  longDate,
+  parseDateInput,
+  setTarget,
+  type Countdown,
+} from '../../storage/countdown';
 import { loadPrefs, savePrefs } from '../../storage/prefs';
 import { GRAMMAR_PACK_ID, VOCAB_PACK_ID, VOCABULARY_PACK_ID } from '../../carnets';
 import { bristolBanner, carnetGlyph } from '../art';
@@ -98,11 +106,95 @@ function restNotice(state: CarnetState): string {
   return 'Rien à revoir pour l’instant. Les cartes remonteront d’elles-mêmes.';
 }
 
+/**
+ * Le compte à rebours — la seule chose de cet écran qui avance toute seule.
+ *
+ * Une application de répétition espacée n'a pas de fin : elle propose ce qui est
+ * dû, chaque jour, indéfiniment. C'est honnête, et c'est démoralisant. Le
+ * départ, lui, a une date, et la donner rend visible ce que l'espacement rend
+ * invisible.
+ *
+ * La carte dit trois choses et pas une de plus : combien de jours il reste, ce
+ * qu'il reste à ouvrir dedans, et si le compte tombe juste. Ce dernier point est
+ * le seul qui puisse contredire l'apprenante — et c'est pour lui qu'elle existe.
+ */
+function countdownCard(
+  countdown: Countdown,
+  fresh: number,
+  carnets: number,
+  onChange: () => void,
+): HTMLElement {
+  const { daysLeft, arrived, progress } = countdown;
+
+  const bar = el('div', { class: 'countdown__bar' });
+  const fill = el('i');
+  fill.style.width = `${Math.round(progress * 100)}%`;
+  bar.append(fill);
+
+  // Ce que la date impose vraiment : le neuf restant divisé par les jours qui
+  // restent. Comparé au plafond de dix par carnet, ça dit si la date tient.
+  const ceiling = carnets * MAX_NEW_PER_DAY;
+  const perDay = daysLeft > 0 ? Math.ceil(fresh / daysLeft) : fresh;
+
+  const n = (v: number) => v.toLocaleString('fr-FR');
+  const days = `${daysLeft} jour${daysLeft > 1 ? 's' : ''}`;
+
+  const plan = arrived
+    ? 'Le jour est arrivé. Le reste se passe là-bas.'
+    : fresh === 0
+      ? 'Toutes les cartes sont ouvertes : il ne reste qu’à les laisser revenir.'
+      : perDay > ceiling
+        ? `Il reste ${n(fresh)} cartes à ouvrir et ${days} pour le faire — soit ${n(perDay)} par jour, au-delà du plafond de ${ceiling}. La date tiendra, le programme entier non : c’est l’ordre d’ouverture qui décidera de ce que tu sauras.`
+        : `Il reste ${n(fresh)} cartes à ouvrir et ${days} pour le faire : ${n(perDay)} par jour suffisent.`;
+
+  const dateForm = el('div', { class: 'countdown__form', hidden: 'hidden' });
+  const input = el('input', {
+    type: 'date',
+    class: 'countdown__date',
+    'aria-label': 'Jour du départ',
+  }) as HTMLInputElement;
+  input.value = dateInputValue(countdown.target);
+  input.addEventListener('change', () => {
+    const chosen = parseDateInput(input.value);
+    if (chosen) void setTarget(chosen).then(onChange);
+  });
+  dateForm.append(input);
+
+  const change = el('button', { class: 'btn btn--link', type: 'button' }, ['Changer la date']);
+  change.addEventListener('click', () => {
+    dateForm.hidden = false;
+    change.remove();
+    input.focus();
+  });
+
+  return el('section', { class: `countdown${arrived ? ' countdown--arrived' : ''}` }, [
+    el('div', { class: 'countdown__head' }, [
+      el('b', { class: 'countdown__days' }, [arrived ? 'C’est' : String(daysLeft)]),
+      el('span', { class: 'countdown__label' }, [
+        arrived ? 'aujourd’hui' : `jour${daysLeft > 1 ? 's' : ''} avant Bristol`,
+      ]),
+    ]),
+    !arrived && bar,
+    el('p', { class: 'countdown__line' }, [
+      arrived
+        ? 'Tu as l’anglais qu’il te faut pour y être chez toi.'
+        : `Tu es à ${days} d’avoir l’anglais qu’il te faut pour y vivre.`,
+    ]),
+    el('p', { class: 'countdown__line' }, [plan]),
+    el('div', { class: 'countdown__meta' }, [
+      el('span', {}, [`Départ le ${longDate(countdown.target)}`]),
+      change,
+    ]),
+    dateForm,
+  ]);
+}
+
 export async function renderHome(ctx: Ctx): Promise<void> {
-  const [states, prefs, notices] = await Promise.all([
+  const [states, prefs, notices, countdown] = await Promise.all([
     Promise.all(ctx.carnets.map(readState)),
     loadPrefs(),
     renderPwaNotices(() => void renderHome(ctx)),
+    loadCountdown(),
   ]);
 
   // Lue au clic, pas capturée au rendu : la case peut être cochée après coup.
@@ -216,6 +308,12 @@ export async function renderHome(ctx: Ctx): Promise<void> {
       el('h1', {}, ['Go to Bristol']),
       el('p', { class: 'sub' }, ['L’anglais qu’il te faut pour y être chez toi.']),
     ]),
+    countdownCard(
+      countdown,
+      states.reduce((n, s) => n + s.counts.fresh, 0),
+      states.length,
+      () => void renderHome(ctx),
+    ),
     ...notices,
     // Un carnet qui n'a pas pu s'ouvrir se dit : le silence ferait croire à
     // une progression perdue alors qu'il ne manque qu'un fichier.

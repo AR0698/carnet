@@ -24,6 +24,11 @@ const SECONDS_PER_CARD_PAPER = 75;
 /** Plafond de nouvelles notions par jour — au-delà, la charge de révision explose. */
 const DEFAULT_MAX_NEW_PER_DAY = 10;
 
+/** Le même plafond, lisible par les écrans : le compte à rebours a besoin de
+ *  savoir combien de cartes une journée peut absorber pour dire si la date de
+ *  départ tient. */
+export const MAX_NEW_PER_DAY = DEFAULT_MAX_NEW_PER_DAY;
+
 export interface SessionCard {
   card: CardRecord;
   item: PackItem;
