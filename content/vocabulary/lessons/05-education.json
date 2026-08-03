@@ -1,0 +1,202 @@
+{
+  "lessons": {
+    "w031": {
+      "image": "La salle de classe a son anglais à elle : dix phrases que le professeur répète et qu’aucun manuel n’enseigne.",
+      "rule": "Ce sont presque tous des verbes à particule — `hand in`, `catch up`, `work out`. La particule fait tout le sens, et le verbe seul ne veut rien dire d’utile.",
+      "scene": {
+        "where": "Un cours du soir, la dernière semaine avant les vacances",
+        "text": "Everything is due on Friday and the date has already moved twice, which nobody finds odd. Ask on Tuesday if you cannot see how to start; the room is full of people who waited until Thursday and are pretending otherwise. At the end we trade papers and correct each other, and seeing your own mistake in somebody else's writing is worth an hour of explanation.",
+        "gloss": [
+          {
+            "en": "to hand something in",
+            "fr": "rendre un devoir"
+          },
+          {
+            "en": "a deadline",
+            "fr": "une date limite"
+          },
+          {
+            "en": "to be stuck",
+            "fr": "être bloqué"
+          },
+          {
+            "en": "to swap",
+            "fr": "échanger"
+          }
+        ]
+      },
+      "trap": {
+        "wrong": "I will give you my homework on Friday.",
+        "right": "I will hand in my homework on Friday.",
+        "why": "« Give » se comprend mais sonne enfantin. Le verbe de la salle de classe et du bureau, c’est « hand in » — et il est le même pour un devoir et pour une démission."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "I missed two weeks and never quite caught up.",
+          "fr": "J’ai raté deux semaines et je n’ai jamais vraiment rattrapé."
+        },
+        {
+          "register": "work",
+          "en": "Say you are stuck on Tuesday, not on the morning of the deadline.",
+          "fr": "Dis que tu es bloqué le mardi, pas le matin de l’échéance."
+        }
+      ],
+      "seeAlso": [
+        "w079",
+        "w033"
+      ]
+    },
+    "w032": {
+      "image": "L’école anglaise se raconte en trois trimestres et un très long été. Le vocabulaire suit ce découpage-là, pas le nôtre.",
+      "rule": "`primary` jusqu’à onze ans, `secondary` ensuite. `a term` est un trimestre — le mot `semester` appartient à l’université, et surtout à l’Amérique.",
+      "scene": {
+        "where": "Une rentrée de septembre, vue d’un parent nouvellement arrivé",
+        "text": "Terms here run three to a year with a summer long enough to worry parents. Ours are at the school two streets away, which decided which street we could afford to live in. When something goes wrong you do not write to the person in charge of the building; you write to the one who teaches the class, and it is answered the same day.",
+        "gloss": [
+          {
+            "en": "a head teacher",
+            "fr": "un directeur d’école"
+          },
+          {
+            "en": "a form tutor",
+            "fr": "un professeur principal"
+          },
+          {
+            "en": "a state school",
+            "fr": "une école publique"
+          },
+          {
+            "en": "a term",
+            "fr": "un trimestre"
+          }
+        ]
+      },
+      "contrast": {
+        "left": "a state school",
+        "right": "a public school",
+        "note": "Piège historique : en Angleterre, « public school » désigne une école privée très ancienne et très chère. L’école publique, c’est « state school »."
+      },
+      "trap": {
+        "wrong": "My children go to a public school, it is free.",
+        "right": "My children go to a state school, it is free.",
+        "why": "« Public school » en Angleterre veut dire Eton. Le contresens est total, et il fait sourire à chaque fois."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "The school run explains everything about the traffic at quarter past eight.",
+          "fr": "L’accompagnement scolaire explique tout du trafic à huit heures et quart."
+        },
+        {
+          "register": "work",
+          "en": "Half the office disappears at three during half term.",
+          "fr": "La moitié du bureau disparaît à quinze heures pendant les vacances de mi-trimestre."
+        }
+      ],
+      "seeAlso": [
+        "w034",
+        "w033"
+      ]
+    },
+    "w033": {
+      "image": "Un examen se passe, se réussit ou se rate, et l’anglais a trois verbes différents là où le français en a un et demi.",
+      "rule": "`to sit` / `to take` = passer l’épreuve · `to pass` = la réussir · `to fail` = la rater. Dire « I passed » quand on veut dire « je l’ai passé » annonce une réussite qu’on n’a peut-être pas.",
+      "scene": {
+        "where": "La semaine des résultats",
+        "text": "Everyone treats the practice paper as a formality and everyone is wrong about it — it is the only honest signal you get before June. Spread the work over a fortnight rather than two panicked nights, which is advice nobody has ever taken. If it goes badly there is another sitting in September, at a price, and it costs a summer as well as the fee.",
+        "gloss": [
+          {
+            "en": "a mock",
+            "fr": "un examen blanc"
+          },
+          {
+            "en": "revision",
+            "fr": "les révisions"
+          },
+          {
+            "en": "a resit",
+            "fr": "un rattrapage"
+          },
+          {
+            "en": "a mark",
+            "fr": "une note"
+          }
+        ]
+      },
+      "contrast": {
+        "left": "I sat the exam.",
+        "right": "I passed the exam.",
+        "note": "Le premier dit qu’on y est allé, le second qu’on l’a eu. Le français « j’ai passé l’examen » ne dit rien du résultat — l’anglais force à choisir."
+      },
+      "trap": {
+        "wrong": "I passed my driving test three times before I got it.",
+        "right": "I took my driving test three times before I passed.",
+        "why": "Le faux ami le plus coûteux du chapitre : « to pass » veut dire réussir. La phrase fautive raconte trois réussites et un mystère."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "She passed first time and told absolutely nobody.",
+          "fr": "Elle a réussi du premier coup et ne l’a dit à personne."
+        },
+        {
+          "register": "work",
+          "en": "The certification is worth having, and nobody ever asks to see it.",
+          "fr": "La certification vaut le coup, et personne ne demande jamais à la voir."
+        }
+      ],
+      "seeAlso": [
+        "w031",
+        "w034"
+      ]
+    },
+    "w034": {
+      "image": "L’université britannique parle de cours magistraux, de TD et de mémoire, et n’emploie pour aucun des trois le mot qu’on attend.",
+      "rule": "`a lecture` = le cours magistral, jamais « a lesson ». `a seminar` = le petit groupe où l’on parle. `a dissertation` = le mémoire de fin d’études.",
+      "scene": {
+        "where": "Une ville universitaire, un mardi de novembre",
+        "text": "Nine o'clock in a hall of four hundred, and by the second month it is half empty. The small group is where you have to speak, so it is the one people prepare for. The long piece of written work swallows the final year whole, and there is one member of staff whose job is to answer the panicked email you will send in February.",
+        "gloss": [
+          {
+            "en": "a lecture",
+            "fr": "un cours magistral"
+          },
+          {
+            "en": "a seminar",
+            "fr": "un TD"
+          },
+          {
+            "en": "a dissertation",
+            "fr": "un mémoire"
+          },
+          {
+            "en": "a tutor",
+            "fr": "un directeur d’études"
+          }
+        ]
+      },
+      "trap": {
+        "wrong": "I have three lessons at the university tomorrow.",
+        "right": "I have three lectures at the university tomorrow.",
+        "why": "« Lesson » appartient à l’école et au cours particulier. À l’université, on suit des « lectures » et des « seminars »."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "Half the city is students from October to June and empty in August.",
+          "fr": "La moitié de la ville est étudiante d’octobre à juin, et vide en août."
+        },
+        {
+          "register": "work",
+          "en": "Two of the graduates joined straight from a postgraduate course.",
+          "fr": "Deux des jeunes recrues sont arrivées directement d’un master."
+        }
+      ],
+      "seeAlso": [
+        "w032",
+        "w037"
+      ]
+    }
+  }
+}

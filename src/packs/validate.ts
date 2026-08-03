@@ -8,20 +8,12 @@
  */
 
 import {
+  isKnownType,
   SUPPORTED_SCHEMA_VERSION,
   type ContentPack,
   type Exercise,
-  type ExerciseType,
   type Lesson,
 } from './schema';
-
-const EXERCISE_TYPES: ExerciseType[] = [
-  'produce',
-  'fill_blank',
-  'spot_error',
-  'transform',
-  'mcq',
-];
 
 export class PackValidationError extends Error {
   readonly issues: string[];
@@ -37,16 +29,30 @@ function isNonEmptyString(v: unknown): v is string {
   return typeof v === 'string' && v.trim().length > 0;
 }
 
-function validateExercise(ex: unknown, where: string, issues: string[]): void {
+/**
+ * Valide un exercice, et rend `true` si son type est de ceux que cette version
+ * sait rendre.
+ *
+ * Un type inconnu n'est **pas** une erreur de pack. C'est la trace d'un contenu
+ * plus récent que le code installé, situation normale et fréquente : les packs
+ * sont relus à chaque lancement, alors qu'une nouvelle version de l'application
+ * attend qu'on appuie sur « Redémarrer ». Refuser le carnet entier pour cette
+ * raison — ce que faisait cette fonction — privait l'apprenante de cent huit
+ * unités lisibles à cause de trois qui ne l'étaient pas encore.
+ *
+ * On ne vérifie donc que ce que l'on comprend, et `isScheduled` se charge de ne
+ * jamais servir le reste. La vraie barrière d'incompatibilité reste
+ * `meta.schemaVersion`, qui dit que la *structure* a changé — pas le catalogue.
+ */
+function validateExercise(ex: unknown, where: string, issues: string[]): boolean {
   if (typeof ex !== 'object' || ex === null) {
     issues.push(`${where} : l'exercice n'est pas un objet`);
-    return;
+    return false;
   }
   const e = ex as Partial<Exercise>;
 
-  if (!EXERCISE_TYPES.includes(e.type as ExerciseType)) {
-    issues.push(`${where} : type d'exercice inconnu (${String(e.type)})`);
-  }
+  if (typeof e.type !== 'string' || !isKnownType(e.type)) return false;
+
   if (!isNonEmptyString(e.prompt)) {
     issues.push(`${where} : prompt manquant ou vide`);
   }
@@ -84,6 +90,16 @@ function validateExercise(ex: unknown, where: string, issues: string[]): void {
   if (e.type === 'fill_blank' && isNonEmptyString(e.prompt) && !e.prompt.includes('___')) {
     issues.push(`${where} : un fill_blank a besoin du marqueur ___ dans son énoncé`);
   }
+  if (e.type === 'picture' && !isNonEmptyString(e.art)) {
+    issues.push(`${where} : un picture a besoin d'une clé de dessin (art)`);
+  }
+  if (e.type === 'match' && (!Array.isArray(e.pairs) || e.pairs.length < 3)) {
+    issues.push(`${where} : un match a besoin d'au moins trois couples`);
+  }
+  if (e.type === 'odd_one_out' && (!Array.isArray(e.distractors) || e.distractors.length < 2)) {
+    issues.push(`${where} : un intrus a besoin d'au moins deux mots de la famille`);
+  }
+  return true;
 }
 
 /**
@@ -129,6 +145,8 @@ function validateLesson(lesson: unknown, where: string, issues: string[]): void 
 
 export function validatePack(raw: unknown): ContentPack {
   const issues: string[] = [];
+  /** Exercices d'un type plus récent que cette version : comptés, pas refusés. */
+  let unknown = 0;
 
   if (typeof raw !== 'object' || raw === null) {
     throw new PackValidationError(['le pack n\'est pas un objet JSON']);
@@ -203,10 +221,23 @@ export function validatePack(raw: unknown): ContentPack {
         issues.push(`item ${it.id} : au moins un exercice est requis`);
         continue;
       }
-      it.exercises.forEach((ex, j) => validateExercise(ex, `item ${it.id} / exercice ${j}`, issues));
+      for (const [j, ex] of it.exercises.entries()) {
+        if (!validateExercise(ex, `item ${it.id} / exercice ${j}`, issues)) unknown += 1;
+      }
     }
   }
 
   if (issues.length > 0) throw new PackValidationError(issues);
+
+  // Rien à signaler à l'apprenante — l'application marche, simplement avec un
+  // exercice de moins par-ci par-là, et l'encart « Redémarrer » propose déjà la
+  // version qui les comprendra. Mais si l'on ouvre la console en se demandant
+  // pourquoi le compte de cartes ne colle pas, la réponse doit être là.
+  if (unknown > 0) {
+    console.info(
+      `[carnet] ${pack.meta?.id ?? '?'} : ${unknown} exercice(s) d'un type que cette version ne connaît pas encore — ignorés jusqu'au redémarrage.`,
+    );
+  }
+
   return raw as ContentPack;
 }

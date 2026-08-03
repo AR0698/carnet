@@ -1,0 +1,296 @@
+{
+  "lessons": {
+    "w035": {
+      "image": "Les métiers britanniques ne se traduisent pas un pour un. Un « avocat » est deux personnes différentes, et un « comptable » en est une troisième.",
+      "rule": "`a solicitor` conseille et rédige ; `a barrister` plaide. Le français n’a qu’« avocat » et le calque se trompe presque toujours de moitié.",
+      "scene": {
+        "where": "Acheter un logement, quatre coups de téléphone",
+        "text": "You will deal with one of them for the flat and never meet the other kind in your life. Getting someone to fix a pipe means booking three weeks ahead and being glad of it. The man who came about the wiring looked at it for ninety seconds, declared it sound, and charged eighty pounds for the sentence. The woman who does my books costs less than she finds.",
+        "gloss": [
+          {
+            "en": "a solicitor",
+            "fr": "un avocat (conseil)"
+          },
+          {
+            "en": "a plumber",
+            "fr": "un plombier"
+          },
+          {
+            "en": "an electrician",
+            "fr": "un électricien"
+          },
+          {
+            "en": "an accountant",
+            "fr": "un comptable"
+          }
+        ]
+      },
+      "trap": {
+        "wrong": "I am going to see my lawyer about the flat.",
+        "right": "I am going to see my solicitor about the flat.",
+        "why": "« Lawyer » existe et reste vague, comme « juriste ». Pour l’achat d’un bien, tout le monde dit « solicitor », et employer autre chose se remarque."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "She learned a trade at nineteen and has never been out of work since.",
+          "fr": "Elle a appris un métier à dix-neuf ans et n’a jamais chômé depuis."
+        },
+        {
+          "register": "work",
+          "en": "Two people on the team are self-employed and invoice us monthly.",
+          "fr": "Deux personnes de l’équipe sont à leur compte et nous facturent au mois."
+        }
+      ],
+      "seeAlso": [
+        "w036",
+        "w037"
+      ]
+    },
+    "w036": {
+      "image": "Parler de son travail en Angleterre, c’est parler d’heures, de jours de congé et de préavis. Le contenu vient après.",
+      "rule": "`annual leave` = les congés payés · `a bank holiday` = un jour férié · `notice` = le préavis. Trois mots qu’on emploie dès la première semaine.",
+      "scene": {
+        "where": "Un premier entretien de contrat",
+        "text": "Twenty-five days of annual leave plus the bank holidays, which is standard and which people compare quietly. Nobody here gets paid overtime and everybody does some. Most of the team works from home on Mondays and Fridays, and the office knows it without anyone having written it down.",
+        "gloss": [
+          {
+            "en": "annual leave",
+            "fr": "les congés payés"
+          },
+          {
+            "en": "a bank holiday",
+            "fr": "un jour férié"
+          },
+          {
+            "en": "overtime",
+            "fr": "les heures supplémentaires"
+          },
+          {
+            "en": "to work from home",
+            "fr": "télétravailler"
+          }
+        ]
+      },
+      "trap": {
+        "wrong": "I have twenty-five days of holidays this year.",
+        "right": "I have twenty-five days of annual leave this year.",
+        "why": "« Holidays » désigne les vacances qu’on prend, pas le droit qu’on a. Sur un contrat et dans une conversation RH, c’est « annual leave »."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "My commute is forty minutes and I would not shorten it.",
+          "fr": "Mon trajet fait quarante minutes et je ne le raccourcirais pas."
+        },
+        {
+          "register": "work",
+          "en": "He handed in his notice on a Tuesday and everyone knew by lunchtime.",
+          "fr": "Il a donné son préavis un mardi et tout le monde le savait à midi."
+        }
+      ],
+      "seeAlso": [
+        "w037",
+        "w039"
+      ]
+    },
+    "w037": {
+      "image": "Un recrutement britannique se joue en quatre étapes, et le mot français « lettre de motivation » n’en désigne aucune.",
+      "rule": "`a covering letter` = la lettre de motivation · `a vacancy` = le poste ouvert · `a shortlist` = les finalistes · `a reference` = la recommandation de l’ancien employeur.",
+      "scene": {
+        "where": "Postuler depuis la France, en janvier",
+        "text": "Two pages, no photograph, no date of birth — the third page goes unread and the photograph makes people uncomfortable. The letter on top has one job: to say why this post rather than any post. Ninety applied and four got as far as a room. Warn your last employer before you name them, because somebody will ring.",
+        "gloss": [
+          {
+            "en": "a CV",
+            "fr": "un CV"
+          },
+          {
+            "en": "a covering letter",
+            "fr": "une lettre de motivation"
+          },
+          {
+            "en": "a shortlist",
+            "fr": "une liste restreinte"
+          },
+          {
+            "en": "a reference",
+            "fr": "une recommandation"
+          }
+        ]
+      },
+      "contrast": {
+        "left": "to be made redundant",
+        "right": "to be sacked",
+        "note": "Le premier dit que le poste a disparu, le second que la personne a fauté. Les employeurs britanniques distinguent scrupuleusement les deux, et l’on peut dire le premier sans honte."
+      },
+      "trap": {
+        "wrong": "Please find my motivation letter attached.",
+        "right": "Please find my covering letter attached.",
+        "why": "« Motivation letter » est un calque du français et d’autres langues européennes. Au Royaume-Uni on écrit « covering letter », ou « cover letter »."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "Half the good vacancies here never reach a job board.",
+          "fr": "La moitié des bons postes d’ici n’arrivent jamais sur un site d’annonces."
+        },
+        {
+          "register": "work",
+          "en": "The promotion came with a title and almost no money.",
+          "fr": "La promotion est venue avec un titre et presque pas d’argent."
+        }
+      ],
+      "seeAlso": [
+        "w035",
+        "w096"
+      ]
+    },
+    "w038": {
+      "image": "Un bureau anglais garde des objets que plus personne n’utilise et dont tout le monde connaît le nom. C’est le vocabulaire le plus stable qui soit.",
+      "rule": "`stationery` avec un e = les fournitures ; `stationary` avec un a = immobile. Un seul caractère, deux mots sans rapport.",
+      "scene": {
+        "where": "Le premier jour, à faire le tour de l’étage",
+        "text": "There is exactly one of the thing that fastens paper together, it lives on a named desk, and everybody knows whose. The machine that makes copies works perfectly for a single member of staff and for nobody else. A telephone with a wire rings twice a week and is answered by no one, and nobody will take responsibility for unplugging it. Once a year everyone stands outside in the cold.",
+        "gloss": [
+          {
+            "en": "a stapler",
+            "fr": "une agrafeuse"
+          },
+          {
+            "en": "a photocopier",
+            "fr": "une photocopieuse"
+          },
+          {
+            "en": "a landline",
+            "fr": "un téléphone fixe"
+          },
+          {
+            "en": "a fire drill",
+            "fr": "un exercice d’évacuation"
+          }
+        ]
+      },
+      "trap": {
+        "wrong": "The car was stationery at the lights.",
+        "right": "The car was stationary at the lights.",
+        "why": "Moyen mnémotechnique employé dans toutes les écoles anglaises : stationEry contient un e comme envelope. Stationary avec un a, c’est l’immobilité."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "Grab the spare desk by the window while it is still free.",
+          "fr": "Prends le bureau libre près de la fenêtre tant qu’il l’est encore."
+        },
+        {
+          "register": "work",
+          "en": "The stationery cupboard is the only thing everybody knows the code for.",
+          "fr": "Le placard à fournitures est la seule chose dont tout le monde connaît le code."
+        }
+      ],
+      "seeAlso": [
+        "w036",
+        "w054"
+      ]
+    },
+    "w039": {
+      "image": "Une entreprise britannique se décrit par ses étages : le conseil en haut, le siège au milieu, les agences autour.",
+      "rule": "`headquarters` prend un s et se traite au singulier : « headquarters is in Reading ». C’est un piège d’accord autant que de vocabulaire.",
+      "scene": {
+        "where": "Une annonce interne, un lundi matin",
+        "text": "It reaches the people who decide in March, which everyone reads as April. Bath was shut two years ago and the sign is still on the wall, which tells you what the sign was worth. On paper we belong to a group whose name you would recognise instantly, and the last time two companies joined it was announced as a partnership between equals.",
+        "gloss": [
+          {
+            "en": "a board",
+            "fr": "un conseil d’administration"
+          },
+          {
+            "en": "a branch",
+            "fr": "une agence"
+          },
+          {
+            "en": "a subsidiary",
+            "fr": "une filiale"
+          },
+          {
+            "en": "a merger",
+            "fr": "une fusion"
+          }
+        ]
+      },
+      "contrast": {
+        "left": "to take somebody on",
+        "right": "to lay somebody off",
+        "note": "Les deux verbes de l’effectif, et ils sont symétriques : « on » fait entrer, « off » fait sortir. C’est l’une des rares paires de particules qui s’explique."
+      },
+      "trap": {
+        "wrong": "The headquarters are in Reading.",
+        "right": "The headquarters is in Reading.",
+        "why": "Le mot a un s permanent mais désigne un seul lieu : l’accord se fait au singulier. « The company headquarters is » est la forme qu’on lit partout."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "They took her on in June and promoted her by Christmas.",
+          "fr": "Ils l’ont embauchée en juin et promue avant Noël."
+        },
+        {
+          "register": "work",
+          "en": "The headcount is frozen until the new financial year.",
+          "fr": "Les effectifs sont gelés jusqu’au nouvel exercice."
+        }
+      ],
+      "seeAlso": [
+        "w040",
+        "w037"
+      ]
+    },
+    "w040": {
+      "image": "Les comptes d’une entreprise se lisent dans trois mots : ce qui entre, ce qui reste, et ce qui est disponible maintenant. Ce n’est pas le même chiffre.",
+      "rule": "`turnover` = le chiffre d’affaires · `profit` = ce qui reste · `cash flow` = ce qui est là aujourd’hui. Une entreprise rentable peut mourir du troisième.",
+      "scene": {
+        "where": "Une revue trimestrielle, la douzième diapositive",
+        "text": "Money coming in rose eleven per cent and what was left at the end fell, which surprised only the people who had not read the second page. The figure for next year was fixed before anyone had defined the work. Every three months the numbers are revised, and never downwards. And a company can be profitable on Monday and unable to pay anyone on Friday.",
+        "gloss": [
+          {
+            "en": "turnover",
+            "fr": "le chiffre d’affaires"
+          },
+          {
+            "en": "profit",
+            "fr": "le bénéfice"
+          },
+          {
+            "en": "a forecast",
+            "fr": "une prévision"
+          },
+          {
+            "en": "cash flow",
+            "fr": "la trésorerie"
+          }
+        ]
+      },
+      "trap": {
+        "wrong": "Our turnover of business grew by ten per cent.",
+        "right": "Our turnover grew by ten per cent.",
+        "why": "« Turnover » se suffit à lui-même et ne prend pas d’article dans ce sens. Le mot désigne aussi la rotation du personnel, que le contexte départage toujours."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "Quote the price with VAT or you will have the conversation twice.",
+          "fr": "Annonce le prix TVA comprise, sinon tu auras la conversation deux fois."
+        },
+        {
+          "register": "work",
+          "en": "Send the invoice on the last day of the month, never the first.",
+          "fr": "Envoie la facture le dernier jour du mois, jamais le premier."
+        }
+      ],
+      "seeAlso": [
+        "w019",
+        "w039"
+      ]
+    }
+  }
+}

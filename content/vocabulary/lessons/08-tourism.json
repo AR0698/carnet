@@ -1,0 +1,285 @@
+{
+  "lessons": {
+    "w046": {
+      "image": "Réserver en anglais tient dans un seul verbe qui sert aussi de nom : `book`. Le reste du vocabulaire concerne le prix.",
+      "rule": "`to book` = réserver · `a booking` = la réservation. Un même mot pour l’acte et pour la chose, et c’est le verbe britannique par défaut — pas « reserve ».",
+      "scene": {
+        "where": "Un dimanche soir, devant le site des chemins de fer",
+        "text": "Six weeks ahead and the same journey costs a third, which is the single most useful thing anyone will tell you about this country. Avoid the morning and evening trains and you save more than the coffee costs. Somewhere near the end of the process a small extra charge appears that was not in the price you clicked on. The ticket you can hand back costs double and earns its keep about once in ten trips.",
+        "gloss": [
+          {
+            "en": "to book",
+            "fr": "réserver"
+          },
+          {
+            "en": "off-peak",
+            "fr": "en heures creuses"
+          },
+          {
+            "en": "a booking fee",
+            "fr": "des frais de dossier"
+          },
+          {
+            "en": "a refundable ticket",
+            "fr": "un billet remboursable"
+          }
+        ]
+      },
+      "trap": {
+        "wrong": "I reserved a table for four.",
+        "right": "I booked a table for four.",
+        "why": "« Reserve » n’est pas faux, il est simplement rare et un peu formel. Restaurant, train, hôtel, coiffeur : au Royaume-Uni on « books »."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "You need to book a table on a Friday, even in a pub.",
+          "fr": "Il faut réserver une table le vendredi, même dans un pub."
+        },
+        {
+          "register": "work",
+          "en": "Send me the itinerary and I will meet you at the other end.",
+          "fr": "Envoie-moi l’itinéraire et je te retrouve à l’arrivée."
+        }
+      ],
+      "seeAlso": [
+        "w028",
+        "w048"
+      ]
+    },
+    "w047": {
+      "image": "Un aéroport se traverse avec six mots, et `luggage` est celui qui trahit un francophone en une seconde.",
+      "rule": "`luggage` ne se compte pas : jamais « a luggage », jamais « luggages ». Pour compter, il faut « a piece of luggage » ou « a bag ».",
+      "scene": {
+        "where": "Six heures du matin, quelque part entre le contrôle et la porte",
+        "text": "Four days of clothes go in the bag that stays with you, because anything that travels underneath the cabin costs extra and comes off the belt last. Photograph the thing they scan at the gate, because the wifi will fail at exactly the wrong moment. Then we sat for two hours with no announcement at all, which was somehow worse than the wait itself.",
+        "gloss": [
+          {
+            "en": "hand luggage",
+            "fr": "un bagage à main"
+          },
+          {
+            "en": "the hold",
+            "fr": "la soute"
+          },
+          {
+            "en": "a boarding pass",
+            "fr": "une carte d’embarquement"
+          },
+          {
+            "en": "a delay",
+            "fr": "un retard"
+          }
+        ]
+      },
+      "trap": {
+        "wrong": "I only have two luggages.",
+        "right": "I only have two bags.",
+        "why": "Le français compte les bagages, l’anglais non. La sortie de secours est simple et toujours juste : dire « bags »."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "The airport bus takes half an hour and runs all night.",
+          "fr": "La navette de l’aéroport met une demi-heure et roule toute la nuit."
+        },
+        {
+          "register": "work",
+          "en": "Fifty minutes for a connecting flight is optimistic at that airport.",
+          "fr": "Cinquante minutes pour une correspondance, c’est optimiste dans cet aéroport."
+        }
+      ],
+      "seeAlso": [
+        "w046",
+        "w086"
+      ]
+    },
+    "w048": {
+      "image": "Un menu britannique compte trois lignes : `starter`, `main course`, `pudding`. Le mot « entrée » n’y désigne rien du tout.",
+      "rule": "`a starter` = l’entrée · `a main course` = le plat · et « entrée » en anglais américain désigne… le plat principal. Le faux ami est complet.",
+      "scene": {
+        "where": "Un restaurant un vendredi soir, à cinq",
+        "text": "We ordered one thing to share before the meal and immediately wished we had ordered two. The plate arrived before the drinks did, which told us how the evening would go. Twelve per cent is already added at the bottom, so read that line before you add anything of your own. Nobody brings you the total until you ask, and that is courtesy rather than neglect.",
+        "gloss": [
+          {
+            "en": "a starter",
+            "fr": "une entrée"
+          },
+          {
+            "en": "a main course",
+            "fr": "un plat principal"
+          },
+          {
+            "en": "a service charge",
+            "fr": "un service compris"
+          },
+          {
+            "en": "the bill",
+            "fr": "l’addition"
+          }
+        ]
+      },
+      "trap": {
+        "wrong": "Can we have the check, please?",
+        "right": "Can we have the bill, please?",
+        "why": "« Check » est américain. Au Royaume-Uni on demande « the bill », et l’on fait souvent le geste d’écrire dans le vide pour aller plus vite."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "We stayed in a bed and breakfast run by a woman who told us the whole town.",
+          "fr": "On a logé dans une chambre d’hôtes tenue par une femme qui nous a raconté toute la ville."
+        },
+        {
+          "register": "work",
+          "en": "Ask whether the room has an en suite or you share with the landing.",
+          "fr": "Demande si la chambre a une salle de bains privative, sinon tu partages avec le palier."
+        }
+      ],
+      "seeAlso": [
+        "w049",
+        "w046"
+      ]
+    },
+    "w049": {
+      "image": "Le café britannique se commande en deux questions : quoi, et sur place ou à emporter. La deuxième arrive toujours et surprend toujours.",
+      "rule": "`takeaway` = à emporter, en un seul mot et comme nom ou adjectif. « Takeout » et « to go » sont américains et se remarquent.",
+      "scene": {
+        "where": "Un mardi matin, la même file qu’hier",
+        "text": "The default order in half the shops in this city is a small flat coffee with steamed milk, and the other half will make you one anyway. He asked for tea the way a building site drinks it — strong, milky, in a mug the size of a small bucket — and got exactly that without explaining. After a month they start it before you have spoken.",
+        "gloss": [
+          {
+            "en": "a flat white",
+            "fr": "un flat white"
+          },
+          {
+            "en": "a builder’s tea",
+            "fr": "un thé fort au lait"
+          },
+          {
+            "en": "a mug",
+            "fr": "un mug"
+          },
+          {
+            "en": "a regular",
+            "fr": "un habitué"
+          }
+        ]
+      },
+      "trap": {
+        "wrong": "One coffee to go, please.",
+        "right": "One coffee to take away, please.",
+        "why": "« To go » se comprend partout et s’entend comme américain. La question qu’on vous posera est « eat in or takeaway? », et il suffit de reprendre le mot."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "They will do you a top-up for nothing if you ask nicely.",
+          "fr": "Ils te rallongent gratuitement si tu demandes gentiment."
+        },
+        {
+          "register": "work",
+          "en": "The coffee run is a job and it rotates, whatever anybody says.",
+          "fr": "La tournée de cafés est une tâche, et elle tourne, quoi qu’on en dise."
+        }
+      ],
+      "seeAlso": [
+        "w048"
+      ]
+    },
+    "w050": {
+      "image": "Visiter en Angleterre, c’est presque toujours entrer dans une maison privée devenue publique, avec un salon de thé au bout.",
+      "rule": "`a sight` = ce qu’on va voir · `a landmark` = ce qui sert de repère · `admission` = le prix d’entrée. Le troisième est souvent gratuit et le parking, non.",
+      "scene": {
+        "where": "Une sortie du dimanche, quarante minutes de route",
+        "text": "The formula is a large old house, a garden with a plan, and a room at the end that sells cake. Getting in costs nothing and leaving the car costs nine pounds, which is the joke everybody makes and nobody stops making. Ninety minutes with a volunteer who knows the family history is time well spent. The parts worth seeing are never signposted and are always uphill.",
+        "gloss": [
+          {
+            "en": "a stately home",
+            "fr": "une demeure historique"
+          },
+          {
+            "en": "admission",
+            "fr": "le droit d’entrée"
+          },
+          {
+            "en": "a guided tour",
+            "fr": "une visite guidée"
+          },
+          {
+            "en": "off the beaten track",
+            "fr": "hors des sentiers battus"
+          }
+        ]
+      },
+      "trap": {
+        "wrong": "I brought back a nice memory from Cornwall.",
+        "right": "I brought back a nice souvenir from Cornwall.",
+        "why": "« Memory » est le souvenir qu’on garde en tête. L’objet rapporté est « a souvenir » — un mot français que l’anglais a pris pour ce sens-là seulement."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "There is a viewpoint above the gorge that nobody signposts.",
+          "fr": "Il y a un point de vue au-dessus des gorges que personne ne signale."
+        },
+        {
+          "register": "work",
+          "en": "The bridge is the one sight every visitor photographs.",
+          "fr": "Le pont est le seul site que chaque visiteur photographie."
+        }
+      ],
+      "seeAlso": [
+        "w051",
+        "w026"
+      ]
+    },
+    "w051": {
+      "image": "La plage anglaise se pratique habillé, avec un paravent, et sans jamais nager. Le vocabulaire dit exactement cela.",
+      "rule": "`the seaside` = le bord de mer comme destination · `the coast` = la côte comme géographie. On va « to the seaside », on habite « on the coast ».",
+      "scene": {
+        "where": "Un dimanche d’août, quelque part sur la côte sud",
+        "text": "Round here the beach is stones, not sand, so bring something to sit on and lower your expectations about lying down. Look up when the water comes back, because it crosses the flats faster than it looks and the island stops being one. Nobody actually swims. Everyone wades in to the knees, calls it a swim afterwards, and buys something from the van you could hear from the car park.",
+        "gloss": [
+          {
+            "en": "a pebble beach",
+            "fr": "une plage de galets"
+          },
+          {
+            "en": "the tide",
+            "fr": "la marée"
+          },
+          {
+            "en": "paddling",
+            "fr": "les pieds dans l’eau"
+          },
+          {
+            "en": "an ice cream van",
+            "fr": "un camion à glaces"
+          }
+        ]
+      },
+      "trap": {
+        "wrong": "We went to the sea for the weekend.",
+        "right": "We went to the seaside for the weekend.",
+        "why": "« The sea » est l’eau elle-même. La destination — la ville, la plage, la jetée et les frites — c’est « the seaside »."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "The coast is an hour away, which is why nobody stays in on a hot Sunday.",
+          "fr": "La côte est à une heure, et c’est pour ça que personne ne reste chez soi un dimanche chaud."
+        },
+        {
+          "register": "work",
+          "en": "Half the office books the same week off in August and it shows.",
+          "fr": "La moitié du bureau pose la même semaine en août et ça se voit."
+        }
+      ],
+      "seeAlso": [
+        "w006",
+        "w050"
+      ]
+    }
+  }
+}

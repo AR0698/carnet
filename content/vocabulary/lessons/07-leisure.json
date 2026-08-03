@@ -1,0 +1,238 @@
+{
+  "lessons": {
+    "w041": {
+      "image": "Le loisir britannique commence dehors et par mauvais temps. Le vocabulaire est donc celui du mouvement, pas celui de l’équipement.",
+      "rule": "`to take something up` = s’y mettre · `to give something up` = arrêter. Deux particules opposées sur le même verbe, et c’est toute la carrière d’un loisir.",
+      "scene": {
+        "where": "Un dimanche matin, sur les Downs",
+        "text": "There is a kickabout every Sunday that nobody organises and everybody finds. He took up climbing at forty and has not shut up about it since. She is very keen on sea swimming in February, which I have decided not to understand. A proper walk on a Sunday is not optional in this country; it is closer to a civic duty.",
+        "gloss": [
+          {
+            "en": "a kickabout",
+            "fr": "un foot improvisé"
+          },
+          {
+            "en": "to take something up",
+            "fr": "se mettre à une activité"
+          },
+          {
+            "en": "keen on something",
+            "fr": "passionné de"
+          },
+          {
+            "en": "a walk",
+            "fr": "une randonnée"
+          }
+        ]
+      },
+      "trap": {
+        "wrong": "I do sport three times a week.",
+        "right": "I play football twice a week and go running on Sundays.",
+        "why": "« To do sport » est un calque du français qui sonne scolaire. L’anglais nomme l’activité : « play » pour les sports d’équipe, « go » pour ceux en -ing."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "The leisure centre pool is half the price before nine.",
+          "fr": "La piscine du centre sportif coûte moitié prix avant neuf heures."
+        },
+        {
+          "register": "work",
+          "en": "Every hobby in this country ends up with a club and a newsletter.",
+          "fr": "Chaque loisir ici finit avec un club et une lettre d’information."
+        }
+      ],
+      "seeAlso": [
+        "w042",
+        "w027"
+      ]
+    },
+    "w042": {
+      "image": "Le sport de compétition anglais a inventé la relégation, et donc le vocabulaire de la chute. C’est celui qu’on entend le plus au pub.",
+      "rule": "`a draw` = match nul (jamais « a tie », qui est américain) · `a fixture` = une rencontre au calendrier · `to be relegated` = descendre de division.",
+      "scene": {
+        "where": "Un pub, un samedi à cinq heures moins le quart",
+        "text": "It ended level and both sets of supporters left convinced they had been robbed, which is the surest sign of a fair result. The game had been moved to a Tuesday night for television, so half the travelling support could not get there at all. They went down on the final afternoon, and the man beside me said it the way you say a thing you have said every year since 1998.",
+        "gloss": [
+          {
+            "en": "a draw",
+            "fr": "un match nul"
+          },
+          {
+            "en": "a fixture",
+            "fr": "une rencontre au calendrier"
+          },
+          {
+            "en": "an away game",
+            "fr": "un match à l’extérieur"
+          },
+          {
+            "en": "to be relegated",
+            "fr": "être relégué"
+          }
+        ]
+      },
+      "trap": {
+        "wrong": "The match finished on a tie.",
+        "right": "The match finished in a draw.",
+        "why": "Double faute : « tie » est américain, et la préposition est « in », pas « on ». « It was a draw » suffit et ne se trompe jamais."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "It is an away game, so the pub will be unusually quiet.",
+          "fr": "C’est un match à l’extérieur, donc le pub sera étonnamment calme."
+        },
+        {
+          "register": "work",
+          "en": "The fixture list comes out in June and people plan holidays around it.",
+          "fr": "Le calendrier sort en juin et les gens calent leurs vacances dessus."
+        }
+      ],
+      "seeAlso": [
+        "w041"
+      ]
+    },
+    "w043": {
+      "image": "Parler d’un livre ou d’un film en anglais, c’est nommer quatre choses : l’intrigue, les personnages, le cadre, et si l’on a tenu jusqu’au bout.",
+      "rule": "`a novel` = un roman. `roman` en anglais concerne Rome, et c’est le faux ami le plus mécanique qui soit.",
+      "scene": {
+        "where": "Un club de lecture qui est surtout un prétexte",
+        "text": "Very little happens, and that turns out not to matter. What carries it is the place: a town by the sea in about 1974, permanently out of season, with the funfair shut. Nobody in it is likeable, which is deliberate. It takes an hour to get going and then you cannot put it down, and the piece in the paper gave away the last page in its second line.",
+        "gloss": [
+          {
+            "en": "a plot",
+            "fr": "l’intrigue"
+          },
+          {
+            "en": "a setting",
+            "fr": "le cadre"
+          },
+          {
+            "en": "a character",
+            "fr": "un personnage"
+          },
+          {
+            "en": "gripping",
+            "fr": "prenant"
+          }
+        ]
+      },
+      "trap": {
+        "wrong": "I am reading a very good roman at the moment.",
+        "right": "I am reading a very good novel at the moment.",
+        "why": "« Roman » en anglais est un adjectif : romain. Le roman se dit « novel », et « a novel » est aussi un adjectif signifiant inédit."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "I watch everything with subtitles now, English films included.",
+          "fr": "Je regarde tout avec des sous-titres maintenant, les films anglais compris."
+        },
+        {
+          "register": "work",
+          "en": "It is based on a true story, which explains the odd bits.",
+          "fr": "C’est tiré d’une histoire vraie, ce qui explique les passages étranges."
+        }
+      ],
+      "seeAlso": [
+        "w044",
+        "w052"
+      ]
+    },
+    "w044": {
+      "image": "Un concert britannique ne s’appelle pas un concert : c’est `a gig`, et il a lieu dans une pièce au-dessus d’un pub.",
+      "rule": "`a gig` = un concert, familier et universel · `a venue` = le lieu · `a support act` = la première partie · `an encore` = le rappel.",
+      "scene": {
+        "where": "Un jeudi soir, dans une salle de deux cents personnes",
+        "text": "The room above the pub takes two hundred people and everyone in it knows two others. Arrive early: whoever plays first is often the better half of the night and nobody expects it. Forty minutes on stage felt like ten. They came back once, played one more, and left the house lights on, which is how you say goodnight without saying it.",
+        "gloss": [
+          {
+            "en": "a venue",
+            "fr": "une salle"
+          },
+          {
+            "en": "a support act",
+            "fr": "une première partie"
+          },
+          {
+            "en": "a set",
+            "fr": "un passage"
+          },
+          {
+            "en": "an encore",
+            "fr": "un rappel"
+          }
+        ]
+      },
+      "trap": {
+        "wrong": "The public asked for a bis.",
+        "right": "The audience asked for an encore.",
+        "why": "Double calque : « public » se dit « audience », et le rappel se dit « encore » — un mot français que seul l’anglais emploie ainsi."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "He is really into dub at the moment, which is very Bristol of him.",
+          "fr": "Il est à fond dans le dub en ce moment, ce qui est très bristolien."
+        },
+        {
+          "register": "work",
+          "en": "That tune has been in my head since the Saturday.",
+          "fr": "Ce morceau me trotte dans la tête depuis samedi."
+        }
+      ],
+      "seeAlso": [
+        "w043",
+        "w045"
+      ]
+    },
+    "w045": {
+      "image": "Le calendrier britannique a des jours qui n’existent nulle part ailleurs : la nuit des feux, le lendemain de Noël, la kermesse du village.",
+      "rule": "`Bonfire Night` (5 novembre), `Boxing Day` (26 décembre) et les `bank holidays` structurent l’année sociale bien plus que les saisons.",
+      "scene": {
+        "where": "Un cinq novembre, dans un parc de banlieue",
+        "text": "There are fireworks in the park on the fifth and the roads shut two hours before anything happens, which nobody warns you about the first year. In July the village puts on its own afternoon: cakes, a tombola, and the same three people running it since before the pub changed hands. I bought five tickets and won a bottle of something brown that is still in the cupboard.",
+        "gloss": [
+          {
+            "en": "Bonfire Night",
+            "fr": "la nuit des feux"
+          },
+          {
+            "en": "a fireworks display",
+            "fr": "un feu d’artifice"
+          },
+          {
+            "en": "a fête",
+            "fr": "une kermesse de village"
+          },
+          {
+            "en": "a raffle",
+            "fr": "une tombola"
+          }
+        ]
+      },
+      "trap": {
+        "wrong": "It is a fancy dress party, so wear something elegant.",
+        "right": "It is a fancy dress party, so come as a pirate.",
+        "why": "« Fancy dress » veut dire déguisement, pas tenue chic. Arriver en costume trois-pièces à une soirée déguisée est un classique du nouvel arrivant."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "Boxing Day is for leftovers and a walk, in that order.",
+          "fr": "Le lendemain de Noël, c’est les restes et une marche, dans cet ordre."
+        },
+        {
+          "register": "work",
+          "en": "Every bank holiday weekend it rains, and every year we forget.",
+          "fr": "Chaque week-end férié il pleut, et chaque année on l’oublie."
+        }
+      ],
+      "seeAlso": [
+        "w060",
+        "w069"
+      ]
+    }
+  }
+}

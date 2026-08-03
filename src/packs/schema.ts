@@ -16,6 +16,44 @@ export type ExerciseType =
   | 'match'
   | 'odd_one_out';
 
+/**
+ * Les types que *cette* version du code sait rendre.
+ *
+ * Une seule liste, et le compilateur garantit qu'elle reste complète :
+ * `RENDERERS` est un `Record<ExerciseType, …>`, donc oublier un type ici ou
+ * là-bas ne compile pas. Elle a existé en double pendant un temps, dans
+ * `packs/validate.ts`, et les deux ont divergé exactement quand il ne fallait
+ * pas — voir `isKnownType`.
+ */
+export const EXERCISE_TYPES: ExerciseType[] = [
+  'produce',
+  'fill_blank',
+  'spot_error',
+  'transform',
+  'mcq',
+  'picture',
+  'match',
+  'odd_one_out',
+];
+
+/**
+ * Ce type d'exercice est-il connu de la version installée ?
+ *
+ * La question se pose parce que le contenu et le code ne se mettent pas à jour
+ * ensemble, et ne le peuvent pas : les packs sont relus à chaque lancement,
+ * tandis qu'une nouvelle version de l'application attend qu'on appuie sur
+ * « Redémarrer » — délibérément, pour ne pas interrompre une révision. Il
+ * existe donc toujours une fenêtre où du contenu neuf rencontre du code ancien,
+ * et elle s'ouvre à chaque fois qu'on ajoute un type d'exercice.
+ *
+ * Ce qui s'y passait était disproportionné : un `match` inconnu faisait refuser
+ * le carnet entier, et l'accueil annonçait « un carnet n'a pas pu être ouvert »
+ * pour cent onze unités dont cent huit étaient parfaitement lisibles.
+ */
+export function isKnownType(type: string): type is ExerciseType {
+  return (EXERCISE_TYPES as string[]).includes(type);
+}
+
 export interface AnswerSpec {
   /** Réponses acceptées. La première sert de réponse canonique affichée. */
   accepted: string[];
@@ -304,13 +342,22 @@ export function cardId(packId: string, itemId: string, exerciseIndex: number): s
 }
 
 /**
- * Le `mcq` n'est pas un exercice comme les autres : il ne se planifie pas.
- * C'est un filet de secours, proposé à la place d'un exercice de production
- * quand celui-ci a été raté deux fois de suite (§4). Il ne reçoit donc pas de
- * carte FSRS propre.
+ * Cet exercice reçoit-il une carte FSRS ?
+ *
+ * Deux raisons de répondre non. Le `mcq` n'est pas un exercice comme les
+ * autres : c'est un filet de secours, proposé à la place d'une production ratée
+ * deux fois de suite (§4), et reconnaître n'est pas produire. Un type inconnu,
+ * lui, ne peut simplement pas être affiché par cette version-ci.
+ *
+ * C'est ici que se joue la compatibilité descendante, et nulle part ailleurs :
+ * sans carte, un exercice trop récent ne peut jamais être tiré par une session.
+ * L'index des autres exercices de l'item, lui, ne bouge pas — `syncPackCards`
+ * numérote sur la position réelle dans le tableau, jamais sur un rang filtré.
+ * C'est ce qui permet d'ignorer un exercice sans réattribuer les cartes
+ * voisines à d'autres questions.
  */
 export function isScheduled(exercise: Exercise): boolean {
-  return exercise.type !== 'mcq';
+  return isKnownType(exercise.type) && exercise.type !== 'mcq';
 }
 
 /** Le filet de secours d'un item, s'il en a un. */
