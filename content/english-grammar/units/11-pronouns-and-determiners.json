@@ -2,143 +2,2339 @@
   "group": "Pronouns and determiners",
   "items": [
     {
-      "id": "u082-a", "topicId": "u082", "tags": ["reflechis", "each-other"],
-      "fields": { "regle": "Le réfléchi s'emploie quand le sujet et le complément sont la même personne. Attention : wash, shave, dress, feel, concentrate, relax ne le prennent pas en anglais. Pour la réciprocité, c'est each other." },
+      "id": "u082-a",
+      "topicId": "u082",
+      "tags": [
+        "reflechis",
+        "each-other"
+      ],
+      "fields": {
+        "regle": "Le réfléchi s'emploie quand le sujet et le complément sont la même personne. Attention : wash, shave, dress, feel, concentrate, relax ne le prennent pas en anglais. Pour la réciprocité, c'est each other."
+      },
       "exercises": [
-        { "type": "produce", "prompt": "Traduis : Elle s'est coupée en ouvrant le carton.", "answerSpec": { "accepted": ["She cut herself opening the box"] }, "hints": ["Sujet et complément confondus."] },
-        { "type": "produce", "prompt": "Traduis : Ils se connaissent depuis l'école.", "answerSpec": { "accepted": ["They have known each other since school"] }, "hints": ["Réciprocité, pas réflexivité."] },
-        { "type": "produce", "prompt": "Traduis : Je me sens mieux ce matin.", "answerSpec": { "accepted": ["I feel better this morning"] }, "hints": ["feel ne prend pas de réfléchi en anglais."] },
-        { "type": "fill_blank", "prompt": "Help ___ to the biscuits, there are plenty. (you)", "answerSpec": { "accepted": ["yourself"] }, "hints": ["« Sers-toi »."] },
-        { "type": "fill_blank", "prompt": "The two teams blamed ___ for the missed deadline.", "answerSpec": { "accepted": ["each other", "one another"] }, "hints": ["Chacune accuse l'autre."] },
-        { "type": "transform", "source": "I made this dashboard without any help.", "prompt": "Réécris la phrase avec « myself » pour insister.", "answerSpec": { "accepted": ["I made this dashboard myself"] }, "hints": ["Le réfléchi emphatique se place en fin de phrase."] },
-        { "type": "spot_error", "source": "She concentrated herself on the numbers.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["She concentrated on the numbers"] }, "hints": ["concentrate n'est pas réfléchi en anglais."] },
-        { "type": "mcq", "prompt": "The guardrails do not write ___ .", "answerSpec": { "accepted": ["themselves"] }, "distractors": ["them", "itself", "each other"], "hints": ["Pluriel, sujet et complément identiques."] }
+        {
+          "type": "produce",
+          "prompt": "Traduis : Elle s'est coupée en ouvrant le carton.",
+          "answerSpec": {
+            "accepted": [
+              "She cut herself opening the box"
+            ]
+          },
+          "hints": [
+            "Sujet et complément confondus."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Ils se connaissent depuis l'école.",
+          "answerSpec": {
+            "accepted": [
+              "They have known each other since school"
+            ]
+          },
+          "hints": [
+            "Réciprocité, pas réflexivité."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Je me sens mieux ce matin.",
+          "answerSpec": {
+            "accepted": [
+              "I feel better this morning"
+            ]
+          },
+          "hints": [
+            "feel ne prend pas de réfléchi en anglais."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Help ___ to the biscuits, there are plenty. (you)",
+          "answerSpec": {
+            "accepted": [
+              "yourself"
+            ]
+          },
+          "hints": [
+            "« Sers-toi »."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The two teams blamed ___ for the missed deadline.",
+          "answerSpec": {
+            "accepted": [
+              "each other",
+              "one another"
+            ]
+          },
+          "hints": [
+            "Chacune accuse l'autre."
+          ]
+        },
+        {
+          "type": "transform",
+          "source": "I made this dashboard without any help.",
+          "prompt": "Réécris la phrase avec « myself » pour insister.",
+          "answerSpec": {
+            "accepted": [
+              "I made this dashboard myself"
+            ]
+          },
+          "hints": [
+            "Le réfléchi emphatique se place en fin de phrase."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "source": "She concentrated herself on the numbers.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": {
+            "accepted": [
+              "She concentrated on the numbers"
+            ]
+          },
+          "hints": [
+            "concentrate n'est pas réfléchi en anglais."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "The guardrails do not write ___ .",
+          "answerSpec": {
+            "accepted": [
+              "themselves"
+            ]
+          },
+          "distractors": [
+            "them",
+            "itself",
+            "each other"
+          ],
+          "hints": [
+            "Pluriel, sujet et complément identiques."
+          ]
+        }
       ]
     },
     {
-      "id": "u083-a", "topicId": "u083", "tags": ["possessif", "own", "on-my-own"],
-      "fields": { "regle": "« a friend of mine » = un de mes amis. « my own » insiste sur la propriété exclusive. « on my own » et « by myself » veulent dire seul." },
+      "id": "u082-b",
+      "topicId": "u082",
+      "tags": [
+        "reflechis"
+      ],
+      "fields": {
+        "regle": "Réfléchi quand sujet et complément se confondent. wash, shave, dress, feel, concentrate, relax ne le prennent pas. Réciprocité : each other."
+      },
       "exercises": [
-        { "type": "produce", "prompt": "Traduis : C'est un ami à moi.", "answerSpec": { "accepted": ["He is a friend of mine"] }, "hints": ["of + pronom possessif."] },
-        { "type": "produce", "prompt": "Traduis : J'aimerais avoir mon propre bureau.", "answerSpec": { "accepted": ["I would like to have my own office"] }, "hints": ["own se place entre le possessif et le nom."] },
-        { "type": "produce", "prompt": "Traduis : Elle a monté le pilote toute seule.", "answerSpec": { "accepted": ["She set up the pilot on her own", "She set up the pilot by herself"] }, "hints": ["Deux formules équivalentes."] },
-        { "type": "fill_blank", "prompt": "I borrowed a laptop from a colleague of ___ . (I)", "answerSpec": { "accepted": ["mine"] }, "hints": ["Pronom possessif après of."] },
-        { "type": "fill_blank", "prompt": "He refuses to use a shared desk; he wants his ___ .", "answerSpec": { "accepted": ["own"] }, "hints": ["Propriété exclusive."] },
-        { "type": "transform", "source": "Nobody helped me: I wrote the whole handover alone.", "prompt": "Réécris la fin avec « on my own ».", "answerSpec": { "accepted": ["I wrote the whole handover on my own"] }, "hints": ["« on my own » remplace alone."] },
-        { "type": "spot_error", "source": "She is a my colleague from the Bristol office.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["She is a colleague of mine from the Bristol office"] }, "hints": ["On ne cumule pas a et un possessif."] },
-        { "type": "mcq", "prompt": "They have built their ___ scheduling tool.", "answerSpec": { "accepted": ["own"] }, "distractors": ["proper", "self", "one"], "hints": ["« proper » ne veut pas dire propre au sens de possession."] }
+        {
+          "type": "produce",
+          "prompt": "Traduis : Elle s'est brûlée avec la bouilloire.",
+          "answerSpec": {
+            "accepted": [
+              "She burnt herself on the kettle"
+            ]
+          },
+          "hints": [
+            "Sujet et complément confondus."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Ils se connaissent depuis l'université.",
+          "answerSpec": {
+            "accepted": [
+              "They have known each other since university"
+            ]
+          },
+          "hints": [
+            "Réciprocité."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Je me sens mieux depuis la passation.",
+          "answerSpec": {
+            "accepted": [
+              "I feel better since the handover"
+            ]
+          },
+          "hints": [
+            "feel n'est pas réfléchi."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Help ___ to the biscuits, there are plenty. (you)",
+          "answerSpec": {
+            "accepted": [
+              "yourself"
+            ]
+          },
+          "hints": [
+            "Sers-toi."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The two teams blamed ___ for the delay.",
+          "answerSpec": {
+            "accepted": [
+              "each other",
+              "one another"
+            ]
+          },
+          "hints": [
+            "Chacune accuse l'autre."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "I built this dashboard without any help.",
+          "answerSpec": {
+            "accepted": [
+              "I built this dashboard myself"
+            ]
+          },
+          "source": "I built this dashboard without any help.",
+          "hints": [
+            "Réfléchi emphatique, en fin de phrase."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "She concentrated herself on the numbers.",
+          "answerSpec": {
+            "accepted": [
+              "She concentrated on the numbers"
+            ]
+          },
+          "source": "She concentrated herself on the numbers.",
+          "hints": [
+            "concentrate n'est pas réfléchi."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Guardrails do not write ___ .",
+          "answerSpec": {
+            "accepted": [
+              "themselves"
+            ]
+          },
+          "hints": [
+            "Pluriel réfléchi."
+          ],
+          "distractors": [
+            "them",
+            "itself",
+            "each other"
+          ]
+        }
       ]
     },
     {
-      "id": "u084-a", "topicId": "u084", "tags": ["there-it", "presentatif"],
-      "fields": { "regle": "there dit l'existence (« there is a problem ») ; it désigne une chose déjà identifiée, ou sert de sujet impersonnel pour le temps, l'heure et la distance (« it is raining », « it is five miles »)." },
+      "id": "u083-a",
+      "topicId": "u083",
+      "tags": [
+        "possessif",
+        "own",
+        "on-my-own"
+      ],
+      "fields": {
+        "regle": "« a friend of mine » = un de mes amis. « my own » insiste sur la propriété exclusive. « on my own » et « by myself » veulent dire seul."
+      },
       "exercises": [
-        { "type": "produce", "prompt": "Traduis : Il y a un problème avec le connecteur.", "answerSpec": { "accepted": ["There is a problem with the connector"] }, "hints": ["Existence : there."] },
-        { "type": "produce", "prompt": "Traduis : Il pleut depuis ce matin.", "answerSpec": { "accepted": ["It has been raining since this morning"] }, "hints": ["Le temps qu'il fait : it."] },
-        { "type": "produce", "prompt": "Traduis : C'est à dix minutes à pied de la gare.", "answerSpec": { "accepted": ["It is a ten-minute walk from the station"] }, "hints": ["Une distance : it."] },
-        { "type": "fill_blank", "prompt": "___ was nobody in the breakout space at eight.", "answerSpec": { "accepted": ["There"] }, "hints": ["Existence, ou plutôt absence."] },
-        { "type": "fill_blank", "prompt": "___ is worth writing the summary before you forget.", "answerSpec": { "accepted": ["It"] }, "hints": ["Sujet impersonnel devant « worth »."] },
-        { "type": "transform", "source": "A demo is planned for Thursday.", "prompt": "Réécris la phrase en commençant par « There ».", "answerSpec": { "accepted": ["There is a demo planned for Thursday"] }, "hints": ["there introduit ce qui existe."] },
-        { "type": "spot_error", "source": "It is a queue at the coffee machine every morning.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["There is a queue at the coffee machine every morning"] }, "hints": ["On annonce une existence."] },
-        { "type": "mcq", "prompt": "___ used to be a cinema where the flats are now.", "answerSpec": { "accepted": ["There"] }, "distractors": ["It", "That", "This"], "hints": ["Existence passée."] }
+        {
+          "type": "produce",
+          "prompt": "Traduis : C'est un ami à moi.",
+          "answerSpec": {
+            "accepted": [
+              "He is a friend of mine"
+            ]
+          },
+          "hints": [
+            "of + pronom possessif."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : J'aimerais avoir mon propre bureau.",
+          "answerSpec": {
+            "accepted": [
+              "I would like to have my own office"
+            ]
+          },
+          "hints": [
+            "own se place entre le possessif et le nom."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Elle a monté le pilote toute seule.",
+          "answerSpec": {
+            "accepted": [
+              "She set up the pilot on her own",
+              "She set up the pilot by herself"
+            ]
+          },
+          "hints": [
+            "Deux formules équivalentes."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "I borrowed a laptop from a colleague of ___ . (I)",
+          "answerSpec": {
+            "accepted": [
+              "mine"
+            ]
+          },
+          "hints": [
+            "Pronom possessif après of."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "He refuses to use a shared desk; he wants his ___ .",
+          "answerSpec": {
+            "accepted": [
+              "own"
+            ]
+          },
+          "hints": [
+            "Propriété exclusive."
+          ]
+        },
+        {
+          "type": "transform",
+          "source": "Nobody helped me: I wrote the whole handover alone.",
+          "prompt": "Réécris la fin avec « on my own ».",
+          "answerSpec": {
+            "accepted": [
+              "I wrote the whole handover on my own"
+            ]
+          },
+          "hints": [
+            "« on my own » remplace alone."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "source": "She is a my colleague from the Bristol office.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": {
+            "accepted": [
+              "She is a colleague of mine from the Bristol office"
+            ]
+          },
+          "hints": [
+            "On ne cumule pas a et un possessif."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "They have built their ___ scheduling tool.",
+          "answerSpec": {
+            "accepted": [
+              "own"
+            ]
+          },
+          "distractors": [
+            "proper",
+            "self",
+            "one"
+          ],
+          "hints": [
+            "« proper » ne veut pas dire propre au sens de possession."
+          ]
+        }
       ]
     },
     {
-      "id": "u085-a", "topicId": "u085", "tags": ["some-any"],
-      "fields": { "regle": "some à l'affirmative et dans une offre ou une demande (« Would you like some tea? ») ; any à la négative et à l'interrogative neutre. any signifie aussi « n'importe quel » à l'affirmative." },
+      "id": "u083-b",
+      "topicId": "u083",
+      "tags": [
+        "possessif",
+        "own"
+      ],
+      "fields": {
+        "regle": "a friend of mine ; my own pour la propriété exclusive ; on my own et by myself pour « seul »."
+      },
       "exercises": [
-        { "type": "produce", "prompt": "Traduis : Je n'ai reçu aucune réponse.", "answerSpec": { "accepted": ["I have not had any replies", "I did not get any replies"] }, "hints": ["Négation : any."] },
-        { "type": "produce", "prompt": "Traduis : Voulez-vous du thé ?", "answerSpec": { "accepted": ["Would you like some tea"] }, "hints": ["Une offre prend some."] },
-        { "type": "produce", "prompt": "Traduis : N'importe quel jour de la semaine me convient.", "answerSpec": { "accepted": ["Any day of the week suits me"] }, "hints": ["any affirmatif : peu importe lequel."] },
-        { "type": "fill_blank", "prompt": "Is there ___ news from the steering group?", "answerSpec": { "accepted": ["any"] }, "hints": ["Question neutre."] },
-        { "type": "fill_blank", "prompt": "She made ___ excellent points about presenteeism.", "answerSpec": { "accepted": ["some"] }, "hints": ["Affirmation."] },
-        { "type": "transform", "source": "There were no volunteers for the town hall.", "prompt": "Réécris la phrase avec « any ».", "answerSpec": { "accepted": ["There were not any volunteers for the town hall"] }, "hints": ["no + nom devient not any."] },
-        { "type": "spot_error", "source": "I have not got some time before the call.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["I have not got any time before the call"] }, "hints": ["Après une négation, c'est any."] },
-        { "type": "mcq", "prompt": "Could I have ___ help with this spreadsheet?", "answerSpec": { "accepted": ["some"] }, "distractors": ["any", "a", "the some"], "hints": ["Une demande polie."] }
+        {
+          "type": "produce",
+          "prompt": "Traduis : C'est une collègue à moi.",
+          "answerSpec": {
+            "accepted": [
+              "She is a colleague of mine"
+            ]
+          },
+          "hints": [
+            "of + pronom possessif."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Il veut son propre bureau.",
+          "answerSpec": {
+            "accepted": [
+              "He wants his own office"
+            ]
+          },
+          "hints": [
+            "own entre possessif et nom."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Elle a monté le pilote toute seule.",
+          "answerSpec": {
+            "accepted": [
+              "She set up the pilot on her own",
+              "She set up the pilot by herself"
+            ]
+          },
+          "hints": [
+            "Deux formules."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "I borrowed a charger from a colleague of ___ . (I)",
+          "answerSpec": {
+            "accepted": [
+              "mine"
+            ]
+          },
+          "hints": [
+            "Pronom possessif."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "She refuses hot-desking; she wants her ___ desk.",
+          "answerSpec": {
+            "accepted": [
+              "own"
+            ]
+          },
+          "hints": [
+            "Propriété exclusive."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "Nobody helped me: I wrote the whole pack alone.",
+          "answerSpec": {
+            "accepted": [
+              "I wrote the whole pack on my own"
+            ]
+          },
+          "source": "Nobody helped me: I wrote the whole pack alone.",
+          "hints": [
+            "on my own."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "He is a my colleague from the Leeds office.",
+          "answerSpec": {
+            "accepted": [
+              "He is a colleague of mine from the Leeds office"
+            ]
+          },
+          "source": "He is a my colleague from the Leeds office.",
+          "hints": [
+            "On ne cumule pas a et un possessif."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "They have built their ___ booking tool.",
+          "answerSpec": {
+            "accepted": [
+              "own"
+            ]
+          },
+          "hints": [
+            "Propriété exclusive."
+          ],
+          "distractors": [
+            "proper",
+            "self",
+            "one"
+          ]
+        }
       ]
     },
     {
-      "id": "u086-a", "topicId": "u086", "tags": ["no-none", "nobody"],
-      "fields": { "regle": "no + nom, none seul (« How many? None. »), nothing / nobody / nowhere en un mot. L'anglais ne double jamais la négation : « I saw nobody » ou « I didn't see anybody », jamais les deux." },
+      "id": "u084-a",
+      "topicId": "u084",
+      "tags": [
+        "there-it",
+        "presentatif"
+      ],
+      "fields": {
+        "regle": "there dit l'existence (« there is a problem ») ; it désigne une chose déjà identifiée, ou sert de sujet impersonnel pour le temps, l'heure et la distance (« it is raining », « it is five miles »)."
+      },
       "exercises": [
-        { "type": "produce", "prompt": "Traduis : Personne n'est venu à la réunion.", "answerSpec": { "accepted": ["Nobody came to the meeting", "No one came to the meeting"] }, "hints": ["Un seul mot négatif."] },
-        { "type": "produce", "prompt": "Traduis : Il n'y a plus de café.", "answerSpec": { "accepted": ["There is no coffee left"] }, "hints": ["no devant le nom."] },
-        { "type": "produce", "prompt": "Traduis : Combien de candidats parlaient gallois ? Aucun.", "answerSpec": { "accepted": ["How many candidates spoke Welsh? None"] }, "hints": ["none s'emploie seul, sans nom."] },
-        { "type": "fill_blank", "prompt": "___ of the three suppliers answered on time.", "answerSpec": { "accepted": ["None"] }, "hints": ["none of + groupe."] },
-        { "type": "fill_blank", "prompt": "She said ___ about the day rate, which was telling.", "answerSpec": { "accepted": ["nothing"] }, "hints": ["Un seul mot."] },
-        { "type": "transform", "source": "I did not tell anybody about the offer.", "prompt": "Réécris la phrase en commençant par « I told ».", "answerSpec": { "accepted": ["I told nobody about the offer", "I told no one about the offer"] }, "hints": ["La négation passe dans le pronom."] },
-        { "type": "spot_error", "source": "We did not find nothing wrong with the data.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["We did not find anything wrong with the data", "We found nothing wrong with the data"] }, "hints": ["Pas de double négation."] },
-        { "type": "mcq", "prompt": "___ of the guardrails were tested before launch.", "answerSpec": { "accepted": ["None"] }, "distractors": ["No", "Nothing", "Any"], "hints": ["Suivi de « of »."] }
+        {
+          "type": "produce",
+          "prompt": "Traduis : Il y a un problème avec le connecteur.",
+          "answerSpec": {
+            "accepted": [
+              "There is a problem with the connector"
+            ]
+          },
+          "hints": [
+            "Existence : there."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Il pleut depuis ce matin.",
+          "answerSpec": {
+            "accepted": [
+              "It has been raining since this morning"
+            ]
+          },
+          "hints": [
+            "Le temps qu'il fait : it."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : C'est à dix minutes à pied de la gare.",
+          "answerSpec": {
+            "accepted": [
+              "It is a ten-minute walk from the station"
+            ]
+          },
+          "hints": [
+            "Une distance : it."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "___ was nobody in the breakout space at eight.",
+          "answerSpec": {
+            "accepted": [
+              "There"
+            ]
+          },
+          "hints": [
+            "Existence, ou plutôt absence."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "___ is worth writing the summary before you forget.",
+          "answerSpec": {
+            "accepted": [
+              "It"
+            ]
+          },
+          "hints": [
+            "Sujet impersonnel devant « worth »."
+          ]
+        },
+        {
+          "type": "transform",
+          "source": "A demo is planned for Thursday.",
+          "prompt": "Réécris la phrase en commençant par « There ».",
+          "answerSpec": {
+            "accepted": [
+              "There is a demo planned for Thursday"
+            ]
+          },
+          "hints": [
+            "there introduit ce qui existe."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "source": "It is a queue at the coffee machine every morning.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": {
+            "accepted": [
+              "There is a queue at the coffee machine every morning"
+            ]
+          },
+          "hints": [
+            "On annonce une existence."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "___ used to be a cinema where the flats are now.",
+          "answerSpec": {
+            "accepted": [
+              "There"
+            ]
+          },
+          "distractors": [
+            "It",
+            "That",
+            "This"
+          ],
+          "hints": [
+            "Existence passée."
+          ]
+        }
       ]
     },
     {
-      "id": "u087-a", "topicId": "u087", "tags": ["quantifieurs", "much-many-few-little"],
-      "fields": { "regle": "much et little avec les indénombrables, many et few avec les dénombrables. « a few / a little » = un peu, positif ; « few / little » sans article = presque pas, négatif." },
+      "id": "u084-b",
+      "topicId": "u084",
+      "tags": [
+        "there-it"
+      ],
+      "fields": {
+        "regle": "there dit l'existence, it désigne l'identifié ou sert de sujet impersonnel pour le temps, l'heure et la distance."
+      },
       "exercises": [
-        { "type": "produce", "prompt": "Traduis : Nous avons peu de temps avant le comité.", "answerSpec": { "accepted": ["We have little time before the steering group"] }, "hints": ["time est indénombrable, et le sens est négatif."] },
-        { "type": "produce", "prompt": "Traduis : J'ai quelques questions, rien de grave.", "answerSpec": { "accepted": ["I have a few questions, nothing serious"] }, "hints": ["Dénombrable, sens positif : a few."] },
-        { "type": "produce", "prompt": "Traduis : Il y a beaucoup de bruit sur ce plateau.", "answerSpec": { "accepted": ["There is a lot of noise on this floor"] }, "hints": ["a lot of passe partout à l'affirmative."] },
-        { "type": "fill_blank", "prompt": "How ___ people actually booked a desk? (much / many)", "answerSpec": { "accepted": ["many"] }, "hints": ["people se compte."] },
-        { "type": "fill_blank", "prompt": "There is ___ point in shipping on a Friday. (little / few)", "answerSpec": { "accepted": ["little"] }, "hints": ["point est indénombrable ici, sens négatif."] },
-        { "type": "transform", "source": "We received almost no feedback after the rollout.", "prompt": "Réécris la phrase avec « little ».", "answerSpec": { "accepted": ["We received little feedback after the rollout"] }, "hints": ["little sans article dit la rareté."] },
-        { "type": "spot_error", "source": "She gave me a few advice before the interview.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["She gave me a little advice before the interview"] }, "hints": ["advice est indénombrable."] },
-        { "type": "mcq", "prompt": "There were ___ of chairs, but nowhere to take a call.", "answerSpec": { "accepted": ["plenty"] }, "distractors": ["much", "little", "a much"], "hints": ["plenty of = largement assez."] }
+        {
+          "type": "produce",
+          "prompt": "Traduis : Il y a un souci avec le connecteur.",
+          "answerSpec": {
+            "accepted": [
+              "There is a problem with the connector"
+            ]
+          },
+          "hints": [
+            "Existence."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Il pleut depuis le petit matin.",
+          "answerSpec": {
+            "accepted": [
+              "It has been raining since early morning"
+            ]
+          },
+          "hints": [
+            "Le temps qu'il fait."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : C'est à quinze minutes à pied.",
+          "answerSpec": {
+            "accepted": [
+              "It is a fifteen-minute walk"
+            ]
+          },
+          "hints": [
+            "Distance."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "___ was nobody in the breakout space at eight.",
+          "answerSpec": {
+            "accepted": [
+              "There"
+            ]
+          },
+          "hints": [
+            "Absence."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "___ is worth writing the summary straight away.",
+          "answerSpec": {
+            "accepted": [
+              "It"
+            ]
+          },
+          "hints": [
+            "Sujet impersonnel."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "A review is planned for Thursday.",
+          "answerSpec": {
+            "accepted": [
+              "There is a review planned for Thursday"
+            ]
+          },
+          "source": "A review is planned for Thursday.",
+          "hints": [
+            "there introduit l'existence."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "It is a queue at the coffee machine every morning.",
+          "answerSpec": {
+            "accepted": [
+              "There is a queue at the coffee machine every morning"
+            ]
+          },
+          "source": "It is a queue at the coffee machine every morning.",
+          "hints": [
+            "Existence."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "___ used to be a cinema where the flats are now.",
+          "answerSpec": {
+            "accepted": [
+              "There"
+            ]
+          },
+          "hints": [
+            "Existence passée."
+          ],
+          "distractors": [
+            "It",
+            "That",
+            "This"
+          ]
+        }
       ]
     },
     {
-      "id": "u088-a", "topicId": "u088", "tags": ["all", "most", "none-of"],
-      "fields": { "regle": "Sans of devant un nom général : « most people », « all children ». Avec of devant un déterminant ou un pronom : « most of the people », « all of us »." },
+      "id": "u085-a",
+      "topicId": "u085",
+      "tags": [
+        "some-any"
+      ],
+      "fields": {
+        "regle": "some à l'affirmative et dans une offre ou une demande (« Would you like some tea? ») ; any à la négative et à l'interrogative neutre. any signifie aussi « n'importe quel » à l'affirmative."
+      },
       "exercises": [
-        { "type": "produce", "prompt": "Traduis : La plupart des gens détestent les réunions du lundi.", "answerSpec": { "accepted": ["Most people hate Monday meetings"] }, "hints": ["Généralité : pas de of, pas d'article."] },
-        { "type": "produce", "prompt": "Traduis : La plupart des gens que j'ai interrogés étaient d'accord.", "answerSpec": { "accepted": ["Most of the people I interviewed agreed"] }, "hints": ["Groupe délimité : most of the."] },
-        { "type": "produce", "prompt": "Traduis : Aucun d'entre nous n'avait lu le contrat.", "answerSpec": { "accepted": ["None of us had read the contract"] }, "hints": ["Devant un pronom : of obligatoire."] },
-        { "type": "fill_blank", "prompt": "___ of the licences were never activated.", "answerSpec": { "accepted": ["Most", "All", "None"] }, "hints": ["Suivi de « of the »."] },
-        { "type": "fill_blank", "prompt": "All ___ want is a decision, not another deck.", "answerSpec": { "accepted": ["I", "we", "they"] }, "hints": ["« All I want » : tout ce que je veux."] },
-        { "type": "transform", "source": "Every single one of the invoices was wrong.", "prompt": "Réécris la phrase en commençant par « All ».", "answerSpec": { "accepted": ["All of the invoices were wrong", "All the invoices were wrong"] }, "hints": ["Accord au pluriel."] },
-        { "type": "spot_error", "source": "Most of consultants would say the same thing.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["Most consultants would say the same thing"] }, "hints": ["Sans déterminant derrière, pas de of."] },
-        { "type": "mcq", "prompt": "___ the team was in the office on Tuesday.", "answerSpec": { "accepted": ["All of"] }, "distractors": ["All of the of", "None", "Most of of"], "hints": ["Devant « the », il faut of."] }
+        {
+          "type": "produce",
+          "prompt": "Traduis : Je n'ai reçu aucune réponse.",
+          "answerSpec": {
+            "accepted": [
+              "I have not had any replies",
+              "I did not get any replies"
+            ]
+          },
+          "hints": [
+            "Négation : any."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Voulez-vous du thé ?",
+          "answerSpec": {
+            "accepted": [
+              "Would you like some tea"
+            ]
+          },
+          "hints": [
+            "Une offre prend some."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : N'importe quel jour de la semaine me convient.",
+          "answerSpec": {
+            "accepted": [
+              "Any day of the week suits me"
+            ]
+          },
+          "hints": [
+            "any affirmatif : peu importe lequel."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Is there ___ news from the steering group?",
+          "answerSpec": {
+            "accepted": [
+              "any"
+            ]
+          },
+          "hints": [
+            "Question neutre."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "She made ___ excellent points about presenteeism.",
+          "answerSpec": {
+            "accepted": [
+              "some"
+            ]
+          },
+          "hints": [
+            "Affirmation."
+          ]
+        },
+        {
+          "type": "transform",
+          "source": "There were no volunteers for the town hall.",
+          "prompt": "Réécris la phrase avec « any ».",
+          "answerSpec": {
+            "accepted": [
+              "There were not any volunteers for the town hall"
+            ]
+          },
+          "hints": [
+            "no + nom devient not any."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "source": "I have not got some time before the call.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": {
+            "accepted": [
+              "I have not got any time before the call"
+            ]
+          },
+          "hints": [
+            "Après une négation, c'est any."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Could I have ___ help with this spreadsheet?",
+          "answerSpec": {
+            "accepted": [
+              "some"
+            ]
+          },
+          "distractors": [
+            "any",
+            "a",
+            "the some"
+          ],
+          "hints": [
+            "Une demande polie."
+          ]
+        }
       ]
     },
     {
-      "id": "u089-a", "topicId": "u089", "tags": ["both-neither-either"],
-      "fields": { "regle": "Ces trois mots portent sur deux éléments : both (les deux), neither (ni l'un ni l'autre, verbe affirmatif), either (l'un ou l'autre). Both + pluriel ; neither et either + singulier." },
+      "id": "u085-b",
+      "topicId": "u085",
+      "tags": [
+        "some-any"
+      ],
+      "fields": {
+        "regle": "some à l'affirmative et dans les offres, any à la négative et dans les questions neutres. any affirmatif = n'importe lequel."
+      },
       "exercises": [
-        { "type": "produce", "prompt": "Traduis : Les deux propositions étaient trop chères.", "answerSpec": { "accepted": ["Both proposals were too expensive"] }, "hints": ["both + pluriel, sans of."] },
-        { "type": "produce", "prompt": "Traduis : Aucune des deux dates ne me convient.", "answerSpec": { "accepted": ["Neither date suits me"] }, "hints": ["neither + singulier, verbe affirmatif."] },
-        { "type": "produce", "prompt": "Traduis : L'une ou l'autre salle fera l'affaire.", "answerSpec": { "accepted": ["Either room will do"] }, "hints": ["either + singulier."] },
-        { "type": "fill_blank", "prompt": "___ of us has ever run a migration this size.", "answerSpec": { "accepted": ["Neither"] }, "hints": ["Ni l'un ni l'autre, verbe au singulier."] },
-        { "type": "fill_blank", "prompt": "___ candidates spoke fluent French, which helped.", "answerSpec": { "accepted": ["Both"] }, "hints": ["Les deux, donc pluriel."] },
-        { "type": "transform", "source": "The first option is bad and the second option is bad too.", "prompt": "Réécris la phrase avec « Both ».", "answerSpec": { "accepted": ["Both options are bad"] }, "hints": ["both + pluriel."] },
-        { "type": "spot_error", "source": "Neither of the suppliers have replied yet.", "prompt": "Corrige la phrase en registre soigné.", "answerSpec": { "accepted": ["Neither of the suppliers has replied yet"] }, "hints": ["neither commande le singulier."] },
-        { "type": "mcq", "prompt": "You can pay by card or cash — ___ is fine.", "answerSpec": { "accepted": ["either"] }, "distractors": ["both", "neither", "any"], "hints": ["L'un ou l'autre, au choix."] }
+        {
+          "type": "produce",
+          "prompt": "Traduis : Je n'ai eu aucune réponse.",
+          "answerSpec": {
+            "accepted": [
+              "I have not had any replies",
+              "I haven't had any replies"
+            ]
+          },
+          "hints": [
+            "Négation."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Voulez-vous du café ?",
+          "answerSpec": {
+            "accepted": [
+              "Would you like some coffee"
+            ]
+          },
+          "hints": [
+            "Offre."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : N'importe quelle salle fera l'affaire.",
+          "answerSpec": {
+            "accepted": [
+              "Any room will do"
+            ]
+          },
+          "hints": [
+            "any affirmatif."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Is there ___ news from the board?",
+          "answerSpec": {
+            "accepted": [
+              "any"
+            ]
+          },
+          "hints": [
+            "Question neutre."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "She made ___ excellent points about presenteeism.",
+          "answerSpec": {
+            "accepted": [
+              "some"
+            ]
+          },
+          "hints": [
+            "Affirmation."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "There were no volunteers for the town hall.",
+          "answerSpec": {
+            "accepted": [
+              "There were not any volunteers for the town hall"
+            ]
+          },
+          "source": "There were no volunteers for the town hall.",
+          "hints": [
+            "no + nom devient not any."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "I have not got some time before the call.",
+          "answerSpec": {
+            "accepted": [
+              "I have not got any time before the call"
+            ]
+          },
+          "source": "I have not got some time before the call.",
+          "hints": [
+            "Après une négation : any."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Could I have ___ help with this spreadsheet?",
+          "answerSpec": {
+            "accepted": [
+              "some"
+            ]
+          },
+          "hints": [
+            "Demande polie."
+          ],
+          "distractors": [
+            "any",
+            "a",
+            "the some"
+          ]
+        }
       ]
     },
     {
-      "id": "u090-a", "topicId": "u090", "tags": ["all-every-whole"],
-      "fields": { "regle": "all + pluriel ou indénombrable, every + singulier, whole + singulier avec article (« the whole day » = « all day »). Pour le temps : « all day », « the whole morning »." },
+      "id": "u086-a",
+      "topicId": "u086",
+      "tags": [
+        "no-none",
+        "nobody"
+      ],
+      "fields": {
+        "regle": "no + nom, none seul (« How many? None. »), nothing / nobody / nowhere en un mot. L'anglais ne double jamais la négation : « I saw nobody » ou « I didn't see anybody », jamais les deux."
+      },
       "exercises": [
-        { "type": "produce", "prompt": "Traduis : J'ai passé toute la journée sur ce tableur.", "answerSpec": { "accepted": ["I spent all day on that spreadsheet", "I spent the whole day on that spreadsheet"] }, "hints": ["Deux tournures possibles."] },
-        { "type": "produce", "prompt": "Traduis : Chaque étage a sa propre imprimante.", "answerSpec": { "accepted": ["Every floor has its own printer"] }, "hints": ["every + singulier."] },
-        { "type": "produce", "prompt": "Traduis : Toute l'équipe a été prévenue.", "answerSpec": { "accepted": ["The whole team was told", "All the team was told"] }, "hints": ["whole s'intercale après l'article."] },
-        { "type": "fill_blank", "prompt": "___ desk on this floor has to be booked in the app.", "answerSpec": { "accepted": ["Every", "Each"] }, "hints": ["Singulier."] },
-        { "type": "fill_blank", "prompt": "He read the ___ contract on the train home.", "answerSpec": { "accepted": ["whole", "entire"] }, "hints": ["Après l'article, devant le nom singulier."] },
-        { "type": "transform", "source": "The meeting lasted all morning.", "prompt": "Réécris la phrase avec « whole ».", "answerSpec": { "accepted": ["The meeting lasted the whole morning"] }, "hints": ["whole veut un déterminant."] },
-        { "type": "spot_error", "source": "Every guardrails were reviewed by legal.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["All the guardrails were reviewed by legal"] }, "hints": ["every ne se met jamais devant un pluriel."] },
-        { "type": "mcq", "prompt": "She has worked here ___ her career.", "answerSpec": { "accepted": ["all"] }, "distractors": ["every", "whole", "each"], "hints": ["Devant un possessif, c'est all."] }
+        {
+          "type": "produce",
+          "prompt": "Traduis : Personne n'est venu à la réunion.",
+          "answerSpec": {
+            "accepted": [
+              "Nobody came to the meeting",
+              "No one came to the meeting"
+            ]
+          },
+          "hints": [
+            "Un seul mot négatif."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Il n'y a plus de café.",
+          "answerSpec": {
+            "accepted": [
+              "There is no coffee left"
+            ]
+          },
+          "hints": [
+            "no devant le nom."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Combien de candidats parlaient gallois ? Aucun.",
+          "answerSpec": {
+            "accepted": [
+              "How many candidates spoke Welsh? None"
+            ]
+          },
+          "hints": [
+            "none s'emploie seul, sans nom."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "___ of the three suppliers answered on time.",
+          "answerSpec": {
+            "accepted": [
+              "None"
+            ]
+          },
+          "hints": [
+            "none of + groupe."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "She said ___ about the day rate, which was telling.",
+          "answerSpec": {
+            "accepted": [
+              "nothing"
+            ]
+          },
+          "hints": [
+            "Un seul mot."
+          ]
+        },
+        {
+          "type": "transform",
+          "source": "I did not tell anybody about the offer.",
+          "prompt": "Réécris la phrase en commençant par « I told ».",
+          "answerSpec": {
+            "accepted": [
+              "I told nobody about the offer",
+              "I told no one about the offer"
+            ]
+          },
+          "hints": [
+            "La négation passe dans le pronom."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "source": "We did not find nothing wrong with the data.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": {
+            "accepted": [
+              "We did not find anything wrong with the data",
+              "We found nothing wrong with the data"
+            ]
+          },
+          "hints": [
+            "Pas de double négation."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "___ of the guardrails were tested before launch.",
+          "answerSpec": {
+            "accepted": [
+              "None"
+            ]
+          },
+          "distractors": [
+            "No",
+            "Nothing",
+            "Any"
+          ],
+          "hints": [
+            "Suivi de « of »."
+          ]
+        }
       ]
     },
     {
-      "id": "u091-a", "topicId": "u091", "tags": ["each-every"],
-      "fields": { "regle": "each regarde les éléments un par un et vaut à partir de deux ; every les prend en bloc et suppose au moins trois. « each of the two », mais « every one of the fifty »." },
+      "id": "u086-b",
+      "topicId": "u086",
+      "tags": [
+        "no-none"
+      ],
+      "fields": {
+        "regle": "no + nom, none seul, nothing/nobody/nowhere en un mot. Jamais de double négation."
+      },
       "exercises": [
-        { "type": "produce", "prompt": "Traduis : Chacun des deux directeurs a signé.", "answerSpec": { "accepted": ["Each of the two directors signed"] }, "hints": ["À deux, c'est each."] },
-        { "type": "produce", "prompt": "Traduis : Tous les vendredis, il travaille de chez lui.", "answerSpec": { "accepted": ["Every Friday he works from home"] }, "hints": ["Une régularité : every."] },
-        { "type": "produce", "prompt": "Traduis : Chaque personne dans la salle avait un avis.", "answerSpec": { "accepted": ["Each person in the room had an opinion"] }, "hints": ["On les prend un par un."] },
-        { "type": "fill_blank", "prompt": "The two candidates were seen by ___ member of the panel.", "answerSpec": { "accepted": ["each", "every"] }, "hints": ["Un par un."] },
-        { "type": "fill_blank", "prompt": "The bus leaves ___ twenty minutes.", "answerSpec": { "accepted": ["every"] }, "hints": ["Une fréquence : toujours every."] },
-        { "type": "transform", "source": "The two rooms have their own thermostat.", "prompt": "Réécris la phrase en commençant par « Each ».", "answerSpec": { "accepted": ["Each room has its own thermostat"] }, "hints": ["each + singulier."] },
-        { "type": "spot_error", "source": "Each of the fifty desks have a monitor.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["Each of the fifty desks has a monitor"] }, "hints": ["each commande le singulier."] },
-        { "type": "mcq", "prompt": "She goes to Bristol ___ other week.", "answerSpec": { "accepted": ["every"] }, "distractors": ["each", "all", "whole"], "hints": ["« every other » = une fois sur deux."] }
+        {
+          "type": "produce",
+          "prompt": "Traduis : Personne n'a lu le contrat.",
+          "answerSpec": {
+            "accepted": [
+              "Nobody has read the contract",
+              "No one has read the contract"
+            ]
+          },
+          "hints": [
+            "Un seul mot négatif."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Il n'y a plus de licences disponibles.",
+          "answerSpec": {
+            "accepted": [
+              "There are no licences left"
+            ]
+          },
+          "hints": [
+            "no + nom."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Combien ont répondu ? Aucun.",
+          "answerSpec": {
+            "accepted": [
+              "How many answered? None"
+            ]
+          },
+          "hints": [
+            "none seul."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "___ of the four suppliers replied on time.",
+          "answerSpec": {
+            "accepted": [
+              "None"
+            ]
+          },
+          "hints": [
+            "none of."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "He said ___ about the day rate, which was telling.",
+          "answerSpec": {
+            "accepted": [
+              "nothing"
+            ]
+          },
+          "hints": [
+            "Un seul mot."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "I did not tell anybody about the offer.",
+          "answerSpec": {
+            "accepted": [
+              "I told nobody about the offer"
+            ]
+          },
+          "source": "I did not tell anybody about the offer.",
+          "hints": [
+            "La négation passe dans le pronom."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "We did not find nothing wrong with the data.",
+          "answerSpec": {
+            "accepted": [
+              "We did not find anything wrong with the data"
+            ]
+          },
+          "source": "We did not find nothing wrong with the data.",
+          "hints": [
+            "Pas de double négation."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "___ of the guardrails were tested before launch.",
+          "answerSpec": {
+            "accepted": [
+              "None"
+            ]
+          },
+          "hints": [
+            "Suivi de of."
+          ],
+          "distractors": [
+            "No",
+            "Nothing",
+            "Any"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u087-a",
+      "topicId": "u087",
+      "tags": [
+        "quantifieurs",
+        "much-many-few-little"
+      ],
+      "fields": {
+        "regle": "much et little avec les indénombrables, many et few avec les dénombrables. « a few / a little » = un peu, positif ; « few / little » sans article = presque pas, négatif."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Nous avons peu de temps avant le comité.",
+          "answerSpec": {
+            "accepted": [
+              "We have little time before the steering group"
+            ]
+          },
+          "hints": [
+            "time est indénombrable, et le sens est négatif."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : J'ai quelques questions, rien de grave.",
+          "answerSpec": {
+            "accepted": [
+              "I have a few questions, nothing serious"
+            ]
+          },
+          "hints": [
+            "Dénombrable, sens positif : a few."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Il y a beaucoup de bruit sur ce plateau.",
+          "answerSpec": {
+            "accepted": [
+              "There is a lot of noise on this floor"
+            ]
+          },
+          "hints": [
+            "a lot of passe partout à l'affirmative."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "How ___ people actually booked a desk? (much / many)",
+          "answerSpec": {
+            "accepted": [
+              "many"
+            ]
+          },
+          "hints": [
+            "people se compte."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "There is ___ point in shipping on a Friday. (little / few)",
+          "answerSpec": {
+            "accepted": [
+              "little"
+            ]
+          },
+          "hints": [
+            "point est indénombrable ici, sens négatif."
+          ]
+        },
+        {
+          "type": "transform",
+          "source": "We received almost no feedback after the rollout.",
+          "prompt": "Réécris la phrase avec « little ».",
+          "answerSpec": {
+            "accepted": [
+              "We received little feedback after the rollout"
+            ]
+          },
+          "hints": [
+            "little sans article dit la rareté."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "source": "She gave me a few advice before the interview.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": {
+            "accepted": [
+              "She gave me a little advice before the interview"
+            ]
+          },
+          "hints": [
+            "advice est indénombrable."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "There were ___ of chairs, but nowhere to take a call.",
+          "answerSpec": {
+            "accepted": [
+              "plenty"
+            ]
+          },
+          "distractors": [
+            "much",
+            "little",
+            "a much"
+          ],
+          "hints": [
+            "plenty of = largement assez."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u087-b",
+      "topicId": "u087",
+      "tags": [
+        "quantifieurs"
+      ],
+      "fields": {
+        "regle": "much et little avec les indénombrables, many et few avec les dénombrables. a few / a little sont positifs, few / little négatifs."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Nous avons peu de temps avant le conseil.",
+          "answerSpec": {
+            "accepted": [
+              "We have little time before the board"
+            ]
+          },
+          "hints": [
+            "Indénombrable, sens négatif."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : J'ai quelques remarques, rien de grave.",
+          "answerSpec": {
+            "accepted": [
+              "I have a few comments, nothing serious"
+            ]
+          },
+          "hints": [
+            "Dénombrable, positif."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Il y a beaucoup de bruit sur ce plateau.",
+          "answerSpec": {
+            "accepted": [
+              "There is a lot of noise on this floor"
+            ]
+          },
+          "hints": [
+            "a lot of."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "How ___ people actually booked a desk? (much / many)",
+          "answerSpec": {
+            "accepted": [
+              "many"
+            ]
+          },
+          "hints": [
+            "people se compte."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "There is ___ point in shipping on a Friday. (little / few)",
+          "answerSpec": {
+            "accepted": [
+              "little"
+            ]
+          },
+          "hints": [
+            "Indénombrable, négatif."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "We received almost no feedback after the rollout.",
+          "answerSpec": {
+            "accepted": [
+              "We received little feedback after the rollout"
+            ]
+          },
+          "source": "We received almost no feedback after the rollout.",
+          "hints": [
+            "little sans article."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "She gave me a few advice before the interview.",
+          "answerSpec": {
+            "accepted": [
+              "She gave me a little advice before the interview"
+            ]
+          },
+          "source": "She gave me a few advice before the interview.",
+          "hints": [
+            "advice est indénombrable."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "There were ___ of chairs, but nowhere to take a call.",
+          "answerSpec": {
+            "accepted": [
+              "plenty"
+            ]
+          },
+          "hints": [
+            "plenty of."
+          ],
+          "distractors": [
+            "much",
+            "little",
+            "a much"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u088-a",
+      "topicId": "u088",
+      "tags": [
+        "all",
+        "most",
+        "none-of"
+      ],
+      "fields": {
+        "regle": "Sans of devant un nom général : « most people », « all children ». Avec of devant un déterminant ou un pronom : « most of the people », « all of us »."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : La plupart des gens détestent les réunions du lundi.",
+          "answerSpec": {
+            "accepted": [
+              "Most people hate Monday meetings"
+            ]
+          },
+          "hints": [
+            "Généralité : pas de of, pas d'article."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : La plupart des gens que j'ai interrogés étaient d'accord.",
+          "answerSpec": {
+            "accepted": [
+              "Most of the people I interviewed agreed"
+            ]
+          },
+          "hints": [
+            "Groupe délimité : most of the."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Aucun d'entre nous n'avait lu le contrat.",
+          "answerSpec": {
+            "accepted": [
+              "None of us had read the contract"
+            ]
+          },
+          "hints": [
+            "Devant un pronom : of obligatoire."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "___ of the licences were never activated.",
+          "answerSpec": {
+            "accepted": [
+              "Most",
+              "All",
+              "None"
+            ]
+          },
+          "hints": [
+            "Suivi de « of the »."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "All ___ want is a decision, not another deck.",
+          "answerSpec": {
+            "accepted": [
+              "I",
+              "we",
+              "they"
+            ]
+          },
+          "hints": [
+            "« All I want » : tout ce que je veux."
+          ]
+        },
+        {
+          "type": "transform",
+          "source": "Every single one of the invoices was wrong.",
+          "prompt": "Réécris la phrase en commençant par « All ».",
+          "answerSpec": {
+            "accepted": [
+              "All of the invoices were wrong",
+              "All the invoices were wrong"
+            ]
+          },
+          "hints": [
+            "Accord au pluriel."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "source": "Most of consultants would say the same thing.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": {
+            "accepted": [
+              "Most consultants would say the same thing"
+            ]
+          },
+          "hints": [
+            "Sans déterminant derrière, pas de of."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "___ the team was in the office on Tuesday.",
+          "answerSpec": {
+            "accepted": [
+              "All of"
+            ]
+          },
+          "distractors": [
+            "All of the of",
+            "None",
+            "Most of of"
+          ],
+          "hints": [
+            "Devant « the », il faut of."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u088-b",
+      "topicId": "u088",
+      "tags": [
+        "all-most-none"
+      ],
+      "fields": {
+        "regle": "Sans of devant un nom général, avec of devant un déterminant ou un pronom."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : La plupart des gens détestent les réunions du lundi.",
+          "answerSpec": {
+            "accepted": [
+              "Most people hate Monday meetings"
+            ]
+          },
+          "hints": [
+            "Généralité : pas de of."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : La plupart des gens que j'ai vus étaient d'accord.",
+          "answerSpec": {
+            "accepted": [
+              "Most of the people I saw agreed"
+            ]
+          },
+          "hints": [
+            "Groupe délimité."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Aucun d'entre nous n'avait lu le périmètre.",
+          "answerSpec": {
+            "accepted": [
+              "None of us had read the scope"
+            ]
+          },
+          "hints": [
+            "Devant un pronom : of."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "___ of the licences were never activated.",
+          "answerSpec": {
+            "accepted": [
+              "Most",
+              "All",
+              "None"
+            ]
+          },
+          "hints": [
+            "Suivi de of the."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "All ___ want is a decision, not another deck.",
+          "answerSpec": {
+            "accepted": [
+              "I",
+              "we",
+              "they"
+            ]
+          },
+          "hints": [
+            "All I want."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "Every single invoice was wrong.",
+          "answerSpec": {
+            "accepted": [
+              "All the invoices were wrong"
+            ]
+          },
+          "source": "Every single invoice was wrong.",
+          "hints": [
+            "Accord au pluriel."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "Most of consultants would say the same.",
+          "answerSpec": {
+            "accepted": [
+              "Most consultants would say the same"
+            ]
+          },
+          "source": "Most of consultants would say the same.",
+          "hints": [
+            "Sans déterminant, pas de of."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "___ the team was in the office on Tuesday.",
+          "answerSpec": {
+            "accepted": [
+              "All of"
+            ]
+          },
+          "hints": [
+            "Devant the, il faut of."
+          ],
+          "distractors": [
+            "All of the of",
+            "None",
+            "Most of of"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u089-a",
+      "topicId": "u089",
+      "tags": [
+        "both-neither-either"
+      ],
+      "fields": {
+        "regle": "Ces trois mots portent sur deux éléments : both (les deux), neither (ni l'un ni l'autre, verbe affirmatif), either (l'un ou l'autre). Both + pluriel ; neither et either + singulier."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Les deux propositions étaient trop chères.",
+          "answerSpec": {
+            "accepted": [
+              "Both proposals were too expensive"
+            ]
+          },
+          "hints": [
+            "both + pluriel, sans of."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Aucune des deux dates ne me convient.",
+          "answerSpec": {
+            "accepted": [
+              "Neither date suits me"
+            ]
+          },
+          "hints": [
+            "neither + singulier, verbe affirmatif."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : L'une ou l'autre salle fera l'affaire.",
+          "answerSpec": {
+            "accepted": [
+              "Either room will do"
+            ]
+          },
+          "hints": [
+            "either + singulier."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "___ of us has ever run a migration this size.",
+          "answerSpec": {
+            "accepted": [
+              "Neither"
+            ]
+          },
+          "hints": [
+            "Ni l'un ni l'autre, verbe au singulier."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "___ candidates spoke fluent French, which helped.",
+          "answerSpec": {
+            "accepted": [
+              "Both"
+            ]
+          },
+          "hints": [
+            "Les deux, donc pluriel."
+          ]
+        },
+        {
+          "type": "transform",
+          "source": "The first option is bad and the second option is bad too.",
+          "prompt": "Réécris la phrase avec « Both ».",
+          "answerSpec": {
+            "accepted": [
+              "Both options are bad"
+            ]
+          },
+          "hints": [
+            "both + pluriel."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "source": "Neither of the suppliers have replied yet.",
+          "prompt": "Corrige la phrase en registre soigné.",
+          "answerSpec": {
+            "accepted": [
+              "Neither of the suppliers has replied yet"
+            ]
+          },
+          "hints": [
+            "neither commande le singulier."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "You can pay by card or cash — ___ is fine.",
+          "answerSpec": {
+            "accepted": [
+              "either"
+            ]
+          },
+          "distractors": [
+            "both",
+            "neither",
+            "any"
+          ],
+          "hints": [
+            "L'un ou l'autre, au choix."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u089-b",
+      "topicId": "u089",
+      "tags": [
+        "both-neither-either"
+      ],
+      "fields": {
+        "regle": "Sur deux éléments : both + pluriel, neither et either + singulier."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Les deux devis étaient trop chers.",
+          "answerSpec": {
+            "accepted": [
+              "Both quotes were too expensive"
+            ]
+          },
+          "hints": [
+            "both + pluriel."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Aucune des deux dates ne me convient.",
+          "answerSpec": {
+            "accepted": [
+              "Neither date suits me"
+            ]
+          },
+          "hints": [
+            "neither + singulier."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : L'une ou l'autre salle ira.",
+          "answerSpec": {
+            "accepted": [
+              "Either room will do"
+            ]
+          },
+          "hints": [
+            "either + singulier."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "___ of us has ever run a migration this size.",
+          "answerSpec": {
+            "accepted": [
+              "Neither"
+            ]
+          },
+          "hints": [
+            "Verbe au singulier."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "___ candidates spoke fluent Welsh.",
+          "answerSpec": {
+            "accepted": [
+              "Both"
+            ]
+          },
+          "hints": [
+            "Les deux."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "The first option is bad and so is the second.",
+          "answerSpec": {
+            "accepted": [
+              "Both options are bad"
+            ]
+          },
+          "source": "The first option is bad and so is the second.",
+          "hints": [
+            "both + pluriel."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "Neither of the suppliers have replied yet.",
+          "answerSpec": {
+            "accepted": [
+              "Neither of the suppliers has replied yet"
+            ]
+          },
+          "source": "Neither of the suppliers have replied yet.",
+          "hints": [
+            "neither commande le singulier."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Card or cash — ___ is fine.",
+          "answerSpec": {
+            "accepted": [
+              "either"
+            ]
+          },
+          "hints": [
+            "L'un ou l'autre."
+          ],
+          "distractors": [
+            "both",
+            "neither",
+            "any"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u090-a",
+      "topicId": "u090",
+      "tags": [
+        "all-every-whole"
+      ],
+      "fields": {
+        "regle": "all + pluriel ou indénombrable, every + singulier, whole + singulier avec article (« the whole day » = « all day »). Pour le temps : « all day », « the whole morning »."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : J'ai passé toute la journée sur ce tableur.",
+          "answerSpec": {
+            "accepted": [
+              "I spent all day on that spreadsheet",
+              "I spent the whole day on that spreadsheet"
+            ]
+          },
+          "hints": [
+            "Deux tournures possibles."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Chaque étage a sa propre imprimante.",
+          "answerSpec": {
+            "accepted": [
+              "Every floor has its own printer"
+            ]
+          },
+          "hints": [
+            "every + singulier."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Toute l'équipe a été prévenue.",
+          "answerSpec": {
+            "accepted": [
+              "The whole team was told",
+              "All the team was told"
+            ]
+          },
+          "hints": [
+            "whole s'intercale après l'article."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "___ desk on this floor has to be booked in the app.",
+          "answerSpec": {
+            "accepted": [
+              "Every",
+              "Each"
+            ]
+          },
+          "hints": [
+            "Singulier."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "He read the ___ contract on the train home.",
+          "answerSpec": {
+            "accepted": [
+              "whole",
+              "entire"
+            ]
+          },
+          "hints": [
+            "Après l'article, devant le nom singulier."
+          ]
+        },
+        {
+          "type": "transform",
+          "source": "The meeting lasted all morning.",
+          "prompt": "Réécris la phrase avec « whole ».",
+          "answerSpec": {
+            "accepted": [
+              "The meeting lasted the whole morning"
+            ]
+          },
+          "hints": [
+            "whole veut un déterminant."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "source": "Every guardrails were reviewed by legal.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": {
+            "accepted": [
+              "All the guardrails were reviewed by legal"
+            ]
+          },
+          "hints": [
+            "every ne se met jamais devant un pluriel."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "She has worked here ___ her career.",
+          "answerSpec": {
+            "accepted": [
+              "all"
+            ]
+          },
+          "distractors": [
+            "every",
+            "whole",
+            "each"
+          ],
+          "hints": [
+            "Devant un possessif, c'est all."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u090-b",
+      "topicId": "u090",
+      "tags": [
+        "all-every-whole"
+      ],
+      "fields": {
+        "regle": "all + pluriel ou indénombrable, every + singulier, whole + singulier avec article."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : J'ai passé toute la matinée sur ce tableur.",
+          "answerSpec": {
+            "accepted": [
+              "I spent all morning on that spreadsheet",
+              "I spent the whole morning on that spreadsheet"
+            ]
+          },
+          "hints": [
+            "Deux tournures."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Chaque étage a son imprimante.",
+          "answerSpec": {
+            "accepted": [
+              "Every floor has its own printer"
+            ]
+          },
+          "hints": [
+            "every + singulier."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Toute l'équipe a été prévenue.",
+          "answerSpec": {
+            "accepted": [
+              "The whole team was told"
+            ]
+          },
+          "hints": [
+            "whole après l'article."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "___ desk on this floor has to be booked.",
+          "answerSpec": {
+            "accepted": [
+              "Every",
+              "Each"
+            ]
+          },
+          "hints": [
+            "Singulier."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "He read the ___ contract on the train home.",
+          "answerSpec": {
+            "accepted": [
+              "whole",
+              "entire"
+            ]
+          },
+          "hints": [
+            "Après l'article."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "The review lasted all afternoon.",
+          "answerSpec": {
+            "accepted": [
+              "The review lasted the whole afternoon"
+            ]
+          },
+          "source": "The review lasted all afternoon.",
+          "hints": [
+            "whole veut un déterminant."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "Every guardrails were reviewed by legal.",
+          "answerSpec": {
+            "accepted": [
+              "All the guardrails were reviewed by legal"
+            ]
+          },
+          "source": "Every guardrails were reviewed by legal.",
+          "hints": [
+            "every ne va pas devant un pluriel."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "She has worked here ___ her career.",
+          "answerSpec": {
+            "accepted": [
+              "all"
+            ]
+          },
+          "hints": [
+            "Devant un possessif : all."
+          ],
+          "distractors": [
+            "every",
+            "whole",
+            "each"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u091-a",
+      "topicId": "u091",
+      "tags": [
+        "each-every"
+      ],
+      "fields": {
+        "regle": "each regarde les éléments un par un et vaut à partir de deux ; every les prend en bloc et suppose au moins trois. « each of the two », mais « every one of the fifty »."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Chacun des deux directeurs a signé.",
+          "answerSpec": {
+            "accepted": [
+              "Each of the two directors signed"
+            ]
+          },
+          "hints": [
+            "À deux, c'est each."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Tous les vendredis, il travaille de chez lui.",
+          "answerSpec": {
+            "accepted": [
+              "Every Friday he works from home"
+            ]
+          },
+          "hints": [
+            "Une régularité : every."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Chaque personne dans la salle avait un avis.",
+          "answerSpec": {
+            "accepted": [
+              "Each person in the room had an opinion"
+            ]
+          },
+          "hints": [
+            "On les prend un par un."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The two candidates were seen by ___ member of the panel.",
+          "answerSpec": {
+            "accepted": [
+              "each",
+              "every"
+            ]
+          },
+          "hints": [
+            "Un par un."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The bus leaves ___ twenty minutes.",
+          "answerSpec": {
+            "accepted": [
+              "every"
+            ]
+          },
+          "hints": [
+            "Une fréquence : toujours every."
+          ]
+        },
+        {
+          "type": "transform",
+          "source": "The two rooms have their own thermostat.",
+          "prompt": "Réécris la phrase en commençant par « Each ».",
+          "answerSpec": {
+            "accepted": [
+              "Each room has its own thermostat"
+            ]
+          },
+          "hints": [
+            "each + singulier."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "source": "Each of the fifty desks have a monitor.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": {
+            "accepted": [
+              "Each of the fifty desks has a monitor"
+            ]
+          },
+          "hints": [
+            "each commande le singulier."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "She goes to Bristol ___ other week.",
+          "answerSpec": {
+            "accepted": [
+              "every"
+            ]
+          },
+          "distractors": [
+            "each",
+            "all",
+            "whole"
+          ],
+          "hints": [
+            "« every other » = une fois sur deux."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u091-b",
+      "topicId": "u091",
+      "tags": [
+        "each-every"
+      ],
+      "fields": {
+        "regle": "each prend les éléments un par un, dès deux ; every les prend en bloc, à partir de trois. Les fréquences prennent toujours every."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Chacun des deux directeurs a signé.",
+          "answerSpec": {
+            "accepted": [
+              "Each of the two directors signed"
+            ]
+          },
+          "hints": [
+            "À deux : each."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Tous les quinze jours, il vient à Bristol.",
+          "answerSpec": {
+            "accepted": [
+              "Every fortnight he comes to Bristol"
+            ]
+          },
+          "hints": [
+            "Fréquence : every."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Chaque personne présente avait un avis.",
+          "answerSpec": {
+            "accepted": [
+              "Each person present had an opinion"
+            ]
+          },
+          "hints": [
+            "Un par un."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The bus leaves ___ twenty minutes.",
+          "answerSpec": {
+            "accepted": [
+              "every"
+            ]
+          },
+          "hints": [
+            "Fréquence."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "___ of the two rooms has its own thermostat.",
+          "answerSpec": {
+            "accepted": [
+              "Each"
+            ]
+          },
+          "hints": [
+            "À deux."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "The two floors have their own printer.",
+          "answerSpec": {
+            "accepted": [
+              "Each floor has its own printer"
+            ]
+          },
+          "source": "The two floors have their own printer.",
+          "hints": [
+            "each + singulier."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "Each of the fifty desks have a monitor.",
+          "answerSpec": {
+            "accepted": [
+              "Each of the fifty desks has a monitor"
+            ]
+          },
+          "source": "Each of the fifty desks have a monitor.",
+          "hints": [
+            "each commande le singulier."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "She goes to Cardiff ___ other week.",
+          "answerSpec": {
+            "accepted": [
+              "every"
+            ]
+          },
+          "hints": [
+            "every other."
+          ],
+          "distractors": [
+            "each",
+            "all",
+            "whole"
+          ]
+        }
       ]
     }
   ]
