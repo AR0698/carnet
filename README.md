@@ -17,7 +17,7 @@ un domaine = un **pack de contenu**, ajouté sans toucher au code.
 
 | Carnet | Ce qu'on y travaille | D'où vient le contenu |
 | --- | --- | --- |
-| **Grammaire** | la mécanique de la langue, unité par unité | `public/packs/english-grammar.json` |
+| **Grammaire** | les 145 unités du livre, deux items d'exercices chacune | `public/packs/english-grammar.json` |
 | **Vocabulaire** | onze registres : le bureau anglais, la tech et l'IA, la scène, la ville, le pub | `public/packs/vocabulary.json` |
 | **Culture** | Bristol racontée en anglais, et les mots qu'on y attrape | `public/packs/bristol-culture.json` |
 | **Discovery** | le vocabulaire saisi à la main | IndexedDB, écrit par l'apprenante |
@@ -262,8 +262,8 @@ mécanisme.
 Ce qui appartient en revanche à l'apprenante, c'est **l'ordre dans lequel le
 neuf s'ouvre** — pas l'ordre des révisions. C'est l'objet de l'écran *Par où
 commencer*, accessible depuis chaque carnet qui a encore des notions fermées :
-on y coche des groupes, et `newCards()` les sert en premier. Avec 1 015 cartes en
-réserve dans la seule grammaire — plus de cent jours de nouveautés — cet
+on y coche des groupes, et `newCards()` les sert en premier. Avec 2 030 cartes en
+réserve dans la seule grammaire — plus de deux cents jours de nouveautés — cet
 ordre change vraiment ce qu'on sait dans un mois.
 
 La distinction tient en une phrase : **l'ordre des révisions appartient au
@@ -576,7 +576,7 @@ le signale et la progression reste intacte.
 | --- | --- |
 | 1. Squelette — Dexie, FSRS, boucle de révision persistante | fait |
 | 2. PWA réelle — manifest, service worker, meta iOS | fait, reste à valider sur iPhone et Android réels |
-| 3. Contenu grammaire — 5 types d'exercice | fait (145/145 unités, 1 160 exercices) |
+| 3. Contenu grammaire — 5 types d'exercice | fait (145/145 unités, deux items chacune, 2 320 exercices) |
 | 4. Modes de réponse — écran, cahier, écoute | fait |
 | 5. Rétention — export/import de sauvegarde | fait |
 | 6. Direction artistique — sérigraphie, pochoir, tirage de nuit | fait |

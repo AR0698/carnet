@@ -7,8 +7,8 @@
  * Laisser choisir quelles cartes *revenir* reviendrait à faire de la pratique en
  * bloc — d'excellents résultats sur le moment, rien la semaine suivante. Mais
  * décider quel groupe de notions s'ouvre en premier n'a rien à voir : c'est un
- * ordre de parcours, pas une entorse à l'espacement. Avec 1 015 cartes en
- * réserve dans le seul carnet de grammaire, soit plus de cent jours de
+ * ordre de parcours, pas une entorse à l'espacement. Avec 2 030 cartes en
+ * réserve dans le seul carnet de grammaire, soit plus de deux cents jours de
  * nouveautés, cet ordre change vraiment ce qu'on sait dans un mois.
  *
  * On stocke des noms de *groupes* et non de notions : quatorze groupes se
