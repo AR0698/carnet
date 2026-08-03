@@ -2,115 +2,1884 @@
   "group": "Conjunctions and prepositions",
   "items": [
     {
-      "id": "u113-a", "topicId": "u113", "tags": ["concession", "although-despite"],
-      "fields": { "regle": "although / though / even though sont suivis d'une proposition (sujet + verbe). in spite of / despite sont suivis d'un nom ou d'un -ing. Jamais « despite of »." },
+      "id": "u113-a",
+      "topicId": "u113",
+      "tags": [
+        "concession",
+        "although-despite"
+      ],
+      "fields": {
+        "regle": "although / though / even though sont suivis d'une proposition (sujet + verbe). in spite of / despite sont suivis d'un nom ou d'un -ing. Jamais « despite of »."
+      },
       "exercises": [
-        { "type": "produce", "prompt": "Traduis : Bien qu'il ait plu, la fiesta a eu lieu.", "answerSpec": { "accepted": ["Although it rained, the fiesta went ahead", "Even though it rained, the fiesta went ahead"] }, "hints": ["Une proposition suit : sujet + verbe."] },
-        { "type": "produce", "prompt": "Traduis avec despite : Malgré la pluie, la fiesta a eu lieu.", "answerSpec": { "accepted": ["Despite the rain, the fiesta went ahead", "In spite of the rain, the fiesta went ahead"] }, "hints": ["Un nom suit despite, sans « of »."] },
-        { "type": "produce", "prompt": "Traduis avec in spite of : Malgré son manque d'expérience, elle a obtenu le poste.", "answerSpec": { "accepted": ["In spite of her lack of experience, she got the job", "Despite her lack of experience, she got the job"] }, "hints": ["Nom après in spite of."] },
-        { "type": "fill_blank", "prompt": "___ the deadline was tight, nobody worked at the weekend.", "answerSpec": { "accepted": ["Although", "Though", "Even though"] }, "hints": ["Une proposition suit."] },
-        { "type": "fill_blank", "prompt": "She took the role ___ being warned about the workload.", "answerSpec": { "accepted": ["despite", "in spite of"] }, "hints": ["Un -ing suit."] },
-        { "type": "transform", "source": "Although he was tired, he stayed for the town hall.", "prompt": "Réécris la phrase avec « in spite of ».", "answerSpec": { "accepted": ["In spite of being tired, he stayed for the town hall", "In spite of his tiredness, he stayed for the town hall"] }, "hints": ["Il faut un nom ou un -ing après in spite of."] },
-        { "type": "spot_error", "source": "Despite of the delay, the client renewed the contract.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["Despite the delay, the client renewed the contract", "In spite of the delay, the client renewed the contract"] }, "hints": ["« despite of » n'existe pas."] },
-        { "type": "mcq", "prompt": "___ the guardrails were in place, the model still leaked data.", "answerSpec": { "accepted": ["Even though"] }, "distractors": ["Despite", "In spite of", "Despite of"], "hints": ["Sujet + verbe : il faut une conjonction."] }
+        {
+          "type": "produce",
+          "prompt": "Traduis : Bien qu'il ait plu, la fiesta a eu lieu.",
+          "answerSpec": {
+            "accepted": [
+              "Although it rained, the fiesta went ahead",
+              "Even though it rained, the fiesta went ahead"
+            ]
+          },
+          "hints": [
+            "Une proposition suit : sujet + verbe."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis avec despite : Malgré la pluie, la fiesta a eu lieu.",
+          "answerSpec": {
+            "accepted": [
+              "Despite the rain, the fiesta went ahead",
+              "In spite of the rain, the fiesta went ahead"
+            ]
+          },
+          "hints": [
+            "Un nom suit despite, sans « of »."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis avec in spite of : Malgré son manque d'expérience, elle a obtenu le poste.",
+          "answerSpec": {
+            "accepted": [
+              "In spite of her lack of experience, she got the job",
+              "Despite her lack of experience, she got the job"
+            ]
+          },
+          "hints": [
+            "Nom après in spite of."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "___ the deadline was tight, nobody worked at the weekend.",
+          "answerSpec": {
+            "accepted": [
+              "Although",
+              "Though",
+              "Even though"
+            ]
+          },
+          "hints": [
+            "Une proposition suit."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "She took the role ___ being warned about the workload.",
+          "answerSpec": {
+            "accepted": [
+              "despite",
+              "in spite of"
+            ]
+          },
+          "hints": [
+            "Un -ing suit."
+          ]
+        },
+        {
+          "type": "transform",
+          "source": "Although he was tired, he stayed for the town hall.",
+          "prompt": "Réécris la phrase avec « in spite of ».",
+          "answerSpec": {
+            "accepted": [
+              "In spite of being tired, he stayed for the town hall",
+              "In spite of his tiredness, he stayed for the town hall"
+            ]
+          },
+          "hints": [
+            "Il faut un nom ou un -ing après in spite of."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "source": "Despite of the delay, the client renewed the contract.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": {
+            "accepted": [
+              "Despite the delay, the client renewed the contract",
+              "In spite of the delay, the client renewed the contract"
+            ]
+          },
+          "hints": [
+            "« despite of » n'existe pas."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "___ the guardrails were in place, the model still leaked data.",
+          "answerSpec": {
+            "accepted": [
+              "Even though"
+            ]
+          },
+          "distractors": [
+            "Despite",
+            "In spite of",
+            "Despite of"
+          ],
+          "hints": [
+            "Sujet + verbe : il faut une conjonction."
+          ]
+        }
       ]
     },
     {
-      "id": "u114-a", "topicId": "u114", "tags": ["in-case", "precaution"],
-      "fields": { "regle": "in case dit la précaution prise d'avance, et se construit au présent : « Take an umbrella in case it rains. » Ce n'est pas if : if pose une condition, in case anticipe un risque." },
+      "id": "u113-b",
+      "topicId": "u113",
+      "tags": [
+        "concession"
+      ],
+      "fields": {
+        "regle": "although + proposition, despite + nom ou -ing. « despite of » n'existe pas."
+      },
       "exercises": [
-        { "type": "produce", "prompt": "Traduis : Prends une copie au cas où le portable planterait.", "answerSpec": { "accepted": ["Take a copy in case the laptop crashes"] }, "hints": ["Présent après in case, jamais will."] },
-        { "type": "produce", "prompt": "Traduis : Je te laisse mon numéro au cas où tu aurais besoin de moi.", "answerSpec": { "accepted": ["I'll leave you my number in case you need me"] }, "hints": ["Présent après in case."] },
-        { "type": "produce", "prompt": "Traduis : Nous avons gardé l'ancienne version au cas où.", "answerSpec": { "accepted": ["We kept the old version just in case"] }, "hints": ["« just in case » peut clore la phrase."] },
-        { "type": "fill_blank", "prompt": "Write the handover now ___ you are off sick next week.", "answerSpec": { "accepted": ["in case"] }, "hints": ["Une précaution, pas une condition."] },
-        { "type": "fill_blank", "prompt": "I'll take my laptop in case they ___ a live demo. (want)", "answerSpec": { "accepted": ["want"] }, "hints": ["Présent, malgré le sens futur."] },
-        { "type": "transform", "source": "The server might fail, so we run a nightly backup.", "prompt": "Réécris la phrase avec « in case ».", "answerSpec": { "accepted": ["We run a nightly backup in case the server fails"] }, "hints": ["La précaution vient d'abord, le risque après."] },
-        { "type": "spot_error", "source": "Take an umbrella in case it will rain.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["Take an umbrella in case it rains"] }, "hints": ["Jamais de will après in case."] },
-        { "type": "mcq", "prompt": "Laquelle exprime une précaution, pas une condition ?", "answerSpec": { "accepted": ["I'll book two rooms in case Anna comes"] }, "distractors": ["I'll book two rooms if Anna comes", "I'll book two rooms unless Anna comes", "I'll book two rooms when Anna comes"], "hints": ["On réserve d'avance, avant de savoir."] }
+        {
+          "type": "produce",
+          "prompt": "Traduis : Bien que le budget soit voté, rien n'a bougé.",
+          "answerSpec": {
+            "accepted": [
+              "Although the budget has been approved, nothing has moved"
+            ]
+          },
+          "hints": [
+            "Proposition après although."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Malgré trois relances, aucune réponse.",
+          "answerSpec": {
+            "accepted": [
+              "Despite three reminders, there was no answer"
+            ]
+          },
+          "hints": [
+            "Nom après despite."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Malgré avoir été prévenu, il a signé.",
+          "answerSpec": {
+            "accepted": [
+              "In spite of being warned, he signed"
+            ]
+          },
+          "hints": [
+            "-ing après in spite of."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "___ the guardrails were in place, the model still leaked.",
+          "answerSpec": {
+            "accepted": [
+              "Although",
+              "Though",
+              "Even though"
+            ]
+          },
+          "hints": [
+            "Proposition."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "He took the role ___ the workload.",
+          "answerSpec": {
+            "accepted": [
+              "despite",
+              "in spite of"
+            ]
+          },
+          "hints": [
+            "Nom."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "Although she was exhausted, she ran the workshop.",
+          "answerSpec": {
+            "accepted": [
+              "In spite of being exhausted, she ran the workshop"
+            ]
+          },
+          "source": "Although she was exhausted, she ran the workshop.",
+          "hints": [
+            "Nom ou -ing après in spite of."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "Despite of the noise, the demo went well.",
+          "answerSpec": {
+            "accepted": [
+              "Despite the noise, the demo went well"
+            ]
+          },
+          "source": "Despite of the noise, the demo went well.",
+          "hints": [
+            "despite of n'existe pas."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "___ everything, the rollout finished on time.",
+          "answerSpec": {
+            "accepted": [
+              "Despite"
+            ]
+          },
+          "hints": [
+            "Un nom suit."
+          ],
+          "distractors": [
+            "Although",
+            "Even though",
+            "Despite of"
+          ]
+        }
       ]
     },
     {
-      "id": "u115-a", "topicId": "u115", "tags": ["condition", "unless-as-long-as"],
-      "fields": { "regle": "unless = if not. as long as / provided (that) / providing posent une condition stricte. Tous se construisent au présent pour parler du futur." },
+      "id": "u114-a",
+      "topicId": "u114",
+      "tags": [
+        "in-case",
+        "precaution"
+      ],
+      "fields": {
+        "regle": "in case dit la précaution prise d'avance, et se construit au présent : « Take an umbrella in case it rains. » Ce n'est pas if : if pose une condition, in case anticipe un risque."
+      },
       "exercises": [
-        { "type": "produce", "prompt": "Traduis avec unless : Je n'irai pas, à moins qu'ils ne paient le déplacement.", "answerSpec": { "accepted": ["I won't go unless they pay for the travel"] }, "hints": ["unless remplace « if not » : pas de seconde négation."] },
-        { "type": "produce", "prompt": "Traduis avec as long as : Tu peux emprunter la voiture, à condition de la rendre lundi.", "answerSpec": { "accepted": ["You can borrow the car as long as you bring it back on Monday"] }, "hints": ["Présent après as long as."] },
-        { "type": "produce", "prompt": "Traduis avec provided : Nous signerons, à condition que le périmètre soit écrit noir sur blanc.", "answerSpec": { "accepted": ["We will sign provided the scope is written down", "We will sign provided that the scope is written down"] }, "hints": ["provided (that) + présent."] },
-        { "type": "fill_blank", "prompt": "___ you ask, nobody will tell you the day rate.", "answerSpec": { "accepted": ["Unless"] }, "hints": ["« Si tu ne demandes pas »."] },
-        { "type": "fill_blank", "prompt": "I'll present it as long as somebody ___ the questions. (take)", "answerSpec": { "accepted": ["takes"] }, "hints": ["Présent, troisième personne."] },
-        { "type": "transform", "source": "If you don't book a desk, you will have to stand all day.", "prompt": "Réécris la phrase avec « unless ».", "answerSpec": { "accepted": ["Unless you book a desk, you will have to stand all day"] }, "hints": ["unless contient déjà la négation."] },
-        { "type": "spot_error", "source": "Unless you don't hurry, you will miss the last train.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["Unless you hurry, you will miss the last train"] }, "hints": ["Double négation : unless veut déjà dire « if not »."] },
-        { "type": "mcq", "prompt": "We'll ship on Thursday ___ the tests pass.", "answerSpec": { "accepted": ["provided"] }, "distractors": ["unless", "in case", "despite"], "hints": ["C'est une condition à remplir, pas un risque à écarter."] }
+        {
+          "type": "produce",
+          "prompt": "Traduis : Prends une copie au cas où le portable planterait.",
+          "answerSpec": {
+            "accepted": [
+              "Take a copy in case the laptop crashes"
+            ]
+          },
+          "hints": [
+            "Présent après in case, jamais will."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Je te laisse mon numéro au cas où tu aurais besoin de moi.",
+          "answerSpec": {
+            "accepted": [
+              "I'll leave you my number in case you need me"
+            ]
+          },
+          "hints": [
+            "Présent après in case."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Nous avons gardé l'ancienne version au cas où.",
+          "answerSpec": {
+            "accepted": [
+              "We kept the old version just in case"
+            ]
+          },
+          "hints": [
+            "« just in case » peut clore la phrase."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Write the handover now ___ you are off sick next week.",
+          "answerSpec": {
+            "accepted": [
+              "in case"
+            ]
+          },
+          "hints": [
+            "Une précaution, pas une condition."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "I'll take my laptop in case they ___ a live demo. (want)",
+          "answerSpec": {
+            "accepted": [
+              "want"
+            ]
+          },
+          "hints": [
+            "Présent, malgré le sens futur."
+          ]
+        },
+        {
+          "type": "transform",
+          "source": "The server might fail, so we run a nightly backup.",
+          "prompt": "Réécris la phrase avec « in case ».",
+          "answerSpec": {
+            "accepted": [
+              "We run a nightly backup in case the server fails"
+            ]
+          },
+          "hints": [
+            "La précaution vient d'abord, le risque après."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "source": "Take an umbrella in case it will rain.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": {
+            "accepted": [
+              "Take an umbrella in case it rains"
+            ]
+          },
+          "hints": [
+            "Jamais de will après in case."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Laquelle exprime une précaution, pas une condition ?",
+          "answerSpec": {
+            "accepted": [
+              "I'll book two rooms in case Anna comes"
+            ]
+          },
+          "distractors": [
+            "I'll book two rooms if Anna comes",
+            "I'll book two rooms unless Anna comes",
+            "I'll book two rooms when Anna comes"
+          ],
+          "hints": [
+            "On réserve d'avance, avant de savoir."
+          ]
+        }
       ]
     },
     {
-      "id": "u116-a", "topicId": "u116", "tags": ["as", "simultaneite", "cause"],
-      "fields": { "regle": "as dit la simultanéité (« as I walked home ») ou la cause (« as it was late, we left »). Au sens temporel, as insiste sur deux actions qui se déroulent ensemble, while sur une durée." },
+      "id": "u114-b",
+      "topicId": "u114",
+      "tags": [
+        "in-case"
+      ],
+      "fields": {
+        "regle": "in case anticipe un risque, au présent. if pose une condition."
+      },
       "exercises": [
-        { "type": "produce", "prompt": "Traduis : Comme il pleuvait, nous avons pris un taxi.", "answerSpec": { "accepted": ["As it was raining, we took a taxi"] }, "hints": ["as au sens causal, en tête de phrase."] },
-        { "type": "produce", "prompt": "Traduis : Le téléphone a sonné au moment où je sortais.", "answerSpec": { "accepted": ["The phone rang as I was leaving"] }, "hints": ["Deux actions au même instant."] },
-        { "type": "produce", "prompt": "Traduis : Comme personne n'était disponible, la réunion a été reportée.", "answerSpec": { "accepted": ["As nobody was available, the meeting was postponed"] }, "hints": ["Cause, donc as ou since."] },
-        { "type": "fill_blank", "prompt": "___ I was walking along the harbour, I met my old manager.", "answerSpec": { "accepted": ["As", "While"] }, "hints": ["Deux actions simultanées."] },
-        { "type": "fill_blank", "prompt": "___ the budget had already been signed off, nobody argued.", "answerSpec": { "accepted": ["As", "Since"] }, "hints": ["Ici as donne la raison."] },
-        { "type": "transform", "source": "Because the lift was out of order, we used the stairs.", "prompt": "Réécris la phrase avec « as ».", "answerSpec": { "accepted": ["As the lift was out of order, we used the stairs"] }, "hints": ["as remplace because, en tête de phrase."] },
-        { "type": "spot_error", "source": "As I was young, I lived in Cardiff for two years.", "prompt": "Corrige la phrase pour dire « quand j'étais jeune ».", "answerSpec": { "accepted": ["When I was young, I lived in Cardiff for two years"] }, "hints": ["Pour une période de la vie, c'est when."] },
-        { "type": "mcq", "prompt": "___ the model was training, we prepared the demo.", "answerSpec": { "accepted": ["While"] }, "distractors": ["As soon as", "Until", "By the time"], "hints": ["Une durée pendant laquelle autre chose se passe."] }
+        {
+          "type": "produce",
+          "prompt": "Traduis : Garde une copie au cas où le connecteur lâcherait.",
+          "answerSpec": {
+            "accepted": [
+              "Keep a copy in case the connector fails"
+            ]
+          },
+          "hints": [
+            "Présent après in case."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Prends ton badge au cas où.",
+          "answerSpec": {
+            "accepted": [
+              "Take your badge just in case"
+            ]
+          },
+          "hints": [
+            "just in case en fin de phrase."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Je note son numéro au cas où j'en aurais besoin.",
+          "answerSpec": {
+            "accepted": [
+              "I am writing down his number in case I need it"
+            ]
+          },
+          "hints": [
+            "Présent malgré le sens futur."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Print the deck ___ the wifi goes down.",
+          "answerSpec": {
+            "accepted": [
+              "in case"
+            ]
+          },
+          "hints": [
+            "Précaution."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "I will bring my laptop in case they ___ a live demo. (want)",
+          "answerSpec": {
+            "accepted": [
+              "want"
+            ]
+          },
+          "hints": [
+            "Présent."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "The lift might fail, so we keep the stairs open.",
+          "answerSpec": {
+            "accepted": [
+              "We keep the stairs open in case the lift fails"
+            ]
+          },
+          "source": "The lift might fail, so we keep the stairs open.",
+          "hints": [
+            "Précaution."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "Take a coat in case it will be cold.",
+          "answerSpec": {
+            "accepted": [
+              "Take a coat in case it is cold"
+            ]
+          },
+          "source": "Take a coat in case it will be cold.",
+          "hints": [
+            "Jamais de will après in case."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Laquelle exprime une précaution ?",
+          "answerSpec": {
+            "accepted": [
+              "I will book two rooms in case Tom comes"
+            ]
+          },
+          "hints": [
+            "On réserve avant de savoir."
+          ],
+          "distractors": [
+            "I will book two rooms if Tom comes",
+            "I will book two rooms when Tom comes",
+            "I will book two rooms unless Tom comes"
+          ]
+        }
       ]
     },
     {
-      "id": "u117-a", "topicId": "u117", "tags": ["like-as", "comparaison"],
-      "fields": { "regle": "like + nom ou pronom (« like a bank »). as + proposition (« as I said ») ou fonction réelle (« she works as a nurse » : elle l'est vraiment). « like a nurse » voudrait dire qu'elle ne l'est pas." },
+      "id": "u115-a",
+      "topicId": "u115",
+      "tags": [
+        "condition",
+        "unless-as-long-as"
+      ],
+      "fields": {
+        "regle": "unless = if not. as long as / provided (that) / providing posent une condition stricte. Tous se construisent au présent pour parler du futur."
+      },
       "exercises": [
-        { "type": "produce", "prompt": "Traduis : Il travaille comme consultant depuis dix ans.", "answerSpec": { "accepted": ["He has worked as a consultant for ten years"] }, "hints": ["C'est sa fonction réelle : as."] },
-        { "type": "produce", "prompt": "Traduis : Cette pièce ressemble à un entrepôt.", "answerSpec": { "accepted": ["This room looks like a warehouse"] }, "hints": ["Une ressemblance : like + nom."] },
-        { "type": "produce", "prompt": "Traduis : Comme je te l'ai dit hier, le périmètre a changé.", "answerSpec": { "accepted": ["As I told you yesterday, the scope has changed"] }, "hints": ["Une proposition suit : as."] },
-        { "type": "fill_blank", "prompt": "She used the old server ___ a test machine for months.", "answerSpec": { "accepted": ["as"] }, "hints": ["C'est vraiment sa fonction."] },
-        { "type": "fill_blank", "prompt": "He talks ___ his father — same pauses, same jokes.", "answerSpec": { "accepted": ["like"] }, "hints": ["Une ressemblance, suivie d'un nom."] },
-        { "type": "transform", "source": "I did the report the way you asked.", "prompt": "Réécris la phrase avec « as ».", "answerSpec": { "accepted": ["I did the report as you asked"] }, "hints": ["Une proposition suit as."] },
-        { "type": "spot_error", "source": "Like I said in the meeting, the pilot is not a product.", "prompt": "Corrige la phrase en registre soigné.", "answerSpec": { "accepted": ["As I said in the meeting, the pilot is not a product"] }, "hints": ["Une proposition suit : as, pas like."] },
-        { "type": "mcq", "prompt": "She was hired ___ a workplace consultant, not as an architect.", "answerSpec": { "accepted": ["as"] }, "distractors": ["like", "such as", "how"], "hints": ["C'est le poste réellement occupé."] }
+        {
+          "type": "produce",
+          "prompt": "Traduis avec unless : Je n'irai pas, à moins qu'ils ne paient le déplacement.",
+          "answerSpec": {
+            "accepted": [
+              "I won't go unless they pay for the travel"
+            ]
+          },
+          "hints": [
+            "unless remplace « if not » : pas de seconde négation."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis avec as long as : Tu peux emprunter la voiture, à condition de la rendre lundi.",
+          "answerSpec": {
+            "accepted": [
+              "You can borrow the car as long as you bring it back on Monday"
+            ]
+          },
+          "hints": [
+            "Présent après as long as."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis avec provided : Nous signerons, à condition que le périmètre soit écrit noir sur blanc.",
+          "answerSpec": {
+            "accepted": [
+              "We will sign provided the scope is written down",
+              "We will sign provided that the scope is written down"
+            ]
+          },
+          "hints": [
+            "provided (that) + présent."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "___ you ask, nobody will tell you the day rate.",
+          "answerSpec": {
+            "accepted": [
+              "Unless"
+            ]
+          },
+          "hints": [
+            "« Si tu ne demandes pas »."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "I'll present it as long as somebody ___ the questions. (take)",
+          "answerSpec": {
+            "accepted": [
+              "takes"
+            ]
+          },
+          "hints": [
+            "Présent, troisième personne."
+          ]
+        },
+        {
+          "type": "transform",
+          "source": "If you don't book a desk, you will have to stand all day.",
+          "prompt": "Réécris la phrase avec « unless ».",
+          "answerSpec": {
+            "accepted": [
+              "Unless you book a desk, you will have to stand all day"
+            ]
+          },
+          "hints": [
+            "unless contient déjà la négation."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "source": "Unless you don't hurry, you will miss the last train.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": {
+            "accepted": [
+              "Unless you hurry, you will miss the last train"
+            ]
+          },
+          "hints": [
+            "Double négation : unless veut déjà dire « if not »."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "We'll ship on Thursday ___ the tests pass.",
+          "answerSpec": {
+            "accepted": [
+              "provided"
+            ]
+          },
+          "distractors": [
+            "unless",
+            "in case",
+            "despite"
+          ],
+          "hints": [
+            "C'est une condition à remplir, pas un risque à écarter."
+          ]
+        }
       ]
     },
     {
-      "id": "u118-a", "topicId": "u118", "tags": ["as-if", "apparence"],
-      "fields": { "regle": "as if / as though + proposition décrivent une apparence : « It looks as if it is going to rain. » Pour une hypothèse contraire aux faits, le verbe recule : « He talks as if he knew everything » (il ne sait rien)." },
+      "id": "u115-b",
+      "topicId": "u115",
+      "tags": [
+        "condition"
+      ],
+      "fields": {
+        "regle": "unless = if not. as long as, provided (that), providing posent une condition stricte, au présent."
+      },
       "exercises": [
-        { "type": "produce", "prompt": "Traduis : On dirait qu'il va pleuvoir.", "answerSpec": { "accepted": ["It looks as if it is going to rain", "It looks as though it is going to rain"] }, "hints": ["as if + proposition."] },
-        { "type": "produce", "prompt": "Traduis : Elle parle comme si elle dirigeait le projet — ce n'est pas le cas.", "answerSpec": { "accepted": ["She talks as if she ran the project", "She talks as though she ran the project"] }, "hints": ["Fait contraire à la réalité : le verbe recule au prétérit."] },
-        { "type": "produce", "prompt": "Traduis : Il avait l'air de ne pas avoir dormi.", "answerSpec": { "accepted": ["He looked as if he had not slept", "He looked as though he had not slept"] }, "hints": ["Antériorité : past perfect."] },
-        { "type": "fill_blank", "prompt": "It sounds ___ the migration has been postponed again.", "answerSpec": { "accepted": ["as if", "as though", "like"] }, "hints": ["Une proposition suit."] },
-        { "type": "fill_blank", "prompt": "He behaves as if he ___ the only person in the room. (be)", "answerSpec": { "accepted": ["were", "was"] }, "hints": ["Irréel : le verbe recule."] },
-        { "type": "transform", "source": "She looks tired and pale.", "prompt": "Réécris la phrase en commençant par « She looks as if ».", "answerSpec": { "accepted": ["She looks as if she is tired", "She looks as if she has been working too hard"] }, "hints": ["Une proposition complète après as if."] },
-        { "type": "spot_error", "source": "He speaks as if he would be the manager.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["He speaks as if he were the manager", "He speaks as if he was the manager"] }, "hints": ["Pas de would après as if : le verbe recule d'un cran."] },
-        { "type": "mcq", "prompt": "The office smells ___ somebody has burnt the toast.", "answerSpec": { "accepted": ["as if"] }, "distractors": ["like", "as", "such as"], "hints": ["Une proposition entière suit."] }
+        {
+          "type": "produce",
+          "prompt": "Traduis : Je ne signerai pas tant que le périmètre n'est pas écrit.",
+          "answerSpec": {
+            "accepted": [
+              "I will not sign unless the scope is written down"
+            ]
+          },
+          "hints": [
+            "unless contient la négation."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Tu peux partir tôt, à condition d'avoir fini.",
+          "answerSpec": {
+            "accepted": [
+              "You can leave early as long as you have finished"
+            ]
+          },
+          "hints": [
+            "Présent après as long as."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Nous acceptons, à condition qu'ils paient le déplacement.",
+          "answerSpec": {
+            "accepted": [
+              "We accept provided they pay for the travel",
+              "We accept provided that they pay for the travel"
+            ]
+          },
+          "hints": [
+            "provided (that)."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "___ somebody objects, we ship on Thursday.",
+          "answerSpec": {
+            "accepted": [
+              "Unless"
+            ]
+          },
+          "hints": [
+            "« Si personne n'objecte »."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "You can use the room as long as you ___ it tidy. (leave)",
+          "answerSpec": {
+            "accepted": [
+              "leave"
+            ]
+          },
+          "hints": [
+            "Présent."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "If you do not book a desk, you will stand all day.",
+          "answerSpec": {
+            "accepted": [
+              "Unless you book a desk, you will stand all day"
+            ]
+          },
+          "source": "If you do not book a desk, you will stand all day.",
+          "hints": [
+            "unless remplace if not."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "Unless you do not hurry, you will miss the train.",
+          "answerSpec": {
+            "accepted": [
+              "Unless you hurry, you will miss the train"
+            ]
+          },
+          "source": "Unless you do not hurry, you will miss the train.",
+          "hints": [
+            "Double négation."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "We will fund it ___ the pilot shows something.",
+          "answerSpec": {
+            "accepted": [
+              "provided"
+            ]
+          },
+          "hints": [
+            "Condition à remplir."
+          ],
+          "distractors": [
+            "unless",
+            "in case",
+            "despite"
+          ]
+        }
       ]
     },
     {
-      "id": "u119-a", "topicId": "u119", "tags": ["during-for-while", "duree"],
-      "fields": { "regle": "during + nom dit quand (« during the meeting »), for + durée dit combien de temps (« for two hours »), while + proposition (« while I was reading »)." },
+      "id": "u116-a",
+      "topicId": "u116",
+      "tags": [
+        "as",
+        "simultaneite",
+        "cause"
+      ],
+      "fields": {
+        "regle": "as dit la simultanéité (« as I walked home ») ou la cause (« as it was late, we left »). Au sens temporel, as insiste sur deux actions qui se déroulent ensemble, while sur une durée."
+      },
       "exercises": [
-        { "type": "produce", "prompt": "Traduis : Il n'a rien dit pendant la réunion.", "answerSpec": { "accepted": ["He said nothing during the meeting"] }, "hints": ["Un nom suit : during."] },
-        { "type": "produce", "prompt": "Traduis : Nous avons attendu pendant deux heures.", "answerSpec": { "accepted": ["We waited for two hours"] }, "hints": ["Une durée chiffrée : for."] },
-        { "type": "produce", "prompt": "Traduis : Elle a pris des notes pendant que je présentais.", "answerSpec": { "accepted": ["She took notes while I was presenting"] }, "hints": ["Une proposition suit : while."] },
-        { "type": "fill_blank", "prompt": "Nobody touched the code ___ the summer.", "answerSpec": { "accepted": ["during"] }, "hints": ["Un nom de période."] },
-        { "type": "fill_blank", "prompt": "The lift was out of order ___ three weeks.", "answerSpec": { "accepted": ["for"] }, "hints": ["Une durée chiffrée."] },
-        { "type": "transform", "source": "I read the report during my journey home.", "prompt": "Réécris la phrase avec « while ».", "answerSpec": { "accepted": ["I read the report while I was travelling home"] }, "hints": ["while demande un sujet et un verbe."] },
-        { "type": "spot_error", "source": "She lived in Bristol during six years.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["She lived in Bristol for six years"] }, "hints": ["Une durée chiffrée n'est jamais introduite par during."] },
-        { "type": "mcq", "prompt": "Two people left ___ the presentation.", "answerSpec": { "accepted": ["during"] }, "distractors": ["for", "while", "since"], "hints": ["Un nom suit."] }
+        {
+          "type": "produce",
+          "prompt": "Traduis : Comme il pleuvait, nous avons pris un taxi.",
+          "answerSpec": {
+            "accepted": [
+              "As it was raining, we took a taxi"
+            ]
+          },
+          "hints": [
+            "as au sens causal, en tête de phrase."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Le téléphone a sonné au moment où je sortais.",
+          "answerSpec": {
+            "accepted": [
+              "The phone rang as I was leaving"
+            ]
+          },
+          "hints": [
+            "Deux actions au même instant."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Comme personne n'était disponible, la réunion a été reportée.",
+          "answerSpec": {
+            "accepted": [
+              "As nobody was available, the meeting was postponed"
+            ]
+          },
+          "hints": [
+            "Cause, donc as ou since."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "___ I was walking along the harbour, I met my old manager.",
+          "answerSpec": {
+            "accepted": [
+              "As",
+              "While"
+            ]
+          },
+          "hints": [
+            "Deux actions simultanées."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "___ the budget had already been signed off, nobody argued.",
+          "answerSpec": {
+            "accepted": [
+              "As",
+              "Since"
+            ]
+          },
+          "hints": [
+            "Ici as donne la raison."
+          ]
+        },
+        {
+          "type": "transform",
+          "source": "Because the lift was out of order, we used the stairs.",
+          "prompt": "Réécris la phrase avec « as ».",
+          "answerSpec": {
+            "accepted": [
+              "As the lift was out of order, we used the stairs"
+            ]
+          },
+          "hints": [
+            "as remplace because, en tête de phrase."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "source": "As I was young, I lived in Cardiff for two years.",
+          "prompt": "Corrige la phrase pour dire « quand j'étais jeune ».",
+          "answerSpec": {
+            "accepted": [
+              "When I was young, I lived in Cardiff for two years"
+            ]
+          },
+          "hints": [
+            "Pour une période de la vie, c'est when."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "___ the model was training, we prepared the demo.",
+          "answerSpec": {
+            "accepted": [
+              "While"
+            ]
+          },
+          "distractors": [
+            "As soon as",
+            "Until",
+            "By the time"
+          ],
+          "hints": [
+            "Une durée pendant laquelle autre chose se passe."
+          ]
+        }
       ]
     },
     {
-      "id": "u120-a", "topicId": "u120", "tags": ["by-until", "echeance"],
-      "fields": { "regle": "until dit qu'une situation dure jusqu'à un moment ; by dit qu'un événement aura lieu au plus tard à ce moment. « by the time » introduit une proposition." },
+      "id": "u116-b",
+      "topicId": "u116",
+      "tags": [
+        "as",
+        "cause-simultaneite"
+      ],
+      "fields": {
+        "regle": "as dit la simultanéité ou la cause. Pour une période de la vie, c'est when."
+      },
       "exercises": [
-        { "type": "produce", "prompt": "Traduis : Je serai au bureau jusqu'à six heures.", "answerSpec": { "accepted": ["I will be in the office until six"] }, "hints": ["Une situation qui dure : until."] },
-        { "type": "produce", "prompt": "Traduis : Envoie-moi les chiffres pour vendredi au plus tard.", "answerSpec": { "accepted": ["Send me the figures by Friday"] }, "hints": ["Une échéance : by."] },
-        { "type": "produce", "prompt": "Traduis : Le temps que j'arrive, tout le monde était parti.", "answerSpec": { "accepted": ["By the time I arrived, everybody had left"] }, "hints": ["by the time + proposition, et past perfect derrière."] },
-        { "type": "fill_blank", "prompt": "The shop stays open ___ nine on Thursdays.", "answerSpec": { "accepted": ["until", "till"] }, "hints": ["Une durée qui se poursuit."] },
-        { "type": "fill_blank", "prompt": "The contract has to be signed ___ the end of the month.", "answerSpec": { "accepted": ["by"] }, "hints": ["Une date limite."] },
-        { "type": "transform", "source": "I waited. Then, at last, she called at four.", "prompt": "Réécris en une phrase avec « until ».", "answerSpec": { "accepted": ["I waited until she called at four"] }, "hints": ["L'attente dure jusqu'au moment dit."] },
-        { "type": "spot_error", "source": "Please answer until Monday morning.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["Please answer by Monday morning"] }, "hints": ["Une échéance, pas une durée."] },
-        { "type": "mcq", "prompt": "___ the audit started, half the team had already resigned.", "answerSpec": { "accepted": ["By the time"] }, "distractors": ["Until", "By", "During"], "hints": ["Une proposition suit."] }
+        {
+          "type": "produce",
+          "prompt": "Traduis : Comme le budget était voté, personne n'a discuté.",
+          "answerSpec": {
+            "accepted": [
+              "As the budget had been approved, nobody argued"
+            ]
+          },
+          "hints": [
+            "Cause."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : La sirène a retenti au moment où elle fermait son portable.",
+          "answerSpec": {
+            "accepted": [
+              "The alarm went off as she was closing her laptop"
+            ]
+          },
+          "hints": [
+            "Simultanéité."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Quand j'étais consultant junior, je notais tout.",
+          "answerSpec": {
+            "accepted": [
+              "When I was a junior consultant, I wrote everything down"
+            ]
+          },
+          "hints": [
+            "Période de la vie : when."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "___ nobody was available, we postponed the review.",
+          "answerSpec": {
+            "accepted": [
+              "As",
+              "Since"
+            ]
+          },
+          "hints": [
+            "Cause."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "___ I was crossing the bridge, I saw three balloons.",
+          "answerSpec": {
+            "accepted": [
+              "As",
+              "While"
+            ]
+          },
+          "hints": [
+            "Deux actions simultanées."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "Because the room was double-booked, we met outside.",
+          "answerSpec": {
+            "accepted": [
+              "As the room was double-booked, we met outside"
+            ]
+          },
+          "source": "Because the room was double-booked, we met outside.",
+          "hints": [
+            "as remplace because."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "As I was a student, I lived in Cardiff.",
+          "answerSpec": {
+            "accepted": [
+              "When I was a student, I lived in Cardiff"
+            ]
+          },
+          "source": "As I was a student, I lived in Cardiff.",
+          "hints": [
+            "Période de la vie : when."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "___ the model was training, we wrote the guardrails.",
+          "answerSpec": {
+            "accepted": [
+              "While"
+            ]
+          },
+          "hints": [
+            "Une durée pendant laquelle autre chose se passe."
+          ],
+          "distractors": [
+            "As soon as",
+            "Until",
+            "By the time"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u117-a",
+      "topicId": "u117",
+      "tags": [
+        "like-as",
+        "comparaison"
+      ],
+      "fields": {
+        "regle": "like + nom ou pronom (« like a bank »). as + proposition (« as I said ») ou fonction réelle (« she works as a nurse » : elle l'est vraiment). « like a nurse » voudrait dire qu'elle ne l'est pas."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Il travaille comme consultant depuis dix ans.",
+          "answerSpec": {
+            "accepted": [
+              "He has worked as a consultant for ten years"
+            ]
+          },
+          "hints": [
+            "C'est sa fonction réelle : as."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Cette pièce ressemble à un entrepôt.",
+          "answerSpec": {
+            "accepted": [
+              "This room looks like a warehouse"
+            ]
+          },
+          "hints": [
+            "Une ressemblance : like + nom."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Comme je te l'ai dit hier, le périmètre a changé.",
+          "answerSpec": {
+            "accepted": [
+              "As I told you yesterday, the scope has changed"
+            ]
+          },
+          "hints": [
+            "Une proposition suit : as."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "She used the old server ___ a test machine for months.",
+          "answerSpec": {
+            "accepted": [
+              "as"
+            ]
+          },
+          "hints": [
+            "C'est vraiment sa fonction."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "He talks ___ his father — same pauses, same jokes.",
+          "answerSpec": {
+            "accepted": [
+              "like"
+            ]
+          },
+          "hints": [
+            "Une ressemblance, suivie d'un nom."
+          ]
+        },
+        {
+          "type": "transform",
+          "source": "I did the report the way you asked.",
+          "prompt": "Réécris la phrase avec « as ».",
+          "answerSpec": {
+            "accepted": [
+              "I did the report as you asked"
+            ]
+          },
+          "hints": [
+            "Une proposition suit as."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "source": "Like I said in the meeting, the pilot is not a product.",
+          "prompt": "Corrige la phrase en registre soigné.",
+          "answerSpec": {
+            "accepted": [
+              "As I said in the meeting, the pilot is not a product"
+            ]
+          },
+          "hints": [
+            "Une proposition suit : as, pas like."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "She was hired ___ a workplace consultant, not as an architect.",
+          "answerSpec": {
+            "accepted": [
+              "as"
+            ]
+          },
+          "distractors": [
+            "like",
+            "such as",
+            "how"
+          ],
+          "hints": [
+            "C'est le poste réellement occupé."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u117-b",
+      "topicId": "u117",
+      "tags": [
+        "like-as"
+      ],
+      "fields": {
+        "regle": "like + nom, as + proposition ou fonction réelle. « She works as a nurse » (elle l'est) contre « like a nurse » (elle ne l'est pas)."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Il a été recruté comme consultant workplace.",
+          "answerSpec": {
+            "accepted": [
+              "He was hired as a workplace consultant"
+            ]
+          },
+          "hints": [
+            "Fonction réelle."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Ce plateau ressemble à un hangar.",
+          "answerSpec": {
+            "accepted": [
+              "This floor looks like a warehouse"
+            ]
+          },
+          "hints": [
+            "Ressemblance."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Comme convenu hier, je t'envoie le devis.",
+          "answerSpec": {
+            "accepted": [
+              "As agreed yesterday, I am sending you the quote"
+            ]
+          },
+          "hints": [
+            "Proposition."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "She used the spare room ___ an office for a year.",
+          "answerSpec": {
+            "accepted": [
+              "as"
+            ]
+          },
+          "hints": [
+            "Fonction réelle."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "He negotiates ___ his father — same silences.",
+          "answerSpec": {
+            "accepted": [
+              "like"
+            ]
+          },
+          "hints": [
+            "Ressemblance, nom."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "I did it the way you asked.",
+          "answerSpec": {
+            "accepted": [
+              "I did it as you asked"
+            ]
+          },
+          "source": "I did it the way you asked.",
+          "hints": [
+            "Proposition."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "Like I mentioned in the meeting, the scope has moved.",
+          "answerSpec": {
+            "accepted": [
+              "As I mentioned in the meeting, the scope has moved"
+            ]
+          },
+          "source": "Like I mentioned in the meeting, the scope has moved.",
+          "hints": [
+            "Proposition : as."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "She spent two years ___ a project manager before this.",
+          "answerSpec": {
+            "accepted": [
+              "as"
+            ]
+          },
+          "hints": [
+            "Fonction réelle."
+          ],
+          "distractors": [
+            "like",
+            "such as",
+            "how"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u118-a",
+      "topicId": "u118",
+      "tags": [
+        "as-if",
+        "apparence"
+      ],
+      "fields": {
+        "regle": "as if / as though + proposition décrivent une apparence : « It looks as if it is going to rain. » Pour une hypothèse contraire aux faits, le verbe recule : « He talks as if he knew everything » (il ne sait rien)."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : On dirait qu'il va pleuvoir.",
+          "answerSpec": {
+            "accepted": [
+              "It looks as if it is going to rain",
+              "It looks as though it is going to rain"
+            ]
+          },
+          "hints": [
+            "as if + proposition."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Elle parle comme si elle dirigeait le projet — ce n'est pas le cas.",
+          "answerSpec": {
+            "accepted": [
+              "She talks as if she ran the project",
+              "She talks as though she ran the project"
+            ]
+          },
+          "hints": [
+            "Fait contraire à la réalité : le verbe recule au prétérit."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Il avait l'air de ne pas avoir dormi.",
+          "answerSpec": {
+            "accepted": [
+              "He looked as if he had not slept",
+              "He looked as though he had not slept"
+            ]
+          },
+          "hints": [
+            "Antériorité : past perfect."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "It sounds ___ the migration has been postponed again.",
+          "answerSpec": {
+            "accepted": [
+              "as if",
+              "as though",
+              "like"
+            ]
+          },
+          "hints": [
+            "Une proposition suit."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "He behaves as if he ___ the only person in the room. (be)",
+          "answerSpec": {
+            "accepted": [
+              "were",
+              "was"
+            ]
+          },
+          "hints": [
+            "Irréel : le verbe recule."
+          ]
+        },
+        {
+          "type": "transform",
+          "source": "She looks tired and pale.",
+          "prompt": "Réécris la phrase en commençant par « She looks as if ».",
+          "answerSpec": {
+            "accepted": [
+              "She looks as if she is tired",
+              "She looks as if she has been working too hard"
+            ]
+          },
+          "hints": [
+            "Une proposition complète après as if."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "source": "He speaks as if he would be the manager.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": {
+            "accepted": [
+              "He speaks as if he were the manager",
+              "He speaks as if he was the manager"
+            ]
+          },
+          "hints": [
+            "Pas de would après as if : le verbe recule d'un cran."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "The office smells ___ somebody has burnt the toast.",
+          "answerSpec": {
+            "accepted": [
+              "as if"
+            ]
+          },
+          "distractors": [
+            "like",
+            "as",
+            "such as"
+          ],
+          "hints": [
+            "Une proposition entière suit."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u118-b",
+      "topicId": "u118",
+      "tags": [
+        "as-if"
+      ],
+      "fields": {
+        "regle": "as if / as though décrivent une apparence. Pour l'irréel, le verbe recule d'un cran."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : On dirait que le budget ne passera pas.",
+          "answerSpec": {
+            "accepted": [
+              "It looks as if the budget will not go through"
+            ]
+          },
+          "hints": [
+            "as if + proposition."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Il parle comme s'il dirigeait la boîte — ce n'est pas le cas.",
+          "answerSpec": {
+            "accepted": [
+              "He talks as if he ran the company"
+            ]
+          },
+          "hints": [
+            "Irréel : prétérit."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Elle avait l'air de ne pas avoir lu le contrat.",
+          "answerSpec": {
+            "accepted": [
+              "She looked as if she had not read the contract"
+            ]
+          },
+          "hints": [
+            "Antériorité : past perfect."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "It sounds ___ the migration has slipped again.",
+          "answerSpec": {
+            "accepted": [
+              "as if",
+              "as though",
+              "like"
+            ]
+          },
+          "hints": [
+            "Proposition."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "He behaves as if he ___ the only consultant in the room. (be)",
+          "answerSpec": {
+            "accepted": [
+              "were",
+              "was"
+            ]
+          },
+          "hints": [
+            "Irréel."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "She looks like she has been working all night.",
+          "answerSpec": {
+            "accepted": [
+              "She looks as if she has been working all night"
+            ]
+          },
+          "source": "She looks like she has been working all night.",
+          "hints": [
+            "Registre soigné : as if."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "He speaks as if he would be in charge.",
+          "answerSpec": {
+            "accepted": [
+              "He speaks as if he were in charge",
+              "He speaks as if he was in charge"
+            ]
+          },
+          "source": "He speaks as if he would be in charge.",
+          "hints": [
+            "Pas de would après as if."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "The room smells ___ somebody has burnt the toast.",
+          "answerSpec": {
+            "accepted": [
+              "as if"
+            ]
+          },
+          "hints": [
+            "Proposition entière."
+          ],
+          "distractors": [
+            "like of",
+            "as",
+            "such as"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u119-a",
+      "topicId": "u119",
+      "tags": [
+        "during-for-while",
+        "duree"
+      ],
+      "fields": {
+        "regle": "during + nom dit quand (« during the meeting »), for + durée dit combien de temps (« for two hours »), while + proposition (« while I was reading »)."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Il n'a rien dit pendant la réunion.",
+          "answerSpec": {
+            "accepted": [
+              "He said nothing during the meeting"
+            ]
+          },
+          "hints": [
+            "Un nom suit : during."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Nous avons attendu pendant deux heures.",
+          "answerSpec": {
+            "accepted": [
+              "We waited for two hours"
+            ]
+          },
+          "hints": [
+            "Une durée chiffrée : for."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Elle a pris des notes pendant que je présentais.",
+          "answerSpec": {
+            "accepted": [
+              "She took notes while I was presenting"
+            ]
+          },
+          "hints": [
+            "Une proposition suit : while."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Nobody touched the code ___ the summer.",
+          "answerSpec": {
+            "accepted": [
+              "during"
+            ]
+          },
+          "hints": [
+            "Un nom de période."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The lift was out of order ___ three weeks.",
+          "answerSpec": {
+            "accepted": [
+              "for"
+            ]
+          },
+          "hints": [
+            "Une durée chiffrée."
+          ]
+        },
+        {
+          "type": "transform",
+          "source": "I read the report during my journey home.",
+          "prompt": "Réécris la phrase avec « while ».",
+          "answerSpec": {
+            "accepted": [
+              "I read the report while I was travelling home"
+            ]
+          },
+          "hints": [
+            "while demande un sujet et un verbe."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "source": "She lived in Bristol during six years.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": {
+            "accepted": [
+              "She lived in Bristol for six years"
+            ]
+          },
+          "hints": [
+            "Une durée chiffrée n'est jamais introduite par during."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Two people left ___ the presentation.",
+          "answerSpec": {
+            "accepted": [
+              "during"
+            ]
+          },
+          "distractors": [
+            "for",
+            "while",
+            "since"
+          ],
+          "hints": [
+            "Un nom suit."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u119-b",
+      "topicId": "u119",
+      "tags": [
+        "during-for-while"
+      ],
+      "fields": {
+        "regle": "during + nom, for + durée, while + proposition."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Personne n'a rien dit pendant la plénière.",
+          "answerSpec": {
+            "accepted": [
+              "Nobody said anything during the town hall"
+            ]
+          },
+          "hints": [
+            "Nom : during."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Ils ont attendu trois semaines.",
+          "answerSpec": {
+            "accepted": [
+              "They waited for three weeks"
+            ]
+          },
+          "hints": [
+            "Durée chiffrée : for."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : J'ai pris des notes pendant qu'il parlait.",
+          "answerSpec": {
+            "accepted": [
+              "I took notes while he was talking"
+            ]
+          },
+          "hints": [
+            "Proposition : while."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The estate was reviewed ___ the summer.",
+          "answerSpec": {
+            "accepted": [
+              "during"
+            ]
+          },
+          "hints": [
+            "Nom de période."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "He has been on that pilot ___ eighteen months.",
+          "answerSpec": {
+            "accepted": [
+              "for"
+            ]
+          },
+          "hints": [
+            "Durée chiffrée."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "I read the pack during my journey.",
+          "answerSpec": {
+            "accepted": [
+              "I read the pack while I was travelling"
+            ]
+          },
+          "source": "I read the pack during my journey.",
+          "hints": [
+            "while + sujet + verbe."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "She stayed in Bath during four years.",
+          "answerSpec": {
+            "accepted": [
+              "She stayed in Bath for four years"
+            ]
+          },
+          "source": "She stayed in Bath during four years.",
+          "hints": [
+            "Durée chiffrée : for."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Three people left ___ the second half.",
+          "answerSpec": {
+            "accepted": [
+              "during"
+            ]
+          },
+          "hints": [
+            "Un nom suit."
+          ],
+          "distractors": [
+            "for",
+            "while",
+            "since"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u120-a",
+      "topicId": "u120",
+      "tags": [
+        "by-until",
+        "echeance"
+      ],
+      "fields": {
+        "regle": "until dit qu'une situation dure jusqu'à un moment ; by dit qu'un événement aura lieu au plus tard à ce moment. « by the time » introduit une proposition."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Je serai au bureau jusqu'à six heures.",
+          "answerSpec": {
+            "accepted": [
+              "I will be in the office until six"
+            ]
+          },
+          "hints": [
+            "Une situation qui dure : until."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Envoie-moi les chiffres pour vendredi au plus tard.",
+          "answerSpec": {
+            "accepted": [
+              "Send me the figures by Friday"
+            ]
+          },
+          "hints": [
+            "Une échéance : by."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Le temps que j'arrive, tout le monde était parti.",
+          "answerSpec": {
+            "accepted": [
+              "By the time I arrived, everybody had left"
+            ]
+          },
+          "hints": [
+            "by the time + proposition, et past perfect derrière."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The shop stays open ___ nine on Thursdays.",
+          "answerSpec": {
+            "accepted": [
+              "until",
+              "till"
+            ]
+          },
+          "hints": [
+            "Une durée qui se poursuit."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The contract has to be signed ___ the end of the month.",
+          "answerSpec": {
+            "accepted": [
+              "by"
+            ]
+          },
+          "hints": [
+            "Une date limite."
+          ]
+        },
+        {
+          "type": "transform",
+          "source": "I waited. Then, at last, she called at four.",
+          "prompt": "Réécris en une phrase avec « until ».",
+          "answerSpec": {
+            "accepted": [
+              "I waited until she called at four"
+            ]
+          },
+          "hints": [
+            "L'attente dure jusqu'au moment dit."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "source": "Please answer until Monday morning.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": {
+            "accepted": [
+              "Please answer by Monday morning"
+            ]
+          },
+          "hints": [
+            "Une échéance, pas une durée."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "___ the audit started, half the team had already resigned.",
+          "answerSpec": {
+            "accepted": [
+              "By the time"
+            ]
+          },
+          "distractors": [
+            "Until",
+            "By",
+            "During"
+          ],
+          "hints": [
+            "Une proposition suit."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u120-b",
+      "topicId": "u120",
+      "tags": [
+        "by-until"
+      ],
+      "fields": {
+        "regle": "until : la situation dure jusque-là. by : au plus tard à ce moment. by the time + proposition."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Je reste au bureau jusqu'à sept heures.",
+          "answerSpec": {
+            "accepted": [
+              "I am staying in the office until seven"
+            ]
+          },
+          "hints": [
+            "Durée."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Il me faut ta réponse pour mercredi au plus tard.",
+          "answerSpec": {
+            "accepted": [
+              "I need your answer by Wednesday"
+            ]
+          },
+          "hints": [
+            "Échéance."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Le temps qu'ils décident, le fournisseur avait changé d'avis.",
+          "answerSpec": {
+            "accepted": [
+              "By the time they decided, the supplier had changed its mind"
+            ]
+          },
+          "hints": [
+            "by the time + past perfect."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The office stays open ___ eight on Thursdays.",
+          "answerSpec": {
+            "accepted": [
+              "until",
+              "till"
+            ]
+          },
+          "hints": [
+            "Durée."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The pack has to be circulated ___ Friday lunchtime.",
+          "answerSpec": {
+            "accepted": [
+              "by"
+            ]
+          },
+          "hints": [
+            "Échéance."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "We waited. At four she finally called.",
+          "answerSpec": {
+            "accepted": [
+              "We waited until she called at four"
+            ]
+          },
+          "source": "We waited. At four she finally called.",
+          "hints": [
+            "L'attente dure jusque-là."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "Please reply until Monday morning.",
+          "answerSpec": {
+            "accepted": [
+              "Please reply by Monday morning"
+            ]
+          },
+          "source": "Please reply until Monday morning.",
+          "hints": [
+            "Échéance, pas durée."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "___ the audit started, the team had already gone.",
+          "answerSpec": {
+            "accepted": [
+              "By the time"
+            ]
+          },
+          "hints": [
+            "Une proposition suit."
+          ],
+          "distractors": [
+            "Until",
+            "By",
+            "During"
+          ]
+        }
       ]
     }
   ]

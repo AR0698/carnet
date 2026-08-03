@@ -2,87 +2,1413 @@
   "group": "Relative clauses",
   "items": [
     {
-      "id": "u092-a", "topicId": "u092", "tags": ["relatives", "who-which-that"],
-      "fields": { "regle": "Le relatif sujet remplace le sujet : who pour les personnes, which pour les choses, that pour les deux. On ne redouble jamais le sujet — « the woman who lives », jamais « the woman who she lives »." },
+      "id": "u092-a",
+      "topicId": "u092",
+      "tags": [
+        "relatives",
+        "who-which-that"
+      ],
+      "fields": {
+        "regle": "Le relatif sujet remplace le sujet : who pour les personnes, which pour les choses, that pour les deux. On ne redouble jamais le sujet — « the woman who lives », jamais « the woman who she lives »."
+      },
       "exercises": [
-        { "type": "produce", "prompt": "Relie en une phrase : The woman lives next door. She is a surgeon.", "answerSpec": { "accepted": ["The woman who lives next door is a surgeon", "The woman that lives next door is a surgeon"] }, "hints": ["Le relatif prend la place de « she »."] },
-        { "type": "produce", "prompt": "Relie en une phrase : The machine broke down. It cost a fortune.", "answerSpec": { "accepted": ["The machine which broke down cost a fortune", "The machine that broke down cost a fortune"] }, "hints": ["Une chose : which ou that, jamais who."] },
-        { "type": "produce", "prompt": "Relie en une phrase : I know a photographer. He works for the council.", "answerSpec": { "accepted": ["I know a photographer who works for the council", "I know a photographer that works for the council"] }, "hints": ["Le verbe reste conjugué avec l'antécédent."] },
-        { "type": "fill_blank", "prompt": "The people ___ work on the harbour know every tide.", "answerSpec": { "accepted": ["who", "that"] }, "hints": ["Des personnes, en fonction sujet."] },
-        { "type": "fill_blank", "prompt": "This is the report ___ explains the delay.", "answerSpec": { "accepted": ["which", "that"] }, "hints": ["Une chose, en fonction sujet."] },
-        { "type": "transform", "source": "The engineer designed the bridge. She is famous.", "prompt": "Fais-en une seule phrase avec un relatif.", "answerSpec": { "accepted": ["The engineer who designed the bridge is famous", "The engineer that designed the bridge is famous"] }, "hints": ["La relative s'insère juste après l'antécédent."] },
-        { "type": "spot_error", "source": "The man who he called me was from the bank.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["The man who called me was from the bank", "The man that called me was from the bank"] }, "hints": ["« who » est déjà le sujet : « he » est en trop."] },
-        { "type": "mcq", "prompt": "The train ___ leaves at six is usually late.", "answerSpec": { "accepted": ["that"] }, "distractors": ["who", "whose", "what"], "hints": ["Une chose, sujet du verbe."] }
+        {
+          "type": "produce",
+          "prompt": "Relie en une phrase : The woman lives next door. She is a surgeon.",
+          "answerSpec": {
+            "accepted": [
+              "The woman who lives next door is a surgeon",
+              "The woman that lives next door is a surgeon"
+            ]
+          },
+          "hints": [
+            "Le relatif prend la place de « she »."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Relie en une phrase : The machine broke down. It cost a fortune.",
+          "answerSpec": {
+            "accepted": [
+              "The machine which broke down cost a fortune",
+              "The machine that broke down cost a fortune"
+            ]
+          },
+          "hints": [
+            "Une chose : which ou that, jamais who."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Relie en une phrase : I know a photographer. He works for the council.",
+          "answerSpec": {
+            "accepted": [
+              "I know a photographer who works for the council",
+              "I know a photographer that works for the council"
+            ]
+          },
+          "hints": [
+            "Le verbe reste conjugué avec l'antécédent."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The people ___ work on the harbour know every tide.",
+          "answerSpec": {
+            "accepted": [
+              "who",
+              "that"
+            ]
+          },
+          "hints": [
+            "Des personnes, en fonction sujet."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "This is the report ___ explains the delay.",
+          "answerSpec": {
+            "accepted": [
+              "which",
+              "that"
+            ]
+          },
+          "hints": [
+            "Une chose, en fonction sujet."
+          ]
+        },
+        {
+          "type": "transform",
+          "source": "The engineer designed the bridge. She is famous.",
+          "prompt": "Fais-en une seule phrase avec un relatif.",
+          "answerSpec": {
+            "accepted": [
+              "The engineer who designed the bridge is famous",
+              "The engineer that designed the bridge is famous"
+            ]
+          },
+          "hints": [
+            "La relative s'insère juste après l'antécédent."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "source": "The man who he called me was from the bank.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": {
+            "accepted": [
+              "The man who called me was from the bank",
+              "The man that called me was from the bank"
+            ]
+          },
+          "hints": [
+            "« who » est déjà le sujet : « he » est en trop."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "The train ___ leaves at six is usually late.",
+          "answerSpec": {
+            "accepted": [
+              "that"
+            ]
+          },
+          "distractors": [
+            "who",
+            "whose",
+            "what"
+          ],
+          "hints": [
+            "Une chose, sujet du verbe."
+          ]
+        }
       ]
     },
     {
-      "id": "u093-a", "topicId": "u093", "tags": ["relatives", "omission-du-relatif"],
-      "fields": { "regle": "Quand le relatif est complément d'objet, on peut l'omettre : « the book (that) I read ». Quand il est sujet, jamais : « the book that fell » garde son relatif." },
+      "id": "u092-b",
+      "topicId": "u092",
+      "tags": [
+        "relatives",
+        "sujet"
+      ],
+      "fields": {
+        "regle": "Relatif sujet : who pour les personnes, which pour les choses, that pour les deux. Le sujet ne se redouble jamais."
+      },
       "exercises": [
-        { "type": "produce", "prompt": "Relie sans employer de relatif : The film was disappointing. We watched it last night.", "answerSpec": { "accepted": ["The film we watched last night was disappointing"] }, "hints": ["Le relatif était complément : on peut le supprimer."] },
-        { "type": "produce", "prompt": "Relie sans employer de relatif : The woman is my line manager. You met her yesterday.", "answerSpec": { "accepted": ["The woman you met yesterday is my line manager"] }, "hints": ["Pas de « her » après « met » : la place du relatif effacé reste vide."] },
-        { "type": "produce", "prompt": "Relie sans employer de relatif : Everything went wrong. He touched it.", "answerSpec": { "accepted": ["Everything he touched went wrong"] }, "hints": ["Complément d'objet : rien à écrire."] },
-        { "type": "fill_blank", "prompt": "The invoice ___ arrived this morning is wrong.", "answerSpec": { "accepted": ["that", "which"] }, "hints": ["Ici le relatif est sujet : impossible de l'omettre."] },
-        { "type": "fill_blank", "prompt": "Is that the flat you ___ me about last week? (tell)", "answerSpec": { "accepted": ["told"] }, "hints": ["Le relatif complément a disparu, le reste ne change pas."] },
-        { "type": "transform", "source": "The email that I sent on Friday has not been answered.", "prompt": "Réécris la phrase en supprimant le relatif.", "answerSpec": { "accepted": ["The email I sent on Friday has not been answered"] }, "hints": ["Relatif complément : il s'efface."] },
-        { "type": "spot_error", "source": "The colleague sits opposite me is Welsh.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["The colleague who sits opposite me is Welsh", "The colleague that sits opposite me is Welsh"] }, "hints": ["Le relatif est sujet : on ne peut pas l'omettre."] },
-        { "type": "mcq", "prompt": "Laquelle est correcte ?", "answerSpec": { "accepted": ["The person I spoke to was helpful"] }, "distractors": ["The person spoke to me was helpful", "The person who I spoke to him was helpful", "The person which I spoke to was helpful"], "hints": ["Relatif complément, donc omissible ; une personne n'est jamais « which »."] }
+        {
+          "type": "produce",
+          "prompt": "Relie : The supplier went quiet. It had promised a demo.",
+          "answerSpec": {
+            "accepted": [
+              "The supplier which had promised a demo went quiet",
+              "The supplier that had promised a demo went quiet"
+            ]
+          },
+          "hints": [
+            "Une chose : which ou that."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Relie : I work with a woman. She grew up in Cardiff.",
+          "answerSpec": {
+            "accepted": [
+              "I work with a woman who grew up in Cardiff"
+            ]
+          },
+          "hints": [
+            "Une personne, sujet."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Relie : The tool broke. It had never been tested.",
+          "answerSpec": {
+            "accepted": [
+              "The tool which had never been tested broke",
+              "The tool that had never been tested broke"
+            ]
+          },
+          "hints": [
+            "Relative insérée après l'antécédent."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The consultant ___ wrote that report has left.",
+          "answerSpec": {
+            "accepted": [
+              "who",
+              "that"
+            ]
+          },
+          "hints": [
+            "Personne, sujet."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Anything ___ leaves the building needs a human review.",
+          "answerSpec": {
+            "accepted": [
+              "that",
+              "which"
+            ]
+          },
+          "hints": [
+            "Après anything, that s'impose."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "The intern took the minutes. She is Welsh.",
+          "answerSpec": {
+            "accepted": [
+              "The intern who took the minutes is Welsh"
+            ]
+          },
+          "source": "The intern took the minutes. She is Welsh.",
+          "hints": [
+            "Relative sujet."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "The client who she called is furious.",
+          "answerSpec": {
+            "accepted": [
+              "The client who called is furious"
+            ]
+          },
+          "source": "The client who she called is furious.",
+          "hints": [
+            "who est déjà le sujet."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "The badge ___ opens the second floor has expired.",
+          "answerSpec": {
+            "accepted": [
+              "that"
+            ]
+          },
+          "hints": [
+            "Chose, sujet."
+          ],
+          "distractors": [
+            "who",
+            "whose",
+            "what"
+          ]
+        }
       ]
     },
     {
-      "id": "u094-a", "topicId": "u094", "tags": ["relatives", "whose-whom-where"],
-      "fields": { "regle": "whose marque la possession, whom est le complément (registre soutenu), where renvoie à un lieu : « the man whose car », « the woman whom I met », « the office where I work »." },
+      "id": "u093-a",
+      "topicId": "u093",
+      "tags": [
+        "relatives",
+        "omission-du-relatif"
+      ],
+      "fields": {
+        "regle": "Quand le relatif est complément d'objet, on peut l'omettre : « the book (that) I read ». Quand il est sujet, jamais : « the book that fell » garde son relatif."
+      },
       "exercises": [
-        { "type": "produce", "prompt": "Relie : I met a designer. Her studio is in Stokes Croft.", "answerSpec": { "accepted": ["I met a designer whose studio is in Stokes Croft"] }, "hints": ["« her » devient whose, collé au nom possédé."] },
-        { "type": "produce", "prompt": "Relie : This is the café. We first met there.", "answerSpec": { "accepted": ["This is the café where we first met"] }, "hints": ["Un lieu : where, et « there » disparaît."] },
-        { "type": "produce", "prompt": "Relie en registre soutenu : The candidate was excellent. We interviewed her on Tuesday.", "answerSpec": { "accepted": ["The candidate whom we interviewed on Tuesday was excellent"] }, "hints": ["Complément de personne, registre écrit : whom."] },
-        { "type": "fill_blank", "prompt": "The supplier ___ contract expires in June has gone quiet.", "answerSpec": { "accepted": ["whose"] }, "hints": ["Le contrat lui appartient."] },
-        { "type": "fill_blank", "prompt": "I still remember the building ___ the studio used to be.", "answerSpec": { "accepted": ["where"] }, "hints": ["Un lieu."] },
-        { "type": "transform", "source": "That is the architect. His drawings are in the museum.", "prompt": "Fais-en une seule phrase.", "answerSpec": { "accepted": ["That is the architect whose drawings are in the museum"] }, "hints": ["Pas d'article après whose."] },
-        { "type": "spot_error", "source": "The neighbour which dog barks all night has moved out.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["The neighbour whose dog barks all night has moved out"] }, "hints": ["Il s'agit d'une possession, pas d'une chose."] },
-        { "type": "mcq", "prompt": "She works for a charity ___ office is near the docks.", "answerSpec": { "accepted": ["whose"] }, "distractors": ["which", "who", "of which the"], "hints": ["Le bureau appartient à l'association."] }
+        {
+          "type": "produce",
+          "prompt": "Relie sans employer de relatif : The film was disappointing. We watched it last night.",
+          "answerSpec": {
+            "accepted": [
+              "The film we watched last night was disappointing"
+            ]
+          },
+          "hints": [
+            "Le relatif était complément : on peut le supprimer."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Relie sans employer de relatif : The woman is my line manager. You met her yesterday.",
+          "answerSpec": {
+            "accepted": [
+              "The woman you met yesterday is my line manager"
+            ]
+          },
+          "hints": [
+            "Pas de « her » après « met » : la place du relatif effacé reste vide."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Relie sans employer de relatif : Everything went wrong. He touched it.",
+          "answerSpec": {
+            "accepted": [
+              "Everything he touched went wrong"
+            ]
+          },
+          "hints": [
+            "Complément d'objet : rien à écrire."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The invoice ___ arrived this morning is wrong.",
+          "answerSpec": {
+            "accepted": [
+              "that",
+              "which"
+            ]
+          },
+          "hints": [
+            "Ici le relatif est sujet : impossible de l'omettre."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Is that the flat you ___ me about last week? (tell)",
+          "answerSpec": {
+            "accepted": [
+              "told"
+            ]
+          },
+          "hints": [
+            "Le relatif complément a disparu, le reste ne change pas."
+          ]
+        },
+        {
+          "type": "transform",
+          "source": "The email that I sent on Friday has not been answered.",
+          "prompt": "Réécris la phrase en supprimant le relatif.",
+          "answerSpec": {
+            "accepted": [
+              "The email I sent on Friday has not been answered"
+            ]
+          },
+          "hints": [
+            "Relatif complément : il s'efface."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "source": "The colleague sits opposite me is Welsh.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": {
+            "accepted": [
+              "The colleague who sits opposite me is Welsh",
+              "The colleague that sits opposite me is Welsh"
+            ]
+          },
+          "hints": [
+            "Le relatif est sujet : on ne peut pas l'omettre."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Laquelle est correcte ?",
+          "answerSpec": {
+            "accepted": [
+              "The person I spoke to was helpful"
+            ]
+          },
+          "distractors": [
+            "The person spoke to me was helpful",
+            "The person who I spoke to him was helpful",
+            "The person which I spoke to was helpful"
+          ],
+          "hints": [
+            "Relatif complément, donc omissible ; une personne n'est jamais « which »."
+          ]
+        }
       ]
     },
     {
-      "id": "u095-a", "topicId": "u095", "tags": ["relatives", "apposition", "virgules"],
-      "fields": { "regle": "Une relative entre virgules ajoute une information non essentielle. On ne peut alors ni employer that, ni omettre le relatif : « My brother, who lives in Leeds, is a nurse. »" },
+      "id": "u093-b",
+      "topicId": "u093",
+      "tags": [
+        "relatives",
+        "omission"
+      ],
+      "fields": {
+        "regle": "Relatif complément : omissible. Relatif sujet : obligatoire. C'est le seul critère."
+      },
       "exercises": [
-        { "type": "produce", "prompt": "Ajoute l'information entre virgules : My sister is a vet. She lives in Bath.", "answerSpec": { "accepted": ["My sister, who lives in Bath, is a vet"] }, "hints": ["Deux virgules, et who obligatoire."] },
-        { "type": "produce", "prompt": "Ajoute l'information entre virgules : The Clifton bridge attracts thousands of visitors. It opened in 1864.", "answerSpec": { "accepted": ["The Clifton bridge, which opened in 1864, attracts thousands of visitors"] }, "hints": ["Une chose déjà identifiée : which, jamais that."] },
-        { "type": "produce", "prompt": "Ajoute l'information entre virgules : Anna has agreed to run the workshop. Her French is excellent.", "answerSpec": { "accepted": ["Anna, whose French is excellent, has agreed to run the workshop"] }, "hints": ["whose fonctionne aussi entre virgules."] },
-        { "type": "fill_blank", "prompt": "Our head office, ___ moved last year, is now by the water.", "answerSpec": { "accepted": ["which"] }, "hints": ["Entre virgules, that est exclu."] },
-        { "type": "fill_blank", "prompt": "Tom, ___ I worked with in Leeds, has just joined the board.", "answerSpec": { "accepted": ["who", "whom"] }, "hints": ["Une personne, complément."] },
-        { "type": "transform", "source": "We stayed in Bath. It is only twenty minutes away by train.", "prompt": "Fais-en une phrase avec une relative entre virgules.", "answerSpec": { "accepted": ["We stayed in Bath, which is only twenty minutes away by train"] }, "hints": ["Un nom propre est déjà identifié : l'information est accessoire."] },
-        { "type": "spot_error", "source": "My manager, that started in April, is already leaving.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["My manager, who started in April, is already leaving"] }, "hints": ["Entre virgules, that est impossible."] },
-        { "type": "mcq", "prompt": "Laquelle est correcte ?", "answerSpec": { "accepted": ["Bristol, which sits on the Avon, has two cathedrals"] }, "distractors": ["Bristol that sits on the Avon has two cathedrals", "Bristol, that sits on the Avon, has two cathedrals", "Bristol, sits on the Avon, has two cathedrals"], "hints": ["Information accessoire : virgules et which."] }
+        {
+          "type": "produce",
+          "prompt": "Relie sans relatif : The supplier is late. We chose it in March.",
+          "answerSpec": {
+            "accepted": [
+              "The supplier we chose in March is late"
+            ]
+          },
+          "hints": [
+            "Complément : rien à écrire."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Relie sans relatif : The room was too small. They booked it.",
+          "answerSpec": {
+            "accepted": [
+              "The room they booked was too small"
+            ]
+          },
+          "hints": [
+            "Complément d'objet."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Relie sans relatif : Everything failed. He touched it.",
+          "answerSpec": {
+            "accepted": [
+              "Everything he touched failed"
+            ]
+          },
+          "hints": [
+            "Complément."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The email ___ arrived this morning has no attachment.",
+          "answerSpec": {
+            "accepted": [
+              "that",
+              "which"
+            ]
+          },
+          "hints": [
+            "Sujet : obligatoire."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Is that the consultant you ___ me about? (tell)",
+          "answerSpec": {
+            "accepted": [
+              "told"
+            ]
+          },
+          "hints": [
+            "Le relatif a disparu."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "The policy that they published last week is unreadable.",
+          "answerSpec": {
+            "accepted": [
+              "The policy they published last week is unreadable"
+            ]
+          },
+          "source": "The policy that they published last week is unreadable.",
+          "hints": [
+            "Complément : omissible."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "The woman sits next to me is from Leeds.",
+          "answerSpec": {
+            "accepted": [
+              "The woman who sits next to me is from Leeds"
+            ]
+          },
+          "source": "The woman sits next to me is from Leeds.",
+          "hints": [
+            "Sujet : le relatif est obligatoire."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Laquelle est correcte ?",
+          "answerSpec": {
+            "accepted": [
+              "The supplier we met was excellent"
+            ]
+          },
+          "hints": [
+            "Complément, donc omissible."
+          ],
+          "distractors": [
+            "The supplier met us was excellent",
+            "The supplier who we met him was excellent",
+            "The supplier which we met was excellent"
+          ]
+        }
       ]
     },
     {
-      "id": "u096-a", "topicId": "u096", "tags": ["relatives", "which-de-phrase", "quantifieur"],
-      "fields": { "regle": "which peut reprendre toute une proposition : « He was late, which annoyed everyone. » Après un quantifieur, on écrit « most of whom », « none of which », « both of which »." },
+      "id": "u094-a",
+      "topicId": "u094",
+      "tags": [
+        "relatives",
+        "whose-whom-where"
+      ],
+      "fields": {
+        "regle": "whose marque la possession, whom est le complément (registre soutenu), where renvoie à un lieu : « the man whose car », « the woman whom I met », « the office where I work »."
+      },
       "exercises": [
-        { "type": "produce", "prompt": "Relie avec un which de phrase : He forgot the handover. It made everything harder.", "answerSpec": { "accepted": ["He forgot the handover, which made everything harder"] }, "hints": ["Ici which reprend tout ce qui précède."] },
-        { "type": "produce", "prompt": "Relie : She sent forty invitations. Most of them were ignored.", "answerSpec": { "accepted": ["She sent forty invitations, most of which were ignored"] }, "hints": ["Après un quantifieur : of which."] },
-        { "type": "produce", "prompt": "Relie : Twelve people applied. None of them had the right visa.", "answerSpec": { "accepted": ["Twelve people applied, none of whom had the right visa"] }, "hints": ["Des personnes : of whom."] },
-        { "type": "fill_blank", "prompt": "The pilot ran for six months, ___ nobody had budgeted for.", "answerSpec": { "accepted": ["which"] }, "hints": ["Le relatif reprend le fait entier."] },
-        { "type": "fill_blank", "prompt": "He gave three reasons, none of ___ convinced the board.", "answerSpec": { "accepted": ["which"] }, "hints": ["Des raisons, donc des choses."] },
-        { "type": "transform", "source": "The lift broke down again. It is becoming a joke.", "prompt": "Fais-en une seule phrase avec which.", "answerSpec": { "accepted": ["The lift broke down again, which is becoming a joke"] }, "hints": ["Pas de « it » après which."] },
-        { "type": "spot_error", "source": "She passed the exam, what surprised nobody.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["She passed the exam, which surprised nobody"] }, "hints": ["« what » n'est jamais relatif de phrase."] },
-        { "type": "mcq", "prompt": "We interviewed eight candidates, two ___ were outstanding.", "answerSpec": { "accepted": ["of whom"] }, "distractors": ["of which", "of them", "which"], "hints": ["Des personnes, après un quantifieur."] }
+        {
+          "type": "produce",
+          "prompt": "Relie : I met a designer. Her studio is in Stokes Croft.",
+          "answerSpec": {
+            "accepted": [
+              "I met a designer whose studio is in Stokes Croft"
+            ]
+          },
+          "hints": [
+            "« her » devient whose, collé au nom possédé."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Relie : This is the café. We first met there.",
+          "answerSpec": {
+            "accepted": [
+              "This is the café where we first met"
+            ]
+          },
+          "hints": [
+            "Un lieu : where, et « there » disparaît."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Relie en registre soutenu : The candidate was excellent. We interviewed her on Tuesday.",
+          "answerSpec": {
+            "accepted": [
+              "The candidate whom we interviewed on Tuesday was excellent"
+            ]
+          },
+          "hints": [
+            "Complément de personne, registre écrit : whom."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The supplier ___ contract expires in June has gone quiet.",
+          "answerSpec": {
+            "accepted": [
+              "whose"
+            ]
+          },
+          "hints": [
+            "Le contrat lui appartient."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "I still remember the building ___ the studio used to be.",
+          "answerSpec": {
+            "accepted": [
+              "where"
+            ]
+          },
+          "hints": [
+            "Un lieu."
+          ]
+        },
+        {
+          "type": "transform",
+          "source": "That is the architect. His drawings are in the museum.",
+          "prompt": "Fais-en une seule phrase.",
+          "answerSpec": {
+            "accepted": [
+              "That is the architect whose drawings are in the museum"
+            ]
+          },
+          "hints": [
+            "Pas d'article après whose."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "source": "The neighbour which dog barks all night has moved out.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": {
+            "accepted": [
+              "The neighbour whose dog barks all night has moved out"
+            ]
+          },
+          "hints": [
+            "Il s'agit d'une possession, pas d'une chose."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "She works for a charity ___ office is near the docks.",
+          "answerSpec": {
+            "accepted": [
+              "whose"
+            ]
+          },
+          "distractors": [
+            "which",
+            "who",
+            "of which the"
+          ],
+          "hints": [
+            "Le bureau appartient à l'association."
+          ]
+        }
       ]
     },
     {
-      "id": "u097-a", "topicId": "u097", "tags": ["relatives", "participiales"],
-      "fields": { "regle": "Une participiale abrège une relative : -ing pour le sens actif (« the woman talking to Tom »), participe passé pour le sens passif (« the boy injured in the accident »)." },
+      "id": "u094-b",
+      "topicId": "u094",
+      "tags": [
+        "relatives",
+        "whose-where"
+      ],
+      "fields": {
+        "regle": "whose la possession, whom le complément soutenu, where le lieu, when le moment."
+      },
       "exercises": [
-        { "type": "produce", "prompt": "Abrège avec une participiale : The man who is waiting at reception is from the agency.", "answerSpec": { "accepted": ["The man waiting at reception is from the agency"] }, "hints": ["Sens actif : -ing, et le relatif disparaît."] },
-        { "type": "produce", "prompt": "Abrège avec une participiale : The documents which were signed last week have been lost.", "answerSpec": { "accepted": ["The documents signed last week have been lost"] }, "hints": ["Sens passif : participe passé seul."] },
-        { "type": "produce", "prompt": "Abrège avec une participiale : Anyone who wants a laptop should ask IT.", "answerSpec": { "accepted": ["Anyone wanting a laptop should ask IT"] }, "hints": ["Le verbe de la relative passe en -ing."] },
-        { "type": "fill_blank", "prompt": "The team ___ the migration is on the second floor. (run)", "answerSpec": { "accepted": ["running"] }, "hints": ["C'est l'équipe qui agit."] },
-        { "type": "fill_blank", "prompt": "We are still waiting for the money ___ last year. (promise)", "answerSpec": { "accepted": ["promised"] }, "hints": ["L'argent subit l'action."] },
-        { "type": "transform", "source": "The woman who is standing by the window works in legal.", "prompt": "Abrège la relative.", "answerSpec": { "accepted": ["The woman standing by the window works in legal"] }, "hints": ["« who is » disparaît d'un bloc."] },
-        { "type": "spot_error", "source": "The report writing by the intern is surprisingly good.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["The report written by the intern is surprisingly good"] }, "hints": ["Le rapport est écrit : sens passif."] },
-        { "type": "mcq", "prompt": "The people ___ in the lobby are here for the town hall.", "answerSpec": { "accepted": ["sitting"] }, "distractors": ["sat", "who sitting", "seated by"], "hints": ["Ils agissent : participe présent."] }
+        {
+          "type": "produce",
+          "prompt": "Relie : I met a consultant. Her day rate is enormous.",
+          "answerSpec": {
+            "accepted": [
+              "I met a consultant whose day rate is enormous"
+            ]
+          },
+          "hints": [
+            "whose, collé au nom."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Relie : That is the year. Everything changed then.",
+          "answerSpec": {
+            "accepted": [
+              "That is the year when everything changed"
+            ]
+          },
+          "hints": [
+            "Un moment : when."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Relie : This is the floor. We used to sit here.",
+          "answerSpec": {
+            "accepted": [
+              "This is the floor where we used to sit"
+            ]
+          },
+          "hints": [
+            "Un lieu : where."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The company ___ contract expires in June has gone quiet.",
+          "answerSpec": {
+            "accepted": [
+              "whose"
+            ]
+          },
+          "hints": [
+            "Possession."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Do you remember the day ___ the lift finally worked?",
+          "answerSpec": {
+            "accepted": [
+              "when"
+            ]
+          },
+          "hints": [
+            "Un moment."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "That is the manager. His team wrote the policy.",
+          "answerSpec": {
+            "accepted": [
+              "That is the manager whose team wrote the policy"
+            ]
+          },
+          "source": "That is the manager. His team wrote the policy.",
+          "hints": [
+            "Pas d'article après whose."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "The colleague which laptop was stolen has resigned.",
+          "answerSpec": {
+            "accepted": [
+              "The colleague whose laptop was stolen has resigned"
+            ]
+          },
+          "source": "The colleague which laptop was stolen has resigned.",
+          "hints": [
+            "Possession : whose."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "She works for a charity ___ funding comes from the council.",
+          "answerSpec": {
+            "accepted": [
+              "whose"
+            ]
+          },
+          "hints": [
+            "Possession."
+          ],
+          "distractors": [
+            "which",
+            "who",
+            "that its"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u095-a",
+      "topicId": "u095",
+      "tags": [
+        "relatives",
+        "apposition",
+        "virgules"
+      ],
+      "fields": {
+        "regle": "Une relative entre virgules ajoute une information non essentielle. On ne peut alors ni employer that, ni omettre le relatif : « My brother, who lives in Leeds, is a nurse. »"
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Ajoute l'information entre virgules : My sister is a vet. She lives in Bath.",
+          "answerSpec": {
+            "accepted": [
+              "My sister, who lives in Bath, is a vet"
+            ]
+          },
+          "hints": [
+            "Deux virgules, et who obligatoire."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Ajoute l'information entre virgules : The Clifton bridge attracts thousands of visitors. It opened in 1864.",
+          "answerSpec": {
+            "accepted": [
+              "The Clifton bridge, which opened in 1864, attracts thousands of visitors"
+            ]
+          },
+          "hints": [
+            "Une chose déjà identifiée : which, jamais that."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Ajoute l'information entre virgules : Anna has agreed to run the workshop. Her French is excellent.",
+          "answerSpec": {
+            "accepted": [
+              "Anna, whose French is excellent, has agreed to run the workshop"
+            ]
+          },
+          "hints": [
+            "whose fonctionne aussi entre virgules."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Our head office, ___ moved last year, is now by the water.",
+          "answerSpec": {
+            "accepted": [
+              "which"
+            ]
+          },
+          "hints": [
+            "Entre virgules, that est exclu."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Tom, ___ I worked with in Leeds, has just joined the board.",
+          "answerSpec": {
+            "accepted": [
+              "who",
+              "whom"
+            ]
+          },
+          "hints": [
+            "Une personne, complément."
+          ]
+        },
+        {
+          "type": "transform",
+          "source": "We stayed in Bath. It is only twenty minutes away by train.",
+          "prompt": "Fais-en une phrase avec une relative entre virgules.",
+          "answerSpec": {
+            "accepted": [
+              "We stayed in Bath, which is only twenty minutes away by train"
+            ]
+          },
+          "hints": [
+            "Un nom propre est déjà identifié : l'information est accessoire."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "source": "My manager, that started in April, is already leaving.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": {
+            "accepted": [
+              "My manager, who started in April, is already leaving"
+            ]
+          },
+          "hints": [
+            "Entre virgules, that est impossible."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Laquelle est correcte ?",
+          "answerSpec": {
+            "accepted": [
+              "Bristol, which sits on the Avon, has two cathedrals"
+            ]
+          },
+          "distractors": [
+            "Bristol that sits on the Avon has two cathedrals",
+            "Bristol, that sits on the Avon, has two cathedrals",
+            "Bristol, sits on the Avon, has two cathedrals"
+          ],
+          "hints": [
+            "Information accessoire : virgules et which."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u095-b",
+      "topicId": "u095",
+      "tags": [
+        "relatives",
+        "virgules"
+      ],
+      "fields": {
+        "regle": "Entre virgules, l'information est accessoire : that est exclu, et le relatif ne peut pas s'omettre."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Ajoute entre virgules : My manager is on leave. She joined in April.",
+          "answerSpec": {
+            "accepted": [
+              "My manager, who joined in April, is on leave"
+            ]
+          },
+          "hints": [
+            "who obligatoire."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Ajoute entre virgules : The Avon runs through the city. It is tidal.",
+          "answerSpec": {
+            "accepted": [
+              "The Avon, which is tidal, runs through the city"
+            ]
+          },
+          "hints": [
+            "which, jamais that."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Ajoute entre virgules : Priya owns the data platform. Her French is fluent.",
+          "answerSpec": {
+            "accepted": [
+              "Priya, whose French is fluent, owns the data platform"
+            ]
+          },
+          "hints": [
+            "whose entre virgules."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Our head office, ___ opened in 2019, is already too small.",
+          "answerSpec": {
+            "accepted": [
+              "which"
+            ]
+          },
+          "hints": [
+            "Entre virgules."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Tom, ___ I met in Leeds, has just joined the board.",
+          "answerSpec": {
+            "accepted": [
+              "who",
+              "whom"
+            ]
+          },
+          "hints": [
+            "Personne, complément."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "We stayed in Portishead. It is half an hour away.",
+          "answerSpec": {
+            "accepted": [
+              "We stayed in Portishead, which is half an hour away"
+            ]
+          },
+          "source": "We stayed in Portishead. It is half an hour away.",
+          "hints": [
+            "Nom propre : information accessoire."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "My line manager, that started in April, is already leaving.",
+          "answerSpec": {
+            "accepted": [
+              "My line manager, who started in April, is already leaving"
+            ]
+          },
+          "source": "My line manager, that started in April, is already leaving.",
+          "hints": [
+            "that est impossible entre virgules."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Laquelle est correcte ?",
+          "answerSpec": {
+            "accepted": [
+              "Bath, which is nearby, has better stone"
+            ]
+          },
+          "hints": [
+            "Virgules et which."
+          ],
+          "distractors": [
+            "Bath that is nearby has better stone",
+            "Bath, that is nearby, has better stone",
+            "Bath, is nearby, has better stone"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u096-a",
+      "topicId": "u096",
+      "tags": [
+        "relatives",
+        "which-de-phrase",
+        "quantifieur"
+      ],
+      "fields": {
+        "regle": "which peut reprendre toute une proposition : « He was late, which annoyed everyone. » Après un quantifieur, on écrit « most of whom », « none of which », « both of which »."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Relie avec un which de phrase : He forgot the handover. It made everything harder.",
+          "answerSpec": {
+            "accepted": [
+              "He forgot the handover, which made everything harder"
+            ]
+          },
+          "hints": [
+            "Ici which reprend tout ce qui précède."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Relie : She sent forty invitations. Most of them were ignored.",
+          "answerSpec": {
+            "accepted": [
+              "She sent forty invitations, most of which were ignored"
+            ]
+          },
+          "hints": [
+            "Après un quantifieur : of which."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Relie : Twelve people applied. None of them had the right visa.",
+          "answerSpec": {
+            "accepted": [
+              "Twelve people applied, none of whom had the right visa"
+            ]
+          },
+          "hints": [
+            "Des personnes : of whom."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The pilot ran for six months, ___ nobody had budgeted for.",
+          "answerSpec": {
+            "accepted": [
+              "which"
+            ]
+          },
+          "hints": [
+            "Le relatif reprend le fait entier."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "He gave three reasons, none of ___ convinced the board.",
+          "answerSpec": {
+            "accepted": [
+              "which"
+            ]
+          },
+          "hints": [
+            "Des raisons, donc des choses."
+          ]
+        },
+        {
+          "type": "transform",
+          "source": "The lift broke down again. It is becoming a joke.",
+          "prompt": "Fais-en une seule phrase avec which.",
+          "answerSpec": {
+            "accepted": [
+              "The lift broke down again, which is becoming a joke"
+            ]
+          },
+          "hints": [
+            "Pas de « it » après which."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "source": "She passed the exam, what surprised nobody.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": {
+            "accepted": [
+              "She passed the exam, which surprised nobody"
+            ]
+          },
+          "hints": [
+            "« what » n'est jamais relatif de phrase."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "We interviewed eight candidates, two ___ were outstanding.",
+          "answerSpec": {
+            "accepted": [
+              "of whom"
+            ]
+          },
+          "distractors": [
+            "of which",
+            "of them",
+            "which"
+          ],
+          "hints": [
+            "Des personnes, après un quantifieur."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u096-b",
+      "topicId": "u096",
+      "tags": [
+        "relatives",
+        "which-de-phrase"
+      ],
+      "fields": {
+        "regle": "which reprend toute une proposition ; après un quantifieur, on écrit of which pour les choses, of whom pour les personnes."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Relie : Nobody tested the connector. It explains everything.",
+          "answerSpec": {
+            "accepted": [
+              "Nobody tested the connector, which explains everything"
+            ]
+          },
+          "hints": [
+            "which reprend le fait entier."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Relie : We sent thirty invitations. Half of them bounced.",
+          "answerSpec": {
+            "accepted": [
+              "We sent thirty invitations, half of which bounced"
+            ]
+          },
+          "hints": [
+            "of which."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Relie : Nine people applied. Two of them had the right visa.",
+          "answerSpec": {
+            "accepted": [
+              "Nine people applied, two of whom had the right visa"
+            ]
+          },
+          "hints": [
+            "of whom."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The audit lasted a year, ___ nobody had planned for.",
+          "answerSpec": {
+            "accepted": [
+              "which"
+            ]
+          },
+          "hints": [
+            "Reprend la proposition."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "He made four promises, none of ___ he kept.",
+          "answerSpec": {
+            "accepted": [
+              "which"
+            ]
+          },
+          "hints": [
+            "Des promesses : which."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "The budget was refused again. It is becoming a habit.",
+          "answerSpec": {
+            "accepted": [
+              "The budget was refused again, which is becoming a habit"
+            ]
+          },
+          "source": "The budget was refused again. It is becoming a habit.",
+          "hints": [
+            "Pas de it après which."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "They cancelled the pilot, what surprised nobody.",
+          "answerSpec": {
+            "accepted": [
+              "They cancelled the pilot, which surprised nobody"
+            ]
+          },
+          "source": "They cancelled the pilot, what surprised nobody.",
+          "hints": [
+            "what n'est jamais relatif de phrase."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "We saw ten flats, three ___ were already let.",
+          "answerSpec": {
+            "accepted": [
+              "of which"
+            ]
+          },
+          "hints": [
+            "Des choses, après un quantifieur."
+          ],
+          "distractors": [
+            "of whom",
+            "of them",
+            "which of"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u097-a",
+      "topicId": "u097",
+      "tags": [
+        "relatives",
+        "participiales"
+      ],
+      "fields": {
+        "regle": "Une participiale abrège une relative : -ing pour le sens actif (« the woman talking to Tom »), participe passé pour le sens passif (« the boy injured in the accident »)."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Abrège avec une participiale : The man who is waiting at reception is from the agency.",
+          "answerSpec": {
+            "accepted": [
+              "The man waiting at reception is from the agency"
+            ]
+          },
+          "hints": [
+            "Sens actif : -ing, et le relatif disparaît."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Abrège avec une participiale : The documents which were signed last week have been lost.",
+          "answerSpec": {
+            "accepted": [
+              "The documents signed last week have been lost"
+            ]
+          },
+          "hints": [
+            "Sens passif : participe passé seul."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Abrège avec une participiale : Anyone who wants a laptop should ask IT.",
+          "answerSpec": {
+            "accepted": [
+              "Anyone wanting a laptop should ask IT"
+            ]
+          },
+          "hints": [
+            "Le verbe de la relative passe en -ing."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The team ___ the migration is on the second floor. (run)",
+          "answerSpec": {
+            "accepted": [
+              "running"
+            ]
+          },
+          "hints": [
+            "C'est l'équipe qui agit."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "We are still waiting for the money ___ last year. (promise)",
+          "answerSpec": {
+            "accepted": [
+              "promised"
+            ]
+          },
+          "hints": [
+            "L'argent subit l'action."
+          ]
+        },
+        {
+          "type": "transform",
+          "source": "The woman who is standing by the window works in legal.",
+          "prompt": "Abrège la relative.",
+          "answerSpec": {
+            "accepted": [
+              "The woman standing by the window works in legal"
+            ]
+          },
+          "hints": [
+            "« who is » disparaît d'un bloc."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "source": "The report writing by the intern is surprisingly good.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": {
+            "accepted": [
+              "The report written by the intern is surprisingly good"
+            ]
+          },
+          "hints": [
+            "Le rapport est écrit : sens passif."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "The people ___ in the lobby are here for the town hall.",
+          "answerSpec": {
+            "accepted": [
+              "sitting"
+            ]
+          },
+          "distractors": [
+            "sat",
+            "who sitting",
+            "seated by"
+          ],
+          "hints": [
+            "Ils agissent : participe présent."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u097-b",
+      "topicId": "u097",
+      "tags": [
+        "relatives",
+        "participiales"
+      ],
+      "fields": {
+        "regle": "-ing pour le sens actif, participe passé pour le passif. La participiale abrège la relative."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Abrège : The people who are waiting in the lobby are here for the town hall.",
+          "answerSpec": {
+            "accepted": [
+              "The people waiting in the lobby are here for the town hall"
+            ]
+          },
+          "hints": [
+            "Actif : -ing."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Abrège : The figures which were quoted at the board were wrong.",
+          "answerSpec": {
+            "accepted": [
+              "The figures quoted at the board were wrong"
+            ]
+          },
+          "hints": [
+            "Passif : participe passé."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Abrège : Anyone who arrives late should sit at the back.",
+          "answerSpec": {
+            "accepted": [
+              "Anyone arriving late should sit at the back"
+            ]
+          },
+          "hints": [
+            "Le verbe passe en -ing."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The team ___ the estate review is on the fourth floor. (lead)",
+          "answerSpec": {
+            "accepted": [
+              "leading"
+            ]
+          },
+          "hints": [
+            "L'équipe agit."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "We are still chasing the money ___ last year. (promise)",
+          "answerSpec": {
+            "accepted": [
+              "promised"
+            ]
+          },
+          "hints": [
+            "L'argent subit."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "The man who is standing by the lift works in IT.",
+          "answerSpec": {
+            "accepted": [
+              "The man standing by the lift works in IT"
+            ]
+          },
+          "source": "The man who is standing by the lift works in IT.",
+          "hints": [
+            "who is disparaît."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "The policy writing by legal is still in draft.",
+          "answerSpec": {
+            "accepted": [
+              "The policy written by legal is still in draft"
+            ]
+          },
+          "source": "The policy writing by legal is still in draft.",
+          "hints": [
+            "Sens passif."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Everyone ___ in the app gets a desk.",
+          "answerSpec": {
+            "accepted": [
+              "registered"
+            ]
+          },
+          "hints": [
+            "Ils sont inscrits : passif."
+          ],
+          "distractors": [
+            "registering",
+            "register",
+            "who registering"
+          ]
+        }
       ]
     }
   ]

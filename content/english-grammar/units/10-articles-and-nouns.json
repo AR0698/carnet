@@ -2,185 +2,3029 @@
   "group": "Articles and nouns",
   "items": [
     {
-      "id": "u069-a", "topicId": "u069", "tags": ["denombrable", "indenombrable"],
-      "fields": { "regle": "Un dénombrable se compte et prend a/an au singulier ; un indénombrable ne se met ni au pluriel ni avec a/an : information, advice, luggage, furniture, news, work, money, weather sont indénombrables en anglais." },
+      "id": "u069-a",
+      "topicId": "u069",
+      "tags": [
+        "denombrable",
+        "indenombrable"
+      ],
+      "fields": {
+        "regle": "Un dénombrable se compte et prend a/an au singulier ; un indénombrable ne se met ni au pluriel ni avec a/an : information, advice, luggage, furniture, news, work, money, weather sont indénombrables en anglais."
+      },
       "exercises": [
-        { "type": "produce", "prompt": "Traduis : J'ai besoin d'un conseil.", "answerSpec": { "accepted": ["I need some advice", "I need a piece of advice"] }, "hints": ["advice est indénombrable : jamais « an advice »."] },
-        { "type": "produce", "prompt": "Traduis : Les bagages sont déjà dans la voiture.", "answerSpec": { "accepted": ["The luggage is already in the car"] }, "hints": ["luggage est indénombrable, donc verbe au singulier."] },
-        { "type": "produce", "prompt": "Traduis : C'est une bonne nouvelle.", "answerSpec": { "accepted": ["That is good news", "This is good news"] }, "hints": ["news est indénombrable malgré le s."] },
-        { "type": "fill_blank", "prompt": "She gave me a lot of useful ___ about the contract. (information)", "answerSpec": { "accepted": ["information"] }, "hints": ["Jamais de pluriel."] },
-        { "type": "fill_blank", "prompt": "The ___ in the new office is far too low. (furniture)", "answerSpec": { "accepted": ["furniture"] }, "hints": ["Indénombrable, donc singulier."] },
-        { "type": "transform", "source": "He gave me two advices about the job.", "prompt": "Réécris correctement la phrase.", "answerSpec": { "accepted": ["He gave me two pieces of advice about the job"] }, "hints": ["On compte avec « pieces of »."] },
-        { "type": "spot_error", "source": "I have got a very good news for you.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["I have got very good news for you"] }, "hints": ["Ni article a, ni pluriel devant news."] },
-        { "type": "mcq", "prompt": "Their ___ was slower than promised.", "answerSpec": { "accepted": ["progress"] }, "distractors": ["progresses", "a progress", "progressions"], "hints": ["Indénombrable."] }
+        {
+          "type": "produce",
+          "prompt": "Traduis : J'ai besoin d'un conseil.",
+          "answerSpec": {
+            "accepted": [
+              "I need some advice",
+              "I need a piece of advice"
+            ]
+          },
+          "hints": [
+            "advice est indénombrable : jamais « an advice »."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Les bagages sont déjà dans la voiture.",
+          "answerSpec": {
+            "accepted": [
+              "The luggage is already in the car"
+            ]
+          },
+          "hints": [
+            "luggage est indénombrable, donc verbe au singulier."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : C'est une bonne nouvelle.",
+          "answerSpec": {
+            "accepted": [
+              "That is good news",
+              "This is good news"
+            ]
+          },
+          "hints": [
+            "news est indénombrable malgré le s."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "She gave me a lot of useful ___ about the contract. (information)",
+          "answerSpec": {
+            "accepted": [
+              "information"
+            ]
+          },
+          "hints": [
+            "Jamais de pluriel."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The ___ in the new office is far too low. (furniture)",
+          "answerSpec": {
+            "accepted": [
+              "furniture"
+            ]
+          },
+          "hints": [
+            "Indénombrable, donc singulier."
+          ]
+        },
+        {
+          "type": "transform",
+          "source": "He gave me two advices about the job.",
+          "prompt": "Réécris correctement la phrase.",
+          "answerSpec": {
+            "accepted": [
+              "He gave me two pieces of advice about the job"
+            ]
+          },
+          "hints": [
+            "On compte avec « pieces of »."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "source": "I have got a very good news for you.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": {
+            "accepted": [
+              "I have got very good news for you"
+            ]
+          },
+          "hints": [
+            "Ni article a, ni pluriel devant news."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Their ___ was slower than promised.",
+          "answerSpec": {
+            "accepted": [
+              "progress"
+            ]
+          },
+          "distractors": [
+            "progresses",
+            "a progress",
+            "progressions"
+          ],
+          "hints": [
+            "Indénombrable."
+          ]
+        }
       ]
     },
     {
-      "id": "u070-a", "topicId": "u070", "tags": ["denombrable", "double-emploi"],
-      "fields": { "regle": "Certains noms changent de sens selon qu'ils sont comptés ou non : paper (papier / un journal), experience (l'expérience / une expérience vécue), room (la place / une pièce), time (le temps / une fois)." },
+      "id": "u069-b",
+      "topicId": "u069",
+      "tags": [
+        "indenombrable"
+      ],
+      "fields": {
+        "regle": "advice, information, luggage, furniture, news, work, money, weather, progress, research : indénombrables en anglais."
+      },
       "exercises": [
-        { "type": "produce", "prompt": "Traduis : Je cherche du papier.", "answerSpec": { "accepted": ["I am looking for some paper"] }, "hints": ["La matière : indénombrable."] },
-        { "type": "produce", "prompt": "Traduis : Il a acheté un journal à la gare.", "answerSpec": { "accepted": ["He bought a paper at the station"] }, "hints": ["Compté, « a paper » veut dire un journal."] },
-        { "type": "produce", "prompt": "Traduis : Il n'y a pas assez de place pour trente personnes.", "answerSpec": { "accepted": ["There is not enough room for thirty people"] }, "hints": ["« la place » : room indénombrable."] },
-        { "type": "fill_blank", "prompt": "Have you got any ___ of running a hybrid rollout? (experience)", "answerSpec": { "accepted": ["experience"] }, "hints": ["Le savoir-faire : indénombrable."] },
-        { "type": "fill_blank", "prompt": "The town hall was quite ___ experience for a first week. (a / an / —)", "answerSpec": { "accepted": ["an"] }, "hints": ["Un épisode vécu : compté."] },
-        { "type": "transform", "source": "We do not have enough rooms in the diary for another workshop.", "prompt": "Réécris la phrase pour dire qu'il manque de la place, pas des salles.", "answerSpec": { "accepted": ["We do not have enough room in the diary for another workshop"] }, "hints": ["Sans s, room veut dire l'espace."] },
-        { "type": "spot_error", "source": "I have had many experiences of British understatement, so I know the traps.", "prompt": "Corrige pour parler du savoir-faire acquis.", "answerSpec": { "accepted": ["I have had a lot of experience of British understatement, so I know the traps"] }, "hints": ["Le savoir-faire ne se compte pas."] },
-        { "type": "mcq", "prompt": "Would you like ___ ? I have just made a pot.", "answerSpec": { "accepted": ["some tea"] }, "distractors": ["a tea leaf", "teas", "the teas"], "hints": ["La boisson en général : indénombrable."] }
+        {
+          "type": "produce",
+          "prompt": "Traduis : Il m'a donné deux conseils utiles.",
+          "answerSpec": {
+            "accepted": [
+              "He gave me two useful pieces of advice"
+            ]
+          },
+          "hints": [
+            "On compte avec pieces of."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Les meubles arrivent lundi.",
+          "answerSpec": {
+            "accepted": [
+              "The furniture is arriving on Monday"
+            ]
+          },
+          "hints": [
+            "Indénombrable : verbe au singulier."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : J'ai du travail par-dessus la tête.",
+          "answerSpec": {
+            "accepted": [
+              "I have a lot of work on"
+            ]
+          },
+          "hints": [
+            "work est indénombrable."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The ___ from the steering group is not good. (news)",
+          "answerSpec": {
+            "accepted": [
+              "news"
+            ]
+          },
+          "hints": [
+            "Jamais de pluriel."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "We need more ___ before we decide. (information)",
+          "answerSpec": {
+            "accepted": [
+              "information"
+            ]
+          },
+          "hints": [
+            "Indénombrable."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "He gave me three informations about the estate.",
+          "answerSpec": {
+            "accepted": [
+              "He gave me three pieces of information about the estate"
+            ]
+          },
+          "source": "He gave me three informations about the estate.",
+          "hints": [
+            "pieces of."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "The researches show a drop in adoption.",
+          "answerSpec": {
+            "accepted": [
+              "The research shows a drop in adoption"
+            ]
+          },
+          "source": "The researches show a drop in adoption.",
+          "hints": [
+            "research est indénombrable."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Their ___ has been slower than promised.",
+          "answerSpec": {
+            "accepted": [
+              "progress"
+            ]
+          },
+          "hints": [
+            "Indénombrable."
+          ],
+          "distractors": [
+            "progresses",
+            "a progress",
+            "progressions"
+          ]
+        }
       ]
     },
     {
-      "id": "u071-a", "topicId": "u071", "tags": ["a-an", "some"],
-      "fields": { "regle": "a/an devant un dénombrable singulier ; some devant un pluriel ou un indénombrable. Devant un métier, a/an est obligatoire : « She is an architect »." },
+      "id": "u070-a",
+      "topicId": "u070",
+      "tags": [
+        "denombrable",
+        "double-emploi"
+      ],
+      "fields": {
+        "regle": "Certains noms changent de sens selon qu'ils sont comptés ou non : paper (papier / un journal), experience (l'expérience / une expérience vécue), room (la place / une pièce), time (le temps / une fois)."
+      },
       "exercises": [
-        { "type": "produce", "prompt": "Traduis : Elle est architecte.", "answerSpec": { "accepted": ["She is an architect"] }, "hints": ["Un métier prend toujours a/an en anglais."] },
-        { "type": "produce", "prompt": "Traduis : J'ai acheté des pommes et du pain.", "answerSpec": { "accepted": ["I bought some apples and some bread"] }, "hints": ["some devant un pluriel et devant un indénombrable."] },
-        { "type": "produce", "prompt": "Traduis : Il me faut une heure pour relire ça.", "answerSpec": { "accepted": ["I need an hour to read that through"] }, "hints": ["Le h de hour est muet : an."] },
-        { "type": "fill_blank", "prompt": "He works as ___ line manager in the Bristol office.", "answerSpec": { "accepted": ["a"] }, "hints": ["Un métier compté."] },
-        { "type": "fill_blank", "prompt": "There were ___ excellent questions after the demo.", "answerSpec": { "accepted": ["some"] }, "hints": ["Un pluriel indéfini."] },
-        { "type": "transform", "source": "My brother is engineer at the port.", "prompt": "Corrige et réécris la phrase.", "answerSpec": { "accepted": ["My brother is an engineer at the port"] }, "hints": ["Un nom de métier n'est jamais nu au singulier."] },
-        { "type": "spot_error", "source": "She gave me an advice and two informations.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["She gave me some advice and some information"] }, "hints": ["Deux indénombrables : ni a, ni pluriel."] },
-        { "type": "mcq", "prompt": "It was ___ honest answer, and nobody expected it.", "answerSpec": { "accepted": ["an"] }, "distractors": ["a", "the", "some"], "hints": ["Le h de honest est muet."] }
+        {
+          "type": "produce",
+          "prompt": "Traduis : Je cherche du papier.",
+          "answerSpec": {
+            "accepted": [
+              "I am looking for some paper"
+            ]
+          },
+          "hints": [
+            "La matière : indénombrable."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Il a acheté un journal à la gare.",
+          "answerSpec": {
+            "accepted": [
+              "He bought a paper at the station"
+            ]
+          },
+          "hints": [
+            "Compté, « a paper » veut dire un journal."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Il n'y a pas assez de place pour trente personnes.",
+          "answerSpec": {
+            "accepted": [
+              "There is not enough room for thirty people"
+            ]
+          },
+          "hints": [
+            "« la place » : room indénombrable."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Have you got any ___ of running a hybrid rollout? (experience)",
+          "answerSpec": {
+            "accepted": [
+              "experience"
+            ]
+          },
+          "hints": [
+            "Le savoir-faire : indénombrable."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The town hall was quite ___ experience for a first week. (a / an / —)",
+          "answerSpec": {
+            "accepted": [
+              "an"
+            ]
+          },
+          "hints": [
+            "Un épisode vécu : compté."
+          ]
+        },
+        {
+          "type": "transform",
+          "source": "We do not have enough rooms in the diary for another workshop.",
+          "prompt": "Réécris la phrase pour dire qu'il manque de la place, pas des salles.",
+          "answerSpec": {
+            "accepted": [
+              "We do not have enough room in the diary for another workshop"
+            ]
+          },
+          "hints": [
+            "Sans s, room veut dire l'espace."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "source": "I have had many experiences of British understatement, so I know the traps.",
+          "prompt": "Corrige pour parler du savoir-faire acquis.",
+          "answerSpec": {
+            "accepted": [
+              "I have had a lot of experience of British understatement, so I know the traps"
+            ]
+          },
+          "hints": [
+            "Le savoir-faire ne se compte pas."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Would you like ___ ? I have just made a pot.",
+          "answerSpec": {
+            "accepted": [
+              "some tea"
+            ]
+          },
+          "distractors": [
+            "a tea leaf",
+            "teas",
+            "the teas"
+          ],
+          "hints": [
+            "La boisson en général : indénombrable."
+          ]
+        }
       ]
     },
     {
-      "id": "u072-a", "topicId": "u072", "tags": ["a-the", "premiere-mention"],
-      "fields": { "regle": "a/an à la première mention ou quand l'objet n'est pas identifié ; the dès que l'interlocuteur sait de quoi il s'agit — parce qu'on l'a déjà cité, ou parce que le contexte le désigne." },
+      "id": "u070-b",
+      "topicId": "u070",
+      "tags": [
+        "double-emploi"
+      ],
+      "fields": {
+        "regle": "paper, experience, room, time, glass, business changent de sens selon qu'on les compte ou non."
+      },
       "exercises": [
-        { "type": "produce", "prompt": "Traduis : J'ai vu un renard hier soir. Le renard traversait la route.", "answerSpec": { "accepted": ["I saw a fox last night. The fox was crossing the road"] }, "hints": ["Première mention puis reprise."] },
-        { "type": "produce", "prompt": "Traduis : Peux-tu fermer la porte, s'il te plaît ?", "answerSpec": { "accepted": ["Can you close the door, please"] }, "hints": ["Une seule porte possible dans le contexte."] },
-        { "type": "produce", "prompt": "Traduis : Elle cherche un poste dans le secteur public.", "answerSpec": { "accepted": ["She is looking for a job in the public sector"] }, "hints": ["Un poste indéfini, mais un secteur identifié."] },
-        { "type": "fill_blank", "prompt": "We stayed in ___ hotel near the harbour; it was surprisingly quiet.", "answerSpec": { "accepted": ["a"] }, "hints": ["Première mention."] },
-        { "type": "fill_blank", "prompt": "Could you pass me ___ report that Anna sent yesterday?", "answerSpec": { "accepted": ["the"] }, "hints": ["Identifié par la relative."] },
-        { "type": "transform", "source": "I bought a laptop. A laptop was faulty.", "prompt": "Corrige la seconde phrase.", "answerSpec": { "accepted": ["I bought a laptop. The laptop was faulty"] }, "hints": ["À la reprise, l'objet est connu."] },
-        { "type": "spot_error", "source": "Shut a window, it is freezing in here.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["Shut the window, it is freezing in here"] }, "hints": ["On désigne une fenêtre précise."] },
-        { "type": "mcq", "prompt": "There is ___ problem with the connector, and it is not the first time.", "answerSpec": { "accepted": ["a"] }, "distractors": ["the", "some", "an"], "hints": ["On introduit un problème, on ne le désigne pas."] }
+        {
+          "type": "produce",
+          "prompt": "Traduis : Il n'y a pas assez de place sur ce plateau.",
+          "answerSpec": {
+            "accepted": [
+              "There is not enough room on this floor"
+            ]
+          },
+          "hints": [
+            "room indénombrable : la place."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Nous avons réservé trois salles.",
+          "answerSpec": {
+            "accepted": [
+              "We have booked three rooms"
+            ]
+          },
+          "hints": [
+            "Compté : des pièces."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : C'était une expérience formatrice.",
+          "answerSpec": {
+            "accepted": [
+              "It was a valuable experience"
+            ]
+          },
+          "hints": [
+            "Un épisode vécu : compté."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Have you got much ___ of hybrid rollouts? (experience)",
+          "answerSpec": {
+            "accepted": [
+              "experience"
+            ]
+          },
+          "hints": [
+            "Le savoir-faire."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Could you buy a ___ on your way in? (journal)",
+          "answerSpec": {
+            "accepted": [
+              "paper"
+            ]
+          },
+          "hints": [
+            "Compté : un journal."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "We do not have enough rooms in the diary for another review.",
+          "answerSpec": {
+            "accepted": [
+              "We do not have enough room in the diary for another review"
+            ]
+          },
+          "source": "We do not have enough rooms in the diary for another review.",
+          "hints": [
+            "Sans s : l'espace."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "She has many experiences of British meetings.",
+          "answerSpec": {
+            "accepted": [
+              "She has a lot of experience of British meetings"
+            ]
+          },
+          "source": "She has many experiences of British meetings.",
+          "hints": [
+            "Le savoir-faire ne se compte pas."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Would you like ___ before the call?",
+          "answerSpec": {
+            "accepted": [
+              "some coffee"
+            ]
+          },
+          "hints": [
+            "La boisson en général."
+          ],
+          "distractors": [
+            "a coffee bean",
+            "coffees",
+            "the coffees"
+          ]
+        }
       ]
     },
     {
-      "id": "u073-a", "topicId": "u073", "tags": ["the", "unique", "superlatif"],
-      "fields": { "regle": "the devant ce qui est unique (the sun, the government, the internet), devant un superlatif (the best) et devant un ordinal (the first)." },
+      "id": "u071-a",
+      "topicId": "u071",
+      "tags": [
+        "a-an",
+        "some"
+      ],
+      "fields": {
+        "regle": "a/an devant un dénombrable singulier ; some devant un pluriel ou un indénombrable. Devant un métier, a/an est obligatoire : « She is an architect »."
+      },
       "exercises": [
-        { "type": "produce", "prompt": "Traduis : C'est la meilleure idée de la semaine.", "answerSpec": { "accepted": ["That is the best idea of the week", "It is the best idea of the week"] }, "hints": ["Superlatif : the obligatoire."] },
-        { "type": "produce", "prompt": "Traduis : Le gouvernement a changé d'avis.", "answerSpec": { "accepted": ["The government has changed its mind"] }, "hints": ["Institution unique."] },
-        { "type": "produce", "prompt": "Traduis : C'est la première fois que je vois ça.", "answerSpec": { "accepted": ["It is the first time I have seen that"] }, "hints": ["Ordinal : the."] },
-        { "type": "fill_blank", "prompt": "Everything is on ___ internet, which is precisely the problem.", "answerSpec": { "accepted": ["the"] }, "hints": ["Unique."] },
-        { "type": "fill_blank", "prompt": "That was ___ worst quarter we have had for years.", "answerSpec": { "accepted": ["the"] }, "hints": ["Superlatif."] },
-        { "type": "transform", "source": "She was second person to raise it.", "prompt": "Corrige et réécris la phrase.", "answerSpec": { "accepted": ["She was the second person to raise it"] }, "hints": ["Un ordinal appelle the."] },
-        { "type": "spot_error", "source": "Sun was already up when we reached the bridge.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["The sun was already up when we reached the bridge"] }, "hints": ["Objet unique."] },
-        { "type": "mcq", "prompt": "He plays ___ piano rather well.", "answerSpec": { "accepted": ["the"] }, "distractors": ["a", "some", "—"], "hints": ["Un instrument prend the après play."] }
+        {
+          "type": "produce",
+          "prompt": "Traduis : Elle est architecte.",
+          "answerSpec": {
+            "accepted": [
+              "She is an architect"
+            ]
+          },
+          "hints": [
+            "Un métier prend toujours a/an en anglais."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : J'ai acheté des pommes et du pain.",
+          "answerSpec": {
+            "accepted": [
+              "I bought some apples and some bread"
+            ]
+          },
+          "hints": [
+            "some devant un pluriel et devant un indénombrable."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Il me faut une heure pour relire ça.",
+          "answerSpec": {
+            "accepted": [
+              "I need an hour to read that through"
+            ]
+          },
+          "hints": [
+            "Le h de hour est muet : an."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "He works as ___ line manager in the Bristol office.",
+          "answerSpec": {
+            "accepted": [
+              "a"
+            ]
+          },
+          "hints": [
+            "Un métier compté."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "There were ___ excellent questions after the demo.",
+          "answerSpec": {
+            "accepted": [
+              "some"
+            ]
+          },
+          "hints": [
+            "Un pluriel indéfini."
+          ]
+        },
+        {
+          "type": "transform",
+          "source": "My brother is engineer at the port.",
+          "prompt": "Corrige et réécris la phrase.",
+          "answerSpec": {
+            "accepted": [
+              "My brother is an engineer at the port"
+            ]
+          },
+          "hints": [
+            "Un nom de métier n'est jamais nu au singulier."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "source": "She gave me an advice and two informations.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": {
+            "accepted": [
+              "She gave me some advice and some information"
+            ]
+          },
+          "hints": [
+            "Deux indénombrables : ni a, ni pluriel."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "It was ___ honest answer, and nobody expected it.",
+          "answerSpec": {
+            "accepted": [
+              "an"
+            ]
+          },
+          "distractors": [
+            "a",
+            "the",
+            "some"
+          ],
+          "hints": [
+            "Le h de honest est muet."
+          ]
+        }
       ]
     },
     {
-      "id": "u074-a", "topicId": "u074", "tags": ["the", "institutions"],
-      "fields": { "regle": "Sans article quand on parle de l'institution et de sa fonction : go to school, in hospital, at work, in prison. Avec the quand on parle du bâtiment : « I went to the school to fix the wifi »." },
+      "id": "u071-b",
+      "topicId": "u071",
+      "tags": [
+        "a-an-some"
+      ],
+      "fields": {
+        "regle": "a/an devant un dénombrable singulier, some devant un pluriel ou un indénombrable. Un métier prend toujours a/an."
+      },
       "exercises": [
-        { "type": "produce", "prompt": "Traduis : Elle va à l'école tous les matins.", "answerSpec": { "accepted": ["She goes to school every morning"] }, "hints": ["La fonction, pas le bâtiment : pas d'article."] },
-        { "type": "produce", "prompt": "Traduis : Je suis allé à l'école pour parler à son professeur.", "answerSpec": { "accepted": ["I went to the school to speak to her teacher"] }, "hints": ["Ici c'est le bâtiment : the."] },
-        { "type": "produce", "prompt": "Traduis : Il est à l'hôpital depuis mardi.", "answerSpec": { "accepted": ["He has been in hospital since Tuesday"] }, "hints": ["En tant que patient : sans article en anglais britannique."] },
-        { "type": "fill_blank", "prompt": "I never check my personal mail at ___ work.", "answerSpec": { "accepted": ["—", "-"] }, "hints": ["« at work » ne prend jamais d'article."] },
-        { "type": "fill_blank", "prompt": "We are meeting at ___ office where legal sits.", "answerSpec": { "accepted": ["the"] }, "hints": ["Un bâtiment identifié."] },
-        { "type": "transform", "source": "My daughter is at the university this year.", "prompt": "Réécris pour dire qu'elle y fait ses études.", "answerSpec": { "accepted": ["My daughter is at university this year"] }, "hints": ["L'institution : pas d'article."] },
-        { "type": "spot_error", "source": "He spent two years in the prison for fraud.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["He spent two years in prison for fraud"] }, "hints": ["Détenu, donc l'institution."] },
-        { "type": "mcq", "prompt": "She is in ___ bed with the flu.", "answerSpec": { "accepted": ["—"] }, "distractors": ["the", "a", "some"], "hints": ["« in bed » se dit sans article."] }
+        {
+          "type": "produce",
+          "prompt": "Traduis : Elle est consultante.",
+          "answerSpec": {
+            "accepted": [
+              "She is a consultant"
+            ]
+          },
+          "hints": [
+            "Métier : a/an."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Il me faut une heure pour relire ça.",
+          "answerSpec": {
+            "accepted": [
+              "I need an hour to read that through"
+            ]
+          },
+          "hints": [
+            "h muet : an."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : J'ai acheté du pain et des pommes.",
+          "answerSpec": {
+            "accepted": [
+              "I bought some bread and some apples"
+            ]
+          },
+          "hints": [
+            "some devant les deux."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "He works as ___ project manager in Cardiff.",
+          "answerSpec": {
+            "accepted": [
+              "a"
+            ]
+          },
+          "hints": [
+            "Métier."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "There were ___ excellent questions afterwards.",
+          "answerSpec": {
+            "accepted": [
+              "some"
+            ]
+          },
+          "hints": [
+            "Pluriel indéfini."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "My sister is architect in Bath.",
+          "answerSpec": {
+            "accepted": [
+              "My sister is an architect in Bath"
+            ]
+          },
+          "source": "My sister is architect in Bath.",
+          "hints": [
+            "Un métier n'est jamais nu."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "She gave me an information and two advices.",
+          "answerSpec": {
+            "accepted": [
+              "She gave me some information and some advice"
+            ]
+          },
+          "source": "She gave me an information and two advices.",
+          "hints": [
+            "Deux indénombrables."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "It was ___ honour to present to the board.",
+          "answerSpec": {
+            "accepted": [
+              "an"
+            ]
+          },
+          "hints": [
+            "h muet."
+          ],
+          "distractors": [
+            "a",
+            "the",
+            "some"
+          ]
+        }
       ]
     },
     {
-      "id": "u075-a", "topicId": "u075", "tags": ["the", "generalite"],
-      "fields": { "regle": "Sans article pour parler en général (« children learn fast », « I like music ») ; avec the pour un groupe précis (« the children in my class »). C'est l'erreur la plus fréquente des francophones : le français met l'article partout." },
+      "id": "u072-a",
+      "topicId": "u072",
+      "tags": [
+        "a-the",
+        "premiere-mention"
+      ],
+      "fields": {
+        "regle": "a/an à la première mention ou quand l'objet n'est pas identifié ; the dès que l'interlocuteur sait de quoi il s'agit — parce qu'on l'a déjà cité, ou parce que le contexte le désigne."
+      },
       "exercises": [
-        { "type": "produce", "prompt": "Traduis : Les enfants apprennent vite.", "answerSpec": { "accepted": ["Children learn quickly", "Children learn fast"] }, "hints": ["Généralité : pas d'article."] },
-        { "type": "produce", "prompt": "Traduis : Les enfants de ma classe apprennent vite.", "answerSpec": { "accepted": ["The children in my class learn quickly"] }, "hints": ["Groupe délimité : the."] },
-        { "type": "produce", "prompt": "Traduis : J'aime la musique, mais pas celle-là.", "answerSpec": { "accepted": ["I like music, but not that one"] }, "hints": ["La musique en général : sans article."] },
-        { "type": "fill_blank", "prompt": "___ consultants are rarely popular in a town hall.", "answerSpec": { "accepted": ["—", "-"] }, "hints": ["Les consultants en général."] },
-        { "type": "fill_blank", "prompt": "___ consultants we hired last year never wrote the handover.", "answerSpec": { "accepted": ["The"] }, "hints": ["Ceux-là précisément."] },
-        { "type": "transform", "source": "The life is expensive in the south-west.", "prompt": "Corrige et réécris la phrase.", "answerSpec": { "accepted": ["Life is expensive in the south-west"] }, "hints": ["Une notion générale ne prend pas the."] },
-        { "type": "spot_error", "source": "I am interested in the artificial intelligence.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["I am interested in artificial intelligence"] }, "hints": ["Un domaine en général : pas d'article."] },
-        { "type": "mcq", "prompt": "___ meetings are a poor substitute for a decision.", "answerSpec": { "accepted": ["—"] }, "distractors": ["The", "A", "Some of the"], "hints": ["Vérité générale."] }
+        {
+          "type": "produce",
+          "prompt": "Traduis : J'ai vu un renard hier soir. Le renard traversait la route.",
+          "answerSpec": {
+            "accepted": [
+              "I saw a fox last night. The fox was crossing the road"
+            ]
+          },
+          "hints": [
+            "Première mention puis reprise."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Peux-tu fermer la porte, s'il te plaît ?",
+          "answerSpec": {
+            "accepted": [
+              "Can you close the door, please"
+            ]
+          },
+          "hints": [
+            "Une seule porte possible dans le contexte."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Elle cherche un poste dans le secteur public.",
+          "answerSpec": {
+            "accepted": [
+              "She is looking for a job in the public sector"
+            ]
+          },
+          "hints": [
+            "Un poste indéfini, mais un secteur identifié."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "We stayed in ___ hotel near the harbour; it was surprisingly quiet.",
+          "answerSpec": {
+            "accepted": [
+              "a"
+            ]
+          },
+          "hints": [
+            "Première mention."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Could you pass me ___ report that Anna sent yesterday?",
+          "answerSpec": {
+            "accepted": [
+              "the"
+            ]
+          },
+          "hints": [
+            "Identifié par la relative."
+          ]
+        },
+        {
+          "type": "transform",
+          "source": "I bought a laptop. A laptop was faulty.",
+          "prompt": "Corrige la seconde phrase.",
+          "answerSpec": {
+            "accepted": [
+              "I bought a laptop. The laptop was faulty"
+            ]
+          },
+          "hints": [
+            "À la reprise, l'objet est connu."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "source": "Shut a window, it is freezing in here.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": {
+            "accepted": [
+              "Shut the window, it is freezing in here"
+            ]
+          },
+          "hints": [
+            "On désigne une fenêtre précise."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "There is ___ problem with the connector, and it is not the first time.",
+          "answerSpec": {
+            "accepted": [
+              "a"
+            ]
+          },
+          "distractors": [
+            "the",
+            "some",
+            "an"
+          ],
+          "hints": [
+            "On introduit un problème, on ne le désigne pas."
+          ]
+        }
       ]
     },
     {
-      "id": "u076-a", "topicId": "u076", "tags": ["the", "espece", "adjectif-substantive"],
-      "fields": { "regle": "the + singulier désigne l'espèce ou l'invention (« the giraffe », « the telephone ») ; the + adjectif désigne un groupe de personnes et se conjugue au pluriel (« the young are leaving »)." },
+      "id": "u072-b",
+      "topicId": "u072",
+      "tags": [
+        "a-the",
+        "premiere-mention"
+      ],
+      "fields": {
+        "regle": "a/an à la première mention, the dès que l'interlocuteur sait de quoi il s'agit."
+      },
       "exercises": [
-        { "type": "produce", "prompt": "Traduis : Le téléphone a été inventé en 1876.", "answerSpec": { "accepted": ["The telephone was invented in 1876"] }, "hints": ["Une invention prend the au singulier."] },
-        { "type": "produce", "prompt": "Traduis : Les jeunes quittent la ville.", "answerSpec": { "accepted": ["The young are leaving the city"] }, "hints": ["the + adjectif, verbe au pluriel."] },
-        { "type": "produce", "prompt": "Traduis : La girafe a le cou le plus long de tous les mammifères.", "answerSpec": { "accepted": ["The giraffe has the longest neck of all mammals"] }, "hints": ["L'espèce entière."] },
-        { "type": "fill_blank", "prompt": "___ unemployed are hit hardest by a rent rise.", "answerSpec": { "accepted": ["The"] }, "hints": ["Un groupe de personnes."] },
-        { "type": "fill_blank", "prompt": "The rich ___ getting richer, says every report.", "answerSpec": { "accepted": ["are"] }, "hints": ["Ce groupe est pluriel."] },
-        { "type": "transform", "source": "Old people are often forgotten by these tools.", "prompt": "Réécris la phrase en commençant par « The old ».", "answerSpec": { "accepted": ["The old are often forgotten by these tools"] }, "hints": ["the + adjectif, sans nom derrière."] },
-        { "type": "spot_error", "source": "The homeless is not a design edge case.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["The homeless are not a design edge case"] }, "hints": ["the + adjectif se conjugue au pluriel."] },
-        { "type": "mcq", "prompt": "___ was a working printing press by 1450.", "answerSpec": { "accepted": ["The printing press"] }, "distractors": ["A printing press", "Printing press", "Printing presses"], "hints": ["Une invention, prise comme catégorie."] }
+        {
+          "type": "produce",
+          "prompt": "Traduis : J'ai vu un renard hier. Le renard traversait Park Street.",
+          "answerSpec": {
+            "accepted": [
+              "I saw a fox yesterday. The fox was crossing Park Street"
+            ]
+          },
+          "hints": [
+            "Mention puis reprise."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Peux-tu fermer la fenêtre ?",
+          "answerSpec": {
+            "accepted": [
+              "Can you close the window"
+            ]
+          },
+          "hints": [
+            "Une seule fenêtre possible."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Elle cherche un poste dans le conseil.",
+          "answerSpec": {
+            "accepted": [
+              "She is looking for a job in consultancy"
+            ]
+          },
+          "hints": [
+            "Indéfini."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "We stayed in ___ flat near the harbour; it was tiny.",
+          "answerSpec": {
+            "accepted": [
+              "a"
+            ]
+          },
+          "hints": [
+            "Première mention."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Could you pass me ___ pack Anna circulated?",
+          "answerSpec": {
+            "accepted": [
+              "the"
+            ]
+          },
+          "hints": [
+            "Identifié par la relative."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "I bought a laptop. A laptop was faulty.",
+          "answerSpec": {
+            "accepted": [
+              "I bought a laptop. The laptop was faulty"
+            ]
+          },
+          "source": "I bought a laptop. A laptop was faulty.",
+          "hints": [
+            "À la reprise, l'objet est connu."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "Shut a door, there is a draught.",
+          "answerSpec": {
+            "accepted": [
+              "Shut the door, there is a draught"
+            ]
+          },
+          "source": "Shut a door, there is a draught.",
+          "hints": [
+            "Une porte précise."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "There is ___ issue with the connector again.",
+          "answerSpec": {
+            "accepted": [
+              "an"
+            ]
+          },
+          "hints": [
+            "On introduit un problème."
+          ],
+          "distractors": [
+            "the",
+            "some",
+            "a"
+          ]
+        }
       ]
     },
     {
-      "id": "u077-a", "topicId": "u077", "tags": ["the", "noms-propres"],
-      "fields": { "regle": "Pas de the devant les noms de personnes, de villes, de pays au singulier, de rues, de gares et d'aéroports. Exception : les pays au pluriel ou décrits (the Netherlands, the United Kingdom)." },
+      "id": "u073-a",
+      "topicId": "u073",
+      "tags": [
+        "the",
+        "unique",
+        "superlatif"
+      ],
+      "fields": {
+        "regle": "the devant ce qui est unique (the sun, the government, the internet), devant un superlatif (the best) et devant un ordinal (the first)."
+      },
       "exercises": [
-        { "type": "produce", "prompt": "Traduis : Elle habite en France mais travaille au Royaume-Uni.", "answerSpec": { "accepted": ["She lives in France but works in the United Kingdom"] }, "hints": ["France nu, mais the United Kingdom."] },
-        { "type": "produce", "prompt": "Traduis : Le train part de la gare de Temple Meads.", "answerSpec": { "accepted": ["The train leaves from Temple Meads station"] }, "hints": ["Le nom d'une gare ne prend pas d'article."] },
-        { "type": "produce", "prompt": "Traduis : Il vient des Pays-Bas.", "answerSpec": { "accepted": ["He comes from the Netherlands"] }, "hints": ["Pays au pluriel : the."] },
-        { "type": "fill_blank", "prompt": "We landed at ___ Heathrow just after midnight.", "answerSpec": { "accepted": ["—", "-"] }, "hints": ["Un aéroport ne prend pas the."] },
-        { "type": "fill_blank", "prompt": "The office is on ___ Park Street, near the top of the hill.", "answerSpec": { "accepted": ["—", "-"] }, "hints": ["Une rue nommée : pas d'article."] },
-        { "type": "transform", "source": "I have never been to the Wales.", "prompt": "Corrige et réécris la phrase.", "answerSpec": { "accepted": ["I have never been to Wales"] }, "hints": ["Un pays au singulier reste nu."] },
-        { "type": "spot_error", "source": "The doctor Patel will call you back this afternoon.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["Doctor Patel will call you back this afternoon"] }, "hints": ["Titre + nom propre : pas d'article."] },
-        { "type": "mcq", "prompt": "She has just moved to ___ Bristol.", "answerSpec": { "accepted": ["—"] }, "distractors": ["the", "a", "this"], "hints": ["Nom de ville."] }
+        {
+          "type": "produce",
+          "prompt": "Traduis : C'est la meilleure idée de la semaine.",
+          "answerSpec": {
+            "accepted": [
+              "That is the best idea of the week",
+              "It is the best idea of the week"
+            ]
+          },
+          "hints": [
+            "Superlatif : the obligatoire."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Le gouvernement a changé d'avis.",
+          "answerSpec": {
+            "accepted": [
+              "The government has changed its mind"
+            ]
+          },
+          "hints": [
+            "Institution unique."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : C'est la première fois que je vois ça.",
+          "answerSpec": {
+            "accepted": [
+              "It is the first time I have seen that"
+            ]
+          },
+          "hints": [
+            "Ordinal : the."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Everything is on ___ internet, which is precisely the problem.",
+          "answerSpec": {
+            "accepted": [
+              "the"
+            ]
+          },
+          "hints": [
+            "Unique."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "That was ___ worst quarter we have had for years.",
+          "answerSpec": {
+            "accepted": [
+              "the"
+            ]
+          },
+          "hints": [
+            "Superlatif."
+          ]
+        },
+        {
+          "type": "transform",
+          "source": "She was second person to raise it.",
+          "prompt": "Corrige et réécris la phrase.",
+          "answerSpec": {
+            "accepted": [
+              "She was the second person to raise it"
+            ]
+          },
+          "hints": [
+            "Un ordinal appelle the."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "source": "Sun was already up when we reached the bridge.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": {
+            "accepted": [
+              "The sun was already up when we reached the bridge"
+            ]
+          },
+          "hints": [
+            "Objet unique."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "He plays ___ piano rather well.",
+          "answerSpec": {
+            "accepted": [
+              "the"
+            ]
+          },
+          "distractors": [
+            "a",
+            "some",
+            "—"
+          ],
+          "hints": [
+            "Un instrument prend the après play."
+          ]
+        }
       ]
     },
     {
-      "id": "u078-a", "topicId": "u078", "tags": ["the", "noms-propres", "geographie"],
-      "fields": { "regle": "the devant les fleuves, mers, océans, chaînes de montagnes, hôtels, théâtres, musées et journaux : the Avon, the Atlantic, the Alps, the Guardian. Pas de the devant un lac ni un sommet isolé." },
+      "id": "u073-b",
+      "topicId": "u073",
+      "tags": [
+        "the",
+        "unique"
+      ],
+      "fields": {
+        "regle": "the devant l'unique, le superlatif, l'ordinal, et les instruments après play."
+      },
       "exercises": [
-        { "type": "produce", "prompt": "Traduis : Le pont enjambe l'Avon.", "answerSpec": { "accepted": ["The bridge crosses the Avon"] }, "hints": ["Un fleuve prend the."] },
-        { "type": "produce", "prompt": "Traduis : Je le lis dans le Guardian tous les jours.", "answerSpec": { "accepted": ["I read it in the Guardian every day"] }, "hints": ["Un journal prend the."] },
-        { "type": "produce", "prompt": "Traduis : Nous avons dormi au Marriott, près du port.", "answerSpec": { "accepted": ["We slept at the Marriott, near the harbour"] }, "hints": ["Un hôtel prend the."] },
-        { "type": "fill_blank", "prompt": "They sailed across ___ Atlantic in a boat built here.", "answerSpec": { "accepted": ["the"] }, "hints": ["Un océan."] },
-        { "type": "fill_blank", "prompt": "We spent a week walking near ___ Lake Windermere.", "answerSpec": { "accepted": ["—", "-"] }, "hints": ["Un lac nommé ne prend pas the."] },
-        { "type": "transform", "source": "The Mount Everest is not the hardest climb.", "prompt": "Corrige et réécris la phrase.", "answerSpec": { "accepted": ["Mount Everest is not the hardest climb"] }, "hints": ["Un sommet isolé reste nu."] },
-        { "type": "spot_error", "source": "We queued for an hour outside British Museum.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["We queued for an hour outside the British Museum"] }, "hints": ["Un musée prend the."] },
-        { "type": "mcq", "prompt": "The walking group meets every spring in ___ Alps.", "answerSpec": { "accepted": ["the"] }, "distractors": ["—", "a", "some"], "hints": ["Une chaîne de montagnes."] }
+        {
+          "type": "produce",
+          "prompt": "Traduis : C'est la pire réunion du trimestre.",
+          "answerSpec": {
+            "accepted": [
+              "That is the worst meeting of the quarter"
+            ]
+          },
+          "hints": [
+            "Superlatif."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Le conseil municipal a changé d'avis.",
+          "answerSpec": {
+            "accepted": [
+              "The council has changed its mind"
+            ]
+          },
+          "hints": [
+            "Institution unique."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : C'est la deuxième fois cette semaine.",
+          "answerSpec": {
+            "accepted": [
+              "That is the second time this week"
+            ]
+          },
+          "hints": [
+            "Ordinal."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Everything is on ___ internet, which is the problem.",
+          "answerSpec": {
+            "accepted": [
+              "the"
+            ]
+          },
+          "hints": [
+            "Unique."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "She plays ___ cello rather well.",
+          "answerSpec": {
+            "accepted": [
+              "the"
+            ]
+          },
+          "hints": [
+            "Instrument après play."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "He was first person to raise the risk.",
+          "answerSpec": {
+            "accepted": [
+              "He was the first person to raise the risk"
+            ]
+          },
+          "source": "He was first person to raise the risk.",
+          "hints": [
+            "Ordinal."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "Moon was full over the harbour last night.",
+          "answerSpec": {
+            "accepted": [
+              "The moon was full over the harbour last night"
+            ]
+          },
+          "source": "Moon was full over the harbour last night.",
+          "hints": [
+            "Objet unique."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "That was ___ best decision of the year.",
+          "answerSpec": {
+            "accepted": [
+              "the"
+            ]
+          },
+          "hints": [
+            "Superlatif."
+          ],
+          "distractors": [
+            "a",
+            "—",
+            "some"
+          ]
+        }
       ]
     },
     {
-      "id": "u079-a", "topicId": "u079", "tags": ["pluriel", "accord"],
-      "fields": { "regle": "Certains noms sont toujours pluriels : trousers, scissors, glasses, clothes, police. D'autres ont un pluriel irrégulier : people, children, feet, criteria. « the police are », jamais « the police is »." },
+      "id": "u074-a",
+      "topicId": "u074",
+      "tags": [
+        "the",
+        "institutions"
+      ],
+      "fields": {
+        "regle": "Sans article quand on parle de l'institution et de sa fonction : go to school, in hospital, at work, in prison. Avec the quand on parle du bâtiment : « I went to the school to fix the wifi »."
+      },
       "exercises": [
-        { "type": "produce", "prompt": "Traduis : La police est déjà sur place.", "answerSpec": { "accepted": ["The police are already there"] }, "hints": ["police est toujours pluriel en anglais."] },
-        { "type": "produce", "prompt": "Traduis : Ce pantalon est trop grand.", "answerSpec": { "accepted": ["These trousers are too big"] }, "hints": ["trousers est toujours pluriel."] },
-        { "type": "produce", "prompt": "Traduis : Trois personnes ont posé la même question.", "answerSpec": { "accepted": ["Three people asked the same question"] }, "hints": ["people est déjà un pluriel."] },
-        { "type": "fill_blank", "prompt": "The criteria for the pilot ___ never been written down. (have / has)", "answerSpec": { "accepted": ["have"] }, "hints": ["criteria est le pluriel de criterion."] },
-        { "type": "fill_blank", "prompt": "My ___ are somewhere on the desk. (glass)", "answerSpec": { "accepted": ["glasses"] }, "hints": ["Les lunettes : toujours pluriel."] },
-        { "type": "transform", "source": "The police is looking for two men.", "prompt": "Corrige et réécris la phrase.", "answerSpec": { "accepted": ["The police are looking for two men"] }, "hints": ["Accord au pluriel."] },
-        { "type": "spot_error", "source": "There were only three persons in the room.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["There were only three people in the room"] }, "hints": ["« persons » est réservé au langage juridique."] },
-        { "type": "mcq", "prompt": "Her ___ are killing her after that walk.", "answerSpec": { "accepted": ["feet"] }, "distractors": ["foots", "feets", "foot"], "hints": ["Pluriel irrégulier."] }
+        {
+          "type": "produce",
+          "prompt": "Traduis : Elle va à l'école tous les matins.",
+          "answerSpec": {
+            "accepted": [
+              "She goes to school every morning"
+            ]
+          },
+          "hints": [
+            "La fonction, pas le bâtiment : pas d'article."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Je suis allé à l'école pour parler à son professeur.",
+          "answerSpec": {
+            "accepted": [
+              "I went to the school to speak to her teacher"
+            ]
+          },
+          "hints": [
+            "Ici c'est le bâtiment : the."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Il est à l'hôpital depuis mardi.",
+          "answerSpec": {
+            "accepted": [
+              "He has been in hospital since Tuesday"
+            ]
+          },
+          "hints": [
+            "En tant que patient : sans article en anglais britannique."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "I never check my personal mail at ___ work.",
+          "answerSpec": {
+            "accepted": [
+              "—",
+              "-"
+            ]
+          },
+          "hints": [
+            "« at work » ne prend jamais d'article."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "We are meeting at ___ office where legal sits.",
+          "answerSpec": {
+            "accepted": [
+              "the"
+            ]
+          },
+          "hints": [
+            "Un bâtiment identifié."
+          ]
+        },
+        {
+          "type": "transform",
+          "source": "My daughter is at the university this year.",
+          "prompt": "Réécris pour dire qu'elle y fait ses études.",
+          "answerSpec": {
+            "accepted": [
+              "My daughter is at university this year"
+            ]
+          },
+          "hints": [
+            "L'institution : pas d'article."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "source": "He spent two years in the prison for fraud.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": {
+            "accepted": [
+              "He spent two years in prison for fraud"
+            ]
+          },
+          "hints": [
+            "Détenu, donc l'institution."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "She is in ___ bed with the flu.",
+          "answerSpec": {
+            "accepted": [
+              "—"
+            ]
+          },
+          "distractors": [
+            "the",
+            "a",
+            "some"
+          ],
+          "hints": [
+            "« in bed » se dit sans article."
+          ]
+        }
       ]
     },
     {
-      "id": "u080-a", "topicId": "u080", "tags": ["nom-compose", "modifieur"],
-      "fields": { "regle": "Un nom peut en qualifier un autre, et le premier reste au singulier : a bus driver, a five-minute walk, a three-day workshop. C'est l'ordre inverse du français." },
+      "id": "u074-b",
+      "topicId": "u074",
+      "tags": [
+        "the",
+        "institutions"
+      ],
+      "fields": {
+        "regle": "Sans article pour l'institution : go to school, in hospital, at work, in prison, in bed. Avec the pour le bâtiment."
+      },
       "exercises": [
-        { "type": "produce", "prompt": "Traduis : un chauffeur de bus", "answerSpec": { "accepted": ["a bus driver"] }, "hints": ["Le complément passe devant, au singulier."] },
-        { "type": "produce", "prompt": "Traduis : une marche de cinq minutes", "answerSpec": { "accepted": ["a five-minute walk"] }, "hints": ["minute reste au singulier dans le composé."] },
-        { "type": "produce", "prompt": "Traduis : un atelier de trois jours sur l'adoption", "answerSpec": { "accepted": ["a three-day workshop on adoption"] }, "hints": ["day sans s."] },
-        { "type": "fill_blank", "prompt": "It is only a ten-___ drive from the airport. (minute)", "answerSpec": { "accepted": ["minute"] }, "hints": ["Pas de s dans un composé."] },
-        { "type": "fill_blank", "prompt": "He has a bad ___ ache and has gone home. (head)", "answerSpec": { "accepted": ["head"] }, "hints": ["headache s'écrit en un mot."] },
-        { "type": "transform", "source": "We ran a workshop of two days for the whole floor.", "prompt": "Réécris la phrase avec un nom composé.", "answerSpec": { "accepted": ["We ran a two-day workshop for the whole floor"] }, "hints": ["Le complément passe devant."] },
-        { "type": "spot_error", "source": "She gave a twenty-minutes presentation to the board.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["She gave a twenty-minute presentation to the board"] }, "hints": ["Le modifieur reste au singulier."] },
-        { "type": "mcq", "prompt": "There is a ___ at the end of the corridor.", "answerSpec": { "accepted": ["coffee machine"] }, "distractors": ["machine of coffee", "coffees machine", "machine coffee"], "hints": ["Nom + nom, dans cet ordre."] }
+        {
+          "type": "produce",
+          "prompt": "Traduis : Elle est à l'hôpital depuis jeudi.",
+          "answerSpec": {
+            "accepted": [
+              "She has been in hospital since Thursday"
+            ]
+          },
+          "hints": [
+            "Patiente : sans article."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Je suis passé à l'hôpital pour la voir.",
+          "answerSpec": {
+            "accepted": [
+              "I went to the hospital to see her"
+            ]
+          },
+          "hints": [
+            "Le bâtiment : the."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Ma fille est à l'université cette année.",
+          "answerSpec": {
+            "accepted": [
+              "My daughter is at university this year"
+            ]
+          },
+          "hints": [
+            "L'institution."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "I never look at my personal mail at ___ work.",
+          "answerSpec": {
+            "accepted": [
+              "—",
+              "-"
+            ]
+          },
+          "hints": [
+            "at work, sans article."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "We are meeting at ___ office where finance sits.",
+          "answerSpec": {
+            "accepted": [
+              "the"
+            ]
+          },
+          "hints": [
+            "Bâtiment identifié."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "He spent two years in the prison for fraud.",
+          "answerSpec": {
+            "accepted": [
+              "He spent two years in prison for fraud"
+            ]
+          },
+          "source": "He spent two years in the prison for fraud.",
+          "hints": [
+            "Détenu : l'institution."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "She is in the bed with the flu.",
+          "answerSpec": {
+            "accepted": [
+              "She is in bed with the flu"
+            ]
+          },
+          "source": "She is in the bed with the flu.",
+          "hints": [
+            "in bed, sans article."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "The children go to ___ school by bus.",
+          "answerSpec": {
+            "accepted": [
+              "—"
+            ]
+          },
+          "hints": [
+            "L'institution."
+          ],
+          "distractors": [
+            "the",
+            "a",
+            "some"
+          ]
+        }
       ]
     },
     {
-      "id": "u081-a", "topicId": "u081", "tags": ["genitif", "of"],
-      "fields": { "regle": "'s pour les personnes et les animaux (« my sister's name ») ; of pour les choses (« the name of the book »). Pour un pluriel en s, l'apostrophe se met après : « the students' results »." },
+      "id": "u075-a",
+      "topicId": "u075",
+      "tags": [
+        "the",
+        "generalite"
+      ],
+      "fields": {
+        "regle": "Sans article pour parler en général (« children learn fast », « I like music ») ; avec the pour un groupe précis (« the children in my class »). C'est l'erreur la plus fréquente des francophones : le français met l'article partout."
+      },
       "exercises": [
-        { "type": "produce", "prompt": "Traduis : le nom de ma sœur", "answerSpec": { "accepted": ["my sister's name"] }, "hints": ["Une personne : génitif en 's."] },
-        { "type": "produce", "prompt": "Traduis : le titre du livre", "answerSpec": { "accepted": ["the title of the book"] }, "hints": ["Une chose : of."] },
-        { "type": "produce", "prompt": "Traduis : les résultats des étudiants", "answerSpec": { "accepted": ["the students' results"] }, "hints": ["Pluriel déjà en s : apostrophe seule."] },
-        { "type": "fill_blank", "prompt": "Have you seen the children___ coats? (apostrophe et s si besoin)", "answerSpec": { "accepted": ["'s"] }, "hints": ["children est un pluriel irrégulier : il reprend 's."] },
-        { "type": "fill_blank", "prompt": "The roof ___ the building needs replacing.", "answerSpec": { "accepted": ["of"] }, "hints": ["Une chose."] },
-        { "type": "transform", "source": "The office of my line manager is on the third floor.", "prompt": "Réécris la phrase avec un génitif.", "answerSpec": { "accepted": ["My line manager's office is on the third floor"] }, "hints": ["Une personne : 's, et l'ordre s'inverse."] },
-        { "type": "spot_error", "source": "I am reading the report of Anna about the estate.", "prompt": "Corrige la phrase.", "answerSpec": { "accepted": ["I am reading Anna's report about the estate"] }, "hints": ["Un nom de personne prend le génitif."] },
-        { "type": "mcq", "prompt": "We are meeting at ___ tomorrow.", "answerSpec": { "accepted": ["Tom's"] }, "distractors": ["the Tom", "of Tom", "Toms"], "hints": ["« chez Tom » : génitif seul."] }
+        {
+          "type": "produce",
+          "prompt": "Traduis : Les enfants apprennent vite.",
+          "answerSpec": {
+            "accepted": [
+              "Children learn quickly",
+              "Children learn fast"
+            ]
+          },
+          "hints": [
+            "Généralité : pas d'article."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Les enfants de ma classe apprennent vite.",
+          "answerSpec": {
+            "accepted": [
+              "The children in my class learn quickly"
+            ]
+          },
+          "hints": [
+            "Groupe délimité : the."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : J'aime la musique, mais pas celle-là.",
+          "answerSpec": {
+            "accepted": [
+              "I like music, but not that one"
+            ]
+          },
+          "hints": [
+            "La musique en général : sans article."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "___ consultants are rarely popular in a town hall.",
+          "answerSpec": {
+            "accepted": [
+              "—",
+              "-"
+            ]
+          },
+          "hints": [
+            "Les consultants en général."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "___ consultants we hired last year never wrote the handover.",
+          "answerSpec": {
+            "accepted": [
+              "The"
+            ]
+          },
+          "hints": [
+            "Ceux-là précisément."
+          ]
+        },
+        {
+          "type": "transform",
+          "source": "The life is expensive in the south-west.",
+          "prompt": "Corrige et réécris la phrase.",
+          "answerSpec": {
+            "accepted": [
+              "Life is expensive in the south-west"
+            ]
+          },
+          "hints": [
+            "Une notion générale ne prend pas the."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "source": "I am interested in the artificial intelligence.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": {
+            "accepted": [
+              "I am interested in artificial intelligence"
+            ]
+          },
+          "hints": [
+            "Un domaine en général : pas d'article."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "___ meetings are a poor substitute for a decision.",
+          "answerSpec": {
+            "accepted": [
+              "—"
+            ]
+          },
+          "distractors": [
+            "The",
+            "A",
+            "Some of the"
+          ],
+          "hints": [
+            "Vérité générale."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u075-b",
+      "topicId": "u075",
+      "tags": [
+        "the",
+        "generalite"
+      ],
+      "fields": {
+        "regle": "Pas d'article pour parler en général, the pour un groupe précis. C'est l'erreur francophone la plus fréquente."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Les consultants sont rarement populaires.",
+          "answerSpec": {
+            "accepted": [
+              "Consultants are rarely popular"
+            ]
+          },
+          "hints": [
+            "Généralité."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Les consultants qu'on a recrutés n'ont rien écrit.",
+          "answerSpec": {
+            "accepted": [
+              "The consultants we hired wrote nothing"
+            ]
+          },
+          "hints": [
+            "Groupe délimité."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : J'aime la musique, mais pas ça.",
+          "answerSpec": {
+            "accepted": [
+              "I like music, but not that"
+            ]
+          },
+          "hints": [
+            "Notion générale."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "___ meetings are a poor substitute for a decision.",
+          "answerSpec": {
+            "accepted": [
+              "—",
+              "-"
+            ]
+          },
+          "hints": [
+            "Vérité générale."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "___ meetings we had last week changed nothing.",
+          "answerSpec": {
+            "accepted": [
+              "The"
+            ]
+          },
+          "hints": [
+            "Celles-là précisément."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "The life is expensive in the south-west.",
+          "answerSpec": {
+            "accepted": [
+              "Life is expensive in the south-west"
+            ]
+          },
+          "source": "The life is expensive in the south-west.",
+          "hints": [
+            "Notion générale."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "I am interested in the workplace design.",
+          "answerSpec": {
+            "accepted": [
+              "I am interested in workplace design"
+            ]
+          },
+          "source": "I am interested in the workplace design.",
+          "hints": [
+            "Un domaine général."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "___ children learn languages faster than adults.",
+          "answerSpec": {
+            "accepted": [
+              "—"
+            ]
+          },
+          "hints": [
+            "Généralité."
+          ],
+          "distractors": [
+            "The",
+            "A",
+            "Some of the"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u076-a",
+      "topicId": "u076",
+      "tags": [
+        "the",
+        "espece",
+        "adjectif-substantive"
+      ],
+      "fields": {
+        "regle": "the + singulier désigne l'espèce ou l'invention (« the giraffe », « the telephone ») ; the + adjectif désigne un groupe de personnes et se conjugue au pluriel (« the young are leaving »)."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Le téléphone a été inventé en 1876.",
+          "answerSpec": {
+            "accepted": [
+              "The telephone was invented in 1876"
+            ]
+          },
+          "hints": [
+            "Une invention prend the au singulier."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Les jeunes quittent la ville.",
+          "answerSpec": {
+            "accepted": [
+              "The young are leaving the city"
+            ]
+          },
+          "hints": [
+            "the + adjectif, verbe au pluriel."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : La girafe a le cou le plus long de tous les mammifères.",
+          "answerSpec": {
+            "accepted": [
+              "The giraffe has the longest neck of all mammals"
+            ]
+          },
+          "hints": [
+            "L'espèce entière."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "___ unemployed are hit hardest by a rent rise.",
+          "answerSpec": {
+            "accepted": [
+              "The"
+            ]
+          },
+          "hints": [
+            "Un groupe de personnes."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The rich ___ getting richer, says every report.",
+          "answerSpec": {
+            "accepted": [
+              "are"
+            ]
+          },
+          "hints": [
+            "Ce groupe est pluriel."
+          ]
+        },
+        {
+          "type": "transform",
+          "source": "Old people are often forgotten by these tools.",
+          "prompt": "Réécris la phrase en commençant par « The old ».",
+          "answerSpec": {
+            "accepted": [
+              "The old are often forgotten by these tools"
+            ]
+          },
+          "hints": [
+            "the + adjectif, sans nom derrière."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "source": "The homeless is not a design edge case.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": {
+            "accepted": [
+              "The homeless are not a design edge case"
+            ]
+          },
+          "hints": [
+            "the + adjectif se conjugue au pluriel."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "___ was a working printing press by 1450.",
+          "answerSpec": {
+            "accepted": [
+              "The printing press"
+            ]
+          },
+          "distractors": [
+            "A printing press",
+            "Printing press",
+            "Printing presses"
+          ],
+          "hints": [
+            "Une invention, prise comme catégorie."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u076-b",
+      "topicId": "u076",
+      "tags": [
+        "the",
+        "espece"
+      ],
+      "fields": {
+        "regle": "the + singulier pour l'espèce ou l'invention ; the + adjectif pour un groupe de personnes, avec verbe au pluriel."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Les personnes âgées sont souvent oubliées par ces outils.",
+          "answerSpec": {
+            "accepted": [
+              "The old are often forgotten by these tools"
+            ]
+          },
+          "hints": [
+            "the + adjectif, pluriel."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : L'imprimerie a changé l'Europe.",
+          "answerSpec": {
+            "accepted": [
+              "The printing press changed Europe"
+            ]
+          },
+          "hints": [
+            "Une invention."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Les riches deviennent plus riches.",
+          "answerSpec": {
+            "accepted": [
+              "The rich are getting richer"
+            ]
+          },
+          "hints": [
+            "Groupe, verbe au pluriel."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "___ unemployed are hit hardest by a rent rise.",
+          "answerSpec": {
+            "accepted": [
+              "The"
+            ]
+          },
+          "hints": [
+            "Groupe de personnes."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The homeless ___ not a design edge case. (be)",
+          "answerSpec": {
+            "accepted": [
+              "are"
+            ]
+          },
+          "hints": [
+            "Pluriel."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "Young people are leaving the city.",
+          "answerSpec": {
+            "accepted": [
+              "The young are leaving the city"
+            ]
+          },
+          "source": "Young people are leaving the city.",
+          "hints": [
+            "the + adjectif."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "The giraffe have the longest neck of all mammals.",
+          "answerSpec": {
+            "accepted": [
+              "The giraffe has the longest neck of all mammals"
+            ]
+          },
+          "source": "The giraffe have the longest neck of all mammals.",
+          "hints": [
+            "L'espèce prend le singulier."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "___ was invented long before the telephone.",
+          "answerSpec": {
+            "accepted": [
+              "The wheel"
+            ]
+          },
+          "hints": [
+            "Une invention, prise comme catégorie."
+          ],
+          "distractors": [
+            "A wheel",
+            "Wheel",
+            "Wheels"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u077-a",
+      "topicId": "u077",
+      "tags": [
+        "the",
+        "noms-propres"
+      ],
+      "fields": {
+        "regle": "Pas de the devant les noms de personnes, de villes, de pays au singulier, de rues, de gares et d'aéroports. Exception : les pays au pluriel ou décrits (the Netherlands, the United Kingdom)."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Elle habite en France mais travaille au Royaume-Uni.",
+          "answerSpec": {
+            "accepted": [
+              "She lives in France but works in the United Kingdom"
+            ]
+          },
+          "hints": [
+            "France nu, mais the United Kingdom."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Le train part de la gare de Temple Meads.",
+          "answerSpec": {
+            "accepted": [
+              "The train leaves from Temple Meads station"
+            ]
+          },
+          "hints": [
+            "Le nom d'une gare ne prend pas d'article."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Il vient des Pays-Bas.",
+          "answerSpec": {
+            "accepted": [
+              "He comes from the Netherlands"
+            ]
+          },
+          "hints": [
+            "Pays au pluriel : the."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "We landed at ___ Heathrow just after midnight.",
+          "answerSpec": {
+            "accepted": [
+              "—",
+              "-"
+            ]
+          },
+          "hints": [
+            "Un aéroport ne prend pas the."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The office is on ___ Park Street, near the top of the hill.",
+          "answerSpec": {
+            "accepted": [
+              "—",
+              "-"
+            ]
+          },
+          "hints": [
+            "Une rue nommée : pas d'article."
+          ]
+        },
+        {
+          "type": "transform",
+          "source": "I have never been to the Wales.",
+          "prompt": "Corrige et réécris la phrase.",
+          "answerSpec": {
+            "accepted": [
+              "I have never been to Wales"
+            ]
+          },
+          "hints": [
+            "Un pays au singulier reste nu."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "source": "The doctor Patel will call you back this afternoon.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": {
+            "accepted": [
+              "Doctor Patel will call you back this afternoon"
+            ]
+          },
+          "hints": [
+            "Titre + nom propre : pas d'article."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "She has just moved to ___ Bristol.",
+          "answerSpec": {
+            "accepted": [
+              "—"
+            ]
+          },
+          "distractors": [
+            "the",
+            "a",
+            "this"
+          ],
+          "hints": [
+            "Nom de ville."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u077-b",
+      "topicId": "u077",
+      "tags": [
+        "the",
+        "noms-propres"
+      ],
+      "fields": {
+        "regle": "Pas de the devant personnes, villes, pays au singulier, rues, gares, aéroports. Exception : pays au pluriel ou décrits."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Il vient des États-Unis mais travaille en Écosse.",
+          "answerSpec": {
+            "accepted": [
+              "He comes from the United States but works in Scotland"
+            ]
+          },
+          "hints": [
+            "Pluriel : the. Singulier : nu."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Le train part de Paddington.",
+          "answerSpec": {
+            "accepted": [
+              "The train leaves from Paddington"
+            ]
+          },
+          "hints": [
+            "Une gare."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Le docteur Evans te rappellera.",
+          "answerSpec": {
+            "accepted": [
+              "Doctor Evans will call you back"
+            ]
+          },
+          "hints": [
+            "Titre + nom propre."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "We landed at ___ Bristol Airport just before ten.",
+          "answerSpec": {
+            "accepted": [
+              "—",
+              "-"
+            ]
+          },
+          "hints": [
+            "Un aéroport."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The studio is on ___ Stokes Croft.",
+          "answerSpec": {
+            "accepted": [
+              "—",
+              "-"
+            ]
+          },
+          "hints": [
+            "Une rue nommée."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "I have never been to the Scotland.",
+          "answerSpec": {
+            "accepted": [
+              "I have never been to Scotland"
+            ]
+          },
+          "source": "I have never been to the Scotland.",
+          "hints": [
+            "Pays au singulier."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "She has just moved to the Bristol.",
+          "answerSpec": {
+            "accepted": [
+              "She has just moved to Bristol"
+            ]
+          },
+          "source": "She has just moved to the Bristol.",
+          "hints": [
+            "Nom de ville."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "He grew up in ___ Netherlands.",
+          "answerSpec": {
+            "accepted": [
+              "the"
+            ]
+          },
+          "hints": [
+            "Pays au pluriel."
+          ],
+          "distractors": [
+            "—",
+            "a",
+            "this"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u078-a",
+      "topicId": "u078",
+      "tags": [
+        "the",
+        "noms-propres",
+        "geographie"
+      ],
+      "fields": {
+        "regle": "the devant les fleuves, mers, océans, chaînes de montagnes, hôtels, théâtres, musées et journaux : the Avon, the Atlantic, the Alps, the Guardian. Pas de the devant un lac ni un sommet isolé."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Le pont enjambe l'Avon.",
+          "answerSpec": {
+            "accepted": [
+              "The bridge crosses the Avon"
+            ]
+          },
+          "hints": [
+            "Un fleuve prend the."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Je le lis dans le Guardian tous les jours.",
+          "answerSpec": {
+            "accepted": [
+              "I read it in the Guardian every day"
+            ]
+          },
+          "hints": [
+            "Un journal prend the."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Nous avons dormi au Marriott, près du port.",
+          "answerSpec": {
+            "accepted": [
+              "We slept at the Marriott, near the harbour"
+            ]
+          },
+          "hints": [
+            "Un hôtel prend the."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "They sailed across ___ Atlantic in a boat built here.",
+          "answerSpec": {
+            "accepted": [
+              "the"
+            ]
+          },
+          "hints": [
+            "Un océan."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "We spent a week walking near ___ Lake Windermere.",
+          "answerSpec": {
+            "accepted": [
+              "—",
+              "-"
+            ]
+          },
+          "hints": [
+            "Un lac nommé ne prend pas the."
+          ]
+        },
+        {
+          "type": "transform",
+          "source": "The Mount Everest is not the hardest climb.",
+          "prompt": "Corrige et réécris la phrase.",
+          "answerSpec": {
+            "accepted": [
+              "Mount Everest is not the hardest climb"
+            ]
+          },
+          "hints": [
+            "Un sommet isolé reste nu."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "source": "We queued for an hour outside British Museum.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": {
+            "accepted": [
+              "We queued for an hour outside the British Museum"
+            ]
+          },
+          "hints": [
+            "Un musée prend the."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "The walking group meets every spring in ___ Alps.",
+          "answerSpec": {
+            "accepted": [
+              "the"
+            ]
+          },
+          "distractors": [
+            "—",
+            "a",
+            "some"
+          ],
+          "hints": [
+            "Une chaîne de montagnes."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u078-b",
+      "topicId": "u078",
+      "tags": [
+        "the",
+        "geographie"
+      ],
+      "fields": {
+        "regle": "the devant fleuves, mers, océans, chaînes, hôtels, théâtres, musées, journaux. Pas devant lacs ni sommets isolés."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : Ils ont traversé la Manche à la nage.",
+          "answerSpec": {
+            "accepted": [
+              "They swam across the Channel"
+            ]
+          },
+          "hints": [
+            "Une mer."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Je l'ai lu dans le Times.",
+          "answerSpec": {
+            "accepted": [
+              "I read it in the Times"
+            ]
+          },
+          "hints": [
+            "Un journal."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Nous avons marché près du lac Windermere.",
+          "answerSpec": {
+            "accepted": [
+              "We walked near Lake Windermere"
+            ]
+          },
+          "hints": [
+            "Un lac reste nu."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The ferry crosses ___ Severn twice a day.",
+          "answerSpec": {
+            "accepted": [
+              "the"
+            ]
+          },
+          "hints": [
+            "Un fleuve."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "We queued outside ___ Arnolfini for an hour.",
+          "answerSpec": {
+            "accepted": [
+              "the"
+            ]
+          },
+          "hints": [
+            "Une institution culturelle."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "The Mount Snowdon is busy in August.",
+          "answerSpec": {
+            "accepted": [
+              "Mount Snowdon is busy in August"
+            ]
+          },
+          "source": "The Mount Snowdon is busy in August.",
+          "hints": [
+            "Un sommet isolé reste nu."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "They walk every spring in Pyrenees.",
+          "answerSpec": {
+            "accepted": [
+              "They walk every spring in the Pyrenees"
+            ]
+          },
+          "source": "They walk every spring in Pyrenees.",
+          "hints": [
+            "Une chaîne de montagnes."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "We slept at ___ Bristol Harbour Hotel.",
+          "answerSpec": {
+            "accepted": [
+              "the"
+            ]
+          },
+          "hints": [
+            "Un hôtel."
+          ],
+          "distractors": [
+            "—",
+            "a",
+            "some"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u079-a",
+      "topicId": "u079",
+      "tags": [
+        "pluriel",
+        "accord"
+      ],
+      "fields": {
+        "regle": "Certains noms sont toujours pluriels : trousers, scissors, glasses, clothes, police. D'autres ont un pluriel irrégulier : people, children, feet, criteria. « the police are », jamais « the police is »."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : La police est déjà sur place.",
+          "answerSpec": {
+            "accepted": [
+              "The police are already there"
+            ]
+          },
+          "hints": [
+            "police est toujours pluriel en anglais."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Ce pantalon est trop grand.",
+          "answerSpec": {
+            "accepted": [
+              "These trousers are too big"
+            ]
+          },
+          "hints": [
+            "trousers est toujours pluriel."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Trois personnes ont posé la même question.",
+          "answerSpec": {
+            "accepted": [
+              "Three people asked the same question"
+            ]
+          },
+          "hints": [
+            "people est déjà un pluriel."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The criteria for the pilot ___ never been written down. (have / has)",
+          "answerSpec": {
+            "accepted": [
+              "have"
+            ]
+          },
+          "hints": [
+            "criteria est le pluriel de criterion."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "My ___ are somewhere on the desk. (glass)",
+          "answerSpec": {
+            "accepted": [
+              "glasses"
+            ]
+          },
+          "hints": [
+            "Les lunettes : toujours pluriel."
+          ]
+        },
+        {
+          "type": "transform",
+          "source": "The police is looking for two men.",
+          "prompt": "Corrige et réécris la phrase.",
+          "answerSpec": {
+            "accepted": [
+              "The police are looking for two men"
+            ]
+          },
+          "hints": [
+            "Accord au pluriel."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "source": "There were only three persons in the room.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": {
+            "accepted": [
+              "There were only three people in the room"
+            ]
+          },
+          "hints": [
+            "« persons » est réservé au langage juridique."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Her ___ are killing her after that walk.",
+          "answerSpec": {
+            "accepted": [
+              "feet"
+            ]
+          },
+          "distractors": [
+            "foots",
+            "feets",
+            "foot"
+          ],
+          "hints": [
+            "Pluriel irrégulier."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u079-b",
+      "topicId": "u079",
+      "tags": [
+        "pluriel"
+      ],
+      "fields": {
+        "regle": "trousers, scissors, glasses, clothes, police toujours pluriels ; people, children, feet, criteria, media pluriels irréguliers."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : La police enquête toujours.",
+          "answerSpec": {
+            "accepted": [
+              "The police are still investigating"
+            ]
+          },
+          "hints": [
+            "Toujours pluriel."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Quatre personnes ont posé la même question.",
+          "answerSpec": {
+            "accepted": [
+              "Four people asked the same question"
+            ]
+          },
+          "hints": [
+            "people est déjà pluriel."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : Mes lunettes sont restées au bureau.",
+          "answerSpec": {
+            "accepted": [
+              "My glasses are still at the office"
+            ]
+          },
+          "hints": [
+            "Toujours pluriel."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The criteria for the pilot ___ never been agreed. (have)",
+          "answerSpec": {
+            "accepted": [
+              "have"
+            ]
+          },
+          "hints": [
+            "Pluriel de criterion."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "These ___ are too long for me. (trouser)",
+          "answerSpec": {
+            "accepted": [
+              "trousers"
+            ]
+          },
+          "hints": [
+            "Toujours pluriel."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "The police is looking into it.",
+          "answerSpec": {
+            "accepted": [
+              "The police are looking into it"
+            ]
+          },
+          "source": "The police is looking into it.",
+          "hints": [
+            "Accord au pluriel."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "There were only four persons at the review.",
+          "answerSpec": {
+            "accepted": [
+              "There were only four people at the review"
+            ]
+          },
+          "source": "There were only four persons at the review.",
+          "hints": [
+            "persons appartient au juridique."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "My ___ hurt after that walk along the gorge.",
+          "answerSpec": {
+            "accepted": [
+              "feet"
+            ]
+          },
+          "hints": [
+            "Pluriel irrégulier."
+          ],
+          "distractors": [
+            "foots",
+            "feets",
+            "foot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u080-a",
+      "topicId": "u080",
+      "tags": [
+        "nom-compose",
+        "modifieur"
+      ],
+      "fields": {
+        "regle": "Un nom peut en qualifier un autre, et le premier reste au singulier : a bus driver, a five-minute walk, a three-day workshop. C'est l'ordre inverse du français."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : un chauffeur de bus",
+          "answerSpec": {
+            "accepted": [
+              "a bus driver"
+            ]
+          },
+          "hints": [
+            "Le complément passe devant, au singulier."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : une marche de cinq minutes",
+          "answerSpec": {
+            "accepted": [
+              "a five-minute walk"
+            ]
+          },
+          "hints": [
+            "minute reste au singulier dans le composé."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : un atelier de trois jours sur l'adoption",
+          "answerSpec": {
+            "accepted": [
+              "a three-day workshop on adoption"
+            ]
+          },
+          "hints": [
+            "day sans s."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "It is only a ten-___ drive from the airport. (minute)",
+          "answerSpec": {
+            "accepted": [
+              "minute"
+            ]
+          },
+          "hints": [
+            "Pas de s dans un composé."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "He has a bad ___ ache and has gone home. (head)",
+          "answerSpec": {
+            "accepted": [
+              "head"
+            ]
+          },
+          "hints": [
+            "headache s'écrit en un mot."
+          ]
+        },
+        {
+          "type": "transform",
+          "source": "We ran a workshop of two days for the whole floor.",
+          "prompt": "Réécris la phrase avec un nom composé.",
+          "answerSpec": {
+            "accepted": [
+              "We ran a two-day workshop for the whole floor"
+            ]
+          },
+          "hints": [
+            "Le complément passe devant."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "source": "She gave a twenty-minutes presentation to the board.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": {
+            "accepted": [
+              "She gave a twenty-minute presentation to the board"
+            ]
+          },
+          "hints": [
+            "Le modifieur reste au singulier."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "There is a ___ at the end of the corridor.",
+          "answerSpec": {
+            "accepted": [
+              "coffee machine"
+            ]
+          },
+          "distractors": [
+            "machine of coffee",
+            "coffees machine",
+            "machine coffee"
+          ],
+          "hints": [
+            "Nom + nom, dans cet ordre."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u080-b",
+      "topicId": "u080",
+      "tags": [
+        "nom-compose"
+      ],
+      "fields": {
+        "regle": "Nom + nom : le premier reste au singulier. a bus driver, a five-minute walk, a three-day workshop."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : un atelier de deux jours",
+          "answerSpec": {
+            "accepted": [
+              "a two-day workshop"
+            ]
+          },
+          "hints": [
+            "day sans s."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : une réunion de trente minutes",
+          "answerSpec": {
+            "accepted": [
+              "a thirty-minute meeting"
+            ]
+          },
+          "hints": [
+            "minute sans s."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : un plan d'étage",
+          "answerSpec": {
+            "accepted": [
+              "a floor plan"
+            ]
+          },
+          "hints": [
+            "Ordre inverse du français."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "It is a fifteen-___ walk from Temple Meads. (minute)",
+          "answerSpec": {
+            "accepted": [
+              "minute"
+            ]
+          },
+          "hints": [
+            "Composé : singulier."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "He has a bad ___ ache and has gone home. (head)",
+          "answerSpec": {
+            "accepted": [
+              "head"
+            ]
+          },
+          "hints": [
+            "headache en un mot."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "We ran a review of three hours.",
+          "answerSpec": {
+            "accepted": [
+              "We ran a three-hour review"
+            ]
+          },
+          "source": "We ran a review of three hours.",
+          "hints": [
+            "Composé."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "She gave a forty-minutes presentation.",
+          "answerSpec": {
+            "accepted": [
+              "She gave a forty-minute presentation"
+            ]
+          },
+          "source": "She gave a forty-minutes presentation.",
+          "hints": [
+            "Le modifieur reste singulier."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "There is a ___ at the end of the corridor.",
+          "answerSpec": {
+            "accepted": [
+              "coffee machine"
+            ]
+          },
+          "hints": [
+            "Nom + nom."
+          ],
+          "distractors": [
+            "machine of coffee",
+            "coffees machine",
+            "machine coffee"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u081-a",
+      "topicId": "u081",
+      "tags": [
+        "genitif",
+        "of"
+      ],
+      "fields": {
+        "regle": "'s pour les personnes et les animaux (« my sister's name ») ; of pour les choses (« the name of the book »). Pour un pluriel en s, l'apostrophe se met après : « the students' results »."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : le nom de ma sœur",
+          "answerSpec": {
+            "accepted": [
+              "my sister's name"
+            ]
+          },
+          "hints": [
+            "Une personne : génitif en 's."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : le titre du livre",
+          "answerSpec": {
+            "accepted": [
+              "the title of the book"
+            ]
+          },
+          "hints": [
+            "Une chose : of."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : les résultats des étudiants",
+          "answerSpec": {
+            "accepted": [
+              "the students' results"
+            ]
+          },
+          "hints": [
+            "Pluriel déjà en s : apostrophe seule."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Have you seen the children___ coats? (apostrophe et s si besoin)",
+          "answerSpec": {
+            "accepted": [
+              "'s"
+            ]
+          },
+          "hints": [
+            "children est un pluriel irrégulier : il reprend 's."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The roof ___ the building needs replacing.",
+          "answerSpec": {
+            "accepted": [
+              "of"
+            ]
+          },
+          "hints": [
+            "Une chose."
+          ]
+        },
+        {
+          "type": "transform",
+          "source": "The office of my line manager is on the third floor.",
+          "prompt": "Réécris la phrase avec un génitif.",
+          "answerSpec": {
+            "accepted": [
+              "My line manager's office is on the third floor"
+            ]
+          },
+          "hints": [
+            "Une personne : 's, et l'ordre s'inverse."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "source": "I am reading the report of Anna about the estate.",
+          "prompt": "Corrige la phrase.",
+          "answerSpec": {
+            "accepted": [
+              "I am reading Anna's report about the estate"
+            ]
+          },
+          "hints": [
+            "Un nom de personne prend le génitif."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "We are meeting at ___ tomorrow.",
+          "answerSpec": {
+            "accepted": [
+              "Tom's"
+            ]
+          },
+          "distractors": [
+            "the Tom",
+            "of Tom",
+            "Toms"
+          ],
+          "hints": [
+            "« chez Tom » : génitif seul."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u081-b",
+      "topicId": "u081",
+      "tags": [
+        "genitif"
+      ],
+      "fields": {
+        "regle": "'s pour les personnes et les animaux, of pour les choses. Pluriel en s : apostrophe seule."
+      },
+      "exercises": [
+        {
+          "type": "produce",
+          "prompt": "Traduis : le bureau de mon supérieur",
+          "answerSpec": {
+            "accepted": [
+              "my line manager's office"
+            ]
+          },
+          "hints": [
+            "Personne : 's."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : le toit du bâtiment",
+          "answerSpec": {
+            "accepted": [
+              "the roof of the building"
+            ]
+          },
+          "hints": [
+            "Chose : of."
+          ]
+        },
+        {
+          "type": "produce",
+          "prompt": "Traduis : les résultats des candidats",
+          "answerSpec": {
+            "accepted": [
+              "the candidates' results"
+            ]
+          },
+          "hints": [
+            "Pluriel en s : apostrophe seule."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "Have you seen the children___ coats? (apostrophe et s si besoin)",
+          "answerSpec": {
+            "accepted": [
+              "'s"
+            ]
+          },
+          "hints": [
+            "Pluriel irrégulier : reprend 's."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "prompt": "The title ___ the report is misleading.",
+          "answerSpec": {
+            "accepted": [
+              "of"
+            ]
+          },
+          "hints": [
+            "Une chose."
+          ]
+        },
+        {
+          "type": "transform",
+          "prompt": "The report of Anna is on the shared drive.",
+          "answerSpec": {
+            "accepted": [
+              "Anna's report is on the shared drive"
+            ]
+          },
+          "source": "The report of Anna is on the shared drive.",
+          "hints": [
+            "Nom de personne : génitif."
+          ]
+        },
+        {
+          "type": "spot_error",
+          "prompt": "I am reading the policy of the company.",
+          "answerSpec": {
+            "accepted": [
+              "I am reading the company's policy"
+            ]
+          },
+          "source": "I am reading the policy of the company.",
+          "hints": [
+            "Une organisation prend volontiers le génitif."
+          ]
+        },
+        {
+          "type": "mcq",
+          "prompt": "We are meeting at ___ after work.",
+          "answerSpec": {
+            "accepted": [
+              "Priya's"
+            ]
+          },
+          "hints": [
+            "« chez Priya »."
+          ],
+          "distractors": [
+            "the Priya",
+            "of Priya",
+            "Priyas"
+          ]
+        }
       ]
     }
   ]
