@@ -1,0 +1,343 @@
+{
+  "lessons": {
+    "w074": {
+      "image": "Certains mots se tiennent par la main depuis toujours et refusent de changer de partenaire. Aucune règle ne l’explique ; il faut les apprendre par couples.",
+      "rule": "La pluie est `heavy`, jamais `strong`. Une décision se `makes`, jamais se `takes`. Un service se `does`. Ce sont des habitudes, pas de la grammaire.",
+      "scene": {
+        "where": "Écrire trois phrases banales et se tromper deux fois",
+        "text": "The forecast promises a lot of it for the weekend, and the adjective is the one that means weighty. Somebody has to reach a decision before Thursday, and the verb is not the French one. It was so cold on the platform that the word people used was the one about bitterness. And the odds are described with an adverb that means highly, which sits oddly on a negative and is correct anyway.",
+        "gloss": [
+          {
+            "en": "heavy rain",
+            "fr": "une forte pluie"
+          },
+          {
+            "en": "to make a decision",
+            "fr": "prendre une décision"
+          },
+          {
+            "en": "bitterly cold",
+            "fr": "un froid glacial"
+          },
+          {
+            "en": "highly unlikely",
+            "fr": "hautement improbable"
+          }
+        ]
+      },
+      "contrast": {
+        "left": "to make a decision",
+        "right": "to take a decision",
+        "note": "Le second existe et sonne administratif, presque européen. Dans une conversation britannique, une décision se fait — « we need to make a call on this »."
+      },
+      "trap": {
+        "wrong": "Can you do me a service?",
+        "right": "Can you do me a favour?",
+        "why": "Le mot n’est pas « service » mais « favour », et le verbe est bien « do » — l’un des rares cas où l’anglais fait ce que le français fait."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "You will catch a cold standing out there in that.",
+          "fr": "Tu vas attraper froid à rester dehors habillé comme ça."
+        },
+        {
+          "register": "work",
+          "en": "Nobody was paying attention to the second half of the slide.",
+          "fr": "Personne ne faisait attention à la seconde moitié de la diapositive."
+        }
+      ],
+      "seeAlso": [
+        "w081",
+        "w077"
+      ]
+    },
+    "w075": {
+      "image": "Une expression figée se pose sur une phrase comme un couvercle : elle ne change rien au contenu et elle en change la portée.",
+      "rule": "`by and large`, `on the whole`, `as a rule` tempèrent une affirmation générale. Ce sont les mots de la prudence britannique, et ils s’emploient partout.",
+      "scene": {
+        "where": "Un bilan de fin d’année, dit à voix haute",
+        "text": "Taken all together it has gone better than anyone expected, and there is a phrase for exactly that hedge. Somebody will ask who signed it off, if not this week then the next. It is not quite finished, which means two more days. Over several years it saves money, and nobody has several years. In any case nothing happens before January.",
+        "gloss": [
+          {
+            "en": "on the whole",
+            "fr": "globalement"
+          },
+          {
+            "en": "sooner or later",
+            "fr": "tôt ou tard"
+          },
+          {
+            "en": "more or less",
+            "fr": "plus ou moins"
+          },
+          {
+            "en": "in the long run",
+            "fr": "à long terme"
+          }
+        ]
+      },
+      "trap": {
+        "wrong": "In general lines, the project went well.",
+        "right": "On the whole, the project went well.",
+        "why": "« In general lines » est un calque de « dans les grandes lignes ». L’anglais a ses propres couvercles : « on the whole », « by and large », « broadly »."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "As a rule I do not answer email after seven.",
+          "fr": "En règle générale je ne réponds pas aux mails après sept heures."
+        },
+        {
+          "register": "work",
+          "en": "We kept the old name for the sake of the people who use it.",
+          "fr": "On a gardé l’ancien nom pour ceux qui s’en servent."
+        }
+      ],
+      "seeAlso": [
+        "w076",
+        "w093"
+      ]
+    },
+    "w076": {
+      "image": "La conversation anglaise avance par petites charnières. Elles ne veulent rien dire toutes seules, et sans elles on parle comme un document.",
+      "rule": "Ces formules servent à concéder (`mind you`), à corriger le tir (`come to think of it`) ou à annoncer l’objection (`the thing is`). Elles s’apprennent entières.",
+      "scene": {
+        "where": "Une conversation à deux, dix minutes",
+        "text": "It was expensive — and then comes the little hinge that concedes the other side, before you add that it lasted fifteen years. Later, a memory arrives late and there is a phrase that admits it arrived late. Then the real objection is announced by three words that promise bad news politely: nobody actually owns that decision.",
+        "gloss": [
+          {
+            "en": "mind you",
+            "fr": "remarque, cela dit"
+          },
+          {
+            "en": "come to think of it",
+            "fr": "maintenant que j’y pense"
+          },
+          {
+            "en": "the thing is",
+            "fr": "le problème, c’est que"
+          },
+          {
+            "en": "as it happens",
+            "fr": "il se trouve que"
+          }
+        ]
+      },
+      "trap": {
+        "wrong": "Effectively, I was there that afternoon.",
+        "right": "As it happens, I was there that afternoon.",
+        "why": "« Effectively » veut dire « en pratique, de fait ». Pour le « effectivement » qui confirme, l’anglais dit « as it happens », « actually » ou simplement « yes »."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "One click and — there you go.",
+          "fr": "Un clic et — voilà."
+        },
+        {
+          "register": "work",
+          "en": "The funding is gone, so that is that then.",
+          "fr": "Le financement a sauté, alors voilà."
+        }
+      ],
+      "seeAlso": [
+        "w075",
+        "w067"
+      ]
+    },
+    "w077": {
+      "image": "Chaque verbe traîne sa préposition comme une ombre, et ce n’est presque jamais celle du français.",
+      "rule": "`depend on`, `good at`, `succeed in`, `insist on`. La préposition fait partie du mot : l’apprendre séparément revient à ne pas l’apprendre.",
+      "scene": {
+        "where": "Un entretien annuel, quatre phrases",
+        "text": "Whether it happens rests entirely upon the survey coming back clean, and the preposition there is not the French one. She is very strong in the part everybody else hates, and the preposition is the one that means at a point. He said sorry about the delay and said nothing about the mistake, which was noticed. Nobody was quite accountable for that folder.",
+        "gloss": [
+          {
+            "en": "to depend on something",
+            "fr": "dépendre de"
+          },
+          {
+            "en": "good at something",
+            "fr": "bon en, doué pour"
+          },
+          {
+            "en": "to apologise for something",
+            "fr": "s’excuser de"
+          },
+          {
+            "en": "responsible for something",
+            "fr": "responsable de"
+          }
+        ]
+      },
+      "trap": {
+        "wrong": "It depends of the weather and I am good in maths.",
+        "right": "It depends on the weather and I am good at maths.",
+        "why": "Deux calques dans une phrase : le français dit « dépendre de » et « bon en ». L’anglais dit « depend on » et « good at », sans exception."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "She insisted on paying, which settled it.",
+          "fr": "Elle a insisté pour payer, ce qui a réglé la question."
+        },
+        {
+          "register": "work",
+          "en": "It is similar to the old one, minus everything that worked.",
+          "fr": "C’est semblable à l’ancien, moins tout ce qui marchait."
+        }
+      ],
+      "seeAlso": [
+        "w078",
+        "w090"
+      ]
+    },
+    "w078": {
+      "image": "Une locution prépositionnelle est un adverbe en trois mots : elle dit comment, pourquoi ou au nom de qui, et elle ne se démonte pas.",
+      "rule": "`on purpose` = exprès · `by mistake` = par erreur · `on behalf of` = au nom de. Changer la préposition change le sens ou détruit la formule.",
+      "scene": {
+        "where": "Un message d’excuse, écrit deux fois",
+        "text": "He did it deliberately and admitted it cheerfully, which took the sting out of it. I sent it to the whole list without meaning to, and there is a two-word phrase for exactly that. Writing for the team rather than for yourself has its own formula, and it belongs at the top of the message. She runs three teams and a budget nobody envies.",
+        "gloss": [
+          {
+            "en": "on purpose",
+            "fr": "exprès"
+          },
+          {
+            "en": "by mistake",
+            "fr": "par erreur"
+          },
+          {
+            "en": "on behalf of",
+            "fr": "au nom de"
+          },
+          {
+            "en": "in charge of",
+            "fr": "responsable de (une équipe)"
+          }
+        ]
+      },
+      "trap": {
+        "wrong": "I did it by purpose and sent it on mistake.",
+        "right": "I did it on purpose and sent it by mistake.",
+        "why": "Les deux prépositions sont exactement inversées par rapport à l’intuition française. Il n’y a pas de logique : c’est « on purpose » et « by mistake »."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "Pay in advance and it is ten per cent cheaper.",
+          "fr": "Paie à l’avance et c’est dix pour cent moins cher."
+        },
+        {
+          "register": "work",
+          "en": "He is good under pressure and unbearable without any.",
+          "fr": "Il est bon sous pression et insupportable sans."
+        }
+      ],
+      "seeAlso": [
+        "w077",
+        "w065"
+      ]
+    },
+    "w079": {
+      "image": "Un verbe à particule est un verbe court et un mot de direction. Le sens ne se déduit ni de l’un ni de l’autre : il se rencontre.",
+      "rule": "La particule peut se séparer du verbe : « put it off », jamais « put off it ». Avec un pronom, elle passe **derrière** — c’est la règle qu’on entend le plus violer.",
+      "scene": {
+        "where": "Une semaine ordinaire, huit décisions",
+        "text": "Forty people said yes and twelve arrived. We postponed it twice and then it decided itself. You can manage on schoolbook English for about a fortnight before it starts to cost you. Do not raise that subject in front of the client. Her neighbour takes care of the cat and the plants, and we found the answer while looking for something else entirely.",
+        "gloss": [
+          {
+            "en": "to turn up",
+            "fr": "arriver, se pointer"
+          },
+          {
+            "en": "to put something off",
+            "fr": "reporter"
+          },
+          {
+            "en": "to get by",
+            "fr": "s’en sortir"
+          },
+          {
+            "en": "to come across something",
+            "fr": "tomber sur"
+          }
+        ]
+      },
+      "trap": {
+        "wrong": "We had to put off it until March.",
+        "right": "We had to put it off until March.",
+        "why": "Un pronom ne se met jamais après la particule d’un verbe séparable. « Put it off », « look it up », « bring it up » : le pronom se glisse au milieu."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "We ran out of chairs about ten minutes in.",
+          "fr": "On s’est retrouvés à court de chaises au bout de dix minutes."
+        },
+        {
+          "register": "work",
+          "en": "Carry on, I was only listening.",
+          "fr": "Continue, j’écoutais simplement."
+        }
+      ],
+      "seeAlso": [
+        "w080",
+        "w016"
+      ]
+    },
+    "w080": {
+      "image": "Les verbes à particule ne sont pas familiers par nature. Certains sont parfaitement à leur place dans un rapport écrit ; c’est leur voisin latin qui sonne raide.",
+      "rule": "`find out` vaut `discover`, `point out` vaut `indicate`, `set up` vaut `establish`. Le verbe à particule est le registre normal ; le mot latin est le registre soutenu.",
+      "scene": {
+        "where": "Relire un compte rendu et alléger",
+        "text": "We only discovered it afterwards, from somebody else, and the everyday verb for that has two words. She indicated that the dates did not add up, and there is a two-word version of that too. Establishing it takes an afternoon and five minutes a week thereafter. Half the answer was invented and it sounded excellent, which is the whole problem.",
+        "gloss": [
+          {
+            "en": "to find something out",
+            "fr": "découvrir"
+          },
+          {
+            "en": "to point something out",
+            "fr": "faire remarquer"
+          },
+          {
+            "en": "to set something up",
+            "fr": "mettre en place"
+          },
+          {
+            "en": "to make something up",
+            "fr": "inventer"
+          }
+        ]
+      },
+      "contrast": {
+        "left": "We found out on Tuesday.",
+        "right": "We ascertained it on Tuesday.",
+        "note": "Le premier est ce qu’on dit et ce qu’on écrit. Le second est du vocabulaire de rapport officiel, et l’employer en réunion attire l’attention sur le mot, pas sur l’idée."
+      },
+      "trap": {
+        "wrong": "I will realise the project next quarter.",
+        "right": "I will deliver the project next quarter.",
+        "why": "« Realise » en anglais veut dire se rendre compte. Pour mener un projet à bien, on dit « deliver », « carry out » ou « complete »."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "Hold on, I have the file open somewhere.",
+          "fr": "Attends, j’ai le fichier ouvert quelque part."
+        },
+        {
+          "register": "work",
+          "en": "He takes over in April and inherits all of it.",
+          "fr": "Il reprend en avril et hérite de tout."
+        }
+      ],
+      "seeAlso": [
+        "w079",
+        "w095"
+      ]
+    }
+  }
+}

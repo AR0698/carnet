@@ -1,0 +1,155 @@
+{
+  "lessons": {
+    "w065": {
+      "image": "On s’excuse en Angleterre pour des choses dont on n’est pas responsable, et c’est un lubrifiant social, pas un aveu.",
+      "rule": "`sorry` ouvre une phrase avant de la clore : il sert à aborder un inconnu (`sorry to bother you`) autant qu’à réparer une faute.",
+      "scene": {
+        "where": "Une file d’attente, puis un mail d’excuse",
+        "text": "You begin with an apology you do not owe anybody, and then you ask your question. If it really was your doing, say so in four words and move on — the long explanation is what people find awkward. And when somebody says it does not matter, believe them: that is the end of it, not the polite half of it.",
+        "gloss": [
+          { "en": "sorry to bother you", "fr": "désolé de vous déranger" },
+          { "en": "my fault", "fr": "c’est ma faute" },
+          { "en": "no harm done", "fr": "il n’y a pas de mal" },
+          { "en": "I do apologise", "fr": "je vous prie de m’excuser" }
+        ]
+      },
+      "contrast": {
+        "left": "Sorry.",
+        "right": "I do apologise.",
+        "note": "Le premier s’emploie cent fois par jour et n’engage rien. Le second est écrit, formel, et reconnaît une faute réelle. Confondre les deux fait paraître soit désinvolte, soit théâtral."
+      },
+      "trap": {
+        "wrong": "Excuse me for the delay in my answer.",
+        "right": "Sorry for the slow reply.",
+        "why": "« Excuse me » sert à attirer l’attention ou à passer, pas à s’excuser d’un retard. Pour se faire pardonner, c’est « sorry » ou « I apologise »."
+      },
+      "examples": [
+        { "register": "bristol", "en": "Sorry, is this the queue for the desk?", "fr": "Pardon, c’est bien la file pour le guichet ?" },
+        { "register": "work", "en": "That was entirely my fault and I should have checked.", "fr": "C’était entièrement ma faute et j’aurais dû vérifier." }
+      ],
+      "seeAlso": ["w066", "w099"]
+    },
+    "w066": {
+      "image": "Une demande anglaise s’enveloppe. Plus la demande coûte, plus l’emballage est épais — et l’emballage n’est pas de l’hypocrisie, c’est la demande elle-même.",
+      "rule": "Après `would you mind`, le verbe prend **-ing** : « would you mind shutting the window ». C’est la faute la plus fréquente sur la formule la plus utile.",
+      "scale": {
+        "label": "De la demande directe à la demande enveloppée",
+        "steps": [
+          { "en": "Can you…?", "fr": "familier, entre proches" },
+          { "en": "Could you…?", "fr": "neutre, partout" },
+          { "en": "Would you mind…?", "fr": "poli, pour ce qui dérange" }
+        ]
+      },
+      "scene": {
+        "where": "Trois demandes dans la même journée",
+        "text": "To a colleague you know: could you send it before five. To one you do not: would you mind having a look at the second page. And to somebody who might well say no, you give them the exit first — say so if it does not suit, it is genuinely fine — because an offer without an exit is not an offer.",
+        "gloss": [
+          { "en": "could you possibly", "fr": "pourriez-vous éventuellement" },
+          { "en": "would you mind", "fr": "cela vous ennuierait-il" },
+          { "en": "feel free to", "fr": "n’hésitez pas à" },
+          { "en": "by all means", "fr": "je vous en prie" }
+        ]
+      },
+      "trap": {
+        "wrong": "Would you mind to open the window?",
+        "right": "Would you mind opening the window?",
+        "why": "« Mind » est suivi d’un gérondif, comme « avoid » ou « suggest ». Et la réponse piège aussi : « no » veut dire oui, puisqu’on demande si ça dérange."
+      },
+      "examples": [
+        { "register": "bristol", "en": "Is it all right if I bring somebody along?", "fr": "Ça va si j’amène quelqu’un ?" },
+        { "register": "work", "en": "How about Thursday instead, if that suits everyone?", "fr": "Et si on faisait jeudi, si ça convient à tout le monde ?" }
+      ],
+      "seeAlso": ["w067", "w065"]
+    },
+    "w067": {
+      "image": "Contredire en anglais britannique se fait en donnant d’abord raison. La concession n’est pas un préambule : c’est la moitié de l’argument.",
+      "rule": "`I take your point, but…` est le squelette de tout désaccord poli : on reconnaît, puis on oppose. Attaquer directement fait plus de bruit que d’effet.",
+      "scene": {
+        "where": "Une réunion où l’on n’est pas d’accord",
+        "text": "You concede the part that is true, and then you say the dates do not move. Somebody says that is true up to a point, which means it stops being true a little further on. And when it is over, the sentence that closes it without conceding anything is the one that sounds like agreement and is not.",
+        "gloss": [
+          { "en": "I take your point", "fr": "je vois ce que vous voulez dire" },
+          { "en": "up to a point", "fr": "jusqu’à un certain point" },
+          { "en": "fair enough", "fr": "d’accord, ça se tient" },
+          { "en": "I beg to differ", "fr": "permettez-moi de ne pas être d’accord" }
+        ]
+      },
+      "contrast": {
+        "left": "Fair enough.",
+        "right": "That’s one way of putting it.",
+        "note": "Le premier accepte de bonne grâce. Le second a l’air d’accepter et signale exactement le contraire. C’est la litote britannique dans son plus petit format."
+      },
+      "trap": {
+        "wrong": "I am not agree with this approach.",
+        "right": "I do not agree with this approach.",
+        "why": "« Agree » est un verbe en anglais, pas un adjectif : il ne prend pas « be ». La faute est mécanique et s’entend immédiatement."
+      },
+      "examples": [
+        { "register": "bristol", "en": "To be honest, nobody read it before it went out.", "fr": "Pour être honnête, personne ne l’a lu avant l’envoi." },
+        { "register": "work", "en": "As far as I am concerned, it was settled a month ago.", "fr": "En ce qui me concerne, c’était réglé il y a un mois." }
+      ],
+      "seeAlso": ["w068", "w012"]
+    },
+    "w068": {
+      "image": "Le dégoût britannique s’exprime par la négation d’un enthousiasme. On ne dit pas qu’on déteste : on dit qu’on n’est pas très emballé.",
+      "rule": "`I’m not keen on it` est le degré normal du refus. `I can’t stand it` est déjà violent, et se réserve à ce qu’on déteste vraiment.",
+      "scale": {
+        "label": "Du tiède au franchement non",
+        "steps": [
+          { "en": "I don’t mind it", "fr": "ça m’est égal" },
+          { "en": "I’m not keen on it", "fr": "je n’aime pas trop" },
+          { "en": "I can’t stand it", "fr": "je ne le supporte pas" }
+        ]
+      },
+      "scene": {
+        "where": "Choisir un restaurant à cinq",
+        "text": "Somebody says it is not really their thing, which settles it without anybody having to argue. Two people say either is fine by them and mean it. One would sooner walk than wait twenty minutes for a table, and says so. The place we end up at is the one nobody objected to, which is how most decisions get made in this country.",
+        "gloss": [
+          { "en": "it’s not my thing", "fr": "ce n’est pas mon truc" },
+          { "en": "I don’t mind", "fr": "ça m’est égal" },
+          { "en": "I’d rather", "fr": "je préférerais" },
+          { "en": "I’m easy", "fr": "ça me va" }
+        ]
+      },
+      "trap": {
+        "wrong": "I would rather to stay at home tonight.",
+        "right": "I would rather stay at home tonight.",
+        "why": "« Would rather » est suivi de l’infinitif nu, sans « to ». Le français « préférer à » pousse au calque, et le calque s’entend."
+      },
+      "examples": [
+        { "register": "bristol", "en": "The city grows on you, everyone says so and everyone is right.", "fr": "La ville finit par plaire, tout le monde le dit et tout le monde a raison." },
+        { "register": "work", "en": "He is genuinely fond of that terrible old spreadsheet.", "fr": "Il a une vraie affection pour cet horrible vieux tableur." }
+      ],
+      "seeAlso": ["w067", "w012"]
+    },
+    "w069": {
+      "image": "« Are you all right? » n’est pas une question. C’est bonjour, et répondre par un bulletin de santé est la maladresse la plus courante d’un francophone.",
+      "rule": "Les salutations britanniques sont des formules, pas des demandes. La réponse attendue est une autre formule : « not bad », « yeah, you? ».",
+      "scene": {
+        "where": "Un couloir, huit heures cinquante",
+        "text": "The question that sounds like concern is simply hello, and the answer is the same three words every time, whatever the truth. Somebody you have not seen for a year says the thing about time passing, and you say it back. Leaving takes two formulas, one of which is a single word that also means thank you and also means cheers.",
+        "gloss": [
+          { "en": "are you all right?", "fr": "ça va ?" },
+          { "en": "long time no see", "fr": "ça fait un bail" },
+          { "en": "take care", "fr": "prends soin de toi" },
+          { "en": "cheers", "fr": "merci, salut" }
+        ]
+      },
+      "contrast": {
+        "left": "Are you all right?",
+        "right": "Are you OK? — said quietly, one to one",
+        "note": "Le même sens littéral, deux fonctions. Lancé en passant, c’est bonjour. Dit à voix basse quand quelqu’un a l’air mal, c’est une vraie question."
+      },
+      "trap": {
+        "wrong": "— Are you all right? — Yes, I am not ill, thank you.",
+        "right": "— Are you all right? — Yeah, not bad. You?",
+        "why": "Répondre sur le fond révèle qu’on a pris la formule pour une question. On renvoie la formule, et l’on rend la question."
+      },
+      "examples": [
+        { "register": "bristol", "en": "Cheers works as thank you, as goodbye, and as a toast.", "fr": "Cheers sert de merci, d’au revoir, et de santé." },
+        { "register": "work", "en": "Right, see you in a bit — I am on the two o’clock call.", "fr": "Bon, à tout à l’heure — j’ai l’appel de quatorze heures." }
+      ],
+      "seeAlso": ["w099", "w065"]
+    }
+  }
+}

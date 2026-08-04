@@ -1,0 +1,139 @@
+{
+  "lessons": {
+    "w081": {
+      "image": "Trois verbes fourre-tout se partagent la moitié des expressions anglaises, et le français les traduit tous les trois par « faire ».",
+      "rule": "`make` fabrique quelque chose qui n’existait pas · `do` accomplit une tâche · `take` prend ou occupe. Le partage est arbitraire et se retient par blocs.",
+      "scene": {
+        "where": "Une journée de travail, six expressions",
+        "text": "He is the sort of person who tries with names, and people notice. None of it holds together until you see the second page. I get the shopping on the way home so it never becomes an outing. She stood in for him on the panel at two days’ notice. We had to manage with the small room and it turned out better.",
+        "gloss": [
+          { "en": "to make an effort", "fr": "faire un effort" },
+          { "en": "to make sense", "fr": "avoir du sens" },
+          { "en": "to take somebody’s place", "fr": "remplacer quelqu’un" },
+          { "en": "to make do with something", "fr": "se contenter de" }
+        ]
+      },
+      "contrast": {
+        "left": "to make a mistake",
+        "right": "to do the washing-up",
+        "note": "On *fabrique* une erreur — elle n’existait pas avant. On *accomplit* la vaisselle — elle attendait. C’est la meilleure image pour départager make et do."
+      },
+      "trap": {
+        "wrong": "I have to make my homework tonight.",
+        "right": "I have to do my homework tonight.",
+        "why": "Une tâche qui attendait se fait avec « do ». Le français n’ayant qu’un verbe, le calque choisit « make » une fois sur deux et se trompe."
+      },
+      "examples": [
+        { "register": "bristol", "en": "Take your time, it is not going anywhere.", "fr": "Prends ton temps, ça ne va nulle part." },
+        { "register": "work", "en": "Anyone can take part in it, which is the whole idea.", "fr": "Tout le monde peut y participer, c’est bien l’idée." }
+      ],
+      "seeAlso": ["w082", "w083"]
+    },
+    "w082": {
+      "image": "Give, keep, miss : donner, tenir, rater. Trois verbes qui portent chacun une famille d’expressions qu’on entend tous les jours.",
+      "rule": "`keep` dit le maintien dans le temps : `keep an eye on`, `keep in touch`, `keep it to yourself`. La particule ou le complément fait le reste.",
+      "scene": {
+        "where": "Une cuisine, puis un couloir",
+        "text": "Help me with this and it takes two minutes. Watch the oven, that is all I am asking. Say nothing about it until it is signed. We promised to stay in contact and, unusually, we did. And the reply that answered a question nobody had asked failed to grasp the point so completely it was almost impressive.",
+        "gloss": [
+          { "en": "to give somebody a hand", "fr": "donner un coup de main" },
+          { "en": "to keep an eye on something", "fr": "surveiller" },
+          { "en": "to keep something to yourself", "fr": "garder pour soi" },
+          { "en": "to miss the point", "fr": "passer à côté du sujet" }
+        ]
+      },
+      "trap": {
+        "wrong": "Can you give me a hand for this box?",
+        "right": "Can you give me a hand with this box?",
+        "why": "La préposition est « with ». C’est une expression figée entière : « give me a hand with », et rien d’autre ne sonne juste."
+      },
+      "examples": [
+        { "register": "bristol", "en": "Give it a go — the worst case is that it does not work.", "fr": "Essaie — au pire ça ne marche pas." },
+        { "register": "work", "en": "You will miss out on the good weather if you come in November.", "fr": "Tu rateras le beau temps si tu viens en novembre." }
+      ],
+      "seeAlso": ["w081", "w083"]
+    },
+    "w083": {
+      "image": "`Get` est le verbe le plus employé de l’anglais parlé et le plus absent des manuels. Il veut dire obtenir, devenir, arriver, comprendre — selon ce qui suit.",
+      "rule": "Après `get used to` au sens d’habitude acquise, le verbe prend **-ing** : « get used to driving ». Le `to` est une préposition, pas un infinitif.",
+      "scene": {
+        "where": "Les six premiers mois, résumés",
+        "text": "After three hours we were finally making progress, and the idiom for that uses a place rather than a verb. It took a skip and a Saturday to clear it all out. He escaped the consequences because nobody checked. You stop noticing the rain about eight months in. And it takes a week to master the ticket machines, which have an expression of their own.",
+        "gloss": [
+          { "en": "to get somewhere", "fr": "avancer, progresser" },
+          { "en": "to get rid of something", "fr": "se débarrasser de" },
+          { "en": "to get away with something", "fr": "s’en tirer à bon compte" },
+          { "en": "to get the hang of something", "fr": "prendre le coup de main" }
+        ]
+      },
+      "contrast": {
+        "left": "I used to drive on the right.",
+        "right": "I am used to driving on the left.",
+        "note": "Le premier raconte une habitude passée et révolue. Le second dit qu’on s’est habitué. Un seul mot d’écart, et deux époques différentes."
+      },
+      "trap": {
+        "wrong": "I am getting used to drive on the left.",
+        "right": "I am getting used to driving on the left.",
+        "why": "Le « to » de « used to » est une préposition, comme dans « look forward to ». Ce qui suit une préposition prend -ing, toujours."
+      },
+      "examples": [
+        { "register": "bristol", "en": "Get in touch nearer the time and we will sort a date.", "fr": "Recontacte-moi plus près de la date et on cale ça." },
+        { "register": "work", "en": "Right, I will let you get on with it.", "fr": "Bon, je te laisse t’y remettre." }
+      ],
+      "seeAlso": ["w084", "w087"]
+    },
+    "w084": {
+      "image": "`Go` n’est pas seulement aller : il tourne, il avance, il passe bien ou mal. La particule décide de tout.",
+      "rule": "`go off` = se gâter (ou se déclencher) · `go ahead` = aller de l’avant · `go down well` = être bien reçu. Aucun des trois ne contient l’idée de déplacement.",
+      "scene": {
+        "where": "Une semaine où rien ne se passe comme prévu",
+        "text": "The milk had turned and the whole fridge knew it. They decided to proceed without the second quote. We can manage without the extra licence for a month. The change was badly received by the people who use it daily, and there is a four-word phrase for exactly that reception. Nobody would tell me what was happening.",
+        "gloss": [
+          { "en": "to go off", "fr": "se gâter" },
+          { "en": "to go ahead", "fr": "aller de l’avant" },
+          { "en": "to go without something", "fr": "se passer de" },
+          { "en": "to go down well", "fr": "être bien reçu" }
+        ]
+      },
+      "trap": {
+        "wrong": "The presentation went well down with the client.",
+        "right": "The presentation went down well with the client.",
+        "why": "L’ordre est figé : « go down well », jamais « go well down ». L’adverbe se place après la particule, pas entre le verbe et elle."
+      },
+      "examples": [
+        { "register": "bristol", "en": "In the end we went for the cheaper option and regretted it twice.", "fr": "Au final on a pris l’option la moins chère et on l’a regretté deux fois." },
+        { "register": "work", "en": "Can we go over the numbers once more before it goes out?", "fr": "On peut revoir les chiffres une dernière fois avant l’envoi ?" }
+      ],
+      "seeAlso": ["w083", "w079"]
+    },
+    "w085": {
+      "image": "Les verbes de perception anglais changent de sens avec leur préposition : sentir quelque chose, ou sentir le quelque chose.",
+      "rule": "`to smell something` = le renifler · `to smell of something` = en dégager l’odeur. La préposition retourne le sujet et l’objet.",
+      "scene": {
+        "where": "Un vendredi, entre le hall et la rue",
+        "text": "That seems like a plan, and the verb there is the one about hearing. The whole building carries the odour of chips on a Friday, and the preposition matters. The water here has no taste at all, which visitors find odd. I fancy a walk before it gets dark. And I glimpsed the balloons from the office window without expecting to.",
+        "gloss": [
+          { "en": "to sound like", "fr": "avoir l’air (à l’oreille)" },
+          { "en": "to smell of something", "fr": "sentir le" },
+          { "en": "to taste of something", "fr": "avoir le goût de" },
+          { "en": "to catch sight of something", "fr": "apercevoir" }
+        ]
+      },
+      "contrast": {
+        "left": "The dog smells.",
+        "right": "The dog smells the food.",
+        "note": "Sans complément, le verbe décrit le sujet — et rarement en bien. Avec complément, il décrit ce que le sujet fait. Un mot de plus renverse la phrase."
+      },
+      "trap": {
+        "wrong": "I look forward to meet you.",
+        "right": "I look forward to meeting you.",
+        "why": "Comme pour « get used to », le « to » est ici une préposition et non un infinitif : le verbe qui suit prend -ing. C’est la faute la plus fréquente en fin de mail."
+      },
+      "examples": [
+        { "register": "bristol", "en": "Keep an ear out for the announcement, they say it once.", "fr": "Tends l’oreille pour l’annonce, ils la disent une fois." },
+        { "register": "work", "en": "It looks as if the whole thing has been postponed.", "fr": "On dirait que tout a été reporté." }
+      ],
+      "seeAlso": ["w083", "w098"]
+    }
+  }
+}

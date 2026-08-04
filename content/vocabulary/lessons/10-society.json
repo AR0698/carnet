@@ -1,0 +1,100 @@
+{
+  "lessons": {
+    "w056": {
+      "image": "Le vol a un mot différent selon l’endroit d’où l’on entre : dans une maison, dans un magasin, dans la rue.",
+      "rule": "`burglary` = entrer dans un bâtiment pour voler · `shoplifting` = voler dans un magasin · `robbery` = voler quelqu’un avec menace. Le français dit « vol » pour les trois.",
+      "scene": {
+        "where": "Une réunion de quartier, dans une salle paroissiale",
+        "text": "Somebody got into a house on the next street through a back window, and within a week the whole road had bought cameras. The shop moved the good coffee behind the counter for the same reason. They are still looking for anyone who was on the eight o’clock bus that night. Report it online, because nobody ever answers the non-emergency number.",
+        "gloss": [
+          { "en": "a burglary", "fr": "un cambriolage" },
+          { "en": "shoplifting", "fr": "le vol à l’étalage" },
+          { "en": "a witness", "fr": "un témoin" },
+          { "en": "to report something", "fr": "signaler" }
+        ]
+      },
+      "trap": {
+        "wrong": "We were robbed while we were on holiday.",
+        "right": "We were burgled while we were on holiday.",
+        "why": "On « robs » une personne, en sa présence. Une maison vide qu’on vide, c’est « burgled » — et le verbe britannique est « burgle », pas « burglarize »."
+      },
+      "examples": [
+        { "register": "bristol", "en": "Half of what the council calls vandalism is what the city calls art.", "fr": "La moitié de ce que la mairie appelle vandalisme, la ville l’appelle de l’art." },
+        { "register": "work", "en": "It is a sixty-pound fine, thirty if you pay within a fortnight.", "fr": "C’est soixante livres d’amende, trente si tu paies sous quinze jours." }
+      ],
+      "seeAlso": ["w057"]
+    },
+    "w057": {
+      "image": "La politique britannique se raconte par lieux : une circonscription, un bureau de vote dans une école primaire, des bancs à l’arrière de la Chambre.",
+      "rule": "`a constituency` = la circonscription · `an MP` = le député qui la représente · `a backbencher` = celui qui n’a pas de fonction gouvernementale, et qui peut donc parler.",
+      "scene": {
+        "where": "Un jeudi de scrutin, entre sept heures et vingt-deux heures",
+        "text": "You vote in a primary school hall that smells of poster paint, and there is a dog tied up outside every one of them. This seat has changed hands twice in ten years, which makes it worth a leaflet through every door. Fewer than half the electorate turned out, and everybody drew whichever conclusion they had arrived with.",
+        "gloss": [
+          { "en": "a constituency", "fr": "une circonscription" },
+          { "en": "a polling station", "fr": "un bureau de vote" },
+          { "en": "a turnout", "fr": "un taux de participation" },
+          { "en": "an MP", "fr": "un député" }
+        ]
+      },
+      "trap": {
+        "wrong": "I wrote to my deputy about the school.",
+        "right": "I wrote to my MP about the school.",
+        "why": "« Deputy » en anglais veut dire adjoint. Le député est « a Member of Parliament », que tout le monde abrège en « MP »."
+      },
+      "examples": [
+        { "register": "bristol", "en": "The council tax band decides more than the postcode does.", "fr": "La tranche de taxe d’habitation décide plus que le code postal." },
+        { "register": "work", "en": "The manifesto promised it and the budget did not fund it.", "fr": "Le programme le promettait et le budget ne l’a pas financé." }
+      ],
+      "seeAlso": ["w056", "w058"]
+    },
+    "w058": {
+      "image": "Le climat britannique ne se réchauffe pas, il se mouille. Le vocabulaire du sujet est donc celui de l’eau autant que celui de la chaleur.",
+      "rule": "`a carbon footprint` = une empreinte carbone · `renewable energy` = les renouvelables · `a flood` et `a drought` = les deux extrêmes, et le pays connaît les deux.",
+      "scene": {
+        "where": "Une réunion publique sur les rives, un mardi soir",
+        "text": "The water reached the second row of houses in 2020 and the maps say it will do it again sooner than anyone budgeted for. Two months without rain last summer and the hosepipes were banned. On a windy day more than a third of the electricity comes off the sea, which nobody would have believed twenty years ago.",
+        "gloss": [
+          { "en": "a flood", "fr": "une inondation" },
+          { "en": "a drought", "fr": "une sécheresse" },
+          { "en": "renewable energy", "fr": "les énergies renouvelables" },
+          { "en": "global warming", "fr": "le réchauffement climatique" }
+        ]
+      },
+      "trap": {
+        "wrong": "I try to reduce my ecologic footprint.",
+        "right": "I try to reduce my carbon footprint.",
+        "why": "L’expression figée en anglais est « carbon footprint ». « Ecological footprint » existe en science et ne se dit pas dans une conversation."
+      },
+      "examples": [
+        { "register": "bristol", "en": "The recycling is collected weekly and the rest fortnightly.", "fr": "Le tri est ramassé chaque semaine et le reste tous les quinze jours." },
+        { "register": "work", "en": "There is an insulation grant that pays for most of it.", "fr": "Il y a une aide à l’isolation qui en paie la plus grande partie." }
+      ],
+      "seeAlso": ["w007", "w057"]
+    },
+    "w059": {
+      "image": "Le pays s’arrête deux minutes le 11 novembre, et ce silence explique une bonne part du vocabulaire de ce chapitre.",
+      "rule": "`aid` ne se compte pas — jamais « an aid », jamais « aids ». C’est l’un des indénombrables les plus fréquents à l’écrit journalistique.",
+      "scene": {
+        "where": "Le journal de vingt-deux heures, un dimanche de novembre",
+        "text": "The truce lasted nine days and then fighting started again the week the talks ended. Convoys reached the border and stopped there. The first figures for the wounded were wrong in both directions, as they always are. At home, every town has an old soldier on the memorial committee, and on the eleventh the whole country stands still for two minutes.",
+        "gloss": [
+          { "en": "a ceasefire", "fr": "un cessez-le-feu" },
+          { "en": "a peace talk", "fr": "une négociation de paix" },
+          { "en": "a casualty", "fr": "une victime, un blessé" },
+          { "en": "a veteran", "fr": "un ancien combattant" }
+        ]
+      },
+      "trap": {
+        "wrong": "They sent several aids to the region.",
+        "right": "They sent aid to the region.",
+        "why": "« Aid » au sens humanitaire est indénombrable. Au pluriel, « aids » désigne des auxiliaires — un appareil auditif est « a hearing aid »."
+      },
+      "examples": [
+        { "register": "bristol", "en": "The city took in more than a thousand refugees in a year.", "fr": "La ville a accueilli plus de mille réfugiés en un an." },
+        { "register": "work", "en": "On Remembrance Day the whole floor stops for two minutes.", "fr": "Le jour du Souvenir, tout l’étage s’arrête deux minutes." }
+      ],
+      "seeAlso": ["w086", "w057"]
+    }
+  }
+}

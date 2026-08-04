@@ -1,0 +1,115 @@
+{
+  "lessons": {
+    "w070": {
+      "image": "Un préfixe est une négociation devant le mot : il le nie, le refait, ou le déplace de travers.",
+      "rule": "`un-` / `in-` / `ir-` / `im-` nient · `re-` refait · `mis-` fait de travers · `over-` en fait trop, `under-` pas assez.",
+      "scene": {
+        "where": "Relire un compte rendu avant de l’envoyer",
+        "text": "The chart was not false and it pointed the wrong way, which is worse. Half the objections had nothing to do with the subject and took most of the hour. We had guessed too high on the numbers who would come and ate the leftovers for a week; we had guessed too low on how long the last tenth would take, which is the mistake everyone makes twice. That leaves a fortnight to think the whole thing through again.",
+        "gloss": [
+          { "en": "misleading", "fr": "trompeur" },
+          { "en": "irrelevant", "fr": "hors sujet" },
+          { "en": "to overestimate", "fr": "surestimer" },
+          { "en": "to rethink", "fr": "repenser" }
+        ]
+      },
+      "contrast": {
+        "left": "unlikely",
+        "right": "dislike",
+        "note": "`un-` nie l’adjectif, `dis-` renverse le verbe. On dit « unlikely », jamais « dislikely » ; « dislike », jamais « unlike » au sens de ne pas aimer."
+      },
+      "trap": {
+        "wrong": "That figure is unrelevant to the question.",
+        "right": "That figure is irrelevant to the question.",
+        "why": "Le préfixe négatif s’assimile à la consonne qui suit : ir- devant r, im- devant m ou p, il- devant l. « Unrelevant » n’existe pas."
+      },
+      "examples": [
+        { "register": "bristol", "en": "It is unlikely to be ready before Easter.", "fr": "Ce sera sans doute pas prêt avant Pâques." },
+        { "register": "work", "en": "Never underestimate how long the last ten per cent takes.", "fr": "Ne sous-estime jamais le temps que prennent les dix derniers pour cent." }
+      ],
+      "seeAlso": ["w071", "w072"]
+    },
+    "w071": {
+      "image": "Un suffixe transforme un mot sans le remplacer. C’est le levier le plus rentable du vocabulaire : un mot connu en donne trois.",
+      "rule": "`-ness` fait une qualité à partir d’un adjectif · `-ment` une action à partir d’un verbe · `-ship` un état · `-er` celui qui agit, `-ee` celui qui subit.",
+      "scene": {
+        "where": "Un contrat de travail, deux colonnes",
+        "text": "One side of the page is the person who pays and the other the person who is paid, and the two words differ by two letters. Belonging to the club costs forty pounds and includes a newsletter nobody reads. There is one person for the whole floor who assists everyone, and she runs it. Small acts of the quality that has no verb are what makes a street liveable.",
+        "gloss": [
+          { "en": "an employer", "fr": "un employeur" },
+          { "en": "an employee", "fr": "un salarié" },
+          { "en": "membership", "fr": "l’adhésion" },
+          { "en": "kindness", "fr": "la gentillesse" }
+        ]
+      },
+      "contrast": {
+        "left": "an employer",
+        "right": "an employee",
+        "note": "`-er` désigne celui qui fait l’action, `-ee` celui qui la reçoit. La règle vaut au-delà : trainer / trainee, interviewer / interviewee, payer / payee."
+      },
+      "trap": {
+        "wrong": "The improvment was small but real.",
+        "right": "The improvement was small but real.",
+        "why": "Le e du verbe reste devant -ment : improve → improvement, arrange → arrangement. C’est l’inverse de -ing, où il tombe."
+      },
+      "examples": [
+        { "register": "bristol", "en": "Friendship here is made by turning up regularly, not by trying.", "fr": "L’amitié se fait ici en revenant régulièrement, pas en essayant." },
+        { "register": "work", "en": "We came to an arrangement that suits nobody perfectly.", "fr": "On est arrivés à un arrangement qui ne convient parfaitement à personne." }
+      ],
+      "seeAlso": ["w070", "w072"]
+    },
+    "w072": {
+      "image": "Trois suffixes d’adjectif, trois jugements : ce qu’on peut faire, ce qui manque, et ce qu’on reproche.",
+      "rule": "`-able` = qu’on peut faire · `-less` = sans · `-ful` = plein de · `-ish` = un peu, et souvent en mauvaise part.",
+      "scene": {
+        "where": "Chercher un logement, puis rendre un dossier",
+        "text": "Nothing within a mile is within reach on one salary, and the word for that is the one built on afford. I am without hope at names and always have been. Splitting the work in three is what turned it from impossible into something you could hold. Refusing to reply is the childlike thing with the reproachful ending, and everyone in the room can see it.",
+        "gloss": [
+          { "en": "affordable", "fr": "abordable" },
+          { "en": "hopeless", "fr": "nul, sans espoir" },
+          { "en": "manageable", "fr": "gérable" },
+          { "en": "childish", "fr": "puéril" }
+        ]
+      },
+      "contrast": {
+        "left": "childish",
+        "right": "childlike",
+        "note": "Deux suffixes sur le même mot, deux jugements opposés. « Childish » est un reproche ; « childlike » est un compliment — l’émerveillement, pas le caprice."
+      },
+      "trap": {
+        "wrong": "The flat was not affordable, it was very expensive.",
+        "right": "The flat was not affordable — it was well beyond us.",
+        "why": "« Affordable » ne veut pas dire bon marché : il dit qu’on a les moyens. Un objet cher peut être « affordable » pour quelqu’un, et un objet modeste ne pas l’être."
+      },
+      "examples": [
+        { "register": "bristol", "en": "The meeting was endless and decided nothing at all.", "fr": "La réunion était interminable et n’a rien décidé du tout." },
+        { "register": "work", "en": "It was a thoughtful thing to do and she never mentioned it.", "fr": "C’était une attention délicate et elle n’en a jamais parlé." }
+      ],
+      "seeAlso": ["w071", "w089"]
+    },
+    "w073": {
+      "image": "Un nom composé anglais s’assemble sans trait d’union et sans préposition : deux noms collés, le second est le vrai.",
+      "rule": "Le dernier mot dit ce que c’est, le premier dit lequel. `a car park` est un parc, `a park car` n’existe pas. Le français inverse et ajoute « à » ou « de ».",
+      "scene": {
+        "where": "Une journée ordinaire, en quatre objets",
+        "text": "The place where you leave the vehicle charges by the hour and never has a space. The person who checks the tickets comes at nine and again at two. The thing that cleans clothes lives in the kitchen, as it does in every house in this country, and the one that cleans plates has never once been loaded correctly. Two hours of that spreadsheet gave me the thing that is an ache in the head.",
+        "gloss": [
+          { "en": "a car park", "fr": "un parking" },
+          { "en": "a traffic warden", "fr": "un agent de stationnement" },
+          { "en": "a washing machine", "fr": "une machine à laver" },
+          { "en": "a headache", "fr": "un mal de tête" }
+        ]
+      },
+      "trap": {
+        "wrong": "I left the car in a parking near the station.",
+        "right": "I left the car in a car park near the station.",
+        "why": "« Parking » tout seul n’est pas un nom en anglais : c’est un faux anglicisme français, comme « pressing » et « camping »."
+      },
+      "examples": [
+        { "register": "bristol", "en": "A haircut here costs what a meal costs at home.", "fr": "Une coupe de cheveux ici coûte le prix d’un repas chez nous." },
+        { "register": "work", "en": "Friday is a takeaway and nobody argues about it.", "fr": "Le vendredi c’est plat à emporter, et personne ne discute." }
+      ],
+      "seeAlso": ["w074", "w018"]
+    }
+  }
+}

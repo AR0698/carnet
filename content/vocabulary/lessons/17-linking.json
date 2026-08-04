@@ -1,0 +1,86 @@
+{
+  "lessons": {
+    "w092": {
+      "image": "Enchaîner deux moments demande un mot, et l’anglais en a un par relation : dès que, le temps que, en attendant, à partir de là.",
+      "rule": "Après `as soon as` et `by the time`, l’anglais met le **présent** pour parler du futur : « ring me as soon as you know », jamais « as soon as you will know ».",
+      "scene": {
+        "where": "Organiser une arrivée à distance",
+        "text": "Ring me the moment you know either way, and note that the verb after that phrase is not in the future. We arrived and the good seats had already gone. Until April nothing is decided, so carry on as though nothing had changed. From that afternoon onwards she checked everything twice, and there is a three-word phrase for exactly that turning point.",
+        "gloss": [
+          { "en": "as soon as", "fr": "dès que" },
+          { "en": "by the time", "fr": "le temps que" },
+          { "en": "in the meantime", "fr": "en attendant" },
+          { "en": "from then on", "fr": "à partir de là" }
+        ]
+      },
+      "trap": {
+        "wrong": "I will call you as soon as I will arrive.",
+        "right": "I will call you as soon as I arrive.",
+        "why": "Après les conjonctions de temps, l’anglais interdit le futur et emploie le présent. Le français le met, et le calque est immédiat et audible."
+      },
+      "examples": [
+        { "register": "bristol", "en": "We can talk about it afterwards, not in front of them.", "fr": "On en parlera après, pas devant eux." },
+        { "register": "work", "en": "No sooner had we sat down than the fire alarm went off.", "fr": "À peine assis, l’alarme incendie s’est déclenchée." }
+      ],
+      "seeAlso": ["w060", "w094"]
+    },
+    "w093": {
+      "image": "Opposer en anglais se fait à trois endroits : au milieu de la phrase, en tête de la suivante, ou après un point-virgule. Le mot change avec la place.",
+      "rule": "`whereas` relie deux propositions · `however` ouvre une phrase · `even so` concède avant de maintenir. Ils ne sont pas interchangeables.",
+      "scene": {
+        "where": "Un compte rendu qu’il faut rendre lisible",
+        "text": "It is too late, and there is a second argument that arrives with an s at the end of the word for beside. She runs the team and also half the client relationship. On top of everything the licence expires in June. The first version was slow while the second is simply wrong, and the conjunction that joins those two clauses is not the one that starts a sentence.",
+        "gloss": [
+          { "en": "besides", "fr": "d’ailleurs, en plus" },
+          { "en": "as well as", "fr": "ainsi que" },
+          { "en": "on top of that", "fr": "en plus de ça" },
+          { "en": "whereas", "fr": "tandis que" }
+        ]
+      },
+      "contrast": {
+        "left": "beside",
+        "right": "besides",
+        "note": "Une seule lettre. « Beside » est spatial : à côté de. « Besides » est argumentatif : en plus, d’ailleurs. La faute passe inaperçue à l’écrit et pas à la lecture."
+      },
+      "trap": {
+        "wrong": "Despite of the rain, we went out.",
+        "right": "Despite the rain, we went out.",
+        "why": "« Despite » se passe de « of » ; c’est « in spite of » qui le prend. Les deux formes se mélangent en une troisième qui n’existe pas."
+      },
+      "examples": [
+        { "register": "bristol", "en": "It rained all week. Even so, we went out every day.", "fr": "Il a plu toute la semaine. Malgré tout, on est sortis chaque jour." },
+        { "register": "work", "en": "It works. However, nobody can explain why.", "fr": "Ça marche. Cependant, personne ne sait expliquer pourquoi." }
+      ],
+      "seeAlso": ["w094", "w075"]
+    },
+    "w094": {
+      "image": "Quatre relations, quatre familles de mots : pourquoi c’est arrivé, pour quoi faire, ce qui s’ensuit, et à quelle condition.",
+      "rule": "`due to` / `owing to` = la cause · `so that` / `in order to` = le but · `as a result` / `therefore` = la conséquence · `unless` / `as long as` = la condition.",
+      "scene": {
+        "where": "Expliquer un retard par écrit, sans accuser personne",
+        "text": "The hold-up was caused by something nobody would name, and the two-word phrase for that begins with a word meaning owed. The weather moved the whole thing indoors. Write it down in order that the next person does not start again. Two people left and the deadline moved. The data is incomplete and the conclusion therefore is too.",
+        "gloss": [
+          { "en": "due to", "fr": "en raison de" },
+          { "en": "owing to", "fr": "à cause de" },
+          { "en": "so that", "fr": "pour que" },
+          { "en": "as a result", "fr": "par conséquent" }
+        ]
+      },
+      "contrast": {
+        "left": "so that we finish early",
+        "right": "in order to finish early",
+        "note": "« So that » introduit une proposition avec sujet et verbe conjugué ; « in order to » un infinitif. Le sens est identique, la charpente non."
+      },
+      "trap": {
+        "wrong": "Nothing happens except if somebody asks twice.",
+        "right": "Nothing happens unless somebody asks twice.",
+        "why": "« Unless » contient déjà « if not » : il remplace toute la tournure. « Except if » se comprend, sonne laborieux, et trahit le calque à chaque fois."
+      },
+      "examples": [
+        { "register": "bristol", "en": "It is fine as long as you tell them before Friday.", "fr": "C’est bon tant que tu les préviens avant vendredi." },
+        { "register": "work", "en": "We split it in two in order to get half of it signed off.", "fr": "On l’a coupé en deux afin d’en faire valider la moitié." }
+      ],
+      "seeAlso": ["w092", "w093"]
+    }
+  }
+}

@@ -18,7 +18,7 @@ un domaine = un **pack de contenu**, ajouté sans toucher au code.
 | Carnet | Ce qu'on y travaille | D'où vient le contenu |
 | --- | --- | --- |
 | **Grammaire** | les 145 unités du livre, deux items d'exercices chacune | `public/packs/english-grammar.json` |
-| **Vocabulaire** | onze registres : le bureau anglais, la tech et l'IA, la scène, la ville, le pub | `public/packs/vocabulary.json` |
+| **Vocabulaire** | 111 unités : les 100 chapitres d'*English Vocabulary in Use*, plus onze registres écrits pour ce voyage-ci | `public/packs/vocabulary.json` |
 | **Culture** | Bristol racontée en anglais, et les mots qu'on y attrape | `public/packs/bristol-culture.json` |
 | **Discovery** | le vocabulaire saisi à la main | IndexedDB, écrit par l'apprenante |
 
@@ -26,9 +26,9 @@ Chacun a sa propre file d'échéances, son propre quota de nouveautés et sa pro
 progression. Rien ne se mélange entre carnets : réviser la grammaire ne fait pas
 avancer le vocabulaire.
 
-Un seul carnet pour les onze thèmes, et non un carnet par thème : chacun aurait
-son propre quota de dix nouveautés par jour, si bien que onze carnets
-autoriseraient cent dix nouvelles cartes quotidiennes — et le plafond de charge,
+Un seul carnet pour les cent onze thèmes, et non un carnet par thème : chacun
+aurait son propre quota de dix nouveautés par jour, si bien que dix carnets
+autoriseraient cent nouvelles cartes quotidiennes — et le plafond de charge,
 la meilleure idée de l'application, s'effondrerait. Les thèmes sont donc des
 **notions** à l'intérieur d'un même carnet, et l'on dit « celui-ci d'abord » par
 l'écran *Par où commencer*, pas en ouvrant un carnet de plus. Bénéfice
@@ -134,6 +134,65 @@ Le carnet personnel est donc synchronisé avec `{ prune: false }` et fait son
 ménage **mot par mot**, au moment où on le modifie : effacer la phrase d'exemple
 retire le texte à trou et lui seul ; supprimer un mot retire ses cartes et les
 réponses qui s'y rapportaient. Aucun balayage global, jamais.
+
+## Vocabulaire — cent unités, et trois façons de découvrir un mot
+
+Les cent chapitres d'*English Vocabulary in Use*, en dix-huit sections, huit
+cents mots. Chacun porte son sens, une phrase où quelqu'un le dirait vraiment,
+et les fautes qu'un francophone va commettre dessus. S'y ajoutent les onze
+registres écrits pour ce voyage-ci — le bureau, la tech, la scène, le pub — qui
+ouvrent en premier parce qu'ils sont les plus urgents.
+
+**Produire un mot depuis le français ne suffit pas à le connaître.** Traduire dit
+ce qu'un mot veut dire ; ça ne dit ni où il s'arrête, ni à quoi il ressemble, ni
+avec qui il vit. D'où trois types d'exercice de plus :
+
+| Type | Ce qu'il demande | Pourquoi il existe |
+| --- | --- | --- |
+| `match` | relier quatre ou cinq mots à leur sens | Le premier contact, et le seul exercice conçu pour être **facile** : une carte neuve qui ne peut qu'échouer n'apprend rien. On y décide, donc on s'y engage — et les mots d'une même famille se voient ensemble. |
+| `picture` | nommer un dessin | Le seul exercice qui ne passe pas par le français. Un mot appris par sa traduction s'atteint en deux temps, et le maillon du milieu lâche exactement quand on parle. |
+| `odd_one_out` | écarter l'intrus d'une famille | `a stew`, `a casserole` et `a roast` sont des façons de cuire, `a kettle` non. C'est en l'écartant qu'on découvre la frontière du groupe. |
+
+L'appariement arrive **avant** les mots de son unité et l'intrus **après** : cela
+tient à l'identifiant de leurs items (`<unité>-0-match`, `<unité>-1-<mot>`,
+`<unité>-2-odd`), puisque `newCards()` ouvre le neuf par ordre d'item. La
+découverte d'abord, la production ensuite, la frontière à la fin — et le moteur
+n'a pas eu à connaître l'existence de ces types.
+
+**Les dessins sont vectoriels et originaux** (`src/ui/vocabArt.ts`), dans le
+registre de l'aquarelle comme le reste. Quatre-vingts d'entre eux, quelques
+centaines d'octets chacun, nets à toutes les tailles et disponibles en mode
+avion. Ils ne sont pas jolis, ils sont **reconnaissables** — trois traits et le
+mot arrive ; le cordon, le bouton et le reflet donneraient une plus belle
+bouilloire et un moins bon exercice.
+
+### Le compilateur de vocabulaire
+
+Un exercice de grammaire est un cas d'espèce : la phrase à transformer et
+l'explication qui va avec ne se déduisent de rien. Un mot, lui, est régulier — le
+mot, son sens, une phrase où il vit — et les exercices qu'on en tire sont
+toujours les mêmes. Les écrire à la main huit cents fois produirait le même pack
+avec quarante fois plus d'endroits où se tromper.
+
+Le vocabulaire s'écrit donc **un mot par ligne** dans `content/vocabulary/words/`,
+et `scripts/vocab-words.mjs` en tire les exercices :
+
+```json
+{ "en": "a kettle", "fr": "une bouilloire",
+  "eg": "Stick the {kettle} on, I'm parched.", "art": "kettle" }
+```
+
+Les accolades marquent le trou : c'est la forme fléchie du mot dans *cette*
+phrase-là, qui n'est presque jamais celle du dictionnaire. Trois choses sont
+fabriquées plutôt qu'écrites, parce que les écrire n'apporterait rien : les
+distracteurs du filet de secours, pris chez les mots voisins de l'unité ;
+l'appariement de découverte ; et l'indice du dessin — première lettre et nombre
+de lettres, jamais le sens français, qui rendrait au mot le détour que le dessin
+sert à lui éviter.
+
+Cinq garde-fous s'ajoutent à l'assemblage : un mot enseigné par deux unités, un
+dessin partagé par deux mots, une phrase d'exemple recyclée, un intrus qui
+appartient à sa propre famille, un `art` qui ne mène à aucun dessin.
 
 ## Welcome to the workplace — l'anglais du bureau
 
@@ -290,6 +349,29 @@ droite, dans les 145 fiches — un axe qui se réorganise d'une unité à l'autr
 obligerait à le relire avant de lire la règle. Ce n'est pas une décoration : ce
 qui est vu en même temps que lu se retrouve par deux chemins au lieu d'un.
 
+**Les 111 fiches du vocabulaire ont deux blocs de plus**, et ce sont eux qui
+répondent à « pourquoi ce mot-là, à ce moment-là » :
+
+- **la scène** — cinq ou six mots de l'unité tenus dans le même paragraphe
+  anglais, avec leur glossaire *sous* le texte et jamais entre parenthèses
+  dedans : un sens posé à côté du mot se lit à sa place, et la phrase anglaise
+  n'est alors jamais lue. Un mot appris seul se range dans une case vide ; on
+  sait le traduire et on ne sait pas quand le dire ;
+- **l'échelle** — ce que la frise du temps est à la grammaire. Beaucoup de mots
+  ne se distinguent pas par leur sens mais par leur degré : `drizzle`,
+  `a shower`, `a downpour` disent tous la pluie. Alignés sur un axe gradué, ils
+  se rangent d'un coup d'œil ; définis un par un, ils restent trois synonymes.
+
+L'assemblage refuse une scène qui reprend telle quelle la phrase d'un exercice
+de sa propre unité — le texte à trou s'ouvrirait déjà rempli. Deux contextes
+différents pour le même mot valent mieux qu'un seul répété : la contrainte
+améliore le contenu au lieu de le brider.
+
+**Le cours se choisit depuis son carnet.** Chaque carte d'accueil porte son lien
+et son compte de fiches ; l'écran du cours a ses onglets. Le lien reste sur la
+dernière ligne de la carte, à côté de *Par où commencer*, et jamais parmi les
+boutons de durée — pour la raison énoncée plus bas, qui n'a pas changé.
+
 **Le cours s'ouvre depuis une faute.** Après une réponse fausse — et seulement
 après, jamais avant — un lien « Comprendre cette règle » ouvre la fiche
 par-dessus la session. La file de révision reste derrière, intacte. C'est le
@@ -307,11 +389,11 @@ session fait peur. Le raisonnement complet, et l'audit du reste de
 l'application, sont dans [`docs/audit-apprentissage.md`](docs/audit-apprentissage.md).
 
 Les fiches vivent dans `content/<pack>/lessons/`, un fichier par groupe, et sont
-raccrochées à leur notion au moment de l'assemblage. **Les 145 sont écrites** —
-le lien mène donc quelque part sur toutes les unités de grammaire. Le champ
-reste facultatif pour autant : une unité peut avoir ses exercices sans avoir sa
-fiche, et l'accès n'apparaît que là où il y a quelque chose à lire. C'est ce qui
-permettra d'en ajouter aux autres carnets sans rien changer au code.
+raccrochées à leur notion au moment de l'assemblage. **Les 145 de grammaire et
+les 111 de vocabulaire sont écrites.** Le champ reste facultatif pour autant :
+une unité peut avoir ses exercices sans avoir sa fiche, et l'accès n'apparaît que
+là où il y a quelque chose à lire — c'est ce qui permettra d'en ajouter à Culture
+sans rien changer au code.
 
 L'assemblage refuse une fiche qui renvoie à une unité inexistante, qui n'a pas
 ses deux registres, ou dont un exemple reprend mot pour mot la réponse attendue
@@ -462,15 +544,20 @@ src/
     tokens.css          design tokens — seule source des couleurs et des rythmes
     fonts.css           faces auto-hébergées, sous-ensemble latin
     art.ts              illustrations vectorielles
+    vocabArt.ts         les quatre-vingts dessins du vocabulaire
     lesson.ts           la fiche de cours : frise du temps, rendu, fenêtre modale
     app.css             styles
     speech.ts           lecture à voix haute (speechSynthesis)
     screens/            accueil, révision, bilan, vocabulaire, diagnostic,
                         ordre de découverte, sauvegarde, cours
 content/<pack>/
-  units/                exercices, un fichier par groupe thématique
+  units/                exercices écrits à la main, un fichier par groupe
+  words/                vocabulaire, un mot par ligne — compilé en exercices
   lessons/              fiches de cours, un fichier par groupe thématique
 public/packs/           packs assemblés, servis en statique
+scripts/
+  build-pack.mjs        assemblage et validations
+  vocab-words.mjs       le compilateur de vocabulaire
 ```
 
 ## Trois idées à connaître avant de toucher au code
@@ -523,8 +610,8 @@ Rien d'autre ne bouge : ni le moteur, ni la session, ni l'interface.
 
 ## Ce que les tests garantissent
 
-`npm test` — 49 cas, moins d'une seconde. Ils ne cherchent pas la couverture :
-ils tiennent les quatre endroits où une erreur détruit des données sans rien
+`npm test` — 59 cas, moins d'une seconde. Ils ne cherchent pas la couverture :
+ils tiennent les cinq endroits où une erreur détruit des données sans rien
 signaler.
 
 **L'élagage sélectif.** Qu'un pack personnel vide n'emporte aucune carte, et
@@ -543,9 +630,17 @@ sans jamais lever d'erreur.
 une, qu'une session non mélangée ne l'ouvre pas, qu'un échec la rouvre sans
 redemander l'entrelacement déjà acquis.
 
+**Le contenu plus récent que le code.** Qu'un pack contenant un type d'exercice
+inconnu se charge quand même, que cet exercice ne reçoive pas de carte, et
+surtout que **l'index de ses voisins ne bouge pas** — filtrer le tableau au lieu
+de sauter l'exercice donnerait la carte `v:i1:1` à une question que la version
+suivante numérotera `v:i1:2`, et l'historique de révision de l'une se
+retrouverait collé à l'autre.
+
 Ces tests ont été vérifiés par mutation : casser l'option `prune` fait tomber
 exactement les deux cas qui la protègent, retirer le réveil des dates en fait
-tomber trois. Un test qui ne peut pas échouer ne garantit rien.
+tomber trois, et retirer le contrôle de type en fait tomber trois autres. Un test
+qui ne peut pas échouer ne garantit rien.
 
 `npm run build` les exécute : une garantie cassée ne peut pas partir en ligne.
 
@@ -556,13 +651,42 @@ Deux stratégies de cache, volontairement distinctes :
 - **coquille de l'application** (HTML, JS, CSS, polices, icônes) : précachée,
   servie cache-first. C'est ce qui permet d'ouvrir l'application en mode avion.
   334 Ko, dont 112 Ko de polices.
-- **packs de contenu** (`/packs/*.json`) : stale-while-revalidate, dans un cache
-  séparé (`carnet-packs`). Corriger une phrase d'exercice n'invalide donc pas
-  tout le cache de l'application, et inversement.
+- **packs de contenu** (`/packs/*.json`) : network-first avec trois secondes de
+  patience, dans un cache séparé (`carnet-packs`). Corriger une phrase
+  d'exercice n'invalide donc pas tout le cache de l'application, et inversement.
 
 Une nouvelle version ne s'installe **jamais** d'elle-même : le worker attend, et
 l'accueil propose un bouton « Redémarrer ». Une session de révision ne peut pas
 être interrompue par un rechargement surprise.
+
+### Ce qui a coûté deux jours de contenu invisible
+
+Les packs étaient en stale-while-revalidate — la copie en cache part tout de
+suite, la nouvelle est téléchargée *pour la fois d'après*. Bon compromis pour une
+image, mauvais pour du contenu enseigné : cent unités publiées un lundi
+n'apparaissaient qu'au deuxième lancement. Et il n'y avait pas de deuxième
+lancement, parce qu'**une PWA installée sur iOS n'est pas relancée quand on y
+revient** : le processus est gardé en vie et `boot()` ne rejoue pas. Trois
+corrections, qui tiennent ensemble :
+
+- les packs passent en **network-first** : en ligne on voit le contenu du jour,
+  hors ligne on retombe sur le cache sans attendre. Un pack inchangé revient en
+  304 sans corps, donc le coût réel est un aller-retour, pas 900 Ko ;
+- ils sont **relus au retour au premier plan** (`refreshStaticCarnets`), depuis
+  l'accueil seulement, et l'écran n'est redessiné que si quelque chose a bougé —
+  recharger un pack au milieu d'une session déplacerait les cartes sous les
+  doigts. La comparaison porte sur version + nombre de notions + nombre d'items,
+  parce qu'on oublie d'incrémenter la version, et que le jour où on l'oublie est
+  celui où l'on a ajouté cent unités ;
+- **un type d'exercice inconnu ne fait plus refuser le carnet.** C'est le point
+  le plus important, et il est structurel : les packs se relisent à chaque
+  lancement, le code attend « Redémarrer », il existe donc toujours une fenêtre
+  où du contenu neuf rencontre du code ancien, et elle s'ouvre à chaque type
+  ajouté. `validatePack` y voyait une corruption et refusait cent onze unités
+  pour trois exercices. Un type inconnu est désormais simplement privé de carte
+  (`isScheduled`) : sans carte, une session ne peut pas le tirer. La barrière
+  d'incompatibilité redevient `meta.schemaVersion`, qui dit que la *structure* a
+  changé — pas le catalogue des types.
 
 Le stockage persistant (`navigator.storage.persist()`) est demandé après une
 session terminée, pas au chargement — et au plus une fois par jour tant qu'il
@@ -633,7 +757,10 @@ le signale et la progression reste intacte.
 | 12. Ordre de découverte choisi par groupe | fait |
 | 13. Module Workplace — 7 registres, 56 expressions | fait |
 | 14. Compte à rebours — jours restants, cartes restantes, rythme exigé | fait |
-| 15. Série hebdomadaire | à faire |
+| 15. Vocabulaire complet — 100 unités, 800 mots, 2 925 exercices | fait |
+| 16. Trois types d'exercice : appariement, dessin, intrus | fait |
+| 17. Cours du vocabulaire — 111 fiches, scène et échelle | fait |
+| 18. Série hebdomadaire | à faire |
 
 Un point reste ouvert côté image : l'aquarelle de couverture, signée Zayane,
 n'est pas embarquée — les illustrations sont des dessins vectoriels originaux

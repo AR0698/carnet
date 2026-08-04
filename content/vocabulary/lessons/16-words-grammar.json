@@ -1,0 +1,322 @@
+{
+  "lessons": {
+    "w086": {
+      "image": "Certains mots anglais désignent une matière et non des objets. On ne peut ni les compter, ni les mettre au pluriel, ni leur donner « a ».",
+      "rule": "`advice`, `information`, `furniture`, `luggage`, `equipment`, `progress` : jamais de s, jamais d’article indéfini. Pour en compter, il faut « a piece of ».",
+      "scene": {
+        "where": "Un déménagement, et le mail qui l’a précédé",
+        "text": "The best thing anyone told me before moving fits in one sentence, and the word for it takes no s. The flat came with things to sit on that nobody would have chosen. There is not enough on that page to decide anything. Everything we own fitted in one boot, just about. And there has been real movement forward, just not where anyone was looking.",
+        "gloss": [
+          {
+            "en": "advice",
+            "fr": "des conseils"
+          },
+          {
+            "en": "furniture",
+            "fr": "des meubles"
+          },
+          {
+            "en": "information",
+            "fr": "des informations"
+          },
+          {
+            "en": "progress",
+            "fr": "des progrès"
+          }
+        ]
+      },
+      "contrast": {
+        "left": "advice",
+        "right": "a piece of advice",
+        "note": "L’un est la matière, l’autre l’unité. « A piece of » est le tour universel : it works for advice, information, furniture, news et equipment."
+      },
+      "trap": {
+        "wrong": "She gave me two very good advices.",
+        "right": "She gave me two very good pieces of advice.",
+        "why": "Le pluriel de ces mots n’existe pas. Le français les compte tous — conseils, informations, meubles, bagages — d’où une faute par phrase tant qu’on n’a pas la liste."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "Accommodation is the biggest line in anyone’s budget here.",
+          "fr": "Le logement est le plus gros poste du budget de n’importe qui ici."
+        },
+        {
+          "register": "work",
+          "en": "The equipment arrived a fortnight after the people did.",
+          "fr": "Le matériel est arrivé quinze jours après les gens."
+        }
+      ],
+      "seeAlso": [
+        "w064",
+        "w059"
+      ]
+    },
+    "w087": {
+      "image": "Chaque verbe anglais impose la forme du verbe qui le suit. Ce n’est pas une règle : c’est une liste, et elle s’apprend par l’usage.",
+      "rule": "`manage`, `refuse`, `offer`, `promise` → **to + infinitif**. `avoid`, `suggest`, `bother` → **-ing**. Aucun raisonnement ne les départage.",
+      "scene": {
+        "where": "Une semaine de projet, six phrases",
+        "text": "We contrived to finish before the deadline moved again, and that verb takes the infinitive. He declined to put it in writing, which told us everything. Somebody proposed shifting it to a Tuesday, and that verb takes the other form. You cannot dodge having that conversation for ever. And there is no cost to asking rather than assuming.",
+        "gloss": [
+          {
+            "en": "to manage to do something",
+            "fr": "parvenir à faire"
+          },
+          {
+            "en": "to refuse to do something",
+            "fr": "refuser de faire"
+          },
+          {
+            "en": "to suggest doing something",
+            "fr": "proposer de faire"
+          },
+          {
+            "en": "to avoid doing something",
+            "fr": "éviter de faire"
+          }
+        ]
+      },
+      "trap": {
+        "wrong": "I suggest to move the meeting to Tuesday.",
+        "right": "I suggest moving the meeting to Tuesday.",
+        "why": "« Suggest » n’accepte jamais l’infinitif. Deux constructions seulement : « suggest doing » ou « suggest that we do ». C’est la faute la plus fréquente en réunion."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "She offered to take the early train so we did not have to.",
+          "fr": "Elle a proposé de prendre le train tôt pour nous éviter ça."
+        },
+        {
+          "register": "work",
+          "en": "Remind me to send that before I leave.",
+          "fr": "Rappelle-moi d’envoyer ça avant que je parte."
+        }
+      ],
+      "seeAlso": [
+        "w088",
+        "w083"
+      ]
+    },
+    "w088": {
+      "image": "Après `let` et `make`, le verbe reste nu — sans `to`. Après `allow` et `expect`, il le prend. Deux camps, et rien pour les distinguer que l’habitude.",
+      "rule": "`let somebody do` et `make somebody do` : infinitif sans `to`. `allow somebody to do`, `expect somebody to do` : avec. Le sens est proche, la construction non.",
+      "scene": {
+        "where": "Un premier mois dans une équipe",
+        "text": "Allow me to take this part, you have done enough — and after that first verb there is no to. You cannot force people to care by putting it in a slide, and after that verb there is no to either. They permit you to change the date once and once only, and there the to comes back. Nobody anticipates that you will know all of it in the first month.",
+        "gloss": [
+          {
+            "en": "to let somebody do something",
+            "fr": "laisser quelqu’un faire"
+          },
+          {
+            "en": "to make somebody do something",
+            "fr": "faire faire à quelqu’un"
+          },
+          {
+            "en": "to allow somebody to do something",
+            "fr": "autoriser quelqu’un à faire"
+          },
+          {
+            "en": "to expect somebody to do something",
+            "fr": "s’attendre à ce que quelqu’un fasse"
+          }
+        ]
+      },
+      "contrast": {
+        "left": "They let me leave early.",
+        "right": "They allowed me to leave early.",
+        "note": "Même autorisation, deux constructions. « Let » est courant et sans `to` ; « allow » est plus formel et l’exige. Les mélanger s’entend tout de suite."
+      },
+      "trap": {
+        "wrong": "He let me to finish the sentence.",
+        "right": "He let me finish the sentence.",
+        "why": "« Let », « make », « see », « hear » et « help » se passent de `to`. Le français « laisser à » et « faire faire » poussent au calque, et le calque ajoute toujours le mot en trop."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "I spend more time looking for files than reading them.",
+          "fr": "Je passe plus de temps à chercher des fichiers qu’à les lire."
+        },
+        {
+          "register": "work",
+          "en": "Do not bother printing it, nobody reads the paper copy.",
+          "fr": "Ne t’embête pas à l’imprimer, personne ne lit la version papier."
+        }
+      ],
+      "seeAlso": [
+        "w087"
+      ]
+    },
+    "w089": {
+      "image": "Certains adjectifs sont déjà au maximum. On ne les renforce pas avec `very` : on les renforce avec `absolutely`, ou on ne les renforce pas.",
+      "rule": "`exhausted`, `freezing`, `enormous`, `tiny`, `awful`, `brilliant` sont extrêmes. `very exhausted` sonne faux ; `absolutely exhausted` sonne juste.",
+      "scale": {
+        "label": "Du normal à l’extrême",
+        "steps": [
+          {
+            "en": "tired",
+            "fr": "fatigué (very tired)"
+          },
+          {
+            "en": "exhausted",
+            "fr": "épuisé (absolutely exhausted)"
+          },
+          {
+            "en": "shattered",
+            "fr": "à plat, familier"
+          }
+        ]
+      },
+      "scene": {
+        "where": "Un jeudi de novembre, à dix-sept heures",
+        "text": "By Thursday everyone is completely spent and pretending not to be. It was properly cold on the platform, the sort that has its own adjective. The garden is vast and entirely made of brambles; the kitchen is minute and works better than the big one did. The coffee is dreadful and the company is excellent, which is the usual trade.",
+        "gloss": [
+          {
+            "en": "exhausted",
+            "fr": "épuisé"
+          },
+          {
+            "en": "freezing",
+            "fr": "glacial"
+          },
+          {
+            "en": "enormous",
+            "fr": "énorme"
+          },
+          {
+            "en": "awful",
+            "fr": "affreux"
+          }
+        ]
+      },
+      "trap": {
+        "wrong": "I was very exhausted after the trip.",
+        "right": "I was absolutely exhausted after the trip.",
+        "why": "Un adjectif déjà extrême ne se gradue pas. Les intensifieurs qui vont avec sont « absolutely », « completely », « utterly » — jamais « very »."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "It was brilliant, honestly — best thing we did all year.",
+          "fr": "C’était génial, franchement — la meilleure chose de l’année."
+        },
+        {
+          "register": "work",
+          "en": "The most annoying part is that he was right.",
+          "fr": "Le plus agaçant, c’est qu’il avait raison."
+        }
+      ],
+      "seeAlso": [
+        "w072",
+        "w091"
+      ]
+    },
+    "w090": {
+      "image": "Une préposition de lieu tient debout ; une préposition de mouvement traverse. L’anglais ne les mélange jamais et le français si.",
+      "rule": "`opposite` = en face, de l’autre côté · `in front of` = devant, du même côté. Le français dit « devant » pour les deux et se trompe une fois sur deux.",
+      "scene": {
+        "where": "Expliquer un chemin à quelqu’un qui écrit",
+        "text": "The chemist faces the church across the road, and the preposition is not the one that means in front. Follow the towpath for a mile and it opens out. The ferry takes you over in four minutes. The path cuts right through the wood and comes out by the pub. Carry on beyond the bridge and take the second left.",
+        "gloss": [
+          {
+            "en": "opposite",
+            "fr": "en face de"
+          },
+          {
+            "en": "along",
+            "fr": "le long de"
+          },
+          {
+            "en": "through",
+            "fr": "à travers"
+          },
+          {
+            "en": "past",
+            "fr": "devant, au-delà de"
+          }
+        ]
+      },
+      "contrast": {
+        "left": "opposite the church",
+        "right": "in front of the church",
+        "note": "Le premier est de l’autre côté de la rue ; le second sur le parvis. Deux endroits distants de dix mètres, et deux prépositions qui ne se remplacent jamais."
+      },
+      "trap": {
+        "wrong": "The bakery is in front of the school, across the road.",
+        "right": "The bakery is opposite the school.",
+        "why": "« In front of » place du même côté, contre la façade. Pour l’autre trottoir, l’anglais a un mot exprès, et l’employer évite un rendez-vous manqué."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "Head towards the tower and you cannot get lost.",
+          "fr": "Dirige-toi vers la tour et tu ne peux pas te perdre."
+        },
+        {
+          "register": "work",
+          "en": "Sit next to me and I will show you the trick.",
+          "fr": "Assieds-toi à côté de moi et je te montre l’astuce."
+        }
+      ],
+      "seeAlso": [
+        "w077",
+        "w026"
+      ]
+    },
+    "w091": {
+      "image": "`Hard` et `hardly` se ressemblent et disent le contraire. Travailler dur, ou ne presque pas travailler : un suffixe sépare les deux.",
+      "rule": "`hard` = dur, fort · `hardly` = à peine, presque pas. Le -ly n’intensifie pas ici, il renverse.",
+      "scene": {
+        "where": "Le lendemain d’un concert, au bureau",
+        "text": "I could scarcely hear a word over the music, and the adverb for that is the treacherous one. We only just made the last train. It was reasonably good, which in this country is not a compliment. It is somewhat colder than the forecast promised. It got easier by degrees, and then all at once.",
+        "gloss": [
+          {
+            "en": "hardly",
+            "fr": "à peine"
+          },
+          {
+            "en": "barely",
+            "fr": "tout juste"
+          },
+          {
+            "en": "quite",
+            "fr": "assez, plutôt"
+          },
+          {
+            "en": "gradually",
+            "fr": "peu à peu"
+          }
+        ]
+      },
+      "contrast": {
+        "left": "He works hard.",
+        "right": "He hardly works.",
+        "note": "Deux phrases de trois mots, opposées de bout en bout. C’est l’exemple canonique de la paire, et il vaut mieux l’avoir vu une fois que le découvrir en réunion."
+      },
+      "trap": {
+        "wrong": "She works hardly, twelve hours a day.",
+        "right": "She works hard, twelve hours a day.",
+        "why": "Ajouter -ly retourne la phrase : « she hardly works » dit qu’elle ne fait presque rien. L’adverbe de « dur » est « hard », sans suffixe."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "The bus was on time, which everyone mentioned.",
+          "fr": "Le bus était à l’heure, et tout le monde l’a signalé."
+        },
+        {
+          "register": "work",
+          "en": "Apparently it has been like that since the eighties.",
+          "fr": "Apparemment c’est comme ça depuis les années quatre-vingt."
+        }
+      ],
+      "seeAlso": [
+        "w089",
+        "w060"
+      ]
+    }
+  }
+}

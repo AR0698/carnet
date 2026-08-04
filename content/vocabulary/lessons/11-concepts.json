@@ -1,0 +1,283 @@
+{
+  "lessons": {
+    "w060": {
+      "image": "L’anglais compte le temps par quatorze nuits. `Fortnight` est un fossile que personne n’a remplacé, et qu’on entend dix fois par semaine.",
+      "rule": "`eventually` ne veut pas dire éventuellement. Il veut dire « à la fin, après tout ce qui précède ». C’est le faux ami le plus coûteux de tout le carnet.",
+      "scale": {
+        "label": "Du plus court au plus long",
+        "steps": [
+          {
+            "en": "a fortnight",
+            "fr": "quinze jours"
+          },
+          {
+            "en": "a season",
+            "fr": "une saison"
+          },
+          {
+            "en": "a decade",
+            "fr": "une décennie"
+          }
+        ]
+      },
+      "scene": {
+        "where": "Attendre une réponse qui ne vient pas",
+        "text": "Read it in advance or the whole hour is wasted. In the meantime nobody had told the people actually doing the work, which is how these things usually go. It turned up in the end, three weeks after the email claimed it already had. We are staying as we are for now, and the whole thing starts in April.",
+        "gloss": [
+          {
+            "en": "beforehand",
+            "fr": "au préalable"
+          },
+          {
+            "en": "meanwhile",
+            "fr": "pendant ce temps"
+          },
+          {
+            "en": "eventually",
+            "fr": "finalement"
+          },
+          {
+            "en": "for the time being",
+            "fr": "pour l’instant"
+          }
+        ]
+      },
+      "contrast": {
+        "left": "eventually",
+        "right": "possibly",
+        "note": "Le premier annonce que c’est arrivé, tard. Le second dit que ça pourrait arriver. Le français « éventuellement » ne traduit que le second."
+      },
+      "trap": {
+        "wrong": "Eventually, I could come on Thursday.",
+        "right": "I could possibly come on Thursday.",
+        "why": "« Eventually I could come » signifie « j’ai fini par pouvoir venir ». La phrase annonce donc un fait accompli là où l’on voulait proposer une possibilité."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "We are away for a fortnight at the end of August.",
+          "fr": "On est absents quinze jours fin août."
+        },
+        {
+          "register": "work",
+          "en": "They moved the meeting at short notice and half of us missed it.",
+          "fr": "Ils ont déplacé la réunion au dernier moment et la moitié d’entre nous l’a ratée."
+        }
+      ],
+      "seeAlso": [
+        "w092",
+        "w091"
+      ]
+    },
+    "w061": {
+      "image": "Un point là où le français met une virgule. Trois virgules là où le français met des espaces. Les chiffres anglais se lisent avant de se calculer.",
+      "rule": "`3.5` en anglais = 3,5 en français, et `1,200` = 1 200. Inverser les deux signes est l’erreur la plus coûteuse d’un tableur international.",
+      "scene": {
+        "where": "Relire un tableau avant de l’envoyer",
+        "text": "It is four hundred or so, give or take, and the exact figure is on the second tab. Somebody should have pointed out in the meeting that a share of nothing is still nothing, whatever the percentage says. Half a dozen people replied and two of them had read it. The whole thing works out at about nine pounds a head, which nobody will query.",
+        "gloss": [
+          {
+            "en": "roughly",
+            "fr": "environ"
+          },
+          {
+            "en": "per cent",
+            "fr": "pour cent"
+          },
+          {
+            "en": "a dozen",
+            "fr": "une douzaine"
+          },
+          {
+            "en": "to work out at",
+            "fr": "revenir à"
+          }
+        ]
+      },
+      "trap": {
+        "wrong": "The total is 1.200 euros.",
+        "right": "The total is 1,200 euros.",
+        "why": "Écrit à la française, ce nombre se lit « un virgule deux » en anglais. Sur une facture, l’écart entre 1,2 et 1 200 se remarque tard et mal."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "Give me a couple of minutes and I will have it.",
+          "fr": "Donne-moi deux minutes et je l’ai."
+        },
+        {
+          "register": "work",
+          "en": "The houses on this side are all odd numbers.",
+          "fr": "Les maisons de ce côté portent toutes des numéros impairs."
+        }
+      ],
+      "seeAlso": [
+        "w062",
+        "w040"
+      ]
+    },
+    "w062": {
+      "image": "Le Royaume-Uni mesure en miles, se pèse en stones et boit en pintes, tout en achetant son essence au litre. Il n’y a pas de logique, il y a un usage.",
+      "rule": "`a mile` ≈ 1,6 km · `a stone` ≈ 6,35 kg · `a pint` ≈ 0,57 l. Ces trois-là ne se convertissent pas dans la conversation : on apprend l’ordre de grandeur.",
+      "scale": {
+        "label": "Ce qu’on mesure avec quoi",
+        "steps": [
+          {
+            "en": "a mile",
+            "fr": "les distances"
+          },
+          {
+            "en": "a stone",
+            "fr": "les poids d’une personne"
+          },
+          {
+            "en": "a pint",
+            "fr": "la bière et le lait"
+          }
+        ]
+      },
+      "scene": {
+        "where": "Une annonce immobilière et une conversation de comptoir",
+        "text": "It is two of those old distances to the station, which is forty minutes uphill and nobody mentions the hill. Measure across the doorway before you buy the sofa, and then measure how deep the cupboard is, because that is the one everybody forgets. The advert said the flat was generous; it means there is a second window.",
+        "gloss": [
+          {
+            "en": "a mile",
+            "fr": "un mille (1,6 km)"
+          },
+          {
+            "en": "width",
+            "fr": "la largeur"
+          },
+          {
+            "en": "depth",
+            "fr": "la profondeur"
+          },
+          {
+            "en": "spacious",
+            "fr": "spacieux"
+          }
+        ]
+      },
+      "trap": {
+        "wrong": "I weigh seventy-two kilos. — said to a British doctor",
+        "right": "I weigh about eleven and a half stone.",
+        "why": "Les kilos se comprennent et ne parlent à personne. Pour un poids de personne, l’unité qui produit une image est encore le stone, y compris à l’hôpital."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "Milk comes in pints and petrol comes in litres, and nobody blinks.",
+          "fr": "Le lait est en pintes et l’essence en litres, et personne ne bronche."
+        },
+        {
+          "register": "work",
+          "en": "The room is cramped and it is ten minutes from everything.",
+          "fr": "La pièce est exiguë et à dix minutes de tout."
+        }
+      ],
+      "seeAlso": [
+        "w061",
+        "w064"
+      ]
+    },
+    "w063": {
+      "image": "Une forme se dit en un mot ; une matière se dit en un adjectif. L’anglais préfère l’adjectif là où le français préfère « en ».",
+      "rule": "`a wooden floor`, `a leather bag` : la matière passe devant le nom, sans préposition. « A floor in wood » n’existe pas.",
+      "scene": {
+        "where": "Décrire un objet qu’on veut faire retrouver",
+        "text": "The park is a wedge between three roads and everyone calls it a shape it is not quite. The table is the rounded kind rather than the round kind, which fits two more people. It came in a cardboard tube with a plastic lid. Half the men at the wedding wore the same dark blue, and the whole flat was the same pale brown until we painted it.",
+        "gloss": [
+          {
+            "en": "a triangle",
+            "fr": "un triangle"
+          },
+          {
+            "en": "oval",
+            "fr": "ovale"
+          },
+          {
+            "en": "a cylinder",
+            "fr": "un cylindre"
+          },
+          {
+            "en": "navy",
+            "fr": "bleu marine"
+          }
+        ]
+      },
+      "trap": {
+        "wrong": "It is a box in wood with a cover in leather.",
+        "right": "It is a wooden box with a leather cover.",
+        "why": "Le français relie par « en », l’anglais empile les mots. La règle vaut pour presque toutes les matières : « a plastic chair », « a glass door », « a stone wall »."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "Every window in the house is the same rectangle.",
+          "fr": "Toutes les fenêtres de la maison ont le même rectangle."
+        },
+        {
+          "register": "work",
+          "en": "Real leather lasts a decade and looks better every year.",
+          "fr": "Le vrai cuir tient dix ans et s’améliore chaque année."
+        }
+      ],
+      "seeAlso": [
+        "w064",
+        "w072"
+      ]
+    },
+    "w064": {
+      "image": "Dans un placard anglais, chaque contenant a son nom, et c’est le contenant qu’on demande — pas le contenu.",
+      "rule": "On compte l’incomptable par son contenant : `a jar of jam`, `a tin of beans`, `a carton of milk`, `a packet of crisps`. Le contenant est le mot qui manque le plus souvent.",
+      "scene": {
+        "where": "Une liste de courses dictée au téléphone",
+        "text": "Get the semi-skimmed in the cardboard one, not the blue lid. There is something at the back of that cupboard in glass with a screw top, older than the flat, that nobody dares open. One paper bag of crisps between four is optimistic. And whatever it looks like, you can always squeeze a bit more out of the squashed metal thing in the bathroom.",
+        "gloss": [
+          {
+            "en": "a carton",
+            "fr": "une brique"
+          },
+          {
+            "en": "a jar",
+            "fr": "un pot, un bocal"
+          },
+          {
+            "en": "a packet",
+            "fr": "un paquet"
+          },
+          {
+            "en": "a tube",
+            "fr": "un tube"
+          }
+        ]
+      },
+      "contrast": {
+        "left": "a tin",
+        "right": "a can",
+        "note": "En Grande-Bretagne, la conserve est « a tin » et la boisson « a can ». Un « tin of beans » et « a can of lager » : le même métal, deux mots."
+      },
+      "trap": {
+        "wrong": "Can you get a can of tomatoes?",
+        "right": "Can you get a tin of tomatoes?",
+        "why": "« Can » se comprend et sonne américain sur une conserve. Pour les tomates, les haricots ou le thon, l’usage britannique est « tin »."
+      },
+      "examples": [
+        {
+          "register": "bristol",
+          "en": "They bring a jug of tap water without being asked here.",
+          "fr": "Ici, on t’apporte une carafe d’eau sans que tu demandes."
+        },
+        {
+          "register": "work",
+          "en": "Use the big bowl, the small one always overflows.",
+          "fr": "Prends le grand saladier, le petit déborde toujours."
+        }
+      ],
+      "seeAlso": [
+        "w086",
+        "w024"
+      ]
+    }
+  }
+}

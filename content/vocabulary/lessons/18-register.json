@@ -1,0 +1,176 @@
+{
+  "lessons": {
+    "w095": {
+      "image": "L’anglais a deux vocabulaires pour la même idée : un mot court d’origine germanique, un mot long d’origine latine. Le premier se dit, le second s’écrit.",
+      "rule": "`need` / `require`, `buy` / `purchase`, `get` / `obtain`, `enough` / `sufficient`. Le mot latin n’est pas meilleur : il est plus formel, et donc plus froid.",
+      "scale": {
+        "label": "Du comptoir au formulaire",
+        "steps": [
+          { "en": "get", "fr": "partout, à l’oral" },
+          { "en": "buy", "fr": "neutre, écrit ou parlé" },
+          { "en": "purchase", "fr": "contrats et notices" }
+        ]
+      },
+      "scene": {
+        "where": "La même phrase, dans deux bouches",
+        "text": "The form asks for two forms of identification, and the verb it uses is the long one. A man in the queue told us the entire history of the building without being asked, and the word for him is one syllable. By the end of that week I was completely done in, and there is a British adjective for that which no dictionary makes sound polite. The wiring looked suspect and the survey agreed.",
+        "gloss": [
+          { "en": "to require", "fr": "exiger, nécessiter" },
+          { "en": "a bloke", "fr": "un type" },
+          { "en": "knackered", "fr": "crevé" },
+          { "en": "dodgy", "fr": "louche, douteux" }
+        ]
+      },
+      "contrast": {
+        "left": "Tickets purchased online are non-refundable.",
+        "right": "If you buy online you cannot get your money back.",
+        "note": "La même information, deux mondes. La première tient sur un site officiel, la seconde se dit au guichet. Employer la première à l’oral met une distance qu’on ne voulait pas."
+      },
+      "trap": {
+        "wrong": "I would like to purchase two coffees, please.",
+        "right": "Two coffees, please.",
+        "why": "Le registre soutenu au comptoir sonne comme une plaisanterie. L’anglais britannique de tous les jours est plus court que le français de tous les jours, pas plus long."
+      },
+      "examples": [
+        { "register": "bristol", "en": "There is a load of stuff in that cupboard nobody has opened.", "fr": "Il y a un tas de trucs dans ce placard que personne n’a ouvert." },
+        { "register": "work", "en": "You can obtain a copy from the office, or just ask her.", "fr": "Tu peux obtenir une copie au secrétariat, ou simplement lui demander." }
+      ],
+      "seeAlso": ["w096", "w080"]
+    },
+    "w096": {
+      "image": "Un formulaire britannique demande des choses qu’aucun formulaire français ne demande, et n’en demande aucune de celles qu’on attend.",
+      "rule": "Ni photo, ni date de naissance, ni situation de famille sur un CV : la loi anti-discrimination les a retirées. `surname`, `postcode` et `date of birth` restent les trois champs qui piègent.",
+      "scene": {
+        "where": "Les premières semaines administratives",
+        "text": "Family name in capitals, they always ask. The day comes before the month, which costs somebody a wasted appointment every week. The six characters at the end of the address do more work than the street name does. You cannot be paid at all until the number arrives, so apply the week you land, not the month you start.",
+        "gloss": [
+          { "en": "a surname", "fr": "un nom de famille" },
+          { "en": "a date of birth", "fr": "une date de naissance" },
+          { "en": "a postcode", "fr": "un code postal" },
+          { "en": "a National Insurance number", "fr": "un numéro de sécurité sociale" }
+        ]
+      },
+      "trap": {
+        "wrong": "Date: 09/07/2027 — meaning the ninth of July",
+        "right": "Date: 09/07/2027 — read here as the ninth of July, not the seventh of September",
+        "why": "Le Royaume-Uni écrit jour/mois/année comme la France, mais les formulaires en ligne américains font l’inverse. Écrire le mois en toutes lettres coûte trois caractères et évite tout."
+      },
+      "examples": [
+        { "register": "bristol", "en": "Complete the form in block capitals and in black ink.", "fr": "Remplis le formulaire en majuscules d’imprimerie et à l’encre noire." },
+        { "register": "work", "en": "Put the employment history in reverse order, most recent first.", "fr": "Mets le parcours professionnel en ordre inverse, le plus récent d’abord." }
+      ],
+      "seeAlso": ["w037", "w098"]
+    },
+    "w097": {
+      "image": "Un texte argumenté anglais annonce, illustre, puis récapitule. Le lecteur doit pouvoir s’arrêter à la fin de chaque paragraphe sans rien perdre.",
+      "rule": "Une idée par paragraphe, et l’idée dans la première ligne. C’est une convention de lecture, pas de style : le lecteur britannique balaie les premières lignes et rien d’autre.",
+      "scene": {
+        "where": "Rendre une note de deux pages",
+        "text": "The opening paragraph says what follows and nothing more. One good example does more than three definitions. The reasoning holds; what supports it does not, and those are two different words in English even though French uses one for both. Throw the first version away — it exists to be thrown away — and remember that half the readers stop at page one.",
+        "gloss": [
+          { "en": "to outline", "fr": "présenter dans les grandes lignes" },
+          { "en": "to illustrate", "fr": "illustrer par un exemple" },
+          { "en": "an argument", "fr": "un argument" },
+          { "en": "evidence", "fr": "des preuves" }
+        ]
+      },
+      "trap": {
+        "wrong": "The evidences are not sufficient to conclude.",
+        "right": "The evidence is not sufficient to conclude.",
+        "why": "« Evidence » est indénombrable, comme « advice » et « information ». Et l’accord suit : « the evidence is », jamais « are »."
+      },
+      "examples": [
+        { "register": "bristol", "en": "To sum up, three of the four objections answer themselves.", "fr": "En résumé, trois des quatre objections se répondent toutes seules." },
+        { "register": "work", "en": "Bear in mind that half the readers stop at the first page.", "fr": "Garde à l’esprit que la moitié des lecteurs s’arrête à la première page." }
+      ],
+      "seeAlso": ["w086", "w098"]
+    },
+    "w098": {
+      "image": "Une lettre formelle anglaise se ferme différemment selon qu’on connaît ou non le nom du destinataire. C’est une règle, pas une préférence.",
+      "rule": "Sans le nom : `Dear Sir or Madam` → `Yours faithfully`. Avec le nom : `Dear Ms Patel` → `Yours sincerely`. Les croiser se remarque immédiatement.",
+      "scene": {
+        "where": "Écrire à une administration qu’on ne connaît pas",
+        "text": "Open without a name only when you genuinely do not have one, because there is almost always a name. State the purpose in the first line: you are writing to confirm the arrangements for the fifteenth. Point back to their letter of the third and give the answer. Sign off with the ending that matches the opening, and close with the sentence that ends nine letters out of ten.",
+        "gloss": [
+          { "en": "Dear Sir or Madam", "fr": "Madame, Monsieur" },
+          { "en": "Yours faithfully", "fr": "Veuillez agréer mes salutations" },
+          { "en": "with reference to", "fr": "suite à" },
+          { "en": "I am writing to", "fr": "je vous écris pour" }
+        ]
+      },
+      "contrast": {
+        "left": "Dear Sir or Madam … Yours faithfully",
+        "right": "Dear Dr Owen … Yours sincerely",
+        "note": "L’anonymat appelle « faithfully », le nom appelle « sincerely ». Le moyen mnémotechnique employé dans les écoles anglaises : jamais deux s, « Sir » et « sincerely » ne vont pas ensemble."
+      },
+      "trap": {
+        "wrong": "Dear Sir or Madam, … Yours sincerely,",
+        "right": "Dear Sir or Madam, … Yours faithfully,",
+        "why": "L’erreur est invisible pour un francophone et parfaitement visible pour le destinataire. Elle signale un modèle recopié sans avoir été compris."
+      },
+      "examples": [
+        { "register": "bristol", "en": "Please find attached the signed copy and the revised dates.", "fr": "Veuillez trouver ci-joint la copie signée et les dates révisées." },
+        { "register": "work", "en": "Reply at your earliest convenience, which means this week.", "fr": "Répondez dans les meilleurs délais, ce qui veut dire cette semaine." }
+      ],
+      "seeAlso": ["w099", "w055"]
+    },
+    "w099": {
+      "image": "Un courriel familier britannique tient en quatre lignes et deux formules, et il en dit autant qu’une page.",
+      "rule": "Ouvrir par une formule de politesse creuse (`hope you’re well`), poser la question, laisser une porte de sortie (`no rush`), fermer court. L’ordre ne varie pas.",
+      "scene": {
+        "where": "Trois messages envoyés dans la journée",
+        "text": "You open with a wish about the other person’s wellbeing that means nothing and would be rude to omit. Then the point, in one line: are we still on for Thursday. If it is not urgent you say so, because otherwise everybody assumes it is. And you close in two words, one of which also serves as thank you, goodbye and a toast.",
+        "gloss": [
+          { "en": "hope you’re well", "fr": "j’espère que tu vas bien" },
+          { "en": "just a quick one", "fr": "juste un petit mot" },
+          { "en": "no rush", "fr": "rien ne presse" },
+          { "en": "speak soon", "fr": "à bientôt" }
+        ]
+      },
+      "contrast": {
+        "left": "Let me know either way.",
+        "right": "Please confirm receipt of this message.",
+        "note": "La même demande, deux températures. La première suppose une relation, la seconde un dossier. Employer la seconde entre collègues refroidit une équipe entière."
+      },
+      "trap": {
+        "wrong": "Dear Tom, I am writing to ask you if you are free Thursday. Best regards.",
+        "right": "Hi Tom — are we still on for Thursday? No rush. Cheers.",
+        "why": "Le registre formel entre collègues britanniques se lit comme un reproche. La distance qu’on croit polie est reçue comme un signal que quelque chose ne va pas."
+      },
+      "examples": [
+        { "register": "bristol", "en": "Have a look when you can, there is genuinely no hurry.", "fr": "Regarde quand tu peux, ça ne presse vraiment pas." },
+        { "register": "work", "en": "Draft attached, any thoughts welcome.", "fr": "Brouillon joint, toutes les remarques sont bienvenues." }
+      ],
+      "seeAlso": ["w098", "w069"]
+    },
+    "w100": {
+      "image": "Deux abréviations latines de deux lettres, employées de travers par la moitié des locuteurs natifs : `eg` et `ie`.",
+      "rule": "`eg` = par exemple, la liste est ouverte · `ie` = c’est-à-dire, la liste est fermée. Les confondre change le sens de la phrase, pas seulement son style.",
+      "scene": {
+        "where": "Relire un message avant l’envoi",
+        "text": "Bring something warm — the coat you never wear is one possibility among several, and the abbreviation for that opens the list. The usual suspects, meaning precisely the three of us again, closes it. They want it as soon as possible, which in this office means Thursday. And there is an instruction at the bottom of the page telling you to turn over that most people miss.",
+        "gloss": [
+          { "en": "eg", "fr": "par exemple" },
+          { "en": "ie", "fr": "c’est-à-dire" },
+          { "en": "asap", "fr": "dès que possible" },
+          { "en": "PTO", "fr": "voir au dos" }
+        ]
+      },
+      "contrast": {
+        "left": "the team, eg Sam and Ruth",
+        "right": "the team, ie Sam and Ruth",
+        "note": "À gauche l’équipe compte d’autres gens ; à droite elle est exactement ces deux-là. Une lettre décide de qui est concerné."
+      },
+      "trap": {
+        "wrong": "Bring warm clothes, ie a coat, a scarf and gloves.",
+        "right": "Bring warm clothes, eg a coat, a scarf and gloves.",
+        "why": "« Ie » affirme que les vêtements chauds se réduisent à ces trois-là. Sur une consigne, la nuance décide de ce qu’on emporte."
+      },
+      "examples": [
+        { "register": "bristol", "en": "The invitation says RSVP by the end of the month.", "fr": "L’invitation demande une réponse avant la fin du mois." },
+        { "register": "work", "en": "Put N/A rather than leaving it blank, they send it back otherwise.", "fr": "Mets sans objet plutôt que de laisser vide, sinon ils te le renvoient." }
+      ],
+      "seeAlso": ["w098", "w099"]
+    }
+  }
+}

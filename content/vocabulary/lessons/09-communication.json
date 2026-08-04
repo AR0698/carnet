@@ -1,0 +1,100 @@
+{
+  "lessons": {
+    "w052": {
+      "image": "La presse britannique se range par format, et le format dit le sérieux : les grands journaux à gauche, les petits à droite.",
+      "rule": "`a broadsheet` = un quotidien de qualité · `a tabloid` = un populaire. Les mots viennent de la taille du papier, et la taille a disparu — pas les mots.",
+      "scene": {
+        "where": "Un lundi matin, chez le marchand de journaux",
+        "text": "Three pages on one side, a single photograph on the other, and both were describing the same afternoon. The evening bulletin is at six and again at ten, never in between, and the man who reads it has been doing so for thirty years, which shows in the best way. Everybody with a television pays the annual charge and everybody complains about it, in that order.",
+        "gloss": [
+          { "en": "a broadsheet", "fr": "un journal de qualité" },
+          { "en": "a tabloid", "fr": "un journal populaire" },
+          { "en": "the news", "fr": "les informations" },
+          { "en": "the licence fee", "fr": "la redevance" }
+        ]
+      },
+      "trap": {
+        "wrong": "The news are very depressing at the moment.",
+        "right": "The news is very depressing at the moment.",
+        "why": "« News » finit par un s et reste singulier, comme « mathematics ». L’accord au pluriel est la faute la plus régulière du chapitre."
+      },
+      "examples": [
+        { "register": "bristol", "en": "There is a documentary about the bridge that everyone here has seen.", "fr": "Il y a un documentaire sur le pont que tout le monde ici a vu." },
+        { "register": "work", "en": "That soap has been running since before I was born.", "fr": "Ce feuilleton passe depuis avant ma naissance." }
+      ],
+      "seeAlso": ["w043", "w057"]
+    },
+    "w053": {
+      "image": "Au téléphone, la Grande-Bretagne emploie un verbe que le reste du monde anglophone n’emploie plus : `to ring`.",
+      "rule": "`to ring somebody` = appeler quelqu’un · `engaged` = occupé (la ligne) · `to put somebody through` = passer la communication. Trois britannismes que l’anglais scolaire n’enseigne pas.",
+      "scene": {
+        "where": "Un standard, un mardi après-midi",
+        "text": "The line stayed busy for an hour, which is the polite way of saying nobody was picking up. Then a human answered, said hold on, and connected me to the right department in four seconds. Three calls I had not answered were waiting from a number I did not recognise, and there was a recorded message I will never listen to, because nobody under forty ever does.",
+        "gloss": [
+          { "en": "to be engaged", "fr": "être occupé (ligne)" },
+          { "en": "to put somebody through", "fr": "passer quelqu’un" },
+          { "en": "a missed call", "fr": "un appel manqué" },
+          { "en": "a voicemail", "fr": "un message vocal" }
+        ]
+      },
+      "trap": {
+        "wrong": "The line was busy, I will call you back.",
+        "right": "The line was engaged, I will ring you back.",
+        "why": "« Busy » pour une ligne est américain ; au Royaume-Uni, une ligne est « engaged ». Et le verbe par défaut est « ring », même si « call » se comprend partout."
+      },
+      "examples": [
+        { "register": "bristol", "en": "Text me rather than ring, I am in and out of the shop all day.", "fr": "Écris-moi plutôt que d’appeler, je suis dans le magasin toute la journée." },
+        { "register": "work", "en": "We got cut off in the tunnel, as we do every single week.", "fr": "On a été coupés dans le tunnel, comme chaque semaine." }
+      ],
+      "seeAlso": ["w055", "w099"]
+    },
+    "w054": {
+      "image": "Le vocabulaire de l’ordinateur est le plus international qui soit, et c’est exactement pour cela qu’il piège : quelques mots seulement diffèrent, et on ne les voit pas venir.",
+      "rule": "`a folder` = un dossier, `a shortcut` = un raccourci, `to back up` = sauvegarder. Le français a emprunté les autres mots tels quels, ce qui rend ces trois-là plus glissants, pas moins.",
+      "scene": {
+        "where": "Le matin d’une échéance, évidemment",
+        "text": "It froze, took the last twenty minutes with it, and there was no copy anywhere because I had been meaning to sort that out since March. The file was nested inside two others with names that made perfect sense at the time and none now. Learn three keyboard combinations and you save an hour a week, which is the sort of arithmetic nobody acts on.",
+        "gloss": [
+          { "en": "to crash", "fr": "planter" },
+          { "en": "to back something up", "fr": "sauvegarder" },
+          { "en": "a folder", "fr": "un dossier" },
+          { "en": "a shortcut", "fr": "un raccourci" }
+        ]
+      },
+      "trap": {
+        "wrong": "I have saved a backup of my documents on the cloud.",
+        "right": "I have backed up my documents to the cloud.",
+        "why": "Le verbe est « to back up » en deux mots, le nom « a backup » en un seul. Et l’on sauvegarde « to » un endroit, pas « on »."
+      },
+      "examples": [
+        { "register": "bristol", "en": "The library computers still ask you to log in with a card.", "fr": "Les ordinateurs de la bibliothèque demandent encore une carte pour se connecter." },
+        { "register": "work", "en": "There is a plug-in that does it, and it breaks at every update.", "fr": "Il y a une extension qui le fait, et elle casse à chaque mise à jour." }
+      ],
+      "seeAlso": ["w055", "w038"]
+    },
+    "w055": {
+      "image": "Le courriel britannique a ses accidents à lui, et le plus célèbre porte un nom : `reply all`.",
+      "rule": "`an attachment` = une pièce jointe · `a thread` = un fil · `to forward` = faire suivre. Trois mots à connaître avant d’écrire le premier message.",
+      "scene": {
+        "where": "Un jeudi matin, quarante personnes en copie",
+        "text": "Somebody answered everyone instead of one person, and forty colleagues learned something they had not asked to know. The conversation is nineteen messages deep and has decided nothing. The message that mattered went to the junk folder and sat there a fortnight. And the one that said « see below » had nothing below it, which is the oldest mistake in the medium.",
+        "gloss": [
+          { "en": "to reply all", "fr": "répondre à tous" },
+          { "en": "a thread", "fr": "un fil de discussion" },
+          { "en": "spam", "fr": "des indésirables" },
+          { "en": "an attachment", "fr": "une pièce jointe" }
+        ]
+      },
+      "trap": {
+        "wrong": "I send you in attachment the signed copy.",
+        "right": "I have attached the signed copy.",
+        "why": "« In attachment » est un calque du français. L’anglais emploie le verbe : « I have attached », ou la formule figée « please find attached »."
+      },
+      "examples": [
+        { "register": "bristol", "en": "You have to sign up to read three articles a month.", "fr": "Il faut s’inscrire pour lire trois articles par mois." },
+        { "register": "work", "en": "I will forward you the original so you can see the dates.", "fr": "Je te fais suivre l’original pour que tu voies les dates." }
+      ],
+      "seeAlso": ["w098", "w099"]
+    }
+  }
+}

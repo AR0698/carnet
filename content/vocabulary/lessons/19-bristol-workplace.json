@@ -1,0 +1,301 @@
+{
+  "lessons": {
+    "v001": {
+      "image": "L’anglais de la tech est fait de verbes concrets appliqués à des choses qui n’existent pas : on expédie, on fait marche arrière, on allume une machine qui n’a pas d’interrupteur.",
+      "rule": "Le vocabulaire tech se traduit rarement : il s’emploie tel quel, y compris dans une réunion en français. Ce qu’il faut savoir, c’est la nuance — pas l’équivalent.",
+      "scene": {
+        "where": "Un jeudi, une heure avant la mise en production",
+        "text": "There is one thing standing between us and Thursday, and it is not the code. Somebody found a case at the very edge of what the form accepts, which nobody had thought about because nobody would ever type that. If it goes badly we can put yesterday's version back within four minutes. That safety net is the only reason anyone is calm.",
+        "gloss": [
+          { "en": "a blocker", "fr": "un point bloquant" },
+          { "en": "an edge case", "fr": "un cas limite" },
+          { "en": "to roll back", "fr": "revenir en arrière" },
+          { "en": "to ship", "fr": "livrer, mettre en production" }
+        ]
+      },
+      "contrast": {
+        "left": "to ship",
+        "right": "to deploy",
+        "note": "« Deploy » décrit l’acte technique : le code est en ligne. « Ship » dit que c’est entre les mains des gens. On peut déployer sans livrer, et c’est même très courant."
+      },
+      "trap": {
+        "wrong": "We will deliver the feature on Thursday.",
+        "right": "We will ship the feature on Thursday.",
+        "why": "« Deliver » s’emploie pour un projet, pas pour une fonctionnalité. Dans une équipe produit britannique, on « ships » — et le mot porte l’idée que c’est fini."
+      },
+      "examples": [
+        { "register": "bristol", "en": "Half the tech in this city is in two streets and a converted chapel.", "fr": "La moitié de la tech de cette ville tient dans deux rues et une chapelle reconvertie." },
+        { "register": "work", "en": "Every trade-off we made in March is a blocker now.", "fr": "Chaque compromis fait en mars est un point bloquant aujourd’hui." }
+      ],
+      "seeAlso": ["v010", "v009"]
+    },
+    "v002": {
+      "image": "Bristol a inventé une partie de sa musique et tout le vocabulaire qui va avec. Ces mots-là ne s’apprennent pas dans un manuel : ils s’attrapent à l’entrée d’une salle.",
+      "rule": "Le lexique de la scène est technique et social à la fois : il dit qui joue, quand, et ce que ça vaut. Se tromper de mot signale immédiatement qu’on est nouveau.",
+      "scene": {
+        "where": "Un vendredi soir, dans une salle de deux cents personnes",
+        "text": "The bill goes up on a Tuesday and half the tickets are gone by Wednesday. Whoever opens plays to forty people and deserves better. The one everyone came for goes on at eleven. What separates this city from anywhere else is what happens below eighty hertz, and you feel it in the floor before you hear it.",
+        "gloss": [
+          { "en": "a line-up", "fr": "une affiche, un plateau" },
+          { "en": "a warm-up set", "fr": "un set d’ouverture" },
+          { "en": "to headline", "fr": "être en tête d’affiche" },
+          { "en": "the low end", "fr": "les basses fréquences" }
+        ]
+      },
+      "trap": {
+        "wrong": "I am going to a concert in a small salle tonight.",
+        "right": "I am going to a gig at a small venue tonight.",
+        "why": "« Concert » existe et évoque un orchestre ou un stade. Pour une salle de deux cents personnes au-dessus d’un pub, tout le monde dit « a gig »."
+      },
+      "examples": [
+        { "register": "bristol", "en": "There is a residency on the last Friday of every month.", "fr": "Il y a une résidence le dernier vendredi de chaque mois." },
+        { "register": "work", "en": "The promoter answers messages at two in the morning and never at two in the afternoon.", "fr": "L’organisateur répond aux messages à deux heures du matin et jamais à deux heures de l’après-midi." }
+      ],
+      "seeAlso": ["w044", "v004"]
+    },
+    "v003": {
+      "image": "S’installer dans une ville anglaise, c’est apprendre huit mots administratifs. Aucun n’est difficile, aucun ne s’invente, et sans eux rien ne se règle.",
+      "rule": "L’administration locale s’appelle `the council` et fait presque tout : les poubelles, les écoles, le stationnement, la taxe d’habitation. C’est le premier mot à connaître.",
+      "scene": {
+        "where": "Les trois premières semaines, liste en main",
+        "text": "You look at four flats in one Saturday, and the money you leave up front comes back at the end if the walls survive. The doctor has to be signed up for before you are ill, not after. The local authority runs the bins, the schools and the parking, and everything you cannot solve alone goes through them. The place where you take what will not fit in the bin is a five-minute drive and shuts at four.",
+        "gloss": [
+          { "en": "a viewing", "fr": "une visite de logement" },
+          { "en": "a deposit", "fr": "une caution" },
+          { "en": "the council", "fr": "la mairie, la collectivité" },
+          { "en": "the tip", "fr": "la déchetterie" }
+        ]
+      },
+      "trap": {
+        "wrong": "I need to go to the city hall about the bins.",
+        "right": "I need to ring the council about the bins.",
+        "why": "« City hall » est américain. Au Royaume-Uni, l’institution s’appelle « the council », et le bâtiment « the council offices » ou « the Guildhall »."
+      },
+      "examples": [
+        { "register": "bristol", "en": "There is a rota for the recycling and one neighbour who ignores it.", "fr": "Il y a un tour de rôle pour le tri et un voisin qui l’ignore." },
+        { "register": "work", "en": "Someone will sort it out, and that someone is usually you.", "fr": "Quelqu’un va régler ça, et ce quelqu’un c’est généralement toi." }
+      ],
+      "seeAlso": ["w017", "w026"]
+    },
+    "v004": {
+      "image": "Le pub anglais a une règle non écrite : la tournée. Ne pas la comprendre est la seule faute sociale qui se remarque vraiment.",
+      "rule": "`a round` = on paie pour tout le monde, chacun son tour. Refuser d’y entrer est acceptable ; y entrer et disparaître avant son tour ne l’est pas.",
+      "scene": {
+        "where": "Un jeudi soir, cinq personnes, trois heures",
+        "text": "The first person goes to the bar and comes back with five glasses, and from that moment there is an order that nobody has written down and everybody knows. When it is your turn, you say so before anyone has to ask. Somewhere around eleven a bell goes and there is a rush that surprises visitors every single time. What you drink matters far less than when you pay.",
+        "gloss": [
+          { "en": "a round", "fr": "une tournée" },
+          { "en": "to get the next one in", "fr": "payer la tournée suivante" },
+          { "en": "last orders", "fr": "la dernière commande" },
+          { "en": "a session beer", "fr": "une bière peu forte" }
+        ]
+      },
+      "contrast": {
+        "left": "a session beer",
+        "right": "a strong ale",
+        "note": "La première se boit toute la soirée sans conséquence — c’est le sens du mot « session ». La seconde termine la soirée pour vous, et souvent pour un autre."
+      },
+      "trap": {
+        "wrong": "I will pay for my beer, thanks.",
+        "right": "I will get this round.",
+        "why": "Payer seulement pour soi rompt la tournée et se remarque immédiatement. Si l’on ne veut pas boire cinq verres, on le dit d’emblée — cela, personne n’y trouve rien à redire."
+      },
+      "examples": [
+        { "register": "bristol", "en": "Cider here is a local matter and people have opinions.", "fr": "Le cidre ici est une affaire locale et les gens ont des avis." },
+        { "register": "work", "en": "The Friday drink is optional and everyone counts who comes.", "fr": "Le verre du vendredi est facultatif et tout le monde compte qui vient." }
+      ],
+      "seeAlso": ["w049", "w069"]
+    },
+    "v005": {
+      "image": "Le premier jour dans une entreprise anglaise, on entend cinq mots qu’aucun cours ne donne, et ils décrivent tous une relation, pas une tâche.",
+      "rule": "`a line manager` est la personne à qui l’on rend compte ; `a direct report` celle qui rend compte à vous. Le français « responsable » ne traduit ni l’un ni l’autre.",
+      "scene": {
+        "where": "Une première semaine, un badge qui ne marche pas",
+        "text": "The person you report to is not the person who runs the department, and confusing the two costs you a fortnight. Two people report to you, which nobody mentioned before you signed. There are six months during which either side can end it easily, and everybody is relaxed about that except you. Somebody will ask for two minutes and it will take forty.",
+        "gloss": [
+          { "en": "a line manager", "fr": "un responsable hiérarchique" },
+          { "en": "a direct report", "fr": "un collaborateur direct" },
+          { "en": "a probation period", "fr": "une période d’essai" },
+          { "en": "to have a quick word", "fr": "dire un mot en aparté" }
+        ]
+      },
+      "trap": {
+        "wrong": "I have to ask my responsible first.",
+        "right": "I have to ask my line manager first.",
+        "why": "« Responsible » est un adjectif en anglais et ne désigne jamais une personne. Le calque du français est immédiatement repéré et il est très fréquent."
+      },
+      "examples": [
+        { "register": "bristol", "en": "The induction is two hours of slides and one useful conversation.", "fr": "L’intégration, c’est deux heures de diapositives et une conversation utile." },
+        { "register": "work", "en": "Right, I will crack on — shout if you need anything.", "fr": "Bon, je m’y mets — fais signe si tu as besoin." }
+      ],
+      "seeAlso": ["v006", "w036"]
+    },
+    "v006": {
+      "image": "Une réunion anglaise a son propre dialecte, et il sert surtout à ne pas décider tout de suite sans que cela s’entende.",
+      "rule": "`to park something` = mettre de côté, poliment et souvent définitivement. `to take something offline` = en reparler à deux. Aucun des deux ne veut dire non, et tous les deux le veulent.",
+      "scene": {
+        "where": "Une réunion de quarante minutes, huit personnes",
+        "text": "Somebody proposes setting the subject aside for now, and everyone agrees because it is easier than deciding. Somebody else offers to discuss it with you afterwards, which means the discussion has just been removed from the record. Then comes the request for a rough number, which will be quoted back to you in March as though it had been a commitment.",
+        "gloss": [
+          { "en": "to park something", "fr": "mettre de côté" },
+          { "en": "to take something offline", "fr": "en reparler à deux" },
+          { "en": "a ballpark figure", "fr": "un ordre de grandeur" },
+          { "en": "low-hanging fruit", "fr": "les gains faciles" }
+        ]
+      },
+      "contrast": {
+        "left": "Let’s park that.",
+        "right": "Let’s come back to that.",
+        "note": "Les deux disent « plus tard ». Le premier est un enterrement poli, le second une vraie promesse — la différence tient au ton, et elle s’apprend en écoutant."
+      },
+      "trap": {
+        "wrong": "Can you give me an estimation?",
+        "right": "Can you give me a ballpark figure?",
+        "why": "« Estimation » existe mais sonne comptable et engage. Pour un ordre de grandeur sans engagement, on demande « a ballpark », et tout le monde comprend que ce n’est pas un chiffre."
+      },
+      "examples": [
+        { "register": "bristol", "en": "Let us touch base after the weekend when everyone has read it.", "fr": "On refait un point après le week-end, quand tout le monde l’aura lu." },
+        { "register": "work", "en": "Nobody has the bandwidth for that before the new year.", "fr": "Personne n’a la disponibilité pour ça avant janvier." }
+      ],
+      "seeAlso": ["v005", "v009"]
+    },
+    "v007": {
+      "image": "Un Britannique dit rarement non. Il dit une phrase aimable dont chacun sait, dans la pièce, qu’elle veut dire non — sauf le francophone.",
+      "rule": "La litote britannique inverse l’intensité : plus la formule est douce, plus le verdict est dur. `quite good` est une déception ; `a brave decision` annonce une catastrophe.",
+      "scale": {
+        "label": "Ce qui est dit, et ce qui est pensé",
+        "steps": [
+          { "en": "not bad", "fr": "c’est très bien" },
+          { "en": "quite good", "fr": "c’est décevant" },
+          { "en": "a brave decision", "fr": "vous courez au désastre" }
+        ]
+      },
+      "scene": {
+        "where": "Une revue de projet, et ce que chacun a compris",
+        "text": "He says he has heard what you said, which closes the discussion rather than opening it. She says she will keep it in mind, and she will not. Someone describes the plan as courageous, and two people around the table look at their notebooks. The comments are described as minor and there are eleven of them, which means it is to be rewritten.",
+        "gloss": [
+          { "en": "I hear what you say", "fr": "je n’en tiendrai pas compte" },
+          { "en": "I’ll bear it in mind", "fr": "j’oublierai" },
+          { "en": "a brave decision", "fr": "une décision insensée" },
+          { "en": "just a few minor comments", "fr": "c’est à refaire" }
+        ]
+      },
+      "contrast": {
+        "left": "not bad",
+        "right": "quite good",
+        "note": "L’un des rares endroits où l’anglais monte en disant moins : « not bad » est un compliment sincère, « quite good » une réserve. L’ordre est l’inverse de ce que la logique suggère."
+      },
+      "trap": {
+        "wrong": "— That’s quite good. — Thank you very much!",
+        "right": "— That’s quite good. — What would you change?",
+        "why": "Prendre « quite good » pour un compliment fait passer à côté d’une critique qui vient d’être formulée poliment. La bonne réponse est de demander ce qui manque."
+      },
+      "examples": [
+        { "register": "bristol", "en": "With the greatest respect is the last warning you will get.", "fr": "« With the greatest respect » est le dernier avertissement que tu auras." },
+        { "register": "work", "en": "Correct me if I am wrong means you are wrong.", "fr": "« Correct me if I’m wrong » veut dire que tu as tort." }
+      ],
+      "seeAlso": ["w067", "v006"]
+    },
+    "v008": {
+      "image": "Un mail britannique se lit à deux niveaux : ce qui est écrit, et ce que la formule choisie dit de l’humeur de celui qui écrit.",
+      "rule": "`as per my last email` est une arme. `bear with me` est une excuse. `happy to` est un accord. Ce sont des marqueurs de température, pas des tournures neutres.",
+      "scene": {
+        "where": "Une boîte de réception, un mardi matin",
+        "text": "Somebody adds a third person to the thread so that it becomes their problem too. Somebody else raises a risk in a single line, which is exactly the right length for a risk. The deadline is expressed as the end of the working day rather than an hour, and it means five, or six, depending on who is asking. And the message that begins by pointing back to a previous message is annoyed.",
+        "gloss": [
+          { "en": "to loop someone in", "fr": "mettre en copie" },
+          { "en": "to flag something", "fr": "signaler un risque" },
+          { "en": "by close of play", "fr": "avant la fin de journée" },
+          { "en": "as per my last email", "fr": "comme je l’ai déjà écrit" }
+        ]
+      },
+      "trap": {
+        "wrong": "I put you in copy of this message.",
+        "right": "I have looped you in on this.",
+        "why": "« In copy » est un calque du français. L’anglais dit « I have copied you in », « I have cc’d you », ou plus chaleureusement « looped you in »."
+      },
+      "examples": [
+        { "register": "bristol", "en": "Give me a shout when you are five minutes away.", "fr": "Fais-moi signe quand tu es à cinq minutes." },
+        { "register": "work", "en": "She has been snowed under since the reorganisation.", "fr": "Elle est débordée depuis la réorganisation." }
+      ],
+      "seeAlso": ["w099", "w098"]
+    },
+    "v009": {
+      "image": "Une mission se défend avec cinq mots. Sans eux, le périmètre grandit tout seul et personne ne s’en aperçoit avant la facture.",
+      "rule": "`scope creep` désigne l’élargissement lent d’une mission sans renégociation. Le nommer est la seule façon de l’arrêter, et c’est pour cela que le mot existe.",
+      "scene": {
+        "where": "Le troisième mois d’une mission de six",
+        "text": "The document that says what is included has not been reopened since January, and four things have been added since. Nobody decided to add them; each one arrived alone and seemed small. The person who has to approve the work is not the person who asks for it, and neither of them has met the other. Saying no once, early and calmly, costs less than saying it three times in June.",
+        "gloss": [
+          { "en": "a statement of work", "fr": "un cahier des charges" },
+          { "en": "scope creep", "fr": "l’élargissement du périmètre" },
+          { "en": "to sign something off", "fr": "valider formellement" },
+          { "en": "to push back", "fr": "opposer une objection" }
+        ]
+      },
+      "trap": {
+        "wrong": "The client has to validate the document.",
+        "right": "The client has to sign the document off.",
+        "why": "« Validate » en anglais veut dire vérifier qu’une chose est correcte, souvent techniquement. L’approbation formelle qui engage, c’est « sign off »."
+      },
+      "examples": [
+        { "register": "bristol", "en": "The day rate looks generous until you count the unpaid days.", "fr": "Le taux journalier a l’air généreux jusqu’à ce qu’on compte les jours non payés." },
+        { "register": "work", "en": "I would rather push back now than escalate it in June.", "fr": "Je préfère objecter maintenant que faire remonter en juin." }
+      ],
+      "seeAlso": ["v006", "w040"]
+    },
+    "v010": {
+      "image": "L’IA au bureau se discute avec un vocabulaire de six mois d’âge, et la moitié de ce vocabulaire sert à dire qui répond quand ça se trompe.",
+      "rule": "`a human in the loop` et `guardrails` ne sont pas des termes techniques : ce sont des engagements de responsabilité. Les employer, c’est répondre à la question que le comité de pilotage va poser.",
+      "scene": {
+        "where": "Un comité de pilotage, la diapositive sur les risques",
+        "text": "The question is never whether the model is good. It is who checks the output before a customer sees it, what the system is forbidden to do, and what happens the day it invents a policy that does not exist. Half the company is already using tools nobody approved, which is the part nobody puts on a slide and everybody knows.",
+        "gloss": [
+          { "en": "a human in the loop", "fr": "un humain dans la boucle" },
+          { "en": "guardrails", "fr": "des garde-fous" },
+          { "en": "to hallucinate", "fr": "inventer une réponse" },
+          { "en": "shadow AI", "fr": "l’IA utilisée hors cadre" }
+        ]
+      },
+      "contrast": {
+        "left": "a proof of concept",
+        "right": "to productionise",
+        "note": "Le premier montre que c’est possible sur trente exemples. Le second le rend utilisable tous les jours par des gens qui n’ont pas envie d’y penser. Entre les deux, il y a l’essentiel du travail."
+      },
+      "trap": {
+        "wrong": "The model is very performant on our data.",
+        "right": "The model performs well on our data.",
+        "why": "« Performant » n’existe pas en anglais. On dit « it performs well », « high-performing », ou l’on donne simplement le chiffre — ce qui est encore mieux."
+      },
+      "examples": [
+        { "register": "bristol", "en": "There is an off-the-shelf tool that does eighty per cent of it.", "fr": "Il existe un outil sur étagère qui en fait quatre-vingts pour cent." },
+        { "register": "work", "en": "Start from the use case, never from the model.", "fr": "Pars du cas d’usage, jamais du modèle." }
+      ],
+      "seeAlso": ["v001", "v009"]
+    },
+    "v011": {
+      "image": "Un bureau britannique a cessé d’être un lieu et est devenu un calendrier. Le vocabulaire a suivi : on ne parle plus de pièces, on parle de jours.",
+      "rule": "`the estate` désigne l’ensemble des locaux d’une entreprise — un mot d’immobilier employé comme un mot de gestion. C’est celui qu’on entend en réunion de direction.",
+      "scene": {
+        "where": "Une annonce sur le retour au bureau",
+        "text": "Nobody has a desk any more; you book one the night before and someone else has your old drawer. The property portfolio is being reduced by a third, which is the real reason and the last one mentioned. The change goes out in April and will take until autumn to settle. Two people come in five days a week and want that noticed, which has its own unflattering word.",
+        "gloss": [
+          { "en": "hot-desking", "fr": "le bureau non attribué" },
+          { "en": "the estate", "fr": "le parc immobilier" },
+          { "en": "to bed in", "fr": "s’installer, se roder" },
+          { "en": "presenteeism", "fr": "le présentéisme" }
+        ]
+      },
+      "trap": {
+        "wrong": "We are moving to flex office next year.",
+        "right": "We are moving to hot-desking next year.",
+        "why": "« Flex office » est une invention française que personne n’emploie au Royaume-Uni. Le mot britannique est « hot-desking », et il existe depuis les années quatre-vingt-dix."
+      },
+      "examples": [
+        { "register": "bristol", "en": "The office is ten minutes from the harbour and everyone eats outside in June.", "fr": "Le bureau est à dix minutes du port et tout le monde mange dehors en juin." },
+        { "register": "work", "en": "Adoption is the number that matters, not the rollout date.", "fr": "L’appropriation est le chiffre qui compte, pas la date de déploiement." }
+      ],
+      "seeAlso": ["v005", "w036"]
+    }
+  }
+}
